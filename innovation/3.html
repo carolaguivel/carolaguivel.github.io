@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://use.typekit.net/zsi1mos.css">
+</head>
+<body>
+
+<div class="content2">
+
+<p class="why">why?</p>
+
+<textarea rows="10" cols="35" id="youranswer" placeholder="type your answer..." onkeypress="uniCharCode(event)">
+</textarea>
+
+</div>
+
+</body>
+<script>
+
+function uniCharCode(event) {
+	var char = event.keyCode;
+
+	if (char == 13) {
+		
+		event.preventDefault();
+
+		location.assign("4.html");
+	}
+ 
+}
+
+</script>
+</html>

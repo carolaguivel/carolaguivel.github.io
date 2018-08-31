@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>VETEMENTS</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="fake.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+
+<header>
+	<small>free standard shipping on orders over $500</small>
+</header>
+
+<!-- menu -->
+<div class="menu">
+<a href="fakefeed.html" class="links">Collection</a>
+<p>–</p>
+<div class="dropdown">
+	<!-- onclick="myFunction()" -->
+<button class="dropbtn">Brands</button>
+  	<div id="mydropdown" class="dropdowncontent">
+		<a href="fakebiis.html">biis</a>
+		<a href="fakeceline.html">céline</a>
+		<a href="fakecommedesgarcon.html">comme des garçons</a>
+		<a href="fakehelmutlang.html">helmut lang</a>
+		<a href="fakejilsanders.html">jil sander</a>
+		<a href="fakemargiela.html">maison margiela</a>
+		<a href="fakeoffwhite.html">off-white</a>
+		<a href="fakevetements.html">vetements</a>
+	</div>
+</div><br>
+<div class="menubottom transform">
+<p>–</p>
+<a class="links" href="fakefail.html" >Bag (0)</a><br><br>
+<a class="links" href="fakefail.html" >Account</a><br><br>
+<a class="links" href="fakefail.html" >Search</a>
+</div>
+</div>
+<!-- menu end -->
+
+<!-- content -->
+<div class="vetementsprod"></div>
+
+<div class="vetementsinfo">
+	<a class="link" href="fakevetements.html">Back to vetements</a><br>
+</div>
+
+<!-- content end -->
+
+<!-- footer -->
+<footer class="vetements1footer">
+	<div class="footermenu">
+		<a href="fakefail.html">customer care</a>
+		<a href="fakefail.html">legal area</a>
+		<a href="fakefail.html">press</a>
+		<a href="fakefail.html">shipping and handling</a>
+		<a href="fakefail.html">newsletter</a>
+	</div>
+	<p>copyright © 2018 out of the ordinary – all rights reserved</p>
+</footer>
+
+<script src="fakedropdown.js"></script>
+<script type="text/javascript">
+
+var myurl = "https://carolaguivel.github.io/observation/collection.json";
+
+
+$.getJSON(myurl, function(data){
+		
+	$(".vetementsinfo").append( "<p class='title'>" + data.Vetements[4].title + "</p><p class='composition'>" + data.Vetements[4].composition + "</p><p class='description'>" + data.Vetements[4].description + "</p><p class='pricetext'>Original Price</a><p class='pricenumber'>" + data.Vetements[4].original + "</p><a href='vetements4.html' class='fakelink'><p class='pricetext'>Retail Price</p><p class='pricenumber'>" + data.Vetements[4].retail + "</p></a>" + "<button class='addtobag'><a href='fakefail.html'>Add To Bag</a></button>")
+
+
+	for (var i = 0; i < data.Vetements[4].fakeimages.length; i++) {
+
+		$(".vetementsprod").append("<img class='vetementsprodimg' src='" + data.Vetements[4].fakeurl + "/" + data.Vetements[4].fakeimages[i] + "' >")
+
+		
+
+	}
+
+
+});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,1989 @@
+html,body {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #F5F5F5;
+	font-size: 15px;
+}
+
+body {
+	background-color: #F5F5F5;
+	font-family: Helvetica, sans serif;
+	text-transform: uppercase;
+}
+
+header {
+	width: 100%;
+	margin-top: 2.1vw;
+	position: relative;
+	color: #575757;
+	font-size: 0.9vw;
+	letter-spacing: 0.09vw;
+	text-align: center;
+	font-weight: 400;
+}
+
+a {
+	text-decoration: none;
+}
+
+.menu {
+	position: fixed;
+	color: #575757;
+	font-size: 14.5px;
+	letter-spacing: 1px;
+	margin-top: 160px;
+	margin-left: 30px;
+	z-index: 1;
+}
+
+.transform {
+  -webkit-transition: all 1s ease;  
+  -moz-transition: all 1s ease;  
+  -o-transition: all 1s ease;  
+  -ms-transition: all 1s ease;  
+  transition: all 1s ease;
+}
+
+.transform-active {
+  margin-top: 270px;
+}
+
+.menubar {
+	display: none;
+}
+
+.menu a {
+	color: #575757;
+	z-index: 1; 
+}
+
+.links:hover {
+	text-decoration: line-through;
+}
+
+.dropdown {
+	display: inline-block;
+	height: 100%;
+}
+
+.dropbtn {
+  	background-color: #F5F5F5;
+  	font-family: Helvetica, sans serif;
+  	text-transform: uppercase;
+  	border: none;
+  	cursor: pointer;
+  	color: #575757;
+  	font-size: 15px;
+  	padding: 0;
+  	letter-spacing: 1px;
+}
+
+.dropbtn:focus {
+	outline: none;
+}
+
+.dropbtn:hover {
+	text-decoration: line-through;
+}
+
+.dropdowncontent {
+	display: none;
+	position: relative;
+	background-color: #F5F5F5;
+	min-width: 200px;
+	/*z-index: 1;*/
+	font-size: 12px;
+	letter-spacing: 1px;
+	margin-left: 5px;
+	margin-top: 10px;
+}
+
+.dropdowncontent a {
+	color: #575757;
+	padding: 12px 16px;
+	display: block;
+	padding-bottom: 5px;
+}
+
+.dropdowncontent a:hover {
+	text-decoration: line-through;
+}
+
+.show {display:block;}
+
+footer {
+	position: relative;
+	margin-top: 1080px;
+	color: #575757;
+	font-size: 0.8vw;
+	letter-spacing: 0.05vw;
+}
+
+footer a {
+	color: #575757;
+	padding-right: 3vw;
+	padding-left: 3vw;
+}
+
+.footermenu {
+	width: 100%;
+	height: 2.6vw;
+	background-color: white;
+	padding-top: 1.6vw;
+	text-align: center
+}
+
+footer p {
+	text-align: center;
+	margin-top: 0.4vw;
+	padding: 2vw;
+}
+
+.helmutlangstart {
+	text-align: center;
+	margin-top: 12.5vw;
+}
+
+.helmutlangstart img {
+	width: 21%;
+	border: 1px solid #707070;
+	margin: 0.9vw;
+}
+
+.helmutlangstart h1 {
+	color: #363636;
+	font-size: 1.3vw;
+	letter-spacing: 0.07vw;
+	margin-left: 30.3vw;
+	margin-top: 0.34vw;
+}
+
+.helmutlangstart a {
+	position: absolute;
+	color: #363636;
+	font-size: 0.8vw;
+	letter-spacing: 0.065vw;
+	margin-left: 11.5vw;
+	margin-top: -0.35vw;
+}
+
+.offwhitestart {
+	text-align: center;
+	margin-top: 17.4vw;
+}
+
+.offwhitestart img {
+	width: 23%;
+	border: 1px solid #707070;
+	margin-left: 40vw;
+}
+
+.offwhitestart h1 {
+	position: absolute;
+	color: #363636;
+	font-size: 1.3vw;
+	letter-spacing: 0.07vw;
+	margin-top: 9vw;
+	margin-left: 38.8vw;
+}
+
+.offwhitestart a {
+	position: absolute;
+	color: #363636;
+	font-size: 0.9vw;
+	letter-spacing: 0.065vw;
+	margin-top: 11.3vw;
+	margin-left: 26.25vw;
+}
+
+.celinestart {
+	text-align: center;
+	margin-top: 300px;
+}
+
+.celinestart h1 {
+	position: absolute;
+	color: #363636;
+	font-size: 1.3vw;
+	letter-spacing: 0.07vw;
+	margin-left: 70.1vw;
+	margin-top: 24.3vw;
+}
+
+.celinestart a {
+	position: absolute;
+	color: #363636;
+	font-size: 0.9vw;
+	letter-spacing: 0.065vw;
+	margin-left: 20.2vw;
+	margin-top: 26.6vw;
+}
+
+.cstart1 {
+	position: absolute;
+	width: 21%;
+	border: 1px solid #707070;
+	margin-left: -30.6vw;
+	z-index: 1;
+	margin-top: -8vw;
+}
+
+.cstart2 {
+	position: absolute;
+	width: 34%;
+	border: 1px solid #707070;
+	margin-left: -16.7vw;
+}
+
+/*BIIS*/
+
+.biis {
+	margin-left: 21.5vw;
+	width: 60vw;
+	margin-top: 8.2vw;
+}
+
+.biisimg {
+	width: 130%;
+	border: 1px solid #707070;
+	margin: 0.69vw;
+	display: inline-block;
+}
+
+.biis > a {
+	margin-top: 0.55vw;
+	width: 21%;
+	color: #575757;
+	display: inline-block;
+	padding: 3.5vw;
+	margin-top: -6.25vw;
+}
+
+.biisprod {
+	margin-top: 7vw;
+	padding-left: 25vw;
+	width: 75vw;
+}
+
+.biisprodimg {
+	width: 32%;
+	border: 1px solid #707070;
+	margin: 0.69vw;
+	display: block;
+	margin-top: 2vw;
+	margin-left: 3vw;
+}
+
+.biisinfo {
+	margin-left: 58vw;
+	width: 20vw;
+	margin-top: -101.6vw;
+}
+
+.biisfooter {
+	margin-top: 6.9vw;
+}
+
+.biisonefooter {
+	margin-top: 85vw;
+}
+
+.biistwofooter {
+	margin-top: 85vw;
+}
+
+.biis2info {
+	margin-left: 58vw;
+	width: 20vw;
+	margin-top: -67.5vw;
+}
+
+.biis2footer {
+	margin-top: 50vw;
+}
+
+.biis3footer {
+	margin-top: 50vw;
+}
+
+/*Celine*/
+
+.celine {
+	margin-left: 23.5vw;
+	width: 60vw;
+	margin-top: 6vw;
+}
+
+.celineimg {
+	width: 100%;
+	border: 1px solid #707070;
+	margin: 0.69vw;
+	display: inline-block;
+}
+
+.celine > a {
+	margin-top: 0.55vw;
+	width: 27%;
+	color: #575757;
+	display: inline-block;
+	padding: 1.5vw;
+	padding-top: 3.5vw;
+	margin-top: -4.25vw;
+	/*background-color: red;*/
+}
+
+.celinefooter {
+	margin-top: 7.5vw;
+}
+
+.celineprod {
+	margin-top: 6.9vw;
+	padding-left: 25vw;
+	width: 75vw;
+}
+
+.celineprodimg {
+	width: 32%;
+	border: 1px solid #707070;
+	margin: 0.69vw;
+	display: block;
+	margin-top: 2.08vw;
+	margin-left: 3vw;
+}
+
+.celine0info {
+	margin-left: 58vw;
+	width: 20vw;
+	margin-top: -105.1vw;
+}
+
+.celine1info {
+	margin-left: 58vw;
+	width: 20vw;
+	margin-top: -69.8vw;
+}
+
+.blanketfooter {
+	margin-top: 85vw;
+}
+
+.celine2footer {
+	margin-top: 50vw;
+}
+
+/*Comme des Garçon*/
+
+.commedesgarcon {
+	margin-top: 4vw;
+	width: 65vw;
+	margin-left: 26vw;
+}
+
+.cdgimg {
+	width: 80%;
+	border: 1px solid #707070;
+	margin: 0.69vw;
+	display: inline-block;
+}
+
+.commedesgarcon > a {
+	margin-top: 1.5vw;
+	width: 33%;
+	color: #575757;
+	margin-left: -1vw;
+	display: inline-block;
+}
+
+.cdgprod {
+	margin-top: 6.9vw;
+	padding-left: 25vw;
+	width: 75vw;
+}
+
+.cdgprodimg {
+	width: 32%;
+	border: 1px solid #707070;
+	margin: 0.69vw;
+	display: block;
+	margin-top: 2.08vw;
+	margin-left: 3vw;
+}
+
+.cdgfooter {
+	margin-top: 9vw;
+}
+
+.cdgperfumefooter {
+	margin-top: 115vw;
+}
+
+.cdgbagfooter {
+	margin-top: 82vw;
+}
+
+.cdgperfumeinfo {
+	margin-left: 58vw;
+	width: 20vw;
+	margin-top: -135.8vw;
+}
+
+.cdgbaginfo {
+	margin-left: 58vw;
+	width: 20vw;
+	margin-top: -101.6vw;
+}
+
+/*Helmut Lang*/
+
+.helmutlang {
+	padding-left: 25vw;
+	width: 75vw;
+	margin-top: 4.86vw;
+}
+
+.helmutlangimg {
+	width: 85%;
+	border: 1px solid #707070;
+	margin: 0.69vw;
+	display: inline-block;
+}
+
+.helmutlang > a {
+	margin-top: 0.55vw;
+	width: 26%;
+	color: #575757;
+	display: inline-block;
+}
+
+.helmutlang > .specialclass {
+	width: 55%;
+	margin-left: 19.7vw;
+	margin-top: 1.04vw;
+}
+
+.helmutlangprod {
+	margin-top: 6.9vw;
+	padding-left: 25vw;
+	width: 75vw;
+}
+
+.helmutlangprodimg {
+	width: 32%;
+	border: 1px solid #707070;
+	margin: 0.69vw;
+	display: block;
+	margin-top: 2.08vw;
+	margin-left: 3vw;
+}
+
+.helmutlangfooter {
+	margin-top: 10vw;
+}
+
+.brapurse2footer {
+	margin-top: 109vw;
+}
+
+.brapurse1footer {
+	margin-top: 75vw;
+}
+
+.brapurse1info {
+	margin-left: 58vw;
+	width: 20vw;
+	margin-top: -95.55vw;
+}
+
+.brapurse2info {
+	margin-left: 58vw;
+	width: 20vw;
+	margin-top: -127.8vw;
+}
+
+.watchinfo {
+	margin-left: 58vw;
+	width: 20vw;
+	margin-top: -63.4vw;
+}
+
+.hlbaginfo {
+	margin-left: 58vw;
+	width: 20vw;
+	margin-top: -51.25vw;	
+}
+
+.hlbagfooter {
+	margin-top: 34vw;
+}
+
+.watchfooter {
+	margin-top: 45vw;
+}
+
+/*Jil Sanders*/
+
+.jilsanders {
+	padding-left: 25vw;
+	width: 75vw;
+	margin-top: 4.86vw;
+}
+
+.jilsandersimg {
+	width: 83%;
+	border: 1px solid #707070;
+	margin: 0.7vw;
+	display: inline-block;
+}
+
+.jilsanders > a {
+	margin-top: 1vw;
+	width: 28%;
+	color: #575757;
+	display: inline-block;
+}
+
+.jilsandersfooter {
+	margin-top: 11vw;
+}
+
+.jilsandersprod {
+	margin-top: 6.9vw;
+	padding-left: 25vw;
+	width: 75vw;
+}
+
+.jilsandersprodimg {
+	width: 32%;
+	border: 1px solid #707070;
+	margin: 0.69vw;
+	display: block;
+	margin-top: 2.08vw;
+	margin-left: 3vw;
+}
+
+.jilsandersinfo {
+	margin-left: 58vw;
+	width: 20vw;
+	margin-top: -97.4vw;
+}
+
+.jilsandersbagfooter {
+	margin-top: 80vw;
+}
+
+/*Maison Margiela*/
+
+.margiela {
+	padding-left: 25vw;
+	width: 75vw;
+	margin-top: 4.86vw;
+}
+
+.margielaimg {
+	width: 85%;
+	border: 1px solid #707070;
+	margin: 0.69vw;
+	display: inline-block;
+}
+
+.margiela > a {
+	margin-top: 0.55vw;
+	width: 26%;
+	color: #575757;
+	display: inline-block;
+}
+
+.margielafooter {
+	margin-top: 11.45vw;
+}
+
+.margiela > .specialclass {
+	width: 53.5%;
+}
+
+.margiela > .specialclass img {
+	padding-left: 2.013vw;
+	background-color: black;
+}
+
+.margielaprod {
+	margin-top: 6.9vw;
+	padding-left: 25vw;
+	width: 75vw;
+}
+
+.margielaprodimg {
+	width: 32%;
+	border: 1px solid #707070;
+	margin: 0.69vw;
+	display: block;
+	margin-top: 2.08vw;
+	margin-left: 3vw;
+}
+
+.margiela1info {
+	margin-left: 58vw;
+	width: 20vw;
+	margin-top: -97.29vw;
+}
+
+.margiela2info {
+	margin-left: 58vw;
+	width: 20vw;
+	margin-top: -64.44vw;
+}
+
+.margiela7info {
+	margin-left: 58vw;
+	width: 20vw;
+	margin-top: -75.2vw;
+}
+
+.margiela0footer {
+	margin-top: 77vw;
+}
+
+.margiela1footer {
+	margin-top: 76vw;
+}
+
+.margiela3footer {
+	margin-top: 76vw;
+}
+
+.margiela5footer {
+	margin-top: 76vw;
+}
+
+.margiela9footer {
+	margin-top: 43vw;
+}
+
+.margiela10footer {
+	margin-top: 55vw;
+}
+
+/*Off-White*/
+
+.offwhite {
+	margin-top: 6.9vw;
+	width: 60%;
+	margin-left: 24.3vw;
+}
+
+.offwhiteimg {
+	width: 90%;
+	border: 1px solid #707070;
+	margin: 0.69vw;
+	display: inline-block;
+}
+
+.offwhite > a {
+	margin-top: 0.55vw;
+	width: 33%;
+	color: #575757;
+	display: inline-block;
+}
+
+.offwhitefooter {
+	margin-top: 11vw;
+}
+
+.offwhiteprod {
+	margin-top: 6.9vw;
+	padding-left: 25vw;
+	width: 75vw;
+}
+
+.offwhiteprodimg {
+	width: 32%;
+	border: 1px solid #707070;
+	margin: 0.69vw;
+	display: block;
+	margin-top: 2.08vw;
+	margin-left: 3vw;
+}
+
+.offwhite0info {
+	margin-left: 58vw;
+	width: 20vw;
+	margin-top: -90.8vw;
+}
+
+.offwhite0footer {
+	margin-top: 73vw;
+}
+
+.offwhite2info {
+	margin-left: 58vw;
+	width: 20vw;
+	margin-top: -60.13vw;
+}
+
+.offwhite2footer {
+	margin-top: 42vw;
+}
+
+/*Vetements*/
+
+.vetements {
+	margin-left: 21.5vw;
+	width: 60vw;
+	margin-top: 8.19vw;
+}
+
+.vetementsimg {
+	width: 135%;
+	border: 1px solid #707070;
+	margin: 0.69vw;
+	display: inline-block;
+}
+
+.vetements > a {
+	margin-top: 1.38vw;
+	width: 21%;
+	color: #575757;
+	display: inline-block;
+	padding: 3.5vw;
+	margin-top: -6.25vw;
+}
+
+.vetementsfooter {
+	margin-top: 6.8vw;
+}
+
+.vetementsprod {
+	margin-top: 6.9vw;
+	padding-left: 25vw;
+	width: 75vw;
+}
+
+.vetementsprodimg {
+	width: 32%;
+	border: 1px solid #707070;
+	margin: 0.69vw;
+	display: block;
+	margin-top: 2.08vw;
+	margin-left: 3vw;
+}
+
+.vetements0info {
+	margin-left: 58vw;
+	width: 20vw;
+	margin-top: -101.6vw;
+}
+
+.vetements2info {
+	margin-left: 58vw;
+	width: 20vw;
+	margin-top: -135.8vw;
+}
+
+.vetements0footer {
+	margin-top: 83vw;
+}
+
+.vetements2footer {
+	margin-top: 118vw;
+}
+
+/*Applies to all*/
+
+.caption {
+	padding-left: 0.7vw;
+	font-weight: bold;
+	font-size: 0.9vw;
+	letter-spacing: 0.06vw;
+	margin-top: 0.069vw;
+}
+
+.price {
+	font-size: 0.8vw;
+	padding-left: 0.7vw;
+	margin-top: -0.55vw;
+}
+
+.link {
+	color: #575757;
+	font-size: 0.8vw;
+	letter-spacing: 0.069vw;
+	}
+
+.link:hover {
+	text-decoration: line-through;
+}
+
+.title {
+	font-weight: bold;
+	font-size: 2vw;
+	color: #575757;
+	letter-spacing: 0.07vw;
+	margin-top: 3.125vw;
+}
+
+.composition {
+	color: #575757;
+	font-size: 0.8vw;
+	letter-spacing: 0.07vw;
+	margin-top: -1.6vw;
+	width: 15vw;
+}
+
+.description {
+	color: #575757;
+	font-size: 0.8vw;
+	letter-spacing: 0.069vw;
+	text-transform: none;
+	margin-top: 2.8vw;
+	margin-bottom: 3vw;
+	width: 13vw;
+}
+
+.pricetext {
+	color: #575757;
+	font-size: 0.95vw;
+	font-weight: bold;
+	letter-spacing: 0.069vw;
+}
+
+.pricenumber {
+	color: #575757;
+	font-size: 0.9vw;
+	margin-top: -0.69vw;	
+}
+
+.fakelink {
+	color: #575757;
+}
+
+.fakelink:hover {
+	color: blue;
+}
+
+.addtobag {
+	padding: .35vw;
+	margin-top: 1.4vw;
+	font-size: 0.9vw;
+	letter-spacing: 0.05vw;
+	outline: none;
+	color: #575757;
+	background-color: #F5F5F5;
+	outline: none;
+	border: 0.5px solid #575757;
+}
+
+.addtobag a{
+	color: #575757;
+}
+
+.addtobag:hover {
+	background-color: #575757;
+	color: #F5F5F5;
+	cursor: pointer;
+}
+
+.addtobag:hover a {
+	color: #F5F5F5;
+}
+
+.fail {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.failed {
+	color: #575757;
+}
+
+.failedrequest {
+	font-weight: bold;
+	font-size: 2vw;
+	letter-spacing: 0.05vw;
+}
+
+.backtohomepage {
+	font-size: 1.1vw;
+	padding: .35vw;
+	color: #575757;
+	letter-spacing: 0.05vw;
+	border: 0.07vw solid #575757;
+}
+
+.backtohomepage:hover {
+	background-color: #575757;
+	color: #F5F5F5;
+}
+
+@media only screen and (max-width: 700px) {
+
+
+.menu {display: none;}
+header {display: none;}
+
+.menubar {
+	display: block;
+	position: fixed;
+	top: 0;
+	overflow-y: hidden;
+	z-index: 3;
+}
+
+.rect {
+	z-index: 1;
+   	padding: 3vw 3vw 5.5vw 3vw;
+   	width: 100vw;
+   	height: 1.5vw;
+   	background-color: #FFFFFF;
+   	align-self: start;
+   	transition: height 1s;
+}
+
+.rect.is-open {
+  	width: 100vw;
+  	height: 100vh;
+}
+
+.icon {
+	width: 6%;
+	margin-left: 85vw;
+	cursor: pointer;
+	margin-top: -5vw;
+}
+
+.transform {
+  -webkit-transition: all 1s ease;  
+  -moz-transition: all 1s ease;  
+  -o-transition: all 1s ease;  
+  -ms-transition: all 1s ease;  
+  transition: all 1s ease;
+}
+
+.transform-active {
+  margin-top: 270px;
+}
+
+.phonemenu {
+	color: #575757;
+	font-size: 3.5vw;
+	letter-spacing: 0.2vw;
+	margin-top: 8vw;
+	margin-left: 10vw;
+	z-index: 1;
+}
+
+.transform {
+  -webkit-transition: all 1s ease;  
+  -moz-transition: all 1s ease;  
+  -o-transition: all 1s ease;  
+  -ms-transition: all 1s ease;  
+  transition: all 1s ease;
+}
+
+.transform-active {
+  margin-top: 270px;
+}
+
+.phonemenu a {
+	color: #575757;
+	z-index: 1; 
+}
+
+.dropdown {
+	display: inline-block;
+	height: 100%;
+}
+
+.links:hover {
+	text-decoration: none;
+}
+
+.dropbtn:hover {
+	text-decoration: none;
+}
+
+.dropdowncontent:hover a {
+	text-decoration: none;
+}
+
+.dropbtn {
+  	background-color: #FFFFFF;
+  	font-family: Helvetica, sans serif;
+  	text-transform: uppercase;
+  	border: none;
+  	color: #575757;
+  	font-size: 3.5vw;
+  	padding: 0;
+  	letter-spacing: 0.2vw;
+}
+
+.dropbtn:focus {
+	outline: none;
+}
+
+.dropdowncontent {
+	display: none;
+	position: relative;
+	background-color: #FFFFFF;
+	min-width: 5vw;
+	font-size: 2.5vw;
+	letter-spacing: 0.15vw;
+	margin-left: 5px;
+	margin-top: 10px;
+	/*background-color: red;*/
+}
+
+.dropdowncontent a {
+	color: #575757;
+	padding: 12px 16px;
+	display: block;
+	padding-bottom: 5px;
+}
+
+.show {display:block;}
+
+/*START*/
+
+.helmutlangstart {
+	text-align: center;
+	margin-top: 25vw;
+}
+
+.helmutlangstart img {
+	width: 50%;
+	border: 1px solid #707070;
+	margin: 0.9vw;
+	margin-bottom: 8vw;
+}
+
+.helmutlangstart h1 {
+	color: #363636;
+	font-size: 3vw;
+	letter-spacing: 0.07vw;
+	margin-left: 20vw;
+	margin-top: -6vw;
+}
+
+.helmutlangstart a {
+	position: absolute;
+	color: #363636;
+	font-size: 1.7vw;
+	letter-spacing: 0.065vw;
+	margin-left: 4vw;
+	margin-top: -0.7vw;
+}
+
+.offwhitestart {
+	text-align: center;
+	margin-top: 35vw;
+}
+
+.offwhitestart img {
+	width: 75%;
+	border: 1px solid #707070;
+	margin-left: 0vw;
+}
+
+.offwhitestart h1 {
+	position: absolute;
+	color: #363636;
+	font-size: 3vw;
+	letter-spacing: 0.07vw;
+	margin-top: 79vw;
+	margin-left: 12vw;
+}
+
+.offwhitestart a {
+	position: absolute;
+	color: #363636;
+	font-size: 1.7vw;
+	letter-spacing: 0.065vw;
+	margin-top: 84vw;
+	margin-left: 0vw;
+}
+
+.celinestart {
+	text-align: center;
+	margin-top: 300px;
+}
+
+.celinestart h1 {
+	position: absolute;
+	color: #363636;
+	font-size: 3vw;
+	width: 60vw;
+	letter-spacing: 0.07vw;
+	margin-left: 34.5vw;
+	margin-top: 65.5vw;
+}
+
+.celinestart a {
+	position: absolute;
+	color: #363636;
+	font-size: 1.7vw;
+	letter-spacing: 0.065vw;
+	margin-left: 16vw;
+	margin-top: 71vw;
+}
+
+.cstart1 {
+	position: absolute;
+	width: 30%;
+	border: 1px solid #707070;
+	margin-left: -39vw;
+	z-index: 1;
+	margin-top: -20vw;
+}
+
+.cstart2 {
+	position: absolute;
+	width: 65%;
+	border: 1px solid #707070;
+	margin-left: -26vw;
+	margin-top: -8vw;
+}
+
+.footerstart {
+	z-index: 1;
+	margin-top: 170vw;
+}
+
+/*BIIS*/
+
+.biis {
+	margin-left: 11.5vw;
+	width: 85vw;
+	margin-top: 13.5vw;
+	/*background-color: red;*/
+}
+
+.biisimg {
+	width: 105%;
+	border: 1px solid #707070;
+	margin: 1.4vw;
+	display: inline-block;
+}
+
+.biis > a {
+	margin-top: 1.14vw;
+	width: 35%;
+	color: #575757;
+	display: inline-block;
+	padding: 3vw;
+	padding-top: 13vh;
+	margin-top: -12.8vw;
+}
+
+.biisprod {
+	margin-left: -1vw;
+	margin-top: 35vw;
+	width: 50vw;
+	/*background-color: red;*/
+}
+
+.biisprodimg {
+	width: 100%;
+	border: 1px solid #707070;
+	display: block;
+	margin-left: 0vw;
+	margin-bottom: 8vw;
+}
+
+.biisinfo {
+	/*background-color: red;*/
+	margin-left: 24vw;
+	width: 50vw;
+	margin-top: -245vw;
+}
+
+.biisfooter {
+	margin-top: 6.9vw;
+}
+
+.biisonefooter {
+	margin-top: 13vw;
+}
+
+.biistwofooter {
+	margin-top: 13vw;
+}
+
+.biis2info {
+	margin-left: 24vw;
+	width: 50vw;
+	margin-top: -170vw;
+}
+
+.biis2footer {
+	margin-top: 13vw;
+}
+
+.biis3footer {
+	margin-top: 13vw;
+}
+
+/*Celine*/
+
+.celine {
+	margin-left: 12vw;
+	width: 85vw;
+	margin-top: 11vw;
+}
+
+.celineimg {
+	width: 105%;
+	border: 1px solid #707070;
+	margin: 1.4vw;
+	display: inline-block;
+}
+
+.celine > a {
+	margin-top: 1.14vw;
+	width: 35%;
+	color: #575757;
+	display: inline-block;
+	padding: 3vw;
+	padding-top: 10vh;
+	margin-top: -4.25vw;
+}
+
+.celinefooter {
+	margin-top: 9vw;
+	z-index: 1;
+}
+
+.celineprod {
+	margin-left: -1vw;
+	margin-top: 42vw;
+	width: 50vw;
+}
+
+.celineprod1 {
+	margin-top: 35vw;
+}
+
+.celineprodimg {
+	width: 100%;
+	border: 1px solid #707070;
+	margin: 0.69vw;
+	display: block;
+	margin-left: 0vw;
+	margin-bottom: 8vw;
+}
+
+.celine0info {
+	margin-left: 24vw;
+	width: 50vw;
+	margin-top: -260vw;
+}
+
+.celine0info1 {
+	margin-top: -252.5vw;
+}
+
+.celine1info {
+	margin-left: 24vw;
+	width: 50vw;
+	margin-top: -175vw;
+}
+
+.blanketfooter {
+	margin-top: 13vw;
+}
+
+.celine2footer {
+	margin-top: 13vw;
+}
+
+/*Comme Des Garçons*/
+
+.commedesgarcon {
+	margin-top: 19.5vw;
+	width: 85vw;
+	margin-left: 11.5vw;
+	/*background-color: red;*/
+}
+
+.cdgimg {
+	width: 107%;
+	border: 1px solid #707070;
+	margin: 1.4vw;
+	display: inline-block;
+}
+
+.commedesgarcon > a {
+	margin-top: 1.14vw;
+	width: 35%;
+	color: #575757;
+	display: inline-block;
+	padding: 3vw;
+	padding-left: 4.5vw;
+	padding-top: 3.5vw;
+	margin-top: -4.25vw;
+}
+
+.cdgprod {
+	margin-left: -1vw;
+	margin-top: 51vw;
+	width: 50vw;
+}
+
+.cdgprod2 {
+	margin-top: 36vw;
+}
+
+.cdgprod3 {
+	margin-top: 44vw;
+}
+
+.cdgprodimg {
+	width: 100%;
+	border: 1px solid #707070;
+	margin: 0.69vw;
+	display: block;
+	margin-bottom: 8vw;
+}
+
+.cdgfooter {
+	margin-top: 9vw;
+}
+
+.cdgperfumefooter {
+	margin-top: 13vw;
+}
+
+.cdgbagfooter {
+	margin-top: 13vw;
+}
+
+.cdgperfumeinfo {
+	margin-left: 24.5vw;
+	width: 40vw;
+	margin-top: -336vw;
+}
+
+.cdgbaginfo {
+	margin-left: 24.5vw;
+	width: 40vw;
+	margin-top: -246vw;
+}
+
+.cdgbaginfo3 {
+	margin-top: -254vw;
+}
+
+/*Helmut Lang*/
+
+.helmutlang {
+	margin-left: -15vw;
+	width: 90vw;
+	margin-top: 19.5vw;
+	/*background-color: red;*/
+}
+
+.helmutlangimg {
+	width: 105%;
+	border: 1px solid #707070;
+	margin: 1.4vw;
+	display: inline-block;
+}
+
+.helmutlang > a {
+	margin-top: 1.14vw;
+	width: 35%;
+	color: #575757;
+	display: inline-block;
+	padding: 3vw;
+	padding-top: 3.5vw;
+	margin-top: -4.25vw;
+}
+
+.helmutlang > .specialclass {
+	width: 55%;
+	margin-left: 19.7vw;
+	margin-top: 1.04vw;
+}
+
+
+.helmutlangprod {
+	margin-left: -1.5vw;
+	margin-top: 35vw;
+	width: 50vw;
+}
+
+.helmutlangprod3 {
+	margin-top: 42.5vw;
+}
+
+.helmutlangprod5 {
+	margin-top: 50vw;
+}
+
+.helmutlangprodimg {
+	width: 100%;
+	border: 1px solid #707070;
+	margin: 0.69vw;
+	display: block;
+	margin-bottom: 8vw;
+}
+
+.helmutlangfooter {
+	margin-top: 10vw;
+}
+
+.brapurse2footer {
+	margin-top: 13vw;
+}
+
+.brapurse1footer {
+	margin-top: 13vw;
+}
+
+.brapurse1info {
+	margin-left: 24vw;
+	width: 40vw;
+	margin-top: -233vw;
+}
+
+.brapurse2info {
+	margin-left: 24vw;
+	width: 40vw;
+	margin-top: -303.5vw;
+}
+
+.watchinfo {
+	margin-left: 24vw;
+	width: 40vw;
+	margin-top: -169vw;
+	/*background-color: red;*/
+}
+
+.hlbaginfo {
+	margin-left: 24vw;
+	width: 40vw;
+	margin-top: -151vw;
+}
+
+.hlbagfooter {
+	z-index: 1;
+	margin-top: 13vw;
+}
+
+.watchfooter {
+	z-index: 1;
+	margin-top: 13vw;
+}
+
+
+/*Jil Sanders*/
+
+.jilsanders {
+	margin-left: -13vw;
+	width: 85vw;
+	margin-top: 17vw;
+}
+
+.jilsandersimg {
+	width: 105%;
+	border: 1px solid #707070;
+	margin: 1.4vw;
+	display: inline-block;
+}
+
+.jilsanders > a {
+	margin-top: 1.14vw;
+	width: 35%;
+	color: #575757;
+	display: inline-block;
+	padding: 3vw;
+	padding-top: 13vh;
+	margin-top: -12.8vw;
+}
+
+.jilsandersfooter {
+	margin-top: 11vw;
+}
+
+.jilsandersprod {
+	margin-left: -1.5vw;
+	margin-top: 35vw;
+	width: 50vw;
+}
+
+.jilsandersprodimg {
+	width: 100%;
+	border: 1px solid #707070;
+	margin: 0.69vw;
+	display: block;
+	margin-bottom: 8vw;
+}
+
+.jilsandersinfo {
+	margin-left: 24vw;
+	width: 40vw;
+	margin-top: -236vw;
+}
+
+.jilsandersbagfooter {
+	margin-top: 13vw;
+}
+
+/*Maison Margiela*/
+
+.margiela {
+	margin-left: -11.5vw;
+	width: 85vw;
+	margin-top: 16.5vw;
+}
+
+.margielaimg {
+	width: 105%;
+	border: 1px solid #707070;
+	margin: 1.4vw;
+	display: inline-block;
+}
+
+.margiela > a {
+	margin-top: 1.14vw;
+	width: 35%;
+	color: #575757;
+	display: inline-block;
+	padding: 3vw;
+	padding-top: 13vh;
+	margin-top: -12.8vw;
+}
+
+.margielaprod {
+	margin-left: -1.5vw;
+	margin-top: 51vw;
+	width: 50vw;
+}
+
+.margielaprod2 {
+	margin-top: 44vw;
+}
+
+.margielaprod8 {
+	margin-top: 58vw;
+}
+
+.margielaprodimg {
+	width: 100%;
+	border: 1px solid #707070;
+	margin: 0.69vw;
+	display: block;
+	margin-bottom: 8vw;
+}
+
+.margiela1info {
+	margin-left: 24vw;
+	width: 40vw;
+	margin-top: -252vw;
+}
+
+.margiela1info2 {
+	margin-top: -245vw;
+}
+
+.margiela1info8 {
+	margin-top: -259vw;
+}
+
+.margiela2info {
+	margin-left: 24vw;
+	width: 40vw;
+	margin-top: -180vw;
+}
+
+.margiela7info {
+	margin-left: 24vw;
+	width: 40vw;
+	margin-top: -202vw;
+}
+
+.margiela0footer {
+	margin-top: 13vw;
+}
+
+.margiela1footer {
+	margin-top: 13vw;
+}
+
+.margiela3footer {
+	margin-top: 13vw;
+}
+
+.margiela5footer {
+	margin-top: 13vw;
+}
+
+.margiela9footer {
+	margin-top: 13vw;
+	z-index: 1;
+}
+
+.margiela10footer {
+	margin-top: 13vw;
+}
+
+/*Off-White*/
+
+.offwhite {
+	margin-top: 16.5vw;
+	width: 85vw;
+	margin-left: 12.5vw;
+}
+
+.offwhiteimg {
+	width: 105%;
+	border: 1px solid #707070;
+	margin: 1.4vw;
+	display: inline-block;
+}
+
+.offwhite > a {
+	margin-top: 1.14vw;
+	width: 35%;
+	color: #575757;
+	display: inline-block;
+	padding: 3vw;
+	padding-top: 13vh;
+	margin-top: -12.8vw;
+}
+
+.offwhitefooter {
+	margin-top: 11vw;
+}
+
+.offwhiteprod {
+	margin-left: -1.5vw;
+	margin-top: 35vw;
+	width: 50vw;
+}
+
+.offwhiteprod3 {
+	margin-top: 42vw;
+}
+
+.offwhiteprodimg {
+	width: 100%;
+	border: 1px solid #707070;
+	margin: 0.69vw;
+	display: block;
+	margin-bottom: 8vw;
+}
+
+.offwhite0info {
+	margin-left: 24vw;
+	width: 60vw;
+	margin-top: -223vw;
+}
+
+.offwhite0info3 {
+	margin-top: -230vw;
+}
+
+.offwhite0footer {
+	margin-top: 13vw;
+}
+
+.offwhite2info {
+	margin-left: 24vw;
+	width: 60vw;
+	margin-top: -155vw;
+}
+
+.offwhite2footer {
+	z-index: 1;
+	margin-top: 13vw;
+}
+
+/*Vetements*/
+
+.vetements {
+	margin-left: 12vw;
+	width: 85vw;
+	margin-top: 16.5vw;
+}
+
+.vetementsimg {
+	width: 105%;
+	border: 1px solid #707070;
+	margin: 1.4vw;
+	display: inline-block;
+}
+
+.vetements > a {
+	margin-top: 1.14vw;
+	width: 35%;
+	color: #575757;
+	display: inline-block;
+	padding: 3vw;
+	padding-top: 13vh;
+	margin-top: -12.8vw;
+}
+
+.vetementsfooter {
+	margin-top: 6.8vw;
+}
+
+.vetementsprod {
+	margin-left: -1.5vw;
+	margin-top: 43vw;
+	width: 50vw;
+}
+
+.vetementsprod5 {
+	margin-top: 51vw;
+}
+
+.vetementsprodimg {
+	width: 100%;
+	border: 1px solid #707070;
+	margin: 0.69vw;
+	display: block;
+	margin-bottom: 8vw;
+}
+
+.vetements0info {
+	margin-left: 24vw;
+	width: 40vw;
+	margin-top: -253vw;
+}
+
+.vetements0info5 {
+	margin-top: -261vw;
+}
+
+.vetements2info {
+	margin-left: 24vw;
+	width: 40vw;
+	margin-top: -328vw;
+}
+
+.vetements0footer {
+	margin-top: 13vw;
+}
+
+.vetements2footer {
+	margin-top: 13vw;
+}
+
+
+/*applies to all*/
+
+.caption {
+	padding-left: 1.35vw;
+	font-weight: bold;
+	font-size: 2vw;
+	letter-spacing: 0.12vw;
+	margin-top: 0.14vw;
+}
+
+.price {
+	font-size: 1.9vw;
+	padding-left: 1.35vw;
+	margin-top: -1.14vw;
+}
+
+.link {
+	color: #575757;
+	font-size: 1.8vw;
+	letter-spacing: 0.2vw;
+	}
+
+.title {
+	font-weight: bold;
+	font-size: 6vw;
+	color: #575757;
+	letter-spacing: 0.15vw;
+	margin-top: 7vw;
+}
+
+.composition {
+	color: #575757;
+	font-size: 1.8vw;
+	letter-spacing: 0.1vw;
+	margin-top: 220vw;
+	width: 30vw;
+}
+
+.composition2 {
+	margin-top: 145vw;
+}
+
+.celine0composition {
+	margin-top: 228vw;
+}
+
+.celine3composition {
+	margin-top: 150vw;
+}
+
+.cdg0composition {
+	margin-top: 296vw;
+}
+
+.helmut0composition {
+	margin-top: 208vw;
+}
+
+.helmut2composition {
+	margin-top: 278vw;
+}
+
+.helmut3composition {
+	margin-top: 137vw;
+}
+
+.helmut5composition {
+	margin-top: 112vw;
+}
+
+.jil0composition {
+	margin-top: 211vw;
+}
+
+.margiela0composition {
+	margin-top: 211vw;
+}
+
+.margiela7composition{
+	margin-top: 161vw;
+} 
+
+.margiela9composition {
+	margin-top: 139vw;
+}
+
+.offwhite0composition {
+	margin-top: 198vw;
+}
+
+.offwhite2composition {
+	margin-top: 130vw;
+}
+
+.vetements2composition {
+	margin-top: 295vw;
+}
+
+.description {
+	color: #575757;
+	font-size: 1.8vw;
+	letter-spacing: 0.13vw;
+	text-transform: none;
+	margin-top: 8vw;
+	margin-bottom: 8vw;
+	width: 30vw;
+}
+
+.pricetext {
+	color: #575757;
+	font-size: 2.3vw;
+	font-weight: bold;
+	letter-spacing: 0.13vw;
+}
+
+.pricenumber {
+	color: #575757;
+	font-size: 2.1vw;
+	margin-top: -1.6vw;	
+}
+
+.fakelink {
+	color: #575757;
+}
+
+.addtobag {
+	padding: .8vw;
+	margin-top: 4.5vw;
+	font-size: 2vw;
+	letter-spacing: 0.1vw;
+	outline: none;
+	color: #575757;
+	background-color: #F5F5F5;
+	outline: none;
+	border: 0.5px solid #575757;
+}
+
+.addtobag a{
+	color: #575757;
+}
+
+.addtobag:hover {
+	background-color: #575757;
+	color: #F5F5F5;
+	cursor: pointer;
+}
+
+.addtobag:hover a {
+	color: #F5F5F5;
+}
+
+footer {
+	z-index: -1;
+	position: relative;
+	margin-top: 1080px;
+	color: #575757;
+	font-size: 1.2vw;
+	letter-spacing: 0.05vw;
+}
+
+footer a {
+	color: #575757;
+	padding-right: 3vw;
+	padding-left: 3vw;
+}
+
+.footermenu {
+	width: 100%;
+	height: 5vw;
+	background-color: white;
+	padding-top: 4vw;
+	text-align: center
+}
+
+footer p {
+	text-align: center;
+	margin-top: 0.6vw;
+	padding: 4vw;
+}
+
+.fail {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.failed {
+	color: #575757;
+}
+
+.failedrequest {
+	font-weight: bold;
+	font-size: 5vw;
+	letter-spacing: 0.15vw;
+}
+
+.backtohomepage {
+	font-size: 3vw;
+	padding: 1.5vw;
+	color: #575757;
+	letter-spacing: 0.05vw;
+	border: 0.07vw solid #575757;
+}
+
+.backtohomepage:hover {
+	background-color: #575757;
+	color: #F5F5F5;
+}
+
+}	

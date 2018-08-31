@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://use.typekit.net/zsi1mos.css">
+</head>
+<body>
+
+<div class="content2">
+<p class="question"><a href="end.html">Your response that the fat man should not be tortured is in direct contradiction with your earlier claim that torture is sometimes necessary.</a>
+<br>
+<br>
+It is often thought to be a good thing if one's moral choices are governed by a small number of consistently applied moral principles. If this is not the case, then there is the worry that moral choices are essentially arbitrary - just a matter of intuition or making it up as you go along.
+<br>
+<br>
+You might want to spend some time examining how you think about morality.
+<p class="question disappear">Press anywhere and see what happens.</p>
+</p>
+</div>
+
+
+
+<script src="timer.js"></script>
+<script>
+	function randomInt(low, high){
+	var random = parseInt(Math.random()*(high-low) + low);
+	return random;
+}
+
+function randomInt(low, high){
+	var random = parseInt(Math.random()*(high-low) + low);
+	return random;
+}
+
+var array = [];
+
+document.onmousedown = function(event){
+	var letter = document.createElement("span");
+	letter.velocity = 1;
+	letter.style.top = event.y + "px";
+	letter.style.left = event.x + "px";
+	letter.style.fontSize = randomInt(10,50) + "px"; 
+	letter.style.transform = "rotate(" + randomInt(-70,70) + "deg)";
+	letter.innerHTML = "Make up your mind!"
+	document.body.appendChild(letter);
+	array.push(letter);
+}
+
+function loop (){
+	var counter = 0;
+	while(counter < array.length){
+		var letter = array[counter];
+		var y = parseInt(letter.style.top);
+		y = y + letter.velocity;
+		letter.velocity = letter.velocity + 0.1;
+		if(y > window.innerHeight+300){
+			y = window.innerHeigh+300;
+			letter.velocity = -letter.velocity*0;
+		}
+		letter.style.top = y + "px";
+		counter = counter + 1
+	}
+}
+
+setInterval(loop, 1000/60)
+</script>
+<script src="timer.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HELMUT LANG</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" type="text/css" href="collection.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+
+<header>
+	<small>free standard shipping on orders over $500</small>
+</header>
+
+<!-- menu -->
+<div class="menu">
+<a href="feed.html" class="links">Collection</a>
+<p>–</p>
+<div class="dropdown">
+<button class="dropbtn">Brands</button>
+  	<div id="mydropdown" class="dropdowncontent">
+		<a href="biis.html">biis</a>
+		<a href="celine.html">céline</a>
+		<a href="commedesgarcon.html">comme des garçons</a>
+		<a href="helmutlang.html">helmut lang</a>
+		<a href="jilsanders.html">jil sander</a>
+		<a href="margiela.html">maison margiela</a>
+		<a href="offwhite.html">off-white</a>
+		<a href="vetements.html">vetements</a>
+	</div>
+</div><br>
+<div class="menubottom transform">
+<p>–</p>
+<a class="links" href="fail.html" >Bag (0)</a><br><br>
+<a class="links" href="fail.html" >Account</a><br><br>
+<a class="links" href="fail.html" >Search</a>
+</div>
+</div>
+
+<article class="menubar">
+    <section>
+        <div class="rect"><img src="images/icon.png" class="icon" id="open-toggle">
+        <div class="phonemenu">
+        	<a href="feed.html" class="links">Collection</a>
+			<p>–</p>
+			<div class="dropdown">
+			<button class="dropbtn">Brands</button>
+  			<div id="mydropdown" class="dropdowncontent">
+				<a href="biis.html">biis</a>
+				<a href="celine.html">céline</a>
+				<a href="commedesgarcon.html">comme des garçons</a>
+				<a href="helmutlang.html">helmut lang</a>
+				<a href="jilsanders.html">jil sander</a>
+				<a href="margiela.html">maison margiela</a>
+				<a href="offwhite.html">off-white</a>
+				<a href="vetements.html">vetements</a>
+			</div>
+			</div><br>
+			<div class="menubottom transform">
+			<p>–</p>
+				<a class="links" href="fail.html" >Bag (0)</a><br><br>
+				<a class="links" href="fail.html" >Account</a><br><br>
+				<a class="links" href="fail.html" >Search</a>
+			</div>
+        </div>
+        </div>
+    </section>
+</article>
+<!-- menu end -->
+
+<!-- content -->
+<div class="helmutlang"></div>
+
+<!-- content end -->
+
+<!-- footer -->
+<footer class="helmutlangfooter">
+	<div class="footermenu">
+		<a href="fail.html">customer care</a>
+		<a href="fail.html">legal area</a>
+		<a href="fail.html">press</a>
+		<a href="fail.html">shipping and handling</a>
+		<a href="fail.html">newsletter</a>
+	</div>
+	<p>copyright © 2018 out of the ordinary – all rights reserved</p>
+</footer>
+
+<script src="dropdown.js"></script>
+<script type="text/javascript">
+
+var myurl = "https://carolaguivel.github.io/observation/collection.json";
+
+
+$.getJSON(myurl, function(data){
+		
+	for (var i = 0; i < data.HelmutLang.length; i++) {
+
+		if($.isArray(data.HelmutLang[i].images[0])){
+
+
+			$(".helmutlang").append("<a class='specialclass' href=" + data.HelmutLang[i].link + ">" + "<img class='helmutlangimg' src=" + data.HelmutLang[i].url + "/" + data.HelmutLang[i].images[0][0] + "><p class='caption'>" + data.HelmutLang[i].title + "</p><p class='price'>" + data.HelmutLang[i].retail + "</p></a>")
+		}else{
+			$(".helmutlang").append("<a href=" + data.HelmutLang[i].link + ">" + "<img class='helmutlangimg' src=" + data.HelmutLang[i].url + "/" + data.HelmutLang[i].images[0] + "><p class='caption'>" + data.HelmutLang[i].title + "</p><p class='price'>" + data.HelmutLang[i].retail + "</p></a>")
+		}
+
+	}
+
+
+});
+
+
+
+
+</script>
+</body>
+</html>

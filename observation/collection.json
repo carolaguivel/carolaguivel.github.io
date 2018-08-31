@@ -1,0 +1,861 @@
+{
+	"Biis" : [
+		{
+			"title" : "Safety Pin",
+			"collection" : "Fall/Winter 2016",
+			"composition" : "100% Sterling Silver",
+			"description" : "The classic punk accessory.",
+			"original" : "$0.05",
+			"retail" : "$146.00",
+			"link" : "biis0.html",
+			"fakelink" : "fakebiis0.html",
+			"url" : "brands/biis",
+			"images" : [ "Biis1.jpg", "Biis2.jpg", "Biis3.jpg" ],
+			"fakeurl" : "brands/biis/fake",
+			"fakeimages" : [ "fakebiis1.png", "fakebiis2.png", "fakebiis3.png" ] 
+		},
+
+		{
+			"title" : "Cent",
+			"collection" : "Fall/Winter 2016",
+			"composition" : "100% Sterling Silver",
+			"description" : "The most expensive euro cent in the world.",
+			"original" : "$0.01",
+			"retail" : "$114.00",
+			"link" : "biis1.html",
+			"fakelink" : "fakebiis1.html",
+			"url" : "brands/biis",
+			"images" : [ "Biis4.jpg", "Biis5.jpg", "Biis6.jpg" ],
+			"fakeurl" : "brands/biis/fake",
+			"fakeimages" : [ "fakebiis4.png", "fakebiis5.png", "fakebiis6.png" ] 
+		},
+
+		{
+			"title" : "Alloy Loop",
+			"collection" : "Fall/Winter 2016",
+			"composition" : "100% Sterling Silver",
+			"description" : "It's a design piece. Not safe for D.I.Y.",
+			"original" : "$0.51",
+			"retail" : "$122.00",
+			"link" : "biis2.html",
+			"fakelink" : "fakebiis2.html",
+			"url" : "brands/biis",
+			"images" : [ "Biis7.jpg", "Biis8.jpg", "Biis9.jpg" ],
+			"fakeurl" : "brands/biis/fake",
+			"fakeimages" : [ "fakebiis7.png", "fakebiis8.png", "fakebiis9.png" ]
+		},
+
+		{
+			"title" : "Silver Tab",
+			"collection" : "Fall/Winter 2016",
+			"composition" : "100% Sterling Silver",
+			"description" : "The tab is a pendant, and should look like fake punk.",
+			"original" : "$2.59",
+			"retail" : "$97.00",
+			"link" : "biis4.html",
+			"fakelink" : "fakebiis4.html",
+			"url" : "brands/biis",
+			"images" : [ "Biis12.jpg", "Biis13.jpg" ],
+			"fakeurl" : "brands/biis/fake",
+			"fakeimages" : [ "fakebiis12.png", "fakebiis13.png" ]
+		},
+
+		{
+			"title" : "Red Tab",
+			"collection" : "Fall/Winter 2016",
+			"composition" : "100% Sterling Silver Red Plated",
+			"description" : "The tab is a pendant, and should look like fake punk.",
+			"original" : "$2.59",
+			"retail" : "$130.00",
+			"link" : "biis5.html",
+			"fakelink" : "fakebiis5.html",
+			"url" : "brands/biis",
+			"images" : [ "Biis14.jpg", "Biis15.jpg" ], 
+			"fakeurl" : "brands/biis/fake",
+			"fakeimages" : [ "fakebiis12.png", "fakebiis14.png" ]
+		},
+
+		{
+			"title" : "Green Tab",
+			"collection" : "Fall/Winter 2016",
+			"composition" : "100% Sterling Silver Green Plated",
+			"description" : "The tab is a pendant, and should look like fake punk.",
+			"original" : "$2.59",
+			"retail" : "$97.00",
+			"link" : "biis6.html",
+			"fakelink" : "fakebiis6.html",
+			"url" : "brands/biis",
+			"images" : [ "Biis16.jpg", "Biis17.jpg" ],
+			"fakeurl" : "brands/biis/fake",
+			"fakeimages" : [ "fakebiis12.png", "fakebiis15.png" ]
+		},
+
+		{
+			"title" : "Fake Tool",
+			"collection" : "Fall/Winter 2016",
+			"composition" : "100% Sterling Silver",
+			"description" : "This is a fake tool. It doesn't work with the iPhone.",
+			"original" : "$0.05",
+			"retail" : "$73.00",
+			"link" : "biis3.html",
+			"fakelink" : "fakebiis3.html",
+			"url" : "brands/biis",
+			"images" : [ "Biis10.jpg", "Biis11.jpg" ],
+			"fakeurl" : "brands/biis/fake",
+			"fakeimages" : [ "fakebiis10.png", "fakebiis11.png", "fakebiis16.png" ]
+		}
+	],
+
+	"Celine" : [
+		{
+			"title" : "Bangers Blanket",
+			"collection" : "Fall/Winter 2017",
+			"composition" : "100% Wool",
+			"description" : "A blanket that's not just stylish but also keeps you warm.",
+			"original" : "$14.99",
+			"retail" : "$800.00",
+			"link" : "celine0.html",
+			"fakelink" : "fakeceline0.html",
+			"url" : "brands/celine",
+			"images" : [ "Celine1.jpg", "Celine2.jpg", "Celine3.jpg" ],
+			"fakeurl" : "brands/celine/fake",
+			"fakeimages" : [ "fakeceline1.png", "fakeceline2.png", "fakeceline3.png" ] 
+		},
+		
+		{
+			"title" : "Jam Blanket",
+			"collection" : "Fall/Winter 2017",
+			"composition" : "100% Wool",
+			"description" : "A blanket that's not just stylish but also keeps you warm.",
+			"original" : "$14.99",
+			"retail" : "$800.00",
+			"link" : "celine1.html",
+			"fakelink" : "fakeceline1.html",
+			"url" : "brands/celine",
+			"images" : [ "Celine4.jpg", "Celine5.jpg", "Celine6.png" ],
+			"fakeurl" : "brands/celine/fake",
+			"fakeimages" : [ "fakeceline4.png", "fakeceline5.png", "fakeceline6.png" ] 
+		},
+
+		{
+			"title" : "Green Blanket",
+			"collection" : "Fall/Winter 2017",
+			"composition" : "100% Wool",
+			"description" : "A blanket that's not just stylish but also keeps you warm.",
+			"original" : "$14.99",
+			"retail" : "$800.00",
+			"link" : "celine2.html",
+			"fakelink" : "fakeceline2.html",
+			"url" : "brands/celine",
+			"images" : [ "celine7.jpg", "celine8.jpg", "celine9.jpg" ],
+			"fakeurl" : "brands/celine/fake",
+			"fakeimages" : [ "fakeceline1.png", "fakeceline2.png", "fakeceline3.png" ] 
+		},
+
+		{
+			"title" : "Plastic Bag",
+			"collection" : "Spring/Summer 2018", 
+			"composition" : "100% PVC",
+			"description" : "Everyone in the grocery store will be jealous when they see you with this exclusive plastic bag.",
+			"original" : "$0.02",
+			"retail" : "$590.00",
+			"link" : "celine3.html",
+			"fakelink" : "fakeceline3.html",
+			"url" : "brands/celine",
+			"images" : [ "Celine10.png", "Celine11.png" ],
+			"fakeurl" : "brands/celine/fake",
+			"fakeimages" : [ "fakeceline7.png", "fakeceline8.png" ] 
+		}
+	],
+
+	"CommedesGarçon" : [
+		{
+			"title" : "Concrete Eau de Parfum",
+			"collection" : "Spring/Summer 2018",
+			"composition" : "100% ORGANIC",
+			"description" : "A concrete solution to your smell problem.",
+			"original" : "$8.59",
+			"retail" : "$211.00",
+			"link" : "commedesgarcon0.html",
+			"fakelink" : "fakecdg0.html",
+			"url" : "brands/commedesgarcon",
+			"images" : [ "CDG1.JPG", "CDG2.JPG", "CDG3.JPG", "CDG4.JPG" ],
+			"fakeurl" : "brands/commedesgarcon/fake",
+			"fakeimages" : [ "fakecdg1.png", "fakecdg2.png", "fakecdg3.png", "fakecdg4.png" ] 
+		},
+
+		{
+			"title" : "Comme 3 Eau de Toilette",
+			"collection" : "Spring/Summer 2018",
+			"composition" : "100% Ogranic",
+			"description" : "A stress reliever that also smells good.",
+			"original" : "$4.97",
+			"retail" : "$143.00",
+			"link" : "commedesgarcon1.html",
+			"fakelink" : "fakecdg1.html",
+			"url" : "brands/commedesgarcon",
+			"images" : [ ["CDG5.jpg", "specialclass"], "CDG6.jpg", "CDG7.jpg", "CDG8.jpg" ],
+			"fakeurl" : "brands/commedesgarcon/fake",
+			"fakeimages" : [ "fakecdg5.png", "fakecdg6.png", "fakecdg7.png", "fakecdg8.png" ] 
+		},
+
+		{
+			"title" : "Shirt Tote",
+			"collection" : "Spring/Summer 2018",
+			"composition" : "100% PVC",
+			"description" : "The classic brown lunch bag upgraded into a tote that can be used for grocery shopping and more.",
+			"original" : "$0.02",
+			"retail" : "$158.00",
+			"link" : "commedesgarcon2.html",
+			"fakelink" : "fakecdg2.html",
+			"url" : "brands/commedesgarcon",
+			"images" : [ "CDG9.JPG", "CDG10.JPG", "CDG11.JPG" ],
+			"fakeurl" : "brands/commedesgarcon/fake",
+			"fakeimages" : [ "fakecdg9.png", "fakecdg10.png", "fakecdg11.png" ] 
+		},
+
+		{
+			"title" : "Shirt Shopper",
+			"collection" : "Spring/Summer 2018",
+			"composition" : "100% PVC",
+			"description" : "A colorful plastic shopping bag that is perfect for grocerie shopping, clothes shopping and more.",
+			"original" : "$0.02",
+			"retail" : "$120.00",
+			"link" : "commedesgarcon3.html",
+			"fakelink" : "fakecdg3.html",
+			"url" : "brands/commedesgarcon",
+			"images" : [ "CDG12.JPG", "CDG13.JPG", "CDG14.JPG" ],
+			"fakeurl" : "brands/commedesgarcon/fake",
+			"fakeimages" : [ "fakecdg12.png", "fakecdg13.png", "fakecdg14.png" ] 
+		},
+
+		{
+			"title" : "Shirt Shopper",
+			"collection" : "Spring/Summer 2018",
+			"composition" : "100% PVC",
+			"description" : "A colorful plastic shopping bag that is perfect for grocerie shopping, clothes shopping and more.",
+			"original" : "$0.02",
+			"retail" : "$120.00",
+			"link" : "commedesgarcon4.html",
+			"fakelink" : "fakecdg4.html",
+			"url" : "brands/commedesgarcon",
+			"images" : [ "CDG15.JPG", "CDG16.JPG", "CDG17.JPG" ],
+			"fakeurl" : "brands/commedesgarcon/fake",
+			"fakeimages" : [ "fakecdg12.png", "fakecdg13.png", "fakecdg14.png" ] 
+		}
+	],
+
+	"HelmutLang" : [
+		{
+			"title" : "Bra Purse",
+			"collection" : "Spring/Summer 2018",
+			"composition" : "100% Cow Leather",
+			"description" : "Bra style handbag. Its timeless design makes it functional as both bra and purse.",
+			"original" : "$45.00",
+			"retail" : "$635.00",
+			"link" : "helmutlang0.html",
+			"fakelink" : "fakehelmut0.html",
+			"url" : "brands/helmutlang",
+			"images" : [ "HelmutLang1.jpeg", "HelmutLang2.jpeg", "HelmutLang3.jpeg" ],
+			"fakeurl" : "brands/helmutlang/fake",
+			"fakeimages" : [ "fakehelmut1.png", "fakehelmut2.png", "fakehelmut3.png" ] 
+		},
+
+		{
+			"title" : "Bra Purse",
+			"collection" : "Spring/Summer 2018",
+			"composition" : "100% Cow Leather",
+			"description" : "Bra style handbag. Its timeless design makes it functional as both bra and purse.",
+			"original" : "$45.00",
+			"retail" : "$635.00",
+			"link" : "helmutlang1.html",
+			"fakelink" : "fakehelmut1.html",
+			"url" : "brands/helmutlang",
+			"images" : [ "HelmutLang4.jpeg", "HelmutLang5.jpeg", "HelmutLang6.jpeg" ],
+			"fakeurl" : "brands/helmutlang/fake",
+			"fakeimages" : [ "fakehelmut4.png", "fakehelmut5.png", "fakehelmut6.png" ] 
+		},
+
+		{
+			"title" : "Bra Purse",
+			"collection" : "Spring/Summer 2018",
+			"composition" : "100% Cow Leather",
+			"description" : "Bra style handbag. Its timeless design makes it functional as both bra and purse.",
+			"original" : "$45.00",
+			"retail" : "$635.00",
+			"link" : "helmutlang2.html",
+			"fakelink" : "fakehelmut2.html",
+			"url" : "brands/helmutlang",
+			"images" : [ "HelmutLang7.jpeg", "HelmutLang8.jpeg", "HelmutLang9.jpeg", "HelmutLang10.jpeg" ],
+			"fakeurl" : "brands/helmutlang/fake",
+			"fakeimages" : [ "fakehelmut7.png", "fakehelmut8.png", "fakehelmut9.png", "fakehelmut10.png" ] 
+		},
+
+		{
+			"title" : "Faceless Watch",
+			"collection" : "Spring/Summer 2018",
+			"composition" : "100% Stainless Steel",
+			"description" : "Even though this watch doesn't tell you what time it is, it's still a must have.",
+			"original" : "$25.00",
+			"retail" : "$220.00",
+			"link" : "helmutlang3.html",
+			"fakelink" : "fakehelmut3.html",
+			"url" : "brands/helmutlang",
+			"images" : [ "HelmutLang11.jpeg", "HelmutLang12.jpeg" ],
+			"fakeurl" : "brands/helmutlang/fake",
+			"fakeimages" : [ "fakehelmut11.png", "fakehelmut12.png" ] 
+		},
+
+		{
+			"title" : "Faceless Watch",
+			"collection" : "Spring/Summer 2018",
+			"composition" : "100% Stainless Steel",
+			"description" : "Even though this watch doesn't tell you what time it is, it's still a must have.",
+			"original" : "$25.00",
+			"retail" : "$220.00",
+			"link" : "helmutlang4.html",
+			"fakelink" : "fakehelmut4.html",
+			"url" : "brands/helmutlang",
+			"images" : [ "HelmutLang13.jpeg", "HelmutLang14.jpeg" ],
+			"fakeurl" : "brands/helmutlang/fake",
+			"fakeimages" : [ "fakehelmut13.png", "fakehelmut14.png" ] 
+		},
+
+		{
+			"title" : "PVC Plastic Bag",
+			"collection" : "Spring/Summer 2018",
+			"composition" : "100% PVC",
+			"description" : "Go grocery shopping in style with this reusable plastic bag. ",
+			"original" : "$0.02",
+			"retail" : "$160.00",
+			"link" : "helmutlang5.html",
+			"fakelink" : "fakehelmut5.html",
+			"url" : "brands/helmutlang",
+			"images" : [ ["HelmutLang15.jpg", "specialclass"], "HelmutLang16.png" ],
+			"fakeurl" : "brands/helmutlang/fake",
+			"fakeimages" : [ "fakehelmut15.png", "fakehelmut16.png" ] 
+		}
+	],
+
+	"JilSanders" : [
+		{
+			"title" : "Tote",
+			"collection" : "Spring/Summer 2018",
+			"composition" : "100% PVC",
+			"description" : "The most stylish plastic bag out there.",
+			"original" : "$0.02",
+			"retail" : "$135.00",
+			"link" : "jilsanders0.html",
+			"fakelink" : "fakejil0.html",
+			"url" : "brands/jilsanders",
+			"images" : [ "JilSanders1.jpg", "JilSanders2.jpg", "JilSanders3.jpg" ],
+			"fakeurl" : "brands/jilsanders/fake",
+			"fakeimages" : [ "fakejil1.png", "fakejil2.png", "fakejil3.png" ] 
+
+		},
+
+		{
+			"title" : "Tote",
+			"collection" : "Spring/Summer 2018",
+			"composition" : "100% PVC",
+			"description" : "The most stylish plastic bag out there.",
+			"original" : "$0.02",
+			"retail" : "$245.00",
+			"link" : "jilsanders1.html",
+			"fakelink" : "fakejil1.html",
+			"url" : "brands/jilsanders",
+			"images" : [ "JilSanders4.jpg", "JilSanders5.jpg", "JilSanders6.jpg" ],
+			"fakeurl" : "brands/jilsanders/fake",
+			"fakeimages" : [ "fakejil1.png", "fakejil2.png", "fakejil3.png" ] 
+		},
+
+		{
+			"title" : "Tote",
+			"collection" : "Spring/Summer 2018",
+			"composition" : "100% PVC",
+			"description" : "The most stylish plastic bag out there.",
+			"original" : "$0.02",
+			"retail" : "$260.00",
+			"link" : "jilsanders2.html",
+			"fakelink" : "fakejil2.html",
+			"url" : "brands/jilsanders",
+			"images" : [ "JilSanders7.jpg", "JilSanders8.jpg", "JilSanders9.jpg" ],
+			"fakeurl" : "brands/jilsanders/fake",
+			"fakeimages" : [ "fakejil4.png", "fakejil5.png", "fakejil6.png" ] 
+		},
+
+		{
+			"title" : "Tote",
+			"collection" : "Fall/Winter 2018",
+			"composition" : "100% PVC",
+			"description" : "The most stylish plastic bag out there.",
+			"original" : "$4.95",
+			"retail" : "$970.00",
+			"link" : "jilsanders3.html",
+			"fakelink" : "fakejil3.html",
+			"url" : "brands/jilsanders",
+			"images" : [ "JilSanders10.jpg", "JilSanders11.jpg", "JilSanders12.jpg" ],
+			"fakeurl" : "brands/jilsanders/fake",
+			"fakeimages" : [ "fakejil7.png", "fakejil8.png", "fakejil9.png" ] 
+		},
+
+		{
+			"title" : "Tote",
+			"collection" : "Fall/Winter 2018",
+			"composition" : "100% PVC",
+			"description" : "The most stylish plastic bag out there.",
+			"original" : "$4.95",
+			"retail" : "$970.00",
+			"link" : "jilsanders4.html",
+			"fakelink" : "fakejil4.html",
+			"url" : "brands/jilsanders",
+			"images" : [ "JilSanders13.jpg", "JilSanders14.jpg", "JilSanders15.jpg" ],
+			"fakeurl" : "brands/jilsanders/fake",
+			"fakeimages" : [ "fakejil7.png", "fakejil8.png", "fakejil9.png" ] 
+		}
+	],
+
+	"MaisonMargiela" : [
+		{
+			"title" : "Priority Luggage Tag",
+			"collection" : "Spring/Summer 2018",
+			"composition" : "100% Bovine Leather",
+			"description" : "Luxury airport luggage tag in printed calfskin.",
+			"original" : "$8.99",
+			"retail" : "$220.00",
+			"link" : "margiela0.html",
+			"fakelink" : "fakemargiela0.html",
+			"url" : "brands/margiela",
+			"images" : [ "Margiela1.jpg", "Margiela2.jpg", "Margiela3.jpg" ],
+			"fakeurl" : "brands/margiela/fake",
+			"fakeimages" : [ "fakemargiela1.png", "fakemargiela2.png", "fakemargiela3.png" ] 
+		},
+
+		{
+			"title" : "Carry On Luggage Tag",
+			"collection" : "Spring/Summer 2018",
+			"composition" : "100% Bovine Leather",
+			"description" : "Calfskin printed luggage tag with Maison Margiela numerical logo.",
+			"original" : "$8.99",
+			"retail" : "$195.00",
+			"link" : "margiela1.html",
+			"fakelink" : "fakemargiela1.html",
+			"url" : "brands/margiela",
+			"images" : [ "Margiela4.jpg", "Margiela5.jpg", "Margiela6.jpg" ],
+			"fakeurl" : "brands/margiela/fake",
+			"fakeimages" : [ "fakemargiela4.png", "fakemargiela5.png", "fakemargiela6.png" ] 
+		},
+
+		{
+			"title" : "Approved Tag",
+			"collection" : "Spring/Summer 2018",
+			"composition" : "100% Bovine Leather",
+			"description" : "Luxury airport luggage tag in printed calfskin with Maison Margiela numerical logo.",
+			"original" : "$8.99",
+			"retail" : "$220.00",
+			"link" : "margiela2.html",
+			"fakelink" : "fakemargiela2.html",
+			"url" : "brands/margiela",
+			"images" : [ "Margiela7.jpg", "Margiela8.jpg", "Margiela9.jpg" ],
+			"fakeurl" : "brands/margiela/fake",
+			"fakeimages" : [ "fakemargiela7.png", "fakemargiela8.png", "fakemargiela9.png" ] 
+		},
+
+		{
+			"title" : "Seatbelt Belt",
+			"collection" : "Spring/Summer 2018",
+			"composition" : "100% Polyester, Bovine Leather, Iron",
+			"description" : "Nylon belt with leather details and a seatbelt-style buckle. This belt is adjustable and features a reflective finish on the buckle.",
+			"original" : "$17.99",
+			"retail" : "$435.00",
+			"link" : "margiela3.html",
+			"fakelink" : "fakemargiela3.html",
+			"url" : "brands/margiela",
+			"images" : [ "Margiela10.jpg", "Margiela11.jpg", "Margiela12.jpg" ],
+			"fakeurl" : "brands/margiela/fake",
+			"fakeimages" : [ "fakemargiela10.png", "fakemargiela11.png", "fakemargiela12.png" ] 
+		},
+
+		{
+			"title" : "Seatbelt Key Ring",
+			"collection" : "Spring/Summer 2018",
+			"composition" : "100% Bovine Leather, Brass",
+			"description" : "Key ring with a reflective seatbelt buckle-style pendant.",
+			"original" : "$0.23",
+			"retail" : "$270.00",
+			"link" : "margiela4.html",
+			"fakelink" : "fakemargiela4.html",
+			"url" : "brands/margiela",
+			"images" : [ "Margiela13.jpg", "Margiela14.jpg", "Margiela15.jpg" ],
+			"fakeurl" : "brands/margiela/fake",
+			"fakeimages" : [ "fakemargiela10.png", "fakemargiela11.png", "fakemargiela12.png" ] 
+		},
+
+		{
+			"title" : "Bubble Wrap Pouch",
+			"collection" : "Spring/Summer 2018",
+			"composition" : "100% Polyurethane, Polyester",
+			"description" : "Pouch in PVC textured as bubble wrap with a flap closure.",
+			"original" : "$4.97",
+			"retail" : "$270.00",
+			"link" : "margiela5.html",
+			"fakelink" : "fakemargiela5.html",
+			"url" : "brands/margiela",
+			"images" : [ "Margiela16.jpg", "Margiela17.jpg", "Margiela18.jpg" ],
+			"fakeurl" : "brands/margiela/fake",
+			"fakeimages" : [ "fakemargiela13.png", "fakemargiela14.png", "fakemargiela15.png" ] 
+		},
+
+		{
+			"title" : "PVC Japanese Tote Bag",
+			"collection" : "Spring/Summer 2018",
+			"composition" : "100% Bovine Leather, Brass",
+			"description" : "Transparent PVC Japanese tote bag. This bag includes an inner white fabric pocket.",
+			"original" : "$0.02",
+			"retail" : "$275.00",
+			"link" : "margiela6.html",
+			"fakelink" : "fakemargiela6.html",
+			"url" : "brands/margiela",
+			"images" : [ "Margiela19.jpg", "Margiela20.jpg", "Margiela21.jpg" ],
+			"fakeurl" : "brands/margiela/fake",
+			"fakeimages" : [ "fakemargiela16.png", "fakemargiela17.png", "fakemargiela18.png" ] 
+		},
+
+		{
+			"title" : "Replica Eau de Parfum",
+			"collection" : "Spring/Summer 2018",
+			"composition" : "100% ORGANIC",
+			"description" : "A can of spray paint that actually smells good.",
+			"original" : "$6.50",
+			"retail" : "$180.00",
+			"link" : "margiela7.html",
+			"fakelink" : "fakemargiela7.html",
+			"url" : "brands/margiela",
+			"images" : [ ["Margiela22.png", "specialclass"], "Margiela23.jpg", "Margiela24.jpg" ],
+			"fakeurl" : "brands/margiela/fake",
+			"fakeimages" : [ "fakemargiela19.png", "fakemargiela20.png" ] 
+		},
+
+		{
+			"title" : "Plane Ticket Leather Tote",
+			"collection" : "Spring/Summer 2018",
+			"composition" : "100% Ovine Leather, Bovine Leather",
+			"description" : "Metallic leather tote bag with a removable zip compartment.",
+			"original" : "$145.00",
+			"retail" : "$1280.00",
+			"link" : "margiela8.html",
+			"fakelink" : "fakemargiela8.html",
+			"url" : "brands/margiela",
+			"images" : [ "Margiela25.jpg", "Margiela26.jpg", "Margiela27.jpg" ],
+			"fakeurl" : "brands/margiela/fake",
+			"fakeimages" : [ "fakemargiela21.png", "fakemargiela22.png", "fakemargiela23.png" ] 
+		},
+
+		{
+			"title" : "SIM Card Opener Earrings",
+			"collection" : "Spring/Summer 2018",
+			"composition" : "100% Brass",
+			"description" : "Brass Earrings that can also be used to open the SIM card compartment on mobile phones.",
+			"original" : "$1.99",
+			"retail" : "$170.00",
+			"link" : "margiela9.html",
+			"fakelink" : "fakemargiela9.html",
+			"url" : "brands/margiela",
+			"images" : [ "Margiela28.jpg", "Margiela29.jpg" ],
+			"fakeurl" : "brands/margiela/fake",
+			"fakeimages" : [ "fakemargiela24.png", "fakemargiela25.png" ] 
+		},
+
+		{
+			"title" : "Bottle Opener Key Ring",
+			"collection" : "Spring/Summer 2018",
+			"composition" : "100% Brass",
+			"description" : "Brass key ring that also doubles as a bottle opener.",
+			"original" : "$0.43",
+			"retail" : "$180.00",
+			"link" : "margiela10.html",
+			"fakelink" : "fakemargiela10.html",
+			"url" : "brands/margiela",
+			"images" : [ "Margiela30.jpg", "Margiela31.jpg" ],
+			"fakeurl" : "brands/margiela/fake",
+			"fakeimages" : [ "fakemargiela26.png", "fakemargiela27.png" ] 
+		}
+	],
+
+	"OffWhite" : [
+		{
+			"title" : "Binder Clip",
+			"collection" : "Spring/Summer 2018",
+			"composition" : "100% Leather",
+			"description" : "The most stylish office accessory.",
+			"original" : "$1.99",
+			"retail" : "$1063.00",
+			"link" : "offwhite0.html",
+			"fakelink" : "fakeoffwhite0.html",
+			"url" : "brands/offwhite",
+			"images" : [ "OffWhite1.png", "OffWhite2.png", "OffWhite3.png" ],
+			"fakeurl" : "brands/offwhite/fake",
+			"fakeimages" : [ "fakeoffwhite1.png", "fakeoffwhite2.png", "fakeoffwhite3.png" ] 
+		},
+
+		{
+			"title" : "Zip Tie",
+			"collection" : "Spring/Summer 2018",
+			"composition" : "80% Leather, 20% Plastic",
+			"description" : "The zip tie everyone needs.",
+			"original" : "$0.20",
+			"retail" : "$249.00",
+			"link" : "offwhite1.html",
+			"fakelink" : "fakeoffwhite1.html",
+			"url" : "brands/offwhite",
+			"images" : [ "OffWhite4.png", "OffWhite5.png", "OffWhite6.png" ],
+			"fakeurl" : "brands/offwhite/fake",
+			"fakeimages" : [ "fakeoffwhite4.png", "fakeoffwhite5.png", "fakeoffwhite6.png" ] 
+		},
+
+		{
+			"title" : "Pill Box",
+			"collection" : "Spring/Summer 2018",
+			"composition" : "100% Plastic",
+			"description" : "Because even your supplements need a great outfit.",
+			"original" : "$5.98",
+			"retail" : "$15.00",
+			"link" : "offwhite2.html",
+			"fakelink" : "fakeoffwhite2.html",
+			"url" : "brands/offwhite",
+			"images" : [ "OffWhite7.png", "OffWhite8.png" ],
+			"fakeurl" : "brands/offwhite/fake",
+			"fakeimages" : [ "fakeoffwhite7.png", "fakeoffwhite8.png" ] 
+		},
+
+		{
+			"title" : "Marker Pen Box",
+			"collection" : "Fall/Winter 2017",
+			"composition" : "100% Pollycarbonate",
+			"description" : "Always be prepared to draw something with these stylish markers.",
+			"original" : "$3.59",
+			"retail" : "$142.00",
+			"link" : "offwhite3.html",
+			"fakelink" : "fakeoffwhite3.html",
+			"url" : "brands/offwhite",
+			"images" : [ "OffWhite9.png", "OffWhite10.png", "OffWhite11.png" ],
+			"fakeurl" : "brands/offwhite/fake",
+			"fakeimages" : [ "fakeoffwhite9.png", "fakeoffwhite10.png", "fakeoffwhite11.png" ] 
+		},
+
+		{
+			"title" : "Swiss Champ",
+			"collection" : "Spring/Summer 2018",
+			"composition" : "100% Inox",
+			"description" : "The ultimate pocket knife any survival junky needs.",
+			"original" : "$39.00",
+			"retail" : "$300.00",
+			"link" : "offwhite4.html",
+			"fakelink" : "fakeoffwhite4.html",
+			"url" : "brands/offwhite",
+			"images" : [ "OffWhite12.png", "OffWhite13.png", "OffWhite14.png" ],
+			"fakeurl" : "brands/offwhite/fake",
+			"fakeimages" : [ "fakeoffwhite12.png", "fakeoffwhite13.png", "fakeoffwhite14.png" ] 
+		},
+
+		{
+			"title" : "USB",
+			"collection" : "Spring/Summer 2018",
+			"composition" : "100% Concrete",
+			"description" : "A concrete solution to your disk space problem.",
+			"original" : "$4.99",
+			"retail" : "$124.00",
+			"link" : "offwhite5.html",
+			"fakelink" : "fakeoffwhite5.html",
+			"url" : "brands/offwhite",
+			"images" : [ "OffWhite15.png", "OffWhite16.png" ],
+			"fakeurl" : "brands/offwhite/fake",
+			"fakeimages" : [ "fakeoffwhite15.png", "fakeoffwhite16.png" ] 
+		}
+	],
+
+	"Vetements" : [
+		{
+			"title" : "Grinder Necklace",
+			"collection" : "Fall/Winter 2018",
+			"composition" : "100% Brass",
+			"description" : "Grind your herbs in style.",
+			"original" : "$9.99",
+			"retail" : "$840.00",
+			"link" : "vetements0.html",
+			"fakelink" : "fakevetements0.html",
+			"url" : "brands/vetements",
+			"images" : [ "Vetements1.JPG", "Vetements2.JPG", "Vetements3.JPG" ],
+			"fakeurl" : "brands/vetements/fake",
+			"fakeimages" : [ "fakevetements1.png", "fakevetements2.png", "fakevetements3.png" ] 
+		},
+
+		{
+			"title" : "Snuff Necklace",
+			"collection" : "Fall/Winter 2018",
+			"composition" : "100% Brass",
+			"description" : "Always have your medication at hand, if you know what I mean.",
+			"original" : "$7.99",
+			"retail" : "$350.00",
+			"link" : "vetements1.html",
+			"fakelink" : "fakevetements1.html",
+			"url" : "brands/vetements",
+			"images" : [ "Vetements4.jpg", "Vetements5.jpg", "Vetements6.jpg" ],
+			"fakeurl" : "brands/vetements/fake",
+			"fakeimages" : [ "fakevetements4.png", "fakevetements5.png", "fakevetements6.png" ] 
+		},
+
+		{
+			"title" : "Cigarette Case",
+			"collection" : "Fall/Winter 2017",
+			"composition" : "100% Brass",
+			"description" : "Pimp up your boring cigarette pack with this case.",
+			"original" : "$8.99",
+			"retail" : "$650.00",
+			"link" : "vetements2.html",
+			"fakelink" : "fakevetements2.html",
+			"url" : "brands/vetements",
+			"images" : [ "Vetements7.JPG", "Vetements8.JPG", "Vetements9.JPG", "Vetements10.JPG" ],
+			"fakeurl" : "brands/vetements/fake",
+			"fakeimages" : [ "fakevetements7.png", "fakevetements8.png", "fakevetements9.png", "fakevetements10.png" ] 
+		},
+
+		{
+			"title" : "Lighter Case",
+			"collection" : "Fall/Winter 2017",
+			"composition" : "100% Brass",
+			"description" : "Pimp up your boring lighter with this case. Fits a small bic lighter.",
+			"original" : "$9.99",
+			"retail" : "$295.00",
+			"link" : "vetements3.html",
+			"fakelink" : "fakevetements3.html",
+			"url" : "brands/vetements",
+			"images" : [ "Vetements11.JPG", "Vetements12.JPG", "Vetements13.JPG" ],
+			"fakeurl" : "brands/vetements/fake",
+			"fakeimages" : [ "fakevetements11.png", "fakevetements12.png", "fakevetements13.png" ] 
+		},
+
+		{
+			"title" : "Lighter Ring",
+			"collection" : "Fall/Winter 2017",
+			"composition" : "100% Brass",
+			"description" : "Always have a lighter handy with this stylish ring. No more asking for a lighter.",
+			"original" : "$5.99",
+			"retail" : "$385.00",
+			"link" : "vetements4.html",
+			"fakelink" : "fakevetements4.html",
+			"url" : "brands/vetements",
+			"images" : [ "Vetements14.jpg", "Vetements15.jpg", "Vetements16.jpg", "Vetements17.jpg" ],
+			"fakeurl" : "brands/vetements/fake",
+			"fakeimages" : [ "fakevetements14.png", "fakevetements15.png", "fakevetements16.png", "fakevetements17.png" ] 
+		},
+
+		{
+			"title" : "Sock Lighter Boots",
+			"collection" : "Fall/Winter 2017",
+			"composition" : "100% Leather and Polyamide",
+			"description" : "No lighter to light your cigarette? No more of that struggle with these lighter boots.",
+			"original" : "$1.27",
+			"retail" : "$1850.00",
+			"link" : "vetements5.html",
+			"fakelink" : "fakevetements5.html",
+			"url" : "brands/vetements",
+			"images" : [ "Vetements18.png", "Vetements19.png", "Vetements20.png" ],
+			"fakeurl" : "brands/vetements/fake",
+			"fakeimages" : [ "fakevetements18.png", "fakevetements16.png", "fakevetements17.png" ] 
+		},
+
+		{
+			"title" : "Sock Lighter Boots",
+			"collection" : "Fall/Winter 2017",
+			"composition" : "100% Leather and Polyamide",
+			"description" : "No lighter to light your cigarette? No more of that struggle with these lighter boots.",
+			"original" : "$1.27",
+			"retail" : "$1390.00",
+			"link" : "vetements6.html",
+			"fakelink" : "fakevetements6.html",
+			"url" : "brands/vetements",
+			"images" : [ "Vetements21.png", "Vetements22.png", "Vetements23.png" ],
+			"fakeurl" : "brands/vetements/fake",
+			"fakeimages" : [ "fakevetements19.png", "fakevetements16.png", "fakevetements17.png" ] 
+		},
+
+		{
+			"title" : "Highlighter Boots",
+			"collection" : "Fall/Winter 2017",
+			"composition" : "100% Leather",
+			"description" : "Always be ready to highlight your readings with these boots.",
+			"original" : "$2.00",
+			"retail" : "$2150.00",
+			"link" : "vetements7.html",
+			"fakelink" : "fakevetements7.html",
+			"url" : "brands/vetements",
+			"images" : [ "Vetements24.png", "Vetements25.png", "Vetements26.png", "Vetements27.png" ],
+			"fakeurl" : "brands/vetements/fake",
+			"fakeimages" : [ "fakevetements20.png", "fakevetements21.png", "fakevetements22.png", "fakevetements23.png" ] 
+		},
+
+		{
+			"title" : "Highlighter Boots",
+			"collection" : "Fall/Winter 2017",
+			"composition" : "100% Leather",
+			"description" : "Always be ready to highlight your readings with these boots.",
+			"original" : "$2.00",
+			"retail" : "$1305.00",
+			"link" : "vetements8.html",
+			"fakelink" : "fakevetements8.html",
+			"url" : "brands/vetements",
+			"images" : [ "Vetements28.png", "Vetements29.png", "Vetements30.png" ],
+			"fakeurl" : "brands/vetements/fake",
+			"fakeimages" : [ "fakevetements24.png", "fakevetements25.png", "fakevetements26.png" ] 
+		},
+
+		{
+			"title" : "Reflector Boots",
+			"collection" : "Fall/Winter 2017",
+			"composition" : "100% Leather",
+			"description" : "Never be overlooked at night with these reflector boots.",
+			"original" : "$1.97",
+			"retail" : "$1436.00",
+			"link" : "vetements9.html",
+			"fakelink" : "fakevetements9.html",
+			"url" : "brands/vetements",
+			"images" : [ "Vetements31.png", "Vetements32.png", "Vetements33.png" ],
+			"fakeurl" : "brands/vetements/fake",
+			"fakeimages" : [ "fakevetements27.png", "fakevetements28.png", "fakevetements31.png" ] 
+		},
+
+		{
+			"title" : "Reflector Boots",
+			"collection" : "Spring/Summer 2018",
+			"composition" : "100% Leather",
+			"description" : "Never be overlooked at night with these reflector boots.",
+			"original" : "$1.97",
+			"retail" : "$1436.00",
+			"link" : "vetements10.html",
+			"fakelink" : "fakevetements10.html",
+			"url" : "brands/vetements",
+			"images" : [ "Vetements34.JPG", "Vetements35.JPG", "Vetements36.JPG" ],
+			"fakeurl" : "brands/vetements/fake",
+			"fakeimages" : [ "fakevetements29.png", "fakevetements30.png", "fakevetements31.png" ] 
+		},
+
+		{
+			"title" : "Exit Sign Bag",
+			"collection" : "Spring/Summer 2017",
+			"composition" : "100% Leather",
+			"description" : "Tell annoying people to exit your life with this exit sign bag.",
+			"original" : "$33.00",
+			"retail" : "$2135.00",
+			"link" : "vetements11.html",
+			"fakelink" : "fakevetements11.html",
+			"url" : "brands/vetements",
+			"images" : [ "Vetements37.png", "Vetements38.png", "Vetements39.png" ],
+			"fakeurl" : "brands/vetements/fake",
+			"fakeimages" : [ "fakevetements32.png", "fakevetements33.png", "fakevetements34.png" ] 
+		}
+	]
+
+
+
+}

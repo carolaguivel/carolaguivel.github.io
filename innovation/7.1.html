@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://use.typekit.net/zsi1mos.css">
+</head>
+<body>
+
+<div class="content2">
+<a href="8.html">
+	Click here to continue to the next page.
+</a>
+
+<script>
+function randomInt(low, high){
+	var random = parseInt(Math.random()*(high-low) + low);
+	return random;
+}
+
+function randomInt(low, high){
+	var random = parseInt(Math.random()*(high-low) + low);
+	return random;
+}
+
+var array = [];
+
+document.onmousedown = function(event){
+	var letter = document.createElement("span");
+	// letter.velocity = 1;
+	letter.style.top = event.y + "px";
+	letter.style.left = event.x + "px";
+	letter.style.transform = "rotate(" + randomInt(-70,70) + "deg)";
+	
+	var sent1 = "How could you kill a family member?"
+	var sent2 = "What if it was your mother?"
+	var sent3 = "What if it was your father?"
+	var sent4 = "Could you really kill a family member?"
+	var sent5 = "Do you not care about your family?"
+	var sent6 = "Are you sure?"
+	var sent7 = "What would the rest of your family say?"
+
+
+
+	var letters = [sent1, sent2, sent3, sent4, sent5, sent6, sent7];
+
+	var randomnumber = Math.random() * 7;
+
+	randomnumber = parseInt(randomnumber);
+
+	var randomLetter = letters[randomnumber]
+
+	letter.innerHTML = randomLetter
+
+	console.log(randomnumber);
+
+
+
+	document.body.appendChild(letter);
+	array.push(letter);
+}
+
+function loop (){
+	var counter = 0;
+	while(counter < array.length){
+		// console.log(array[counter].innerHTML)
+		var letter = array[counter];
+		var y = parseInt(letter.style.top);
+		y = y + letter.velocity;
+		letter.velocity = letter.velocity + 0.1;
+		if(y > window.innerHeight+300){
+			y = window.innerHeight+300;
+			letter.velocity = -letter.velocity*0;
+		}
+		letter.style.top = y + "px";
+		counter = counter + 1
+	}
+}
+
+//how to make animations
+setInterval(loop, 1000/60)
+
+// figure out how to make different strings show at every click
+</script>
+<script src="timer.js"></script>
+</body>
+</html>

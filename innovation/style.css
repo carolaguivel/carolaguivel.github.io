@@ -1,0 +1,275 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	background: #000000;
+	font-size: 15px;
+}
+
+body {
+	font-family: OCR A Std, monospace;
+	background-color: #000000;
+	color: #6F6F6F;
+	position: fixed;
+	cursor:url(images/this.png), auto;
+}
+
+
+
+a {
+	text-decoration: none;
+	color: #6F6F6F;
+}
+
+span {
+	position: absolute;
+	font-size: 1.5vw;
+	color: #F01C22;
+	text-align: center;
+}
+
+
+/*use vw for font-sizes*/
+/*use px for margins and positioning*/
+
+.content1{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.content2 {
+	width: 100%;
+	height: 100%;
+}
+
+#timer {
+	color: #F01C22;
+	font-family: ds-digital;
+	font-size: 15vw;
+	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+}
+
+#timersmall {
+	color: #F01C22;
+	font-family: ds-digital;
+	/*font-size: 4vw;*/
+	font-size: 15vw;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+	/*margin-left: 1300px;*/
+	/*margin-top: 820px;*/
+	animation-name: blinking;
+	animation-delay: 1s;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes blinking {
+	from {opacity: 1;}
+	to {opacity: 0;}
+}
+
+.appearingcontent {
+	opacity: 0;
+	animation-name: contentappear;
+	animation-delay: 2.5s;
+	animation-duration: 3.5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes contentappear {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+.appearingtext {
+	color: #222222;
+	font-size: 1.2vw;
+	margin-top: 320px;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.title {
+	position: absolute;
+	font-size: 2.5vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.optioncontainer {
+	position: absolute;
+	font-size: 1.8vw;
+	top: 580px;
+}
+
+.option:hover {
+	color: #F01C22;
+	transition: 2s;
+}
+
+@keyframes appear {
+	from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.appear {
+    animation-name: appear;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    opacity: 0;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes disappear {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+.disappear {
+	animation-name: disappear;
+	animation-duration: 3s;
+    animation-delay: 0.5s;
+    opacity: 0;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.why {
+	font-size: 2.5vw;
+	position: absolute;
+	margin-left: 200px;
+	margin-top: 200px;
+}
+
+.typeanswer {
+	margin-left: 200px;
+	margin-top: 310px;
+	position: absolute;
+}
+
+::placeholder {
+	color: #222222;
+}
+
+textarea {
+	position: absolute;
+	font-family: OCR A Std, monospace;
+	background-color: #000000;
+	border: none;
+	outline: none;
+	color: #6F6F6F;
+	font-size: 2.5vw;
+	margin-top: 300px;
+	margin-left: 200px;
+	resize: none;
+}
+
+textarea:focus {
+	outline: none;
+}
+
+.question {
+	font-size: 1.8vw;
+	margin-left: 60px;
+	width: 73vw;
+	margin-top: 100px;
+	line-height: 2.45vw;
+	word-spacing: 0.15vw;
+}
+
+.answer:hover {
+	color: #F01C22;
+	transition: 2s;
+}
+
+.ethical {
+	color: #F01C22;
+}
+
+.gameover {
+	position: absolute;
+	font-size: 2.5vw;
+	color: #000000;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.video {
+    position: fixed;
+    min-width: 100%; 
+    min-height: 100%;
+    opacity: 1;
+    z-index: -1;
+    animation-name: blinker;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-timing-function:steps(2, end);
+}
+
+@keyframes blinker {
+	from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.button {
+	position: absolute;
+	color: #222222;
+	border: 10px solid #222222;
+	padding: 10px;
+	font-size: 3vw;
+}
+
+.button:hover {
+	color: #F01C22;
+	border-color: #F01C22;
+}
+
+input[type=text] {
+	font-family: OCR A Std, monospace;
+	background-color: #000000;
+	text-align: center;
+	border: none;
+	outline: none;
+	color: #F01C22;
+	font-size: 2.5vw;
+	width: 100%;
+}
+
+.usernametitle {
+	position: absolute;
+	font-size: 2.5vw;
+	margin-top: -110px;
+	color: #222222;
+
+}
+

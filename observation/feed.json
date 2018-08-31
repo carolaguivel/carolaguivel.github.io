@@ -1,0 +1,24 @@
+{
+	"realcollection" : [
+		{
+		"url" : "collection/real", 
+		"images1" : ["cdg1.JPG", "cdg2.JPG", "Vetements4.png", "cdg3.JPG", "Vetements3.png", "cdg4.jpg", "cdg5.jpg", "celine1.jpg", "margiela7.png", "Vetements2.png", "celine2.jpg", "celine3.jpg", "celine4.png", "Vetements1.png", "celine5.jpg"  ],
+		
+		"images2" : ["Vetements8.png", "margiela3.jpg", "margiela4.jpg", "Vetements5.png", "margiela5.jpg", "margiela6.jpg", "margiela8.png", "Vetements6.png", "Vetements7.png", "offwhite1.jpg", "offwhite2.jpg", "offwhite3.jpg", "offwhite4.jpg", "offwhite5.jpg"],
+
+		"images3" : ["helmut1.jpg", "Vetements9.png", "helmut2.jpeg", "helmut3.jpeg", "helmut4.jpeg", "margiela6.png", "Vetements10.png", "jil1.jpg", "jil2.jpg", "jil3.jpg", "margiela1.jpg", "margiela2.jpg", "Vetements11.png"]
+		}
+	],
+
+	"fakecollection" : [
+		{
+		"url" : "collection/fake", 
+		"images1" : ["fakecdg1.png", "fakecdg2.png", "fakevetements4.png", "fakecdg3.png", "fakevetements3.png", "fakecdg4.png", "fakecdg5.png", "fakeceline1.png", "fakemargiela7.png", "fakevetements2.png", "fakeceline2.png", "fakeceline3.png", "fakeceline4.png", "fakevetements1.png", "fakeceline5.png"  ],
+		
+		"images2" : ["fakevetements8.png", "fakemargiela3.png", "fakemargiela4.png", "fakevetements5.png", "fakemargiela5.png", "fakemargiela6.jpg", "fakemargiela8.png", "fakevetements6.png", "fakevetements7.png", "fakeoffwhite1.png", "fakeoffwhite2.png", "fakeoffwhite3.png", "fakeoffwhite4.png", "fakeoffwhite5.png"],
+
+		"images3" : ["fakehelmut1.png", "fakevetements9.png", "fakehelmut2.png", "fakehelmut3.png", "fakehelmut4.png", "fakemargiela6.png", "fakevetements10.png", "fakejil1.png", "fakejil2.png", "fakejil3.png", "fakemargiela1.png", "fakemargiela2.png", "fakevetements11.png"]	
+		}
+	]
+
+}

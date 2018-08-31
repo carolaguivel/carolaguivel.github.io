@@ -1,0 +1,1360 @@
+html,body {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+header {
+	width: 100%;
+	position: relative;
+	text-align: center;
+}
+
+.menu {
+	position: absolute;
+	margin-top: 160px;
+	margin-left: 30px;
+	z-index: 1;
+}
+
+.transform {
+  -webkit-transform: translate(0px, 0px);  
+  -moz-transform: translate(0px, 0px);  
+  -o-transform: translate(0px, 0px);  
+  -ms-transform: translate(0px, 0px);  
+  transform: translate(0px, 0px);
+}
+
+.transform-active {
+  margin-top: 12px;
+}
+
+.dropdown {
+	/*position: fixed;*/
+	display: inline-block;
+	height: 100%;
+}
+
+.dropbtn {
+  	cursor: pointer;
+}
+
+.dropdowncontent {
+	display: none;
+	position: relative;
+	min-width: 200px;
+}
+
+.dropdowncontent a {
+	display: block;
+}
+
+.show {display:block;}
+
+footer {
+	position: relative;
+	margin-top: 1080px;
+	font-size: 1.1vw;
+}
+
+footer a {
+	padding-right: 3vw;
+	padding-left: 3vw;
+}
+
+.footermenu {
+	width: 100%;
+	height: 1.25vw;
+	background-color: #D3D3D3;
+	text-align: center
+}
+
+footer p {
+	text-align: center;
+	margin-top: 0.69vw;
+	padding: 1.74vw;
+}
+
+/*BIIS*/
+
+.biis {
+	margin-left: 21.5vw;
+	width: 60vw;
+	margin-top: 8.2vw;
+}
+
+.biisimg {
+	width: 130%;
+	/*border: 1px solid #707070;*/
+	margin: 0.69vw;
+	display: inline-block;
+}
+
+.biis > a {
+	margin-top: 0.55vw;
+	width: 21%;
+	display: inline-block;
+	padding: 3.5vw;
+	margin-top: -6.25vw;
+}
+
+.biisfooter {
+	margin-top: 5vw;
+}
+
+.biisprod {
+	margin-top: 2vw;
+	padding-left: 25vw;
+	width: 40vw;
+}
+
+.biisprodimg {
+	width: 30%;
+	/*border: 1px solid black;*/
+	margin: 0.69vw;
+	/*display: block;*/
+	margin-top: 2.08vw;
+	margin-left: 3vw;
+}
+
+.biisprodimg2 {
+	width: 32%;
+	/*border: 1px solid black;*/
+	margin: 0.69vw;
+	display: block;
+	margin-top: 4vw;
+	margin-left: 10vw;
+}
+
+.biisoneinfo {
+	margin-left: 60vw;
+	width: 20vw;
+	margin-top: -32.15vw;
+}
+
+.biisonefooter {
+	margin-top: 15vw;
+}
+
+.biistwofooter {
+	margin-top: 11vw;
+}
+
+.biisthreefooter {
+	margin-top: 14vw;
+}
+
+.biistwoinfo {
+	margin-left: 53vw;
+	width: 20vw;
+	margin-top: -33.3vw;
+}
+
+/*Celine*/
+
+.celine {
+	margin-left: 23.5vw;
+	width: 60vw;
+	margin-top: 6vw;
+}
+
+.celineimg {
+	width: 100%;
+	/*border: 1px solid #707070;*/
+	margin: 0.69vw;
+	display: inline-block;
+}
+
+.celine > a {
+	margin-top: 0.55vw;
+	width: 27%;
+	/*color: #575757;*/
+	display: inline-block;
+	padding: 1.5vw;
+	padding-top: 3.5vw;
+	margin-top: -4.25vw;
+	/*background-color: red;*/
+}
+
+.celinefooter {
+	margin-top: 7.5vw;
+}
+
+.celineprod {
+	margin-top: 2vw;
+	padding-left: 25vw;
+	width: 40vw;
+}
+
+.celineprodimg {
+	width: 30%;
+	/*border: 1px solid #707070;*/
+	margin: 0.69vw;
+	/*display: block;*/
+	margin-top: 2.08vw;
+	margin-left: 3vw;
+}
+
+.celineprodimg2 {
+	width: 32%;
+	/*border: 1px solid black;*/
+	margin: 0.69vw;
+	display: block;
+	margin-top: 4.5vw;
+	margin-left: 10vw;
+}
+
+.celineoneinfo {
+	margin-left: 60vw;
+	width: 20vw;
+	margin-top: -32.6vw;
+}
+
+.celineonefooter {
+	margin-top: 9.5vw;
+}
+
+.celinethreefooter {
+	margin-top: 12vw;
+}
+
+.celinetwoinfo {
+	margin-left: 53vw;
+	width: 20vw;
+	margin-top: -36.1vw;
+}
+
+.celinetwofooter {
+	margin-top: 10vw;
+}
+
+/*Comme des Garçon*/
+
+.commedesgarcon {
+	margin-top: 4vw;
+	width: 65vw;
+	margin-left: 26vw;
+}
+
+.cdgimg {
+	width: 80%;
+	/*border: 1px solid #707070;*/
+	margin: 0.69vw;
+	display: inline-block;
+}
+
+.commedesgarcon > a {
+	margin-top: 1.5vw;
+	width: 33%;
+	/*color: #575757;*/
+	margin-left: -1vw;
+	display: inline-block;
+}
+
+.cdgfooter {
+	margin-top: 7.5vw;
+}
+
+.cdgprod {
+	margin-top: 2vw;
+	padding-left: 25vw;
+	width: 40vw;
+}
+
+.cdgprodimg {
+	width: 32%;
+	/*border: 1px solid #707070;*/
+	margin: 0.69vw;
+	/*display: block;*/
+	margin-top: 1.74vw;
+	margin-left: 3vw;
+}
+
+.cdgonefooter {
+	margin-top: 10vw;
+}
+
+.cdgoneinfo {
+	margin-left: 61vw;
+	width: 20vw;
+	margin-top: -32vw;
+}
+
+/*Helmut Lang*/
+
+.helmutlang {
+	margin-top: 4vw;
+	width: 65vw;
+	margin-left: 26vw;
+}
+
+.helmutlangimg {
+	width: 85%;
+	/*border: 1px solid #707070;*/
+	margin: 0.69vw;
+	display: inline-block;
+}
+
+.helmutlang > a {
+	margin-top: 0.55vw;
+	width: 26%;
+	/*color: #575757;*/
+	display: inline-block;
+}
+
+.helmutlangfooter {
+	margin-top: 7.5vw;
+}
+
+.helmutlangprod {
+	margin-top: 4vw;
+	padding-left: 25vw;
+	width: 40vw;
+}
+
+.helmutlangprodimg {
+	width: 28%;
+	/*border: 1px solid black;*/
+	margin: 0.69vw;
+	/*display: block;*/
+	margin-top: 2.08vw;
+	margin-left: 3vw;
+}
+
+.helmutlangprodimg2 {
+	width: 32%;
+	/*border: 1px solid black;*/
+	margin: 0.69vw;
+	display: block;
+	margin-top: 4.86vw;
+	margin-left: 10vw;
+}
+
+.brapurse2footer {
+	margin-top: 13vw;
+}
+
+.brapurse2info {
+	margin-left: 60vw;
+	width: 20vw;
+	margin-top: -32.2vw;
+}
+
+.watchinfo {
+	margin-left: 53vw;
+	width: 20vw;
+	margin-top: -35.4vw;
+}
+
+.watchfooter {
+	margin-top: 13vw;
+}
+
+/*Jil Sanders*/
+
+.jilsanders {
+	margin-top: 4vw;
+	width: 65vw;
+	margin-left: 26vw;
+}
+
+.jilsandersimg {
+	width: 83%;
+	/*border: 1px solid #707070;*/
+	margin: 0.7vw;
+	display: inline-block;
+}
+
+.jilsanders > a {
+	margin-top: 1vw;
+	width: 28%;
+	/*color: #575757;*/
+	display: inline-block;
+}
+
+.jilsandersfooter {
+	margin-top: 7.5vw;
+}
+
+.jilsandersprod {
+	margin-top: 3.47vw;
+	padding-left: 25vw;
+	width: 40vw;
+}
+
+.jilsandersprodimg {
+	width: 32%;
+	/*border: 1px solid black;*/
+	margin: 0.69vw;
+	/*display: block;*/
+	margin-top: 2.08vw;
+	margin-left: 3vw;
+}
+
+.jilsandersinfo {
+	margin-left: 60vw;
+	width: 20vw;
+	margin-top: -34.9vw;
+}
+
+.jilsandersbagfooter {
+	margin-top: 14vw;
+}
+
+.jil2footer {
+	margin-top: 13vw;
+}
+
+/*Maison Margiela*/
+
+.margiela {
+	margin-top: 4vw;
+	width: 65vw;
+	margin-left: 26vw;
+}
+
+.margielaimg {
+	width: 85%;
+	/*border: 1px solid #707070;*/
+	margin: 0.69vw;
+	display: inline-block;
+}
+
+.margiela > a {
+	margin-top: 0.55vw;
+	width: 26%;
+	/*color: #575757;*/
+	display: inline-block;
+}
+
+.margielafooter {
+	margin-top: 11.45vw;
+}
+
+.margielaprod {
+	margin-top: 3.47vw;
+	padding-left: 25vw;
+	width: 40vw;
+}
+
+.margielaprodimg {
+	width: 32%;
+	/*border: 1px solid black;*/
+	margin: 0.69vw;
+	/*display: block;*/
+	margin-top: 2.08vw;
+	margin-left: 3vw;
+}
+
+.margielaprodimg2 {
+	width: 32%;
+	/*border: 1px solid black;*/
+	margin: 0.69vw;
+	display: block;
+	margin-top: 0.69vw;
+	margin-left: 10vw;
+}
+
+.margielaoneinfo {
+	margin-left: 60vw;
+	width: 20vw;
+	margin-top: -36.1vw;
+}
+
+.margielaonefooter {
+	margin-top: 15.5vw;
+}
+
+.margielatwoinfo {
+	margin-left: 53vw;
+	width: 20vw;
+	margin-top: -35.4vw;
+}
+
+.margielatwofooter {
+	margin-top: 14vw;
+}
+
+.margielathreeinfo {
+	margin-left: 53vw;
+	width: 20vw;
+	margin-top: -28.4vw;
+}
+
+.margielathreefooter {
+	margin-top: 12vw;
+}
+
+.margielafourfooter {
+	margin-top: 9.5vw;
+}
+
+.margielafivefooter {
+	margin-top: 8vw;
+}
+
+/*Off-White*/
+
+.offwhite {
+	margin-top: 4vw;
+	width: 65vw;
+	margin-left: 26vw;
+}
+
+.offwhiteimg {
+	width: 90%;
+	/*border: 1px solid #707070;*/
+	margin: 0.69vw;
+	display: inline-block;
+}
+
+.offwhite > a {
+	margin-top: 0.55vw;
+	width: 33%;
+	/*color: #575757;*/
+	display: inline-block;
+}
+
+.offwhitefooter {
+	margin-top: 7.5vw;
+}
+
+.offwhiteprod {
+	margin-top: 3.4vw;
+	padding-left: 25vw;
+	width: 40vw;
+}
+
+.offwhiteprodimg {
+	width: 32%;
+	/*border: 1px solid black;*/
+	margin: 0.69vw;
+	/*display: block;*/
+	margin-top: 2.08vw;
+	margin-left: 3vw;
+}
+
+.offwhiteprodimg2 {
+	width: 32%;
+	/*border: 1px solid black;*/
+	margin: 0.69vw;
+	display: block;
+	margin-top: 5.55vw;
+	margin-left: 10vw;
+}
+
+.offwhiteoneinfo {
+	margin-left: 60vw;
+	width: 20vw;
+	margin-top: -32.6vw;
+}
+
+.offwhiteonefooter {
+	margin-top: 14vw;
+}
+
+.offwhitetwoinfo {
+	margin-left: 58vw;
+	width: 20vw;
+	margin-top: -34.7vw;
+}
+
+.offwhitetwofooter {
+	margin-top: 15vw;
+}
+
+.offwhitethreefooter {
+	margin-top: 12.5vw;
+}
+
+.offwhitefourfooter {
+	margin-top: 13.5vw;
+}
+
+/*Vetements*/
+
+.vetements {
+	margin-top: 5.5vw;
+	width: 65vw;
+	margin-left: 21.5vw;
+}
+
+.vetementsimg {
+	width: 135%;
+	/*border: 1px solid #707070;*/
+	margin: 0.69vw;
+	display: inline-block;
+}
+
+.vetements > a {
+	margin-top: 1.38vw;
+	width: 21%;
+	/*color: #575757;*/
+	display: inline-block;
+	padding: 3.5vw;
+	margin-top: -6.25vw;
+}
+
+.vetementsstartfooter {
+	top: -8vw;
+}
+
+.vetementsprod {
+	margin-top: 3.47vw;
+	padding-left: 25vw;
+	width: 40vw;
+}
+
+.vetementsprodimg {
+	width: 32%;
+	/*border: 1px solid black;*/
+	margin: 0.69vw;
+	/*display: block;*/
+	margin-top: 2.08vw;
+	margin-left: 3vw;
+}
+
+.vetementsinfo {
+	margin-left: 60vw;
+	width: 20vw;
+	margin-top: -35.4vw;
+}
+
+.vetements2info {
+	margin-left: 58vw;
+	width: 20vw;
+	margin-top: -135.7vw;
+}
+
+.vetementsfooter {
+	margin-top: 13.5vw;
+}
+
+.vetements1footer {
+	margin-top: 12vw;
+}
+
+.vetements2footer {
+	margin-top: 9.5vw;
+}
+
+/*Applies to all*/
+
+.caption {
+	padding-left: 0.7vw;
+	margin-top: 0.069vw;
+	font-size: 1vw;
+}
+
+.price {
+	padding-left: 0.7vw;
+	margin-top: -0.55vw;
+	font-size: 1vw;
+}
+
+.title {
+	font-size: 2vw;
+	font-weight: bolder;
+	margin-top: 3.125vw;
+	font-size: 2vw;
+}
+
+.composition {
+	margin-top: -1.74vw;
+	width: 60%;
+	font-size: 1.1vw;
+}
+
+.description {
+	margin-top: 2.77vw;
+	margin-bottom: 2.99vw;
+	width: 13vw;
+	font-size: 1.1vw;
+}
+
+.pricetext {
+	font-size: 1.1vw;
+}
+
+.pricenumber {
+	margin-top: -0.69vw;
+	font-size: 1.1vw;	
+}
+
+.addtobag a {
+	text-transform: capitalize;
+	text-decoration: none;
+	color: black;
+	font-size: 0.77vw;
+}
+
+.addtobag:hover {
+	cursor: pointer;
+}
+
+.link {
+	font-size: 1.1vw;
+}
+
+.fail {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.failedrequest {
+	font-weight: bold;
+	font-size: 4vw;
+	margin-bottom: 1.38vw;
+}
+
+.backtohomepage a {
+	text-transform: capitalize;
+	text-decoration: none;
+	color: black;
+}
+
+@media only screen and (max-width: 700px) {
+
+
+/*BIIS*/
+
+.biis {
+	margin-left: 30vw;
+	width: 70vw;
+}
+
+.biisimg {
+	width: 105%;
+	/*border: 1px solid #707070;*/
+	margin: 1.4vw;
+	display: inline-block;
+}
+
+.biis > a {
+	width: 35%;
+	display: inline-block;
+	padding: 3vw;
+}
+
+.biisfooter {
+	margin-top: 8vw;
+}
+
+.biisprod {
+	margin-top: 2vw;
+	margin-left: 15vw;
+	width: 40vw;
+}
+
+.biisprodimg {
+	width: 100%;
+	/*border: 1px solid black;*/
+	margin: 0.69vw;
+	/*display: block;*/
+}
+
+.biisprodimg2 {
+	width: 100%;
+	/*border: 1px solid black;*/
+	margin: 0.69vw;
+	display: block;
+}
+
+.biisoneinfo {
+	margin-left: 45vw;
+	width: 50vw;
+	margin-top: 5vw;
+}
+
+.biisonefooter {
+	margin-top: 15vw;
+}
+
+.biistwofooter {
+	margin-top: 15vw;
+}
+
+.biisthreefooter {
+	margin-top: 15vw;
+}
+
+.biistwoinfo {
+	margin-left: 45vw;
+	width: 50vw;
+	margin-top: 5vw;
+}
+
+/*Celine*/
+
+.celine {
+	margin-left: 30vw;
+	width: 70vw;
+	/*background-color: red;*/
+}
+
+.celineimg {
+	width: 120%;
+	/*border: 1px solid #707070;*/
+	margin: 1.4vw;
+	display: inline-block;
+}
+
+.celine > a {
+	width: 35%;
+	display: inline-block;
+	padding: 4.3vw;
+}
+
+.celinefooter {
+	margin-top: 9vw;
+	z-index: 1;
+}
+
+.celineprod {
+	margin-top: 2vw;
+	margin-left: 15vw;
+	width: 40vw;
+}
+
+.celineprodimg {
+	width: 100%;
+	/*border: 1px solid #707070;*/
+	margin: 0.69vw;
+	/*display: block;*/
+}
+
+.celineprodimg2 {
+	width: 100%;
+	/*border: 1px solid black;*/
+	margin: 0.69vw;
+	display: block;
+}
+
+.celineoneinfo {
+	margin-left: 41vw;
+	width: 50vw;
+	margin-top: 5vw;
+}
+
+.celineonefooter {
+	margin-top: 15vw;
+}
+
+.celinethreefooter {
+	margin-top: 15vw;
+}
+
+.celinetwoinfo {
+	margin-left: 45vw;
+	width: 50vw;
+	margin-top: 5vw;
+}
+
+.celinetwofooter {
+	margin-top: 15vw;
+}
+
+/*Comme des Garçon*/
+
+.commedesgarcon {
+	margin-left: 30vw;
+	width: 70vw;
+}
+
+.cdgimg {
+	width: 120%;
+	/*border: 1px solid #707070;*/
+	margin: 1.4vw;
+	display: inline-block;
+}
+
+.commedesgarcon > a {
+	width: 35%;
+	display: inline-block;
+	padding: 4.5vw;
+}
+
+.cdgfooter {
+	margin-top: 7.5vw;
+}
+
+.cdgprod {
+	margin-top: 2vw;
+	margin-left: 15vw;
+	width: 40vw;
+}
+
+.cdgprodimg {
+	width: 100%;
+	/*border: 1px solid #707070;*/
+	margin: 0.69vw;
+	/*display: block;*/
+}
+
+.cdgonefooter {
+	margin-top: 15vw;
+}
+
+.cdgoneinfo {
+	margin-left: 41vw;
+	width: 50vw;
+	margin-top: 5vw;
+}
+
+/*Helmut Lang*/
+
+.helmutlang {
+	margin-left: 30vw;
+	width: 70vw;
+}
+
+.helmutlangimg {
+	width: 120%;
+	/*border: 1px solid #707070;*/
+	margin: 1.4vw;
+	display: inline-block;
+}
+
+.helmutlang > a {
+	width: 35%;
+	display: inline-block;
+	padding: 4.3vw;
+}
+
+.helmutlangfooter {
+	margin-top: 7.5vw;
+}
+
+.helmutlangprod {
+	margin-top: 2vw;
+	margin-left: 15vw;
+	width: 40vw;
+}
+
+.helmutlangprodimg {
+	width: 100%;
+	/*border: 1px solid black;*/
+	margin: 0.69vw;
+	/*display: block;*/
+}
+
+.helmutlangprodimg2 {
+	width: 100%;
+	/*border: 1px solid black;*/
+	margin: 0.69vw;
+	/*display: block;*/
+}
+
+.brapurse2footer {
+	margin-top: 15vw;
+}
+
+.brapurse2info {
+	margin-left: 41vw;
+	width: 50vw;
+	margin-top: 5vw;
+}
+
+.watchinfo {
+	margin-left: 41vw;
+	width: 50vw;
+	margin-top: 5vw;
+}
+
+.watchfooter {
+	margin-top: 15vw;
+}
+
+/*Jil Sanders*/
+
+.jilsanders {
+	margin-left: 30vw;
+	width: 70vw;
+}
+
+.jilsandersimg {
+	width: 120%;
+	/*border: 1px solid #707070;*/
+	margin: 1.4vw;
+	display: inline-block;
+}
+
+.jilsanders > a {
+	width: 35%;
+	display: inline-block;
+	padding: 4.3vw;
+}
+
+.jilsandersfooter {
+	margin-top: 7.5vw;
+}
+
+.jilsandersprod {
+	margin-top: 2vw;
+	margin-left: 15vw;
+	width: 40vw;
+}
+
+.jilsandersprodimg {
+	width: 100%;
+	/*border: 1px solid black;*/
+	margin: 0.69vw;
+	/*display: block;*/
+}
+
+.jilsandersinfo {
+	margin-left: 41vw;
+	width: 50vw;
+	margin-top: 5vw;
+}
+
+.jilsandersbagfooter {
+	margin-top: 15vw;
+}
+
+.jil2footer {
+	margin-top: 15vw;
+}
+
+/*Maison Margiela*/
+
+.margiela {
+	margin-left: 30vw;
+	width: 70vw;
+}
+
+.margielaimg {
+	width: 120%;
+	/*border: 1px solid #707070;*/
+	margin: 1.4vw;
+	display: inline-block;
+}
+
+.margiela > a {
+	width: 35%;
+	display: inline-block;
+	padding: 4.3vw;
+}
+
+.margielafooter {
+	margin-top: 7.5vw;
+}
+
+.margielaprod {
+	margin-top: 2vw;
+	margin-left: 15vw;
+	width: 40vw;
+}
+
+.margielaprodimg {
+	width: 100%;
+	/*border: 1px solid black;*/
+	margin: 0.69vw;
+	/*display: block;*/
+}
+
+.margielaprodimg2 {
+	width: 100%;
+	/*border: 1px solid black;*/
+	margin: 0.69vw;
+}
+
+.margielaoneinfo {
+	margin-left: 41vw;
+	width: 50vw;
+	margin-top: 5vw;
+}
+
+.margielaonefooter {
+	margin-top: 15vw;
+}
+
+.margielatwoinfo {
+	margin-left: 41vw;
+	width: 50vw;
+	margin-top: 5vw;
+}
+
+.margielatwofooter {
+	margin-top: 15vw;
+}
+
+.margielathreeinfo {
+	margin-left: 41vw;
+	width: 50vw;
+	margin-top: 5vw;
+}
+
+.margielathreefooter {
+	margin-top: 15vw;
+}
+
+.margielafourfooter {
+	margin-top: 15vw;
+}
+
+.margielafivefooter {
+	margin-top: 15vw;
+}
+
+/*Off-White*/
+
+.offwhite {
+	width: 70vw;
+	margin-left: 30vw;
+}
+
+.offwhiteimg {
+	width: 120%;
+	/*border: 1px solid #707070;*/
+	margin: 0.69vw;
+	display: inline-block;
+}
+
+.offwhite > a {
+	width: 35%;
+	display: inline-block;
+	padding: 4.5vw;
+}
+
+.offwhitefooter {
+	margin-top: 7.5vw;
+}
+
+.offwhiteprod {
+	margin-top: 2vw;
+	margin-left: 15vw;
+	width: 40vw;
+}
+
+.offwhiteprodimg {
+	width: 100%;
+	/*border: 1px solid black;*/
+	margin: 0.69vw;
+	/*display: block;*/
+}
+
+.offwhiteprodimg2 {
+	width: 100%;
+	/*border: 1px solid black;*/
+	margin: 0.69vw;
+}
+
+.offwhiteoneinfo {
+	margin-left: 41vw;
+	width: 50vw;
+	margin-top: 5vw;
+}
+
+.offwhiteonefooter {
+	margin-top: 15vw;
+}
+
+.offwhitetwoinfo {
+	margin-left: 41vw;
+	width: 50vw;
+	margin-top: 5vw;
+}
+
+.offwhitetwofooter {
+	margin-top: 15vw;
+}
+
+.offwhitethreefooter {
+	margin-top: 15vw;
+}
+
+.offwhitefourfooter {
+	margin-top: 15vw;
+}
+
+/*Vetements*/
+
+.vetements {
+	width: 70vw;
+	margin-left: 30vw;
+}
+
+.vetementsimg {
+	width: 120%;
+	/*border: 1px solid #707070;*/
+	margin: 0.69vw;
+	display: inline-block;
+}
+
+.vetements > a {
+	width: 35%;
+	display: inline-block;
+	padding: 4.5vw;
+}
+
+.vetementsstartfooter {
+	top: -8vw;
+}
+
+.vetementsprod {
+	margin-top: 2vw;
+	margin-left: 15vw;
+	width: 40vw;
+}
+
+.vetementsprodimg {
+	width: 100%;
+	/*border: 1px solid black;*/
+	margin: 0.69vw;
+	/*display: block;*/
+}
+
+.vetementsinfo {
+	margin-left: 41vw;
+	width: 50vw;
+	margin-top: 5vw;
+}
+
+.vetements2info {
+	margin-left: 41vw;
+	width: 50vw;
+	margin-top: 5vw;
+}
+
+.vetementsfooter {
+	margin-top: 15vw;
+}
+
+.vetements1footer {
+	margin-top: 15vw;
+}
+
+.vetements2footer {
+	margin-top: 15vw;
+}
+
+/*Applies to all*/
+
+.caption {
+	padding-left: 3vw;
+	font-size: 2vw;
+	margin-top: 0.14vw;
+}
+
+.price {
+	font-size: 1.9vw;
+	padding-left: 3vw;
+	margin-top: -1.14vw;
+}
+
+.title {
+	font-weight: bolder;
+	margin-top: 6vw;
+	font-size: 5vw;
+}
+
+.composition {
+	margin-top: -4.5vw;
+	width: 60%;
+	font-size: 3vw;
+}
+
+.description {
+	margin-top: 5vw;
+	margin-bottom: 5vw;
+	width: 20vw;
+	font-size: 3vw;
+}
+
+.pricetext {
+	font-size: 3vw;
+}
+
+.pricenumber {
+	margin-top: -2.5vw;
+	font-size: 3vw;	
+}
+
+.addtobag a {
+	text-transform: capitalize;
+	text-decoration: none;
+	color: black;
+	font-size: 2vw;
+}
+
+.addtobag {
+	margin-top: 4vw;
+}
+
+.link {
+	font-size: 2.5vw;
+}
+
+.fail {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.failedrequest {
+	font-weight: bold;
+	font-size: 4vw;
+	margin-bottom: 1.38vw;
+}
+
+.backtohomepage a {
+	text-transform: capitalize;
+	text-decoration: none;
+	color: black;
+}
+
+footer {
+	position: relative;
+	margin-top: 1080px;
+	font-size: 2vw;
+}
+
+footer a {
+	padding-right: 3vw;
+	padding-left: 3vw;
+}
+
+.footermenu {
+	width: 100%;
+	height: 2vw;
+	background-color: #D3D3D3;
+	text-align: center
+}
+
+footer p {
+	text-align: center;
+	margin-top: 0.69vw;
+	padding: 1.74vw;
+}
+
+.fail {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.failedrequest {
+	font-weight: bold;
+	font-size: 10vw;
+	margin-bottom: 2vw;
+}
+
+.backtohomepage a {
+	text-transform: capitalize;
+	text-decoration: none;
+	color: black;
+	font-size: 2.5vw;
+}
+
+}

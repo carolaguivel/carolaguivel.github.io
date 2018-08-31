@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<span id="timer"></span>
+
+<button id="start">start</button>
+<button id="stop">stop</button>
+<button id="reset">reset</button>
+
+<script>
+
+var initial = 300000;
+var count = initial;
+var counter; //10 will  run it every 100th of a second
+var initialMillis;
+
+function timer() {
+    if (count <= 0) {
+        clearInterval(counter);
+        return;
+    }
+    var current = Date.now();
+
+    count = count - (current - initialMillis);
+    initialMillis = current;
+    displayCount(count);
+}
+
+function displayCount(count) {
+    var res = count / 1000;
+    document.getElementById("timer").innerHTML = res.toPrecision(count.toString().length) + " secs";
+}
+
+$('#start').on('click', function () {
+    clearInterval(counter);
+    initialMillis = Date.now();
+    counter = setInterval(timer, 1);
+});
+
+$('#stop').on('click', function () {
+    clearInterval(counter);
+});
+
+$('#reset').on('click', function () {
+    clearInterval(counter);
+    count = initial;
+    displayCount(count);
+});
+
+displayCount(initial);
+
+var count = 30;
+    var count1 = 60;
+        //1000 will  run it every 1 second
+        var counter1;
+        var counter = setInterval(timer, 1000);
+
+        function timer1() {
+            if (count1 <= 0 && count < 1) {
+                clearInterval(counter1);
+                return;
+            } else {
+                if (count1 <= 0 && count > 0)
+                    count1 = 60;
+                else
+                    count1 = count1 - 1;
+                //var counter=setInterval(timer, 1000);
+            }
+            document.getElementById("timer").innerHTML = count + "." + count1 + " secs"; // watch for spelling
+        }
+        function timer() {
+            if (count <= 0) {
+                clearInterval(counter);
+                return;
+            }
+            else {
+                counter1 = setInterval(timer1, 10);
+            }
+            count = count - 1;
+
+        }
+
+</script>
+</body>
+</html>
+
+
+

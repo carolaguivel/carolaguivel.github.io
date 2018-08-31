@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OFF-WHITE</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="fake.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+
+<header>
+	<small>free standard shipping on orders over $500</small>
+</header>
+
+<!-- menu -->
+<div class="menu">
+<a href="fakefeed.html" class="links">Collection</a>
+<p>–</p>
+<div class="dropdown">
+	<!-- onclick="myFunction()" -->
+<button class="dropbtn">Brands</button>
+  	<div id="mydropdown" class="dropdowncontent">
+		<a href="fakebiis.html">biis</a>
+		<a href="fakeceline.html">céline</a>
+		<a href="fakecommedesgarcon.html">comme des garçons</a>
+		<a href="fakehelmutlang.html">helmut lang</a>
+		<a href="fakejilsanders.html">jil sander</a>
+		<a href="fakemargiela.html">maison margiela</a>
+		<a href="fakeoffwhite.html">off-white</a>
+		<a href="fakevetements.html">vetements</a>
+	</div>
+</div><br>
+<div class="menubottom transform">
+<p>–</p>
+<a class="links" href="fakefail.html" >Bag (0)</a><br><br>
+<a class="links" href="fakefail.html" >Account</a><br><br>
+<a class="links" href="fakefail.html" >Search</a>
+</div>
+</div>
+<!-- menu end -->
+
+<!-- content -->
+<div class="offwhiteprod"></div>
+
+<div class="offwhiteoneinfo">
+	<a class="link" href="fakeoffwhite.html">Back to off-white</a><br>
+</div>
+<!-- content end -->
+
+<!-- footer -->
+<footer class="offwhiteonefooter">
+	<div class="footermenu">
+		<a href="fakefail.html">customer care</a>
+		<a href="fakefail.html">legal area</a>
+		<a href="fakefail.html">press</a>
+		<a href="fakefail.html">shipping and handling</a>
+		<a href="fakefail.html">newsletter</a>
+	</div>
+	<p>copyright © 2010 out of the ordinary – all rights reserved</p>
+</footer>
+
+<script src="fakedropdown.js"></script>
+<script type="text/javascript">
+
+var myurl = "https://carolaguivel.github.io/observation/collection.json";
+
+
+$.getJSON(myurl, function(data){
+		
+	$(".offwhiteoneinfo").append( "<p class='title'>" + data.OffWhite[0].title + "</p><p class='composition'>" + data.OffWhite[0].composition + "</p><p class='description'>" + data.OffWhite[0].description + "</p><p class='pricetext'>Original Price</a><p class='pricenumber'>" + data.OffWhite[0].original + "</p><a href='offwhite0.html' class='fakelink'><p class='pricetext'>Retail Price</p><p class='pricenumber'>" + data.OffWhite[0].retail + "</p></a>" + "<button class='addtobag'><a href='fakefail.html'>Add To Bag</a></button>")
+
+
+	for (var i = 0; i < data.OffWhite[0].fakeimages.length; i++) {
+
+		$(".offwhiteprod").append("<img class='offwhiteprodimg' src='" + data.OffWhite[0].fakeurl + "/" + data.OffWhite[0].fakeimages[i] + "' >")
+
+		
+
+	}
+
+
+});
+
+
+</script>
+</body>
+</html>

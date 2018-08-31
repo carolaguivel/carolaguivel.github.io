@@ -1,0 +1,255 @@
+html, body {
+	background-color: #FDECF3;
+	height: 100vh;
+	max-height: 100vh;
+	width: 100%;
+	margin:0;
+	font-size: 15px;
+}
+
+body {
+	background-color: #FDECF3;
+	font-family: baskerville, serif;
+	color: #626262;
+	text-align: center; 
+	overflow-y: hidden;
+	position: fixed;
+}
+
+div {
+	height: 100%;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #626262;
+}
+
+.header {
+	height: 19vh;
+	max-height: 19vh;
+}
+.content {
+	height: 62vh;
+	max-height: 62vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 2.4vw;
+}
+.footer {
+	height: 19vh;
+	max-height: 19vh;
+}
+
+.row50 {height: 50%;}
+
+.borderbottom {border-bottom: 0.07em solid #626262;}
+
+.runninghead {
+	background-color: #FDECF3;
+	padding: 14px;
+	display: block;
+	position: absolute;
+	margin: 0 auto;
+	margin-top: -3.5vh;
+	right: 50px;
+	left: 50px;
+	height: 30%;
+	font-size: 1.5vw;
+}
+
+.folio {
+	background-color: #FDECF3;
+	padding: 14px;
+	width: 6%;
+	display: block;
+	position: absolute;
+	margin: 0 auto;
+	margin-top: -3.4vh;
+	height: 30%;
+	font-size: 1.5vw;
+	right: 50px;
+	left: 50px;
+}
+
+.folioarrow {
+	right: 50px;
+	left: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	opacity: 1;
+	transition: opacity 1s;
+}
+
+.arrowdown {
+	position: absolute;
+	margin-top: -0.2vh;
+	width: 100vw;
+	height: 30%;
+	left: -47vw;
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+.arrowdown:hover {
+	opacity: 1;
+}
+
+.arrowdown:hover a {
+	background-color: #FDECF3;
+	opacity: 1;
+}
+
+.arrowdown a {
+	opacity: 0;
+	transition: 1s;
+}
+
+.arrowdown img {
+	width: 2.05vw;
+}
+
+/*runningheads*/
+.intro {
+	width: 8%;
+}
+.splittingpoint {
+	width: 10%;
+}
+.partone {
+	width: 11%;
+}
+.parttwo {
+	width: 11%;
+}
+.theend {
+	width: 11%;
+}
+
+.hiddenlinks:hover {
+	color: black;
+	transition: 5s;
+}
+
+.rightarrow {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	width: 10%;
+	height: 100vh;
+	opacity: 0;
+	transition: opacity 1s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 10px;
+}
+
+.rightarrow img {
+	width: 0.7vw;
+}
+
+.rightarrow:hover {
+	opacity: 1;
+}
+
+@keyframes appear {
+	from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.appear {
+    animation-name: appear;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    opacity: 0;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.appear1 {
+    animation-name: appear;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    opacity: 0;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.appear2 {
+    animation-name: appear;
+    animation-duration: 2s;
+    animation-delay: 4s;
+    opacity: 0;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.restart {
+	position: absolute;
+	margin-top: 7vh;
+	font-size: 2vw;
+	opacity: 0;
+	transition: 1s;
+}
+
+.dropdown:hover + .restart {
+	opacity: 1;
+}
+
+.restart:hover {
+	opacity: 1;
+}
+
+@media only screen and (max-width: 600px){
+
+	.runninghead {
+		font-size: 2.5vw;
+		width: 19%;
+		margin-top: -4.5%;
+	}
+
+	.content {
+		font-size: 3vw;
+	}
+
+	.folio {
+		font-size: 2.5vw;
+		width: 10%;
+		margin-top: -4.5%;
+	}
+
+	.rightarrow img {
+		width: 1vw;
+	}
+
+	.arrowdown img{
+		width: 3vw;
+	}
+
+	.arrowdown {
+	position: absolute;
+	margin-top: -0.2vh;
+	width: 100vw;
+	height: 30%;
+	left: -45vw;
+	}
+
+}
+

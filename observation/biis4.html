@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BIIS</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="collection.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+
+<header>
+	<small>free standard shipping on orders over $500</small>
+</header>
+
+<!-- menu -->
+<div class="menu">
+<a href="feed.html" class="links">Collection</a>
+<p>–</p>
+<div class="dropdown">
+	<!-- onclick="myFunction()" -->
+<button class="dropbtn">Brands</button>
+  	<div id="mydropdown" class="dropdowncontent">
+		<a href="biis.html">biis</a>
+		<a href="celine.html">céline</a>
+		<a href="commedesgarcon.html">comme des garçons</a>
+		<a href="helmutlang.html">helmut lang</a>
+		<a href="jilsanders.html">jil sander</a>
+		<a href="margiela.html">maison margiela</a>
+		<a href="offwhite.html">off-white</a>
+		<a href="vetements.html">vetements</a>
+	</div>
+</div><br>
+<div class="menubottom transform">
+<p>–</p>
+<a class="links" href="fail.html" >Bag (0)</a><br><br>
+<a class="links" href="fail.html" >Account</a><br><br>
+<a class="links" href="fail.html" >Search</a>
+</div>
+</div>
+
+<article class="menubar">
+    <section>
+        <div class="rect"><img src="images/icon.png" class="icon" id="open-toggle">
+        <div class="phonemenu">
+        	<a href="feed.html" class="links">Collection</a>
+			<p>–</p>
+			<div class="dropdown">
+			<button class="dropbtn">Brands</button>
+  			<div id="mydropdown" class="dropdowncontent">
+				<a href="biis.html">biis</a>
+				<a href="celine.html">céline</a>
+				<a href="commedesgarcon.html">comme des garçons</a>
+				<a href="helmutlang.html">helmut lang</a>
+				<a href="jilsanders.html">jil sander</a>
+				<a href="margiela.html">maison margiela</a>
+				<a href="offwhite.html">off-white</a>
+				<a href="vetements.html">vetements</a>
+			</div>
+			</div><br>
+			<div class="menubottom transform">
+			<p>–</p>
+				<a class="links" href="fail.html" >Bag (0)</a><br><br>
+				<a class="links" href="fail.html" >Account</a><br><br>
+				<a class="links" href="fail.html" >Search</a>
+			</div>
+        </div>
+        </div>
+    </section>
+</article>
+<!-- menu end -->
+
+<!-- content -->
+<div class="biisprod"></div>
+
+<div class="biis2info">
+	<a class="link" href="biis.html">Back to biis</a><br>
+</div>
+<!-- content end -->
+
+<!-- footer -->
+<footer class="biis2footer">
+	<div class="footermenu">
+		<a href="fail.html">customer care</a>
+		<a href="fail.html">legal area</a>
+		<a href="fail.html">press</a>
+		<a href="fail.html">shipping and handling</a>
+		<a href="fail.html">newsletter</a>
+	</div>
+	<p>copyright © 2018 out of the ordinary – all rights reserved</p>
+</footer>
+
+<script src="dropdown.js"></script>
+<script type="text/javascript">
+
+var myurl = "https://carolaguivel.github.io/observation/collection.json";
+
+
+$.getJSON(myurl, function(data){
+		
+	$(".biis2info").append( "<p class='title'>" + data.Biis[3].title + "</p><p class='composition composition2'>" + data.Biis[3].composition + "</p><p class='description'>" + data.Biis[3].description + "<a href='fakebiis4.html' class='fakelink'><p class='pricetext'>Original Price</p><p class='pricenumber' >" + data.Biis[3].original + "</p></a><p class='pricetext'>Retail Price</p><p class='pricenumber'>" + data.Biis[3].retail + "</p>" + "<button class='addtobag'><a href='fail.html'>ADD TO BAG</a></button>")
+
+
+	for (var i = 0; i < data.Biis[3].images.length; i++) {
+
+		$(".biisprod").append("<img class='biisprodimg' src='" + data.Biis[3].url + "/" + data.Biis[3].images[i] + "' >")
+
+		
+
+	}
+
+
+});
+
+
+</script>
+</body>
+</html>
