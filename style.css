@@ -5,7 +5,8 @@ html, body {
 
 body {
 	color: #FFFFFF;
-	font-family: prestige elite std, monospace;
+	font-family: Prestige Elite Std, monospace;
+    margin-top: 0.7vw;
 }
 
 text {
@@ -28,7 +29,6 @@ span {
     background-color: #41fd2f;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 2vw;
 }
 
 .sidenav a {
@@ -38,9 +38,9 @@ span {
 
 .sidenav .closebtn {
     position: absolute;
-    font-size: 1.8vw;
+    font-size: 1.5vw;
     margin-left: 15.2vw;
-    margin-top: -1vw;
+    margin-top: 1vw;
 }
 
 .transform {
@@ -55,41 +55,109 @@ span {
   margin-top: 270px;
 }
 
+.menu {
+    margin-top: 6.5vw;
+    margin-left: 2vw;
+}
+
 .dropdowncontent {
     display: none;
     position: relative;
+    padding-bottom: 0.8vw;
+}
+
+a > span {
+    position: relative;
+    color: #000000;
+    text-decoration: none;    
+}
+
+a > span:hover {
+    color: #000000;
+}
+
+a > span:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.07vw;
+  bottom: 0;
+  left: 0;
+  top: 1.1vw;
+  background-color: #000000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+a > span:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 .dropbtn {
     background-color: #41fd2f;
-    font-family: Prestige Elite Std, monospace;
+    font-family: Helvetica, monospace;
     text-transform: uppercase;
     border: none;
     cursor: pointer;
     color: #000000;
-    font-size: 1.2vw;
+    font-size: 1vw;
+    letter-spacing: 0.1vw;
     padding: 0;
+    top: 0;
+    padding-bottom: 0.8vw;
 }
 
 .dropbtn:focus {
     outline: none;
 }
 
-.dropbtn:hover {
-    text-decoration: underline;
+div > button {
+    position: relative;
+    color: #000000;
+    text-decoration: none;    
+}
+
+div > button:hover {
+    color: #000000;
+}
+
+div > button:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.07vw;
+  bottom: 0;
+  left: 0;
+  top: 1.1vw;
+  background-color: #000000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+div > button:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 .dropdown a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 1.2vw;
+    font-size: 0.9vw;
     color: #000000;
     display: block;
     transition: 0.3s;
-}
-
-.dropdown a:hover {
-    text-decoration: underline;
+    font-family: Helvetica, sans serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1vw;
 }
 
 #content {
