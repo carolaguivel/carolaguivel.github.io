@@ -8,11 +8,15 @@ body {
 	font-family: prestige elite std, monospace;
 }
 
-span {
+text {
     cursor: pointer;
     font-size: 30px;
     margin-top: 5vw;
     margin-left: 1vw;
+}
+
+span {
+    cursor: default;
 }
 
 .sidenav {
@@ -25,7 +29,7 @@ span {
     background-color: #41fd2f;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
+    padding-top: 2vw;
 }
 
 .sidenav a {
@@ -39,11 +43,6 @@ span {
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
 }
 
 .transform {
@@ -130,4 +129,9 @@ span {
     0% { opacity:1; }
     50% { opacity:0; }
     100% { opacity:1; }
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
