@@ -2,19 +2,69 @@
 <html>
 <head>
 	<title>Carolyn Olaguivel</title>
-	<meta charset="UTF-8">
-	<meta name="keywords" content="Artist, Designer, Portfolio">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<link rel="stylesheet" type="text/css" href="style.css">
 
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
 <body>
-<h1>Carolyn Olaguivel</h1>
-<ul>
-	<a href="https://red-rouge.tumblr.com"><li>The Post</li></a>
-	<a href="hyperlink/1.html"><li>The Hyperlink</li></a>
-	<a href="innovation/1.1.html"><li>Innovation and Invention</li></a>
-	<a href="observation/collection.html"><li>Observations</li></a>
-</ul>
+
+<!-- menu -->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="menu">
+
+	<div class="dropdown">
+		<button class="dropbtn">FW18</button>
+  		<div id="mydropdown1" class="dropdowncontent">
+			<a href="biis.html">Project1</a>
+			<a href="celine.html">Project2</a>
+			<a href="commedesgarcon.html">Project3</a>
+			<a href="helmutlang.html">Project4</a>
+		</div>
+	</div><br>
+
+	<div class="dropdown transform">
+		<button class="dropbtn">SS18</button>
+		<div id="mydropdown2" class="dropdowncontent">
+			<a href="https://carolaguivel.github.io/observation/collection.html">Out of the Ordinary</a>
+		</div>
+	</div>
+
+	</div>
+</div>
+<!-- menu end -->
+
+
+<!-- content -->
+<span onclick="openNav()">+</span>
+
+<div id="content">
+	<div class="wrapper">
+		<div class="typed_wrap">
+			<p><span class="typed"></span></p>
+		</div>
+	</div>
+</div>
+<!-- content end -->
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+<script src="dropdown.js"></script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js'></script>
+
+<script src="typed.js"></script>
 
 </body>
 </html>
