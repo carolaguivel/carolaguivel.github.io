@@ -201,7 +201,7 @@ div > button:hover:before {
 
     text {
         cursor: pointer;
-        font-size: 5vw;
+        font-size: 7vw;
         margin-left: 1vw;
     }
 
@@ -239,7 +239,7 @@ div > button:hover:before {
     }
 
     .sidenav .closebtn {
-    font-size: 5vw;
+    font-size: 6vw;
     margin-left: 60vw;
     margin-top: -1vw;
     }
