@@ -10,8 +10,7 @@ body {
 
 text {
     cursor: pointer;
-    font-size: 30px;
-    margin-top: 5vw;
+    font-size: 2vw;
     margin-left: 1vw;
 }
 
@@ -39,10 +38,9 @@ span {
 
 .sidenav .closebtn {
     position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+    font-size: 1.8vw;
+    margin-left: 15.2vw;
+    margin-top: -1vw;
 }
 
 .transform {
@@ -69,7 +67,7 @@ span {
     border: none;
     cursor: pointer;
     color: #000000;
-    font-size: 15px;
+    font-size: 1.2vw;
     padding: 0;
 }
 

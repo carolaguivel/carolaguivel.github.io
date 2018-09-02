@@ -26,7 +26,7 @@ $(".dropbtn").click(function () {
 // typed
 $(function(){
 	$(".typed").typed({
-		strings: ["Carolyn Olaguivel","Designer and Web Developer"],
+		strings: ["Sugar","Spice","and everything nice"],
 		stringsElement: null,
 		typeSpeed: 80,
 		startDelay: 1200,
