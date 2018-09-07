@@ -33,7 +33,7 @@ $(function(){
 		backSpeed: 60,
 		backDelay: 800,
 		loop: true,
-		loopCount: 20,
+		// loopCount: 20,
 		showCursor: false,
 		cursorChar: "|",
 		attr: null,
