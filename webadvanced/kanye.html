@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		
+		html{
+			background-color: #f38c5d;
+			/*position: absolute;*/
+		}
+
+		.text{
+			color: #000000;
+			font-weight: bold;
+			font-size: 1.7vw;
+			font-family: Helvetica;
+			text-transform: uppercase;
+		}
+
+		.blue{
+			background-color: blue;
+		}
+
+		img {
+			position: fixed;
+		}
+
+		.img1 {
+			margin-left: 12vw;
+			margin-top: 12vw;	
+		}
+
+		.img2 {
+			margin-left: 28vw;
+			margin-top: 35vw;
+		}
+
+
+	</style>
+
+
+</head>
+<body>
+
+	<div id="wrapper"></div>
+
+	<img src="img1.jpg" width="18%" class="img1">
+	<img src="img2.jpg" width="13%" class="img2">
+
+
+
+	<script type="text/javascript">
+		
+		var myArray = [
+			["I miss the old","straight from the Go", 16],
+			["Chop up the soul", "set on his goals"],
+			["I hate the new", "the bad mood", 50],
+			["The always rude","spaz in the news", 100],
+			["I miss the sweet","chop up the beats"],
+			["See, I invented","it wasn't any"],
+			["I used to love","I used to love"],
+			["What if","made a song about"],
+			["Called I miss the old","man that'd be so"],
+			["That's all it was","we still love"],
+			["And I love you like","loves",]
+		];
+
+		var text = "";
+
+
+		for (var j = 0; j < 50; j++) {
+
+		for (var i = 0; i < myArray.length; i++) {
+
+			var element = document.createElement("div")
+			
+			element.className = "text"
+
+			var arrayValue = myArray[i];
+			// var arrayValueOne = arrayValue[2];
+
+			var style = "";
+
+			if (i < 4) {
+				
+				style = 'style="margin-left: ' + 10 + 'vw;"'
+
+			}
+			if (i > 8) {
+				style = 'style="font-size: ' + 1.2 + 'vw;"'
+			}
+
+
+			element.innerHTML = `
+
+				<p ${style} > ${arrayValue[0]} Kanye, ${arrayValue[1]} Kanye</p>
+
+			`				
+			
+			document.body.appendChild(element);
+
+		}
+	}
+
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
