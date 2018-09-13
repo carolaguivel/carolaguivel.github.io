@@ -78,6 +78,7 @@ a > span {
 
 a > span:hover {
     color: #000000;
+    cursor: pointer;
 }
 
 a > span:before {
