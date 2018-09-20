@@ -1,0 +1,68 @@
+html{
+	margin: 0;
+	background-color: lightblue;
+}
+
+h1 {
+	font-family: Bebas Neue;
+	font-style: italic;
+	position: absolute;
+	font-size: 7vw;
+	margin-left: 10vw;
+	margin-top: 3vw;
+}
+
+text {
+	cursor: pointer;
+	font-size: 2vw;
+	position: fixed;
+}
+
+.text{
+	color: #000000;
+	font-weight: bold;
+	font-size: 1.7vw;
+	font-family: Helvetica;
+	text-transform: uppercase;
+}
+
+.blue{
+	background-color: blue;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: lightblue;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.sidenav a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    font-size: 1.5vw;
+    margin-left: 15.2vw;
+    margin-top: 1vw;
+}
+
+.transform {
+  -webkit-transition: all 1s ease;  
+  -moz-transition: all 1s ease;  
+  -o-transition: all 1s ease;  
+  -ms-transition: all 1s ease;  
+  transition: all 1s ease;
+}
+
+img {
+	width: 20%;
+	z-index: -1;
+}

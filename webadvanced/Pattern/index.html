@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+
+<style type="text/css">
+
+	html {
+		background-color: black;
+	}
+
+	html, body, h1, h2, h3, h4, h5, h6, p, ul, li{
+			padding: 0;
+			margin: 0;
+		}
+
+	.container {
+		position: relative;
+		display: inline-block;
+		width: 11.11vw;
+		height: 11.11vw;
+	}
+
+	.triangle {
+		width: auto;
+		height: auto;
+		border-left: 5vw solid transparent;
+		border-right: 5vw solid transparent;
+		vertical-align: middle;
+		position: absolute;
+		top:50%;
+		left:50%;
+		transform: translate(-50%, -50%)
+		}
+	}
+
+</style>
+
+</head>
+
+<body>
+
+	<div id="wrapper"></div>
+
+
+<script type="text/javascript">
+
+function randomInt(low, high){
+	var random = parseInt(Math.random()*(high-low) + low);
+	return random;
+}
+
+var border1 = 0;
+var border2 = 0;
+var direction = false;
+
+for (var i = 0; i < 603; i++) {
+
+		var container = document.createElement("div");
+		container.className = "container";
+
+		if(i % 2 == 0){
+			border1 = 5
+			border2 = 0
+		}
+		else{
+			border1 = 0
+			border2 = 5
+		}
+
+		var color = "hsl(" + randomInt(80,123) +  "," + randomInt(60,80) + "%" + "," + randomInt(50,80) + "%" + ")";
+
+		container.innerHTML = `
+			<div style="border-bottom:${border1}vw solid ${color}; border-top:${border2}vw solid ${color}"; class="triangle"></div>
+			`				
+			
+		document.getElementById("wrapper").appendChild(container)
+
+	}
+
+
+</script>
+</body>
+</html>

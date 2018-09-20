@@ -1,107 +1,110 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<title>Lonely Blue</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
-	<style type="text/css">
-		
-		html{
-			background-color: rgb(245,140,88);
-			/*position: absolute;*/
-		}
-
-		.text{
-			color: #000000;
-			font-weight: bold;
-			font-size: 1.7vw;
-			font-family: Helvetica;
-			text-transform: uppercase;
-		}
-
-		.blue{
-			background-color: blue;
-		}
-
-		img {
-			position: fixed;
-		}
-
-		.img1 {
-			margin-left: 64vw;
-			margin-top: 12vw;	
-		}
-
-		/*.img2 {
-			margin-left: 28vw;
-			margin-top: 35vw;
-		}*/
-
-
-	</style>
+	<link rel="stylesheet" type="text/css" href="style.css">
 
 
 </head>
 <body>
+	<div id="mySidenav" class="sidenav">
+  		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  	
+  		<div class="songlist">
+  			<p>Slow Hours</p>
+  			<p>Bedford falls</p>
+  			<p>Borderline</p>
+  		</div>
+
+
+  	</div>
+
+  	<h1>Lonely Blue</h1>
+
+	<text onclick="openNav()">+</text>
 
 	<div id="wrapper"></div>
-
-	<img src="album.jpg" width="28%" class="img1">
-
 
 
 	<script type="text/javascript">
 		
-		var myArray = [
-			["I miss the old","straight from the Go", 16],
-			["Chop up the soul", "set on his goals"],
-			["I hate the new", "the bad mood", 50],
-			["The always rude","spaz in the news", 100],
-			["I miss the sweet","chop up the beats"],
-			["See, I invented","it wasn't any"],
-			["I used to love","I used to love"],
-			["What if","made a song about"],
-			["Called I miss the old","man that'd be so"],
-			["That's all it was","we still love"],
-			["And I love you like","loves",]
-		];
+		// var myArray = [
+		// 	["I miss the old","straight from the Go", 16],
+		// 	["Chop up the soul", "set on his goals"],
+		// 	["I hate the new", "the bad mood", 50],
+		// 	["The always rude","spaz in the news", 100],
+		// 	["I miss the sweet","chop up the beats"],
+		// 	["See, I invented","it wasn't any"],
+		// 	["I used to love","I used to love"],
+		// 	["What if","made a song about"],
+		// 	["Called I miss the old","man that'd be so"],
+		// 	["That's all it was","we still love"],
+		// 	["And I love you like","loves",]
+		// ];
 
-		var text = "";
+		// sidenav
+		function openNav() {
+    	document.getElementById("mySidenav").style.width = "250px";
+		}
+
+		function closeNav() {
+    	document.getElementById("mySidenav").style.width = "0";
+		}
+		// sidenav end	
 
 
-		for (var j = 0; j < 50; j++) {
+		var URL = [
+			"cd.png"
+		]
 
-		for (var i = 0; i < myArray.length; i++) {
+		for(i=0;i<500;i++) {
+  			
+  			var imgs = URL.map(function(URL) {
+  			var img = new Image();
+  			img.src = URL;
+  			document.body.appendChild(img);
+  			return img; 
+			});
+		}
 
-			var element = document.createElement("div")
+
+		// for (var j = 0; j < 50; j++) {
+
+		// for (var i = 0; i < URL.length; i++) {
+
+		// 	var imgs = URL.map(function(URL) {
+  // 			var img = new Image();
+  // 			img.src = URL;
+  // 			document.body.appendChild(img);
+  // 			return img;
+		// 
+
+			// var element = document.createElement("div")
 			
-			element.className = "text"
+			// element.className = "text"
 
-			var arrayValue = myArray[i];
+			// var arrayValue = myArray[i];
 			// var arrayValueOne = arrayValue[2];
 
-			var style = "";
+			// var style = "";
 
-			if (i < 4) {
+			// if (i < 4) {
 				
-				style = 'style="margin-left: ' + 10 + 'vw;"'
+			// 	style = 'style="margin-left: ' + 10 + 'vw;"'
 
-			}
-			if (i > 8) {
-				style = 'style="font-size: ' + 1.2 + 'vw;"'
-			}
+			// }
 
 
-			element.innerHTML = `
+			// element.innerHTML = `
 
-				<p ${style} > ${arrayValue[0]} Kanye, ${arrayValue[1]} Kanye</p>
+			// 	<img src= ${imgArray[0]} ></img>
 
-			`				
-			
-			document.body.appendChild(element);
+			// `
 
-		}
-	}
+					
+		
 
 	</script>
 </body>
