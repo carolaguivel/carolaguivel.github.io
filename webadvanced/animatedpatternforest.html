@@ -58,12 +58,16 @@
 	}
 
 	.circle{
-		position: absolute;
-		border-radius: 50%;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-}
+			width: auto;
+			height: auto;
+			vertical-align: middle;
+			position: absolute;
+			top:50%;
+			left:50%;
+			transform: translate(-50%, -50%);
+			position: absolute;
+			z-index: -1;
+		}
 
 </style>
 
@@ -145,9 +149,78 @@ for (var i = 0; i < 6039; i++) {
 			
 		document.getElementById("wrapper").appendChild(container)
 
-
-
 }
+
+var timer = 0, //this incrementally increases with each loop 
+				counter = 0, // you will need a counter separate from `i` to increase for each setTimeout (separately from the for loop)
+				circleDiameter = 0,
+				direction = false,
+				totalLength = 100;
+
+for (var j = 0; j < 200; j++) {
+			
+
+			setTimeout(function(){ // include the settimeout function
+
+				//creating element
+				var container2 = document.createElement("div");
+				container2.className = "container2";
+
+					if(counter % 5 == 0){
+						if (direction) {
+							// if direction is true, change it to false
+							direction = false;
+						}else{
+							// if direction is false, change it to true
+							direction = true;
+							// circleDiameter = 1;
+						}
+					}
+
+					//incrementing the diameter
+					if(!direction){
+						// if direction = false
+						circleDiameter--;
+					}else{
+						// if direction = true
+						circleDiameter++;
+					}
+					// percentage of progress through array
+					var progress = counter/(totalLength - 1);
+					// producing the individual red and blue values through incrementing to total value of subtraction/addition
+					var red = Math.ceil(255 - (progress*255));
+					var blue = Math.ceil(progress*255);
+
+					// constructing the color style string
+					var color = "rgb(" + red + ", 0, " + blue + ")";
+					// percentage for opacity
+					var percentage = circleDiameter / 5;
+
+					//template literal with diameter injected as inline css
+					container2.innerHTML = `
+
+						<div style=" 
+						opacity:${percentage}; 
+						width:${circleDiameter*2}vw; 
+						height:${circleDiameter*2}vw; border-left: 5vw solid transparent; border-right: 5vw solid transparent; border-top: 7vw solid ${color}; z-index: 1" class="circle"></div>
+
+					`
+
+					var child = document.getElementsByClassName("container2")[0]
+
+					if(child){
+						child.remove()
+					}
+					
+
+					document.getElementById("wrapper").appendChild(container2)
+
+					counter++;
+
+				}, timer)
+
+				timer += 100; //update timer to make sure the next instance happens after this one	
+			}
 
 
 </script>
