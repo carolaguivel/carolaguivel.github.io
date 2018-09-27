@@ -13,15 +13,15 @@
   		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   	
   		<div class="songlist">
-  			<p>Slow Hours</p>
-  			<p>Bedford falls</p>
-  			<p>Borderline</p>
+  			<p></p>
+  			<p></p>
+  			<p></p>
   		</div>
 
 
   	</div>
 
-  	<h1>Lonely Blue</h1>
+  	<!-- <h1>Lonely Blue</h1> -->
 
 	<text onclick="openNav()">+</text>
 
@@ -29,20 +29,6 @@
 
 
 	<script type="text/javascript">
-		
-		// var myArray = [
-		// 	["I miss the old","straight from the Go", 16],
-		// 	["Chop up the soul", "set on his goals"],
-		// 	["I hate the new", "the bad mood", 50],
-		// 	["The always rude","spaz in the news", 100],
-		// 	["I miss the sweet","chop up the beats"],
-		// 	["See, I invented","it wasn't any"],
-		// 	["I used to love","I used to love"],
-		// 	["What if","made a song about"],
-		// 	["Called I miss the old","man that'd be so"],
-		// 	["That's all it was","we still love"],
-		// 	["And I love you like","loves",]
-		// ];
 
 		// sidenav
 		function openNav() {
@@ -70,38 +56,82 @@
 		}
 
 
-		// for (var j = 0; j < 50; j++) {
+var timer = 0, //this incrementally increases with each loop 
+				counter = 0, // you will need a counter separate from `i` to increase for each setTimeout (separately from the for loop)
+				circleDiameter = 0,
+				direction = false,
+				totalLength = 100;
 
-		// for (var i = 0; i < URL.length; i++) {
+for (var j = 0; j < 50; j++) {
 
-		// 	var imgs = URL.map(function(URL) {
-  // 			var img = new Image();
-  // 			img.src = URL;
-  // 			document.body.appendChild(img);
-  // 			return img;
-		// 
 
-			// var element = document.createElement("div")
+		for (var i = 0; i < totalLength; i++) {
 			
-			// element.className = "text"
 
-			// var arrayValue = myArray[i];
-			// var arrayValueOne = arrayValue[2];
+			setTimeout(function(){ // include the settimeout function
 
-			// var style = "";
+				//creating element
+				var container = document.createElement("div");
+				container.className = "container";
 
-			// if (i < 4) {
-				
-			// 	style = 'style="margin-left: ' + 10 + 'vw;"'
+					if(counter % 5 == 0){
+						if (direction) {
+							// if direction is true, change it to false
+							direction = false;
+						}else{
+							// if direction is false, change it to true
+							direction = true;
+							circleDiameter = 1;
+						}
+					}
 
-			// }
+					//incrementing the diameter
+					if(!direction){
+						// if direction = false
+						circleDiameter--;
+					}else{
+						// if direction = true
+						circleDiameter++;
+					}
+					// percentage of progress through array
+					var progress = counter/(totalLength - 1);
+					// producing the individual red and blue values through incrementing to total value of subtraction/addition
+					var red = Math.ceil(255 - (progress*255));
+					var blue = Math.ceil(progress*255);
 
+					// constructing the color style string
+					var color = "rgb(" + red + ", 0, " + blue + ")";
+					// percentage for opacity
+					var percentage = circleDiameter / 5;
 
-			// element.innerHTML = `
+					//template literal with diameter injected as inline css
+					container.innerHTML = `
 
-			// 	<img src= ${imgArray[0]} ></img>
+						<div style="
+						background-color:${color}; 
+						opacity:${percentage}; 
+						width:${circleDiameter*2}vw; 
+						height:${circleDiameter*2}vw;" class="circle"></div>
 
-			// `
+					`
+
+					var child = document.getElementsByClassName("container")[0]
+
+					if(child){
+						child.remove()
+					}
+					
+
+					document.getElementById("wrapper").appendChild(container)
+
+					counter++;
+
+				}, timer)
+
+				timer += 100; //update timer to make sure the next instance happens after this one	
+			}
+}
+
 
 					
 		
