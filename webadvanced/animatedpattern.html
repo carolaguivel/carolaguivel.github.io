@@ -23,6 +23,7 @@
 		display: inline-block;
 		width: 3vw;
 		height: 4.8vw;
+		/*z-index: -1;*/
 	}
 
 	.triangle {
@@ -40,16 +41,18 @@
 	}
 
 	#textwrapper {
-		margin-top: -450vw;
-		margin-left: 20vw;
+		margin-top: -461vw;
+		margin-left: 0vw;
 		z-index: 1;
 		color: #24dd1a;
 		font-family: "ocr-a-std",monospace;
+		text-align: center;
 	}
 
 	p {
 		color: #24dd1a;
 		font-family: "ocr-a-std",monospace;
+		font-style: oblique;
 	}
 
 </style>
@@ -73,6 +76,7 @@ function randomInt(low, high){
 var border1 = 0;
 var border2 = 0;
 var direction = false;
+var zindex = 0;
 
 for (var i = 0; i < 3003; i++) {
 
@@ -82,16 +86,22 @@ for (var i = 0; i < 3003; i++) {
 		var color = "hsl(" + randomInt(95,130) +  "," + randomInt(80,100) + "%" + "," + randomInt(0,20) + "%" + ")";
 
 		if(i % 2 == 0){
-			border1 = 5
-			border2 = 0
+			border1 = 5;
+			border2 = 0;
 		}
 		else{
-			border1 = 0
-			border2 = 5
+			border1 = 0;
+			border2 = 5;
+		}
+
+		if(i % 14 == 0){
+			zindex = 1;
+		}else{
+			zindex = -1;
 		}
 
 		container.innerHTML = `
-			<div style="border-bottom:${border1}vw solid ${color}; border-top:${border2}vw solid ${color}"; class="triangle"></div>
+			<div style="border-bottom:${border1}vw solid ${color}; border-top:${border2}vw solid ${color}; z-index: ${zindex}" class="triangle"></div>
 			`				
 			
 		document.getElementById("wrapper").appendChild(container)
@@ -100,9 +110,10 @@ for (var i = 0; i < 3003; i++) {
 
 
 var interval = 0,
+	weight = 0,
 	counter = 0;
 
-for (var i=0; i < 330; i++) {
+for (var i=0; i < 380; i++) {
 	
 	setTimeout(function(){
 
