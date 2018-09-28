@@ -141,7 +141,7 @@ for (var i=0; i < 380; i++) {
 		weather.innerHTML = snow;
 		document.getElementById("textwrapper").appendChild(weather);
 
-		// window.scrollTo(0, document.body.scrollHeight);
+		document.getElementById("textwrapper").scrollIntoView(false);
 
 	counter++;
 	}, interval);
