@@ -4,7 +4,7 @@
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>still pattern</title>
+<title>#13f22d</title>
 <link rel="stylesheet" href="https://use.typekit.net/zsi1mos.css">
 
 <style type="text/css">
@@ -16,6 +16,7 @@
 	html, body{
 			padding: 0;
 			margin: 0;
+			font-family: "ocr-a-std",monospace;
 	}
 
 	.container {
@@ -43,9 +44,12 @@
 
 <body>
 
-	<div id="wrapper"></div>
+<!-- content -->
+	<div id="wrapper" class="anotherClass"></div>
+<!-- content -->
 
 <script type="text/javascript">
+
 
 function randomInt(low, high){
 	var random = parseInt(Math.random()*(high-low) + low);
@@ -65,7 +69,7 @@ for (var i = 0; i < 6039; i++) {
 		var container = document.createElement("div");
 		container.className = "container";
 
-		var color = "hsl(" + randomInt(95,130) +  "," + randomInt(80,100) + "%" + "," + randomInt(0,20) + "%" + ")";
+		var color = "hsl(" + randomInt(105,130) +  "," + randomInt(80,100) + "%" + "," + randomInt(0,20) + "%" + ")";
 
 		if(i % 2 == 0){
 			border1 = 5
@@ -87,21 +91,23 @@ for (var i = 0; i < 6039; i++) {
 			border2 = 10
 			borderleft = 7
 			borderright = 7
-			color = "hsl(" + randomInt(95,130) +  "," + randomInt(80,100) + "%" + "," + randomInt(30,80) + "%" + ")";
+			color = "hsl(" + randomInt(105,130) +  "," + randomInt(80,100) + "%" + "," + randomInt(30,80) + "%" + ")";
+
+
 			zindex = -1
 		}else if(i % 22 == 0){
 			border1 = 0
 			border2 = 7
 			borderleft = 5
 			borderright = 5
-			color = "hsl(" + randomInt(95,130) +  "," + randomInt(80,100) + "%" + "," + randomInt(10,30) + "%" + ")";
+			color = "hsl(" + randomInt(105,130) +  "," + randomInt(80,100) + "%" + "," + randomInt(10,30) + "%" + ")";
 			zindex = -1
 		}else if(i % 43 == 0){
 			border1 = 0
 			border2 = 7
 			borderleft = 5
 			borderright = 5
-			color = "hsl(" + randomInt(95,130) +  "," + randomInt(80,100) + "%" + "," + randomInt(30,40) + "%" + ")";
+			color = "hsl(" + randomInt(105,130) +  "," + randomInt(80,100) + "%" + "," + randomInt(30,40) + "%" + ")";
 			zindex = -1
 		}
 
@@ -112,6 +118,10 @@ for (var i = 0; i < 6039; i++) {
 		document.getElementById("wrapper").appendChild(container)
 
 }
+
+
+
+
 
 </script>
 </body>
