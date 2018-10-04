@@ -4,7 +4,7 @@
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>still pattern</title>
+<title>rgb</title>
 <link rel="stylesheet" href="https://use.typekit.net/zsi1mos.css">
 
 <style type="text/css">
@@ -102,8 +102,6 @@
 		cursor: pointer;
 	}
 
-	.red {}
-
 @media only screen and (max-width: 700px) {
 
     .sidenav {padding-top: 15px;}
@@ -197,6 +195,10 @@ for (var i = 0; i < 6039; i++) {
 
 		var color = "hsl(" + randomInt(105,130) +  "," + randomInt(80,100) + "%" + "," + randomInt(0,20) + "%" + ")";
 
+		$( "div" ).eq( i ).addClass("red");
+		$( "div" ).eq( i ).addClass("green");
+		$( "div" ).eq( i ).addClass("blue");
+
 		if(i % 2 == 0){
 			border1 = 5
 			border2 = 0
@@ -219,14 +221,8 @@ for (var i = 0; i < 6039; i++) {
 			borderleft = 7
 			borderright = 7
 			color = "hsl(" + randomInt(105,130) +  "," + randomInt(80,100) + "%" + "," + randomInt(30,80) + "%" + ")";
-
-			$(document).ready(function(){
-				$(".container").each(function(){
-				$(this).addClass("red")
-				})
-			})
-
 			zindex = -1
+			$( "div" ).eq( i ).addClass("red15");
 		}else if(i % 22 == 0){
 			border1 = 0
 			border2 = 7
@@ -258,14 +254,23 @@ function redFunction() {
     document.getElementById("opennavtext").style.color = "red";
 
     var x = document.getElementsByClassName("red");
-    var i;
+    var y = document.getElementsByClassName("red15");
 
-    for (i = 0; i < x.length; i++) {
+    for (j = 0; j < x.length; j++) {
     	var red = "hsl(" + randomInt(0,20) +  "," + randomInt(80,100) + "%" + "," + randomInt(0,20) + "%" + ")";
     	var transparent = "transparent"
-    	x[i].style.borderStyle = "solid";
-    	x[i].style.borderColor = red;
+    	// x[i].style.borderStyle = "solid";
+    	x[j].style.borderColor = red;
 	}
+
+	for (j = 0; j < y.length; j++) {
+    	var red15 = "hsl(" + randomInt(0,20) +  "," + randomInt(80,100) + "%" + "," + randomInt(30,80) + "%" + ")";
+    	var transparent = "transparent"
+    	// x[i].style.borderStyle = "solid";
+    	x[j].style.borderColor = red15;
+	}
+
+
 }
 
 
@@ -273,12 +278,32 @@ function blueFunction() {
     document.getElementById("mySidenav").style.color = "blue";
     document.getElementById("closebtn").style.color = "blue";
     document.getElementById("opennavtext").style.color = "blue";
+
+    var x = document.getElementsByClassName("blue");
+    var j;
+
+    for (j = 0; j < x.length; j++) {
+    	var blue = "hsl(" + randomInt(220,250) +  "," + randomInt(80,100) + "%" + "," + randomInt(0,20) + "%" + ")";
+    	var transparent = "transparent"
+    	// x[i].style.borderStyle = "solid";
+    	x[j].style.borderColor = blue;
+    }
 }
 
 function greenFunction() {
     document.getElementById("mySidenav").style.color = "green";
     document.getElementById("closebtn").style.color = "green";
     document.getElementById("opennavtext").style.color = "green";
+
+    var x = document.getElementsByClassName("green");
+    var j;
+
+    for (j = 0; j < x.length; j++) {
+    	var green = "hsl(" + randomInt(105,130) +  "," + randomInt(80,100) + "%" + "," + randomInt(0,20) + "%" + ")";
+    	var transparent = "transparent"
+    	// x[i].style.borderStyle = "solid";
+    	x[j].style.borderColor = green;
+    }
 }
 
 </script>
