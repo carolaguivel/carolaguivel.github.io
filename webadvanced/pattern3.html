@@ -92,8 +92,8 @@
 	}
 
 	.triangle {
-		width: auto;
-		height: auto;
+		/*width: auto;*/
+		/*height: auto;*/
 		vertical-align: middle;
 		position: absolute;
 		/*top:50%;*/
@@ -187,10 +187,8 @@ function randomInt(low, high){
 	return random;
 }
 
-var border1 = 0;
-var border2 = 0;
-var borderleft = 0;
-var borderright = 0;
+var width = 0;
+var height = 0;
 var direction = false;
 
 for (var i = 0; i < 6039; i++) {
@@ -205,48 +203,38 @@ for (var i = 0; i < 6039; i++) {
 		$( "div" ).eq( i ).addClass("blue");
 
 		if(i % 2 == 0){
-			border1 = 5
-			border2 = 0
-			borderleft = 3
-			borderright = 3
+			width = 3
+			height = 3
 			zindex = 1
 
 		}
 		else{
-			border1 = 0
-			border2 = 5
-			borderleft = 3
-			borderright = 3
+			width = 3
+			height = 3
 			zindex = -1
 		}
 
 		if(i % 15 == 0){
-			border1 = 0
-			border2 = 10
-			borderleft = 7
-			borderright = 7
+			width = 7
+			height = 7
 			color = "hsl(" + randomInt(105,130) +  "," + randomInt(80,100) + "%" + "," + randomInt(30,80) + "%" + ")";
 			zindex = -1
 			$( "div" ).eq( i ).addClass("red15");
 		}else if(i % 22 == 0){
-			border1 = 0
-			border2 = 7
-			borderleft = 5
-			borderright = 5
+			width = 5
+			height = 5
 			color = "hsl(" + randomInt(105,130) +  "," + randomInt(80,100) + "%" + "," + randomInt(10,30) + "%" + ")";
 			zindex = -1
 		}else if(i % 43 == 0){
-			border1 = 0
-			border2 = 7
-			borderleft = 5
-			borderright = 5
+			width = 5
+			height = 5
 			color = "hsl(" + randomInt(105,130) +  "," + randomInt(80,100) + "%" + "," + randomInt(30,40) + "%" + ")";
 			zindex = -1
 		}
 
 
 		container.innerHTML = `
-			<div style="border-left:${borderleft}vw solid transparent; border-right:${borderright}vw solid transparent; border-bottom:${border1}vw solid ${color}; border-top:${border2}vw solid ${color}; z-index: ${zindex}"; class="triangle"></div>
+			<div style="width:${width}vw; height:${height}vw; background-color:${color}; z-index: ${zindex}"; class="triangle"></div>
 			`				
 			
 		document.getElementById("wrapper").appendChild(container)
@@ -255,34 +243,30 @@ for (var i = 0; i < 6039; i++) {
 
 function redFunction() {
     // document.getElementById("mySidenav").style.color = "red";
-    document.getElementById("closebtn").style.color = "red";
-    document.getElementById("opennavtext").style.color = "red";
-    document.getElementById("redtoggle").style.color = "red";
-    document.getElementById("greentoggle").style.color = "red";
-    document.getElementById("bluetoggle").style.color = "red";
-    document.getElementById("text1").style.color = "red";
-    document.getElementById("text2").style.color = "red";
-    document.getElementById("text3").style.color = "red";
-    document.getElementById("text4").style.color = "red";
-    document.getElementById("text5").style.color = "red";
-    document.getElementById("text6").style.color = "red";
-    document.getElementById("text7").style.color = "red";
+    document.getElementById("closebtn").style.backgroundColor = "red";
+    document.getElementById("opennavtext").style.backgroundColor = "red";
+    document.getElementById("redtoggle").style.backgroundColor = "red";
+    document.getElementById("greentoggle").style.backgroundColor = "red";
+    document.getElementById("bluetoggle").style.backgroundColor = "red";
+    document.getElementById("text1").style.backgroundColor = "red";
+    document.getElementById("text2").style.backgroundColor = "red";
+    document.getElementById("text3").style.backgroundColor = "red";
+    document.getElementById("text4").style.backgroundColor = "red";
+    document.getElementById("text5").style.backgroundColor = "red";
+    document.getElementById("text6").style.backgroundColor = "red";
+    document.getElementById("text7").style.backgroundColor = "red";
 
     var x = document.getElementsByClassName("red");
     var y = document.getElementsByClassName("red15");
 
     for (j = 0; j < x.length; j++) {
     	var red = "hsl(" + randomInt(0,20) +  "," + randomInt(80,100) + "%" + "," + randomInt(0,20) + "%" + ")";
-    	var transparent = "transparent"
-    	// x[i].style.borderStyle = "solid";
-    	x[j].style.borderColor = red;
+    	x[j].style.backgroundColor = red;
 	}
 
 	for (j = 0; j < y.length; j++) {
     	var red15 = "hsl(" + randomInt(0,20) +  "," + randomInt(80,100) + "%" + "," + randomInt(30,80) + "%" + ")";
-    	var transparent = "transparent"
-    	// x[i].style.borderStyle = "solid";
-    	x[j].style.borderColor = red15;
+    	x[j].style.backgroundColor = red15;
 	}
 
 
@@ -291,53 +275,49 @@ function redFunction() {
 
 function blueFunction() {
     // document.getElementById("mySidenav").style.color = "blue";
-    document.getElementById("closebtn").style.color = "blue";
-    document.getElementById("opennavtext").style.color = "blue";
-    document.getElementById("redtoggle").style.color = "blue";
-    document.getElementById("greentoggle").style.color = "blue";
-    document.getElementById("bluetoggle").style.color = "blue";
-    document.getElementById("text1").style.color = "blue";
-    document.getElementById("text2").style.color = "blue";
-    document.getElementById("text3").style.color = "blue";
-    document.getElementById("text4").style.color = "blue";
-    document.getElementById("text5").style.color = "blue";
-    document.getElementById("text6").style.color = "blue";
-    document.getElementById("text7").style.color = "blue";
+    document.getElementById("closebtn").style.backgroundColor = "blue";
+    document.getElementById("opennavtext").style.backgroundColor = "blue";
+    document.getElementById("redtoggle").style.backgroundColor = "blue";
+    document.getElementById("greentoggle").style.backgroundColor = "blue";
+    document.getElementById("bluetoggle").style.backgroundColor = "blue";
+    document.getElementById("text1").style.backgroundColor = "blue";
+    document.getElementById("text2").style.backgroundColor = "blue";
+    document.getElementById("text3").style.backgroundColor = "blue";
+    document.getElementById("text4").style.backgroundColor = "blue";
+    document.getElementById("text5").style.backgroundColor = "blue";
+    document.getElementById("text6").style.backgroundColor = "blue";
+    document.getElementById("text7").style.backgroundColor = "blue";
 
     var x = document.getElementsByClassName("blue");
     var j;
 
     for (j = 0; j < x.length; j++) {
     	var blue = "hsl(" + randomInt(220,250) +  "," + randomInt(80,100) + "%" + "," + randomInt(0,20) + "%" + ")";
-    	var transparent = "transparent"
-    	// x[i].style.borderStyle = "solid";
-    	x[j].style.borderColor = blue;
+    	x[j].style.backgroundColor = blue;
     }
 }
 
 function greenFunction() {
     // document.getElementById("mySidenav").style.color = "green";
-    document.getElementById("closebtn").style.color = "green";
-    document.getElementById("opennavtext").style.color = "green";
-    document.getElementById("redtoggle").style.color = "green";
-    document.getElementById("greentoggle").style.color = "green";
-    document.getElementById("bluetoggle").style.color = "green";
-    document.getElementById("text1").style.color = "green";
-    document.getElementById("text2").style.color = "green";
-    document.getElementById("text3").style.color = "green";
-    document.getElementById("text4").style.color = "green";
-    document.getElementById("text5").style.color = "green";
-    document.getElementById("text6").style.color = "green";
-    document.getElementById("text7").style.color = "green";
+    document.getElementById("closebtn").style.backgroundColor = "green";
+    document.getElementById("opennavtext").style.backgroundColor = "green";
+    document.getElementById("redtoggle").style.backgroundColor = "green";
+    document.getElementById("greentoggle").style.backgroundColor = "green";
+    document.getElementById("bluetoggle").style.backgroundColor = "green";
+    document.getElementById("text1").style.backgroundColor = "green";
+    document.getElementById("text2").style.backgroundColor = "green";
+    document.getElementById("text3").style.backgroundColor = "green";
+    document.getElementById("text4").style.backgroundColor = "green";
+    document.getElementById("text5").style.backgroundColor = "green";
+    document.getElementById("text6").style.backgroundColor = "green";
+    document.getElementById("text7").style.backgroundColor = "green";
 
     var x = document.getElementsByClassName("green");
     var j;
 
     for (j = 0; j < x.length; j++) {
     	var green = "hsl(" + randomInt(105,130) +  "," + randomInt(80,100) + "%" + "," + randomInt(0,20) + "%" + ")";
-    	var transparent = "transparent"
-    	// x[i].style.borderStyle = "solid";
-    	x[j].style.borderColor = green;
+    	x[j].style.backgroundColor = green;
     }
 }
 
