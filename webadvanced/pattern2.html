@@ -157,7 +157,7 @@
 			<p id="text4">--------------------</p>
 			<p id="text5">1WgPNWk2tqRmcW4PVpZX<br>AGZWQZxeR5uHG9JsM14D<br>zyTQ9MUFKNjDq1qW0Bhb<br>ppFvct6FiA5dmZArwvwV<br>sVCmATwq0rCJ3gFS651u</p>
 			<p id="text6">--------------------</p>
-			<a id="text7" href="pattern3.html">RETURN: BACK</a>
+			<p id="text7">RETURN: BACK</p>
 		</div>
 	</div>
 <!-- menu -->
@@ -209,6 +209,7 @@ for (var i = 0; i < 6039; i++) {
 			zindex = 1
 			redclass = "red"
 			greenclass ="green"
+			blueclass = "blue"
 
 		}
 		else{
@@ -219,6 +220,7 @@ for (var i = 0; i < 6039; i++) {
 			zindex = -1
 			redclass = "red"
 			greenclass ="green"
+			blueclass = "blue"
 		}
 
 		if(i % 15 == 0){
@@ -230,6 +232,7 @@ for (var i = 0; i < 6039; i++) {
 			zindex = -1
 			redclass = "red15"
 			greenclass ="green15"
+			blueclass = "blue15"
 		}else if(i % 22 == 0){
 			border1 = 0
 			border2 = 7
@@ -239,6 +242,7 @@ for (var i = 0; i < 6039; i++) {
 			zindex = -1
 			redclass = "red22"
 			greenclass ="green22"
+			blueclass = "blue22"
 		}else if(i % 43 == 0){
 			border1 = 0
 			border2 = 7
@@ -248,11 +252,12 @@ for (var i = 0; i < 6039; i++) {
 			zindex = -1
 			redclass = "red43"
 			greenclass ="green43"
+			blueclass = "blue43"
 		}
 
 
 		container.innerHTML = `
-			<div style="border-left:${borderleft}vw solid transparent; border-right:${borderright}vw solid transparent; border-bottom:${border1}vw solid ${color}; border-top:${border2}vw solid ${color}; z-index: ${zindex};" class="triangle ${redclass} ${greenclass}" data-border1="${border1}" data-border2="${border2}"></div>
+			<div style="border-left:${borderleft}vw solid transparent; border-right:${borderright}vw solid transparent; border-bottom:${border1}vw solid ${color}; border-top:${border2}vw solid ${color}; z-index: ${zindex};" class="triangle ${redclass} ${greenclass} ${blueclass}" data-border1="${border1}" data-border2="${border2}"></div>
 			`				
 			
 		document.getElementById("wrapper").appendChild(container)
