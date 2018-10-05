@@ -192,6 +192,7 @@ var border2 = 0;
 var borderleft = 0;
 var borderright = 0;
 var direction = false;
+var classname = ''; 
 
 for (var i = 0; i < 6039; i++) {
 
@@ -200,16 +201,14 @@ for (var i = 0; i < 6039; i++) {
 
 		var color = "hsl(" + randomInt(105,130) +  "," + randomInt(80,100) + "%" + "," + randomInt(0,20) + "%" + ")";
 
-		$( "div" ).eq( i ).addClass("red");
-		$( "div" ).eq( i ).addClass("green");
-		$( "div" ).eq( i ).addClass("blue");
-
 		if(i % 2 == 0){
 			border1 = 5
 			border2 = 0
 			borderleft = 3
 			borderright = 3
 			zindex = 1
+			redclass = "red"
+			greenclass ="green"
 
 		}
 		else{
@@ -218,6 +217,8 @@ for (var i = 0; i < 6039; i++) {
 			borderleft = 3
 			borderright = 3
 			zindex = -1
+			redclass = "red"
+			greenclass ="green"
 		}
 
 		if(i % 15 == 0){
@@ -227,7 +228,8 @@ for (var i = 0; i < 6039; i++) {
 			borderright = 7
 			color = "hsl(" + randomInt(105,130) +  "," + randomInt(80,100) + "%" + "," + randomInt(30,80) + "%" + ")";
 			zindex = -1
-			$( "div" ).eq( i ).addClass("red15");
+			redclass = "red15"
+			greenclass ="green15"
 		}else if(i % 22 == 0){
 			border1 = 0
 			border2 = 7
@@ -235,6 +237,8 @@ for (var i = 0; i < 6039; i++) {
 			borderright = 5
 			color = "hsl(" + randomInt(105,130) +  "," + randomInt(80,100) + "%" + "," + randomInt(10,30) + "%" + ")";
 			zindex = -1
+			redclass = "red22"
+			greenclass ="green22"
 		}else if(i % 43 == 0){
 			border1 = 0
 			border2 = 7
@@ -242,11 +246,13 @@ for (var i = 0; i < 6039; i++) {
 			borderright = 5
 			color = "hsl(" + randomInt(105,130) +  "," + randomInt(80,100) + "%" + "," + randomInt(30,40) + "%" + ")";
 			zindex = -1
+			redclass = "red43"
+			greenclass ="green43"
 		}
 
 
 		container.innerHTML = `
-			<div style="border-left:${borderleft}vw solid transparent; border-right:${borderright}vw solid transparent; border-bottom:${border1}vw solid ${color}; border-top:${border2}vw solid ${color}; z-index: ${zindex}"; class="triangle"></div>
+			<div style="border-left:${borderleft}vw solid transparent; border-right:${borderright}vw solid transparent; border-bottom:${border1}vw solid ${color}; border-top:${border2}vw solid ${color}; z-index: ${zindex};" class="triangle ${redclass} ${greenclass}" data-border1="${border1}" data-border2="${border2}"></div>
 			`				
 			
 		document.getElementById("wrapper").appendChild(container)
@@ -254,7 +260,6 @@ for (var i = 0; i < 6039; i++) {
 }
 
 function redFunction() {
-    // document.getElementById("mySidenav").style.color = "red";
     document.getElementById("closebtn").style.color = "red";
     document.getElementById("opennavtext").style.color = "red";
     document.getElementById("redtoggle").style.color = "red";
@@ -268,29 +273,53 @@ function redFunction() {
     document.getElementById("text6").style.color = "red";
     document.getElementById("text7").style.color = "red";
 
-    var x = document.getElementsByClassName("red");
-    var y = document.getElementsByClassName("red15");
+	$(".red").each(function(){
 
-    for (j = 0; j < x.length; j++) {
     	var red = "hsl(" + randomInt(0,20) +  "," + randomInt(80,100) + "%" + "," + randomInt(0,20) + "%" + ")";
-    	var transparent = "transparent"
-    	// x[i].style.borderStyle = "solid";
-    	x[j].style.borderColor = red;
-	}
 
-	for (j = 0; j < y.length; j++) {
-    	var red15 = "hsl(" + randomInt(0,20) +  "," + randomInt(80,100) + "%" + "," + randomInt(30,80) + "%" + ")";
-    	var transparent = "transparent"
-    	// x[i].style.borderStyle = "solid";
-    	x[j].style.borderColor = red15;
-	}
+    	var border1 = $(this).attr("data-border1");
+    	var border2 = $(this).attr("data-border2");
 
+    	$(this).css({ "border-bottom" :  border1 + "vw solid "+ red,
+    				  "border-top" : border2 + "vw solid "+ red})
+    })
 
+    $(".red15").each(function(){
+
+    	var red = "hsl(" + randomInt(0,20) +  "," + randomInt(80,100) + "%" + "," + randomInt(30,80) + "%" + ")";
+
+    	var border1 = $(this).attr("data-border1");
+    	var border2 = $(this).attr("data-border2");
+
+    	$(this).css({ "border-bottom" :  border1 + "vw solid "+ red,
+    				  "border-top" : border2 + "vw solid "+ red})
+    })
+
+    $(".red22").each(function(){
+
+    	var red = "hsl(" + randomInt(0,20) +  "," + randomInt(80,100) + "%" + "," + randomInt(10,30) + "%" + ")";
+
+    	var border1 = $(this).attr("data-border1");
+    	var border2 = $(this).attr("data-border2");
+
+    	$(this).css({ "border-bottom" :  border1 + "vw solid "+ red,
+    				  "border-top" : border2 + "vw solid "+ red})
+    })
+
+    $(".red43").each(function(){
+
+    	var red = "hsl(" + randomInt(0,20) +  "," + randomInt(80,100) + "%" + "," + randomInt(30,40) + "%" + ")";
+
+    	var border1 = $(this).attr("data-border1");
+    	var border2 = $(this).attr("data-border2");
+
+    	$(this).css({ "border-bottom" :  border1 + "vw solid "+ red,
+    				  "border-top" : border2 + "vw solid "+ red})
+    })
 }
 
 
 function blueFunction() {
-    // document.getElementById("mySidenav").style.color = "blue";
     document.getElementById("closebtn").style.color = "blue";
     document.getElementById("opennavtext").style.color = "blue";
     document.getElementById("redtoggle").style.color = "blue";
@@ -304,19 +333,52 @@ function blueFunction() {
     document.getElementById("text6").style.color = "blue";
     document.getElementById("text7").style.color = "blue";
 
-    var x = document.getElementsByClassName("blue");
-    var j;
+    $(".blue").each(function(){
 
-    for (j = 0; j < x.length; j++) {
     	var blue = "hsl(" + randomInt(220,250) +  "," + randomInt(80,100) + "%" + "," + randomInt(0,20) + "%" + ")";
-    	var transparent = "transparent"
-    	// x[i].style.borderStyle = "solid";
-    	x[j].style.borderColor = blue;
-    }
+
+    	var border1 = $(this).attr("data-border1");
+    	var border2 = $(this).attr("data-border2");
+
+    	$(this).css({ "border-bottom" :  border1 + "vw solid "+ blue,
+    				  "border-top" : border2 + "vw solid "+ blue})
+    })
+
+    $(".blue15").each(function(){
+
+    	var blue = "hsl(" + randomInt(220,250) +  "," + randomInt(80,100) + "%" + "," + randomInt(30,80) + "%" + ")";
+
+    	var border1 = $(this).attr("data-border1");
+    	var border2 = $(this).attr("data-border2");
+
+    	$(this).css({ "border-bottom" :  border1 + "vw solid "+ blue,
+    				  "border-top" : border2 + "vw solid "+ blue})
+    })
+
+    $(".blue22").each(function(){
+
+    	var blue = "hsl(" + randomInt(220,250) +  "," + randomInt(80,100) + "%" + "," + randomInt(10,30) + "%" + ")";
+
+    	var border1 = $(this).attr("data-border1");
+    	var border2 = $(this).attr("data-border2");
+
+    	$(this).css({ "border-bottom" :  border1 + "vw solid "+ blue,
+    				  "border-top" : border2 + "vw solid "+ blue})
+    })
+
+    $(".blue43").each(function(){
+
+    	var blue = "hsl(" + randomInt(220,250) +  "," + randomInt(80,100) + "%" + "," + randomInt(30,40) + "%" + ")";
+
+    	var border1 = $(this).attr("data-border1");
+    	var border2 = $(this).attr("data-border2");
+
+    	$(this).css({ "border-bottom" :  border1 + "vw solid "+ blue,
+    				  "border-top" : border2 + "vw solid "+ blue})
+    })
 }
 
 function greenFunction() {
-    // document.getElementById("mySidenav").style.color = "green";
     document.getElementById("closebtn").style.color = "green";
     document.getElementById("opennavtext").style.color = "green";
     document.getElementById("redtoggle").style.color = "green";
@@ -330,15 +392,49 @@ function greenFunction() {
     document.getElementById("text6").style.color = "green";
     document.getElementById("text7").style.color = "green";
 
-    var x = document.getElementsByClassName("green");
-    var j;
+    $(".green").each(function(){
 
-    for (j = 0; j < x.length; j++) {
     	var green = "hsl(" + randomInt(105,130) +  "," + randomInt(80,100) + "%" + "," + randomInt(0,20) + "%" + ")";
-    	var transparent = "transparent"
-    	// x[i].style.borderStyle = "solid";
-    	x[j].style.borderColor = green;
-    }
+
+    	var border1 = $(this).attr("data-border1");
+    	var border2 = $(this).attr("data-border2");
+
+    	$(this).css({ "border-bottom" :  border1 + "vw solid "+ green,
+    				  "border-top" : border2 + "vw solid "+ green})
+    })
+
+    $(".green15").each(function(){
+
+    	var green = "hsl(" + randomInt(105,130) +  "," + randomInt(80,100) + "%" + "," + randomInt(30,80) + "%" + ")";
+
+    	var border1 = $(this).attr("data-border1");
+    	var border2 = $(this).attr("data-border2");
+
+    	$(this).css({ "border-bottom" :  border1 + "vw solid "+ green,
+    				  "border-top" : border2 + "vw solid "+ green})
+    })
+
+    $(".green22").each(function(){
+
+    	var green = "hsl(" + randomInt(105,130) +  "," + randomInt(80,100) + "%" + "," + randomInt(10,30) + "%" + ")";
+
+    	var border1 = $(this).attr("data-border1");
+    	var border2 = $(this).attr("data-border2");
+
+    	$(this).css({ "border-bottom" :  border1 + "vw solid "+ green,
+    				  "border-top" : border2 + "vw solid "+ green})
+    })
+
+    $(".green43").each(function(){
+
+    	var green = "hsl(" + randomInt(105,130) +  "," + randomInt(80,100) + "%" + "," + randomInt(30,40) + "%" + ")";
+
+    	var border1 = $(this).attr("data-border1");
+    	var border2 = $(this).attr("data-border2");
+
+    	$(this).css({ "border-bottom" :  border1 + "vw solid "+ green,
+    				  "border-top" : border2 + "vw solid "+ green})
+    })
 }
 
 </script>
