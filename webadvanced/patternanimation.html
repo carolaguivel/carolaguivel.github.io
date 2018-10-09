@@ -50,7 +50,7 @@
 	.sidenav {
 		display: none;
     	height: 100%;
-    	width: 18vw;
+    	width: 260px;
     	position: fixed;
     	z-index: 4;
     	top: 0;
@@ -110,26 +110,13 @@
 
 	#greentoggle, #redtoggle, #bluetoggle {
 		cursor: pointer;
-		width: 6vw;
 	}
 
-	#greentoggle:hover {
-		color: green;
-	}
-
-	#redtoggle:hover {
-		color: red;
-	}
-
-	#bluetoggle:hover {
-		color: blue;
-	}
-
-	/*.greenanimation {
+	.greenanimation {
 		animation-name: greenanimation;
 		animation-duration: 4s;
 		animation-iteration-count: infinite;
-	}*/
+	}
 
 	/*@keyframes greenanimation {
     from  {border-top:green;}
@@ -139,35 +126,30 @@
 
 @media only screen and (max-width: 700px) {
 
-    .sidenav {
-    	padding-top: 15px;
-    	width: 64vw;
-    }
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
 
     .menu {
     margin-top: 15vw;
     margin-left: 5vw;
-    font-size: 3.5vw;
+    font-size: 4vw;
     }
 
     .opennav {
-    margin-top: 2vw;
-	margin-left: 2vw;
-	width: 18vw;
-	height: 6vw;
-	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-	border-radius: 0.5vw;
+    border-left: 10vw solid #000000;
+	border-bottom: 8vw solid transparent;
+	border-top: 8vw solid transparent;
+    font-size: 6vw;
+    margin: 0;
     }
 
     text {
-    	margin-left: 1.5vw;
-    	margin-top: 1.8vw;
-    	font-size: 3vw;
+    	margin-left: -9vw;
     }
 
     .sidenav #closebtn {
-    font-size: 6vw;
-    margin-left: 56vw;
+    font-size: 7vw;
+    margin-left: 60vw;
     margin-top: -1vw;
     }
 
@@ -320,30 +302,6 @@ function redFunction() {
     document.getElementById("text6").style.color = "red";
     document.getElementById("text7").style.color = "red";
 
-    $(document).ready(function(){
-    $("#bluetoggle").hover(function(){
-        $(this).css("color", "blue");
-        }, function(){
-        $(this).css("color", "red");
-    	});
-	});
-
-	$(document).ready(function(){
-    $("#greentoggle").hover(function(){
-        $(this).css("color", "green");
-        }, function(){
-        $(this).css("color", "red");
-    	});
-	});
-
-	$(document).ready(function(){
-    $("#redtoggle").hover(function(){
-        $(this).css("color", "red");
-        }, function(){
-        $(this).css("color", "red");
-    	});
-	});
-
 	$(".red").each(function(){
 
     	var red = "hsl(" + randomInt(0,20) +  "," + randomInt(80,100) + "%" + "," + randomInt(0,20) + "%" + ")";
@@ -404,30 +362,6 @@ function blueFunction() {
     document.getElementById("text6").style.color = "blue";
     document.getElementById("text7").style.color = "blue";
 
-    $(document).ready(function(){
-    $("#greentoggle").hover(function(){
-        $(this).css("color", "green");
-        }, function(){
-        $(this).css("color", "blue");
-    	});
-	});
-
-	$(document).ready(function(){
-    $("#redtoggle").hover(function(){
-        $(this).css("color", "red");
-        }, function(){
-        $(this).css("color", "blue");
-    	});
-	});
-
-	$(document).ready(function(){
-    $("#bluetoggle").hover(function(){
-        $(this).css("color", "blue");
-        }, function(){
-        $(this).css("color", "blue");
-    	});
-	});
-
     $(".blue").each(function(){
 
     	var blue = "hsl(" + randomInt(220,250) +  "," + randomInt(80,100) + "%" + "," + randomInt(0,20) + "%" + ")";
@@ -486,30 +420,6 @@ function greenFunction() {
     document.getElementById("text5").style.color = "green";
     document.getElementById("text6").style.color = "green";
     document.getElementById("text7").style.color = "green";
-
-    $(document).ready(function(){
-    $("#greentoggle").hover(function(){
-        $(this).css("color", "green");
-        }, function(){
-        $(this).css("color", "green");
-    	});
-	});
-
-	$(document).ready(function(){
-    $("#redtoggle").hover(function(){
-        $(this).css("color", "red");
-        }, function(){
-        $(this).css("color", "green");
-    	});
-	});
-
-	$(document).ready(function(){
-    $("#bluetoggle").hover(function(){
-        $(this).css("color", "blue");
-        }, function(){
-        $(this).css("color", "green");
-    	});
-	});
 
     $(".green").each(function(){
 
