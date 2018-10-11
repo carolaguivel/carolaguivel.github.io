@@ -1,0 +1,144 @@
+html {
+	background-color: black;
+}
+
+html, body{
+	padding: 0;
+	margin: 0;
+	font-family: "ocr-a-std",monospace;
+}
+
+.opennav {
+	position: fixed;
+	font-size: 2vw;
+	z-index: 3;
+	cursor: pointer;
+	margin-top: 1vw;
+	margin-left: 1vw;
+	width: 8.5vw;
+	height: 3.5vw;
+	background-color: black;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	border-radius: 0.5vw;
+}
+
+text {
+	position: absolute;
+	margin-top: 1.2vw;
+	margin-left: 0.6vw;
+	font-size: 1.4vw;
+	color: green;
+	z-index: 5;
+}
+
+#closebtn {
+	text-decoration: none;
+	color: green;
+}
+
+.sidenav {
+	display: none;
+    height: 100%;
+    width: 18vw;
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    overflow-x: hidden;
+	transition: 0.5s;
+}
+
+#mySidenav {
+	color: green;
+}
+
+.sidenav p {
+	text-decoration: none;
+}
+
+.sidenav #closebtn {
+	position: absolute;
+	font-size: 1.5vw;
+	margin-left: 15.8vw;
+	margin-top: 1vw;
+}
+
+.menu {
+	margin-top: 5vw;
+	margin-left: 1vw;
+	font-size: 1vw;
+}
+
+.menu a {
+	text-decoration: none;
+	color: green;
+}
+
+.container {
+	position: relative;
+	display: inline-block;
+	width: 2.95vw;
+	height: 4.7vw;
+}
+
+.triangle {
+	width: auto;
+	height: auto;
+	vertical-align: middle;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	z-index: -1;
+}
+
+#greentoggle, #redtoggle, #bluetoggle {
+	cursor: pointer;
+	width: 6vw;
+}
+
+#greentoggle:hover {
+	color: green;
+}
+
+#redtoggle:hover {
+	color: red;
+}
+
+#bluetoggle:hover {
+	color: blue;
+}
+
+@media only screen and (max-width: 700px) {
+
+	.sidenav {
+    	padding-top: 15px;
+    	width: 64vw;
+	}
+
+	.menu {
+    	margin-top: 15vw;
+    	margin-left: 5vw;
+    	font-size: 3.5vw;
+	}
+
+	.opennav {
+    	margin-top: 2vw;
+		margin-left: 2vw;
+		width: 18vw;
+		height: 6vw;
+		box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+		border-radius: 0.5vw;
+	}
+
+	text {
+		margin-left: 1.5vw;
+		margin-top: 1.8vw;
+		font-size: 3vw;
+	}
+
+	.sidenav #closebtn {
+		font-size: 6vw;
+		margin-left: 56vw;
+		margin-top: -1vw;
+	}
