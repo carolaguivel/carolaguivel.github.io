@@ -76,7 +76,7 @@
 	"Ambush" : [
 		{
 			"title" : "Key Charm Earring",
-			"description" : "Medium anodized aluminum buckle with lazered logo. Nylon strap cording, adjustable.",
+			"description" : "&quot;Do not dupliacte&quot; embossed on a uniquely crafted earring sold as a single piece.",
 			"price" : "$250.00",
 			"link" : "ambush1.html",
 			"url" : "images/ambush",
@@ -85,14 +85,439 @@
 
 		{
 			"title" : "Pill Charm Necklace",
-			"description" : "Medium anodized aluminum buckle with lazered logo. Nylon strap cording, adjustable.",
+			"description" : "Amb and Ambush pills cast in sterling silver on an adjustable chain.",
 			"price" : "$231.00",
 			"link" : "ambush2.html",
 			"url" : "images/ambush",
 			"images" : [ "ambush2.png", "ambush3.png" ]
+		},
+
+		{
+			"title" : "Chain Key Necklace",
+			"description" : "Ambush key pendant hangs from a chain link necklace secured with a clasp.",
+			"price" : "$1543.00",
+			"link" : "ambush3.html",
+			"url" : "images/ambush",
+			"images" : [ "ambush4.png", "ambush5.png" ]
+		},
+
+		{
+			"title" : "Clip Earring",
+			"description" : "Our riff on a clip motif for an earring.",
+			"price" : "$289.00",
+			"link" : "ambush4.html",
+			"url" : "images/ambush",
+			"images" : [ "ambush6.png" ]
+		},
+
+		{
+			"title" : "Pill Charm Earring",
+			"description" : "Amb pill and Ambush capsule hang from a safety pin pierce, sold as a single piece.",
+			"price" : "$250.00",
+			"link" : "ambush5.html",
+			"url" : "images/ambush",
+			"images" : [ "ambush7.png" ]
+		},
+
+		{
+			"title" : "Wrap Top",
+			"description" : "Wrap around top with Ambush logo detailing.",
+			"price" : "$385.00",
+			"link" : "ambush6.html",
+			"url" : "images/ambush",
+			"images" : [ "ambush8.png", "ambush9.png" ]
+		},
+
+		{
+			"title" : "Reversible Down Jacket",
+			"description" : "Ambush’s take on an outerwear classic that is reversible with zippered pockets.",
+			"price" : "$771.00",
+			"link" : "ambush7.html",
+			"url" : "images/ambush",
+			"images" : [ "ambush10.png", "ambush11.png" ]
+		},
+
+		{
+			"title" : "Twist Top",
+			"description" : "A unique top wraps and twists around the body.",
+			"price" : "$385.00",
+			"link" : "ambush8.html",
+			"url" : "images/ambush",
+			"images" : [ "ambush12.png", "ambush13.png", "ambush14.png" ]
+		},
+
+		{
+			"title" : "Drawstring Pullover",
+			"description" : "Hooded pullover with adjustable drawstring hood and sleeves.",
+			"price" : "$578.00",
+			"link" : "ambush9.html",
+			"url" : "images/ambush",
+			"images" : [ "ambush15.png", "ambush16.png" ]
+		},
+
+		{
+			"title" : "Fleece Cardigan",
+			"description" : "A contemporary take on a cardigan in fleece material. Features a zippered breast pocket.",
+			"price" : "$424.00",
+			"link" : "ambush10.html",
+			"url" : "images/ambush",
+			"images" : [ "ambush17.png", "ambush18.png", "ambush19.png" ]
+		}
+	],
+
+	"Biis" : [
+		{
+			"title" : "Eiffel Earring",
+			"description" : "The most iconic souvenir real size. They are sold as singles.",
+			"price" : "$190.00",
+			"link" : "biis1.html",
+			"url" : "images/biis",
+			"images" : [ "biis1.png", "biis2.png" ]
+		},
+
+		{
+			"title" : "Combo Souvenirs Hoop",
+			"description" : "Special price for your souvenirs combo.",
+			"price" : "$235.00",
+			"link" : "biis2.html",
+			"url" : "images/biis",
+			"images" : [ "biis3.png", "biis4.png", "biis5.png" ]
+		},
+
+		{
+			"title" : "Combo Souvenirs Hoop",
+			"description" : "Classic punk-rock chain keyring that can be used as a necklace. With this necklace you don't have to choose between silver or gold.",
+			"price" : "$350.00",
+			"link" : "biis3.html",
+			"url" : "images/biis",
+			"images" : [ "biis6.png", "biis7.png", "biis8.png" ]
+		},
+
+		{
+			"title" : "Cent",
+			"description" : "The cent is a pendant. Wear it hanging of an earring, a safetypin or a necklace. The most expensive euro cent in the world.",
+			"price" : "$70.00",
+			"link" : "biis4.html",
+			"url" : "images/biis",
+			"images" : [ "biis9.png", "biis10.png" ]
+		},
+
+		{
+			"title" : "Currency Earring",
+			"description" : "Collecting coins around the world. They are sold as singles.",
+			"price" : "$170.00",
+			"link" : "biis5.html",
+			"url" : "images/biis",
+			"images" : [ "biis11.png", "biis12.png" ]
+		},
+
+		{
+			"title" : "Bin Medal",
+			"description" : "Like a saint medal of the Sanitary department. Wear it hanging of an earring, a safetypin or a necklace. New symbols for a new era.",
+			"price" : "$40.00",
+			"link" : "biis6.html",
+			"url" : "images/biis",
+			"images" : [ "biis13.png", "biis14.png" ]
+		},
+
+		{
+			"title" : "Fuji Pin-Earring",
+			"description" : "Souvenir from Japan.",
+			"price" : "$85.00",
+			"link" : "biis7.html",
+			"url" : "images/biis",
+			"images" : [ "biis15.png", "biis16.png", "biis17.png" ]
+		},
+
+		{
+			"title" : "Ganesh",
+			"description" : "Souvenir from Goa. They are sold as singles.",
+			"price" : "$265.00",
+			"link" : "biis8.html",
+			"url" : "images/biis",
+			"images" : [ "biis18.png", "biis19.png" ]
+		}
+	],
+
+	"HelmutLang" : [
+		{
+			"title" : "Disco Pin",
+			"description" : "The Helmut Lang Disco Pin is a metal pin featuring artwork by Andrew Miksys.",
+			"price" : "$15.00",
+			"link" : "helmut1.html",
+			"url" : "images/helmut",
+			"images" : [ "helmut1.png", "helmut2.png", "helmut3.png" ]
+		},
+
+		{
+			"title" : "Karl B Pin",
+			"description" : "The Helmut Lang Adrienne Salinger Karl B Pin is a metal pin featuring artwork by Adrienne Salinger.",
+			"price" : "$15.00",
+			"link" : "helmut2.html",
+			"url" : "images/helmut",
+			"images" : [ "helmut4.png", "helmut5.png", "helmut6.png" ]
+		},
+
+		{
+			"title" : "Disco Shirt",
+			"description" : "The Helmut Lang Disco Shirt is a white cotton shirt featuring artwork by Andrew Miskys.",
+			"price" : "$105.00",
+			"link" : "helmut3.html",
+			"url" : "images/helmut",
+			"images" : [ "helmut7.png", "helmut8.png" ]
+		},
+
+		{
+			"title" : "Carlos C Shirt",
+			"description" : "The Helmut Lang Carlos C Shirt is a white cotton shirt featuring artwork by Adrienne Salinger.",
+			"price" : "$105.00",
+			"link" : "helmut4.html",
+			"url" : "images/helmut",
+			"images" : [ "helmut9.png", "helmut10.png" ]
+		},
+
+		{
+			"title" : "Karl B Long Sleeve",
+			"description" : "The Helmut Lang Karl B Long Sleeve is a white cotton long sleeve featuring artwork by Adrienne Salinger.",
+			"price" : "$105.00",
+			"link" : "helmut5.html",
+			"url" : "images/helmut",
+			"images" : [ "helmut11.png", "helmut12.png" ]
+		},
+
+		{
+			"title" : "Kirk B Long Sleeve",
+			"description" : "The Helmut Lang Kirk B Long Sleeve is a white cotton long sleeve featuring artwork by Adrienne Salinger.",
+			"price" : "$105.00",
+			"link" : "helmut6.html",
+			"url" : "images/helmut",
+			"images" : [ "helmut13.png", "helmut14.png" ]
+		}
+	],
+
+	"HeronPreston" : [
+		{
+			"title" : "Jacquard Tape Belt",
+			"description" : "Orange Heron Preston quick release belt.",
+			"price" : "$173.00",
+			"link" : "heron1.html",
+			"url" : "images/heron",
+			"images" : [ "heron3.png", "heron4.png", "heron5.png" ]
+		},
+
+		{
+			"title" : "Jacquard Tape Belt",
+			"description" : "Black Heron Preston jacquard tape belt.",
+			"price" : "$173.00",
+			"link" : "heron2.html",
+			"url" : "images/heron",
+			"images" : [ "heron6.png", "heron7.png", "heron8.png" ]
+		},
+
+		{
+			"title" : "Black Birds Long Sleeve",
+			"description" : "Black long sleeve jersey with Heron birds print. Embroidered hem details.",
+			"price" : "$536.00",
+			"link" : "heron3.html",
+			"url" : "images/heron",
+			"images" : [ "heron9.png", "heron10.png", "heron11.png" ]
+		},
+
+		{
+			"title" : "CTNMB Mockneck Sweater",
+			"description" : "Long sleeves sweater in black. Cut out details at sleeves. Turtleneck collar. Tape print at shoulders and sleeves.",
+			"price" : "$652.00",
+			"link" : "heron4.html",
+			"url" : "images/heron",
+			"images" : [ "heron12.png", "heron13.png", "heron14.png" ]
+		},
+
+		{
+			"title" : "Python Flap Bag",
+			"description" : "Leather shoulder bag with python print. Closure with magnetic fastening. Orange shoulder strap. Logo patch at bag.",
+			"price" : "$1399.00",
+			"link" : "heron5.html",
+			"url" : "images/heron",
+			"images" : [ "heron15.png", "heron16.png", "heron17.png" ]
+		},
+
+		{
+			"title" : "5 Pockets Jeans",
+			"description" : "Cropped straight legs jeans in bleached blue with cut out knees. Zip fly. Five pockets styling.",
+			"price" : "$556.00",
+			"link" : "heron6.html",
+			"url" : "images/heron",
+			"images" : [ "heron18.png", "heron19.png", "heron20.png" ]
+		},
+
+		{
+			"title" : "5 Pockets Shorts",
+			"description" : "Cropped shorts in orange. Zip fly. Five pockets styling.",
+			"price" : "$307.00",
+			"link" : "heron7.html",
+			"url" : "images/heron",
+			"images" : [ "heron21.png", "heron22.png", "heron23.png" ]
+		},
+
+		{
+			"title" : "CTNMB Style Cap",
+			"description" : "Black Style hat.",
+			"price" : "$142.00",
+			"link" : "heron8.html",
+			"url" : "images/heron",
+			"images" : [ "heron24.png", "heron25.png", "heron26.png" ]
+		},
+
+		{
+			"title" : "Black CTNMB Glasses",
+			"description" : "Rectangular acetate sunglasses in black. Black lenses with 100% uv protection.",
+			"price" : "$422.00",
+			"link" : "heron9.html",
+			"url" : "images/heron",
+			"images" : [ "heron27.png", "heron28.png" ]
+		},
+	],
+
+	"Iamgia" : [
+		{
+			"title" : "",
+			"description" : "",
+			"price" : "$173.00",
+			"link" : "gia1.html",
+			"url" : "images/iamgia",
+			"images" : [ "gia3.png", "gia4.png", "gia5.png" ]
+		}
+	],
+
+	"Namilia" : [
+		{
+			"title" : "",
+			"description" : "",
+			"price" : "$173.00",
+			"link" : "namilia1.html",
+			"url" : "images/namilia",
+			"images" : [ "namilia3.png", "namilia4.png", "namilia5.png" ]
+		}
+	],
+
+	"Prada" : [
+		{
+			"title" : "Logo Shoulder Bag",
+			"description" : "Detachable adjustable leather shoulder strap. Leather triangle logo. Silk-screened Prada logo.",
+			"price" : "$1620.00",
+			"link" : "prada1.html",
+			"url" : "images/prada",
+			"images" : [ "prada1.png", "prada2.png", "prada3.png" ]
+		},
+
+		{
+			"title" : "Logo Shoulder Bag",
+			"description" : "Detachable adjustable leather shoulder strap. Leather triangle logo. Silk-screened Prada logo.",
+			"price" : "$1620.00",
+			"link" : "prada2.html",
+			"url" : "images/prada",
+			"images" : [ "prada4.png", "prada5.png", "prada6.png" ]
+		},
+
+		{
+			"title" : "Logo Shoulder Bag",
+			"description" : "Detachable adjustable leather shoulder strap. Leather triangle logo. Silk-screened Prada logo.",
+			"price" : "$1620.00",
+			"link" : "prada3.html",
+			"url" : "images/prada",
+			"images" : [ "prada7.png", "prada8.png", "prada9.png" ]
+		},
+
+		{
+			"title" : "Silver Charm Necklace",
+			"description" : "Multicolor Pendant Necklace.",
+			"price" : "$545.00",
+			"link" : "prada4.html",
+			"url" : "images/prada",
+			"images" : [ "prada10.png", "prada11.png" ]
+		},
+
+		{
+			"title" : "Silver Charm Necklace",
+			"description" : "Multicolor Pendant Necklace.",
+			"price" : "$545.00",
+			"link" : "prada5.html",
+			"url" : "images/prada",
+			"images" : [ "prada12.png", "prada13.png" ]
+		},
+
+		{
+			"title" : "Charm Earrings",
+			"description" : "Black and white space man earrings.",
+			"price" : "$505.00",
+			"link" : "prada6.html",
+			"url" : "images/prada",
+			"images" : [ "prada14.png", "prada15.png", "prada16.png" ]
+		},
+
+		{
+			"title" : "Nylon Clutch",
+			"description" : "Pink pouch bag with chain strap.",
+			"price" : "$790.00",
+			"link" : "prada7.html",
+			"url" : "images/prada",
+			"images" : [ "prada17.png", "prada18.png", "prada19.png" ]
+		},
+
+		{
+			"title" : "Nylon Backpack",
+			"description" : "Pink single strap backpack.",
+			"price" : "$1270.00",
+			"link" : "prada8.html",
+			"url" : "images/prada",
+			"images" : [ "prada20.png", "prada21.png", "prada22.png" ]
+		},
+
+		{
+			"title" : "iPhone Cover",
+			"description" : "Black iPhone 8 plus case.",
+			"price" : "$360.00",
+			"link" : "prada9.html",
+			"url" : "images/prada",
+			"images" : [ "prada23.png", "prada24.png", "prada25.png" ]
+		},
+
+		{
+			"title" : "iPhone Cover",
+			"description" : "Black iPhone 8 plus case.",
+			"price" : "$360.00",
+			"link" : "prada10.html",
+			"url" : "images/prada",
+			"images" : [ "prada26.png", "prada27.png", "prada28.png" ]
+		},
+
+		{
+			"title" : "Nylon gabardine jacket",
+			"description" : "Purple nylon jacket.",
+			"price" : "$1510.00",
+			"link" : "prada11.html",
+			"url" : "images/prada",
+			"images" : [ "prada29.png", "prada30.png", "prada31.png" ]
+		},
+
+		{
+			"title" : "Nylon gabardine puffer",
+			"description" : "Pink short puffer jacket.",
+			"price" : "$2130.00",
+			"link" : "prada12.html",
+			"url" : "images/prada",
+			"images" : [ "prada32.png", "prada33.png", "prada34.png" ]
+		},
+
+		{
+			"title" : "Laced leather booties",
+			"description" : "White lace up boots.",
+			"price" : "$1100.00",
+			"link" : "prada13.html",
+			"url" : "images/prada",
+			"images" : [ "prada36.png", "prada37.png", "prada38.png" ]
 		}
 	]
-
 }
 
 

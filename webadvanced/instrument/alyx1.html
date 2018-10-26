@@ -7,6 +7,8 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://use.typekit.net/ppp2fys.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="photoroll/dist/css/photoroller.css">
+	<script src="photoroll/dist/js/jquery.photoroller.min.js"></script>
 </head>
 <body>
 <!-- menu -->
@@ -64,21 +66,28 @@
 <!-- menu -->
 
 <!-- content -->
-<div class="alyxwomen"></div>
+<div class="alyxprod" id="prodphotoroll"></div>
+
+<div class="alyxinfo">
+</div>
 <!-- content -->
 </body>
 <script>
+
 var myurl = "https://carolaguivel.github.io/webadvanced/instrument/women.json";
 
 $.getJSON(myurl, function(data){
 		
-	for (var i = 0; i < data.Alyx.length; i++) {
+	$(".alyxinfo").append( "<p class='title'>" + data.Alyx[0].title + "</p><p class='description'>" + data.Alyx[0].description + "</p><p class='prodprice'>" + data.Alyx[0].price + "</p><div class='custom-select'><select><option value='0'><One Size></option></select></div><p class='addtocart'>Add to Cart</p><a href='alyxw.html' class='backlink'>Back to Alyx</a>")
 
 
-		$(".alyxwomen").append("<a href=" + data.Alyx[i].link + ">" + "<img class='alyxwimg' src=" + data.Alyx[i].url + "/" + data.Alyx[i].images[0] + "><p class='caption'>" + data.Alyx[i].title + "</p><p class='price'>" + data.Alyx[i].price + "</p></a>")
+	for (var i = 0; i < data.Alyx[0].images.length; i++) {
 
+		$(".alyxprod").append("<img class='alyxprodimg' src='" + data.Alyx[0].url + "/" + data.Alyx[0].images[i] + "'>")
 	}
-
 });
+
+$("#prodphotoroll").photoroller();
+
 </script>
 </html>
