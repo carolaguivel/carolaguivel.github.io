@@ -380,7 +380,7 @@
 
 	"Iamgia" : [
 		{
-			"title" : "Aurora Pants",
+			"title" : "Aurora Pant",
 			"description" : "Made from an allover metal stamped fabric in a high rise cut with a belted paperbag waist. Super relaxed fit down through the wide leg that falls below the ankle.",
 			"price" : "$350.00",
 			"link" : "gia1.html",
@@ -404,6 +404,15 @@
 			"link" : "gia3.html",
 			"url" : "images/iamgia",
 			"images" : [ "gia10.png", "gia11.png", "gia12.png", "gia13.png" ]
+		},
+
+		{
+			"title" : "Shiraz Snake Print Pant",
+			"description" : "Straight leg snake print pant with a slim fit through the leg. Topped with a high rise waist and belt.",
+			"price" : "$100.00",
+			"link" : "gia4.html",
+			"url" : "images/iamgia",
+			"images" : [ "gia14.png", "gia15.png", "gia16.png" ]
 		}
 	],
 
