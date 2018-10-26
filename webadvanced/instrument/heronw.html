@@ -64,7 +64,7 @@
 <!-- menu -->
 
 <!-- content -->
-<div class="prodwomen"></div>
+<div class="product"></div>
 <!-- content -->
 </body>
 <script>
@@ -75,7 +75,7 @@ $.getJSON(myurl, function(data){
 	for (var i = 0; i < data.HeronPreston.length; i++) {
 
 
-		$(".prodwomen").append("<a href=" + data.HeronPreston[i].link + ">" + "<img class='prodwimg' src=" + data.HeronPreston[i].url + "/" + data.HeronPreston[i].images[0] + "><p class='caption'>" + data.HeronPreston[i].title + "</p><p class='price'>" + data.HeronPreston[i].price + "</p></a>")
+		$(".product").append("<a href=" + data.HeronPreston[i].link + ">" + "<img class='prodimg' src=" + data.HeronPreston[i].url + "/" + data.HeronPreston[i].images[0] + "><p class='caption'>" + data.HeronPreston[i].title + "</p><p class='price'>" + data.HeronPreston[i].price + "</p></a>")
 
 	}
 

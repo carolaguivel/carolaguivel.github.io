@@ -64,7 +64,7 @@
 <!-- menu -->
 
 <!-- content -->
-<div class="prodwomen"></div>
+<div class="product"></div>
 <!-- content -->
 </body>
 <script>
@@ -75,7 +75,7 @@ $.getJSON(myurl, function(data){
 	for (var i = 0; i < data.Prada.length; i++) {
 
 
-		$(".prodwomen").append("<a href=" + data.Prada[i].link + ">" + "<img class='prodwimg' src=" + data.Prada[i].url + "/" + data.Prada[i].images[0] + "><p class='caption'>" + data.Prada[i].title + "</p><p class='price'>" + data.Prada[i].price + "</p></a>")
+		$(".product").append("<a href=" + data.Prada[i].link + ">" + "<img class='prodimg' src=" + data.Prada[i].url + "/" + data.Prada[i].images[0] + "><p class='caption'>" + data.Prada[i].title + "</p><p class='price'>" + data.Prada[i].price + "</p></a>")
 
 	}
 

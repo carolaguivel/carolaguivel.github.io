@@ -64,7 +64,7 @@
 <!-- menu -->
 
 <!-- content -->
-<div class="prodwomen"></div>
+<div class="product"></div>
 <!-- content -->
 </body>
 <script>
@@ -75,7 +75,7 @@ $.getJSON(myurl, function(data){
 	for (var i = 0; i < data.Iamgia.length; i++) {
 
 
-		$(".prodwomen").append("<a href=" + data.Iamgia[i].link + ">" + "<img class='prodwimg' src=" + data.Iamgia[i].url + "/" + data.Iamgia[i].images[0] + "><p class='caption'>" + data.Iamgia[i].title + "</p><p class='price'>" + data.Iamgia[i].price + "</p></a>")
+		$(".product").append("<a href=" + data.Iamgia[i].link + ">" + "<img class='prodimg' src=" + data.Iamgia[i].url + "/" + data.Iamgia[i].images[0] + "><p class='caption'>" + data.Iamgia[i].title + "</p><p class='price'>" + data.Iamgia[i].price + "</p></a>")
 
 	}
 

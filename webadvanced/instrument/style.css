@@ -547,8 +547,8 @@ to {opacity: 1;}
 }
 /* men */
 
-/* women products */
-.prodwomen {
+/* products */
+.product {
 	position: absolute;
 	margin-top: 11vw;
 	/*background-color: red;*/
@@ -558,13 +558,13 @@ to {opacity: 1;}
 	margin-left: 5vw;
 }
 
-.prodwimg {
+.prodimg {
 	position: absolute;
 	width: 20%;
 	display: inline-block;
 }
 
-.prodwomen > a {
+.product > a {
 	display: inline-block;
 	width: 10vw;
 	/*background-color: pink;*/
@@ -573,7 +573,7 @@ to {opacity: 1;}
 	margin-right: 8vw;
 	margin-bottom: 5vw;
 }
-/* women products */
+/* products */
 
 /* men products */
 /* men product */

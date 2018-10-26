@@ -64,7 +64,7 @@
 <!-- menu -->
 
 <!-- content -->
-<div class="prodwomen"></div>
+<div class="product"></div>
 <!-- content -->
 </body>
 <script>
@@ -72,10 +72,10 @@ var myurl = "https://carolaguivel.github.io/webadvanced/instrument/men.json";
 
 $.getJSON(myurl, function(data){
 		
-	for (var i = 0; i < data.032c.length; i++) {
+	for (var i = 0; i < data.thirtytwo.length; i++) {
 
 
-		$(".prodwomen").append("<a href=" + data.032c[i].link + ">" + "<img class='prodwimg' src=" + data.032c[i].url + "/" + data.032c[i].images[0] + "><p class='caption'>" + data.032c[i].title + "</p><p class='price'>" + data.032c[i].price + "</p></a>")
+		$(".product").append("<a href=" + data.thirtytwo[i].link + ">" + "<img class='prodimg' src=" + data.thirtytwo[i].url + "/" + data.thirtytwo[i].images[0] + "><p class='caption'>" + data.thirtytwo[i].title + "</p><p class='price'>" + data.thirtytwo[i].price + "</p></a>")
 
 	}
 
