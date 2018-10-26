@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>alyx</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://use.typekit.net/ppp2fys.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<!-- menu -->
+<ul class="menu1">
+	<li class="li1 dropdown">
+		<a href="javascript:void(0)"><a href="women.html">women</a></a>
+		<div class="womendropdown">
+			<a href="ader.html" class="mader">Ader</a>
+			<a href="alyxw.html" class="malyx">Alyx</a>
+			<a href="ambushw.html" class="mambush">Ambush</a>
+			<a href="biis.html" class="mbiis">Biis</a>
+			<a href="heronw.html" class="mheron">Heron Preston</a>
+			<a href="iamgia.html" class="mgia">I.am.gia</a>
+			<a href="justine.html" class="mjustine">Justine Clenquet</a>
+			<a href="namilia.html" class="mnamilia">Namilia</a>
+		</div>
+	</li>
+	<li class="li1 dropdown">
+		<a href="javascript:void(0)"><a href="men.html">men</a></a>
+		<div class="mendropdown">
+			<a href="032c.html" class="m032c">032c</a>
+			<a href="alyxm.html" class="malyx">alyx</a>
+			<a href="ambushm.html" class="mambush">Ambush</a>
+			<a href="biis.html" class="mbiis">Biis</a>
+			<a href="heron.html" class="mheronmen">Heron Preston</a>
+			<a href="polythene.html" class="mpolythene">Polythene Optics</a>
+		</div>
+	</li>
+	<li class="li1"><a href="search.html">search</a></li>
+</ul>
+
+<ul class="menu2">
+	<li class="li2 dropdown">
+		<a href="javascript:void(0)">english</a>
+		<div class="languagedropdown">
+			<a href="english.html" class="english">english</a><br>
+			<a href="german.html" class="german">german</a>
+		</div>
+	</li>
+	<li class="li2"><a href="wishlist.html">wishlist</a></li>
+	<li class="li3"><a href="shoppingbag.html">shopping bag</a></li>
+</ul>
+
+<p class="budget">$2000</p>
+
+<div class="customize dropdown">
+	<a href="javascript:void(0)">
+		<img src="images/customizeicon.png" width="0.4%">
+		<div class="customizedropdown">
+		</div>
+	</a>
+</div>
+<!-- menu -->
+
+<!-- content -->
+<div class="alyxwomen">
+</div>
+<!-- content -->
+</body>
+<script>
+var myurl = "https://carolaguivel.github.io/webadvanced/instrument/women.json";
+
+$.getJSON(myurl, function(data){
+		
+	for (var i = 0; i < data.Alyx.length; i++) {
+
+		if($.isArray(data.Alyx[i].images[0])){
+
+			$(".alyxwomen").append("<a href=" + data.Alyx[i].link + ">" + "<img class='alyximg' src=" + data.Alyx[i].url + "/" + data.Alyx[i].images[0] + "><p class='caption'>" + data.Alyx[i].title + "</p><p class='price'>" + data.Alyx[i].price + "</p></a>")
+		}
+
+	}
+
+
+});
+</script>
+</html>

@@ -1,0 +1,47 @@
+{
+  "name": "photoroller",
+  "title": "jQuery PhotoRoller Plugin",
+  "description": "A mouseover cycle-through photo gallery (iPhoto-like)",
+  "keywords": [
+    "photoroller",
+    "cycle-through",
+    "gallery",
+    "iPhoto",
+    "photos",
+    "rollover",
+    "mouseover",
+    "mousemove",
+    "jquery-plugin",
+    "ecosystem:jquery",
+    "jQuery",
+    "plugin"
+  ],
+  "version": "1.3.1",
+  "homepage": "http://photoroller.martinmetodiev.com",
+  "authors": [
+    {
+      "name": "Martin Metodiev",
+      "email": "metodiev.martin@gmail.com",
+      "url": "http://martinmetodiev.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/martinmethod/photoroller.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "git://github.com/jquery/jquery.git"
+  },
+  "main": [
+    "dist/js/jquery.photoroller.js",
+    "dist/js/jquery.photoroller.min.js",
+    "dist/js/jquery.photoroller.min.js.map",
+    "dist/css/photoroller.css",
+    "dist/css/photoroller.min.css",
+    "dist/css/photoroller.min.css.map"
+  ],
+  "ignore": [
+    ".travis.yml"
+  ]
+}

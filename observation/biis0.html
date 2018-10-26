@@ -7,6 +7,7 @@
 	
 	<link rel="stylesheet" type="text/css" href="collection.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="sticky-kit.js"></script>
 </head>
 <body>
 
@@ -74,7 +75,7 @@
 <!-- content -->
 <div class="biisprod"></div>
 
-<div class="biisinfo">
+<div class="biisinfo" id="biisinfo">
 	<a class="link" href="biis.html">Back to biis</a><br>
 </div>
 <!-- content end -->
@@ -104,7 +105,7 @@ $.getJSON(myurl, function(data){
 
 	for (var i = 0; i < data.Biis[0].images.length; i++) {
 
-		$(".biisprod").append("<img class='biisprodimg' src='" + data.Biis[0].url + "/" + data.Biis[0].images[i] + "' >")
+		$(".biisprod").append("<img class='biisprodimg' id='biisprodimg' src='" + data.Biis[0].url + "/" + data.Biis[0].images[i] + "' >")
 
 		
 
@@ -112,6 +113,8 @@ $.getJSON(myurl, function(data){
 
 
 });
+
+$("#biisinfo, #biisprodimg").stick_in_parent();
 
 
 </script>

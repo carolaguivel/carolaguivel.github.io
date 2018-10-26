@@ -1,0 +1,828 @@
+html {
+	background-color: #ffffff;
+}
+
+html,body {
+	background-color: #ffffff;
+	margin: 0;
+}
+
+body {
+	font-family: motor, monospace;
+	font-size: 15px;
+	background-color: #ffffff;
+}
+
+div {
+	height: 100%;
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: #000000;
+}
+
+ul {
+	display: inline-block;
+	position: fixed;
+	color: #000000;
+	font-size: 1.3vw;
+	letter-spacing: 0.2vw;
+	text-transform: uppercase;
+	z-index: 2;
+}
+
+li {
+	display: inline-block;
+}
+
+/*menu*/
+.li1 {
+	margin-right: 4vw;
+	padding-bottom: 1.5vw;
+}
+
+.li2 {
+	margin-right: 4vw;
+	padding-bottom: 1.5vw;
+}
+
+.menu1 {
+	margin-top: 2vw;
+	z-index: 2;
+}
+
+.menu2 {
+	margin-top: 2vw;
+	margin-left: 64vw;
+	z-index: 2;
+}
+
+.customize {
+	position: fixed;
+	margin-left: 96.5vw;
+	margin-top: 8vw;
+}
+
+.footer {
+	position: absolute;
+	width: 100%;
+	height: 4vw;
+	border-top: 0.3vw solid #000000;
+	font-family: avenir, sans;
+	font-weight: 500;
+	font-size: 0.9vw;
+}
+
+.footermenu {
+	position: absolute;
+	margin-top: 1vw;
+}
+
+.footer a {
+	margin-left: 1vw;
+}
+
+.footer p {
+	position: absolute;
+	margin-top: 1vw;
+	margin-left: 88vw;
+}
+
+.terms {
+	position: absolute;
+	margin-top: 2vw;
+}
+
+.wfooter {
+	margin-top: 125vw;
+}
+
+.mfooter {
+	margin-top: 121vw;
+}
+
+.womendropdown {
+	display: none;
+    position: absolute;
+    background-color: #ffffff;
+    width: 30vw;
+    height: 20vw;
+    z-index: 1;
+    border: 0.3vw solid #000000;
+    margin-top: 1.5vw;
+    z-index: 2;
+}
+
+.womendropdown a {
+	position: absolute;
+	display: inline-block;
+	background-color: #ffffff;
+	width: 15vw;
+	height: 5vw;
+}
+
+.mhelmut:hover, .malyx:hover, .mambush:hover, .mbiis:hover,
+.mgia:hover, .mprada:hover, .mnamilia:hover,
+.mheron:hover, .m032c:hover, .mheronmen:hover, .mpolythene:hover,
+.english:hover, .german:hover, .mambushmen:hover, .malyxmen:hover,
+.mgoose:hover, .mwall:hover, .mraf:hover {
+	background-color: black;
+	color: white;
+	cursor: pointer;
+}
+
+div .malyx {
+	text-align: center;
+	box-sizing: border-box;
+	border-bottom: 0.3vw solid #000000;
+	border-right: 0.15vw solid #000000;
+	padding-top: 1.5vw;
+}
+
+div .mambush {
+	text-align: center;
+	box-sizing: border-box;
+	border-bottom: 0.3vw solid #000000;
+	border-left: 0.15vw solid #000000;
+	margin-left: 15vw;
+	padding-top: 1.5vw;
+}
+
+div .mbiis {
+	text-align: center;
+	box-sizing: border-box;
+	border-bottom: 0.3vw solid #000000;
+	border-right: 0.15vw solid #000000;
+	margin-top: 5vw;
+	padding-top: 1.5vw;
+}
+
+div .mhelmut {
+	text-align: center;
+	box-sizing: border-box;
+	border-bottom: 0.3vw solid #000000;
+	border-left: 0.15vw solid #000000;
+	margin-left: 15vw;
+	margin-top: 5vw;
+	padding-top: 1.5vw;
+}
+
+div .mheron {
+	text-align: center;
+	box-sizing: border-box;
+	border-bottom: 0.3vw solid #000000;
+	border-right: 0.15vw solid #000000;
+	margin-top: 10vw;
+	padding-top: 1.5vw;
+}
+
+div .mgia {
+	text-align: center;
+	box-sizing: border-box;
+	border-bottom: 0.3vw solid #000000;
+	border-left: 0.15vw solid #000000;
+	margin-left: 15vw;
+	margin-top: 10vw;
+	padding-top: 1.5vw;
+}
+
+div .mnamilia {
+	text-align: center;
+	box-sizing: border-box;
+	border-right: 0.15vw solid #000000;
+	margin-top: 15vw;
+	padding-top: 1.5vw;
+}
+
+div .mprada {
+	text-align: center;
+	box-sizing: border-box;
+	border-left: 0.15vw solid #000000;
+	margin-left: 15vw;
+	margin-top: 15vw;
+	padding-top: 1.5vw;
+}
+
+.dropdown:hover .womendropdown {
+    display: block;
+}
+
+.mendropdown {
+	display: none;
+	position: absolute;
+    background-color: #ffffff;
+	width: 30vw;
+	height: 20vw;
+	z-index: 1;
+	border: 0.3vw solid #000000;
+	margin-top: 1.5vw;
+	z-index: 2;
+}
+
+.mendropdown a {
+	position: absolute;
+	display: inline-block;
+	background-color: #ffffff;
+	width: 15vw;
+	height: 5vw;
+}
+
+div .m032c {
+	text-align: center;
+	box-sizing: border-box;
+	border-bottom: 0.3vw solid #000000;
+	border-right: 0.15vw solid #000000;
+	padding-top: 1.5vw;
+}
+
+div .mwall {
+	text-align: center;
+	box-sizing: border-box;
+	border-bottom: 0.3vw solid #000000;
+	border-left: 0.15vw solid #000000;
+	margin-left: 15vw;
+	padding-top: 1.5vw;
+}
+
+div .malyxmen {
+	text-align: center;
+	box-sizing: border-box;
+	border-bottom: 0.3vw solid #000000;
+	border-right: 0.15vw solid #000000;
+	margin-top: 5vw;
+	padding-top: 1.5vw;
+}
+
+div .mambushmen {
+	text-align: center;
+	box-sizing: border-box;
+	border-bottom: 0.3vw solid #000000;
+	border-left: 0.15vw solid #000000;
+	margin-left: 15vw;
+	margin-top: 5vw;
+	padding-top: 1.5vw;
+}
+
+div .mraf {
+	text-align: center;
+	box-sizing: border-box;
+	border-bottom: 0.3vw solid #000000;
+	border-right: 0.15vw solid #000000;
+	margin-top: 10vw;
+	padding-top: 1.5vw;
+}
+
+div .mgoose{
+	text-align: center;
+	box-sizing: border-box;
+	border-bottom: 0.3vw solid #000000;
+	border-left: 0.15vw solid #000000;
+	margin-left: 15vw;
+	margin-top: 10vw;
+	padding-top: 1.5vw;
+}
+
+div .mheronmen {
+	text-align: center;
+	box-sizing: border-box;
+	border-right: 0.15vw solid #000000;
+	margin-top: 15vw;
+	padding-top: 1.5vw;
+}
+
+div .mpolythene {
+	text-align: center;
+	box-sizing: border-box;
+	border-left: 0.15vw solid #000000;
+	margin-left: 15vw;
+	margin-top: 15vw;
+	padding-top: 1.5vw;
+}
+
+.dropdown:hover .mendropdown {
+    display: block;
+}
+
+.languagedropdown {
+	display: none;
+    position: absolute;
+    background-color: #ffffff;
+    /*background-color: red;*/
+    width: 15vw;
+    height: 10vw;
+    z-index: 1;
+    border: 0.3vw solid #000000;
+    margin-top: 1.5vw;
+}
+
+.languagedropdown a {
+	position: absolute;
+	display: inline-block;
+	background-color: #ffffff;
+	width: 15vw;
+	height: 5vw;
+}
+
+div .english {
+	text-align: center;
+	box-sizing: border-box;
+	border-bottom: 0.3vw solid #000000;
+	padding-top: 1.5vw;
+}
+
+div .german {
+	text-align: center;
+	box-sizing: border-box;
+	margin-top: 3.56vw;
+	padding-top: 1.5vw;
+}
+
+.dropdown:hover .languagedropdown {
+    display: block;
+}
+
+.customizedropdown {
+	display: none;
+    position: absolute;
+    background-color: #ffffff;
+    width: 15vw;
+    height: 20vw;
+    z-index: 1;
+    border: 0.3vw solid #000000;
+    margin-top: -3vw;
+    margin-left: -17.5vw;
+}
+
+.dropdown:hover .customizedropdown {
+    display: block;
+}
+
+.budget {
+	position: fixed;
+	color: #000000;
+	font-size: 1.3vw;
+	letter-spacing: 0.2vw;
+	text-transform: uppercase;
+	margin-top: 4.5vw;
+	margin-left: 93.5vw;
+}
+
+.startanimation {
+	animation-name: fadein;
+	animation-duration: 3s;
+	animation-delay: 5s;
+	animation-fill-mode: forwards;
+	opacity: 0;
+}
+
+@keyframes fadein {
+from {opacity: 0;}
+to {opacity: 1;}
+}
+/*menu*/
+
+
+#photoroll {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/*women*/
+.wnamilia {
+	position: absolute;
+	text-align: center;
+	margin-top: 12vw;
+	z-index: -1;
+}
+
+.wnamilia img {
+	position: absolute;
+	border: 0.4vw solid #000000;
+}
+
+.wnamilia p {
+	position: absolute;
+	font-size: 3.4vw;
+	letter-spacing: 0.3vw;
+	text-transform: uppercase;
+	margin-top: 29vw;
+	margin-left: 27.2vw;
+	border: 0.3vw solid #000000;
+	background-color: #ffffff;
+	padding: 1.2vw 1.7vw 1.2vw 1.7vw;
+}
+
+.wnamilia a {
+	position: absolute;
+	font-family: avenir, sans;
+	font-weight: 500;
+	font-size: 1.2vw;
+	margin-top: 37.1vw;
+	margin-left: -15vw;
+}
+
+.wnamilia span {
+	position: absolute;
+	font-family: motor, sans;
+	font-size: 1.5vw;
+	margin-left: 0.4vw;
+}
+
+.wnamiliaimg1 {
+	margin-left: -24vw;
+}
+
+.wnamiliaimg2 {
+	margin-left: -2vw;
+}
+
+.wiamgia {
+	position: absolute;
+	text-align: center;
+	margin-top: 68vw;
+	z-index: -1;
+	height: 48vw;
+	/*background-color: red;*/
+}
+
+.wiamgia img {
+	position: absolute;
+	border: 0.4vw solid #000000;
+}
+
+.wiamgia p {
+	position: absolute;
+	font-size: 3.4vw;
+	letter-spacing: 0.3vw;
+	text-transform: uppercase;
+	border: 0.3vw solid #000000;
+	background-color: #ffffff;
+	width: 15vw;
+	padding: 1.2vw 1.7vw 1.2vw 1.7vw;
+	margin-top: 34vw;
+	margin-left: 22vw;
+}
+
+.wiamgia a {
+	position: absolute;
+	font-family: avenir, sans;
+	font-weight: 500;
+	font-size: 1.2vw;
+	margin-top: 41.8vw;
+	margin-left: -15.5vw;
+}
+
+.wiamgia span {
+	position: absolute;
+	font-family: motor, sans;
+	font-size: 1.5vw;
+	margin-left: 0.4vw;
+}
+
+.wiamgiaimg1 {
+	margin-left: -33vw;
+}
+
+.wiamgiaimg2 {
+	margin-left: 11vw;
+	margin-top: 6vw;
+}
+/*women*/
+
+/*men*/
+.mengoose {
+	position: absolute;
+	text-align: center;
+	margin-top: 12vw;
+	z-index: -1;
+}
+
+.mengoose img {
+	position: absolute;
+	border: 0.4vw solid #000000;
+}
+
+.mengoose p {
+	position: absolute;
+	font-size: 3.4vw;
+	letter-spacing: 0.3vw;
+	text-transform: uppercase;
+	margin-top: 26vw;
+	margin-left: 56vw;
+	border: 0.3vw solid #000000;
+	background-color: #ffffff;
+	padding: 1.2vw 1.7vw 1.2vw 1.7vw;
+}
+
+.mengoose a {
+	position: absolute;
+	font-family: avenir, sans;
+	font-weight: 500;
+	font-size: 1.2vw;
+	margin-top: 35vw;
+	margin-left: 6vw;
+}
+
+.mengoose span {
+	position: absolute;
+	font-family: motor, sans;
+	font-size: 1.5vw;
+	margin-left: 0.4vw;
+}
+
+.mgooseimg1 {
+	margin-left: -25vw;
+}
+
+.mgooseimg2 {
+	margin-left: 6vw;
+}
+/* men */
+
+/* women products */
+.namilia {
+	position: absolute;
+	margin-top: 11vw;
+	/*background-color: red;*/
+	width: 90vw;
+	height: 60vw;
+	z-index: -1;
+	margin-left: 5vw;
+}
+
+.namiliaimg {
+	position: absolute;
+	width: 20%;
+	border: 0.3vw solid #000000;
+	display: inline-block;
+}
+
+.namilia > a {
+	display: inline-block;
+	/*padding: 0vw 7vw 5vw 7vw;*/
+	margin-left: 7vw;
+	margin-right: 7vw;
+	margin-bottom: 5vw;
+}
+
+.ambushwomen {
+	position: absolute;
+	margin-top: 11vw;
+	/*background-color: red;*/
+	width: 90vw;
+	height: 60vw;
+	z-index: -1;
+	margin-left: 5vw;
+}
+
+.ambushwimg {
+	position: absolute;
+	width: 20%;
+	border: 0.3vw solid #000000;
+	display: inline-block;
+}
+
+.ambushwomen > a {
+	display: inline-block;
+	/*padding: 0vw 7vw 5vw 7vw;*/
+	margin-left: 7vw;
+	margin-right: 7vw;
+	margin-bottom: 5vw;
+}
+
+.alyxwomen {
+	position: absolute;
+	margin-top: 11vw;
+	/*background-color: red;*/
+	width: 90vw;
+	height: 60vw;
+	z-index: -1;
+	margin-left: 5vw;
+}
+
+.alyxwimg {
+	position: absolute;
+	width: 20%;
+	border: 0.3vw solid #000000;
+	display: inline-block;
+}
+
+.alyxwomen > a {
+	display: inline-block;
+	/*padding: 0vw 7vw 5vw 7vw;*/
+	margin-left: 7vw;
+	margin-right: 7vw;
+	margin-bottom: 5vw;
+}
+
+.biiswomen {
+	position: absolute;
+	margin-top: 11vw;
+	/*background-color: red;*/
+	width: 90vw;
+	height: 60vw;
+	z-index: -1;
+	margin-left: 5vw;
+}
+
+.biiswimg {
+	position: absolute;
+	width: 20%;
+	border: 0.3vw solid #000000;
+	display: inline-block;
+}
+
+.biiswomen > a {
+	display: inline-block;
+	/*padding: 0vw 7vw 5vw 7vw;*/
+	margin-left: 7vw;
+	margin-right: 7vw;
+	margin-bottom: 5vw;
+}
+
+.heronwomen {
+	position: absolute;
+	margin-top: 11vw;
+	/*background-color: red;*/
+	width: 90vw;
+	height: 60vw;
+	z-index: -1;
+	margin-left: 5vw;
+}
+
+.heronwimg {
+	position: absolute;
+	width: 20%;
+	border: 0.3vw solid #000000;
+	display: inline-block;
+}
+
+.heronwomen > a {
+	display: inline-block;
+	/*padding: 0vw 7vw 5vw 7vw;*/
+	margin-left: 7vw;
+	margin-right: 7vw;
+	margin-bottom: 5vw;
+}
+/* women products */
+
+/* men products */
+.polythene {
+	position: absolute;
+	margin-top: 11vw;
+	/*background-color: red;*/
+	width: 90vw;
+	height: 60vw;
+	z-index: -1;
+	margin-left: 5vw;
+}
+
+.polytheneimg {
+	position: absolute;
+	width: 20%;
+	border: 0.3vw solid #000000;
+	display: inline-block;
+}
+
+.polythene > a {
+	display: inline-block;
+	/*padding: 0vw 7vw 5vw 7vw;*/
+	margin-left: 7vw;
+	margin-right: 7vw;
+	margin-bottom: 5vw;
+}
+
+.alyxmen {
+	position: absolute;
+	margin-top: 11vw;
+	/*background-color: red;*/
+	width: 90vw;
+	height: 60vw;
+	z-index: -1;
+	margin-left: 5vw;
+}
+
+.alyxmimg {
+	position: absolute;
+	width: 20%;
+	border: 0.3vw solid #000000;
+	display: inline-block;
+}
+
+.alyxmen > a {
+	display: inline-block;
+	/*padding: 0vw 7vw 5vw 7vw;*/
+	margin-left: 7vw;
+	margin-right: 7vw;
+	margin-bottom: 5vw;
+}
+
+.ambushmen {
+	position: absolute;
+	margin-top: 11vw;
+	/*background-color: red;*/
+	width: 90vw;
+	height: 60vw;
+	z-index: -1;
+	margin-left: 5vw;
+}
+
+.ambushmimg {
+	position: absolute;
+	width: 20%;
+	border: 0.3vw solid #000000;
+	display: inline-block;
+}
+
+.ambushmen > a {
+	display: inline-block;
+	/*padding: 0vw 7vw 5vw 7vw;*/
+	margin-left: 7vw;
+	margin-right: 7vw;
+	margin-bottom: 5vw;
+}
+/* men product */
+
+/* namilia */
+.namiliaprod {
+	position: absolute;
+	margin-left: 15vw;
+	margin-top: 13vw;
+	width: 70vw;
+	height: 30vw;
+	/*background-color: red;*/
+}
+
+.namiliaprodinfo {
+	position: absolute;
+	margin-left: 39vw;
+	margin-top: -32vw;
+	width: 20vw;
+	/*background-color: pink;*/
+}
+
+.namiliaprodimg {
+	width: 43%;
+	border: 0.3vw solid #000000;
+	margin-left: 5vw;
+}
+/* namilia */
+
+
+/* applies to all */
+.caption {
+	margin-top: 20.5vw;
+	text-transform: uppercase;
+	font-size: 1.1vw;
+	border: 0.3vw solid #000000;
+	background-color: #ffffff;
+	letter-spacing: 0.1vw;
+	padding: 1.2vw 1vw 1.2vw 1vw;
+}
+
+.caption:hover {
+	background-color: #000000;
+	color: #ffffff;
+}
+
+.price {
+
+}
+
+.addtocart {
+	position: absolute;
+	text-transform: uppercase;
+	border: 0.2vw solid #000000;
+	padding: 1.2vw 1.7vw 1.2vw 1.7vw;
+	background-color: white;
+	font-size: 1.2vw;
+	letter-spacing: 0.1vw;
+	margin-top: -26vw;
+}
+
+.mySlides {display:none;}
+
+.slidebuttonleft {
+	border: none;
+	position: absolute;
+	margin-top: -30vw;
+	height: 30vw;
+	width: 7vw;
+	cursor: w-resize;
+	opacity: 0;
+}
+
+.slidebuttonright {
+	border: none;
+	position: absolute;
+	margin-top: -30vw;
+	margin-left: 23vw;
+	height: 30vw;
+	width: 7vw;
+	cursor: e-resize;
+	opacity: 0;
+}
