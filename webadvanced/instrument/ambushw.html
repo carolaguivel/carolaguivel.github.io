@@ -2,8 +2,11 @@
 <html>
 <head>
 	<title>ambush</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://use.typekit.net/ppp2fys.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
 <body>
 <!-- menu -->
@@ -61,7 +64,7 @@
 <!-- menu -->
 
 <!-- content -->
-<div class="ambushwomen"></div>
+<div class="prodwomen"></div>
 <!-- content -->
 </body>
 <script>
@@ -72,7 +75,7 @@ $.getJSON(myurl, function(data){
 	for (var i = 0; i < data.Ambush.length; i++) {
 
 
-		$(".ambushwomen").append("<a href=" + data.Ambush[i].link + ">" + "<img class='ambushwimg' src=" + data.Ambush[i].url + "/" + data.Ambush[i].images[0] + "><p class='caption'>" + data.Ambush[i].title + "</p><p class='price'>" + data.Ambush[i].price + "</p></a>")
+		$(".prodwomen").append("<a href=" + data.Ambush[i].link + ">" + "<img class='prodwimg' src=" + data.Ambush[i].url + "/" + data.Ambush[i].images[0] + "><p class='caption'>" + data.Ambush[i].title + "</p><p class='price'>" + data.Ambush[i].price + "</p></a>")
 
 	}
 
