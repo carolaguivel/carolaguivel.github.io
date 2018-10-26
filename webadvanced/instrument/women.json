@@ -427,12 +427,84 @@
 
 	"Namilia" : [
 		{
-			"title" : "",
-			"description" : "",
-			"price" : "$173.00",
+			"title" : "Come & Play Bodysuit",
+			"description" : "Black lycra bodysuit with mesh panels and 3D claw patches.",
+			"price" : "$135.00",
 			"link" : "namilia1.html",
 			"url" : "images/namilia",
-			"images" : [ "namilia3.png", "namilia4.png", "namilia5.png" ]
+			"images" : [ "namilia3.png", "namilia4.png" ]
+		},
+
+		{
+			"title" : "Daddy's Angel Pants",
+			"description" : "Signature motorcross pants in all black soft verlour jersey patchwork with crystal slogan.",
+			"price" : "$145.00",
+			"link" : "namilia2.html",
+			"url" : "images/namilia",
+			"images" : [ "namilia5.png", "namilia6.png", "namilia7.png" ]
+		},
+
+		{
+			"title" : "Daddy's Angel Tracksuit",
+			"description" : "Signature tracksuit in all black soft verlour jersey patchwork with crystal slogan.",
+			"price" : "$165.00",
+			"link" : "namilia3.html",
+			"url" : "images/namilia",
+			"images" : [ "namilia8.png", "namilia9.png", "namilia10.png" ]
+		},
+
+		{
+			"title" : "Daddy's Angel Bodysuit",
+			"description" : "Black lycra bodysuit with mesh panels and crystal slogans.",
+			"price" : "$92.00",
+			"link" : "namilia4.html",
+			"url" : "images/namilia",
+			"images" : [ "namilia11.png", "namilia12.png" ]
+		},
+
+		{
+			"title" : "Daddy's Angel Bodysuit",
+			"description" : "Black lycra bodysuit with mesh panels and crystal slogans.",
+			"price" : "$92.00",
+			"link" : "namilia5.html",
+			"url" : "images/namilia",
+			"images" : [ "namilia13.png", "namilia14.png", "namilia15.png" ]
+		},
+
+		{
+			"title" : "Tribal Shirt Body",
+			"description" : "Black bodysuit with blue tribal print.",
+			"price" : "$135.00",
+			"link" : "namilia6.html",
+			"url" : "images/namilia",
+			"images" : [ "namilia16.png", "namilia17.png" ]
+		},
+
+		{
+			"title" : "Tribal Body Long Sleeve",
+			"description" : "Black long sleeve bodysuit with blue tribal print.",
+			"price" : "$145.00",
+			"link" : "namilia7.html",
+			"url" : "images/namilia",
+			"images" : [ "namilia18.png", "namilia19.png" ]
+		},
+
+		{
+			"title" : "Tribal Shirt Body",
+			"description" : "Black bodysuit with green tribal print.",
+			"price" : "$135.00",
+			"link" : "namilia8.html",
+			"url" : "images/namilia",
+			"images" : [ "namilia20.png", "namilia21.png" ]
+		},
+
+		{
+			"title" : "Tribal Body Long Sleeve",
+			"description" : "Black long sleeve bodysuit with green tribal print.",
+			"price" : "$145.00",
+			"link" : "namilia9.html",
+			"url" : "images/namilia",
+			"images" : [ "namilia22.png", "namilia23.png" ]
 		}
 	],
 
