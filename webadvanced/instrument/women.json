@@ -413,6 +413,15 @@
 			"link" : "gia4.html",
 			"url" : "images/iamgia",
 			"images" : [ "gia14.png", "gia15.png", "gia16.png" ]
+		},
+
+		{
+			"title" : "Madison Plaid Mini Skirt",
+			"description" : "Plaid mini skirt in a high rise silhouette. Finished with chain detailing at the hip and a sipper closure at the back.",
+			"price" : "$99.00",
+			"link" : "gia5.html",
+			"url" : "images/iamgia",
+			"images" : [ "gia17.png", "gia18.png" ]
 		}
 	],
 
