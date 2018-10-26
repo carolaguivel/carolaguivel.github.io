@@ -6,7 +6,7 @@
 			"price" : "$256.00",
 			"link" : "alyx1.html",
 			"url" : "images/alyx",
-			"images" : [ "alyx1.png", "alyx2.png", "alyx3.png" ],
+			"images" : [ "alyx1.png", "alyx2.png", "alyx3.png" ]
 		},
 
 		{
@@ -15,7 +15,7 @@
 			"price" : "$404.00",
 			"link" : "alyx2.html",
 			"url" : "images/alyx",
-			"images" : [ "alyx4.png", "alyx5.png", "alyx6.png" ],
+			"images" : [ "alyx4.png", "alyx5.png", "alyx6.png" ]
 		},
 
 		{
@@ -24,7 +24,7 @@
 			"price" : "$565.00",
 			"link" : "alyx3.html",
 			"url" : "images/alyx",
-			"images" : [ "alyx7.png", "alyx8.png", "alyx9.png", "alyx10.png" ],
+			"images" : [ "alyx7.png", "alyx8.png", "alyx9.png", "alyx10.png" ]
 		},
 
 		{
@@ -33,7 +33,7 @@
 			"price" : "$156.00",
 			"link" : "alyx4.html",
 			"url" : "images/alyx",
-			"images" : [ "alyx11.png", "alyx12.png" ],
+			"images" : [ "alyx11.png", "alyx12.png" ]
 		},
 
 		{
@@ -42,7 +42,7 @@
 			"price" : "$1072.00",
 			"link" : "alyx5.html",
 			"url" : "images/alyx",
-			"images" : [ "alyx13.png", "alyx14.png", "alyx15.png" ],
+			"images" : [ "alyx13.png", "alyx14.png", "alyx15.png" ]
 		},
 
 		{
@@ -51,7 +51,7 @@
 			"price" : "$46.00",
 			"link" : "alyx6.html",
 			"url" : "images/alyx",
-			"images" : [ "alyx16.png", "alyx17.png" ],
+			"images" : [ "alyx16.png", "alyx17.png" ]
 		},
 
 		{
@@ -60,7 +60,7 @@
 			"price" : "$749.00",
 			"link" : "alyx7.html",
 			"url" : "images/alyx",
-			"images" : [ "alyx18.png", "alyx19.png", "alyx20.png" ],
+			"images" : [ "alyx18.png", "alyx19.png", "alyx20.png" ]
 		},
 
 		{
@@ -69,9 +69,30 @@
 			"price" : "$2998.00",
 			"link" : "alyx8.html",
 			"url" : "images/alyx",
-			"images" : [ "alyx21.png", "alyx22.png", "alyx23.png" ],
+			"images" : [ "alyx21.png", "alyx22.png", "alyx23.png" ]
+		}
+	],
+
+	"Ambush" : [
+		{
+			"title" : "Key Charm Earring",
+			"description" : "Medium anodized aluminum buckle with lazered logo. Nylon strap cording, adjustable.",
+			"price" : "$250.00",
+			"link" : "ambush1.html",
+			"url" : "images/ambush",
+			"images" : [ "ambush1.png" ]
 		},
+
+		{
+			"title" : "Pill Charm Necklace",
+			"description" : "Medium anodized aluminum buckle with lazered logo. Nylon strap cording, adjustable.",
+			"price" : "$231.00",
+			"link" : "ambush2.html",
+			"url" : "images/ambush",
+			"images" : [ "ambush2.png", "ambush3.png" ]
+		}
 	]
+
 }
 
 

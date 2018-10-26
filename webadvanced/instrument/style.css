@@ -597,7 +597,7 @@ to {opacity: 1;}
 .alyxwomen {
 	position: absolute;
 	margin-top: 11vw;
-	/*background-color: red;*/
+	background-color: red;
 	width: 90vw;
 	height: 60vw;
 	z-index: -1;

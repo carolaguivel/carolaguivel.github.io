@@ -73,7 +73,7 @@ $.getJSON(myurl, function(data){
 
 		if($.isArray(data.Alyx[i].images[0])){
 
-			$(".alyxwomen").append("<a href=" + data.Alyx[i].link + ">" + "<img class='alyximg' src=" + data.Alyx[i].url + "/" + data.Alyx[i].images[0] + "><p class='caption'>" + data.Alyx[i].title + "</p><p class='price'>" + data.Alyx[i].price + "</p></a>")
+			$(".alyxwomen").append("<a href=" + data.Alyx[i].link + ">" + "<img class='alyxwimg' src=" + data.Alyx[i].url + "/" + data.Alyx[i].images[0] + "><p class='caption'>" + data.Alyx[i].title + "</p><p class='price'>" + data.Alyx[i].price + "</p></a>")
 		}
 
 	}
