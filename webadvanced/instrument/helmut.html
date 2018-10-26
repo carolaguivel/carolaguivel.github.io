@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>heron preston</title>
+	<title>helmut lang</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="style.css">
@@ -72,10 +72,10 @@ var myurl = "https://carolaguivel.github.io/webadvanced/instrument/women.json";
 
 $.getJSON(myurl, function(data){
 		
-	for (var i = 0; i < data.HeronPreston.length; i++) {
+	for (var i = 0; i < data.HelmutLang.length; i++) {
 
 
-		$(".prodwomen").append("<a href=" + data.HeronPreston[i].link + ">" + "<img class='prodwimg' src=" + data.HeronPreston[i].url + "/" + data.HeronPreston[i].images[0] + "><p class='caption'>" + data.HeronPreston[i].title + "</p><p class='price'>" + data.HeronPreston[i].price + "</p></a>")
+		$(".prodwomen").append("<a href=" + data.HelmutLang[i].link + ">" + "<img class='prodwimg' src=" + data.HelmutLang[i].url + "/" + data.HelmutLang[i].images[0] + "><p class='caption'>" + data.HelmutLang[i].title + "</p><p class='price'>" + data.HelmutLang[i].price + "</p></a>")
 
 	}
 

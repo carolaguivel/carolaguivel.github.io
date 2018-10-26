@@ -2,8 +2,11 @@
 <html>
 <head>
 	<title>namilia</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://use.typekit.net/ppp2fys.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
 <body>
 <!-- menu -->
@@ -61,41 +64,21 @@
 <!-- menu -->
 
 <!-- content -->
-<div class="namilia">
-	<a href="namilia1.html" class="namiliaproduct">
-		<img src="images/namilia/namilia3.jpg" class="namiliaimg">
-		<p class="caption">Come &#38; Play Bodysuit</p>
-		<p class="price">$145.00</p>
-	</a>
-	<a href="namilia2.html" class="namiliaproduct">
-		<img src="images/namilia/namilia5.jpg" class="namiliaimg">
-		<p class="caption">Daddy's Angel Pants</p>
-		<p class="price">$145.00</p>
-	</a>
-	<a href="namilia3.html" class="namiliaproduct">
-		<img src="images/namilia/namilia8.jpg" class="namiliaimg">
-		<p class="caption">Daddy's Angel Jacket</p>
-		<p class="price">$140.00</p>
-	</a>
-	<a href="namilia4.html" class="namiliaproduct">
-		<img src="images/namilia/namilia11.jpg" class="namiliaimg">
-		<p class="caption">Tribal Edge Body</p>
-		<p class="price">$145.00</p>
-	</a>
-	<a href="namilia5.html" class="namiliaproduct">
-		<img src="images/namilia/namilia13.jpg" class="namiliaimg">
-		<p class="caption">Tribal Edge Body</p>
-		<p class="price">$135.00</p>
-	</a>
-	<a href="namilia6.html" class="namiliaproduct">
-		<img src="images/namilia/namilia15.jpg" class="namiliaimg">
-		<p class="caption">Wet &#38; Wild Bodysuit</p>
-		<p class="price">$115.00</p>
-	</a>
-</div>
+<div class="prodwomen"></div>
 <!-- content -->
 </body>
 <script>
+var myurl = "https://carolaguivel.github.io/webadvanced/instrument/women.json";
 
+$.getJSON(myurl, function(data){
+		
+	for (var i = 0; i < data.Namilia.length; i++) {
+
+
+		$(".prodwomen").append("<a href=" + data.Namilia[i].link + ">" + "<img class='prodwimg' src=" + data.Namilia[i].url + "/" + data.Namilia[i].images[0] + "><p class='caption'>" + data.Namilia[i].title + "</p><p class='price'>" + data.Namilia[i].price + "</p></a>")
+
+	}
+
+});
 </script>
 </html>
