@@ -380,12 +380,30 @@
 
 	"Iamgia" : [
 		{
-			"title" : "",
-			"description" : "",
-			"price" : "$173.00",
+			"title" : "Aurora Pants",
+			"description" : "Made from an allover metal stamped fabric in a high rise cut with a belted paperbag waist. Super relaxed fit down through the wide leg that falls below the ankle.",
+			"price" : "$350.00",
 			"link" : "gia1.html",
 			"url" : "images/iamgia",
-			"images" : [ "gia3.png", "gia4.png", "gia5.png" ]
+			"images" : [ "gia3.png", "gia4.png", "gia5.png", "gia6.png" ]
+		},
+
+		{
+			"title" : "Aurora Bandeau Top",
+			"description" : "Strapless bandeau bra top. Features allover metallic stamped detailing. Finished with a full zipper closure at the back.",
+			"price" : "$80.00",
+			"link" : "gia2.html",
+			"url" : "images/iamgia",
+			"images" : [ "gia7.png", "gia8.png", "gia9.png" ]
+		}
+
+		{
+			"title" : "Neptune Zipper Jacket",
+			"description" : "Zip it your way in this windbreaker jacket. With an elastic drawstring waistband and a 4-zipper closure at the front. Colorblock striped detailing at the long sleeves, turtleneck and detachable hood. Finished with elastic-banded cuffs and logo detailing at the pocket at the left chest.",
+			"price" : "$220.00",
+			"link" : "gia3.html",
+			"url" : "images/iamgia",
+			"images" : [ "gia10.png", "gia11.png", "gia12.png", "gia13.png" ]
 		}
 	],
 
