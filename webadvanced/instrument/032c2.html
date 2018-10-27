@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>032c</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://use.typekit.net/ppp2fys.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="photoroll/dist/css/photoroller.css">
+	<script src="photoroll/dist/js/jquery.photoroller.min.js"></script>
+</head>
+<body>
+<!-- menu -->
+<ul class="menu1">
+	<li class="li1 dropdown">
+		<a href="javascript:void(0)"><a href="women.html">women</a></a>
+		<div class="womendropdown">
+			<a href="alyxw.html" class="malyx">Alyx</a>
+			<a href="ambushw.html" class="mambush">Ambush</a>
+			<a href="biis.html" class="mbiis">Biis</a>
+			<a href="helmut.html" class="mhelmut">Helmut Lang</a>
+			<a href="heronw.html" class="mheron">Heron Preston</a>
+			<a href="iamgia.html" class="mgia">I.am.gia</a>
+			<a href="namilia.html" class="mnamilia">Namilia</a>
+			<a href="prada.html" class="mprada">Prada</a>
+		</div>
+	</li>
+	<li class="li1 dropdown">
+		<a href="javascript:void(0)"><a href="men.html">men</a></a>
+		<div class="mendropdown">
+			<a href="032c.html" class="m032c">032c</a>
+			<a href="acoldwall.html" class="mwall">A Cold Wall</a>
+			<a href="alyxm.html" class="malyxmen">Alyx</a>
+			<a href="ambushm.html" class="mambushmen">Ambush</a>
+			<a href="rafsimons.html" class="mraf">Raf Simons</a>
+			<a href="goldengoose.html" class="mgoose">Golden Goose</a>
+			<a href="heronm.html" class="mheronmen">Heron Preston</a>
+			<a href="polythene.html" class="mpolythene">Polythene</a>
+		</div>
+	</li>
+	<li class="li1"><a href="search.html">search</a></li>
+</ul>
+
+<ul class="menu2">
+	<li class="li2 dropdown">
+		<a href="javascript:void(0)">english</a>
+		<div class="languagedropdown">
+			<a href="english.html" class="english">english</a><br>
+			<a href="german.html" class="german">german</a>
+		</div>
+	</li>
+	<li class="li2"><a href="wishlist.html">wishlist</a></li>
+	<li class="li3"><a href="shoppingbag.html">shopping bag</a></li>
+</ul>
+
+<p class="budget">$3000</p>
+
+<div class="customize dropdown">
+	<a href="javascript:void(0)">+
+		<div class="customizedropdown">
+		</div>
+	</a>
+</div>
+<!-- menu -->
+
+<!-- content -->
+<div class="prodcontainer">
+<div class="prodpage">
+	<div class="prodinfo"></div>
+</div>
+<div>
+<!-- content -->
+
+<div class="img3"></div>
+
+<script>
+
+var myurl = "https://carolaguivel.github.io/webadvanced/instrument/men.json";
+
+$.getJSON(myurl, function(data){
+		
+	$(".prodinfo").append( "<p class='backlink'><a href='032c.html'>Back to 032c</a></p><p class='title'>" + data.thirtytwo[1].title + "</p><p class='description'>" + data.thirtytwo[1].description + "</p><p class='prodprice'>" + data.thirtytwo[1].price + "</p><p class='wishlist'><a>wishlist</a></p><p><a class='addtocart'>Add to Bag</a></p>")
+
+
+	for (var i = 0; i < data.thirtytwo[1].images.length; i++) {
+
+		$(".prodpage").append("<img class='prodpageimg' src='" + data.thirtytwo[1].url + "/" + data.thirtytwo[1].images[i] + "'>")
+	}
+});
+
+</script>
+</body>
+</html>
