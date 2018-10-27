@@ -533,6 +533,11 @@ to {opacity: 1;}
 	display: inline-block;
 }
 
+/*.prodimg:hover {
+	box-sizing: border-box;
+	border: 0.3vw solid #000000;
+}*/
+
 .product > a {
 	display: inline-block;
 	width: 10vw;
@@ -595,7 +600,7 @@ to {opacity: 1;}
 
 .prodpageimg {
 	width: 100%;
-	padding-bottom: 1vw;
+	padding-bottom: 2vw;
 }
 
 .prodinfo {
@@ -632,70 +637,62 @@ to {opacity: 1;}
 	text-transform: uppercase;
 	font-size: 2.3vw;
 	letter-spacing: 0.1vw;
-	margin: 0;
 }
 
 .description {
-	/*position: absolute;*/
 	font-size: 1vw;
 	line-height: 1.7vw;
 	text-transform: none;
-	letter-spacing: 0.05vw;
+	letter-spacing: 0.1vw;
 	font-family: avenir next condensed, sans;
-	width: 18vw;
-	/*margin-top: 6.5vw;*/
+	width: 16vw;
+	/*background-color: red;*/
 }
 
 .prodprice {
 	/*position: absolute;*/
 	text-transform: uppercase;
-	font-size: 1.5vw;
-	letter-spacing: 0.05vw;
-	/*margin-top: 20vw;*/
+	font-size: 1.1vw;
+	letter-spacing: 0.1vw;
+	margin-top: 2.4vw;
 }
 
 .wishlist {
 	/*position: absolute;*/
 	text-transform: uppercase;
-	font-size: 1.5vw;
-	letter-spacing: 0.05vw;
-	/*margin-top: 20vw;*/
-	/*margin-left: 10.5vw;*/
-}
-
-.wishlist:hover {
-	color: white;
-	background-color: black;
+	font-size: 1.1vw;
+	letter-spacing: 0.1vw;
+	margin-top: -2.3vw;
+	margin-left: 7.5vw;
+	cursor: pointer;
 }
 
 .addtocart {
-	/*position: absolute;*/
+	position: absolute;
 	text-transform: uppercase;
-	/*border: 0.3vw solid #000000;*/
-	font-size: 1.5vw;
+	border: 0.3vw solid #000000;
+	font-size: 1.3vw;
 	background-color: #ffffff;
+	color: #000000;
 	letter-spacing: 0.1vw;
-	/*padding: 0.8vw 1.8vw 0.8vw 1.8vw;*/
-	/*margin-top: 25.5vw;*/
+	padding: 0.8vw 1.6vw 0.8vw 1.6vw;
+	margin-top: 1.7vw;
+	cursor: pointer;
 }
 
 .addtocart:hover {
-	color: white;
-	background-color: black;
+	background-color: #000000;
+	color: #ffffff;
 }
 
 .backlink {
 	/*position: absolute;*/
-	font-size: 1vw;
+	margin: 0;
+	font-size: 0.9vw;
 	line-height: 1.7vw;
-	text-transform: none;
-	letter-spacing: 0.05vw;
+	text-transform: uppercase;
+	letter-spacing: 0.12vw;
 	font-family: avenir next condensed, sans; 
-}
-
-.backlink:hover {
-	color: white;
-	background-color: black;
 }
 
 /*footer*/
@@ -732,5 +729,18 @@ to {opacity: 1;}
 	width: 100%;
 	height: 4vw;
 	margin-top: 154.5vw;
+	z-index: -1;
+}
+
+.img2 {
+
+}
+
+.img3 {
+	position: absolute;
+	background-color: #ffffff;
+	width: 100%;
+	height: 4vw;
+	margin-top: 82.7vw;
 	z-index: -1;
 }

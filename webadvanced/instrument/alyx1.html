@@ -73,13 +73,15 @@
 <div>
 <!-- content -->
 
+<div class="img3"></div>
+
 <script>
 
 var myurl = "https://carolaguivel.github.io/webadvanced/instrument/women.json";
 
 $.getJSON(myurl, function(data){
 		
-	$(".prodinfo").append( "<p class='title'>" + data.Alyx[0].title + "</p><p class='description'>" + data.Alyx[0].description + "</p><p class='prodprice'>" + data.Alyx[0].price + "</p><p><a class='addtocart'>Add to Cart</a></p><p><a class='wishlist'>wishlist</a></p><p><a href='alyxw.html' class='backlink'>Back to Alyx</a></p>")
+	$(".prodinfo").append( "<p class='backlink'><a href='alyxw.html'>Back to Alyx</a></p><p class='title'>" + data.Alyx[0].title + "</p><p class='description'>" + data.Alyx[0].description + "</p><p class='prodprice'>" + data.Alyx[0].price + "</p><p class='wishlist'><a>wishlist</a></p><p><a class='addtocart'>Add to Bag</a></p>")
 
 
 	for (var i = 0; i < data.Alyx[0].images.length; i++) {
@@ -88,12 +90,12 @@ $.getJSON(myurl, function(data){
 	}
 });
 
-$(".prodinfo").stick_in_parent()
-.on("sticky_kit:stick", function(e) {
-    console.log("has stuck!", e.target);
-  }) .on("sticky_kit:unstick", function(e) {
-    console.log("has unstuck!", e.target);
-  });
+// $(".prodinfo").stick_in_parent()
+// 	.on("sticky_kit:stick", function(e) {
+//     console.log("has stuck!", e.target);
+//   	}) .on("sticky_kit:unstick", function(e) {
+//     console.log("has unstuck!", e.target);
+// });
 
 </script>
 </body>
