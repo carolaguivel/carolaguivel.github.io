@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>heron preston</title>
+	<title>ambush</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="style.css">
@@ -64,9 +64,9 @@
 
 <!-- content -->
 <div class="dropdown">
-	<a href="javascript:void(0)" class="brandname">heron preston
+	<a href="javascript:void(0)" class="brandname">ambush
 		<p class="branddropdown">
-			Heron Preston is the true embodiment of an artist born of the post-internet generation. Multi faceted and genre bending, he has become a cultural icon in youth culture, known for his bold aesthetics. Applying the knowledge he gained from earning his B.B.A from Parsons School of design and his San Fransisco upbringing, Preston now functions as an artist, creative director, content creator, designer and DJ; the one common thread among his impressive bodies of work is a commitment to innovation, experimentation and unpredictability. He’s never one to worry about breaking rules, as evident by his e-commerce platform HPC Trading Co., where he features and sells his original clothes and accessories. He finds particular joy in the unexpected; taking conventional themes and reinterpreting them.
+			Ambush began as an experimental line of jewelry, innovative pop art inspired designs capturing a distinct Tokyo aesthetic. The iconic trademarked POW motif in particular received media coverage around the world. With apparel created as a canvas to complete the story, Ambush evolved into designing unisex collections.
 		</p>
 	</a>
 </div>
@@ -74,17 +74,17 @@
 <div class="product"></div>
 <!-- content -->
 
-<div class="prod3"></div>
+<div class="prod5"></div>
 
 <script>
-var myurl = "https://carolaguivel.github.io/webadvanced/instrument/women.json";
+var myurl = "https://carolaguivel.github.io/webadvanced/instrument/men.json";
 
 $.getJSON(myurl, function(data){
 		
-	for (var i = 0; i < data.HeronPreston.length; i++) {
+	for (var i = 0; i < data.Ambush.length; i++) {
 
 
-		$(".product").append("<a href=" + data.HeronPreston[i].link + ">" + "<img class='prodimg' src=" + data.HeronPreston[i].url + "/" + data.HeronPreston[i].images[0] + "><p class='caption'>" + data.HeronPreston[i].title + "</p><p class='price'>" + data.HeronPreston[i].price + "</p></a>")
+		$(".product").append("<a href=" + data.Ambush[i].link + ">" + "<img class='prodimg' src=" + data.Ambush[i].url + "/" + data.Ambush[i].images[0] + "><p class='caption'>" + data.Ambush[i].title + "</p><p class='price'>" + data.Ambush[i].price + "</p></a>")
 
 	}
 

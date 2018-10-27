@@ -61,46 +61,16 @@ li {
 
 .customize {
 	position: fixed;
-	margin-left: 96.5vw;
-	margin-top: 8vw;
+	margin-left: 96vw;
+	margin-top: 52vw;
+	font-size: 2.5vw;
 }
 
-.footer {
+.customize > a {
 	position: absolute;
-	width: 100%;
-	height: 4vw;
-	border-top: 0.3vw solid #000000;
-	font-family: avenir, sans;
-	font-weight: 500;
-	font-size: 0.9vw;
-}
-
-.footermenu {
-	position: absolute;
-	margin-top: 1vw;
-}
-
-.footer a {
-	margin-left: 1vw;
-}
-
-.footer p {
-	position: absolute;
-	margin-top: 1vw;
-	margin-left: 88vw;
-}
-
-.terms {
-	position: absolute;
-	margin-top: 2vw;
-}
-
-.wfooter {
-	margin-top: 125vw;
-}
-
-.mfooter {
-	margin-top: 121vw;
+	width: 5vw;
+	padding-left: 3vw;
+	margin-left: -2.8vw;
 }
 
 .womendropdown {
@@ -351,8 +321,8 @@ div .german {
     height: 20vw;
     z-index: 1;
     border: 0.3vw solid #000000;
-    margin-top: -3vw;
-    margin-left: -17.5vw;
+    margin-top: -21.5vw;
+    margin-left: -17vw;
 }
 
 .dropdown:hover .customizedropdown {
@@ -550,10 +520,9 @@ to {opacity: 1;}
 /* products */
 .product {
 	position: absolute;
-	margin-top: 11vw;
-	/*background-color: red;*/
+	margin-top: 20vw;
 	width: 90vw;
-	height: 60vw;
+	height: 49vw;
 	z-index: -1;
 	margin-left: 5vw;
 }
@@ -567,123 +536,201 @@ to {opacity: 1;}
 .product > a {
 	display: inline-block;
 	width: 10vw;
-	/*background-color: pink;*/
 	vertical-align: top;
 	margin-left: 8vw;
 	margin-right: 8vw;
 	margin-bottom: 5vw;
 }
+
+.brandname {
+	position: absolute;
+	background-color: #ffffff;
+	border: 0.3vw solid #000000;
+	font-size: 3.2vw;
+	letter-spacing: 0.3vw;
+	text-transform: uppercase;
+	padding: 0.7vw 1.7vw 0.7vw 1.7vw;
+	margin-top: 10vw;
+	margin-left: 13vw;
+}
+
+.branddropdown {
+	display: none;
+    position: absolute;
+    font-size: 1.1vw;
+	text-transform: none;
+	letter-spacing: 0.05vw;
+	font-family: avenir next condensed, sans;
+    background-color: #ffffff;
+    width: 22vw;
+    padding: 4vw;
+    z-index: 1;
+    border: 0.3vw solid #000000;
+    margin-top: 3vw;
+    margin-left: -2vw;
+}
+
+.dropdown:hover .branddropdown {
+    display: block;
+}
 /* products */
 
-/* men products */
-/* men product */
-
-/*alyx*/
-.alyxprod {
+/* product page */
+.prodcontainer {
 	position: absolute;
-	margin-left: 10vw;
-	margin-top: 10vw;
-	width: 34vw;
-	height: 40vw;
-}
-
-.alyxprodimg {
-	position: absolute;
-	width: 100%;
-}
-
-.alyxinfo {
-	position: absolute;
-	margin-left: 50vw;
-	margin-top: 10vw;
-	font-family: avenir next condensed, sans;
-	width: 40vw;
-	height: 30vw;
 	/*background-color: red;*/
-}
-/*alyx*/
-
-/* namilia */
-.namiliaprod {
-	position: absolute;
-	margin-left: 15vw;
 	margin-top: 13vw;
-	width: 70vw;
-	height: 30vw;
-	/*background-color: red;*/
+	height: 80vw;
+	width: 60vw;
+	margin-left: 20vw;
 }
 
-.namiliaprodinfo {
+.prodpage {
 	position: absolute;
-	margin-left: 39vw;
-	margin-top: -32vw;
-	width: 20vw;
-	/*background-color: pink;*/
+	width: 25vw;
+	height: 40vw;
+	/*margin-left: 20vw;*/
+	/*margin-top: 13vw;*/
 }
 
-.namiliaprodimg {
-	width: 43%;
+.prodpageimg {
+	width: 100%;
+	padding-bottom: 1vw;
+}
+
+.prodinfo {
+	position: fixed;
 	border: 0.3vw solid #000000;
-	margin-left: 5vw;
+	background-color: #ffffff;
+	margin-left: 30vw;
+	padding: 3vw;
+	width: 23vw;
+	height: 30vw;
 }
-/* namilia */
-
+/* product page */
 
 /* applies to all */
 .caption {
 	margin-top: 19vw;
 	text-transform: uppercase;
 	font-family: avenir next condensed, sans;
-	font-size: 1vw;
-	background-color: #ffffff;
+	font-size: 0.9vw;
 	letter-spacing: 0.15vw;
+	width: 18vw;
 }
 
 .price {
 	font-family: avenir next condensed, sans;
 	letter-spacing: 0.15vw;
-	font-size: 1vw;
+	font-size: 0.9vw;
 	margin-top: -0.5vw;
+	width: 18vw;
+}
+
+.title {
+	/*position: absolute;*/
+	text-transform: uppercase;
+	font-size: 2.3vw;
+	letter-spacing: 0.1vw;
+	margin: 0;
+}
+
+.description {
+	/*position: absolute;*/
+	font-size: 1vw;
+	line-height: 1.7vw;
+	text-transform: none;
+	letter-spacing: 0.05vw;
+	font-family: avenir next condensed, sans;
+	width: 18vw;
+	/*margin-top: 6.5vw;*/
+}
+
+.prodprice {
+	/*position: absolute;*/
+	text-transform: uppercase;
+	font-size: 1.5vw;
+	letter-spacing: 0.05vw;
+	/*margin-top: 20vw;*/
+}
+
+.wishlist {
+	/*position: absolute;*/
+	text-transform: uppercase;
+	font-size: 1.5vw;
+	letter-spacing: 0.05vw;
+	/*margin-top: 20vw;*/
+	/*margin-left: 10.5vw;*/
+}
+
+.wishlist:hover {
+	color: white;
+	background-color: black;
 }
 
 .addtocart {
-	position: absolute;
+	/*position: absolute;*/
 	text-transform: uppercase;
-	background-color: white;
-	font-size: 1.2vw;
+	/*border: 0.3vw solid #000000;*/
+	font-size: 1.5vw;
+	background-color: #ffffff;
 	letter-spacing: 0.1vw;
-	margin-top: 2vw;
+	/*padding: 0.8vw 1.8vw 0.8vw 1.8vw;*/
+	/*margin-top: 25.5vw;*/
+}
+
+.addtocart:hover {
+	color: white;
+	background-color: black;
 }
 
 .backlink {
-	position: absolute;
-	margin-top: 4vw;
+	/*position: absolute;*/
+	font-size: 1vw;
+	line-height: 1.7vw;
+	text-transform: none;
+	letter-spacing: 0.05vw;
+	font-family: avenir next condensed, sans; 
 }
 
-.custom-select {
-	width: 3vw;
-	position: absolute;
+.backlink:hover {
+	color: white;
+	background-color: black;
 }
 
-.mySlides {display:none;}
-
-.slidebuttonleft {
-	border: none;
+/*footer*/
+.prod2 {
 	position: absolute;
-	margin-top: -30vw;
-	height: 30vw;
-	width: 7vw;
-	cursor: w-resize;
-	opacity: 0;
+	background-color: #ffffff;
+	width: 100%;
+	height: 4vw;
+	margin-top: 71.3vw;
+	z-index: -1;
 }
 
-.slidebuttonright {
-	border: none;
+.prod3 {
 	position: absolute;
-	margin-top: -30vw;
-	margin-left: 23vw;
-	height: 30vw;
-	width: 7vw;
-	cursor: e-resize;
-	opacity: 0;
+	background-color: #ffffff;
+	width: 100%;
+	height: 4vw;
+	margin-top: 99vw;
+	z-index: -1;
+}
+
+.prod4 {
+	position: absolute;
+	background-color: #ffffff;
+	width: 100%;
+	height: 4vw;
+	margin-top: 126.7vw;
+	z-index: -1;
+}
+
+.prod5 {
+	position: absolute;
+	background-color: #ffffff;
+	width: 100%;
+	height: 4vw;
+	margin-top: 154.5vw;
+	z-index: -1;
 }

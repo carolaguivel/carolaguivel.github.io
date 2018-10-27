@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>heron preston</title>
+	<title>alyx</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://use.typekit.net/ppp2fys.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="photoroll/dist/css/photoroller.css">
+	<script src="photoroll/dist/js/jquery.photoroller.min.js"></script>
 </head>
 <body>
 <!-- menu -->
@@ -63,32 +65,28 @@
 <!-- menu -->
 
 <!-- content -->
-<div class="dropdown">
-	<a href="javascript:void(0)" class="brandname">heron preston
-		<p class="branddropdown">
-			Heron Preston is the true embodiment of an artist born of the post-internet generation. Multi faceted and genre bending, he has become a cultural icon in youth culture, known for his bold aesthetics. Applying the knowledge he gained from earning his B.B.A from Parsons School of design and his San Fransisco upbringing, Preston now functions as an artist, creative director, content creator, designer and DJ; the one common thread among his impressive bodies of work is a commitment to innovation, experimentation and unpredictability. He’s never one to worry about breaking rules, as evident by his e-commerce platform HPC Trading Co., where he features and sells his original clothes and accessories. He finds particular joy in the unexpected; taking conventional themes and reinterpreting them.
-		</p>
-	</a>
+<div class="prodcontainer">
+<div class="prodpage">
+	<div class="prodinfo"></div>
 </div>
-
-<div class="product"></div>
+<div>
 <!-- content -->
 
-<div class="prod3"></div>
-
 <script>
+
 var myurl = "https://carolaguivel.github.io/webadvanced/instrument/women.json";
 
 $.getJSON(myurl, function(data){
 		
-	for (var i = 0; i < data.HeronPreston.length; i++) {
+	$(".prodinfo").append( "<p class='title'>" + data.Alyx[3].title + "</p><p class='description'>" + data.Alyx[3].description + "</p><p class='prodprice'>" + data.Alyx[3].price + "</p><a class='addtocart'>Add to Cart</a><a class='wishlist'>wishlist</a><a href='alyxw.html' class='backlink'>Back to Alyx</a>")
 
 
-		$(".product").append("<a href=" + data.HeronPreston[i].link + ">" + "<img class='prodimg' src=" + data.HeronPreston[i].url + "/" + data.HeronPreston[i].images[0] + "><p class='caption'>" + data.HeronPreston[i].title + "</p><p class='price'>" + data.HeronPreston[i].price + "</p></a>")
+	for (var i = 0; i < data.Alyx[3].images.length; i++) {
 
+		$(".prodpage").append("<img class='prodpageimg' src='" + data.Alyx[3].url + "/" + data.Alyx[3].images[i] + "'>")
 	}
-
 });
+
 </script>
 </body>
 </html>
