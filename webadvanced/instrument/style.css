@@ -1,8 +1,4 @@
-html {
-	background-color: #ffffff;
-}
-
-html,body {
+body {
 	background-color: #ffffff;
 	margin: 0;
 }
@@ -313,6 +309,7 @@ div .german {
     display: block;
 }
 
+/*customize*/
 .customizedropdown {
 	display: none;
     position: absolute;
@@ -328,6 +325,41 @@ div .german {
 .dropdown:hover .customizedropdown {
     display: block;
 }
+
+.customizetitle {
+	font-size: 1.3vw;
+	letter-spacing: 0.1vw;
+	text-transform: uppercase;
+	margin-top: 2vw;
+	margin-left: 2vw;
+}
+
+.coloroptions {
+	margin-top: -1vw;
+	margin-left: 2vw;
+}
+
+.dot {
+  height: 1.2vw;
+  width: 1.2vw;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.white {
+	background-color: white;
+	box-sizing: border-box;
+	border: 0.1vw solid #000000;
+}
+
+.black {
+	background-color: #000000;
+}
+
+.green {
+	background-color: rgb(0,255,0);
+}
+/*customize*/
 
 .budget {
 	position: fixed;
