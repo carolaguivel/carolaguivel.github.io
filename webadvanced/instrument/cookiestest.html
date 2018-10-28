@@ -85,11 +85,37 @@ $.getJSON(myurl, function(data){
 	for (var i = 0; i < data.thirtytwo.length; i++) {
 
 
-		$(".product").append("<a href=" + data.thirtytwo[i].link + ">" + "<img class='prodimg' src=" + data.thirtytwo[i].url + "/" + data.thirtytwo[i].images[0] + "><p class='caption'>" + data.thirtytwo[i].title + "</p><p class='price'>" + data.thirtytwo[i].price + "</p></a>")
+		// $(".product").append("<a href=" + data.thirtytwo[i].link + ">" + "<img class='prodimg' src=" + data.thirtytwo[i].url + "/" + data.thirtytwo[i].images[0] + "><p class='caption'>" + data.thirtytwo[i].title + "</p><p class='price'>" + data.thirtytwo[i].price + "</p></a>")
 
-	}
+	
+
+var allCircles = [],
+				circle = "<a href=" + data.thirtytwo[i].link + ">" + "<img class='prodimg' src=" + data.thirtytwo[i].url + "/" + data.thirtytwo[i].images[0] + "><p class='caption'>" + data.thirtytwo[i].title + "</p><p class='price'>" + data.thirtytwo[i].price + "</p></a>"; // create an empty array (allCircles) and a string to repeatedly add to the array
+
+		
+		if (Cookies.getJSON('allCircles')) { // check if there is a cookie named "allCircles"
+
+			console.log("there are cookies!");
+			allCircles = Cookies.getJSON('allCircles'); // if there is a cookie named "allCircles", update existing array to reflect this
+
+			for (var i = 0; i < allCircles.length; i++) {
+				$(".product").append(allCircles[i]); // cycle through (updated) array and populate the DOM with the circles
+			}
+		}
+
+
+		$("body").click(function(){
+			$(".product").append(circle); // add circle to DOM
+			allCircles.push(circle); // add circle to array 
+			Cookies.set('allCircles', allCircles, {expires: 10}); // add array of circles to cookie
+})
+
+
+}
 
 });
+
+
 </script>
 </body>
 </html>

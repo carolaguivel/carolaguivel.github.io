@@ -7,7 +7,8 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://use.typekit.net/ppp2fys.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="photoroll/dist/css/photoroller.css">
+	<script src="photoroll/dist/js/jquery.photoroller.min.js"></script>
 </head>
 <body>
 <!-- menu -->
@@ -64,32 +65,30 @@
 <!-- menu -->
 
 <!-- content -->
-<div class="dropdown">
-	<a href="javascript:void(0)" class="brandname">032c
-		<p class="branddropdown">
-			032c is a magazine that's also a cult streetwear brand. Their workshop in Berlin-Kreuzberg is a production and research center, where the team assesses and contributes to contemporary culture. Their findings are published digitally and as a collectible manual for freedom, research, and creativity, printed twice annually.
-		</p>
-	</a>
+<div class="prodcontainer">
+<div class="prodpage">
+	<div class="prodinfo"></div>
 </div>
-
-<div class="product"></div>
+<div>
 <!-- content -->
 
-<div class="prod4"></div>
+<div class="img3"></div>
 
 <script>
+
 var myurl = "https://carolaguivel.github.io/webadvanced/instrument/men.json";
 
 $.getJSON(myurl, function(data){
 		
-	for (var i = 0; i < data.thirtytwo.length; i++) {
+	$(".prodinfo").append( "<p class='backlink'><a href='032c.html'>Back to 032c</a></p><p class='title'>" + data.thirtytwo[5].title + "</p><p class='description'>" + data.thirtytwo[5].description + "</p><p class='prodprice'>" + data.thirtytwo[5].price + "</p><p class='wishlist'><a>wishlist</a></p><p><a class='addtocart'>Add to Bag</a></p>")
 
 
-		$(".product").append("<a href=" + data.thirtytwo[i].link + ">" + "<img class='prodimg' src=" + data.thirtytwo[i].url + "/" + data.thirtytwo[i].images[0] + "><p class='caption'>" + data.thirtytwo[i].title + "</p><p class='price'>" + data.thirtytwo[i].price + "</p></a>")
+	for (var i = 0; i < data.thirtytwo[5].images.length; i++) {
 
+		$(".prodpage").append("<img class='prodpageimg' src='" + data.thirtytwo[5].url + "/" + data.thirtytwo[5].images[i] + "'>")
 	}
-
 });
+
 </script>
 </body>
 </html>
