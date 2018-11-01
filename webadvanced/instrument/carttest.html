@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>ambush</title>
+	<title>032c</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://use.typekit.net/ppp2fys.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="photoroll/dist/css/photoroller.css">
+	<script src="photoroll/dist/js/jquery.photoroller.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
 </head>
 <body>
@@ -64,55 +66,50 @@
 <!-- menu -->
 
 <!-- content -->
-<div class="dropdown">
-	<a href="javascript:void(0)" class="brandname">ambush
-		<p class="branddropdown">
-			Ambush began as an experimental line of jewelry, innovative pop art inspired designs capturing a distinct Tokyo aesthetic. The iconic trademarked POW motif in particular received media coverage around the world. With apparel created as a canvas to complete the story, Ambush evolved into designing unisex collections.
-		</p>
-	</a>
+<div class="prodcontainer">
+<div class="prodpage">
+	<div class="prodinfo"></div>
 </div>
-
-<div class="product"></div>
+<div>
 <!-- content -->
 
-<div class="prod2"></div>
+<div class="img2"></div>
 
 <script>
-var myurl = "https://carolaguivel.github.io/webadvanced/instrument/women.json";
 
-var singleValue = 1;
+var myurl = "https://carolaguivel.github.io/webadvanced/instrument/men.json";
 
-if (Cookies.get('singleValue')) { 
-
-	singleValue = Cookies.get('singleValue');
-
-	$.getJSON(myurl, function(data){
+$.getJSON(myurl, function(data){
 		
-		for (var i = 0; i < singleValue; i++) {
+	$(".prodinfo").append( "<p class='backlink'><a href='032c.html'>Back to 032c</a></p><p class='title'>" + data.thirtytwo[0].title + "</p><p class='description'>" + data.thirtytwo[0].description + "</p><p class='prodprice'>" + data.thirtytwo[0].price + "</p><p class='wishlist'><a>wishlist</a></p><div class='addit' data-gender='men' data-brand='thirtytwo' data-index='0'><a class='addtocart'>Add to Bag</a></div>")
 
 
-			$(".product").append("<a href=" + data.Ambush[i].link + ">" + "<img class='prodimg' src=" + data.Ambush[i].url + "/" + data.Ambush[i].images[0] + "><p class='caption'>" + data.Ambush[i].title + "</p><p class='price'>" + data.Ambush[i].price + "</p></a>")
+	for (var i = 0; i < data.thirtytwo[0].images.length; i++) {
 
-			if(singleValue >= data.Ambush.length){
-				singleValue = data.Ambush.length;
-			}
+		$(".prodpage").append("<img class='prodpageimg' src='" + data.thirtytwo[0].url + "/" + data.thirtytwo[0].images[i] + "'>")
+	}
+});
 
-		};
+var cart = [];
 
-	});
+$(".addit").click(function(){
+	var gender = $(this).attr("data-gender");
+	var brand = $(this).attr("data-brand");
+	var index = $(this).attr("data-index");
 
-};
+	var product = {
+		"gender" : gender,
+		"brand" : brand,
+		"index" : index
+	};
 
-$(document).ready(function(){
+	cart.push(product);
 
-	setInterval(function(){
-		singleValue++;
-		Cookies.set('singleValue', singleValue, {expires: 30});
-	}, 10000);
+	Cookies.set("cart", cart, {expires: 30});
 
 });
 
-// Cookies.remove('singleValue');
+
 </script>
 </body>
 </html>

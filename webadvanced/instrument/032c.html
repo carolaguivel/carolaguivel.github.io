@@ -80,16 +80,40 @@
 <script>
 var myurl = "https://carolaguivel.github.io/webadvanced/instrument/men.json";
 
-$.getJSON(myurl, function(data){
+var singleValue = 2;
+
+if (Cookies.get('singleValue')) { 
+
+	singleValue = Cookies.get('singleValue');
+
+	$.getJSON(myurl, function(data){
 		
-	for (var i = 0; i < data.thirtytwo.length; i++) {
+		for (var i = 0; i < singleValue; i++) {
 
 
-		$(".product").append("<a href=" + data.thirtytwo[i].link + ">" + "<img class='prodimg' src=" + data.thirtytwo[i].url + "/" + data.thirtytwo[i].images[0] + "><p class='caption'>" + data.thirtytwo[i].title + "</p><p class='price'>" + data.thirtytwo[i].price + "</p></a>")
+			$(".product").append("<a href=" + data.thirtytwo[i].link + ">" + "<img class='prodimg' src=" + data.thirtytwo[i].url + "/" + data.thirtytwo[i].images[0] + "><p class='caption'>" + data.thirtytwo[i].title + "</p><p class='price'>" + data.thirtytwo[i].price + "</p></a>")
 
-	}
+			if(singleValue >= data.thirtytwo.length){
+				singleValue = data.thirtytwo.length;
+			}
+
+		};
+
+	});
+
+};
+
+$(document).ready(function(){
+
+	setInterval(function(){
+		singleValue++;
+		Cookies.set('singleValue', singleValue, {expires: 30});
+	}, 10000);
 
 });
+
+// Cookies.remove('singleValue');
+
 </script>
 </body>
 </html>

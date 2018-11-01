@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://use.typekit.net/ppp2fys.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
 </head>
 <body>
 <!-- menu -->
@@ -79,16 +80,39 @@
 <script>
 var myurl = "https://carolaguivel.github.io/webadvanced/instrument/women.json";
 
-$.getJSON(myurl, function(data){
+var singleValue = 0;
+
+if (Cookies.get('singleValue')) { 
+
+	singleValue = Cookies.get('singleValue');
+
+	$.getJSON(myurl, function(data){
 		
-	for (var i = 0; i < data.Iamgia.length; i++) {
+		for (var i = 0; i < singleValue; i++) {
 
 
-		$(".product").append("<a href=" + data.Iamgia[i].link + ">" + "<img class='prodimg' src=" + data.Iamgia[i].url + "/" + data.Iamgia[i].images[0] + "><p class='caption'>" + data.Iamgia[i].title + "</p><p class='price'>" + data.Iamgia[i].price + "</p></a>")
+			$(".product").append("<a href=" + data.Iamgia[i].link + ">" + "<img class='prodimg' src=" + data.Iamgia[i].url + "/" + data.Iamgia[i].images[0] + "><p class='caption'>" + data.Iamgia[i].title + "</p><p class='price'>" + data.Iamgia[i].price + "</p></a>")
 
-	}
+			if(singleValue >= data.Iamgia.length){
+				singleValue = data.Iamgia.length;
+			}
+
+		};
+
+	});
+
+};
+
+$(document).ready(function(){
+
+	setInterval(function(){
+		singleValue++;
+		Cookies.set('singleValue', singleValue, {expires: 30});
+	}, 10000);
 
 });
+
+// Cookies.remove('singleValue');
 </script>
 </body>
 </html>
