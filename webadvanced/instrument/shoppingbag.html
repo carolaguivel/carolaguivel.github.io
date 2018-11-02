@@ -68,6 +68,7 @@
 <div class="container"></div>
 
 <script type="text/javascript">
+
 var myurlmen = "https://carolaguivel.github.io/webadvanced/instrument/men.json";
 var myurlwomen = "https://carolaguivel.github.io/webadvanced/instrument/women.json";
 
@@ -76,16 +77,21 @@ var jsonfile = '';
 var cart = [];
 
 
+
 if(Cookies.getJSON('cart')){
 
 	// the cart cookie only saves the "index path" with which you can navigate to the full JSON file ["adidas", 5]
 
 	// if it exists, update cart with a for loop
 		
+
 		for (var i = 0; i < cart.length; i++) {
+			console.log(cookie[i].gender)
 
 			var brand = cookie[i].brand;
 			var index = cookie[i].index;
+
+			
 			
 			if(cookie[i].gender == "women"){
 				myurlwomen == jsonfile
@@ -101,6 +107,14 @@ if(Cookies.getJSON('cart')){
 
 		}
 };	
+
+console.log(cart)
+
+$(document).ready(function(){
+
+// cart.push(product);
+
+});
 
 // Cookies.remove('cart');
 
