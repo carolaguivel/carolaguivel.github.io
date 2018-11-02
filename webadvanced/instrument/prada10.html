@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>heron preston</title>
+	<title>Prada</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="style.css">
@@ -74,7 +74,7 @@
 <div>
 <!-- content -->
 
-<div class="img3"></div>
+<div class="img2"></div>
 
 <script>
 
@@ -82,12 +82,12 @@ var myurl = "https://carolaguivel.github.io/webadvanced/instrument/women.json";
 
 $.getJSON(myurl, function(data){
 		
-	$(".prodinfo").append( "<p class='backlink'><a href='heronw.html'>Back to Heron Preston</a></p><p class='title'>" + data.HeronPreston[4].title + "</p><p class='description'>" + data.HeronPreston[4].description + "</p><p class='prodprice'>" + data.HeronPreston[4].price + "</p><p class='wishlist'><a>wishlist</a></p><div class='addit' data-gender='women' data-brand='HeronPreston' data-index='4'><a class='addtocart'>Add to Bag</a></div>")
+	$(".prodinfo").append( "<p class='backlink'><a href='prada.html'>Back to Prada</a></p><p class='title'>" + data.Prada[9].title + "</p><p class='description'>" + data.Prada[9].description + "</p><p class='prodprice'>" + data.Prada[9].price + "</p><p class='wishlist'><a>wishlist</a></p><div class='addit' data-gender='women' data-brand='Prada' data-index='9'><a class='addtocart'>Add to Bag</a></div>")
 
 
-	for (var i = 0; i < data.HeronPreston[4].images.length; i++) {
+	for (var i = 0; i < data.Prada[9].images.length; i++) {
 
-		$(".prodpage").append("<img class='prodpageimg' src='" + data.HeronPreston[4].url + "/" + data.HeronPreston[4].images[i] + "'>")
+		$(".prodpage").append("<img class='prodpageimg' src='" + data.Prada[9].url + "/" + data.Prada[9].images[i] + "'>")
 	}
 });
 
