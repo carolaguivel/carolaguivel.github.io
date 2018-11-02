@@ -179,7 +179,7 @@
 			"price" : "$63.00",
 			"link" : "wall9.html",
 			"url" : "images/acoldwall",
-			"images" : [ "wall21.png", "wall22png", "wall23.png" ]
+			"images" : [ "wall21.png", "wall22.png", "wall23.png" ]
 		},
 
 		{
@@ -188,7 +188,7 @@
 			"price" : "$63.00",
 			"link" : "wall10.html",
 			"url" : "images/acoldwall",
-			"images" : [ "wall24.png", "wall25png", "wall26.png" ]
+			"images" : [ "wall24.png", "wall25.png", "wall26.png" ]
 		},
 
 		{
