@@ -73,7 +73,7 @@
 <div>
 <!-- content -->
 
-<div class="img2"></div>
+<div class="img4"></div>
 
 <script>
 
@@ -81,12 +81,12 @@ var myurl = "https://carolaguivel.github.io/webadvanced/instrument/men.json";
 
 $.getJSON(myurl, function(data){
 		
-	$(".prodinfo").append( "<p class='backlink'><a href='rafsimons.html'>Back to raf simons</a></p><p class='title'>" + data.RafSimons[1].title + "</p><p class='description'>" + data.RafSimons[1].description + "</p><p class='prodprice'>" + data.RafSimons[1].price + "</p><p class='wishlist'><a>wishlist</a></p><div class='addit' data-gender='men' data-brand='RafSimons' data-index='1'><a class='addtocart'>Add to Bag</a></div>")
+	$(".prodinfo").append( "<p class='backlink'><a href='goldengoose.html'>Back to golden goose</a></p><p class='title'>" + data.GoldenGoose[0].title + "</p><p class='description'>" + data.GoldenGoose[0].description + "</p><p class='prodprice'>" + data.GoldenGoose[0].price + "</p><p class='wishlist'><a>wishlist</a></p><div class='addit' data-gender='men' data-brand='GoldenGoose' data-index='0'><a class='addtocart'>Add to Bag</a></div>")
 
 
-	for (var i = 0; i < data.RafSimons[1].images.length; i++) {
+	for (var i = 0; i < data.GoldenGoose[0].images.length; i++) {
 
-		$(".prodpage").append("<img class='prodpageimg' src='" + data.RafSimons[1].url + "/" + data.RafSimons[1].images[i] + "'>")
+		$(".prodpage").append("<img class='prodpageimg' src='" + data.GoldenGoose[0].url + "/" + data.GoldenGoose[0].images[i] + "'>")
 	}
 });
 

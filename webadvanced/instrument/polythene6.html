@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>raf simons</title>
+	<title>polythene</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="style.css">
@@ -73,7 +73,7 @@
 <div>
 <!-- content -->
 
-<div class="img4"></div>
+<div class="img3"></div>
 
 <script>
 
@@ -81,12 +81,12 @@ var myurl = "https://carolaguivel.github.io/webadvanced/instrument/men.json";
 
 $.getJSON(myurl, function(data){
 		
-	$(".prodinfo").append( "<p class='backlink'><a href='rafsimons.html'>Back to raf simons</a></p><p class='title'>" + data.RafSimons[8].title + "</p><p class='description'>" + data.RafSimons[8].description + "</p><p class='prodprice'>" + data.RafSimons[8].price + "</p><p class='wishlist'><a>wishlist</a></p><div class='addit' data-gender='men' data-brand='RafSimons' data-index='8'><a class='addtocart'>Add to Bag</a></div>")
+	$(".prodinfo").append( "<p class='backlink'><a href='polythene.html'>Back to polythene</a></p><p class='title'>" + data.Polythene[5].title + "</p><p class='description'>" + data.Polythene[5].description + "</p><p class='prodprice'>" + data.Polythene[5].price + "</p><p class='wishlist'><a>wishlist</a></p><div class='addit' data-gender='men' data-brand='Polythene' data-index='5'><a class='addtocart'>Add to Bag</a></div>")
 
 
-	for (var i = 0; i < data.RafSimons[8].images.length; i++) {
+	for (var i = 0; i < data.Polythene[5].images.length; i++) {
 
-		$(".prodpage").append("<img class='prodpageimg' src='" + data.RafSimons[8].url + "/" + data.RafSimons[8].images[i] + "'>")
+		$(".prodpage").append("<img class='prodpageimg' src='" + data.Polythene[5].url + "/" + data.Polythene[5].images[i] + "'>")
 	}
 });
 
