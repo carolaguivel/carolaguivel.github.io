@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>biis</title>
+	<title>ambush</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="style.css">
@@ -74,20 +74,20 @@
 <div>
 <!-- content -->
 
-<div class="img2"></div>
+<div class="img1"></div>
 
 <script>
 
-var myurl = "https://carolaguivel.github.io/webadvanced/instrument/women.json";
+var myurl = "https://carolaguivel.github.io/webadvanced/instrument/men.json";
 
 $.getJSON(myurl, function(data){
 		
-	$(".prodinfo").append( "<p class='backlink'><a href='biis.html'>Back to Biis</a></p><p class='title'>" + data.Biis[0].title + "</p><p class='description'>" + data.Biis[0].description + "</p><p class='prodprice'>" + data.Biis[0].price + "</p><p class='wishlist'><a>wishlist</a></p><div class='addit' data-gender='women' data-brand='Biis' data-index='0'><a class='addtocart'>Add to Bag</a></div>")
+	$(".prodinfo").append( "<p class='backlink'><a href='ambushm.html'>Back to Ambush</a></p><p class='title'>" + data.Ambush[3].title + "</p><p class='description'>" + data.Ambush[3].description + "</p><p class='prodprice'>" + data.Ambush[3].price + "</p><p class='wishlist'><a>wishlist</a></p><div class='addit' data-gender='men' data-brand='Ambush' data-index='3'><a class='addtocart'>Add to Bag</a></div>")
 
 
-	for (var i = 0; i < data.Biis[0].images.length; i++) {
+	for (var i = 0; i < data.Ambush[3].images.length; i++) {
 
-		$(".prodpage").append("<img class='prodpageimg' src='" + data.Biis[0].url + "/" + data.Biis[0].images[i] + "'>")
+		$(".prodpage").append("<img class='prodpageimg' src='" + data.Ambush[3].url + "/" + data.Ambush[3].images[i] + "'>")
 	}
 });
 
