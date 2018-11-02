@@ -563,7 +563,7 @@
 			"title" : "2.12",
 			"description" : "Sneakers with a vintage effect polished treatment for the worn out look.",
 			"price" : "$515.00",
-			"link" : "goldengoose1.html",
+			"link" : "goose1.html",
 			"url" : "images/goose",
 			"images" : [ "goose3.png", "goose4.png", "goose5.png", "goose6.png" ]
 		},
@@ -572,7 +572,7 @@
 			"title" : "2.12",
 			"description" : "Sneakers with a vintage effect polished treatment for the worn out look.",
 			"price" : "$515.00",
-			"link" : "goldengoose2.html",
+			"link" : "goose2.html",
 			"url" : "images/goose",
 			"images" : [ "goose7.png", "goose8.png", "goose9.png", "goose10.png" ]
 		},
@@ -581,7 +581,7 @@
 			"title" : "2.12",
 			"description" : "Sneakers with a vintage effect polished treatment for the worn out look.",
 			"price" : "$530.00",
-			"link" : "goldengoose3.html",
+			"link" : "goose3.html",
 			"url" : "images/goose",
 			"images" : [ "goose11.png", "goose12.png", "goose13.png", "goose14.png" ]
 		},
@@ -590,7 +590,7 @@
 			"title" : "Ball Star",
 			"description" : "Low cut sneaker with handwritten autograph.",
 			"price" : "$425.00",
-			"link" : "goldengoose4.html",
+			"link" : "goose4.html",
 			"url" : "images/goose",
 			"images" : [ "goose15.png", "goose16.png", "goose17.png", "goose18.png" ]
 		},
@@ -599,7 +599,7 @@
 			"title" : "Francy",
 			"description" : "Calf sude leather in a deep red color and worn out look.",
 			"price" : "$495.00",
-			"link" : "goldengoose5.html",
+			"link" : "goose5.html",
 			"url" : "images/goose",
 			"images" : [ "goose19.png", "goose20.png", "goose21.png", "goose22.png" ]
 		},
@@ -608,7 +608,7 @@
 			"title" : "Superstar",
 			"description" : "White sneaker with hand decorated brushstroke star and handwritten text.",
 			"price" : "$550.00",
-			"link" : "goldengoose6.html",
+			"link" : "goose6.html",
 			"url" : "images/goose",
 			"images" : [ "goose23.png", "goose24.png", "goose25.png", "goose26.png" ]
 		}
