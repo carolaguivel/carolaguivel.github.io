@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>032c</title>
+	<title>i.am.gia</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="style.css">
@@ -9,6 +9,7 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<link type="text/css" rel="stylesheet" href="photoroll/dist/css/photoroller.css">
 	<script src="photoroll/dist/js/jquery.photoroller.min.js"></script>
+	<script src="stickykit/sticky-kit.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
 </head>
 <body>
@@ -73,46 +74,21 @@
 <div>
 <!-- content -->
 
-<div class="img3"></div>
+<div class="img2"></div>
 
 <script>
 
-var myurl = "https://carolaguivel.github.io/webadvanced/instrument/men.json";
+var myurl = "https://carolaguivel.github.io/webadvanced/instrument/women.json";
 
 $.getJSON(myurl, function(data){
 		
-	$(".prodinfo").append( "<p class='backlink'><a href='032c.html'>Back to 032c</a></p><p class='title'>" + data.thirtytwo[10].title + "</p><p class='description'>" + data.thirtytwo[10].description + "</p><p class='prodprice'>" + data.thirtytwo[10].price + "</p><p class='wishlist'><a>wishlist</a></p><div class='addit' data-gender='men' data-brand='thirtytwo' data-index='10'><a class='addtocart'>Add to Bag</a></div>")
+	$(".prodinfo").append( "<p class='backlink'><a href='iamgia.html'>Back to I.am.gia</a></p><p class='title'>" + data.Iamgia[4].title + "</p><p class='description'>" + data.Iamgia[4].description + "</p><p class='prodprice'>" + data.Iamgia[4].price + "</p><p class='wishlist'><a>wishlist</a></p><p><a class='addtocart'>Add to Bag</a></p>")
 
 
-	for (var i = 0; i < data.thirtytwo[10].images.length; i++) {
-10
-		$(".prodpage").append("<img class='prodpageimg' src='" + data.thirtytwo[10].url + "/" + data.thirtytwo[10].images[i] + "'>")
+	for (var i = 0; i < data.Iamgia[4].images.length; i++) {
+
+		$(".prodpage").append("<img class='prodpageimg' src='" + data.Iamgia[4].url + "/" + data.Iamgia[4].images[i] + "'>")
 	}
-});
-
-var cart = [];
-
-$(document).ready(function(){
-
-	$(".addit").click(function(){
-		console.log('test');
-
-		var gender = $(this).attr("data-gender");
-		var brand = $(this).attr("data-brand");
-		var index = $(this).attr("data-index");
-
-		var product = {
-			"gender" : gender,
-			"brand" : brand,
-			"index" : index
-		};
-
-		cart.push(product);
-
-		Cookies.set("cart", cart, {expires: 30});
-
-	});
-
 });
 
 </script>

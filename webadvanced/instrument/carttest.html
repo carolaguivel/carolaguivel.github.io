@@ -92,22 +92,29 @@ $.getJSON(myurl, function(data){
 
 var cart = [];
 
-$(".addit").click(function(){
-	var gender = $(this).attr("data-gender");
-	var brand = $(this).attr("data-brand");
-	var index = $(this).attr("data-index");
+$(document).ready(function(){
 
-	var product = {
-		"gender" : gender,
-		"brand" : brand,
-		"index" : index
-	};
+	$(".addit").click(function(){
+		console.log('test');
 
-	cart.push(product);
+		var gender = $(this).attr("data-gender");
+		var brand = $(this).attr("data-brand");
+		var index = $(this).attr("data-index");
 
-	Cookies.set("cart", cart, {expires: 30});
+		var product = {
+			"gender" : gender,
+			"brand" : brand,
+			"index" : index
+		};
+
+		cart.push(product);
+
+		Cookies.set("cart", cart, {expires: 30});
+
+	});
 
 });
+
 
 
 </script>

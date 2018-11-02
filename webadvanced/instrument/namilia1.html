@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>namilia</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Namilia</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://use.typekit.net/ppp2fys.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="photoroll/dist/css/photoroller.css">
+	<script src="photoroll/dist/js/jquery.photoroller.min.js"></script>
+	<script src="stickykit/sticky-kit.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
 </head>
 <body>
 <!-- menu -->
@@ -67,5 +73,24 @@
 </div>
 <div>
 <!-- content -->
+
+<div class="img2"></div>
+
+<script>
+
+var myurl = "https://carolaguivel.github.io/webadvanced/instrument/women.json";
+
+$.getJSON(myurl, function(data){
+		
+	$(".prodinfo").append( "<p class='backlink'><a href='namilia.html'>Back to Namilia</a></p><p class='title'>" + data.Namilia[0].title + "</p><p class='description'>" + data.Namilia[0].description + "</p><p class='prodprice'>" + data.Namilia[0].price + "</p><p class='wishlist'><a>wishlist</a></p><p><a class='addtocart'>Add to Bag</a></p>")
+
+
+	for (var i = 0; i < data.Namilia[0].images.length; i++) {
+
+		$(".prodpage").append("<img class='prodpageimg' src='" + data.Namilia[0].url + "/" + data.Namilia[0].images[i] + "'>")
+	}
+});
+
+</script>
 </body>
 </html>
