@@ -82,13 +82,38 @@ var myurl = "https://carolaguivel.github.io/webadvanced/instrument/women.json";
 
 $.getJSON(myurl, function(data){
 		
-	$(".prodinfo").append( "<p class='backlink'><a href='ambushw.html'>Back to Ambush</a></p><p class='title'>" + data.Ambush[3].title + "</p><p class='description'>" + data.Ambush[3].description + "</p><p class='prodprice'>" + data.Ambush[3].price + "</p><p class='wishlist'><a>wishlist</a></p><p><a class='addtocart'>Add to Bag</a></p>")
+	$(".prodinfo").append( "<p class='backlink'><a href='ambushw.html'>Back to Ambush</a></p><p class='title'>" + data.Ambush[3].title + "</p><p class='description'>" + data.Ambush[3].description + "</p><p class='prodprice'>" + data.Ambush[3].price + "</p><p class='wishlist'><a>wishlist</a></p><div class='addit' data-gender='women' data-brand='Ambush' data-index='3'><a class='addtocart'>Add to Bag</a></div>")
 
 
 	for (var i = 0; i < data.Ambush[3].images.length; i++) {
 
 		$(".prodpage").append("<img class='prodpageimg' src='" + data.Ambush[3].url + "/" + data.Ambush[3].images[i] + "'>")
 	}
+});
+
+var cart = [];
+
+$(document).ready(function(){
+
+	$(".addit").click(function(){
+		console.log('test');
+
+		var gender = $(this).attr("data-gender");
+		var brand = $(this).attr("data-brand");
+		var index = $(this).attr("data-index");
+
+		var product = {
+			"gender" : gender,
+			"brand" : brand,
+			"index" : index
+		};
+
+		cart.push(product);
+
+		Cookies.set("cart", cart, {expires: 30});
+
+	});
+
 });
 
 </script>

@@ -74,6 +74,18 @@ var myurlwomen = "https://carolaguivel.github.io/webadvanced/instrument/women.js
 var jsonfile = '';
 
 
+
+// $.getJSON(myurlmen, function(data){
+		
+// 		for (var i = 0; i < data.RafSimons.length; i++) {
+
+
+// 			$(".container").append("<div class='cartprod'><a href=" + data.RafSimons[0].link + ">" + "<img class='cartimg' src=" + data.RafSimons[0].url + "/" + data.RafSimons[0].images[0] + "><p class='carttitle'>" + data.RafSimons[0].title + "</p><p class='cartprice'>" + data.RafSimons[0].price + "</p></a><div>")
+
+// 		};
+
+// });
+
 var cart = [];
 
 
@@ -97,11 +109,12 @@ if(Cookies.getJSON('cart')){
 
 			$.getJSON(jsonfile, function(data){
 
-			$(".container").append("<div><p>" + brands.index.title + "</p><img class='cartimg' src=" + brand.index.images[0] + "><p class='price'>" + brands.index.price + "</p></div>")
+			$(".container").append("<div class='cartprod'><a href=" + brand.index.link + ">" + "<img class='cartimg' src=" + brand.index.url + "/" + brand.index.images + "><p class='carttitle'>" + brand.index.title + "</p><p class='cartprice'>" + brand.index.price + "</p></a><div>")
 			});
 
 		}
 };	
+
 // Cookies.remove('cart');
 
 </script>
