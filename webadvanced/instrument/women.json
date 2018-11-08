@@ -2,6 +2,7 @@
 	"Alyx" : [
 		{
 			"title" : "Rollercoaster Belt",
+			"brandname" : "Alyx",
 			"description" : "Medium anodized aluminum buckle with lazered logo. Nylon strap cording, adjustable.",
 			"price" : "$256.00",
 			"link" : "alyx1.html",
@@ -11,6 +12,7 @@
 
 		{
 			"title" : "Chain Belt",
+			"brandname" : "Alyx",
 			"description" : "Refined leather adjustable strap, small anodized aluminum buckle with lazered logo, silver chain detail.",
 			"price" : "$404.00",
 			"link" : "alyx2.html",
@@ -20,6 +22,7 @@
 
 		{
 			"title" : "Chest Harness",
+			"brandname" : "Alyx",
 			"description" : "Adjustable leather straps, metal rings, large anodized buckle with lazered logo in front.",
 			"price" : "$565.00",
 			"link" : "alyx3.html",
@@ -29,6 +32,7 @@
 
 		{
 			"title" : "Bardot Beret",
+			"brandname" : "Alyx",
 			"description" : "Refined wool, small anodized aluminum buckle with lazered logo, nylon strap cording.",
 			"price" : "$156.00",
 			"link" : "alyx4.html",
@@ -38,6 +42,7 @@
 
 		{
 			"title" : "Baby-X Bag",
+			"brandname" : "Alyx",
 			"description" : "Tactical nylon, anodized aluminum buckles with lazered logo, nylon strap cording, polymer interior, signature hardward zipper with removable leather tip, leather cross strap.",
 			"price" : "$1072.00",
 			"link" : "alyx5.html",
@@ -47,6 +52,7 @@
 
 		{
 			"title" : "Triple Flower Socks",
+			"brandname" : "Alyx",
 			"description" : "Cotton blend sock, printed graphic, embroidered flower.",
 			"price" : "$46.00",
 			"link" : "alyx6.html",
@@ -56,6 +62,7 @@
 
 		{
 			"title" : "Bondage Suit Pant",
+			"brandname" : "Alyx",
 			"description" : "Cotton twill, detachable and adjustable leg harness, silber stud details and metal ring, elastic tabs with slit at ankles.",
 			"price" : "$749.00",
 			"link" : "alyx7.html",
@@ -65,6 +72,7 @@
 
 		{
 			"title" : "Police Jacket",
+			"brandname" : "Alyx",
 			"description" : "Textured leather in a cropped fit, oversized front pockets and arm pocket detail, signature hardware zipper with remoaveble leather tip, collar can be worn down or folded up with large velcro patch closure.",
 			"price" : "$2998.00",
 			"link" : "alyx8.html",
@@ -76,6 +84,7 @@
 	"Ambush" : [
 		{
 			"title" : "Key Charm Earring",
+			"brandname" : "Ambush",
 			"description" : "&quot;Do not dupliacte&quot; embossed on a uniquely crafted earring sold as a single piece.",
 			"price" : "$250.00",
 			"link" : "ambush1.html",
@@ -85,6 +94,7 @@
 
 		{
 			"title" : "Pill Charm Necklace",
+			"brandname" : "Ambush",
 			"description" : "Amb and Ambush pills cast in sterling silver on an adjustable chain.",
 			"price" : "$231.00",
 			"link" : "ambush2.html",
@@ -94,6 +104,7 @@
 
 		{
 			"title" : "Chain Key Necklace",
+			"brandname" : "Ambush",
 			"description" : "Ambush key pendant hangs from a chain link necklace secured with a clasp.",
 			"price" : "$1543.00",
 			"link" : "ambush3.html",
@@ -103,6 +114,7 @@
 
 		{
 			"title" : "Clip Earring",
+			"brandname" : "Ambush",
 			"description" : "Our riff on a clip motif for an earring.",
 			"price" : "$289.00",
 			"link" : "ambush4.html",
@@ -112,6 +124,7 @@
 
 		{
 			"title" : "Pill Charm Earring",
+			"brandname" : "Ambush",
 			"description" : "Amb pill and Ambush capsule hang from a safety pin pierce, sold as a single piece.",
 			"price" : "$250.00",
 			"link" : "ambush5.html",
@@ -123,6 +136,7 @@
 	"Biis" : [
 		{
 			"title" : "Eiffel Earring",
+			"brandname" : "Biis",
 			"description" : "The most iconic souvenir real size. They are sold as singles.",
 			"price" : "$190.00",
 			"link" : "biis1.html",
@@ -132,6 +146,7 @@
 
 		{
 			"title" : "Combo Souvenirs Hoop",
+			"brandname" : "Biis",
 			"description" : "Special price for your souvenirs combo.",
 			"price" : "$235.00",
 			"link" : "biis2.html",
@@ -141,6 +156,7 @@
 
 		{
 			"title" : "Combo Souvenirs Hoop",
+			"brandname" : "Biis",
 			"description" : "Classic punk-rock chain keyring that can be used as a necklace. With this necklace you don't have to choose between silver or gold.",
 			"price" : "$350.00",
 			"link" : "biis3.html",
@@ -150,6 +166,7 @@
 
 		{
 			"title" : "Cent",
+			"brandname" : "Biis",
 			"description" : "The cent is a pendant. Wear it hanging of an earring, a safetypin or a necklace. The most expensive euro cent in the world.",
 			"price" : "$70.00",
 			"link" : "biis4.html",
@@ -159,6 +176,7 @@
 
 		{
 			"title" : "Currency Earring",
+			"brandname" : "Biis",
 			"description" : "Collecting coins around the world. They are sold as singles.",
 			"price" : "$170.00",
 			"link" : "biis5.html",
@@ -168,6 +186,7 @@
 
 		{
 			"title" : "Bin Medal",
+			"brandname" : "Biis",
 			"description" : "Like a saint medal of the Sanitary department. Wear it hanging of an earring, a safetypin or a necklace. New symbols for a new era.",
 			"price" : "$40.00",
 			"link" : "biis6.html",
@@ -177,6 +196,7 @@
 
 		{
 			"title" : "Fuji Pin-Earring",
+			"brandname" : "Biis",
 			"description" : "Souvenir from Japan.",
 			"price" : "$85.00",
 			"link" : "biis7.html",
@@ -186,6 +206,7 @@
 
 		{
 			"title" : "Ganesh",
+			"brandname" : "Biis",
 			"description" : "Souvenir from Goa. They are sold as singles.",
 			"price" : "$265.00",
 			"link" : "biis8.html",
@@ -197,6 +218,7 @@
 	"HelmutLang" : [
 		{
 			"title" : "Disco Pin",
+			"brandname" : "Helmut Lang",
 			"description" : "The Helmut Lang Disco Pin is a metal pin featuring artwork by Andrew Miksys.",
 			"price" : "$15.00",
 			"link" : "helmut1.html",
@@ -206,6 +228,7 @@
 
 		{
 			"title" : "Karl B Pin",
+			"brandname" : "Helmut Lang",
 			"description" : "The Helmut Lang Adrienne Salinger Karl B Pin is a metal pin featuring artwork by Adrienne Salinger.",
 			"price" : "$15.00",
 			"link" : "helmut2.html",
@@ -215,6 +238,7 @@
 
 		{
 			"title" : "Disco Shirt",
+			"brandname" : "Helmut Lang",
 			"description" : "The Helmut Lang Disco Shirt is a white cotton shirt featuring artwork by Andrew Miskys.",
 			"price" : "$105.00",
 			"link" : "helmut3.html",
@@ -224,6 +248,7 @@
 
 		{
 			"title" : "Carlos C Shirt",
+			"brandname" : "Helmut Lang",
 			"description" : "The Helmut Lang Carlos C Shirt is a white cotton shirt featuring artwork by Adrienne Salinger.",
 			"price" : "$105.00",
 			"link" : "helmut4.html",
@@ -233,6 +258,7 @@
 
 		{
 			"title" : "Karl B Long Sleeve",
+			"brandname" : "Helmut Lang",
 			"description" : "The Helmut Lang Karl B Long Sleeve is a white cotton long sleeve featuring artwork by Adrienne Salinger.",
 			"price" : "$105.00",
 			"link" : "helmut5.html",
@@ -242,6 +268,7 @@
 
 		{
 			"title" : "Kirk B Long Sleeve",
+			"brandname" : "Helmut Lang",
 			"description" : "The Helmut Lang Kirk B Long Sleeve is a white cotton long sleeve featuring artwork by Adrienne Salinger.",
 			"price" : "$105.00",
 			"link" : "helmut6.html",
@@ -253,6 +280,7 @@
 	"HeronPreston" : [
 		{
 			"title" : "Jacquard Tape Belt",
+			"brandname" : "Heron Preston",
 			"description" : "Orange Heron Preston quick release belt.",
 			"price" : "$173.00",
 			"link" : "heron1.html",
@@ -262,6 +290,7 @@
 
 		{
 			"title" : "Jacquard Tape Belt",
+			"brandname" : "Heron Preston",
 			"description" : "Black Heron Preston jacquard tape belt.",
 			"price" : "$173.00",
 			"link" : "heron2.html",
@@ -271,6 +300,7 @@
 
 		{
 			"title" : "Black Birds Long Sleeve",
+			"brandname" : "Heron Preston",
 			"description" : "Black long sleeve jersey with Heron birds print. Embroidered hem details.",
 			"price" : "$536.00",
 			"link" : "heron3.html",
@@ -280,6 +310,7 @@
 
 		{
 			"title" : "CTNMB Mockneck Sweater",
+			"brandname" : "Heron Preston",
 			"description" : "Long sleeves sweater in black. Cut out details at sleeves. Turtleneck collar. Tape print at shoulders and sleeves.",
 			"price" : "$652.00",
 			"link" : "heron4.html",
@@ -289,6 +320,7 @@
 
 		{
 			"title" : "Python Flap Bag",
+			"brandname" : "Heron Preston",
 			"description" : "Leather shoulder bag with python print. Closure with magnetic fastening. Orange shoulder strap. Logo patch at bag.",
 			"price" : "$1399.00",
 			"link" : "heron5.html",
@@ -298,6 +330,7 @@
 
 		{
 			"title" : "5 Pockets Jeans",
+			"brandname" : "Heron Preston",
 			"description" : "Cropped straight legs jeans in bleached blue with cut out knees. Zip fly. Five pockets styling.",
 			"price" : "$556.00",
 			"link" : "heron6.html",
@@ -307,6 +340,7 @@
 
 		{
 			"title" : "5 Pockets Shorts",
+			"brandname" : "Heron Preston",
 			"description" : "Cropped shorts in orange. Zip fly. Five pockets styling.",
 			"price" : "$307.00",
 			"link" : "heron7.html",
@@ -316,6 +350,7 @@
 
 		{
 			"title" : "CTNMB Style Cap",
+			"brandname" : "Heron Preston",
 			"description" : "Black Style hat.",
 			"price" : "$142.00",
 			"link" : "heron8.html",
@@ -325,6 +360,7 @@
 
 		{
 			"title" : "Black CTNMB Glasses",
+			"brandname" : "Heron Preston",
 			"description" : "Rectangular acetate sunglasses in black. Black lenses with 100% uv protection.",
 			"price" : "$422.00",
 			"link" : "heron9.html",
@@ -336,6 +372,7 @@
 	"Iamgia" : [
 		{
 			"title" : "Aurora Pant",
+			"brandname" : "I.am.gia",
 			"description" : "Made from an allover metal stamped fabric in a high rise cut with a belted paperbag waist. Super relaxed fit down through the wide leg that falls below the ankle.",
 			"price" : "$350.00",
 			"link" : "gia1.html",
@@ -345,6 +382,7 @@
 
 		{
 			"title" : "Aurora Bandeau Top",
+			"brandname" : "I.am.gia",
 			"description" : "Strapless bandeau bra top. Features allover metallic stamped detailing. Finished with a full zipper closure at the back.",
 			"price" : "$80.00",
 			"link" : "gia2.html",
@@ -354,6 +392,7 @@
 
 		{
 			"title" : "Neptune Zipper Jacket",
+			"brandname" : "I.am.gia",
 			"description" : "Zip it your way in this windbreaker jacket. Colorblock striped detailing at the long sleeves, turtleneck and detachable hood.",
 			"price" : "$220.00",
 			"link" : "gia3.html",
@@ -363,6 +402,7 @@
 
 		{
 			"title" : "Shiraz Snake Print Pant",
+			"brandname" : "I.am.gia",
 			"description" : "Straight leg snake print pant with a slim fit through the leg. Topped with a high rise waist and belt.",
 			"price" : "$100.00",
 			"link" : "gia4.html",
@@ -372,6 +412,7 @@
 
 		{
 			"title" : "Madison Plaid Mini Skirt",
+			"brandname" : "I.am.gia",
 			"description" : "Plaid mini skirt in a high rise silhouette. Finished with chain detailing at the hip and a sipper closure at the back.",
 			"price" : "$99.00",
 			"link" : "gia5.html",
@@ -383,6 +424,7 @@
 	"Namilia" : [
 		{
 			"title" : "Come & Play Bodysuit",
+			"brandname" : "Namilia",
 			"description" : "Black lycra bodysuit with mesh panels and 3D claw patches.",
 			"price" : "$135.00",
 			"link" : "namilia1.html",
@@ -392,6 +434,7 @@
 
 		{
 			"title" : "Daddy's Angel Pants",
+			"brandname" : "Namilia",
 			"description" : "Signature motorcross pants in all black soft verlour jersey patchwork with crystal slogan.",
 			"price" : "$145.00",
 			"link" : "namilia2.html",
@@ -401,6 +444,7 @@
 
 		{
 			"title" : "Daddy's Angel Tracksuit",
+			"brandname" : "Namilia",
 			"description" : "Signature tracksuit in all black soft verlour jersey patchwork with crystal slogan.",
 			"price" : "$165.00",
 			"link" : "namilia3.html",
@@ -410,6 +454,7 @@
 
 		{
 			"title" : "Daddy's Angel Bodysuit",
+			"brandname" : "Namilia",
 			"description" : "Black lycra bodysuit with mesh panels and crystal slogans.",
 			"price" : "$92.00",
 			"link" : "namilia4.html",
@@ -419,6 +464,7 @@
 
 		{
 			"title" : "Daddy's Angel Bodysuit",
+			"brandname" : "Namilia",
 			"description" : "Black lycra bodysuit with mesh panels and crystal slogans.",
 			"price" : "$92.00",
 			"link" : "namilia5.html",
@@ -428,6 +474,7 @@
 
 		{
 			"title" : "Tribal Shirt Body",
+			"brandname" : "Namilia",
 			"description" : "Black bodysuit with blue tribal print.",
 			"price" : "$135.00",
 			"link" : "namilia6.html",
@@ -437,6 +484,7 @@
 
 		{
 			"title" : "Tribal Body Long Sleeve",
+			"brandname" : "Namilia",
 			"description" : "Black long sleeve bodysuit with blue tribal print.",
 			"price" : "$145.00",
 			"link" : "namilia7.html",
@@ -446,6 +494,7 @@
 
 		{
 			"title" : "Tribal Shirt Body",
+			"brandname" : "Namilia",
 			"description" : "Black bodysuit with green tribal print.",
 			"price" : "$135.00",
 			"link" : "namilia8.html",
@@ -455,6 +504,7 @@
 
 		{
 			"title" : "Tribal Body Long Sleeve",
+			"brandname" : "Namilia",
 			"description" : "Black long sleeve bodysuit with green tribal print.",
 			"price" : "$145.00",
 			"link" : "namilia9.html",
@@ -466,6 +516,7 @@
 	"Prada" : [
 		{
 			"title" : "Logo Shoulder Bag",
+			"brandname" : "Prada",
 			"description" : "Detachable adjustable leather shoulder strap. Leather triangle logo. Silk-screened Prada logo.",
 			"price" : "$1620.00",
 			"link" : "prada1.html",
@@ -475,6 +526,7 @@
 
 		{
 			"title" : "Logo Shoulder Bag",
+			"brandname" : "Prada",
 			"description" : "Detachable adjustable leather shoulder strap. Leather triangle logo. Silk-screened Prada logo.",
 			"price" : "$1620.00",
 			"link" : "prada2.html",
@@ -484,6 +536,7 @@
 
 		{
 			"title" : "Logo Shoulder Bag",
+			"brandname" : "Prada",
 			"description" : "Detachable adjustable leather shoulder strap. Leather triangle logo. Silk-screened Prada logo.",
 			"price" : "$1620.00",
 			"link" : "prada3.html",
@@ -493,6 +546,7 @@
 
 		{
 			"title" : "Silver Charm Necklace",
+			"brandname" : "Prada",
 			"description" : "Multicolor Pendant Necklace.",
 			"price" : "$545.00",
 			"link" : "prada4.html",
@@ -502,6 +556,7 @@
 
 		{
 			"title" : "Silver Charm Necklace",
+			"brandname" : "Prada",
 			"description" : "Multicolor Pendant Necklace.",
 			"price" : "$545.00",
 			"link" : "prada5.html",
@@ -511,6 +566,7 @@
 
 		{
 			"title" : "Charm Earrings",
+			"brandname" : "Prada",
 			"description" : "Black and white space man earrings.",
 			"price" : "$505.00",
 			"link" : "prada6.html",
@@ -520,6 +576,7 @@
 
 		{
 			"title" : "Nylon Clutch",
+			"brandname" : "Prada",
 			"description" : "Pink pouch bag with chain strap.",
 			"price" : "$790.00",
 			"link" : "prada7.html",
@@ -529,6 +586,7 @@
 
 		{
 			"title" : "Nylon Backpack",
+			"brandname" : "Prada",
 			"description" : "Pink single strap backpack.",
 			"price" : "$1270.00",
 			"link" : "prada8.html",
@@ -538,6 +596,7 @@
 
 		{
 			"title" : "iPhone Cover",
+			"brandname" : "Prada",
 			"description" : "Black iPhone 8 plus case.",
 			"price" : "$360.00",
 			"link" : "prada9.html",
@@ -547,6 +606,7 @@
 
 		{
 			"title" : "iPhone Cover",
+			"brandname" : "Prada",
 			"description" : "Black iPhone 8 plus case.",
 			"price" : "$360.00",
 			"link" : "prada10.html",
@@ -556,6 +616,7 @@
 
 		{
 			"title" : "Nylon gabardine jacket",
+			"brandname" : "Prada",
 			"description" : "Purple nylon jacket.",
 			"price" : "$1510.00",
 			"link" : "prada11.html",
@@ -565,6 +626,7 @@
 
 		{
 			"title" : "Nylon gabardine puffer",
+			"brandname" : "Prada",
 			"description" : "Pink short puffer jacket.",
 			"price" : "$2130.00",
 			"link" : "prada12.html",
@@ -574,6 +636,7 @@
 
 		{
 			"title" : "Laced leather booties",
+			"brandname" : "Prada",
 			"description" : "White lace up boots.",
 			"price" : "$1100.00",
 			"link" : "prada13.html",

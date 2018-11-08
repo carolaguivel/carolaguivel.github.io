@@ -102,7 +102,8 @@ if(Cookies.getJSON('cart')){
 
 			$.getJSON(jsonfile, function(data){
 
-			$(".container").append("<div class='cartprod'><a href=" + data[brand][index].link + ">" + "<img class='cartimg' src=" + data[brand][index].url + "/" + data[brand][index].images[0] + "></a><p class='cartbrandname'>" + data[brand][index].brandname + "</p><p class='carttitle'>" + data[brand][index].title + "</p><p class='cartprice'>" + data[brand][index].price + "</p><div class='quantity'>1</div><button>+</button><div>")
+			$(".container").append("<div class='cartprod'><a href=" + data[brand][index].link + ">" + "<img class='cartimg' src=" + data[brand][index].url + "/" + data[brand][index].images[0] + "></a><p class='cartbrandname'>" + data[brand][index].brandname + "</p><p class='carttitle'>" + data[brand][index].title + "</p><p class='cartprice'>" + data[brand][index].price + "</p>")
+			// add class 'quantity' and buttons for +-
 			});
 
 		}
