@@ -2,6 +2,7 @@
 	"thirtytwo" : [
 		{
 			"title" : "Resist Pin",
+			"brandname" : "032c",
 			"description" : "Resist the status quo. Resist what you’ve been taught, resist expectation, resist the establishment and its laws and received ideas.",
 			"price" : "$15.00",
 			"link" : "032c1.html",
@@ -11,6 +12,7 @@
 
 		{
 			"title" : "Safety Pin",
+			"brandname" : "032c",
 			"description" : "We must learn to move without fear, to be aware of everything around us, to feel as well as mentally see our way into the future.",
 			"price" : "$15.00",
 			"link" : "032c2.html",
@@ -20,6 +22,7 @@
 
 		{
 			"title" : "Brooch",
+			"brandname" : "032c",
 			"description" : "We must learn to move without fear, to be aware of everything around us, to feel as well as mentally see our way into the future.",
 			"price" : "$20.00",
 			"link" : "032c3.html",
@@ -29,6 +32,7 @@
 
 		{
 			"title" : "Camouflage Shirt",
+			"brandname" : "032c",
 			"description" : "We must learn to move without fear, to be aware of everything around us, to feel as well as mentally see our way into the future.",
 			"price" : "$90.00",
 			"link" : "032c4.html",
@@ -38,6 +42,7 @@
 
 		{
 			"title" : "Cap Washed",
+			"brandname" : "032c",
 			"description" : "We must learn to move without fear, to be aware of everything around us, to feel as well as mentally see our way into the future.",
 			"price" : "$60.00",
 			"link" : "032c5.html",
@@ -47,6 +52,7 @@
 
 		{
 			"title" : "Bärenhetze Shirt",
+			"brandname" : "032c",
 			"description" : "We must learn to move without fear, to be aware of everything around us, to feel as well as mentally see our way into the future.",
 			"price" : "$60.00",
 			"link" : "032c6.html",
@@ -56,6 +62,7 @@
 
 		{
 			"title" : "Classic Cap",
+			"brandname" : "032c",
 			"description" : "Sometimes, less really is more. The 032c Classics Collection is a blank canvas on which any personality can shine.",
 			"price" : "$45.00",
 			"link" : "032c7.html",
@@ -65,6 +72,7 @@
 
 		{
 			"title" : "Washed Sweatshirt",
+			"brandname" : "032c",
 			"description" : "We must learn to move without fear, to be aware of everything around us, to feel as well as mentally see our way into the future.",
 			"price" : "$130.00",
 			"link" : "032c8.html",
@@ -74,6 +82,7 @@
 
 		{
 			"title" : "Max Socks",
+			"brandname" : "032c",
 			"description" : "We must learn to move without fear, to be aware of everything around us, to feel as well as mentally see our way into the future.",
 			"price" : "$20.00",
 			"link" : "032c9.html",
@@ -83,6 +92,7 @@
 
 		{
 			"title" : "Believer Sweatshirt",
+			"brandname" : "032c",
 			"description" : "We must learn to move without fear, to be aware of everything around us, to feel as well as mentally see our way into the future.",
 			"price" : "$130.00",
 			"link" : "032c10.html",
@@ -92,6 +102,7 @@
 
 		{
 			"title" : "Peroxide Cap",
+			"brandname" : "032c",
 			"description" : "To spill is to make a mistake, but it is also to tell the truth. With bleach splatters that schizophrenically evoke both psychedelia and punk.",
 			"price" : "$39.00",
 			"link" : "032c11.html",
@@ -103,6 +114,7 @@
 	"Acoldwall" : [
 		{
 			"title" : "Tote Bag",
+			"brandname" : "A cold wall",
 			"description" : "Black distressed canvas tote bag.",
 			"price" : "$418.00",
 			"link" : "wall1.html",
@@ -112,6 +124,7 @@
 
 		{
 			"title" : "Utility Holster",
+			"brandname" : "A cold wall",
 			"description" : "Signature holster designed for everyday wear.",
 			"price" : "$379.00",
 			"link" : "wall2.html",
@@ -121,6 +134,7 @@
 
 		{
 			"title" : "Invisible Pin",
+			"brandname" : "A cold wall",
 			"description" : "Spray painted black invisible pin.",
 			"price" : "$59.00",
 			"link" : "wall3.html",
@@ -130,6 +144,7 @@
 
 		{
 			"title" : "Plastic Fabrics Pin",
+			"brandname" : "A cold wall",
 			"description" : "Srpay painted orange plastic fabrics pin.",
 			"price" : "$59.00",
 			"link" : "wall4.html",
@@ -139,6 +154,7 @@
 
 		{
 			"title" : "Bauhaus Pin",
+			"brandname" : "A cold wall",
 			"description" : "Black Bauhaus pin.",
 			"price" : "$47.00",
 			"link" : "wall5.html",
@@ -148,6 +164,7 @@
 
 		{
 			"title" : "Utility Belt",
+			"brandname" : "A cold wall",
 			"description" : "Industrial belt in heavy duty polyester.",
 			"price" : "$206.00",
 			"link" : "wall6.html",
@@ -157,6 +174,7 @@
 
 		{
 			"title" : "Technical Reduction Trousers",
+			"brandname" : "A cold wall",
 			"description" : "Water resistant technical trousers in black nylon.",
 			"price" : "$442.00",
 			"link" : "wall7.html",
@@ -166,6 +184,7 @@
 
 		{
 			"title" : "Painters Trackpants",
+			"brandname" : "A cold wall",
 			"description" : "Grey cotton trackpants with splashes of red paint.",
 			"price" : "$367.00",
 			"link" : "wall8.html",
@@ -175,6 +194,7 @@
 
 		{
 			"title" : "Bracket Socks",
+			"brandname" : "A cold wall",
 			"description" : "Girder socks in premium slate cotton woven in a ribbed formation.",
 			"price" : "$63.00",
 			"link" : "wall9.html",
@@ -184,6 +204,7 @@
 
 		{
 			"title" : "Bracket Socks",
+			"brandname" : "A cold wall",
 			"description" : "Girder socks in premium slate cotton woven in a ribbed formation.",
 			"price" : "$63.00",
 			"link" : "wall10.html",
@@ -193,6 +214,7 @@
 
 		{
 			"title" : "Phase One",
+			"brandname" : "A cold wall",
 			"description" : "Phase One chronicles the A Cold Wall journey through imagery. This archival compendium presents an evolution of ideas, made tangible on pages of premium wood free paper.",
 			"price" : "$105.00",
 			"link" : "wall11.html",
@@ -204,6 +226,7 @@
 	"Alyx" : [
 		{
 			"title" : "Rollercoaster Belt",
+			"brandname" : "Alyx",
 			"description" : "Medium anodized aluminum buckle with lazered logo. Nylon strap cording, adjustable.",
 			"price" : "$256.00",
 			"link" : "alyx9.html",
@@ -213,6 +236,7 @@
 
 		{
 			"title" : "Chainlink Necklace",
+			"brandname" : "Alyx",
 			"description" : "Metal chainlink, small anodized aluminum buckle with lazered logo, leather strap detail.",
 			"price" : "$288.00",
 			"link" : "alyx10.html",
@@ -222,6 +246,7 @@
 
 		{
 			"title" : "Chain Lanyard",
+			"brandname" : "Alyx",
 			"description" : "Small anodized buckle with lazered logo, silver chain, metal key ring.",
 			"price" : "$256.00",
 			"link" : "alyx11.html",
@@ -231,6 +256,7 @@
 
 		{
 			"title" : "Puffer Coat",
+			"brandname" : "Alyx",
 			"description" : "Tactical nylon shell with 100% down interior, zip pockets, metal grommets, small anodized buckle with lazered logo on nylon strap cording weaves through neck, signature hardware zipper with removable leather tip.",
 			"price" : "$1903.00",
 			"link" : "alyx12.html",
@@ -240,6 +266,7 @@
 
 		{
 			"title" : "Pilot Bomber Jacket",
+			"brandname" : "Alyx",
 			"description" : "Alpha pilot bomber jacket, stone washed, signature hardware zipper with removable leather tip, screen print of collection title on back.",
 			"price" : "$640.00",
 			"link" : "alyx13.html",
@@ -249,6 +276,7 @@
 
 		{
 			"title" : "Pilot Bomber Jacket",
+			"brandname" : "Alyx",
 			"description" : "Alpha pilot bomber jacket, stone washed, signature hardware zipper with removable leather tip, screen print of collection title on back.",
 			"price" : "$640.00",
 			"link" : "alyx14.html",
@@ -258,6 +286,7 @@
 
 		{
 			"title" : "Tactical Vest",
+			"brandname" : "Alyx",
 			"description" : "Breathable mesh lining combined with nylon strap cording, tactical nylon patches, double zipper with signature hardward with removable leather tip.",
 			"price" : "$1130.00",
 			"link" : "alyx15.html",
@@ -267,6 +296,7 @@
 
 		{
 			"title" : "Dancing Girl Tee",
+			"brandname" : "Alyx",
 			"description" : "Regenerated cotton and polyester blend from shredded staple fibres and low density plastic, front and back digital graphic transfers.",
 			"price" : "$150.00",
 			"link" : "alyx16.html",
@@ -276,6 +306,7 @@
 
 		{
 			"title" : "Flag Graphic Tee",
+			"brandname" : "Alyx",
 			"description" : "Regenerated cotton and polyester blend from shredded staple fibres and low density plastic, frontdigital printed images  from Matthew Williams photography diary with screen printed text.",
 			"price" : "$190.00",
 			"link" : "alyx17.html",
@@ -285,6 +316,7 @@
 
 		{
 			"title" : "Military Dogtag",
+			"brandname" : "Alyx",
 			"description" : "Stainless steel ball chain cording, metal dog tag with engraved logo and coding.",
 			"price" : "$92.00",
 			"link" : "alyx18.html",
@@ -294,6 +326,7 @@
 
 		{
 			"title" : "Wallet Chain",
+			"brandname" : "Alyx",
 			"description" : "Wallet chain which can be attached to a belt or belt loops featuring three silver chains that hang down at different lengths.",
 			"price" : "$110.00",
 			"link" : "alyx19.html",
@@ -303,6 +336,7 @@
 
 		{
 			"title" : "Bondage Sweatpant",
+			"brandname" : "Alyx",
 			"description" : "Refined cotton, detachable nylon leg bondage piece with anodized tricon buckle with lazered logo, slit detail with elastic strap at ankle, elastic waistband.",
 			"price" : "$819.00",
 			"link" : "alyx20.html",
@@ -312,6 +346,7 @@
 
 		{
 			"title" : "Relentless Tee",
+			"brandname" : "Alyx",
 			"description" : "Hand applied sponge print camoflage on cotton, front and back digital graphic transfer with collection title.",
 			"price" : "$317.00",
 			"link" : "alyx21.html",
@@ -321,6 +356,7 @@
 
 		{
 			"title" : "Travis Tee",
+			"brandname" : "Alyx",
 			"description" : "Refined cotton, zipper detail on sleeve, screen printed graphics, Nick Knight image featuring Travis Scott.",
 			"price" : "$225.00",
 			"link" : "alyx22.html",
@@ -332,6 +368,7 @@
 	"Ambush" : [
 		{
 			"title" : "Mix Chain Bracelet",
+			"brandname" : "Ambush",
 			"description" : "A combination of unique chain links and clasps make up a signature Ambush bracelet.",
 			"price" : "$1735.00",
 			"link" : "ambush6.html",
@@ -341,6 +378,7 @@
 
 		{
 			"title" : "Key Chain",
+			"brandname" : "Ambush",
 			"description" : "The signature Ambush key hangs from custom chains secured by a carabiner clip.",
 			"price" : "$1157.00",
 			"link" : "ambush7.html",
@@ -350,6 +388,7 @@
 
 		{
 			"title" : "Lighter Case Necklace",
+			"brandname" : "Ambush",
 			"description" : "Ambush's signature lighter case cast in a new larger form.",
 			"price" : "$96.00",
 			"link" : "ambush8.html",
@@ -359,6 +398,7 @@
 
 		{
 			"title" : "Lighter Case",
+			"brandname" : "Ambush",
 			"description" : "A signature Ambush accessory now made in leather.",
 			"price" : "$77.00",
 			"link" : "ambush9.html",
@@ -368,6 +408,7 @@
 
 		{
 			"title" : "Key Case Pendant",
+			"brandname" : "Ambush",
 			"description" : "Leather key case with adjustable strap.",
 			"price" : "$96.00",
 			"link" : "ambush10.html",
@@ -377,6 +418,7 @@
 
 		{
 			"title" : "Mix Chain Necklace",
+			"brandname" : "Ambush",
 			"description" : "A combination of unique chain links and clasps make up a signature Ambush necklace.",
 			"price" : "$2893.00",
 			"link" : "ambush11.html",
@@ -386,6 +428,7 @@
 
 		{
 			"title" : "Crewneck Sweatshirt",
+			"brandname" : "Ambush",
 			"description" : "Cotton crew neck sweat shirt with logo printed on the front and back.",
 			"price" : "$250.00",
 			"link" : "ambush12.html",
@@ -395,6 +438,7 @@
 
 		{
 			"title" : "Crewneck Sweatshirt",
+			"brandname" : "Ambush",
 			"description" : "Cotton crew neck sweat shirt with logo printed on the front and back.",
 			"price" : "$250.00",
 			"link" : "ambush13.html",
@@ -404,6 +448,7 @@
 
 		{
 			"title" : "Crewneck Sweatshirt",
+			"brandname" : "Ambush",
 			"description" : "Cotton crew neck sweat shirt with logo printed on the front and back.",
 			"price" : "$250.00",
 			"link" : "ambush14.html",
@@ -413,6 +458,7 @@
 
 		{
 			"title" : "Crewneck Sweatshirt",
+			"brandname" : "Ambush",
 			"description" : "Cotton crew neck sweat shirt with logo printed on the front and back.",
 			"price" : "$250.00",
 			"link" : "ambush15.html",
@@ -422,6 +468,7 @@
 
 		{
 			"title" : "Pullover Jacket",
+			"brandname" : "Ambush",
 			"description" : "Mixed material pullover with zippered pockets in three colorways.",
 			"price" : "$964.00",
 			"link" : "ambush16.html",
@@ -431,6 +478,7 @@
 
 		{
 			"title" : "Pullover Jacket",
+			"brandname" : "Ambush",
 			"description" : "Mixed material pullover with zippered pockets in three colorways.",
 			"price" : "$964.00",
 			"link" : "ambush17.html",
@@ -440,6 +488,7 @@
 
 		{
 			"title" : "Pullover Jacket",
+			"brandname" : "Ambush",
 			"description" : "Mixed material pullover with zippered pockets in three colorways.",
 			"price" : "$964.00",
 			"link" : "ambush18.html",
@@ -449,6 +498,7 @@
 
 		{
 			"title" : "Stitch Knit Beanie",
+			"brandname" : "Ambush",
 			"description" : "Wool hat with stitched detailing in two color ways.",
 			"price" : "$87.00",
 			"link" : "ambush19.html",
@@ -458,6 +508,7 @@
 
 		{
 			"title" : "Stitch Knit Beanie",
+			"brandname" : "Ambush",
 			"description" : "Wool hat with stitched detailing in two color ways.",
 			"price" : "$87.00",
 			"link" : "ambush20.html",
@@ -469,6 +520,7 @@
 	"RafSimons" : [
 		{
 			"title" : "Drugs Case",
+			"brandname" : "Raf Simons",
 			"description" : "Yellow drugs silicone phone case for iPhone X.",
 			"price" : "$365.00",
 			"link" : "raf1.html",
@@ -478,6 +530,7 @@
 
 		{
 			"title" : "Drugs Case",
+			"brandname" : "Raf Simons",
 			"description" : "Orange drugs silicone phone case for iPhone X.",
 			"price" : "$365.00",
 			"link" : "raf2.html",
@@ -487,6 +540,7 @@
 
 		{
 			"title" : "Drugs Case",
+			"brandname" : "Raf Simons",
 			"description" : "Yellow drugs silicone phone case for iPhone 8.",
 			"price" : "$365.00",
 			"link" : "raf3.html",
@@ -496,6 +550,7 @@
 
 		{
 			"title" : "Drugs Case",
+			"brandname" : "Raf Simons",
 			"description" : "Orange drugs silicone phone case for iPhone 8.",
 			"price" : "$365.00",
 			"link" : "raf4.html",
@@ -505,6 +560,7 @@
 
 		{
 			"title" : "Logo Beanie",
+			"brandname" : "Raf Simons",
 			"description" : "Green ribbed beanie with logo embroidered on front and back.",
 			"price" : "$225.00",
 			"link" : "raf5.html",
@@ -514,6 +570,7 @@
 
 		{
 			"title" : "Black Denim Tote Bag",
+			"brandname" : "Raf Simons",
 			"description" : "Imagery of the Christiane F – Wir Kinder vom Bahnhof Zoo movie printed on front and back. Tonal stitching.",
 			"price" : "$515.00",
 			"link" : "raf6.html",
@@ -523,6 +580,7 @@
 
 		{
 			"title" : "Drugs Long Sleeve",
+			"brandname" : "Raf Simons",
 			"description" : "Yellow drugs long sleeve crewneck sweater with front and back prints.",
 			"price" : "$554.00",
 			"link" : "raf7.html",
@@ -532,6 +590,7 @@
 
 		{
 			"title" : "Drugs Hoodie",
+			"brandname" : "Raf Simons",
 			"description" : "Black drugs hoodie with detachable double sleeves.",
 			"price" : "$649.00",
 			"link" : "raf8.html",
@@ -541,6 +600,7 @@
 
 		{
 			"title" : "RS Sneaker",
+			"brandname" : "Raf Simons",
 			"description" : "Stan Smith Sneaker in neon yellow.",
 			"price" : "$300.00",
 			"link" : "raf9.html",
@@ -550,6 +610,7 @@
 
 		{
 			"title" : "RS Sneaker",
+			"brandname" : "Raf Simons",
 			"description" : "Stan Smith Sneaker in neon pink.",
 			"price" : "$300.00",
 			"link" : "raf10.html",
@@ -561,6 +622,7 @@
 	"GoldenGoose" : [
 		{
 			"title" : "2.12",
+			"brandname" : "Golden Goose",
 			"description" : "Sneakers with a vintage effect polished treatment for the worn out look.",
 			"price" : "$515.00",
 			"link" : "goose1.html",
@@ -570,6 +632,7 @@
 
 		{
 			"title" : "2.12",
+			"brandname" : "Golden Goose",
 			"description" : "Sneakers with a vintage effect polished treatment for the worn out look.",
 			"price" : "$515.00",
 			"link" : "goose2.html",
@@ -579,6 +642,7 @@
 
 		{
 			"title" : "2.12",
+			"brandname" : "Golden Goose",
 			"description" : "Sneakers with a vintage effect polished treatment for the worn out look.",
 			"price" : "$530.00",
 			"link" : "goose3.html",
@@ -588,6 +652,7 @@
 
 		{
 			"title" : "Ball Star",
+			"brandname" : "Golden Goose",
 			"description" : "Low cut sneaker with handwritten autograph.",
 			"price" : "$425.00",
 			"link" : "goose4.html",
@@ -597,6 +662,7 @@
 
 		{
 			"title" : "Francy",
+			"brandname" : "Golden Goose",
 			"description" : "Calf sude leather in a deep red color and worn out look.",
 			"price" : "$495.00",
 			"link" : "goose5.html",
@@ -606,6 +672,7 @@
 
 		{
 			"title" : "Superstar",
+			"brandname" : "Golden Goose",
 			"description" : "White sneaker with hand decorated brushstroke star and handwritten text.",
 			"price" : "$550.00",
 			"link" : "goose6.html",
@@ -617,6 +684,7 @@
 	"HeronPreston" : [
 		{
 			"title" : "Jacquard Tape Belt",
+			"brandname" : "Heron Preston",
 			"description" : "Black Heron Preston jacquard tape belt.",
 			"price" : "$173.00",
 			"link" : "heron10.html",
@@ -626,6 +694,7 @@
 
 		{
 			"title" : "Nasa Crewneck",
+			"brandname" : "Heron Preston",
 			"description" : "Red long sleeves sweatshirt inspired by Nasa. Graphics print at front and sleeves. White Nasa embroidered at front. Crewneck collar.",
 			"price" : "$518.00",
 			"link" : "heron11.html",
@@ -635,6 +704,7 @@
 
 		{
 			"title" : "Nasa Crewneck",
+			"brandname" : "Heron Preston",
 			"description" : "Long sleeves sweatshirt inspired by Nasa. Graphics print at front and sleeves. Red Nasa embroidered at front. Crewneck collar.",
 			"price" : "$518.00",
 			"link" : "heron12.html",
@@ -644,6 +714,7 @@
 
 		{
 			"title" : "Heron Birds Hoodie",
+			"brandname" : "Heron Preston",
 			"description" : "Long sleeves hooded sweatshirt in black with Heron Birds printed at front. Black strings. Text printed in white at sleeve. Embroidered text and logo patch at cuffs.",
 			"price" : "$537.00",
 			"link" : "heron13.html",
@@ -653,6 +724,7 @@
 
 		{
 			"title" : "Reflective Shirt",
+			"brandname" : "Heron Preston",
 			"description" : "Long sleeves reflective shirt in black. Heron text embroidered at chest. Two pockets at chest. Embroidered text and logo patch at cuff.",
 			"price" : "$575.00",
 			"link" : "heron14.html",
@@ -662,6 +734,7 @@
 
 		{
 			"title" : "Black Handle Hoodie",
+			"brandname" : "Heron Preston",
 			"description" : "Long sleeves hooded sweatshirt in black. Orange text hem and logo patch at cuff. Kangaroo pocket.",
 			"price" : "$556.00",
 			"link" : "heron15.html",
@@ -671,6 +744,7 @@
 
 		{
 			"title" : "Heron Socks",
+			"brandname" : "Heron Preston",
 			"description" : "High socks in orange with black Heron Preston intarsia.",
 			"price" : "$77.00",
 			"link" : "heron16.html",
@@ -680,6 +754,7 @@
 
 		{
 			"title" : "Nasa Socks",
+			"brandname" : "Heron Preston",
 			"description" : "High socks in white with Nasia intarsia.",
 			"price" : "$85.00",
 			"link" : "heron17.html",
@@ -691,6 +766,7 @@
 	"Polythene" : [
 		{
 			"title" : "Carabiner Keychain",
+			"brandname" : "Polythene",
 			"description" : "Carabiner keychain with Polythene logo printed on it.",
 			"price" : "$27.00",
 			"link" : "polythene1.html",
@@ -700,6 +776,7 @@
 
 		{
 			"title" : "Carabiner Keychain",
+			"brandname" : "Polythene",
 			"description" : "Carabiner keychain with Polythene logo printed on it.",
 			"price" : "$27.00",
 			"link" : "polythene2.html",
@@ -709,6 +786,7 @@
 
 		{
 			"title" : "Carabiner Keychain",
+			"brandname" : "Polythene",
 			"description" : "Carabiner keychain with Polythene logo printed on it.",
 			"price" : "$27.00",
 			"link" : "polythene3.html",
@@ -718,6 +796,7 @@
 
 		{
 			"title" : "Carabiner Keychain",
+			"brandname" : "Polythene",
 			"description" : "Carabiner keychain with Polythene logo printed on it.",
 			"price" : "$27.00",
 			"link" : "polythene4.html",
@@ -727,6 +806,7 @@
 
 		{
 			"title" : "Acrylic Keyring",
+			"brandname" : "Polythene",
 			"description" : "Acrylic keyring with Polythene logo printed on it.",
 			"price" : "$23.00",
 			"link" : "polythene5.html",
@@ -736,6 +816,7 @@
 
 		{
 			"title" : "Acrylic Keyring",
+			"brandname" : "Polythene",
 			"description" : "Acrylic keyring with Polythene logo printed on it.",
 			"price" : "$23.00",
 			"link" : "polythene6.html",
@@ -745,6 +826,7 @@
 
 		{
 			"title" : "Acrylic Keyring",
+			"brandname" : "Polythene",
 			"description" : "Acrylic keyring with Polythene logo printed on it.",
 			"price" : "$23.00",
 			"link" : "polythene7.html",
@@ -754,6 +836,7 @@
 
 		{
 			"title" : "Acrylic Keyring",
+			"brandname" : "Polythene",
 			"description" : "Acrylic keyring with Polythene logo printed on it.",
 			"price" : "$23.00",
 			"link" : "polythene8.html",
@@ -763,6 +846,7 @@
 
 		{
 			"title" : "Acrylic Keyring",
+			"brandname" : "Polythene",
 			"description" : "Acrylic keyring with Polythene logo printed on it.",
 			"price" : "$23.00",
 			"link" : "polythene9.html",
