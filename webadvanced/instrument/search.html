@@ -67,7 +67,7 @@
 
 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="search..." title="Type in a name">
 
-<ul id="searchlist">
+<ul id="searchlist" class="opacity">
 	<li>
 		<a href="alyxw.html">Alyx<br><span>Women</span></a>
 	</li>
@@ -129,6 +129,12 @@
     filter = input.value.toUpperCase();
     ul = document.getElementById("searchlist");
     li = ul.getElementsByTagName("li");
+
+    $(".opacity").removeClass("opacity")
+
+    if (filter.length == 0){
+    	$("#searchlist").addClass("opacity")
+    }
 
     for (i = 0; i < li.length; i++) {
         a = li[i].getElementsByTagName("a")[0];

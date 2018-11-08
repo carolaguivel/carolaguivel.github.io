@@ -80,29 +80,29 @@ var cart = [];
 
 if(Cookies.getJSON('cart')){
 
+	cart = Cookies.getJSON('cart');
 	// the cart cookie only saves the "index path" with which you can navigate to the full JSON file ["adidas", 5]
 
 	// if it exists, update cart with a for loop
 		
 
 		for (var i = 0; i < cart.length; i++) {
-			console.log(cookie[i].gender)
 
-			var brand = cookie[i].brand;
-			var index = cookie[i].index;
+			var brand = cart[i].brand;
+			var index = cart[i].index;
 
 			
-			
-			if(cookie[i].gender == "women"){
-				myurlwomen == jsonfile
+	
+			if(cart[i].gender == "women"){
+				jsonfile = myurlwomen
 
-			}else if(cookie[i] == "men"){
-				myurlmen = jsonfile
+			}else if(cart[i].gender == "men"){
+				jsonfile = myurlmen
 			}
 
 			$.getJSON(jsonfile, function(data){
 
-			$(".container").append("<div class='cartprod'><a href=" + brand.index.link + ">" + "<img class='cartimg' src=" + brand.index.url + "/" + brand.index.images + "><p class='carttitle'>" + brand.index.title + "</p><p class='cartprice'>" + brand.index.price + "</p></a><div>")
+			$(".container").append("<div class='cartprod'><a href=" + data[brand][index].link + ">" + "<img class='cartimg' src=" + data[brand][index].url + "/" + data[brand][index].images[0] + "></a><p class='cartbrandname'>" + data[brand][index].brandname + "</p><p class='carttitle'>" + data[brand][index].title + "</p><p class='cartprice'>" + data[brand][index].price + "</p><div class='quantity'>1</div><button>+</button><div>")
 			});
 
 		}
@@ -111,8 +111,21 @@ if(Cookies.getJSON('cart')){
 console.log(cart)
 
 $(document).ready(function(){
+  $('.cartprod button').on('click', function(){
+    var currentQuantity = parseInt($(this).prev().text())
+    currentQuantity = currentQuantity + 1
+    $(this).prev().text(currentQuantity);
+    //reset the cookie
+    // cart = Cookies.getJSON('cart');
+   //  for (var i = 0; i < cart.length; i++) {
+			// var brand = cart[i].brand;
+			// var index = cart[i].index;
+			//you need to match the product in the cart to the product you just clicked on
 
-// cart.push(product);
+	// }
+
+  })
+
 
 });
 
