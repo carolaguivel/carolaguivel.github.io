@@ -1,0 +1,301 @@
+html, body {
+	margin: 0;
+}
+
+body {
+	margin: 0;
+	background-color: #000000;
+	font-family: bebas-neue, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+a {
+	text-decoration: none;
+	color: #707070;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* menu */
+.menu {
+	font-size: 1.3vw;
+	margin-top: 2vw;
+	margin-left: 2vw;
+	letter-spacing: 0.05vw
+}
+
+.menu li {
+	display: inline-block;
+	margin-right: 4vw;
+}
+
+.dropdown {
+	height: 100%;
+}
+
+.dropbtn {
+	border: none;
+	cursor: pointer;
+	color: #707070;
+	font-size: 2.5vw;
+	margin-top: 1vw;
+	margin-left: 2vw;
+}
+
+.dropbtn:focus {
+	outline: none;
+}
+
+.dropdowncontent {
+	display: none;
+	position: relative;
+	color: #707070;
+	width: 8vw;
+	z-index: 1;
+	font-family: helvetica;
+	text-transform: uppercase;
+	font-size: 0.8vw;
+	letter-spacing: 0.15vw;
+	margin-left: 2vw;
+	margin-top: 0.5vw;
+}
+
+.dropdowncontent a {
+	color: #575757;
+	display: block;
+	padding-bottom: 1vw;
+}
+
+/* menu */
+
+/* carousel */
+.indexcontent {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.carousel {
+  box-sizing: border-box;
+  margin-top: 16vw;
+  width: 63vw;
+}
+
+.carousel-cell img {
+	width: 19vw;
+	padding-left: 1vw;
+	padding-right: 1vw;
+}
+/* carousel */
+
+/* playlist */
+.container { 
+	position: relative;
+	margin: 0 auto;
+	/*max-width: 800px;*/
+	width:80%;
+}
+
+.column {
+	width: inherit;
+}
+
+.add-bottom { margin-bottom:2rem !important; }
+.left { float:left; }
+.right { float:right; }
+.center { text-align:center; }
+.hidden { display:none; }
+
+.no-support {
+	margin:2rem auto;
+	text-align:center;
+	width:90%;
+}
+
+
+/* Audio Player Styles */
+
+audio {
+	display:none;
+}
+
+#audiowrap, #plwrap {
+	margin: 0 auto;
+	color: #707070;
+	/*width: 10vw;*/
+}
+
+#tracks {
+	font-size: 0;
+	color: red;
+	position: relative;
+	text-align: center;
+}
+
+#nowPlay {
+	display: block;
+	font-size: 0;
+	color: red;
+}
+
+#nowPlay span {
+	display:inline-block;
+	font-size:1.05rem;
+	vertical-align:top;
+}
+
+#nowPlay span#npAction {
+	padding:21px;
+	width:30%;
+}
+
+#nowPlay span#npTitle {
+	padding:21px;
+	text-align:right;
+	width:70%;
+}
+
+#plList li {
+	cursor:pointer;
+	display:block;
+	margin:0;
+	padding:21px 0;
+}
+
+#plList li:hover {
+	background-color:red;
+}
+
+.plItem {
+	position:relative;
+}
+
+.plTitle {
+	left:50px;
+	overflow:hidden;
+	position:absolute;
+	right:65px;
+	text-overflow:ellipsis;
+	top:0;
+	white-space:nowrap;
+}
+
+.plNum {
+	padding-left:21px;
+	width:25px;
+}
+
+.plLength {
+	padding-left:21px;
+	position:absolute;
+	right:21px;
+	top:0;
+}
+
+.plSel, .plSel:hover {
+background-color:rgba(0,0,0,.1);
+color:#fff;
+cursor:default !important;
+}
+
+#tracks a {
+border-radius:3px;
+color:#fff;
+cursor:pointer;
+display:inline-block;
+font-size:2rem;
+height:35px;
+line-height:.175;
+margin:0 5px 30px;
+padding:10px;
+text-decoration:none;
+transition:background .3s ease;
+}
+
+#tracks a:last-child {
+margin-left:0;
+}
+
+#tracks a:hover,
+#tracks a:active {
+background-color:rgba(0,0,0,.1);
+color:#fff;
+}
+
+#tracks a::-moz-focus-inner {
+border:0;
+padding:0;
+}
+
+
+/* Plyr Overrides
+================================================== */
+
+.plyr--audio {
+background-color: red;
+border:none;
+color: #707070;
+padding:20px 20px 20px 13px;
+width:80vw;
+height: 50vw;
+display: inline-block;
+}
+
+div.plyr__controls {
+	position: absolute;
+	display: inline-block;
+}
+
+.plyr__control {
+	width: 10vw;
+}
+
+svg {
+	width: 100%;
+	/*color: white;*/
+}
+
+button.plyr__control {
+	/*background-color: black;*/
+	display: inline-block;
+/*	position: absolute;*/
+	/*width: 20vw;*/
+}
+
+.plyr--audio .plyr__control button.tab-focus:focus,
+.plyr--audio .plyr__control button:hover,
+.plyr__play-large {
+background: white;
+}
+
+.plyr__progress--played,
+.plyr__volume--display {
+color: red;
+width: 10vw;
+}
+
+.plyr--audio .plyr__progress--buffer,
+.plyr--audio .plyr__volume--display {
+color: red;
+width: 10vw;
+}
+
+.plyr--audio .plyr__progress--buffer {
+color: red;
+width: 10vw;
+}
+
+
+/* Media Queries
+================================================== */
+
+@media only screen and (max-width:600px) {
+    #nowPlay span#npAction { display:none; }
+    #nowPlay span#npTitle { display:block; text-align:center; width:100%; }
+}
+

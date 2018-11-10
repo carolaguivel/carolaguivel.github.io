@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>032c</title>
+	<title>shopping bag</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="style.css">
@@ -102,20 +102,20 @@ if(Cookies.getJSON('cart')){
 
 			$.getJSON(jsonfile, function(data){
 
-			$(".container").append("<div class='cartprod'><a href=" + data[brand][index].link + ">" + "<img class='cartimg' src=" + data[brand][index].url + "/" + data[brand][index].images[0] + "></a><p class='cartbrandname'>" + data[brand][index].brandname + "</p><p class='carttitle'>" + data[brand][index].title + "</p><p class='cartprice'>" + data[brand][index].price + "</p>")
+			$(".container").append("<div class='cartprod'><a href=" + data[brand][index].link + ">" + "<img class='cartimg' src=" + data[brand][index].url + "/" + data[brand][index].images[0] + "></a><p class='carttitle'>" + data[brand][index].title + "</p><p class='cartbrandname'>" + data[brand][index].brandname + "</p><p class='cartprice'>" + data[brand][index].price + "</p>")
 			// add class 'quantity' and buttons for +-
 			});
 
 		}
 };	
 
-console.log(cart)
+// console.log(cart)
 
-$(document).ready(function(){
-  $('.cartprod button').on('click', function(){
-    var currentQuantity = parseInt($(this).prev().text())
-    currentQuantity = currentQuantity + 1
-    $(this).prev().text(currentQuantity);
+// $(document).ready(function(){
+//   $('.cartprod button').on('click', function(){
+//     var currentQuantity = parseInt($(this).prev().text())
+//     currentQuantity = currentQuantity + 1
+//     $(this).prev().text(currentQuantity);
     //reset the cookie
     // cart = Cookies.getJSON('cart');
    //  for (var i = 0; i < cart.length; i++) {
@@ -125,10 +125,10 @@ $(document).ready(function(){
 
 	// }
 
-  })
+//   })
 
 
-});
+// });
 
 // Cookies.remove('cart');
 
