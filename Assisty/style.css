@@ -80,7 +80,6 @@ a {
 /*content*/
 .content {
 	position: absolute;
-	text-transform: lowercase;
 	margin-top: 4vw;
 	width: 100%;
 	text-align: center;
@@ -139,7 +138,7 @@ h2 {
 	width: 100%;
 	text-align: center;
 	font-family: courier-std, mono;
-	text-transform: lowercase;
+	/*text-transform: lowercase;*/
 	font-size: 1.3vw;
 	/*background-color: red;*/
 	height: 30vw;
@@ -174,7 +173,7 @@ h2 {
 	width: 100%;
 	text-align: center;
 	font-family: courier-std, mono;
-	text-transform: lowercase;
+	/*text-transform: lowercase;*/
 	font-size: 1.3vw;
 	/*background-color: red;*/
 	height: 30vw;
@@ -192,6 +191,7 @@ h2 {
 
 .youquestion0 figcaption {
 	margin-top: 1vw;
+	text-transform: lowercase;
 }
 
 .youquestion1 {
@@ -200,7 +200,7 @@ h2 {
 	width: 100%;
 	text-align: center;
 	font-family: courier-std, mono;
-	text-transform: lowercase;
+	/*text-transform: lowercase;*/
 	font-size: 1.3vw;
 	/*background-color: red;*/
 	height: 30vw;
@@ -219,6 +219,7 @@ h2 {
 }
 
 .youquestion1 figcaption {
+	text-transform: lowercase;
 	margin-top: 1vw;
 }
 
@@ -228,9 +229,13 @@ h2 {
 	width: 100%;
 	text-align: center;
 	font-family: courier-std, mono;
-	text-transform: lowercase;
+	/*text-transform: lowercase;*/
 	font-size: 1.3vw;
 	height: 30vw;
+}
+
+.youquestion2 figcaption {
+	text-transform: lowercase;
 }
 
 .youquestion2 div {
@@ -259,7 +264,7 @@ h2 {
 	width: 100%;
 	text-align: center;
 	font-family: courier-std, mono;
-	text-transform: lowercase;
+	/*text-transform: lowercase;*/
 	font-size: 1.3vw;
 	height: 40vw;
 }
@@ -281,6 +286,10 @@ h2 {
 .youquestion3 img {
 	cursor: pointer;
 	border-radius: 0.3vw
+}
+
+.youquestion3 figcaption {
+	text-transform: lowercase;
 }
 
 .stylebuttoncolor {
@@ -314,7 +323,7 @@ h2 {
 	width: 100%;
 	text-align: center;
 	font-family: courier-std, mono;
-	text-transform: lowercase;
+	/*text-transform: lowercase;*/
 	font-size: 1.3vw;
 	/*background-color: red;*/
 	height: 30vw;
@@ -333,6 +342,7 @@ h2 {
 }
 
 .youquestion4 figcaption {
+	text-transform: lowercase;
 	margin-top: 1vw;
 }
 
@@ -342,7 +352,7 @@ h2 {
 	width: 100%;
 	text-align: center;
 	font-family: courier-std, mono;
-	text-transform: lowercase;
+	/*text-transform: lowercase;*/
 	font-size: 1.3vw;
 	/*background-color: red;*/
 	height: 30vw;
@@ -360,6 +370,7 @@ h2 {
 
 .youquestion5 figcaption {
 	margin-top: 1vw;
+	text-transform: lowercase;
 }
 
 .youquestion6 {
@@ -368,7 +379,7 @@ h2 {
 	width: 100%;
 	text-align: center;
 	font-family: courier-std, mono;
-	text-transform: lowercase;
+	/*text-transform: lowercase;*/
 	font-size: 1.3vw;
 	/*background-color: red;*/
 	height: 30vw;
@@ -386,6 +397,7 @@ h2 {
 
 .youquestion6 figcaption {
 	margin-top: 1vw;
+	text-transform: lowercase;
 }
 
 .youquestion6 div {
@@ -401,7 +413,7 @@ h2 {
 	width: 100%;
 	text-align: center;
 	font-family: courier-std, mono;
-	text-transform: lowercase;
+	/*text-transform: lowercase;*/
 	/*background-color: red;*/
 	font-size: 1.3vw;
 	height: 30vw;
@@ -426,7 +438,7 @@ h2 {
 	width: 100%;
 	text-align: center;
 	font-family: courier-std, mono;
-	text-transform: lowercase;
+	/*text-transform: lowercase;*/
 	/*background-color: red;*/
 	font-size: 1.3vw;
 	height: 30vw;
