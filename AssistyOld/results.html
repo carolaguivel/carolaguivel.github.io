@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search Results</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" href="https://use.typekit.net/znk3xkz.css">
+</head>
+<body>
+
+<!-- header -->
+<div id="mySidenav" class="sidenav">
+  	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	<a href="index.html">Home</a>
+	<a href="about.html">Why Us</a>
+	<a href="gift.html">Gift it</a>
+	<a href="https://www.etsy.com">Shop</a>
+</div>
+
+<div class="head">
+	<span style="font-size:30px;cursor:pointer" onclick="openNav()">+</span>
+	<a href="you.html">For You</a>
+</div>
+<!-- header -->
+
+<!-- content -->
+<div class="results">
+	<h1>enjoy your results!</h1>
+	<span>250 items</span>
+	<!-- the span should show how many items there are for the search results -->
+</div>
+
+<div class="container"></div>
+<!-- content -->
+
+<!-- footer -->
+<div class="footer indexfooter">
+	<ul>
+		<li>FAQ</li>
+		<li>Terms of Use</li>
+		<li>Privacy Policy</li>
+		<li>Contact</li>
+	</ul>
+<p>Copyright &copy; 2018 Assisty - All rights reserved</p>	
+</div>
+<!-- footer -->
+
+<script>
+	function openNav() {
+    document.getElementById("mySidenav").style.width = "16vw";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
+tags = ""+sessionStorage.showooff+","+sessionStorage.color+","+sessionStorage.fit+","+sessionStorage.occasion+","+sessionStorage.clothes+","+sessionStorage.category;
+console.log(tags);
+var myurl = "http://localhost:9200/items/_search?q=tags:"+tags;
+// json file url
+$.getJSON( myurl, function( data ) {
+  var items = [];
+  console.log(data.hits.hits)
+  $.each( data.hits.hits, function( index, value ) {
+  	console.log(value._source);
+  			$(".container").append("<a href=" + value._source.itemurl + ">" + "<img class='prodimg' src=" + value._source.imageUrl + "><p class='prodname'>" + value._source.name + "</p><p class='seller'>" + value._source.sellerName + "</p><p class='price'>" + value._source.price + "</p></a>");
+  });
+ 
+});
+
+
+
+</script>
+</body>
+</html>

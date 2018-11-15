@@ -467,7 +467,7 @@ h2 {
 }
 
 .imgselection2:hover {
-	border: 0.2vw solid transparent;
+	border: 0.3vw solid black;
 	box-sizing: border-box;
 	/*transition: 0.3s;*/
 }
@@ -520,10 +520,6 @@ li {
 .indexfooter {
 	margin-top: 56vw;
 }
-
-.resultsfooter {
-	margin-top: 100vw;
-}
 /*footer*/
 
 .results {
@@ -547,12 +543,32 @@ li {
 	margin-top: 20vw;
 	width: 90vw;
 	height: 49vw;
-	z-index: -1;
-	margin-left: 5vw;
+	margin-left: 8vw;
 }
 
 .prodimg {
-	position: absolute;
-	width: 20%;
 	display: inline-block;
+	width: 70%;
+	z-index: 1;
+	cursor: pointer;
+}
+
+.container > a {
+	display: inline-block;
+	width: 30vw;
+	vertical-align: top;
+}
+
+.container p {
+	width: 20vw;
+	font-family: courier-std, mono;
+	text-transform: lowercase;
+	font-size: 1vw;
+}
+
+.prodname {
+	width: 18vw;
+	font-family: courier-std, mono;
+	text-transform: lowercase;
+	font-size: 1.3vw;
 }

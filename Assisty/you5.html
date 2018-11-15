@@ -25,45 +25,116 @@
 
 <!-- questions -->
 <div class="youquestion5">
+	<p>Question 9 of 10</p>
 	<p>Which part of your body do you want to show off?</p>
 	<figure>
-		<img src="images/arms.png" width="100%" class="imgselection" onclick="chooseShowOff('arms')">
-		<figcaption>arms</figcaption>
+		<img src="images/decolletage.png" width="100%" class="imgselection" id="decolletage" onclick="chooseShowOff('decolletage')">
+		<figcaption>decolletage</figcaption>
 	</figure>
 	<figure>
-		<img src="images/shoulders.png" width="100%" class="imgselection" onclick="chooseShowOff('shoulders')">
-		<figcaption>shoulders</figcaption>
-	</figure>
-	<figure>
-		<img src="images/legs.png" width="100%" class="imgselection" onclick="chooseShowOff('legs')">
-		<figcaption>legs</figcaption>
-	</figure>
-	<figure>
-		<img src="images/back.png" width="100%" class="imgselection" onclick="chooseShowOff('back')">
+		<img src="images/back.png" width="100%" class="imgselection" id="back" onclick="chooseShowOff('back')">
 		<figcaption>back</figcaption>
 	</figure>
 	<figure>
-		<img src="images/abs.png" width="100%" class="imgselection" onclick="chooseShowOff('abs')">
+		<img src="images/shoulders.png" width="100%" class="imgselection" id="shoulders" onclick="chooseShowOff('shoulders')">
+		<figcaption>shoulders</figcaption>
+	</figure>
+	<figure>
+		<img src="images/abs.png" width="85%" class="imgselection" id="abs" onclick="chooseShowOff('abs')">
 		<figcaption>abs</figcaption>
 	</figure>
+	<br>
+	<!-- <a href="you4.html"><button class="stylebutton">back &rsaquo;</button></a> -->
+	<button class="stylebutton" onclick="addShowOff()" >next &rsaquo;</button>
 </div>
 <!-- questions -->
 
 <script>
-	function openNav() {
+function openNav() {
     document.getElementById("mySidenav").style.width = "16vw";
 }
-function chooseShowOff(val) {
-	if(typeof(Storage) !== "undefined") {
-        sessionStorage.showooff = val;
-    } else {
-        document.getElementByClass("youquestion5").innerHTML = "Sorry, your browser does not support web storage...";
-    }
-    console.log(sessionStorage.showooff);
-  	window.open("you6.html", "_self");
-}
+
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
+}
+
+decolletage = false
+back = false
+shoulders = false
+abs = false
+if(sessionStorage.showoff!=null){
+	if(sessionStorage.showoff.indexOf('decolletage')>=0){
+		decolletage = true;
+		document.getElementById("decolletage").style.WebkitAnimation = "imageselection 0.6s ease infinite";
+	}
+	if(sessionStorage.showoff.indexOf('back')>=0){
+		back = true;
+		document.getElementById("back").style.WebkitAnimation = "imageselection 0.6s ease infinite";
+	}
+	if(sessionStorage.showoff.indexOf('shoulders')>=0){
+		shoulders = true;
+		document.getElementById("shoulders").style.WebkitAnimation = "imageselection 0.6s ease infinite";
+	}
+	if(sessionStorage.showoff.indexOf('abs')>=0){
+		abs = true;
+		document.getElementById("abs").style.WebkitAnimation = "imageselection 0.6s ease infinite";
+	}
+}
+function chooseShowOff(val) {
+	if(val=='decolletage'){
+		decolletage = !decolletage
+		if(decolletage) {
+			document.getElementById("decolletage").style.WebkitAnimation = "imageselection 0.6s ease infinite";
+		} else {
+			document.getElementById("decolletage").style.WebkitAnimation = "";
+		}
+	}
+	if(val=='abs'){
+		abs = !abs
+		if(abs) {
+			document.getElementById("abs").style.WebkitAnimation = "imageselection 0.6s ease infinite";
+		} else {
+			document.getElementById("abs").style.WebkitAnimation = "";
+		}
+	}
+	if(val=='shoulders'){
+		shoulders = !shoulders
+		if(shoulders) {
+			document.getElementById("shoulders").style.WebkitAnimation = "imageselection 0.6s ease infinite";
+		} else {
+			document.getElementById("shoulders").style.WebkitAnimation = "";
+		}
+	}
+	if(val=='back'){
+		back = !back
+		if(back) {
+			document.getElementById("back").style.WebkitAnimation = "imageselection 0.6s ease infinite";
+		} else {
+			document.getElementById("back").style.WebkitAnimation = "";
+		}
+	}
+
+}
+
+function addShowOff(){
+	var showoff = []
+	if(decolletage)
+		showoff.push("decolletage")
+	if(shoulders)
+		showoff.push("shoulders")
+	if(back)
+		showoff.push("back")
+	if(abs)
+		showoff.push("abs")
+	if(typeof(Storage) !== "undefined") {
+		sessionStorage.showoff = null
+		if(showoff.length!=0)
+        	sessionStorage.showoff = showoff.join();
+        else 
+        	sessionStorage.showoff = []
+    }
+    console.log(sessionStorage.showoff);
+  	window.open("you6.html", "_self");
 }
 </script>
 </body>

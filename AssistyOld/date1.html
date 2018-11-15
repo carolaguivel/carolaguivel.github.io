@@ -27,19 +27,16 @@
 <div class="style1">
 	<p>Which style do you prefer?</p>
 	<figure>
-		<img src="images/boho.png" width="100%" class="imgselection2" id="boho" onclick="chooseStyle2('boho')">
+		<img src="images/rocker.png" width="100%" class="imgselection2" id="rocker" onclick="chooseStyle3('rocker')">
 	</figure>
 	<figure>
-		<img src="images/sexy.png" width="100%" class="imgselection2" id="sexy" onclick="chooseStyle2('sexy')">
+		<img src="images/sexy.png" width="100%" class="imgselection2" id="sexy" onclick="chooseStyle3('sexy')">
 	</figure>
 	<figure>
-		<img src="images/artsy.png" width="100%" class="imgselection2" id="artsy" onclick="chooseStyle2('artsy')">
-	</figure>
-	<figure>
-		<img src="images/edgy.png" width="100%" class="imgselection2" id="edgy" onclick="chooseStyle2('edgy')">
+		<img src="images/edgy.png" width="100%" class="imgselection2" id="edgy" onclick="chooseStyle3('edgy')">
 	</figure>
 	<br>
-	<button class="stylebutton" onclick="addStyle2()">done &rsaquo;</button>
+	<button class="stylebutton" onclick="addStyle3()">done &rsaquo;</button>
 </div>
 <!-- questions -->
 
@@ -52,17 +49,16 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
 
-boho = false
+rocker = false
 sexy = false
-artsy = false
 edgy = false
-function chooseStyle2(val) {
-	if(val=='boho'){
-		boho = !boho
-		if(boho)
-			document.getElementById("boho").style.boxShadow = "10px 20px 30px lightblue";
+function chooseStyle3(val) {
+	if(val=='rocker'){
+		rocker = !rocker
+		if(rocker)
+			document.getElementById("rocker").style.boxShadow = "10px 20px 30px lightblue";
 		else {
-			document.getElementById("boho").style.boxShadow = "";
+			document.getElementById("rocker").style.boxShadow = "";
 		}
 	}
 	if(val=='sexy'){
@@ -73,14 +69,6 @@ function chooseStyle2(val) {
 			document.getElementById("sexy").style.boxShadow = "";
 		}
 	}
-		if(val=='artsy'){
-		artsy = !artsy
-		if(artsy)
-			document.getElementById("artsy").style.boxShadow = "10px 20px 30px lightblue";
-		else {
-			document.getElementById("artsy").style.boxShadow = "";
-		}
-	}
 		if(val=='edgy'){
 		edgy = !edgy
 		if(edgy)
@@ -89,24 +77,23 @@ function chooseStyle2(val) {
 			document.getElementById("edgy").style.boxShadow = "";
 		}
 	}
+
 }
 
-function addStyle2(){
+function addStyle3(){
 	var styles = []
+	if(rocker)
+		styles.push("rocker")
 	if(edgy)
 		styles.push("edgy")
-	if(artsy)
-		styles.push("artsy")
 	if(sexy)
 		styles.push("sexy")
-	if(boho)
-		styles.push("boho")
 	if(typeof(Storage) !== "undefined") {
-		sessionStorage.style2 = null
+		sessionStorage.style3 = null
 		if(styles.length!=0)
-        	sessionStorage.style2 = styles.join();
+        	sessionStorage.style3 = styles.join();
     }
-    console.log(sessionStorage.style2);
+    console.log(sessionStorage.style3);
   	//window.open("results.html", "_self");
 }
 </script>
