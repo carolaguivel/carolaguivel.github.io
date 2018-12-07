@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Peculiar</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://use.typekit.net/kmk8gyv.css">
+	<link rel="stylesheet" type="text/css" href="flickity/flickity.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.8.21.custom.min.js"></script>
+	<meta charset="UTF-8">
+</head>
+<body>
+
+<!-- menu -->
+<ul class="menu">
+	<li><a href="index.html">Playlists</a></li>
+	<li><a href="artists.html">Artists</a></li>
+	<li><a href="search.html">Search</a></li>
+</ul>
+
+<div class="dropdown">
+	<div class="dropbtn">+</div>
+  	<div id="mydropdown" class="dropdowncontent">
+		<a onclick="displayAbout()">about</a>
+		<a onclick="displaySongs()">songs</a>
+		<a onclick="displayArtists()">artists</a>
+	</div>
+</div>
+<!-- menu -->
+
+<div class="playlisttitle">
+    <h1 class="peculiar">Peculiar<h1>
+</div>
+
+<div class="player">
+    <div class="pl"></div>
+    <div class="title"></div>
+    <div class="artist"></div>
+    <div class="controls">
+        <img src="images/playicon2.png" class="play audio-play-button2" width="10%">
+        <img src="images/stopicon.png" class="pause audio-stop-button" width="10%">
+        <img src="images/left.png" class="rew" width="10%">
+        <img src="images/right.png" class="fwd" width="10%">
+    </div>
+    <div class="volume"></div>
+    <div class="tracker"></div>
+</div>
+
+<div class="playlistabout" id="displayAbout"></div>
+
+<div class="playlistsongs" id="displaySongs">
+    <ul class="playlist">
+        <li>
+            <div class="icons">
+                <a onclick="displaySylvanEsso()" class="moreicon">+</a>
+                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-heymami" data-artist="Sylvan Esso" data-title="Hey Mami" width="2.1%">
+            </div>
+            <img src="images/sylvanessoalbum.png" width="22%">
+            <span class="songtitle">Hey Mami</span>
+            <text class="songartist">Sylvan Esso</text>
+        </li>
+        <li>
+            <div class="icons">
+                <a onclick="displayMaviPheonix()" class="moreicon">+</a>
+                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-prime" data-artist="Mavi Pheonix" data-title="Prime" width="2.1%">
+            </div>
+            <img src="images/youngprophet2.png" width="22%">
+            <span class="songtitle">Prime</span>
+            <text class="songartist">Mavi Pheonix</text>
+        </li>
+        <li>
+            <div class="icons">
+                <a onclick="displayBillieEilish()" class="moreicon">+</a>
+                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-youshouldseemeinacrown" data-artist="Billie Eilish" data-title="you should see me in a crown" width="2.1%">
+            </div>
+            <img src="images/youshouldseemeinacrown.png" width="22%">
+            <span class="songtitle">you should see me in a crown</span>
+            <text class="songartist">Billie Eilish</text>
+        </li>
+        <li>
+            <div class="icons">
+                <a onclick="displayToveLo()" class="moreicon">+</a>
+                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-discotits" data-artist="Tove Lo" data-title="disco tits" width="2.1%">
+            </div>
+            <img src="images/bluelips.png" width="22%">
+            <span class="songtitle">disco tits</span>
+            <text class="songartist">Tove Lo</text>
+        </li>
+        <li>
+            <div class="icons">
+                <a onclick="displaySylvanEsso()" class="moreicon">+</a>
+                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-hskt" data-artist="Sylvan Esso" data-title="H.S.K.T." width="2.1%">
+            </div>
+            <img src="images/hskt.png" width="22%">
+            <span class="songtitle">H.S.K.T.</span>
+            <text class="songartist">Sylvan Esso</text>
+        </li>
+        <li>
+            <div class="icons">
+                <a onclick="displayBillieEilish()" class="moreicon">+</a>
+                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-copycat" data-artist="Billie Eilish" data-title="COPYCAT" width="2.1%">
+            </div>
+            <img src="images/dontsmileatme.png" width="22%">
+            <span class="songtitle">COPYCAT</span>
+            <text class="songartist">Billie Eilish</text>
+        </li>
+        <li>
+            <div class="icons">
+                <a onclick="displayMaviPheonix()" class="moreicon">+</a>
+                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-fly" data-artist="Mavi Pheonix" data-title="Fly" width="2.1%">
+            </div>
+            <img src="images/mavipheonix.png" width="22%">
+            <span class="songtitle">Fly</span>
+            <text class="songartist">Mavi Pheonix</text>
+        </li>
+        <li>
+            <div class="icons">
+                <a onclick="displayLorde()" class="moreicon">+</a>
+                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-homemadedynamite" data-artist="Lorde" data-title="Homemade Dynamite" width="2.1%">
+            </div>
+            <img src="images/melodrama.png" width="22%">
+            <span class="songtitle">Homemade Dynamite</span>
+            <text class="songartist">Lorde</text>
+        </li>
+    </ul>
+</div>
+
+<!-- artists -->
+<div class="playlistartists" id="displayArtists">
+    <img src="images/billieeilish.png" width="22%">
+    <span>Billie Eilish</span>
+    <a class="learnmore" onclick="displayBillieEilish()">learn more</a>
+    <br>
+    <img src="images/lorde.png" width="22%">
+    <span>Lorde</span>
+    <a class="learnmore" onclick="displayLorde()">learn more</a>
+    <br>
+    <img src="images/mavipheonix.png" width="22%">
+    <span>Mavi Pheonix</span>
+    <a class="learnmore" onclick="displayMaviPheonix()">learn more</a>
+    <br>
+    <img src="images/sylvanesso.png" width="22%">
+    <span>Sylvan Esso</span>
+    <a class="learnmore" onclick="displaySylvanEsso()">learn more</a>
+    <br>
+     <img src="images/tovelo.png" width="22%">
+    <span>Tove Lo</span>
+    <a class="learnmore" onclick="displayToveLo()">learn more</a>
+</div>
+<!-- Billie Eilish -->
+<div class="artistabout" id="displayBillieEilish">
+    <img src="images/billieeilish.png" width="33%">
+    <div class="bio">
+        <h2>Billie Eilish</h2>
+        <p>16 year old global pop-phenom Billie Eilish is on the fast track to becoming one of the biggest stars to emerge since the release of her debut single "ocean eyes." Fast forward from her humble breakout, Billie's debut EP has since amassed more than 750 million combined streams worldwide and singles "ocean eyes" and "lovely (with Khalid)" have both  been certified RIAA GOLD in North America. She has consistently sold out headlining tours across the globe and is currently making waves with her latest single "you should see me in a crown," garnering more than a million combined streams in the first 24 hours upon release.</p>
+        <span>Appears on 
+            <a class="appearson">Melancholy</a>,
+            <a onclick="displayAbout()" class="appearson">Peculiar</a>
+        </span>
+    </div>
+    <div class="info">
+        <h3>More Info</h3>
+        <img src="images/instagram.png" width="1.5%">
+        <a class="infolink" href="https://www.instagram.com/wherearetheavocados/" target="_blank">Instagram</a>
+        <br>
+        <img src="images/twitter.png" width="1.5%">
+        <a class="infolink" href="https://twitter.com/billieeilish" target="_blank">Twitter</a>
+        <br>
+        <img src="images/facebook.png" width="1.5%">
+        <a class="infolink" href="https://www.facebook.com/billieeilish" target="_blank">Facebook</a>
+        <br>
+        <img src="images/Wikipedia.png" width="1.5%">
+        <a class="infolink" href="https://en.wikipedia.org/wiki/Billie_Eilish" target="_blank">Wikipedia</a>
+    </div>
+</div>
+<!-- Tove Lo -->
+<div class="artistabout" id="displayToveLo">
+    <img src="images/tovelo.png" width="33%">
+    <div class="bio">
+        <h2>Tove Lo</h2>
+        <p>Crafting an idiosyncratic blend of pop influenced as much by 80's pop as by contemporary EDM and coupled with raw, brutally honest lyrics, Tove Lo made a name for herself as an award-winning performer and Grammy-nominated songwriter. Her honest, complex and autobiographical lyrical content has led to her being dubbed "the saddest girl in Sweden." In 2013, Lo was signed to Universal Music, Island and Polydor. The following year, Lo rose to fame with her debut album, Queen of the Clouds, which opened at number 14 on the US Billboard 200 chart in October 2014. It spawned the sleeper hit single "Habits (Stay High)," which peaked at number three on the US Billboard Hot 100.</p>
+        <span>Appears on 
+            <a class="appearson">Melancholy</a>,
+            <a onclick="displayAbout()" class="appearson">Peculiar</a>
+        </span>
+    </div>
+    <div class="info">
+        <h3>More Info</h3>
+        <img src="images/instagram.png" width="1.5%">
+        <a class="infolink" href="https://www.instagram.com/Tovelo/" target="_blank">Instagram</a>
+        <br>
+        <img src="images/twitter.png" width="1.5%">
+        <a class="infolink" href="https://twitter.com/ToveLo" target="_blank">Twitter</a>
+        <br>
+        <img src="images/facebook.png" width="1.5%">
+        <a class="infolink" href="https://www.facebook.com/tovelo/" target="_blank">Facebook</a>
+        <br>
+        <img src="images/Wikipedia.png" width="1.5%">
+        <a class="infolink" href="https://en.wikipedia.org/wiki/Tove_Lo" target="_blank">Wikipedia</a>
+    </div>
+</div>
+<!-- Mavi Pheonix -->
+<div class="artistabout" id="displayMaviPheonix">
+    <img src="images/mavipheonix.png" width="33%">
+    <div class="bio">
+        <h2>Mavi Pheonix</h2>
+        <p>Austria's Mavi Pheonix blends pop, rap, and R&amp;B into a hard to classify but catchy mix. Born Marlene Nader to a family with Syrian roots, the rapper-singer/songwriter grew up attending English-speaking schools and listening to rock acts such as David Bowie and Queens of the Stone Age. When she was 11, she began playing guitar and producing her own music in GarageBand after her father gave her an old MacBook. Her musical tastes grew to include Kanye West and Drake, as well as Miley Cyrus and Lady Gaga, and Nader chose the performing name Mavi Pheonix as a tribute to actor River Pheonix as well as for its symbolic meaning of renewal.</p>
+        <span>Appears on <a onclick="displayAbout()" class="appearson">Peculiar</a></span>
+    </div>
+    <div class="info">
+        <h3>More Info</h3>
+        <img src="images/instagram.png" width="1.5%">
+        <a class="infolink" href="https://www.instagram.com/maviphoenix/?hl=en" target="_blank">Instagram</a>
+        <br>
+        <img src="images/twitter.png" width="1.5%">
+        <a class="infolink" href="https://twitter.com/maviphoenix?lang=en" target="_blank">Twitter</a>
+        <br>
+        <img src="images/facebook.png" width="1.5%">
+        <a class="infolink" href="https://www.facebook.com/maviphoenix/" target="_blank">Facebook</a>
+        <br>
+        <img src="images/Wikipedia.png" width="1.5%">
+        <a class="infolink" href="https://de.wikipedia.org/wiki/Mavi_Phoenix" target="_blank">Wikipedia</a>
+    </div>
+</div>
+<!-- Sylvan Esso -->
+<div class="artistabout" id="displaySylvanEsso">
+    <img src="images/sylvanesso.png" width="33%">
+    <div class="bio">
+        <h2>Sylvan Esso</h2>
+        <p>Sylvan Esso is an American electronic pop duo from Durham, North Carolina formed in 2013. The band consists of singer Amelia Meath and producer Nick Sanborn. They made their debut with the single "Hey Mami" and released their eponymous debut album on Partisan Records on May 12, 2014, which reached No. 39 on the Billboard 200. They released their second album What Now with Loma Vista Recordings on April 28, 2017, which was nominated for a Grammy in the "Best Dance/Electronic Album category."</p>
+        <span>Appears on <a onclick="displayAbout()" class="appearson">Peculiar</a></span>
+    </div>
+    <div class="info">
+        <h3>More Info</h3>
+        <img src="images/instagram.png" width="1.5%">
+        <a class="infolink" href="https://www.instagram.com/sylvanesso/?hl=en" target="_blank">Instagram</a>
+        <br>
+        <img src="images/twitter.png" width="1.5%">
+        <a class="infolink" href="https://twitter.com/SylvanEsso?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">Twitter</a>
+        <br>
+        <img src="images/facebook.png" width="1.5%">
+        <a class="infolink" href="https://www.facebook.com/SylvanEsso/" target="_blank">Facebook</a>
+        <br>
+        <img src="images/Wikipedia.png" width="1.5%">
+        <a class="infolink" href="https://en.wikipedia.org/wiki/Sylvan_Esso" target="_blank">Wikipedia</a>
+    </div>
+</div>
+<!-- Lorde -->
+<div class="artistabout" id="displayLorde">
+    <img src="images/lorde.png" width="33%">
+    <div class="bio">
+        <h2>Lorde</h2>
+        <p>Emerging as a fully formed enigma from her native New Zealand, Lorde tapped into an untouched well of alienation, becoming the poster child for a generation who found refuge from the eternal excess of the 2010s by submerging themselves in moody art. "Royals," the hit single that made her an international phenomenon, became a genuine sensation, topping the charts in country after country and being covered by elder statesmen like Bruce Springsteen and Jack White, a move that functioned a bit as a benediction. Lorde didn't need their blessing, though.</p>
+        <span>Appears on <a onclick="displayAbout()" class="appearson">Peculiar</a></span>
+    </div>
+    <div class="info">
+        <h3>More Info</h3>
+        <img src="images/instagram.png" width="1.5%">
+        <a class="infolink" href="https://www.instagram.com/lordemusic/" target="_blank">Instagram</a>
+        <br>
+        <img src="images/twitter.png" width="1.5%">
+        <a class="infolink" href="https://twitter.com/lorde" target="_blank">Twitter</a>
+        <br>
+        <img src="images/facebook.png" width="1.5%">
+        <a class="infolink" href="https://www.facebook.com/lordemusic" target="_blank">Facebook</a>
+        <br>
+        <img src="images/Wikipedia.png" width="1.5%">
+        <a class="infolink" href="https://en.wikipedia.org/wiki/Lorde" target="_blank">Wikipedia</a>
+    </div>
+</div>
+<!-- artists -->
+
+<!-- audio -->
+<div class="audio">
+    <audio id="audio-heymami" src="music/peculiar/heymami.mp3"></audio>
+    <audio id="audio-coffee" src="music/peculiar/coffee.mp3"></audio>
+    <audio id="audio-copycat" src="music/peculiar/copycat.mp3"></audio>
+    <audio id="audio-discotits" src="music/peculiar/discotits.mp3"></audio>
+    <audio id="audio-fly" src="music/peculiar/fly.mp3"></audio>
+    <audio id="audio-homemadedynamite" src="music/peculiar/homemadedynamite.mp3"></audio>
+    <audio id="audio-hskt" src="music/peculiar/hskt.mp3"></audio>
+    <audio id="audio-prime" src="music/peculiar/prime.mp3"></audio>
+    <audio id="audio-youshouldseemeinacrown" src="music/peculiar/youshouldseemeinacrown.mp3"></audio>
+</div>
+<!-- audio -->
+
+<script></script>
+<script>
+$(".dropbtn").click(function () {
+
+    $dropbtn = $(this);
+    
+    $dropdowncontent = $dropbtn.next();
+    
+    $dropdowncontent.slideToggle(680, function () {
+    });
+
+    $dropdowncontent.toggleClass("opened")
+
+});
+
+function displayArtists() {
+    document.getElementById("displayArtists").style.display = "block";
+    document.getElementById("displayAbout").style.display = "none";
+    document.getElementById("displaySongs").style.display = "none";
+    document.getElementById("displaySylvanEsso").style.display = "none";
+    document.getElementById("displayBillieEilish").style.display = "none";
+    document.getElementById("displayToveLo").style.display = "none";
+    document.getElementById("displayMaviPheonix").style.display = "none";
+    document.getElementById("displayLorde").style.display = "none";
+}
+
+function displaySongs() {
+    document.getElementById("displaySongs").style.display = "block";
+    document.getElementById("displayAbout").style.display = "none";
+    document.getElementById("displayArtists").style.display = "none";
+    document.getElementById("displaySylvanEsso").style.display = "none";
+    document.getElementById("displayBillieEilish").style.display = "none";
+    document.getElementById("displayToveLo").style.display = "none";
+    document.getElementById("displayMaviPheonix").style.display = "none";
+    document.getElementById("displayLorde").style.display = "none";
+}
+
+function displayAbout() {
+    document.getElementById("displayAbout").style.display = "block";
+    document.getElementById("displayArtists").style.display = "none";
+    document.getElementById("displaySongs").style.display = "none";
+    document.getElementById("displaySylvanEsso").style.display = "none";
+    document.getElementById("displayBillieEilish").style.display = "none";
+    document.getElementById("displayToveLo").style.display = "none";
+    document.getElementById("displayMaviPheonix").style.display = "none";
+    document.getElementById("displayLorde").style.display = "none";
+}
+
+function displaySylvanEsso() {
+    document.getElementById("displaySylvanEsso").style.display = "block";
+    document.getElementById("displayArtists").style.display = "none";
+    document.getElementById("displaySongs").style.display = "none";
+    document.getElementById("displayAbout").style.display = "none";
+    document.getElementById("displayBillieEilish").style.display = "none";
+    document.getElementById("displayToveLo").style.display = "none";
+    document.getElementById("displayMaviPheonix").style.display = "none";
+    document.getElementById("displayLorde").style.display = "none";
+}
+
+function displayBillieEilish() {
+    document.getElementById("displayBillieEilish").style.display = "block";
+    document.getElementById("displayArtists").style.display = "none";
+    document.getElementById("displaySongs").style.display = "none";
+    document.getElementById("displayAbout").style.display = "none";
+    document.getElementById("displaySylvanEsso").style.display = "none";
+    document.getElementById("displayToveLo").style.display = "none";
+    document.getElementById("displayMaviPheonix").style.display = "none";
+    document.getElementById("displayLorde").style.display = "none";
+}
+
+function displayToveLo() {
+    document.getElementById("displayToveLo").style.display = "block";
+    document.getElementById("displayArtists").style.display = "none";
+    document.getElementById("displaySongs").style.display = "none";
+    document.getElementById("displayAbout").style.display = "none";
+    document.getElementById("displaySylvanEsso").style.display = "none";
+    document.getElementById("displayBillieEilish").style.display = "none";
+    document.getElementById("displayMaviPheonix").style.display = "none";
+    document.getElementById("displayLorde").style.display = "none";
+}
+
+function displayMaviPheonix() {
+    document.getElementById("displayMaviPheonix").style.display = "block";
+    document.getElementById("displayArtists").style.display = "none";
+    document.getElementById("displaySongs").style.display = "none";
+    document.getElementById("displayAbout").style.display = "none";
+    document.getElementById("displaySylvanEsso").style.display = "none";
+    document.getElementById("displayBillieEilish").style.display = "none";
+    document.getElementById("displayToveLo").style.display = "none";
+    document.getElementById("displayLorde").style.display = "none";
+}
+
+function displayLorde() {
+    document.getElementById("displayLorde").style.display = "block";
+    document.getElementById("displayArtists").style.display = "none";
+    document.getElementById("displaySongs").style.display = "none";
+    document.getElementById("displayAbout").style.display = "none";
+    document.getElementById("displaySylvanEsso").style.display = "none";
+    document.getElementById("displayBillieEilish").style.display = "none";
+    document.getElementById("displayToveLo").style.display = "none";
+    document.getElementById("displayMaviPheonix").style.display = "none";
+}
+
+$(function() {
+
+    var stopAudio = function() {
+        console.log('stop music');
+        var $allAudio = $('audio');
+
+        $allAudio.each(function() {
+            var $audio = $(this);
+
+            $audio.get(0).pause();
+        });
+
+        $('.play').removeClass('hidden');
+        $('.pause').removeClass('visible');
+    };
+
+    $('.audio-play-button').click(function() {
+    // Stop audio before playing the next song.
+        stopAudio();
+
+        console.log('start music');
+
+        var audioID = $(this).attr('data-audio-selector');
+        var $audio = $(audioID);
+
+        var artist = $(this).attr("data-artist");
+        var title = $(this).attr("data-title");
+
+        $('.player .title').text(title);
+        $('.player .artist').text(artist);
+
+        console.log('audioID is', audioID);
+        console.log('$audio target is', $audio);
+        console.log('artist is', artist);
+        console.log('title is', title);
+
+        $audio.get(0).play();
+
+        $('.play').addClass('hidden');
+        $('.pause').addClass('visible');
+
+    });
+
+    // Stop audio when clicking the stop button.
+    $('.audio-stop-button').click(function() {
+        stopAudio();
+    });
+
+});
+
+  // var resumeAudio = function() {
+  //   var $allAudio = $('audio');
+
+  //   $allAudio.each(function() {
+  //     var $audio = $(this);
+
+  //     $audio.get(0).play();
+  //   });
+  // };
+
+  // $('.audio-play-button2').click(function() {
+  //   resumeAudio();
+  // });
+
+$(document).ready(function(){
+
+    $.get( "http://api.are.na/v2/channels/carolynolaguivel-moods-restless", function(data) {
+        // console.log(data)
+
+        var restless = data.contents;
+
+        console.log(restless)
+    
+
+        for (var i = 0; i < restless.length; i++) {
+
+            $(".playlistabout").append("<img src=" + restless[i].image.original.url + " width='25%'>")
+        };
+
+    });
+});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,289 @@
+body {
+	background-color: #f0f0f0;
+	margin: 0;
+}
+
+body {
+	font-family: ltc-goudy-oldstyle-pro, serif;
+	font-weight: 400;
+	font-size: 15px;
+	background-color: #f0f0f0;
+}
+
+a {
+	text-decoration: none;
+	color: #819FA2;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+/*menu*/
+.menu1, .menu2 {
+	list-style: none;
+	display: inline-block;
+	position: fixed;
+	color: #000000;
+	font-size: 1.3vw;
+	z-index: 2;
+	border: none;
+	margin-top: 3vw;
+}
+
+.menu1 {
+	margin-left: 2.6vw
+}
+
+.menu2 {
+	margin-left: 91.8vw;
+}
+
+.menu1 li {
+	display: inline-block;
+}
+
+.menuoption {
+	border: 0.11vw solid #819FA2;
+	padding: 0.5vw 1.3vw 0.5vw 1.3vw;
+}
+
+.li1 {
+	margin-right: 4vw;
+	padding-bottom: 2vw;
+}
+
+.li2 {
+	margin-right: 4vw;
+	padding-bottom: 2vw;
+}
+
+.calypsodropdown {
+	display: none;
+    position: absolute;
+    /*background-color: #f0f0f0;*/
+    width: 15vw;
+    height: 4vw;
+    z-index: 1;
+    border: 0.11vw solid #819FA2;
+    margin-top: 2vw;
+    z-index: 2;
+}
+
+.calypsodropdown a {
+	position: absolute;
+	display: inline-block;
+	/*background-color: #f0f0f0;*/
+	width: 15vw;
+	height: 4vw;
+}
+
+div .dropdownabout {
+	text-align: center;
+	box-sizing: border-box;
+	padding-top: 1.2vw;
+}
+
+.essentialsdropdown {
+	display: none;
+    position: absolute;
+    /*background-color: #f0f0f0;*/
+    width: 15vw;
+    height: 8vw;
+    z-index: 1;
+    border: 0.11vw solid #819FA2;
+    margin-top: 2vw;
+    z-index: 2;
+}
+
+.essentialsdropdown a {
+	position: absolute;
+	display: inline-block;
+	/*background-color: #f0f0f0;*/
+	width: 15vw;
+	height: 4vw;
+}
+
+div .dropdowncondoms {
+	text-align: center;
+	box-sizing: border-box;
+	border-bottom: 0.11vw solid #819FA2;
+	border-right: none;
+	border-top: none;
+	border-left: none;
+	padding-top: 1.2vw;
+}
+
+div .dropdownlubricant {
+	text-align: center;
+	box-sizing: border-box;
+	border: none;
+	padding-top: 1.2vw;
+	margin-top: 4vw;
+}
+
+.kitsdropdown {
+	display: none;
+    position: absolute;
+    /*background-color: #f0f0f0;*/
+    width: 15vw;
+    height: 8vw;
+    z-index: 1;
+    border: 0.11vw solid #819FA2;
+    margin-top: 2vw;
+    z-index: 2;
+}
+
+.kitsdropdown a {
+	position: absolute;
+	display: inline-block;
+	/*background-color: #f0f0f0;*/
+	width: 15vw;
+	height: 4vw;
+}
+
+div .dropdownstarterkit {
+	text-align: center;
+	box-sizing: border-box;
+	border-bottom: 0.11vw solid #819FA2;
+	border-right: none;
+	border-top: none;
+	border-left: none;
+	padding-top: 1.2vw;
+}
+
+div .dropdownessentialskit {
+	text-align: center;
+	box-sizing: border-box;
+	border: none;
+	padding-top: 1.2vw;
+	margin-top: 4vw;
+}
+
+.dropdown:hover .calypsodropdown {
+    display: block;
+}
+
+.dropdown:hover .essentialsdropdown {
+    display: block;
+}
+
+.dropdown:hover .kitsdropdown {
+    display: block;
+}
+
+.dropdownabout:hover, .dropdowncondoms:hover, .dropdownlubricant:hover,
+.dropdownstarterkit:hover, .dropdownessentialskit:hover {
+	background-color: #819FA2;
+	color: #f0f0f0;
+	cursor: pointer;
+}
+/*menu*/
+
+/*footer*/
+.footer {
+	position: absolute;
+	width: 100%;
+	height: 19vw;
+	background-color: #c0bbaa;
+	color: #f0f0f0;
+	font-family: helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 1.05vw;
+}
+
+.footer li {
+	display: inline-block;
+	margin-top: 3.5vw;
+	margin-right: 3vw;
+	line-height: 1.5vw
+}
+
+.fcolumn1 {
+	margin-left: 3.5vw;
+}
+
+.footer p {
+	margin: 0;
+	cursor: pointer;
+}
+
+.indexfooter {
+	margin-top: 140vw;
+}
+
+.fcolumn4 {
+	position: absolute;
+	margin-left: 47vw;
+}
+
+.fcolumn4 p {
+	padding-top: 0.7vw;
+	font-weight: 300;
+}
+
+input {
+	border: none;
+	background-color: #c0bbaa;
+	color: #f0f0f0;
+	font-size: 1.05vw;
+	font-weight: 300;
+	padding-bottom: 0.8vw;
+	width: 21vw;
+	border-bottom: 0.1vw solid #f0f0f0;
+	margin-top: 3.3vw;
+}
+
+::placeholder {
+	color: #f0f0f0;
+}
+
+input:focus {
+	outline: none;
+}
+
+/*content*/
+.content {
+	position: absolute;
+}
+
+.tagline {
+	position: absolute;
+	margin-left: 58vw;
+	margin-top: 10vw;
+}
+
+.tagline h2 {
+	width: 20vw;
+	font-size: 1.9vw;
+}
+
+.tagline a {
+	font-family: helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 1vw;
+	position: absolute;
+	color: #f0f0f0;
+	background-color: #819FA2;
+	padding: 0.8vw 1.1vw 0.8vw 1.1vw;
+}
+
+.grid1 {
+	width: 100%;
+	text-align: center;
+	margin-top: 15vw;
+}
+
+.heavenly1 {
+	margin-top: 20vw;
+	margin-left: 18vw;
+}
+
+.lubricant1 {
+	position: absolute;
+	margin-top: 50vw;
+	margin-left: 16vw;
+}
+
+

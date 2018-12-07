@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ecstatic</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://use.typekit.net/kmk8gyv.css">
+	<link rel="stylesheet" type="text/css" href="flickity/flickity.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.8.21.custom.min.js"></script>
+    <!-- <script type="text/javascript" src="js/main.js"></script> -->
+	<meta charset="UTF-8">
+</head>
+<body>
+
+<audio>
+    <source src="" type="">
+</audio>
+
+<!-- menu -->
+<ul class="menu">
+	<li><a href="index.html">Playlists</a></li>
+	<li><a href="artists.html">Artists</a></li>
+	<li><a href="search.html">Search</a></li>
+</ul>
+
+<div class="dropdown">
+	<div class="dropbtn">+</div>
+  	<div id="mydropdown" class="dropdowncontent">
+		<a onclick="displayAbout()">about</a>
+		<a onclick="displaySongs()">songs</a>
+		<a onclick="displayArtists()">artists</a>
+	</div>
+</div>
+<!-- menu -->
+
+<div class="playlisttitle">
+    <h1 class="ecstatic">Ecstatic<h1>
+</div>
+
+<!-- player -->
+<div class="player">
+    <div class="pl"></div>
+    <div class="title"></div>
+    <div class="artist"></div>
+    <div class="controls">
+        <img src="images/playicon2.png" class="play audio-play-button2" width="10%">
+        <img src="images/stopicon.png" class="pause audio-stop-button" width="10%">
+        <img src="images/left.png" class="rew" width="10%">
+        <img src="images/right.png" class="fwd" width="10%">
+    </div>
+    <div class="volume"></div>
+    <div class="tracker"></div>
+</div>
+<!-- player -->
+
+<!-- moodboard -->
+<div class="playlistabout" id="displayAbout"></div>
+<!-- moodboard -->
+
+<!-- songs -->
+<div class="playlistsongs" id="displaySongs">
+    <ul class="playlist">
+        <li>
+            <div class="icons">
+                <a onclick="displayMountKimbie()" class="moreicon">+</a>
+                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-bluetrainlines" data-artist="Mount Kimbie" data-title="Blue Train Lines" width="2.1%">
+            </div>
+            <img src="images/lovewhatsurvives.png" width="22%">
+            <span class="songtitle" id="info-bluetrainlines">Blue Train Lines</span>
+            <text class="songartist info-bluetrainlines">Mount Kimbie</text>
+        </li>
+        <li>
+            <div class="icons">
+                <a onclick="displayThexx()" class="moreicon">+</a>
+                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-onhold" data-artist="The XX" data-title="On Hold (Jamie xx Remix)" width="2.1%">
+            </div>
+            <img src="images/onhold.png" width="22%">
+            <span class="songtitle">On Hold (Jamie xx Remix)</span>
+            <text class="songartist">The xx</text>
+        </li>
+        <li>
+            <div class="icons">
+                <a onclick="displayMountKimbie()" class="moreicon">+</a>
+                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-carbonated" data-artist="Mount Kimbie" data-title="Carbonated" width="2.1%">
+            </div>
+            <img src="images/crooksandlovers.png" width="22%">
+            <span class="songtitle">Carbonated</span>
+            <text class="songartist">Mount Kimbie</text>
+        </li>
+        <li>
+            <div class="icons">
+                <a onclick="displayChristianLoffler()" class="moreicon">+</a>
+                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-york" data-artist="Christian Löffler" data-title="York" width="2.1%">
+            </div>
+            <img src="images/york.png" width="22%">
+            <span class="songtitle">York</span>
+            <text class="songartist">Christian Löffler</text>
+        </li>
+        <li>
+            <div class="icons">
+                <a onclick="displayKingKrule()" class="moreicon">+</a>
+                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-thameswater" data-artist="Archy Marshall" data-title="Thames Water" width="2.1%">
+            </div>
+            <img src="images/anewplace2drown.png" width="22%">
+            <span class="songtitle">Thames Water</span>
+            <text class="songartist">Archy Marshall</text>
+        </li>
+        <li>
+            <div class="icons">
+                <a onclick="displayTchami()" class="moreicon">+</a>
+                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-adieu" data-artist="Tchami" data-title="Adieu" width="2.1%">
+            </div>
+            <img src="images/adieu.png" width="22%">
+            <span class="songtitle">Adieu</span>
+            <text class="songartist">Tchami</text>
+        </li>
+        <li>
+            <div class="icons">
+                <a onclick="displayMountKimbie()" class="moreicon">+</a>
+                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-delta" data-artist="Mount Kimbie" data-title="Delta" width="2.1%">
+            </div>
+            <img src="images/lovewhatsurvives.png" width="22%">
+            <span class="songtitle">Delta</span>
+            <text class="songartist">Mount Kimbie</text>
+        </li>
+        <li>
+            <div class="icons">
+                <a onclick="displayMuraMasa()" class="moreicon">+</a>
+                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-untitled" data-artist="Mura Masa" data-title="Untitled" width="2.1%">
+            </div>
+            <img src="images/untitled.png" width="22%">
+            <span class="songtitle">Untitled</span>
+            <text class="songartist">Mura Masa</text>
+        </li>
+        <li>
+            <div class="icons">
+                <a onclick="displayJamiexx()" class="moreicon">+</a>
+                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-sleepsound" data-artist="Jamie xx" data-title="Sleep Sound" width="2.1%">
+            </div>
+            <img src="images/girlsleepsound.png" width="22%">
+            <span class="songtitle">Sleep Sound</span>
+            <text class="songartist">Jamie xx</text>
+        </li>
+    </ul>
+</div>
+<!-- songs -->
+
+<!-- artists -->
+<div class="playlistartists" id="displayArtists">
+    <img src="images/christianloffler.png" width="22%">
+    <span>Christian Löffler</span>
+    <a class="learnmore" onclick="displayChristianLoffler()">learn more</a>
+    <br>
+    <img src="images/jamiexx.png" width="22%">
+    <span>Jamie xx</span>
+    <a class="learnmore" onclick="displayJamiexx()">learn more</a>
+    <br>
+    <img src="images/kingkrule.png" width="22%">
+    <span>King Krule</span>
+    <a class="learnmore" onclick="displayKingKrule()">learn more</a>
+    <br>
+    <img src="images/mountkimbie.png" width="22%">
+    <span>Mount Kimbie</span>
+    <a class="learnmore" onclick="displayMountKimbie()">learn more</a>
+    <br>
+    <img src="images/muramasa.png" width="22%">
+    <span>Mura Masa</span>
+    <a class="learnmore" onclick="displayMuraMasa()">learn more</a>
+    <br>
+    <img src="images/tchami.png" width="22%">
+    <span>Tchami</span>
+    <a class="learnmore" onclick="displayTchami()">learn more</a>
+    <br>
+    <img src="images/thexx.png" width="22%">
+    <span>The xx</span>
+    <a class="learnmore" onclick="displayThexx()">learn more</a>
+    <br>
+</div>
+<!-- MountKimbie -->
+<div class="artistabout" id="displayMountKimbie">
+    <img src="images/mountkimbie.png" width="33%">
+    <div class="bio">
+        <h2>Mount Kimbie</h2>
+        <p>With familiar beats underneath otherworldly productions, Mount Kimbie are arguably responsible for the birth of the term "post-dubstep." Dominic Maker and Kai Compos formed Mount Kimbie while both were attending Southbank University in London. In early 2009 they released their debut EP, Maybes. Later in the year a second EP, Sketch on Glass, appeared and was followed by remixes for the likes of the Big Pink, Foals, and the xx. Hotflush released their full-length debut, Crooks &amp; Lovers, in 2010. Three years later, they returned with Cold Spring Fault Less Youth, an album that featured more vocals including two tracks with King Krule. In 2017, they delivered their third studio album, Love What Survives.</p>
+        <span>Appears on <a onclick="displayAbout()" class="appearson">Ecstatic</a></span>
+    </div>
+    <div class="info">
+        <h3>More Info</h3>
+        <img src="images/instagram.png" width="1.5%">
+        <a class="infolink" href="https://www.instagram.com/mountkimbie/?hl=en" target="_blank">Instagram</a>
+        <br>
+        <img src="images/twitter.png" width="1.5%">
+        <a class="infolink" href="https://twitter.com/mountkimbie?lang=en" target="_blank">Twitter</a>
+        <br>
+        <img src="images/facebook.png" width="1.5%">
+        <a class="infolink" href="https://www.facebook.com/mountkimbie/" target="_blank">Facebook</a>
+        <br>
+        <img src="images/Wikipedia.png" width="1.5%">
+        <a class="infolink" href="https://en.wikipedia.org/wiki/Mount_Kimbie" target="_blank">Wikipedia</a>
+    </div>
+</div>
+<!-- The xx -->
+<div class="artistabout" id="displayThexx">
+    <img src="images/thexx.png" width="33%">
+    <div class="bio">
+        <h2>The xx</h2>
+        <p>Atmospheric English indie pop group the xx formed in London around the talents of Romy Madley Croft, Oliver Sim, Baria Qureshi, and Jamie Smith, when the bandmembers were still in high school. Captivating and cool, the group cites influences that run the gamut from R&amp;B to classic alternative rock. The group's signature brand of moody, soulful indie rock first appeared on the public radar early 2009 with the single "Crystalised," which created a huge buzz among critics and fans alike. The xx released their self-titled debut LP in July that year. Later that year, Qureshi was no longer part of the group; the rest of the xx released a statement saying this was due to "personal differences."</p>
+        <span>Appears on <a onclick="displayAbout()" class="appearson">Ecstatic</a></span>
+    </div>
+    <div class="info">
+        <h3>More Info</h3>
+        <img src="images/instagram.png" width="1.5%">
+        <a class="infolink" href="https://www.instagram.com/thexx/?hl=en" target="_blank">Instagram</a>
+        <br>
+        <img src="images/twitter.png" width="1.5%">
+        <a class="infolink" href="https://twitter.com/the_xx?lang=en" target="_blank">Twitter</a>
+        <br>
+        <img src="images/facebook.png" width="1.5%">
+        <a class="infolink" href="https://www.facebook.com/thexx/" target="_blank">Facebook</a>
+        <br>
+        <img src="images/Wikipedia.png" width="1.5%">
+        <a class="infolink" href="https://en.wikipedia.org/wiki/The_xx" target="_blank">Wikipedia</a>
+    </div>
+</div>
+<!-- Christian Loffler -->
+<div class="artistabout" id="displayChristianLoffler">
+    <img src="images/christianloffler.png" width="33%">
+    <div class="bio">
+        <h2>Christian L&ouml;ffler</h2>
+        <p>Electronic/techno producer Christian L&ouml;ffler specializes in emotive, melancholic music that feels isolated yet strangely relatable. L&ouml;ffler started taking an interest in music at age 14, although instead of picking up a guitar, as his friends did, he dove straight into programming and arranging music on his computer. A lot of his sound is owed to the area he was brought up in, and where he spent most of his time: the Dar&szlig; peninsula in Germany. Inside of his relatively isolated studio, L&ouml;ffler taught himself to use a variety of programs and instruments, as well as collect a huge sound bank of field recordings. For the most part, L&ouml;ffler created music simply because he enjoyed expressing himself.</p>
+        <span>Appears on <a onclick="displayAbout()" class="appearson">Ecstatic</a></span>
+    </div>
+    <div class="info">
+        <h3>More Info</h3>
+        <img src="images/instagram.png" width="1.5%">
+        <a class="infolink" href="https://www.instagram.com/christianloeffler/?hl=en" target="_blank">Instagram</a>
+        <br>
+        <img src="images/twitter.png" width="1.5%">
+        <a class="infolink" href="https://twitter.com/chris_loeffler?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">Twitter</a>
+        <br>
+        <img src="images/facebook.png" width="1.5%">
+        <a class="infolink" href="https://www.facebook.com/christianloefflerofficial/" target="_blank">Facebook</a>
+        <br>
+        <img src="images/Wikipedia.png" width="1.5%">
+        <a class="infolink" href="https://en.wikipedia.org/wiki/Christian_Löffler" target="_blank">Wikipedia</a>
+    </div>
+</div>
+<!-- King Krule -->
+<div class="artistabout" id="displayKingKrule">
+    <img src="images/kingkrule.png" width="33%">
+    <div class="bio">
+        <h2>King Krule</h2>
+        <p>Name after King K. Rool, a character in the Donkey Kong series of video games, King Krule is a solo project of London-based Archy Marshall. The singer, songwriter, guitarist, and keyboardist raised eyebrows with the 2010 single "Out Getting Ribs," released under the alias Zoo Kid, which showcased his distinctively raw voice. Anticipation for Marshall's first album grew, as the song earned him a spot on various high-profile "artists to watch" lists, as well as a nomination in BBC's Sound of 2013 poll. In 2013, Marshall released the first King Krule album, 6 Feet Beneath the Moon. Marshall then collaborated with his brother Jack for the relatively fluid, more electronic A New Place 2 Drown.</p>
+        <span>Appears on 
+            <a onclick="displayAbout()" class="appearson">Ecstatic</a>,
+            <a href="playlist3.html" class="appearson">Idyllic</a>,
+            <a href="playlist5.html" class="appearson">Restless</a></span>
+    </div>
+    <div class="info">
+        <h3>More Info</h3>
+        <img src="images/instagram.png" width="1.5%">
+        <a class="infolink" href="https://www.instagram.com/edgar_the_breathtaker/?hl=en" target="_blank">Instagram</a>
+        <br>
+        <img src="images/facebook.png" width="1.5%">
+        <a class="infolink" href="https://www.facebook.com/King-Krule-184334471606543/" target="_blank">Facebook</a>
+        <br>
+        <img src="images/Wikipedia.png" width="1.5%">
+        <a class="infolink" href="https://en.wikipedia.org/wiki/King_Krule" target="_blank">Wikipedia</a>
+    </div>
+</div>
+<!-- Tchami -->
+<div class="artistabout" id="displayTchami">
+    <img src="images/tchami.png" width="33%">
+    <div class="bio">
+        <h2>Tchami</h2>
+        <p>Tchami is one of the world's most popular DJ's and he's helping to push dance music forward via the future house movement, a collection of artists seeking to honor the history of dance music by continually finding innovative ways to add new sounds and textures while staying true to the core tenets of the house aesthetic. Tchami started out with studying classic House, R&amp;B, and hip-hop, trying to find his voice until he eventually hit upon a sound that's equally energetic and soulful - one capable of moving audiences and leaving them with a feeling of deep bliss. Tchami tours the globe most days out of the year, and has played major festivals, always with the goal to take the audience higher and higher.</p>
+        <span>Appears on 
+            <a onclick="displayAbout()" class="appearson">Ecstatic</a></span>
+    </div>
+    <div class="info">
+        <h3>More Info</h3>
+        <img src="images/instagram.png" width="1.5%">
+        <a class="infolink" href="https://www.instagram.com/tchami/?hl=en" target="_blank">Instagram</a>
+        <br>
+        <img src="images/twitter.png" width="1.5%">
+        <a class="infolink" href="https://twitter.com/iamTchami?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">Twitter</a>
+        <br>
+        <img src="images/facebook.png" width="1.5%">
+        <a class="infolink" href="https://www.facebook.com/iamTchami/" target="_blank">Facebook</a>
+        <br>
+        <img src="images/Wikipedia.png" width="1.5%">
+        <a class="infolink" href="https://en.wikipedia.org/wiki/Tchami" target="_blank">Wikipedia</a>
+    </div>
+</div>
+<!-- Mura Masa -->
+<div class="artistabout" id="displayMuraMasa">
+    <img src="images/muramasa.png" width="33%">
+    <div class="bio">
+        <h2>Mura Masa</h2>
+        <p>Known by his stage name of Mura Masa, electronic producer, songwriter, and multi-instrumentalist Alex Crossan hails from the Channel Island of Guernsey located between England and France. A lifelong musician, Crossan began experimenting with beats and electronic production at the age of 15, and just two years later, his track "Lotus Eater" was picked up by a number of different BBC Radio 1 DJs, effectively launching his career. His 2014 Soundtrack to a Death mixtape was released by German indie Jakarta Records, and the following year he signed a distribution deal with Polydor to release his debut EP, Someday Somewhere.</p>
+        <span>Appears on <a onclick="displayAbout()" class="appearson">Ecstatic</a></span>
+    </div>
+    <div class="info">
+        <h3>More Info</h3>
+        <img src="images/instagram.png" width="1.5%">
+        <a class="infolink" href="https://www.instagram.com/the_mura_masa/?hl=en" target="_blank">Instagram</a>
+        <br>
+        <img src="images/twitter.png" width="1.5%">
+        <a class="infolink" href="https://twitter.com/mura_masa_?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">Twitter</a>
+        <br>
+        <img src="images/facebook.png" width="1.5%">
+        <a class="infolink" href="https://www.facebook.com/MuramasaMusic/" target="_blank">Facebook</a>
+        <br>
+        <img src="images/Wikipedia.png" width="1.5%">
+        <a class="infolink" href="https://en.wikipedia.org/wiki/Mura_Masa" target="_blank">Wikipedia</a>
+    </div>
+</div>
+<!-- Jamie xx -->
+<div class="artistabout" id="displayJamiexx">
+    <img src="images/jamiexx.png" width="33%">
+    <div class="bio">
+        <h2>Jamie xx</h2>
+        <p>Working with and without his Mercury Music Prize winning group the xx, Jamie xx established himself as a forward-thinking beatmaker and producer. Jamie xx began his musical career playing the drums, but after realizing he couldn't use his innovation skills on the instrument, he instead turned to the '80s Media Production Centre, which programmed his computer-based sounds onto electronic percussion pads. In 2008, he teamed up with former school friends Oliver Sim, Romy Madley Croft, and Baria Qureshi to form their band the xx, who signed to XL subsidiary Young Turks a year later and went on to record one of the most well-recieved albums of the decade with their self-titled debut.</p>
+        <span>Appears on <a onclick="displayAbout()" class="appearson">Ecstatic</a></span>
+    </div>
+    <div class="info">
+        <h3>More Info</h3>
+        <img src="images/instagram.png" width="1.5%">
+        <a class="infolink" href="https://www.instagram.com/jamie___xx/?hl=en" target="_blank">Instagram</a>
+        <br>
+        <img src="images/twitter.png" width="1.5%">
+        <a class="infolink" href="https://twitter.com/jamie___xx?lang=en" target="_blank">Twitter</a>
+        <br>
+        <img src="images/facebook.png" width="1.5%">
+        <a class="infolink" href="https://www.facebook.com/jamiexxofficial/" target="_blank">Facebook</a>
+        <br>
+        <img src="images/Wikipedia.png" width="1.5%">
+        <a class="infolink" href="https://en.wikipedia.org/wiki/Jamie_xx" target="_blank">Wikipedia</a>
+    </div>
+</div>
+<!-- artists -->
+
+<!-- audio -->
+<div class="audio">
+    <audio id="audio-adieu" src="music/ecstatic/adieu.mp3"></audio>
+    <audio id="audio-bluetrainlines" src="music/ecstatic/bluetrainlines.mp3"></audio>
+    <audio id="audio-carbonated" src="music/ecstatic/carbonated.mp3"></audio>
+    <audio id="audio-delta" src="music/ecstatic/delta.mp3"></audio>
+    <audio id="audio-onhold" src="music/ecstatic/onhold.mp3"></audio>
+    <audio id="audio-sleepsound" src="music/ecstatic/sleepsound.mp3"></audio>
+    <audio id="audio-thameswater" src="music/ecstatic/thameswater.mp3"></audio>
+    <audio id="audio-untitled" src="music/ecstatic/untitled.mp3"></audio>
+    <audio id="audio-york" src="music/ecstatic/york.mp3"></audio>
+</div>
+<!-- audio -->
+
+<script>
+$(".dropbtn").click(function () {
+
+    $dropbtn = $(this);
+    
+    $dropdowncontent = $dropbtn.next();
+    
+    $dropdowncontent.slideToggle(680, function () {
+    });
+
+    $dropdowncontent.toggleClass("opened")
+
+});
+
+function displayArtists() {
+    document.getElementById("displayArtists").style.display = "block";
+    document.getElementById("displayAbout").style.display = "none";
+    document.getElementById("displaySongs").style.display = "none";
+    document.getElementById("displayMountKimbie").style.display = "none";
+    document.getElementById("displayThexx").style.display = "none";
+    document.getElementById("displayChristianLoffler").style.display = "none";
+    document.getElementById("displayKingKrule").style.display = "none";
+    document.getElementById("displayTchami").style.display = "none";
+    document.getElementById("displayMuraMasa").style.display = "none";
+    document.getElementById("displayJamiexx").style.display = "none";
+}
+
+function displaySongs() {
+    document.getElementById("displaySongs").style.display = "block";
+    document.getElementById("displayAbout").style.display = "none";
+    document.getElementById("displayArtists").style.display = "none";
+    document.getElementById("displayMountKimbie").style.display = "none";
+    document.getElementById("displayThexx").style.display = "none";
+    document.getElementById("displayChristianLoffler").style.display = "none";
+    document.getElementById("displayKingKrule").style.display = "none";
+    document.getElementById("displayTchami").style.display = "none";
+    document.getElementById("displayMuraMasa").style.display = "none";
+    document.getElementById("displayJamiexx").style.display = "none";
+}
+
+function displayAbout() {
+    document.getElementById("displayAbout").style.display = "block";
+    document.getElementById("displayArtists").style.display = "none";
+    document.getElementById("displaySongs").style.display = "none";
+    document.getElementById("displayMountKimbie").style.display = "none";
+    document.getElementById("displayThexx").style.display = "none";
+    document.getElementById("displayChristianLoffler").style.display = "none";
+    document.getElementById("displayKingKrule").style.display = "none";
+    document.getElementById("displayTchami").style.display = "none";
+    document.getElementById("displayMuraMasa").style.display = "none";
+    document.getElementById("displayJamiexx").style.display = "none";
+}
+
+function displayMountKimbie() {
+    document.getElementById("displayMountKimbie").style.display = "block";
+    document.getElementById("displayArtists").style.display = "none";
+    document.getElementById("displaySongs").style.display = "none";
+    document.getElementById("displayAbout").style.display = "none";
+    document.getElementById("displayThexx").style.display = "none";
+    document.getElementById("displayChristianLoffler").style.display = "none";
+    document.getElementById("displayKingKrule").style.display = "none";
+    document.getElementById("displayTchami").style.display = "none";
+    document.getElementById("displayMuraMasa").style.display = "none";
+    document.getElementById("displayJamiexx").style.display = "none";
+}
+
+function displayThexx() {
+    document.getElementById("displayThexx").style.display = "block";
+    document.getElementById("displayArtists").style.display = "none";
+    document.getElementById("displaySongs").style.display = "none";
+    document.getElementById("displayAbout").style.display = "none";
+    document.getElementById("displayMountKimbie").style.display = "none";
+    document.getElementById("displayChristianLoffler").style.display = "none";
+    document.getElementById("displayKingKrule").style.display = "none";
+    document.getElementById("displayTchami").style.display = "none";
+    document.getElementById("displayMuraMasa").style.display = "none";
+    document.getElementById("displayJamiexx").style.display = "none";
+}
+
+function displayChristianLoffler() {
+    document.getElementById("displayChristianLoffler").style.display = "block";
+    document.getElementById("displayArtists").style.display = "none";
+    document.getElementById("displaySongs").style.display = "none";
+    document.getElementById("displayAbout").style.display = "none";
+    document.getElementById("displayMountKimbie").style.display = "none";
+    document.getElementById("displayThexx").style.display = "none";
+    document.getElementById("displayKingKrule").style.display = "none";
+    document.getElementById("displayTchami").style.display = "none";
+    document.getElementById("displayMuraMasa").style.display = "none";
+    document.getElementById("displayJamiexx").style.display = "none";
+}
+
+function displayKingKrule() {
+    document.getElementById("displayKingKrule").style.display = "block";
+    document.getElementById("displayArtists").style.display = "none";
+    document.getElementById("displaySongs").style.display = "none";
+    document.getElementById("displayAbout").style.display = "none";
+    document.getElementById("displayMountKimbie").style.display = "none";
+    document.getElementById("displayThexx").style.display = "none";
+    document.getElementById("displayChristianLoffler").style.display = "none";
+    document.getElementById("displayTchami").style.display = "none";
+    document.getElementById("displayMuraMasa").style.display = "none";
+    document.getElementById("displayJamiexx").style.display = "none";
+}
+
+function displayTchami() {
+    document.getElementById("displayTchami").style.display = "block";
+    document.getElementById("displayArtists").style.display = "none";
+    document.getElementById("displaySongs").style.display = "none";
+    document.getElementById("displayAbout").style.display = "none";
+    document.getElementById("displayMountKimbie").style.display = "none";
+    document.getElementById("displayThexx").style.display = "none";
+    document.getElementById("displayChristianLoffler").style.display = "none";
+    document.getElementById("displayKingKrule").style.display = "none";
+    document.getElementById("displayMuraMasa").style.display = "none";
+    document.getElementById("displayJamiexx").style.display = "none";
+}
+
+function displayMuraMasa() {
+    document.getElementById("displayMuraMasa").style.display = "block";
+    document.getElementById("displayArtists").style.display = "none";
+    document.getElementById("displaySongs").style.display = "none";
+    document.getElementById("displayAbout").style.display = "none";
+    document.getElementById("displayMountKimbie").style.display = "none";
+    document.getElementById("displayThexx").style.display = "none";
+    document.getElementById("displayChristianLoffler").style.display = "none";
+    document.getElementById("displayKingKrule").style.display = "none";
+    document.getElementById("displayTchami").style.display = "none";
+    document.getElementById("displayJamiexx").style.display = "none";
+}
+
+function displayJamiexx() {
+    document.getElementById("displayJamiexx").style.display = "block";
+    document.getElementById("displayArtists").style.display = "none";
+    document.getElementById("displaySongs").style.display = "none";
+    document.getElementById("displayAbout").style.display = "none";
+    document.getElementById("displayMountKimbie").style.display = "none";
+    document.getElementById("displayThexx").style.display = "none";
+    document.getElementById("displayChristianLoffler").style.display = "none";
+    document.getElementById("displayKingKrule").style.display = "none";
+    document.getElementById("displayTchami").style.display = "none";
+    document.getElementById("displayMuraMasa").style.display = "none";
+}
+
+$(function() {
+
+    var stopAudio = function() {
+        console.log('stop music');
+        var $allAudio = $('audio');
+
+        $allAudio.each(function() {
+            var $audio = $(this);
+
+            $audio.get(0).pause();
+        });
+
+        $('.play').removeClass('hidden');
+        $('.pause').removeClass('visible');
+    };
+
+    $('.audio-play-button').click(function() {
+    // Stop audio before playing the next song.
+        stopAudio();
+
+        console.log('start music');
+
+        var audioID = $(this).attr('data-audio-selector');
+        var $audio = $(audioID);
+
+        var artist = $(this).attr("data-artist");
+        var title = $(this).attr("data-title");
+
+        $('.player .title').text(title);
+        $('.player .artist').text(artist);
+
+        console.log('audioID is', audioID);
+        console.log('$audio target is', $audio);
+        console.log('artist is', artist);
+        console.log('title is', title);
+
+        $audio.get(0).play();
+
+        $('.play').addClass('hidden');
+        $('.pause').addClass('visible');
+
+    });
+
+    // Stop audio when clicking the stop button.
+    $('.audio-stop-button').click(function() {
+        stopAudio();
+    });
+
+});
+
+  // var resumeAudio = function() {
+  //   var $allAudio = $('audio');
+
+  //   $allAudio.each(function() {
+  //     var $audio = $(this);
+
+  //     $audio.get(0).play();
+  //   });
+  // };
+
+  // $('.audio-play-button2').click(function() {
+  //   resumeAudio();
+  // });
+
+$(document).ready(function(){
+
+    $.get( "http://api.are.na/v2/channels/carolynolaguivel-moods-ecstatic", function(data) {
+        // console.log(data)
+
+        var ecstatic = data.contents;
+
+        console.log(ecstatic)
+    
+
+        for (var i = 0; i < ecstatic.length; i++) {
+
+            $(".playlistabout").append("<img src=" + ecstatic[i].image.original.url + " width='25%'>")
+        };
+
+    });
+});
+
+
+</script>
+</body>
+</html>

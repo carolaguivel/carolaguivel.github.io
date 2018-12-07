@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gloomy</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://use.typekit.net/kmk8gyv.css">
+	<link rel="stylesheet" type="text/css" href="flickity/flickity.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.8.21.custom.min.js"></script>
+	<meta charset="UTF-8">
+</head>
+<body>
+
+<!-- menu -->
+<ul class="menu">
+	<li><a href="index.html">Playlists</a></li>
+	<li><a href="artists.html">Artists</a></li>
+	<li><a href="search.html">Search</a></li>
+</ul>
+
+<div class="dropdown">
+	<div class="dropbtn">+</div>
+  	<div id="mydropdown" class="dropdowncontent">
+		<a onclick="displayAbout()">about</a>
+		<a onclick="displaySongs()">songs</a>
+		<a onclick="displayArtists()">artists</a>
+	</div>
+</div>
+<!-- menu -->
+
+<div class="playlisttitle">
+    <h1 class="gloomy">Gloomy<h1>
+</div>
+
+<div class="player">
+    <div class="pl"></div>
+    <div class="title"></div>
+    <div class="artist"></div>
+    <!-- <div class="cover"></div> -->
+    <div class="controls">
+        <img src="images/playicon2.png" class="play audio-play-button2" width="10%">
+        <img src="images/stopicon.png" class="pause audio-stop-button" width="10%">
+        <img src="images/left.png" class="rew" width="10%">
+        <img src="images/right.png" class="fwd" width="10%">
+    </div>
+    <div class="volume"></div>
+    <div class="tracker"></div>
+</div>
+
+<div class="playlistabout" id="displayAbout"></div>
+
+<div class="playlistsongs" id="displaySongs">
+    <ul class="playlist">
+        <li>
+            <div class="icons">
+                <a onclick="displayBatForLashes()" class="moreicon">+</a>
+                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-whatsagirltodo" data-artist="Bat For Lashes" data-title="What's A Girl To Do?" width="2.1%">
+            </div>
+            <img src="images/furandgold.png" width="22%">
+            <span class="songtitle">What's A Girl To Do?</span>
+            <text class="songartist">Bat For Lashes</text>
+        </li>
+        <li>
+            <div class="icons">
+                <a onclick="displayJoyDivision()" class="moreicon">+</a>
+                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-sheslostcontrol" data-artist="Joy Division" data-title="She's Lost Control" width="2.1%">
+            </div>
+            <img src="images/unknownpleasures.png" width="22%">
+            <span class="songtitle">She's Lost Control</span>
+            <text class="songartist">Joy Division</text>
+        </li>
+        <li>
+            <div class="icons">
+                <a onclick="displayTheCure()" class="moreicon">+</a>
+                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-lullaby" data-artist="The Cure" data-title="Lullaby" width="2.1%">
+            </div>
+            <img src="images/disintegration.png" width="22%">
+            <span class="songtitle">Lullaby</span>
+            <text class="songartist">The Cure</text>
+        </li>
+        <li>
+            <div class="icons">
+                <a onclick="displayBauhaus()" class="moreicon">+</a>
+                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-belalugosisdead" data-artist="Bauhaus" data-title="Bela Lugosi's Dead" width="2.1%">
+            </div>
+            <img src="images/bauhausalbum.png" width="22%">
+            <span class="songtitle">Bela Lugosi's Dead</span>
+            <text class="songartist">Bauhaus</text>
+        </li>
+        <li>
+            <div class="icons">
+                <a onclick="displaySheWantsRevenge()" class="moreicon">+</a>
+                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-tearyouapart" data-artist="She Wants Revenge" data-title="Tear You Apart" width="2.1%">
+            </div>
+            <img src="images/shewantsrevengealbum.png" width="22%">
+            <span class="songtitle">Tear You Apart</span>
+            <text class="songartist">She Wants Revenge</text>
+        </li>
+        <li>
+            <div class="icons">
+                <a onclick="displayBauhaus()" class="moreicon">+</a>
+                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-darkentries" data-artist="Bauhaus" data-title="Dark Entries" width="2.1%">
+            </div>
+            <img src="images/bauhausalbum.png" width="22%">
+            <span class="songtitle">Dark Entries</span>
+            <text class="songartist">Bauhaus</text>
+        </li>
+        <li>
+            <div class="icons">
+                <a onclick="displayTheSoftMoon()" class="moreicon">+</a>
+                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-zeros" data-artist="The Soft Moon" data-title="Zeros" width="2.1%">
+            </div>
+            <img src="images/zeros.png" width="22%">
+            <span class="songtitle">Zeros</span>
+            <text class="songartist">The Soft Moon</text>
+        </li>
+        <li>
+            <div class="icons">
+                <a onclick="displaySheWantsRevenge()" class="moreicon">+</a>
+                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-sister" data-artist="She Wants Revenge" data-title="Sister" width="2.1%">
+            </div>
+            <img src="images/shewantsrevengealbum.png" width="22%">
+            <span class="songtitle">Sister</span>
+            <text class="songartist">She Wants Revenge</text>
+        </li>
+        <li>
+            <div class="icons">
+                <a onclick="displayTheCure()" class="moreicon">+</a>
+                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-siamesetwins" data-artist="The Cure" data-title="Siamese Twins" width="2.1%">
+            </div>
+            <img src="images/pornography.png" width="22%">
+            <span class="songtitle">Siamese Twins</span>
+            <text class="songartist">The Cure</text>
+        </li>
+        <li>
+            <div class="icons">
+                <a onclick="displayJoyDivision()" class="moreicon">+</a>
+                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-theeternal" data-artist="Joy Division" data-title="The Eternal" width="2.1%">
+            </div>
+            <img src="images/closer.png" width="22%">
+            <span class="songtitle">The Eternal</span>
+            <text class="songartist">Joy Division</text>
+        </li>
+    </ul>
+</div>
+
+<!-- artists -->
+<div class="playlistartists" id="displayArtists">
+    <img src="images/batforlashes.png" width="22%">
+    <span>Bat For Lashes</span>
+    <a class="learnmore" onclick="displayBatForLashes()">learn more</a>
+    <br>
+    <img src="images/bauhaus.png" width="22%">
+    <span>Bauhaus</span>
+    <a class="learnmore" onclick="displayBauhaus()">learn more</a>
+    <br>
+    <img src="images/thecure.png" width="22%">
+    <span>The Cure</span>
+    <a class="learnmore" onclick="displayTheCure()">learn more</a>
+    <br>
+    <img src="images/joydivision.png" width="22%">
+    <span>Joy Division</span>
+    <a class="learnmore" onclick="displayJoyDivision()">learn more</a>
+    <br>
+    <img src="images/shewantsrevenge.png" width="22%">
+    <span>She Wants Revenge</span>
+    <a class="learnmore" onclick="displaySheWantsRevenge()">learn more</a>
+    <br>
+    <img src="images/thesoftmoon.png" width="22%">
+    <span>The Soft Moon</span>
+    <a class="learnmore" onclick="displayTheSoftMoon()">learn more</a>
+</div>
+
+<!-- Bat For Lashes -->
+<div class="artistabout" id="displayBatForLashes">
+    <img src="images/batforlashes.png" width="33%">
+    <div class="bio">
+        <h2>Bat For Lashes</h2>
+        <p>Crafting a mystical indie-rock sound that drew comparison to Kate Bush and Bj&ouml;rk, Bat For Lashes is the project of Natasha Khan. Born into the Khan family squash players, the half-Pakistani, half-English singer/songwriter moved to Hertfordshire, England when she was five and taught herself to play piano when she was 11. She conceived of Bat For Lashes while on a trip to San Francisco, drawing on inspirations like Steve Reich and Susan Hiller, as well as the multimedia installations she learned to create while studying art at the University of Brighton. Her acclaimed debut album, Fur and Gold, arrived in September 2006.</p>
+        <span>Appears on <a onclick="displayAbout()" class="appearson">Gloomy</a></span>
+    </div>
+    <div class="info">
+        <h3>More Info</h3>
+        <img src="images/instagram.png" width="1.5%">
+        <a class="infolink" href="https://www.instagram.com/batforlashes/?hl=en" target="_blank">Instagram</a>
+        <br>
+        <img src="images/twitter.png" width="1.5%">
+        <a class="infolink" href="https://twitter.com/BatForLashes?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">Twitter</a>
+        <br>
+        <img src="images/facebook.png" width="1.5%">
+        <a class="infolink" href="https://www.facebook.com/batforlashes/" target="_blank">Facebook</a>
+        <br>
+        <img src="images/Wikipedia.png" width="1.5%">
+        <a class="infolink" href="https://en.wikipedia.org/wiki/Bat_for_Lashes" target="_blank">Wikipedia</a>
+    </div>
+</div>
+<!-- Joy Division -->
+<div class="artistabout" id="displayJoyDivision">
+    <img src="images/joydivision.png" width="33%">
+    <div class="bio">
+        <h2>Joy Division</h2>
+        <p>Formed in the wake of the punk explosion in England, Joy Division became the first band in the post-punk movement by later emphasizing not anger and energy but mood and expression, pointing ahead to the rise of melancholy alternative music in the '80s. Though the group's raw initial sides fit the bill for any punk band, Joy Division later incorporated synthesizers (taboo in the low-tech world of '70s punk) and more haunting melodies, emphasized by the isolated, tortured lyrics of its lead vocalist, Ian Curtis. While the British punk movement shocked the world during the late '70s.</p>
+        <span>Appears on <a onclick="displayAbout()" class="appearson">Gloomy</a></span>
+    </div>
+    <div class="info">
+        <h3>More Info</h3>
+        <img src="images/instagram.png" width="1.5%">
+        <a class="infolink" href="https://www.instagram.com/officialjoydivision/?hl=en" target="_blank">Instagram</a>
+        <br>
+        <img src="images/twitter.png" width="1.5%">
+        <a class="infolink" href="https://twitter.com/joydivision?lang=en" target="_blank">Twitter</a>
+        <br>
+        <img src="images/facebook.png" width="1.5%">
+        <a class="infolink" href="https://www.facebook.com/JoyDivisionOfficial/" target="_blank">Facebook</a>
+        <br>
+        <img src="images/Wikipedia.png" width="1.5%">
+        <a class="infolink" href="https://en.wikipedia.org/wiki/Joy_Division" target="_blank">Wikipedia</a>
+    </div>
+</div>
+<!-- The Cure -->
+<div class="artistabout" id="displayTheCure">
+    <img src="images/thecure.png" width="33%">
+    <div class="bio">
+        <h2>The Cure</h2>
+        <p>Out of all the bands that emerged in the immediate aftermath of punk rock in the late '70s, few were as enduring and popular as the Cure. Led through numerous incarnations by guitarist/vocalist Rober Smith, the band became well-known for its slow, gloomy dirges and Smith's ghoulish appearance, a public image that often hid the diversity of the Cure's music. At the outset, the Cure played jagged, edgy pop songs before slowly evolving into a more textured outfit. As one of the bands that laid the seeds for goth rock, the group created towering layers of guitar and synthesizers.</p>
+        <span>Appears on <a onclick="displayAbout()" class="appearson">Gloomy</a></span>
+    </div>
+    <div class="info">
+        <h3>More Info</h3>
+        <img src="images/twitter.png" width="1.5%">
+        <a class="infolink" href="https://twitter.com/thecure?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">Twitter</a>
+        <br>
+        <img src="images/facebook.png" width="1.5%">
+        <a class="infolink" href="https://www.facebook.com/thecure/" target="_blank">Facebook</a>
+        <br>
+        <img src="images/Wikipedia.png" width="1.5%">
+        <a class="infolink" href="https://en.wikipedia.org/wiki/The_Cure" target="_blank">Wikipedia</a>
+    </div>
+</div>
+<!-- Bauhaus -->
+<div class="artistabout" id="displayBauhaus">
+    <img src="images/bauhaus.png" width="33%">
+    <div class="bio">
+        <h2>Bauhaus</h2>
+        <p>Bauhaus are the founding fathers of goth rock, creating a minimalistic overbearingly gloomy style of post-punk rock driven by jagged guitar chords and cold, distant synthesizers. Throughout their brief career, the band explored all the variations on their bleak musical ideas, adding elements of glam rock, experimental electronic rock, funk, and heavy metal. While their following has never expanded beyond a cult, they kept their cult alive well into the '90s, a full decade after they disbanded.</p>
+        <span>Appears on <a onclick="displayAbout()" class="appearson">Gloomy</a></span>
+    </div>
+    <div class="info">
+        <h3>More Info</h3>
+        <img src="images/facebook.png" width="1.5%">
+        <a class="infolink" href="https://www.facebook.com/BauhausOfficial/" target="_blank">Facebook</a>
+        <br>
+        <img src="images/Wikipedia.png" width="1.5%">
+        <a class="infolink" href="https://en.wikipedia.org/wiki/Bauhaus_(band)" target="_blank">Wikipedia</a>
+    </div>
+</div>
+<!-- She Wants Revenge -->
+<div class="artistabout" id="displaySheWantsRevenge">
+    <img src="images/shewantsrevenge.png" width="33%">
+    <div class="bio">
+        <h2>She Wants Revenge</h2>
+        <p>Los Angeles DJs Justin Warfield and Adam "Adam 12" Bravin formed the moody, Joy Division-inspired She Wants Revenge in 2003. A fortuitous combination of word of mouth, industry connections, and airplay on Sirius Satellite Radio and West Coast airwave giant KCRW provided the duo with enough exposure to snag a record deal with Geffen, resulting in a 2006 self-titled release that drew comparisons to Interpol, early Depeche Mode, and the Bravery, as well as their aforementioned eternally depressed post-punk heroes from England. After touring with Depeche Mode, they returned with This Is Forever.</p>
+        <span>Appears on <a onclick="displayAbout()" class="appearson">Gloomy</a></span>
+    </div>
+    <div class="info">
+        <h3>More Info</h3>
+        <img src="images/instagram.png" width="1.5%">
+        <a class="infolink" href="https://www.instagram.com/shewantsrevenge/?hl=en" target="_blank">Instagram</a>
+        <br>
+        <img src="images/twitter.png" width="1.5%">
+        <a class="infolink" href="https://twitter.com/shewantsrevenge?lang=en" target="_blank">Twitter</a>
+        <br>
+        <img src="images/facebook.png" width="1.5%">
+        <a class="infolink" href="https://www.facebook.com/OfficialSheWantsRevenge/" target="_blank">Facebook</a>
+        <br>
+        <img src="images/Wikipedia.png" width="1.5%">
+        <a class="infolink" href="https://en.wikipedia.org/wiki/She_Wants_Revenge" target="_blank">Wikipedia</a>
+    </div>
+</div>
+<!-- The Soft Moon -->
+<div class="artistabout" id="displayTheSoftMoon">
+    <img src="images/thesoftmoon.png" width="33%">
+    <div class="bio">
+        <h2>The Soft Moon</h2>
+        <p>The one-man project of Louis Vasquez, the Soft Moon gives the darkly hypnotic sounds of Suicide, Joy Division, Bauhaus, and Krautrock new life with a stripped-down approach. Vesquez is also inspired by his Afro-Cuban heritage and the wide-open spaces of the Mojave Desert where he was raised. While working in San Francisco, Vasquez his first single, Breathe the Fire, in March 2010.</p>
+        <span>Appears on <a onclick="displayAbout()" class="appearson">Gloomy</a></span>
+    </div>
+    <div class="info">
+        <h3>More Info</h3>
+        <img src="images/instagram.png" width="1.5%">
+        <a class="infolink" href="https://www.instagram.com/the_soft_moon/?hl=en" target="_blank">Instagram</a>
+        <br>
+        <img src="images/twitter.png" width="1.5%">
+        <a class="infolink" href="https://twitter.com/thesoftmoon?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">Twitter</a>
+        <br>
+        <img src="images/facebook.png" width="1.5%">
+        <a class="infolink" href="https://www.facebook.com/thesoftmoon/" target="_blank">Facebook</a>
+        <br>
+        <img src="images/Wikipedia.png" width="1.5%">
+        <a class="infolink" href="https://en.wikipedia.org/wiki/The_Soft_Moon" target="_blank">Wikipedia</a>
+    </div>
+</div>
+<!-- artists -->
+
+<!-- audio -->
+<div class="audio">
+    <audio id="audio-whatsagirltodo" src="music/gloomy/whatsagirltodo.mp3"></audio>
+    <audio id="audio-sheslostcontrol" src="music/gloomy/sheslostcontrol.mp3"></audio>
+    <audio id="audio-belalugosisdead" src="music/gloomy/belalugosisdead.mp3"></audio>
+    <audio id="audio-tearyouapart" src="music/gloomy/tearyouapart.mp3"></audio>
+    <audio id="audio-sister" src="music/gloomy/sister.mp3"></audio>
+    <audio id="audio-zeros" src="music/gloomy/zeros.mp3"></audio>
+    <audio id="audio-darkentries" src="music/gloomy/darkentries.mp3"></audio>
+    <audio id="audio-lullaby" src="music/gloomy/lullaby.mp3"></audio>
+    <audio id="audio-siamesetwins" src="music/gloomy/siamesetwins.mp3"></audio>
+    <audio id="audio-theeternal" src="music/gloomy/theeternal.mp3"></audio>
+</div>
+<!-- audio -->
+
+<script></script>
+<script>
+$(".dropbtn").click(function () {
+
+    $dropbtn = $(this);
+    
+    $dropdowncontent = $dropbtn.next();
+    
+    $dropdowncontent.slideToggle(680, function () {
+    });
+
+    $dropdowncontent.toggleClass("opened")
+
+});
+
+function displayArtists() {
+    document.getElementById("displayArtists").style.display = "block";
+    document.getElementById("displayAbout").style.display = "none";
+    document.getElementById("displaySongs").style.display = "none";
+    document.getElementById("displayBatForLashes").style.display = "none";
+    document.getElementById("displayJoyDivision").style.display = "none";
+    document.getElementById("displayTheCure").style.display = "none";
+    document.getElementById("displayBauhaus").style.display = "none";
+    document.getElementById("displaySheWantsRevenge").style.display = "none";
+    document.getElementById("displayTheSoftMoon").style.display = "none";
+}
+
+function displaySongs() {
+    document.getElementById("displaySongs").style.display = "block";
+    document.getElementById("displayAbout").style.display = "none";
+    document.getElementById("displayArtists").style.display = "none";
+    document.getElementById("displayBatForLashes").style.display = "none";
+    document.getElementById("displayJoyDivision").style.display = "none";
+    document.getElementById("displayTheCure").style.display = "none";
+    document.getElementById("displayBauhaus").style.display = "none";
+    document.getElementById("displaySheWantsRevenge").style.display = "none";
+    document.getElementById("displayTheSoftMoon").style.display = "none";
+}
+
+function displayAbout() {
+    document.getElementById("displayAbout").style.display = "block";
+    document.getElementById("displayArtists").style.display = "none";
+    document.getElementById("displaySongs").style.display = "none";
+    document.getElementById("displayBatForLashes").style.display = "none";
+    document.getElementById("displayJoyDivision").style.display = "none";
+    document.getElementById("displayTheCure").style.display = "none";
+    document.getElementById("displayBauhaus").style.display = "none";
+    document.getElementById("displaySheWantsRevenge").style.display = "none";
+    document.getElementById("displayTheSoftMoon").style.display = "none";
+}
+
+function displayBatForLashes() {
+    document.getElementById("displayBatForLashes").style.display = "block";
+    document.getElementById("displayAbout").style.display = "none";
+    document.getElementById("displayArtists").style.display = "none";
+    document.getElementById("displaySongs").style.display = "none";
+    document.getElementById("displayJoyDivision").style.display = "none";
+    document.getElementById("displayTheCure").style.display = "none";
+    document.getElementById("displayBauhaus").style.display = "none";
+    document.getElementById("displaySheWantsRevenge").style.display = "none";
+    document.getElementById("displayTheSoftMoon").style.display = "none";
+}
+
+function displayJoyDivision() {
+    document.getElementById("displayJoyDivision").style.display = "block";
+    document.getElementById("displayAbout").style.display = "none";
+    document.getElementById("displayArtists").style.display = "none";
+    document.getElementById("displaySongs").style.display = "none";
+    document.getElementById("displayBatForLashes").style.display = "none";
+    document.getElementById("displayBauhaus").style.display = "none";
+    document.getElementById("displayTheCure").style.display = "none";
+    document.getElementById("displaySheWantsRevenge").style.display = "none";
+    document.getElementById("displayTheSoftMoon").style.display = "none";
+}
+
+function displayTheCure() {
+    document.getElementById("displayTheCure").style.display = "block";
+    document.getElementById("displayAbout").style.display = "none";
+    document.getElementById("displayArtists").style.display = "none";
+    document.getElementById("displaySongs").style.display = "none";
+    document.getElementById("displayBatForLashes").style.display = "none";
+    document.getElementById("displayJoyDivision").style.display = "none";
+    document.getElementById("displayBauhaus").style.display = "none";
+    document.getElementById("displaySheWantsRevenge").style.display = "none";
+    document.getElementById("displayTheSoftMoon").style.display = "none";
+}
+
+function displayBauhaus() {
+    document.getElementById("displayBauhaus").style.display = "block";
+    document.getElementById("displayAbout").style.display = "none";
+    document.getElementById("displayArtists").style.display = "none";
+    document.getElementById("displaySongs").style.display = "none";
+    document.getElementById("displayBatForLashes").style.display = "none";
+    document.getElementById("displayTheCure").style.display = "none";
+    document.getElementById("displayJoyDivision").style.display = "none";
+    document.getElementById("displaySheWantsRevenge").style.display = "none";
+    document.getElementById("displayTheSoftMoon").style.display = "none";
+}
+
+function displaySheWantsRevenge() {
+    document.getElementById("displaySheWantsRevenge").style.display = "block";
+    document.getElementById("displayAbout").style.display = "none";
+    document.getElementById("displayArtists").style.display = "none";
+    document.getElementById("displaySongs").style.display = "none";
+    document.getElementById("displayBatForLashes").style.display = "none";
+    document.getElementById("displayTheCure").style.display = "none";
+    document.getElementById("displayJoyDivision").style.display = "none";
+    document.getElementById("displayBauhaus").style.display = "none";
+    document.getElementById("displayTheSoftMoon").style.display = "none";
+}
+
+function displayTheSoftMoon() {
+    document.getElementById("displayTheSoftMoon").style.display = "block";
+    document.getElementById("displayAbout").style.display = "none";
+    document.getElementById("displayArtists").style.display = "none";
+    document.getElementById("displaySongs").style.display = "none";
+    document.getElementById("displayBatForLashes").style.display = "none";
+    document.getElementById("displayTheCure").style.display = "none";
+    document.getElementById("displayJoyDivision").style.display = "none";
+    document.getElementById("displayBauhaus").style.display = "none";
+    document.getElementById("displaySheWantsRevenge").style.display = "none";
+}
+
+$(function() {
+
+    var stopAudio = function() {
+        console.log('stop music');
+        var $allAudio = $('audio');
+
+        $allAudio.each(function() {
+            var $audio = $(this);
+
+            $audio.get(0).pause();
+        });
+
+        $('.play').removeClass('hidden');
+        $('.pause').removeClass('visible');
+    };
+
+    $('.audio-play-button').click(function() {
+    // Stop audio before playing the next song.
+        stopAudio();
+
+        console.log('start music');
+
+        var audioID = $(this).attr('data-audio-selector');
+        var $audio = $(audioID);
+
+        var artist = $(this).attr("data-artist");
+        var title = $(this).attr("data-title");
+
+        $('.player .title').text(title);
+        $('.player .artist').text(artist);
+
+        console.log('audioID is', audioID);
+        console.log('$audio target is', $audio);
+        console.log('artist is', artist);
+        console.log('title is', title);
+
+        $audio.get(0).play();
+
+        $('.play').addClass('hidden');
+        $('.pause').addClass('visible');
+
+    });
+
+    // Stop audio when clicking the stop button.
+    $('.audio-stop-button').click(function() {
+        stopAudio();
+    });
+
+});
+
+  // var resumeAudio = function() {
+  //   var $allAudio = $('audio');
+
+  //   $allAudio.each(function() {
+  //     var $audio = $(this);
+
+  //     $audio.get(0).play();
+  //   });
+  // };
+
+  // $('.audio-play-button2').click(function() {
+  //   resumeAudio();
+  // });
+
+$(document).ready(function(){
+
+    $.get( "http://api.are.na/v2/channels/carolynolaguivel-moods-gloomy", function(data) {
+        // console.log(data)
+
+        var gloomy = data.contents;
+
+        console.log(gloomy)
+    
+
+        for (var i = 0; i < gloomy.length; i++) {
+
+            $(".playlistabout").append("<img src=" + gloomy[i].image.original.url + " width='25%'>")
+        };
+
+    });
+});
+
+</script>
+</body>
+</html>

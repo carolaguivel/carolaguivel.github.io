@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Restless</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://use.typekit.net/kmk8gyv.css">
+	<link rel="stylesheet" type="text/css" href="flickity/flickity.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.8.21.custom.min.js"></script>
+	<meta charset="UTF-8">
+</head>
+<body>
+
+<!-- menu -->
+<ul class="menu">
+	<li><a href="index.html">Playlists</a></li>
+	<li><a href="artists.html">Artists</a></li>
+	<li><a href="search.html">Search</a></li>
+</ul>
+
+<div class="dropdown">
+	<div class="dropbtn">+</div>
+  	<div id="mydropdown" class="dropdowncontent">
+		<a onclick="displayAbout()">about</a>
+		<a onclick="displaySongs()">songs</a>
+		<a onclick="displayArtists()">artists</a>
+	</div>
+</div>
+<!-- menu -->
+
+<div class="playlisttitle">
+    <h1 class="restless">Restless<h1>
+</div>
+
+<div class="player">
+    <div class="pl"></div>
+    <div class="title"></div>
+    <div class="artist"></div>
+    <div class="controls">
+        <img src="images/playicon2.png" class="play audio-play-button2" width="10%">
+        <img src="images/stopicon.png" class="pause audio-stop-button" width="10%">
+        <img src="images/left.png" class="rew" width="10%">
+        <img src="images/right.png" class="fwd" width="10%">
+    </div>
+    <div class="volume"></div>
+    <div class="tracker"></div>
+</div>
+
+<div class="playlistabout" id="displayAbout"></div>
+
+<div class="playlistsongs" id="displaySongs">
+    <ul class="playlist">
+        <li>
+            <div class="icons">
+                <a onclick="displayKingKrule()" class="moreicon">+</a>
+                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-halfmanhalfshark" data-artist="King Krule" data-title="Half Man Half Shark" width="2.1%">
+            </div>
+            <img src="images/theooz.png" width="22%">
+            <span class="songtitle">Half Man Half Shark</span>
+            <text class="songartist">King Krule</text>
+        </li>
+        <li>
+            <div class="icons">
+                <a onclick="displayBeshken()" class="moreicon">+</a>
+                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-forceofevil" data-artist="Beshken" data-title="Force of Evil" width="2.1%">
+            </div>
+            <img src="images/fortime.png" width="22%">
+            <span class="songtitle">Force of Evil</span>
+            <text class="songartist">Beshken</text>
+        </li>
+        <li>
+            <div class="icons">
+                <a onclick="displayLewisDelMar()" class="moreicon">+</a>
+                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-suchsmallscenes" data-artist="Lewis Del Mar" data-title="Such Small Scenes" width="2.1%">
+            </div>
+            <img src="images/lewisdelmar.png" width="22%">
+            <span class="songtitle">Such Small Scenes</span>
+            <text class="songartist">Lewis Del Mar</text>
+        </li>
+        <li>
+            <div class="icons">
+                <a onclick="displayaltJ()" class="moreicon">+</a>
+                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-deadcrush" data-artist="alt-J" data-title="Deadcrush" width="2.1%">
+            </div>
+            <img src="images/relaxer.png" width="22%">
+            <span class="songtitle">Deadcrush</span>
+            <text class="songartist">alt-J</text>
+        </li>
+        <li>
+            <div class="icons">
+                <a onclick="displayKingKrule()" class="moreicon">+</a>
+                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-alizardstate" data-artist="King Krule" data-title="A Lizard State" width="2.1%">
+            </div>
+            <img src="images/6feetbeneaththemoon.png" width="22%">
+            <span class="songtitle">A Lizard State</span>
+            <text class="songartist">King Krule</text>
+        </li>
+        <li>
+            <div class="icons">
+                <a onclick="displayForeignAir()" class="moreicon">+</a>
+                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-freeanimal" data-artist="Foreign Air" data-title="Free Animal" width="2.1%">
+            </div>
+            <img src="images/forthelight.png" width="22%">
+            <span class="songtitle">Free Animal</span>
+            <text class="songartist">Foreign Air</text>
+        </li>
+        <li>
+            <div class="icons">
+                <a onclick="displayaltJ()" class="moreicon">+</a>
+                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-breezeblocks" data-artist="alt-J" data-title="Breezeblocks" width="2.1%">
+            </div>
+            <img src="images/anawesomewave.png" width="22%">
+            <span class="songtitle">Breezeblocks</span>
+            <text class="songartist">alt-J</text>
+        </li>
+        <li>
+            <div class="icons">
+                <a onclick="displayLewisDelMar()" class="moreicon">+</a>
+                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-loudy" data-artist="Lewis Del Mar" data-title="loud(y)" width="2.1%">
+            </div>
+            <img src="images/ep.png" width="22%">
+            <span class="songtitle">loud(y)</span>
+            <text class="songartist">Lewis Del Mar</text>
+        </li>
+        <li>
+            <div class="icons">
+                <a onclick="displayaltJ()" class="moreicon">+</a>
+                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-everyotherfreckle" data-artist="alt-J" data-title="Every Other Freckle" width="2.1%">
+            </div>
+            <img src="images/thisisallyours.png" width="22%">
+            <span class="songtitle">Every Other Freckle</span>
+            <text class="songartist">alt-J</text>
+        </li>
+    </ul>
+</div>
+
+<!-- artists -->
+<div class="playlistartists" id="displayArtists">
+    <img src="images/altj.png" width="22%">
+    <span>alt-J</span>
+    <a class="learnmore" onclick="displayaltJ()">learn more</a>
+    <br>
+    <img src="images/beshken.png" width="22%">
+    <span>Beshken</span>
+    <a class="learnmore" onclick="displayBeshken()">learn more</a>
+    <br>
+    <img src="images/foreignair.png" width="22%">
+    <span>Foreign Air</span>
+    <a class="learnmore" onclick="displayForeignAir()">learn more</a>
+    <br>
+    <img src="images/kingkrule.png" width="22%">
+    <span>King Krule</span>
+    <a class="learnmore" onclick="displayKingKrule()">learn more</a>
+    <br>
+    <img src="images/lewisdelmarartist.png" width="22%">
+    <span>Lewis Del Mar</span>
+    <a class="learnmore" onclick="displayLewisDelMar()">learn more</a>
+</div>
+<!-- King Krule -->
+<div class="artistabout" id="displayKingKrule">
+    <img src="images/kingkrule.png" width="33%">
+    <div class="bio">
+        <h2>King Krule</h2>
+        <p>Name after King K. Rool, a character in the Donkey Kong series of video games, King Krule is a solo project of London-based Archy Marshall. The singer, songwriter, guitarist, and keyboardist raised eyebrows with the 2010 single "Out Getting Ribs," released under the alias Zoo Kid, which showcased his distinctively raw voice. Anticipation for Marshall's first album grew, as the song earned him a spot on various high-profile "artists to watch" lists, as well as a nomination in BBC's Sound of 2013 poll. In 2013, Marshall released the first King Krule album, 6 Feet Beneath the Moon. Marshall then collaborated with his brother Jack for the relatively fluid, more electronic A New Place 2 Drown.</p>
+        <span>Appears on 
+            <a onclick="displayAbout()" class="appearson">Ecstatic</a>,
+            <a href="playlist3.html" class="appearson">Idyllic</a>,
+            <a href="playlist5.html" class="appearson">Restless</a></span>
+    </div>
+    <div class="info">
+        <h3>More Info</h3>
+        <img src="images/instagram.png" width="1.5%">
+        <a class="infolink" href="https://www.instagram.com/edgar_the_breathtaker/?hl=en" target="_blank">Instagram</a>
+        <br>
+        <img src="images/facebook.png" width="1.5%">
+        <a class="infolink" href="https://www.facebook.com/King-Krule-184334471606543/" target="_blank">Facebook</a>
+        <br>
+        <img src="images/Wikipedia.png" width="1.5%">
+        <a class="infolink" href="https://en.wikipedia.org/wiki/King_Krule" target="_blank">Wikipedia</a>
+    </div>
+</div>
+<!-- Beshken -->
+<div class="artistabout" id="displayBeshken">
+    <img src="images/beshken.png" width="33%">
+    <div class="bio">
+        <h2>Beshken</h2>
+        <p>Originally trained as jazz guitarist, Beshken first became interested in dance music while djing house parties and clubs in Los Angeles. Heavily influenced by the city's rich, colorful, and diverse sounds, he has cultured his identity, ideologoy, and musical dexterity with constant artistic and introspective development. Now based in Brooklyn, 20-year-old Ben Shirken creates a lush and effervescent atmosphere of sound by blending elements of electronic music, jazz, and indie rock. Ben's live show blends electronic and organic elements with custom visuals to create a unique experience, one that delves into the subconscious and reflects his curiosity to combine real world sounds with digital elements.</p>
+        <span>Appears on <a onclick="displayAbout()" class="appearson">Restless</a></span>
+    </div>
+    <div class="info">
+        <h3>More Info</h3>
+        <img src="images/instagram.png" width="1.5%">
+        <a class="infolink" href="https://www.instagram.com/beshkenxo/?hl=en" target="_blank">Instagram</a>
+        <br>
+        <img src="images/twitter.png" width="1.5%">
+        <a class="infolink" href="https://twitter.com/beshkenxo?lang=en" target="_blank">Twitter</a>
+        <br>
+        <img src="images/facebook.png" width="1.5%">
+        <a class="infolink" href="https://www.facebook.com/BeshkenOfficial/" target="_blank">Facebook</a>
+    </div>
+</div>
+<!-- Lewis Del Mar -->
+<div class="artistabout" id="displayLewisDelMar">
+    <img src="images/lewisdelmarartist.png" width="33%">
+    <div class="bio">
+        <h2>Lewis Del Mar</h2>
+        <p>Not a guy but rather two guys, Lewis Del Mar is a New York based electro-acoustic indie pop duo made up of Washington, D.C. transplants Danny Miller (singer/songwriter) and Max Harwood (drummer/producer). Having collaborated on and off since grade school, they formed the group in 2013 after relocating to Rockaway Beach, and the project after their fathers (both names Lewis) and their costal locale. Melodic and percussion-driven, and incorporating samples and manipulated sound, their sleek debut single, "Loud(y)," went viral in 2015, topping Hype Machine's Popular Tracks chart.</p>
+        <span>Appears on <a onclick="displayAbout()" class="appearson">Restless</a></span>
+    </div>
+    <div class="info">
+        <h3>More Info</h3>
+        <img src="images/instagram.png" width="1.5%">
+        <a class="infolink" href="https://www.instagram.com/lewisdelmar/?hl=en" target="_blank">Instagram</a>
+        <br>
+        <img src="images/twitter.png" width="1.5%">
+        <a class="infolink" href="https://twitter.com/LewisDelMar?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">Twitter</a>
+        <br>
+        <img src="images/facebook.png" width="1.5%">
+        <a class="infolink" href="https://www.facebook.com/lewisdelmar/" target="_blank">Facebook</a>
+        <br>
+        <img src="images/Wikipedia.png" width="1.5%">
+        <a class="infolink" href="https://en.wikipedia.org/wiki/Lewis_Del_Mar" target="_blank">Wikipedia</a>
+    </div>
+</div>
+<!-- alt J -->
+<div class="artistabout" id="displayaltJ">
+    <img src="images/altj.png" width="33%">
+    <div class="bio">
+        <h2>alt-J</h2>
+        <p>English rock outfit alt-J - named for the delta symbol that appears when pressing "alt" and "J" on a Mac keyboard - deliver eccentric indie rock that experiments with rhythm, song structure, percussion, and space. Following the 2012 release of their critically acclaimed, award winning debut, An Awesome Wave, they expanded their scope with 2014's This Is All Yours and 2017's Relaxer.</p>
+        <span>Appears on <a onclick="displayAbout()" class="appearson">Restless</a></span>
+    </div>
+    <div class="info">
+        <h3>More Info</h3>
+        <img src="images/instagram.png" width="1.5%">
+        <a class="infolink" href="https://www.instagram.com/unrealaltj/?hl=en" target="_blank">Instagram</a>
+        <br>
+        <img src="images/twitter.png" width="1.5%">
+        <a class="infolink" href="https://twitter.com/alt_J?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">Twitter</a>
+        <br>
+        <img src="images/facebook.png" width="1.5%">
+        <a class="infolink" href="https://www.facebook.com/altJ.band/" target="_blank">Facebook</a>
+        <br>
+        <img src="images/Wikipedia.png" width="1.5%">
+        <a class="infolink" href="https://en.wikipedia.org/wiki/Alt-J" target="_blank">Wikipedia</a>
+    </div>
+</div>
+<!-- Foreign Air -->
+<div class="artistabout" id="displayForeignAir">
+    <img src="images/foreignair.png" width="33%">
+    <div class="bio">
+        <h2>Foreign Air</h2>
+        <p>Foreign Air released their first single "Free Animal" in 2015 and since their music has been featured in commercials, tv shows, and trailers. They have made appearances at Hangout, FireFly, Shaky Knees, All Things Go festivals as well as toured alongside the likes of Phantogram, BORNS, and Bishop Briggs.</p>
+        <span>Appears on <a onclick="displayAbout()" class="appearson">Restless</a></span>
+    </div>
+    <div class="info">
+        <h3>More Info</h3>
+        <img src="images/instagram.png" width="1.5%">
+        <a class="infolink" href="https://www.instagram.com/foreign_air/?hl=en" target="_blank">Instagram</a>
+        <br>
+        <img src="images/twitter.png" width="1.5%">
+        <a class="infolink" href="https://twitter.com/ForeignAir?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">Twitter</a>
+        <br>
+        <img src="images/facebook.png" width="1.5%">
+        <a class="infolink" href="https://www.facebook.com/foreignair/" target="_blank">Facebook</a>
+    </div>
+</div>
+<!-- artists -->
+
+<!-- audio -->
+<div class="audio">
+    <audio id="audio-alizardstate" src="music/restless/alizardstate.mp3"></audio>
+    <audio id="audio-breezeblocks" src="music/restless/breezeblocks.mp3"></audio>
+    <audio id="audio-deadcrush" src="music/restless/deadcrush.mp3"></audio>
+    <audio id="audio-everyotherfreckle" src="music/restless/everyotherfreckle.mp3"></audio>
+    <audio id="audio-forceofevil" src="music/restless/forceofevil.mp3"></audio>
+    <audio id="audio-freeanimal" src="music/restless/freeanimal.mp3"></audio>
+    <audio id="audio-halfmanhalfshark" src="music/restless/halfmanhalfshark.mp3"></audio>
+    <audio id="audio-loudy" src="music/restless/loudy.mp3"></audio>
+    <audio id="audio-suchsmallscenes" src="music/restless/suchsmallscenes.mp3"></audio>
+</div>
+<!-- audio -->
+
+<script></script>
+<script>
+$(".dropbtn").click(function () {
+
+    $dropbtn = $(this);
+    
+    $dropdowncontent = $dropbtn.next();
+    
+    $dropdowncontent.slideToggle(680, function () {
+    });
+
+    $dropdowncontent.toggleClass("opened")
+
+});
+
+function displayArtists() {
+    document.getElementById("displayArtists").style.display = "block";
+    document.getElementById("displayAbout").style.display = "none";
+    document.getElementById("displaySongs").style.display = "none";
+    document.getElementById("displayKingKrule").style.display = "none";
+    document.getElementById("displayBeshken").style.display = "none";
+    document.getElementById("displayLewisDelMar").style.display = "none";
+    document.getElementById("displayaltJ").style.display = "none";
+    document.getElementById("displayForeignAir").style.display = "none";
+}
+
+function displaySongs() {
+    document.getElementById("displaySongs").style.display = "block";
+    document.getElementById("displayAbout").style.display = "none";
+    document.getElementById("displayArtists").style.display = "none";
+    document.getElementById("displayKingKrule").style.display = "none";
+    document.getElementById("displayBeshken").style.display = "none";
+    document.getElementById("displayLewisDelMar").style.display = "none";
+    document.getElementById("displayaltJ").style.display = "none";
+    document.getElementById("displayForeignAir").style.display = "none";
+}
+
+function displayAbout() {
+    document.getElementById("displayAbout").style.display = "block";
+    document.getElementById("displayArtists").style.display = "none";
+    document.getElementById("displaySongs").style.display = "none";
+    document.getElementById("displayKingKrule").style.display = "none";
+    document.getElementById("displayBeshken").style.display = "none";
+    document.getElementById("displayLewisDelMar").style.display = "none";
+    document.getElementById("displayaltJ").style.display = "none";
+    document.getElementById("displayForeignAir").style.display = "none";
+}
+
+function displayKingKrule() {
+    document.getElementById("displayKingKrule").style.display = "block";
+    document.getElementById("displayArtists").style.display = "none";
+    document.getElementById("displaySongs").style.display = "none";
+    document.getElementById("displayAbout").style.display = "none";
+    document.getElementById("displayBeshken").style.display = "none";
+    document.getElementById("displayLewisDelMar").style.display = "none";
+    document.getElementById("displayaltJ").style.display = "none";
+    document.getElementById("displayForeignAir").style.display = "none";
+}
+
+function displayBeshken() {
+    document.getElementById("displayBeshken").style.display = "block";
+    document.getElementById("displayArtists").style.display = "none";
+    document.getElementById("displaySongs").style.display = "none";
+    document.getElementById("displayAbout").style.display = "none";
+    document.getElementById("displayKingKrule").style.display = "none";
+    document.getElementById("displayLewisDelMar").style.display = "none";
+    document.getElementById("displayaltJ").style.display = "none";
+    document.getElementById("displayForeignAir").style.display = "none";
+}
+
+function displayLewisDelMar() {
+    document.getElementById("displayLewisDelMar").style.display = "block";
+    document.getElementById("displayArtists").style.display = "none";
+    document.getElementById("displaySongs").style.display = "none";
+    document.getElementById("displayAbout").style.display = "none";
+    document.getElementById("displayKingKrule").style.display = "none";
+    document.getElementById("displayBeshken").style.display = "none";
+    document.getElementById("displayaltJ").style.display = "none";
+    document.getElementById("displayForeignAir").style.display = "none";
+}
+
+function displayaltJ() {
+    document.getElementById("displayaltJ").style.display = "block";
+    document.getElementById("displayArtists").style.display = "none";
+    document.getElementById("displaySongs").style.display = "none";
+    document.getElementById("displayAbout").style.display = "none";
+    document.getElementById("displayKingKrule").style.display = "none";
+    document.getElementById("displayBeshken").style.display = "none";
+    document.getElementById("displayLewisDelMar").style.display = "none";
+    document.getElementById("displayForeignAir").style.display = "none";
+}
+
+function displayForeignAir() {
+    document.getElementById("displayForeignAir").style.display = "block";
+    document.getElementById("displayArtists").style.display = "none";
+    document.getElementById("displaySongs").style.display = "none";
+    document.getElementById("displayAbout").style.display = "none";
+    document.getElementById("displayKingKrule").style.display = "none";
+    document.getElementById("displayBeshken").style.display = "none";
+    document.getElementById("displayLewisDelMar").style.display = "none";
+    document.getElementById("displayaltJ").style.display = "none";
+}
+
+$(function() {
+
+    var stopAudio = function() {
+        console.log('stop music');
+        var $allAudio = $('audio');
+
+        $allAudio.each(function() {
+            var $audio = $(this);
+
+            $audio.get(0).pause();
+        });
+
+        $('.play').removeClass('hidden');
+        $('.pause').removeClass('visible');
+    };
+
+    $('.audio-play-button').click(function() {
+    // Stop audio before playing the next song.
+        stopAudio();
+
+        console.log('start music');
+
+        var audioID = $(this).attr('data-audio-selector');
+        var $audio = $(audioID);
+
+        var artist = $(this).attr("data-artist");
+        var title = $(this).attr("data-title");
+
+        $('.player .title').text(title);
+        $('.player .artist').text(artist);
+
+        console.log('audioID is', audioID);
+        console.log('$audio target is', $audio);
+        console.log('artist is', artist);
+        console.log('title is', title);
+
+        $audio.get(0).play();
+
+        $('.play').addClass('hidden');
+        $('.pause').addClass('visible');
+
+    });
+
+    // Stop audio when clicking the stop button.
+    $('.audio-stop-button').click(function() {
+        stopAudio();
+    });
+
+});
+
+  // var resumeAudio = function() {
+  //   var $allAudio = $('audio');
+
+  //   $allAudio.each(function() {
+  //     var $audio = $(this);
+
+  //     $audio.get(0).play();
+  //   });
+  // };
+
+  // $('.audio-play-button2').click(function() {
+  //   resumeAudio();
+  // });
+
+$(document).ready(function(){
+
+    $.get( "http://api.are.na/v2/channels/carolynolaguivel-moods-restless", function(data) {
+        // console.log(data)
+
+        var restless = data.contents;
+
+        console.log(restless)
+    
+
+        for (var i = 0; i < restless.length; i++) {
+
+            $(".playlistabout").append("<img src=" + restless[i].image.original.url + " width='25%'>")
+        };
+
+    });
+});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Idyllic</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://use.typekit.net/kmk8gyv.css">
+	<link rel="stylesheet" type="text/css" href="flickity/flickity.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<!-- <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script> -->
+    <script type="text/javascript" src="js/jquery-ui-1.8.21.custom.min.js"></script>
+	<meta charset="UTF-8">
+</head>
+<body>
+
+<!-- menu -->
+<ul class="menu">
+	<li><a href="index.html">Playlists</a></li>
+	<li><a href="artists.html">Artists</a></li>
+	<li><a href="search.html">Search</a></li>
+</ul>
+
+<div class="dropdown">
+	<div class="dropbtn">+</div>
+  	<div id="mydropdown" class="dropdowncontent">
+		<a onclick="displayAbout()">about</a>
+		<a onclick="displaySongs()">songs</a>
+		<a onclick="displayArtists()">artists</a>
+	</div>
+</div>
+<!-- menu -->
+
+<div class="playlisttitle">
+    <h1 class="idyllic">Idyllic<h1>
+</div>
+
+<div class="player">
+    <div class="pl"></div>
+    <div class="title"></div>
+    <div class="artist"></div>
+    <div class="controls">
+        <img src="images/playicon2.png" class="play audio-play-button2" width="10%">
+        <img src="images/stopicon.png" class="pause audio-stop-button" width="10%">
+        <img src="images/left.png" class="rew" width="10%">
+        <img src="images/right.png" class="fwd" width="10%">
+    </div>
+    <div class="volume"></div>
+    <div class="tracker"></div>
+</div>
+
+<div class="playlistabout" id="displayAbout"></div>
+
+<div class="playlistsongs" id="displaySongs">
+    <ul class="playlist">
+        <li>
+            <div class="icons">
+                <a onclick="displayKingKrule()" class="moreicon">+</a>
+                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-bermondseybosom" data-artist="King Krule" data-title="Bermondsey Bosom (Left)" width="2.1%">
+            </div>
+            <img src="images/theooz.png" width="22%">
+            <span class="songtitle">Bermondsey Bosom (Left)</span>
+            <text class="songartist">King Krule</text>
+        </li>
+        <li>
+            <div class="icons">
+                <a onclick="displayKingKrule()" class="moreicon">+</a>
+                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-babyblue" data-artist="King Krule" data-title="Baby Blue" width="2.1%">
+            </div>
+            <img src="images/6feetbeneaththemoon.png" width="22%">
+            <span class="songtitle">Baby Blue</span>
+            <text class="songartist">King Krule</text>
+        </li>
+        <li>
+            <div class="icons">
+                <a onclick="displayHomeshake()" class="moreicon">+</a>
+                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-giveittome" data-artist="HOMESHAKE" data-title="Give It to Me" width="2.1%">
+            </div>
+            <img src="images/midnightsnack.png" width="22%">
+            <span class="songtitle">Give It to Me</span>
+            <text class="songartist">HOMESHAKE</text>
+        </li>
+        <li>
+            <div class="icons">
+                <a onclick="displayMacDeMarco()" class="moreicon">+</a>
+                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-freakingouttheneighborhood" data-artist="Mac DeMarco" data-title="freakingouttheneighborhood" width="2.1%">
+            </div>
+            <img src="images/2.png" width="22%">
+            <span class="songtitle">Freaking Out the Neighborhood</span>
+            <text class="songartist">Mac DeMarco</text>
+        </li>
+        <li>
+            <div class="icons">
+                <a onclick="displayKingKrule()" class="moreicon">+</a>
+                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-oceanbed" data-artist="King Krule" data-title="Ocean Bed" width="2.1%">
+            </div>
+            <img src="images/6feetbeneaththemoon.png" width="22%">
+            <span class="songtitle">Ocean Bed</span>
+            <text class="songartist">King Krule</text>
+        </li>
+        <li>
+            <div class="icons">
+                <a onclick="displayHomeshake()" class="moreicon">+</a>
+                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-khmlwugh" data-artist="HOMESHAKE" data-title="Khmlwugh" width="2.1%">
+            </div>
+            <img src="images/freshair.png" width="22%">
+            <span class="songtitle">Khmlwugh</span>
+            <text class="songartist">HOMESHAKE</text>
+        </li>
+        <li>
+            <div class="icons">
+                <a onclick="displayFengSuave()" class="moreicon">+</a>
+                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-venusflytrap" data-artist="Feng Suave" data-title="Venus Flytrap" width="2.1%">
+            </div>
+            <img src="images/venusflytrap.png" width="22%">
+            <span class="songtitle">Venus Flytrap</span>
+            <text class="songartist">Feng Suave</text>
+        </li>
+        <li>
+            <div class="icons">
+                <a onclick="displayKingKrule()" class="moreicon">+</a>
+                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-borderline" data-artist="King Krule" data-title="Border Line" width="2.1%">
+            </div>
+            <img src="images/6feetbeneaththemoon.png" width="22%">
+            <span class="songtitle">Border Line</span>
+            <text class="songartist">King Krule</text>
+        </li>
+        <li>
+            <div class="icons">
+                <a onclick="displayMacDeMarco()" class="moreicon">+</a>
+                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-honeymoon" data-artist="Mac DeMarco" data-title="Honey Moon" width="2.1%">
+            </div>
+            <img src="images/honeymoon.png" width="22%">
+            <span class="songtitle">Honey Moon</span>
+            <text class="songartist">Mac DeMarco</text>
+        </li>
+    </ul>
+</div>
+
+<!-- artists -->
+<div class="playlistartists" id="displayArtists">
+    <img src="images/fengsuave.png" width="22%">
+    <span>Feng Suave</span>
+    <a class="learnmore" onclick="displayFengSuave()">learn more</a>
+    <br>
+    <img src="images/homeshake.png" width="22%">
+    <span>HOMESHAKE</span>
+    <a class="learnmore" onclick="displayHomeshake()">learn more</a>
+    <br>
+    <img src="images/kingkrule.png" width="22%">
+    <span>King Krule</span>
+    <a class="learnmore" onclick="displayKingKrule()">learn more</a>
+    <br>
+    <img src="images/macdemarco.png" width="22%">
+    <span>Mac DeMarco</span>
+    <a class="learnmore" onclick="displayMacDeMarco()">learn more</a>
+</div>
+<!-- King Krule -->
+<div class="artistabout" id="displayKingKrule">
+    <img src="images/kingkrule.png" width="33%">
+    <div class="bio">
+        <h2>King Krule</h2>
+        <p>Name after King K. Rool, a character in the Donkey Kong series of video games, King Krule is a solo project of London-based Archy Marshall. The singer, songwriter, guitarist, and keyboardist raised eyebrows with the 2010 single "Out Getting Ribs," released under the alias Zoo Kid, which showcased his distinctively raw voice. Anticipation for Marshall's first album grew, as the song earned him a spot on various high-profile "artists to watch" lists, as well as a nomination in BBC's Sound of 2013 poll. In 2013, Marshall released the first King Krule album, 6 Feet Beneath the Moon. Marshall then collaborated with his brother Jack for the relatively fluid, more electronic A New Place 2 Drown.</p>
+        <span>Appears on 
+            <a onclick="displayAbout()" class="appearson">Ecstatic</a>,
+            <a href="playlist3.html" class="appearson">Idyllic</a>,
+            <a href="playlist5.html" class="appearson">Restless</a></span>
+    </div>
+    <div class="info">
+        <h3>More Info</h3>
+        <img src="images/instagram.png" width="1.5%">
+        <a class="infolink" href="https://www.instagram.com/edgar_the_breathtaker/?hl=en" target="_blank">Instagram</a>
+        <br>
+        <img src="images/facebook.png" width="1.5%">
+        <a class="infolink" href="https://www.facebook.com/King-Krule-184334471606543/" target="_blank">Facebook</a>
+        <br>
+        <img src="images/Wikipedia.png" width="1.5%">
+        <a class="infolink" href="https://en.wikipedia.org/wiki/King_Krule" target="_blank">Wikipedia</a>
+    </div>
+</div>
+<!-- Homeshake -->
+<div class="artistabout" id="displayHomeshake">
+    <img src="images/homeshake.png" width="33%">
+    <div class="bio">
+        <h2>HOMESHAKE</h2>
+        <p>When you walk alone, you're never lost. At least, that's the operating principle behind Homeshake, the recording project of Peter Sagar. Over his first three albums, Sagar followed his own idiosyncratic vision, a journey that's taken him from sturdy guitar-based indie-pop to, on 2017's Fresh Air, a bleary-eyed take on lo-fi R&amp;B. Now with Helium, Sagar is putting down roots in aesthetic territory all his own. Landscape that he once viewed from a distance now forms the bedrock of his sound, and from here, he looks back out at the world as if through a light fog, composing songs that feel grounded and intimate, even as they explore a dispersed feeling of isolation.</p>
+        <span>Appears on <a onclick="displayAbout()" class="appearson">Idyllic</a></span>
+    </div>
+    <div class="info">
+        <h3>More Info</h3>
+        <img src="images/instagram.png" width="1.5%">
+        <a class="infolink" href="https://www.instagram.com/pitersugar/?hl=en" target="_blank">Instagram</a>
+        <br>
+        <img src="images/twitter.png" width="1.5%">
+        <a class="infolink" href="https://twitter.com/HOOMESHAAKE?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">Twitter</a>
+        <br>
+        <img src="images/facebook.png" width="1.5%">
+        <a class="infolink" href="https://www.facebook.com/homeshake/" target="_blank">Facebook</a>
+        <br>
+        <img src="images/Wikipedia.png" width="1.5%">
+        <a class="infolink" href="https://en.wikipedia.org/wiki/Homeshake" target="_blank">Wikipedia</a>
+    </div>
+</div>
+<!-- Mac Demarco -->
+<div class="artistabout" id="displayMacDeMarco">
+    <img src="images/macdemarco.png" width="33%">
+    <div class="bio">
+        <h2>Mac DeMarco</h2>
+        <p>Combining a goodball public persona with a distinctive songwriting style and production sound, Canadian artist Mac DeMarco rose to the higher reaches of indie fame unexpectedly quickly. While his image projected a charmingly laid-back slacker prone to occasional antics but never taking anything too seriously, his songs ironically often hid mature themes likes aging, commitment, and morals under layers of chorus and reverb. After the release of 2012's mini-LP Rock and Roll Night Club, a proper debut arrived that same year with 2, both released via the Captured Tracks label.</p>
+        <span>Appears on <a onclick="displayAbout()" class="appearson">Idyllic</a></span>
+    </div>
+    <div class="info">
+        <h3>More Info</h3>
+        <img src="images/instagram.png" width="1.5%">
+        <a class="infolink" href="https://www.instagram.com/macdemarco/?hl=en" target="_blank">Instagram</a>
+        <br>
+        <img src="images/facebook.png" width="1.5%">
+        <a class="infolink" href="https://www.facebook.com/MacDeMarcoBand/" target="_blank">Facebook</a>
+        <br>
+        <img src="images/Wikipedia.png" width="1.5%">
+        <a class="infolink" href="https://en.wikipedia.org/wiki/Mac_DeMarco" target="_blank">Wikipedia</a>
+    </div>
+</div>
+<!-- Feng Suave -->
+<div class="artistabout" id="displayFengSuave">
+    <img src="images/fengsuave.png" width="33%">
+    <div class="bio">
+        <h2>Feng Suave</h2>
+        <p>Amsterdam-based psych pop/soul duo "Feng Suave," consisting of Daniel De Jong and Daniel Leonard Elvis, makes music reminiscent of bygone times when vocals are drowned in reverb and when instruments are seemingly recorded under water. Because the soulful vocal melodies, alluding to the 60s and 70s, and punchy bass lines make for a warm, psychedelic deluge of airwaves embellished with dreamy effects, the music sometimes sounds more like an audacious attempts to communicate with extraterrestrial intelligence rather than two boys playing pop songs.</p>
+        <span>Appears on <a onclick="displayAbout()" class="appearson">Idyllic</a></span>
+    </div>
+    <div class="info">
+        <h3>More Info</h3>
+        <img src="images/instagram.png" width="1.5%">
+        <a class="infolink" href="https://www.instagram.com/fengsuave/?hl=en" target="_blank">Instagram</a>
+        <br>
+        <img src="images/twitter.png" width="1.5%">
+        <a class="infolink" href="https://twitter.com/fengsuave?lang=en" target="_blank">Twitter</a>
+        <br>
+        <img src="images/facebook.png" width="1.5%">
+        <a class="infolink" href="https://www.facebook.com/fengsuave/" target="_blank">Facebook</a>
+    </div>
+</div>
+<!-- artists -->
+
+<!-- audio -->
+<div class="audio">
+    <audio id="audio-babyblue" src="music/idyllic/babyblue.mp3"></audio>
+    <audio id="audio-bermondseybosom" src="music/idyllic/bermondseybosom.m4a"></audio>
+    <audio id="audio-borderline" src="music/idyllic/borderline.mp3"></audio>
+    <audio id="audio-freakingouttheneighborhood" src="music/idyllic/freakingouttheneighborhood.mp3"></audio>
+    <audio id="audio-giveittome" src="music/idyllic/giveittome.mp3"></audio>
+    <audio id="audio-honeymoon" src="music/idyllic/honeymoon.mp3"></audio>
+    <audio id="audio-khmlwugh" src="music/idyllic/khmlwugh.mp3"></audio>
+    <audio id="audio-oceanbed" src="music/idyllic/oceanbed.mp3"></audio>
+    <audio id="audio-venusflytrap" src="music/idyllic/venusflytrap.mp3"></audio>
+</div>
+<!-- audio -->
+
+<script></script>
+<script>
+$(".dropbtn").click(function () {
+
+    $dropbtn = $(this);
+    
+    $dropdowncontent = $dropbtn.next();
+    
+    $dropdowncontent.slideToggle(680, function () {
+    });
+
+    $dropdowncontent.toggleClass("opened")
+
+});
+
+function displayArtists() {
+    document.getElementById("displayArtists").style.display = "block";
+    document.getElementById("displayAbout").style.display = "none";
+    document.getElementById("displaySongs").style.display = "none";
+    document.getElementById("displayKingKrule").style.display = "none";
+    document.getElementById("displayHomeshake").style.display = "none";
+    document.getElementById("displayMacDeMarco").style.display = "none";
+    document.getElementById("displayFengSuave").style.display = "none";
+}
+
+function displaySongs() {
+    document.getElementById("displaySongs").style.display = "block";
+    document.getElementById("displayAbout").style.display = "none";
+    document.getElementById("displayArtists").style.display = "none";
+    document.getElementById("displayKingKrule").style.display = "none";
+    document.getElementById("displayHomeshake").style.display = "none";
+    document.getElementById("displayMacDeMarco").style.display = "none";
+    document.getElementById("displayFengSuave").style.display = "none";
+}
+
+function displayAbout() {
+    document.getElementById("displayAbout").style.display = "block";
+    document.getElementById("displayArtists").style.display = "none";
+    document.getElementById("displaySongs").style.display = "none";
+    document.getElementById("displayKingKrule").style.display = "none";
+    document.getElementById("displayHomeshake").style.display = "none";
+    document.getElementById("displayMacDeMarco").style.display = "none";
+    document.getElementById("displayFengSuave").style.display = "none";
+}
+
+function displayKingKrule() {
+    document.getElementById("displayKingKrule").style.display = "block";
+    document.getElementById("displayArtists").style.display = "none";
+    document.getElementById("displaySongs").style.display = "none";
+    document.getElementById("displayAbout").style.display = "none";
+    document.getElementById("displayHomeshake").style.display = "none";
+    document.getElementById("displayMacDeMarco").style.display = "none";
+    document.getElementById("displayFengSuave").style.display = "none";
+}
+
+function displayHomeshake() {
+    document.getElementById("displayHomeshake").style.display = "block";
+    document.getElementById("displayArtists").style.display = "none";
+    document.getElementById("displaySongs").style.display = "none";
+    document.getElementById("displayAbout").style.display = "none";
+    document.getElementById("displayKingKrule").style.display = "none";
+    document.getElementById("displayMacDeMarco").style.display = "none";
+    document.getElementById("displayFengSuave").style.display = "none";
+}
+
+function displayMacDeMarco() {
+    document.getElementById("displayMacDeMarco").style.display = "block";
+    document.getElementById("displayArtists").style.display = "none";
+    document.getElementById("displaySongs").style.display = "none";
+    document.getElementById("displayAbout").style.display = "none";
+    document.getElementById("displayKingKrule").style.display = "none";
+    document.getElementById("displayHomeshake").style.display = "none";
+    document.getElementById("displayFengSuave").style.display = "none";
+}
+
+function displayFengSuave() {
+    document.getElementById("displayFengSuave").style.display = "block";
+    document.getElementById("displayArtists").style.display = "none";
+    document.getElementById("displaySongs").style.display = "none";
+    document.getElementById("displayAbout").style.display = "none";
+    document.getElementById("displayKingKrule").style.display = "none";
+    document.getElementById("displayHomeshake").style.display = "none";
+    document.getElementById("displayMacDeMarco").style.display = "none";
+}
+
+$(function() {
+
+    var stopAudio = function() {
+        console.log('stop music');
+        var $allAudio = $('audio');
+
+        $allAudio.each(function() {
+            var $audio = $(this);
+
+            $audio.get(0).pause();
+        });
+
+        $('.play').removeClass('hidden');
+        $('.pause').removeClass('visible');
+    };
+
+    $('.audio-play-button').click(function() {
+    // Stop audio before playing the next song.
+        stopAudio();
+
+        console.log('start music');
+
+        var audioID = $(this).attr('data-audio-selector');
+        var $audio = $(audioID);
+
+        var artist = $(this).attr("data-artist");
+        var title = $(this).attr("data-title");
+
+        $('.player .title').text(title);
+        $('.player .artist').text(artist);
+
+        console.log('audioID is', audioID);
+        console.log('$audio target is', $audio);
+        console.log('artist is', artist);
+        console.log('title is', title);
+
+        $audio.get(0).play();
+
+        $('.play').addClass('hidden');
+        $('.pause').addClass('visible');
+
+    });
+
+    // Stop audio when clicking the stop button.
+    $('.audio-stop-button').click(function() {
+        stopAudio();
+    });
+
+});
+
+  // var resumeAudio = function() {
+  //   var $allAudio = $('audio');
+
+  //   $allAudio.each(function() {
+  //     var $audio = $(this);
+
+  //     $audio.get(0).play();
+  //   });
+  // };
+
+  // $('.audio-play-button2').click(function() {
+  //   resumeAudio();
+  // });
+
+$(document).ready(function(){
+
+    $.get( "http://api.are.na/v2/channels/carolynolaguivel-moods-idyllic", function(data) {
+        // console.log(data)
+
+        var idyllic = data.contents;
+
+        console.log(idyllic)
+    
+
+        for (var i = 0; i < idyllic.length; i++) {
+
+            $(".playlistabout").append("<img src=" + idyllic[i].image.original.url + " width='25%'>")
+        };
+
+    });
+});
+
+</script>
+</body>
+</html>
