@@ -99,6 +99,7 @@ ul {
 	width: 19vw;
 	padding-left: 1vw;
 	padding-right: 1vw;
+	cursor: default;
 }
 /* carousel */
 
@@ -197,21 +198,23 @@ input:focus {
 
 .searchicon {
 	position: absolute;
+	margin-top: 0.5vw;
 }
 
 .audio-play-button {
 	/*position: absolute;*/
-	/*margin-left: -5vw;*/
-	/*margin-top: -50vw;*/
+	margin-left: -4.5vw;
+	margin-top: 7.1vw;
 	cursor: pointer;
 }
 
 .searchmoreicon {
 	position: absolute;
+	color: #707070;
 	font-family: avenir, sans-serif;
 	font-size: 3vw;
 	margin-left: -4.5vw;
-	margin-top: -10vw;
+	margin-top: 3vw;
 	cursor: pointer;
 }
 
@@ -304,7 +307,75 @@ input:focus {
 	border-bottom: 0.13vw solid #707070;
 }
 
+/*grid*/
+
+.grid-item {
+	margin: 0;
+}
+
+#melancholic, #ecstatic, #idyllic, #gloomy, #restless, #peculiar {  
+opacity: 1;
+position: absolute;
+color: #cccccc;
+font-family: bebas-neue, sans-serif;
+text-transform: capitalize;
+font-size: 1.2vw;
+}
+
+.notshown {
+	opacity: 0;
+}
+
 /* Artists */
+
+.row {
+	font-family: Helvetica, sans-serif;
+	display: inline-block;
+	vertical-align: top;
+	/*background-color: blue;*/
+	width: 70vw;
+	margin-left: 15vw;
+	margin-top: 7vw;
+}
+
+.row div {
+	width: 9vw;
+	height: 10vw;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 6.5vw;
+	margin-left: 6.5vw;
+	margin-top: 0.2vw;
+	margin-bottom: 0.2vw;
+}
+
+.row h1 {
+	color: #707070;
+	font-size: 1.2vw;
+	margin-bottom: 0.4vw;
+}
+
+.row a {
+	position: absolute;
+	display: block;
+	font-size: 1.2vw;
+}
+
+.second {
+	margin-top: 1.6vw;
+}
+
+.third {
+	margin-top: 3.2vw;
+}
+
+.fourth {
+	margin-top: 4.8vw;
+}
+
+.artistlink:hover {
+	border-bottom: 0.1vw solid #707070;
+}
 
 /* Playlist Pages */
 
@@ -476,6 +547,11 @@ input:focus {
     margin-top: 45vw;
     margin-left: -9.5vw;
 }
+
+.player2 {
+	margin-top: 49vw;
+}
+
 .title, .artist {
     font-family: helvetica, sans-serif;
     left: 167px;
@@ -538,8 +614,8 @@ input:focus {
 .controls .play, .controls .pause, .controls .rew, .controls .fwd {
     /*background: transparent url("images/spr.png") no-repeat scroll 0 0;*/
     float: left;
-    /*height: 100%;*/
-    /*width: 33%;*/
+    /*height: auto;*/
+    /*width: 10%;*/
 }
 .controls .play {
     background-position: -8px -171px;
