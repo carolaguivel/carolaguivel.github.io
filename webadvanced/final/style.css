@@ -740,7 +740,7 @@ font-size: 1.2vw;
    	height: 5vw;
    	margin-left: 6.7vw;
    	margin-top: 6.7vw;
-   	background-color: #707070;
+   	background-color: #121212;
    	align-self: start;
    	transition: height 0.6s;
    	text-align: center;
@@ -757,7 +757,7 @@ font-size: 1.2vw;
 	margin-top: -7vw;
 	width: 75vw;
 	height: 1vw;
-	background-color: black;
+	background-color: #707070;
 }
 
 .line2 {
@@ -766,7 +766,7 @@ font-size: 1.2vw;
 	margin-top: -6.5vw;
 	width: 75vw;
 	height: 1vw;
-	background-color: black;
+	background-color: #707070;
 }
 
 .phonemenu a {
@@ -774,7 +774,7 @@ font-size: 1.2vw;
 	text-decoration: none;
 	font-size: 10vw;
 	letter-spacing: 0.4vw;
-	color: #000000;
+	color: #707070;
 	font-weight: 300;
 	display: block;
 	margin-top: -4vw;
@@ -786,6 +786,7 @@ font-size: 1.2vw;
 	font-weight: 500;
 	font-size: 10vw;
 	margin-top: -1.5vw;
+	color: #707070;
 }
 
 
