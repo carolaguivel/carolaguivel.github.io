@@ -715,31 +715,35 @@ font-size: 1.2vw;
   	z-index: 1;
   	top: 0;
   	left: 0;
+  	font-family: helvetica, sans-serif;
+  	text-transform: uppercase;
   	background-color: #111;
   	overflow-x: hidden;
   	transition: 0.5s;
-	padding-top: 60px;
+	padding-top: 25vw;
 }
 
 .sidenav a {
 	padding: 8px 8px 8px 32px;
 	text-decoration: none;
-	font-size: 25px;
-	color: #818181;
+	font-size: 4vw;
+	letter-spacing: 0.4vw;
+	color: #707070;
 	display: block;
 	transition: 0.3s;
+	margin-left: 4vw;
 }
 
-.sidenav a:hover {
+/*.sidenav a:hover {
 	color: #f1f1f1;
-}
+}*/
 
 .sidenav .closebtn {
+	font-family: avenir, sans-serif;
 	position: absolute;
 	top: 0;
-	right: 25px;
-	font-size: 36px;
-	margin-left: 50px;
+	font-size: 9vw;
+	margin-left: 51vw;
 }
 
 .opensidenav {
@@ -747,7 +751,6 @@ font-size: 1.2vw;
 	position: absolute;
 	font-family: avenir, sans-serif;
 	color: #707070;
-	cursor: pointer;
 	font-size: 9vw;
 	margin-left: 3vw;
 	margin-top: 0vw;
@@ -765,12 +768,12 @@ font-size: 1.2vw;
 
 .carousel {
 	box-sizing: border-box;
-	margin-top: 16vw;
-	width: 55vw;
+	margin-top: 48vw;
+	width: 62vw;
 }
 
 .carousel-cell img {
-	width: 52vw;
+	width: 60vw;
 	padding-left: 4vw;
 	padding-right: 4vw;
 }
