@@ -878,7 +878,7 @@ font-size: 1.2vw;
 }
 
 .artistabout {
-	margin-top: 33vw;
+	margin-top: 30vw;
 }
 
 .bio h2 {
@@ -921,6 +921,8 @@ font-size: 1.2vw;
 .info {
 	position: absolute;
 	margin-left: -2vw;
+	height: 35vw;
+	/*background-color: red;*/
 }
 
 .info h3 {
