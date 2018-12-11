@@ -43,6 +43,17 @@
 <!-- content -->
 
 
-<script></script>
+<script>
+var openToggle = document.querySelector ('#open-toggle')
+
+openToggle.addEventListener ('click', function () {
+
+  var article = this.closest('article');
+
+  var drawer = article.querySelector('.phonemenu');
+  drawer.classList.toggle('is-open');
+  // console.log(article.querySelector('.phonemenu'));
+});
+</script>
 </body>
 </html>

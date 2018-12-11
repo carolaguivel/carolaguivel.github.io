@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="https://use.typekit.net/kmk8gyv.css">
 	<link rel="stylesheet" type="text/css" href="flickity/flickity.css">
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
@@ -17,11 +18,25 @@
 </ul>
 <!-- menu -->
 
+<!-- phonemenu -->
+<article class="menubar">
+  <div class="phonemenu" id="open-toggle">
+    <h1>Joy Division</h1>
+    <div class="line1"></div>
+    <a href="artists.html">Playlists</a>
+    <div class="line2"></div>
+    <a href="artists.html">Artists</a>
+    <div class="line3"></div>
+    <a href="search.html">Search</a>
+  </div>
+</article>
+<!-- phonemenu -->
+
 <!-- content -->
-<div class="artistabout">
+<div class="artistabout artistaboutwtitle">
 	<img src="images/joydivision.png" width="33%">
 	<div class="bio">
-		<h2>Joy Division</h2>
+		<h2 class="biopagetitle">Joy Division</h2>
 		<p>Formed in the wake of the punk explosion in England, Joy Division became the first band in the post-punk movement by later emphasizing not anger and energy but mood and expression, pointing ahead to the rise of melancholy alternative music in the '80s. Though the group's raw initial sides fit the bill for any punk band, Joy Division later incorporated synthesizers (taboo in the low-tech world of '70s punk) and more haunting melodies, emphasized by the isolated, tortured lyrics of its lead vocalist, Ian Curtis. While the British punk movement shocked the world during the late '70s.</p>
 		<span>Appears on <a href="playlist4.html" class="appearson">Gloomy</a></span>
 	</div>
@@ -43,6 +58,17 @@
 <!-- content -->
 
 
-<script></script>
+<script>
+		var openToggle = document.querySelector ('#open-toggle')
+
+openToggle.addEventListener ('click', function () {
+
+  var article = this.closest('article');
+
+  var drawer = article.querySelector('.phonemenu');
+  drawer.classList.toggle('is-open');
+  // console.log(article.querySelector('.phonemenu'));
+});
+</script>
 </body>
 </html>

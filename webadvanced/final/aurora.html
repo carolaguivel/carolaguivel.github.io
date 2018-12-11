@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="https://use.typekit.net/kmk8gyv.css">
 	<link rel="stylesheet" type="text/css" href="flickity/flickity.css">
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
@@ -17,15 +18,29 @@
 </ul>
 <!-- menu -->
 
+<!-- phonemenu -->
+<article class="menubar">
+  <div class="phonemenu" id="open-toggle">
+    <h1>AURORA</h1>
+    <div class="line1"></div>
+    <a href="artists.html">Playlists</a>
+    <div class="line2"></div>
+    <a href="artists.html">Artists</a>
+    <div class="line3"></div>
+    <a href="search.html">Search</a>
+  </div>
+</article>
+<!-- phonemenu -->
+
 <!-- content -->
-<div class="artistabout">
+<div class="artistabout artistaboutwtitle">
 	<img src="images/aurora.png" width="33%">
 	<div class="bio">
-		<h2>AURORA</h2>
+		<h2 class="biopagetitle">AURORA</h2>
 		<p>Mixing frosty electronic textures, spare beats, and clear, emotive vocals, Norwegian singer/songwriter AURORA works in a similar dark pop milieu as artists like Lykke Li and Lorde. Born Aurora Aksnes near the city of Bergen, she began writing music and lyrics at a young age, releasing her debut single, "Awakening," in late 2013. Honing her live show and building on the momentum from the song, AURORA issued the follow-up single "Under Stars" in late 2014 and announced that she had signed with American label Glassnote. Her debut EP, "Running with the Wolves," was released in the spring of 2015.</p>
 		<span>Appears on <a href="playlist1.html" class="appearson">Melancholy</a></span>
 	</div>
-	<div class="info">
+	<div class="info lines15">
 		<h3>More Info</h3>
 		<img src="images/instagram.png" width="1.5%">
 		<a class="infolink" href="https://www.instagram.com/auroramusic/" target="_blank">Instagram</a>
@@ -43,6 +58,17 @@
 <!-- content -->
 
 
-<script></script>
+<script>
+var openToggle = document.querySelector ('#open-toggle')
+
+openToggle.addEventListener ('click', function () {
+
+  var article = this.closest('article');
+
+  var drawer = article.querySelector('.phonemenu');
+  drawer.classList.toggle('is-open');
+  // console.log(article.querySelector('.phonemenu'));
+});
+</script>
 </body>
 </html>

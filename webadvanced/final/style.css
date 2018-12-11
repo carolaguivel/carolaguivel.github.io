@@ -727,6 +727,10 @@ font-size: 1.2vw;
 	display: none;
 }
 
+.biopagetitle {
+	display: block;
+}
+
 @media only screen and (max-width: 600px) {
 
 .menubar {
@@ -905,6 +909,10 @@ font-size: 1.2vw;
 	font-size: 2.5vw;
 }
 
+.artistaboutwtitle {
+	margin-top: 21vw;
+}
+
 .artistabout img {
 	width: 70%;
 	margin-left: -1.5vw;
@@ -912,7 +920,6 @@ font-size: 1.2vw;
 
 .info {
 	position: absolute;
-	margin-top: 65.5vw;
 	margin-left: -2vw;
 }
 
@@ -933,5 +940,16 @@ font-size: 1.2vw;
 	margin-left: 2vw;
 }
 
+.biopagetitle {
+	display: none;
+}
+
+.lines15 {
+	margin-top: 60vw;
+}
+
+.lines17 {
+	margin-top: 67vw;
+}
 
 }
