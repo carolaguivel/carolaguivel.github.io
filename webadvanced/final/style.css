@@ -1051,4 +1051,60 @@ div .four {
 	border-bottom: none;
 }
 
+input {
+	margin-top: 30vw;
+	margin-left: 14vw;
+	text-align: center;
+	font-size: 7vw;
+	width: 70vw;
+}
+
+#searchlist {
+	position: absolute;
+	margin-left: 31vw;
+	margin-top: 48vw;
+	display: block;
+}
+
+.opacity {
+	opacity: 1;
+}
+
+.searchinfo img {
+	width: 55%;
+	padding-bottom: 10vw;
+}
+
+.searchplayicon {
+	width: 5%;
+}
+
+#searchlist span {
+	display: block;
+	position: absolute;
+	font-family: helvetica, sans-serif;
+	color: #707070;
+	font-size: 2.1vw;
+	font-weight: 700;
+	letter-spacing: 0.1vw
+}
+
+#searchlist text {
+	display: block;
+	position: absolute;
+	font-family: helvetica, sans-serif;
+	color: #707070;
+	font-size: 2vw;
+	font-weight: 500;
+	letter-spacing: 0.1vw
+}
+
+.searchtitle {
+	margin-top: -2vw;
+}
+
+.searchartist {
+	margin-top: 1.5vw;
+}
+
 }
