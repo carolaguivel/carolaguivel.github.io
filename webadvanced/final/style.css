@@ -724,26 +724,22 @@ font-size: 1.2vw;
 }
 
 .sidenav a {
-	padding: 8px 8px 8px 32px;
+	padding-bottom: 4vw;
 	text-decoration: none;
 	font-size: 4vw;
 	letter-spacing: 0.4vw;
 	color: #707070;
 	display: block;
 	transition: 0.3s;
-	margin-left: 4vw;
+	margin-left: 12vw;
 }
-
-/*.sidenav a:hover {
-	color: #f1f1f1;
-}*/
 
 .sidenav .closebtn {
 	font-family: avenir, sans-serif;
 	position: absolute;
 	top: 0;
 	font-size: 9vw;
-	margin-left: 51vw;
+	margin-left: 60vw;
 }
 
 .opensidenav {
@@ -768,7 +764,7 @@ font-size: 1.2vw;
 
 .carousel {
 	box-sizing: border-box;
-	margin-top: 48vw;
+	margin-top: 47vw;
 	width: 62vw;
 }
 
