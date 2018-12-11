@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="https://use.typekit.net/kmk8gyv.css">
 	<link rel="stylesheet" type="text/css" href="flickity/flickity.css">
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
@@ -17,15 +18,29 @@
 </ul>
 <!-- menu -->
 
+<!-- phonemenu -->
+<article class="menubar">
+  <div class="phonemenu" id="open-toggle">
+    <h1>Feng Suave</h1>
+    <div class="line1"></div>
+    <a href="index.html">Playlists</a>
+    <div class="line2"></div>
+    <a href="artists.html">Artists</a>
+    <div class="line3"></div>
+    <a href="search.html">Search</a>
+  </div>
+</article>
+<!-- phonemenu -->
+
 <!-- content -->
-<div class="artistabout">
+<div class="artistabout artistaboutwtitle">
 	<img src="images/fengsuave.png" width="33%">
 	<div class="bio">
-		<h2>Feng Suave</h2>
+		<h2 class="biopagetitle">Feng Suave</h2>
 		<p>Amsterdam-based psych pop/soul duo "Feng Suave," consisting of Daniel De Jong and Daniel Leonard Elvis, makes music reminiscent of bygone times when vocals are drowned in reverb and when instruments are seemingly recorded under water. Because the soulful vocal melodies, alluding to the 60s and 70s, and punchy bass lines make for a warm, psychedelic deluge of airwaves embellished with dreamy effects, the music sometimes sounds more like an audacious attempts to communicate with extraterrestrial intelligence rather than two boys playing pop songs.</p>
 		<span>Appears on <a href="playlist3.html" class="appearson">Idyllic</a></span>
 	</div>
-	<div class="info">
+	<div class="info lines15">
 		<h3>More Info</h3>
 		<img src="images/instagram.png" width="1.5%">
 		<a class="infolink" href="https://www.instagram.com/fengsuave/?hl=en" target="_blank">Instagram</a>
@@ -36,13 +51,24 @@
 		<img src="images/facebook.png" width="1.5%">
 		<a class="infolink" href="https://www.facebook.com/fengsuave/" target="_blank">Facebook</a>
 		<!-- <br>
-		<img src="images/Wikipedia.png" width="1.5%">
+		<img src="images/wikipedia.png" width="1.5%">
 		<a class="infolink" href="https://en.wikipedia.org/wiki/Mac_DeMarco" target="_blank">Wikipedia</a> -->
 	</div>
 </div>
 <!-- content -->
 
 
-<script></script>
+<script>
+var openToggle = document.querySelector ('#open-toggle')
+
+openToggle.addEventListener ('click', function () {
+
+  var article = this.closest('article');
+
+  var drawer = article.querySelector('.phonemenu');
+  drawer.classList.toggle('is-open');
+  // console.log(article.querySelector('.phonemenu'));
+});
+</script>
 </body>
 </html>

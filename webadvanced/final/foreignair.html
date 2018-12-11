@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="https://use.typekit.net/kmk8gyv.css">
 	<link rel="stylesheet" type="text/css" href="flickity/flickity.css">
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
@@ -17,15 +18,29 @@
 </ul>
 <!-- menu -->
 
+<!-- phonemenu -->
+<article class="menubar">
+  <div class="phonemenu" id="open-toggle">
+    <h1>Foreign Air</h1>
+    <div class="line1"></div>
+    <a href="index.html">Playlists</a>
+    <div class="line2"></div>
+    <a href="artists.html">Artists</a>
+    <div class="line3"></div>
+    <a href="search.html">Search</a>
+  </div>
+</article>
+<!-- phonemenu -->
+
 <!-- content -->
-<div class="artistabout">
+<div class="artistabout artistaboutwtitle">
 	<img src="images/foreignair.png" width="33%">
 	<div class="bio">
-		<h2>Foreign Air</h2>
+		<h2 class="biopagetitle">Foreign Air</h2>
 		<p>Foreign Air released their first single "Free Animal" in 2015 and since their music has been featured in commercials, tv shows, and trailers. They have made appearances at Hangout, FireFly, Shaky Knees, All Things Go festivals as well as toured alongside the likes of Phantogram, BORNS, and Bishop Briggs.</p>
 		<span>Appears on <a href="playlist5.html" class="appearson">Restless</a></span>
 	</div>
-	<div class="info">
+	<div class="info lines8">
 		<h3>More Info</h3>
 		<img src="images/instagram.png" width="1.5%">
 		<a class="infolink" href="https://www.instagram.com/foreign_air/?hl=en" target="_blank">Instagram</a>
@@ -36,13 +51,24 @@
 		<img src="images/facebook.png" width="1.5%">
 		<a class="infolink" href="https://www.facebook.com/foreignair/" target="_blank">Facebook</a>
 		<!-- <br>
-		<img src="images/Wikipedia.png" width="1.5%">
+		<img src="images/wikipedia.png" width="1.5%">
 		<a class="infolink" href="https://en.wikipedia.org/wiki/Alt-J" target="_blank">Wikipedia</a> -->
 	</div>
 </div>
 <!-- content -->
 
 
-<script></script>
+<script>
+var openToggle = document.querySelector ('#open-toggle')
+
+openToggle.addEventListener ('click', function () {
+
+  var article = this.closest('article');
+
+  var drawer = article.querySelector('.phonemenu');
+  drawer.classList.toggle('is-open');
+  // console.log(article.querySelector('.phonemenu'));
+});
+</script>
 </body>
 </html>

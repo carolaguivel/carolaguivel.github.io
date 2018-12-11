@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="https://use.typekit.net/kmk8gyv.css">
 	<link rel="stylesheet" type="text/css" href="flickity/flickity.css">
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
@@ -17,15 +18,29 @@
 </ul>
 <!-- menu -->
 
+<!-- phonemenu -->
+<article class="menubar">
+  <div class="phonemenu" id="open-toggle">
+    <h1>Bat For Lashes</h1>
+    <div class="line1"></div>
+    <a href="index.html">Playlists</a>
+    <div class="line2"></div>
+    <a href="artists.html">Artists</a>
+    <div class="line3"></div>
+    <a href="search.html">Search</a>
+  </div>
+</article>
+<!-- phonemenu -->
+
 <!-- content -->
-<div class="artistabout">
+<div class="artistabout artistaboutwtitle">
 	<img src="images/batforlashes.png" width="33%">
 	<div class="bio">
-		<h2>Bat For Lashes</h2>
+		<h2 class="biopagetitle">Bat For Lashes</h2>
 		<p>Crafting a mystical indie-rock sound that drew comparison to Kate Bush and Bj&ouml;rk, Bat For Lashes is the project of Natasha Khan. Born into the Khan family squash players, the half-Pakistani, half-English singer/songwriter moved to Hertfordshire, England when she was five and taught herself to play piano when she was 11. She conceived of Bat For Lashes while on a trip to San Francisco, drawing on inspirations like Steve Reich and Susan Hiller, as well as the multimedia installations she learned to create while studying art at the University of Brighton. Her acclaimed debut album, Fur and Gold, arrived in September 2006.</p>
 		<span>Appears on <a href="playlist4.html" class="appearson">Gloomy</a></span>
 	</div>
-	<div class="info">
+	<div class="info lines15">
 		<h3>More Info</h3>
 		<img src="images/instagram.png" width="1.5%">
 		<a class="infolink" href="https://www.instagram.com/batforlashes/?hl=en" target="_blank">Instagram</a>
@@ -36,13 +51,24 @@
 		<img src="images/facebook.png" width="1.5%">
 		<a class="infolink" href="https://www.facebook.com/batforlashes/" target="_blank">Facebook</a>
 		<br>
-		<img src="images/Wikipedia.png" width="1.5%">
+		<img src="images/wikipedia.png" width="1.5%">
 		<a class="infolink" href="https://en.wikipedia.org/wiki/Bat_for_Lashes" target="_blank">Wikipedia</a>
 	</div>
 </div>
 <!-- content -->
 
 
-<script></script>
+<script>
+var openToggle = document.querySelector ('#open-toggle')
+
+openToggle.addEventListener ('click', function () {
+
+  var article = this.closest('article');
+
+  var drawer = article.querySelector('.phonemenu');
+  drawer.classList.toggle('is-open');
+  // console.log(article.querySelector('.phonemenu'));
+});
+</script>
 </body>
 </html>
