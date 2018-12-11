@@ -80,6 +80,14 @@ ul {
 	cursor: pointer;
 }
 
+.sidenav {
+	display: none;
+}
+
+.opensidenav {
+	display: none;
+}
+
 /* menu */
 
 /* carousel */
@@ -696,3 +704,75 @@ font-size: 1.2vw;
     width: 326px;
     z-index: 1;
 }*/
+
+@media only screen and (max-width: 600px) {
+
+.sidenav {
+	display: block;
+  	height: 100%;
+  	width: 0;
+  	position: fixed;
+  	z-index: 1;
+  	top: 0;
+  	left: 0;
+  	background-color: #111;
+  	overflow-x: hidden;
+  	transition: 0.5s;
+	padding-top: 60px;
+}
+
+.sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+}
+
+.sidenav a:hover {
+	color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+.opensidenav {
+	display: block;
+	position: absolute;
+	font-family: avenir, sans-serif;
+	color: #707070;
+	cursor: pointer;
+	font-size: 9vw;
+	margin-left: 3vw;
+	margin-top: 0vw;
+}
+
+.menu {
+	display: none;
+}
+
+.indexcontent {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.carousel {
+	box-sizing: border-box;
+	margin-top: 16vw;
+	width: 55vw;
+}
+
+.carousel-cell img {
+	width: 52vw;
+	padding-left: 4vw;
+	padding-right: 4vw;
+}
+
+}

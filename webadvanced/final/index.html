@@ -6,6 +6,8 @@
 	<link rel="stylesheet" href="https://use.typekit.net/kmk8gyv.css">
 	<link rel="stylesheet" type="text/css" href="flickity/flickity.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
@@ -16,6 +18,17 @@
 	<li><a href="search.html">Search</a></li>
 </ul>
 <!-- menu -->
+
+<!-- phonemenu -->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Playlists</a>
+  <a href="artists.html">Artists</a>
+  <a href="search.html">Search</a>
+</div>
+
+<span onclick="openNav()" class="opensidenav">+</span>
+<!-- phonemenu -->
 
 <!-- content -->
 <div class="indexcontent">
@@ -30,98 +43,35 @@
 </div>
 <!-- content -->
 
-<div class="notshown" id="melancholic">melancholic</div>
+<!-- <div class="notshown" id="melancholic">melancholic</div>
 <div class="notshown" id="ecstatic">ecstatic</div>
 <div class="notshown" id="idyllic">idyllic</div>
 <div class="notshown" id="gloomy">gloomy</div>
 <div class="notshown" id="restless">restless</div>
-<div class="notshown" id="peculiar">peculiar</div>
+<div class="notshown" id="peculiar">peculiar</div> -->
 
 <script src="flickity/flickity.pkgd.js"></script>
 <script>
-// $("#playlist1").hover(function(){
-//     $(this).addClass( "cursortitle" );
+// $( "#playlist1" ).mouseenter(function() {
+//   $( "#melancholic" ).removeClass( "hidden" );
 // });
 
-$( "#playlist1" ).mouseenter(function() {
-  $( "#melancholic" ).removeClass( "hidden" );
-});
+// $( "#playlist1" ).mouseleave(function() {
+//   $( "#melancholic" ).addClass( "hidden" );
+// });
 
-$( "#playlist1" ).mouseleave(function() {
-  $( "#melancholic" ).addClass( "hidden" );
-});
+// document.getElementById('playlist1').addEventListener('mousemove', function(ev){
+//    document.getElementById('melancholic').style.transform = 'translateY('+(ev.clientY-500)+'px)';
+//    document.getElementById('melancholic').style.transform += 'translateX('+(ev.clientX-(-17))+'px)';           
+// },false); 
 
-document.getElementById('playlist1').addEventListener('mousemove', function(ev){
-   document.getElementById('melancholic').style.transform = 'translateY('+(ev.clientY-500)+'px)';
-   document.getElementById('melancholic').style.transform += 'translateX('+(ev.clientX-(-17))+'px)';           
-},false); 
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
 
-$( "#playlist2" ).mouseenter(function() {
-  $( "#ecstatic" ).removeClass( "hidden" );
-});
-
-$( "#playlist2" ).mouseleave(function() {
-  $( "#ecstatic" ).addClass( "hidden" );
-});
-
-document.getElementById('playlist2').addEventListener('mousemove', function(ev){
-   document.getElementById('ecstatic').style.transform = 'translateY('+(ev.clientY-500)+'px)';
-   document.getElementById('ecstatic').style.transform += 'translateX('+(ev.clientX-(-17))+'px)';           
-},false); 
-
-$( "#playlist3" ).mouseenter(function() {
-  $( "#idyllic" ).removeClass( "hidden" );
-});
-
-$( "#playlist3" ).mouseleave(function() {
-  $( "#idyllic" ).addClass( "hidden" );
-});
-
-document.getElementById('playlist3').addEventListener('mousemove', function(ev){
-   document.getElementById('idyllic').style.transform = 'translateY('+(ev.clientY-500)+'px)';
-   document.getElementById('idyllic').style.transform += 'translateX('+(ev.clientX-(-17))+'px)';           
-},false); 
-
-$( "#playlist4" ).mouseenter(function() {
-  $( "#gloomy" ).removeClass( "hidden" );
-});
-
-$( "#playlist4" ).mouseleave(function() {
-  $( "#gloomy" ).addClass( "hidden" );
-});
-
-document.getElementById('playlist4').addEventListener('mousemove', function(ev){
-   document.getElementById('gloomy').style.transform = 'translateY('+(ev.clientY-500)+'px)';
-   document.getElementById('gloomy').style.transform += 'translateX('+(ev.clientX-(-17))+'px)';           
-},false); 
-
-$( "#playlist5" ).mouseenter(function() {
-  $( "#restless" ).removeClass( "hidden" );
-});
-
-$( "#playlist5" ).mouseleave(function() {
-  $( "#restless" ).addClass( "hidden" );
-});
-
-document.getElementById('playlist5').addEventListener('mousemove', function(ev){
-   document.getElementById('restless').style.transform = 'translateY('+(ev.clientY-500)+'px)';
-   document.getElementById('restless').style.transform += 'translateX('+(ev.clientX-(-17))+'px)';           
-},false); 
-
-$( "#playlist6" ).mouseenter(function() {
-  $( "#peculiar" ).removeClass( "hidden" );
-});
-
-$( "#playlist6" ).mouseleave(function() {
-  $( "#peculiar" ).addClass( "hidden" );
-});
-
-document.getElementById('playlist6').addEventListener('mousemove', function(ev){
-   document.getElementById('peculiar').style.transform = 'translateY('+(ev.clientY-500)+'px)';
-   document.getElementById('peculiar').style.transform += 'translateX('+(ev.clientX-(-17))+'px)';           
-},false); 
-
-
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
 
 </script>
 </body>
