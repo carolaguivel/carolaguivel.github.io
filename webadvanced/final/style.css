@@ -563,6 +563,7 @@ font-size: 1.2vw;
     z-index: 2;
     margin-top: 45vw;
     margin-left: -9.5vw;
+    display: block;
 }
 
 .player2 {
@@ -722,6 +723,10 @@ font-size: 1.2vw;
 	display: none;
 }
 
+.phoneplayer {
+	display: none;
+}
+
 @media only screen and (max-width: 600px) {
 
 .menubar {
@@ -748,7 +753,7 @@ font-size: 1.2vw;
 
 .phonemenu.is-open {
   	width: 80vw;
-  	height: 76vh;
+  	height: 75vh;
 }
 
 .line1 {
@@ -798,6 +803,17 @@ font-size: 1.2vw;
 	color: #707070;
 }
 
+.phoneplayer {
+	display: block;
+	position: absolute;
+	z-index: 3;
+	margin-top: 2vw;
+	margin-left: -42vw;
+}
+
+.player {
+	display: none;
+}
 
 .menu, .dropdown {
 	display: none;
@@ -815,7 +831,7 @@ font-size: 1.2vw;
 
 .carousel {
 	box-sizing: border-box;
-	margin-top: 54vw;
+	margin-top: 53vw;
 	width: 62vw;
 }
 
@@ -823,14 +839,6 @@ font-size: 1.2vw;
 	width: 60vw;
 	padding-left: 4vw;
 	padding-right: 4vw;
-}
-
-.player {
-	position: fixed;
-	margin-top: 152vw;
-	width: 65vw;
-	height: 25vw;
-	margin-left: -41vw;
 }
 
 /*playlistartists*/
