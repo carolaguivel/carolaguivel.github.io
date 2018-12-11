@@ -873,7 +873,7 @@ font-size: 1.2vw;
 }
 
 .playlistartists a {
-	font-size: 2vw;
+	font-size: 2.2vw;
 	margin-top: -8.5vw;
 }
 
@@ -1061,7 +1061,7 @@ input {
 
 #searchlist {
 	position: absolute;
-	margin-left: 31vw;
+	margin-left: 30.5vw;
 	margin-top: 48vw;
 	display: block;
 }
@@ -1072,11 +1072,21 @@ input {
 
 .searchinfo img {
 	width: 55%;
-	padding-bottom: 10vw;
+	padding-bottom: 13vw;
+}
+
+.searchicon {
+	margin-left: -6vw;
+}
+
+.searchmoreicon {
+	font-size: 7.5vw;
+	margin-top: 9vw;
 }
 
 .searchplayicon {
-	width: 5%;
+	width: 7%;
+	margin-top: 20vw;
 }
 
 #searchlist span {
@@ -1084,7 +1094,7 @@ input {
 	position: absolute;
 	font-family: helvetica, sans-serif;
 	color: #707070;
-	font-size: 2.1vw;
+	font-size: 2.6vw;
 	font-weight: 700;
 	letter-spacing: 0.1vw
 }
@@ -1094,17 +1104,17 @@ input {
 	position: absolute;
 	font-family: helvetica, sans-serif;
 	color: #707070;
-	font-size: 2vw;
+	font-size: 2.5vw;
 	font-weight: 500;
 	letter-spacing: 0.1vw
 }
 
 .searchtitle {
-	margin-top: -2vw;
+	margin-top: -12vw;
 }
 
 .searchartist {
-	margin-top: 1.5vw;
+	margin-top: -8vw;
 }
 
 }
