@@ -1143,20 +1143,29 @@ input {
 }
 
 .playlistsongs span {
-	/*position: absolute;*/
 	display: block;
-	font-size: 2.6vw;
-	font-weight: 700;
-	letter-spacing: 0.1vw
-	/*margin-top: -100vw;*/
+	position: absolute;
+	margin-top: -14vw;
 }
 
 .playlistsongs text {
 	display: block;
+	position: absolute;
+	margin-top: -10vw;
+}
+
+.songtitle {
+	font-family: Helvetica, sans-serif;
 	font-size: 2.5vw;
+	font-weight: 700;
+	letter-spacing: 0.1vw
+}
+
+.songartist {
+	font-family: Helvetica, sans-serif;
+	font-size: 2.6vw;
 	font-weight: 500;
-	letter-spacing: 0.1vw;
-	margin-top: -12vw;
+	letter-spacing: 0.1vw
 }
 
 }
