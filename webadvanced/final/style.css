@@ -842,5 +842,33 @@ font-size: 1.2vw;
 	margin-top: -8.5vw;
 }
 
+.artistabout {
+	margin-top: 24vw;
+}
+
+.bio h2 {
+	position: absolute;
+	font-size: 5vw;
+	margin-top: -37vw;
+	margin-left: -31.5vw;
+}
+
+.bio p {
+	position: absolute;
+	font-size: 2vw;
+	margin-left: -31.5vw;
+	width: 20vw;
+	background-color: red;
+}
+
+.artistabout img {
+	width: 70%;
+	margin-left: -1.5vw;
+}
+
+.info img {
+	width: 5%;
+}
+
 
 }
