@@ -859,8 +859,7 @@ font-size: 1.2vw;
 	margin-left: -31.5vw;
 	margin-top: 31.5vw;
 	width: 47vw;
-	line-height: 3vw;
-	background-color: red;
+	line-height: 3.5vw;
 }
 
 .artistabout img {
@@ -869,11 +868,26 @@ font-size: 1.2vw;
 }
 
 .info {
-	margin-top: 52vw;
+	position: absolute;
+	margin-top: 58.5vw;
+	margin-left: -2vw;
+}
+
+.info h3 {
+	font-size: 4vw;
+	margin-bottom: 2vw;
 }
 
 .info img {
-	width: 5%;
+	width: 10%;
+	margin-left: 0.2vw;
+	padding-bottom: 1.5vw;
+}
+
+.info a {
+	position: absolute;
+	font-size: 2.5vw;
+	margin-left: 2vw;
 }
 
 
