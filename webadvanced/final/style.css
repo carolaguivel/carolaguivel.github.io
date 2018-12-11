@@ -822,7 +822,7 @@ font-size: 1.2vw;
 	margin-left: -42vw;
 }
 
-.player {
+.player, .player2 {
 	display: none;
 }
 
