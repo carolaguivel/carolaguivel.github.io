@@ -20,14 +20,13 @@
 <!-- menu -->
 
 <!-- phonemenu -->
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="index.html">Playlists</a>
-  <a href="artists.html">Artists</a>
-  <a href="search.html">Search</a>
-</div>
-
-<span onclick="openNav()" class="opensidenav">+</span>
+<article class="menubar">
+  <div class="phonemenu" id="open-toggle">Playlists
+    <a href="index.html">Playlists</a>
+    <a href="artists.html">Artists</a>
+    <a href="search.html">Search</a>
+  </div>
+</article>
 <!-- phonemenu -->
 
 <!-- content -->
@@ -58,13 +57,16 @@
 //    document.getElementById('melancholic').style.transform += 'translateX('+(ev.clientX-(-17))+'px)';           
 // },false); 
 
-function openNav() {
-  document.getElementById("mySidenav").style.width = "70vw";
-};
+var openToggle = document.querySelector ('#open-toggle')
 
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-};
+openToggle.addEventListener ('click', function () {
+
+  var article = this.closest('article');
+
+  var drawer = article.querySelector('.phonemenu');
+  drawer.classList.toggle('is-open');
+  console.log(article.querySelector('.phonemenu'));
+});
 
 </script>
 </body>

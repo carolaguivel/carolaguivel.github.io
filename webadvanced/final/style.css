@@ -714,49 +714,29 @@ font-size: 1.2vw;
 
 @media only screen and (max-width: 600px) {
 
-.sidenav {
+.menubar {
 	display: block;
-  	height: 100%;
-  	width: 0;
-  	position: fixed;
-  	z-index: 1;
-  	top: 0;
-  	left: 0;
-  	font-family: helvetica, sans-serif;
-  	text-transform: uppercase;
-  	background-color: #111;
-  	overflow-x: hidden;
-  	transition: 0.5s;
-	padding-top: 25vw;
-}
-
-.sidenav a {
-	padding-bottom: 4vw;
-	text-decoration: none;
-	font-size: 4vw;
-	letter-spacing: 0.4vw;
-	color: #707070;
-	display: block;
-	transition: 0.3s;
-	margin-left: 12vw;
-}
-
-.sidenav .closebtn {
-	font-family: avenir, sans-serif;
-	position: absolute;
+	position: fixed;
 	top: 0;
-	font-size: 9vw;
-	margin-left: 60vw;
+	overflow-y: hidden;
+	z-index: 3;
 }
 
-.opensidenav {
-	display: block;
-	position: absolute;
-	font-family: avenir, sans-serif;
-	color: #707070;
-	font-size: 9vw;
-	margin-left: 3vw;
-	margin-top: 0vw;
+.phonemenu {
+	z-index: 1;
+   	padding: 3vw 3vw 5.5vw 3vw;
+   	width: 82vw;
+   	height: 5vw;
+   	margin-left: 5.7vw;
+   	margin-top: 5.7vw;
+   	background-color: #707070;
+   	align-self: start;
+   	transition: height 0.6s;
+}
+
+.phonemenu.is-open {
+  	width: 82vw;
+  	height: 87.7vh;
 }
 
 .phonemenu a {
@@ -764,19 +744,11 @@ font-size: 1.2vw;
 	text-decoration: none;
 	font-size: 3vw;
 	letter-spacing: 0.4vw;
-	color: #707070;
+	color: #000000;
 	font-weight: 300;
 	display: block;
 }
 
-.phonemenu {
-	position: absolute;
-	width: 11vw;
-	font-family: helvetica, sans-serif;
-	text-transform: uppercase;
-	margin-top: 13.5vw;
-	margin-left: 4vw;
-}
 
 .menu, .dropdown {
 	display: none;
@@ -799,7 +771,7 @@ font-size: 1.2vw;
 
 .carousel {
 	box-sizing: border-box;
-	margin-top: 47vw;
+	margin-top: 62vw;
 	width: 62vw;
 }
 
