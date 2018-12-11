@@ -28,6 +28,22 @@
 </div>
 <!-- menu -->
 
+<!-- phonemenu -->
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">Playlists</a>
+    <a href="artists.html">Artists</a>
+    <a href="search.html">Search</a>
+</div>
+<div class="phonemenu">
+    <a onclick="displayAbout()">about</a>
+    <a onclick="displaySongs()">songs</a>
+    <a onclick="displayArtists()">artists</a>
+</div>
+
+<span onclick="openNav()" class="opensidenav">+</span>
+<!-- phonemenu -->
+
 <div class="playlisttitle">
     <h1 class="melancholic">Melancholic<h1>
 </div>
@@ -36,7 +52,6 @@
     <div class="pl"></div>
     <div class="title"></div>
     <div class="artist"></div>
-    <!-- <div class="cover"></div> -->
     <div class="controls">
         <img src="images/playicon2.png" class="play audio-play-button2" width="10%">
         <img src="images/stopicon.png" class="pause audio-stop-button" width="10%">
@@ -47,7 +62,10 @@
     <div class="tracker"></div>
 </div>
 
-<div class="playlistabout" id="displayAbout"></div>
+<div class="playlistabout" id="displayAbout">
+    <div class="carousel" data-flickity='{ "groupCells": true, "wrapAround": true }'>
+    </div>
+</div>
 
 <!-- songs -->
 <div class="playlistsongs" id="displaySongs">
@@ -327,6 +345,7 @@
 </div>
 <!-- audio -->
 
+<script src="flickity/flickity.pkgd.js"></script>
 <script>
 $(".dropbtn").click(function () {
 
@@ -341,6 +360,14 @@ $(".dropbtn").click(function () {
 
 });
 
+function openNav() {
+  document.getElementById("mySidenav").style.width = "70vw";
+};
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+};
+
 function displayArtists() {
     document.getElementById("displayArtists").style.display = "block";
     document.getElementById("displayAbout").style.display = "none";
@@ -351,7 +378,7 @@ function displayArtists() {
     document.getElementById("displayToveLo").style.display = "none";
     document.getElementById("displayLondonGrammar").style.display = "none";
     document.getElementById("displayWolfAlice").style.display = "none";
-}
+};
 
 function displaySongs() {
     document.getElementById("displaySongs").style.display = "block";
@@ -363,7 +390,7 @@ function displaySongs() {
     document.getElementById("displayToveLo").style.display = "none";
     document.getElementById("displayLondonGrammar").style.display = "none";
     document.getElementById("displayWolfAlice").style.display = "none";
-}
+};
 
 function displayAbout() {
     document.getElementById("displayAbout").style.display = "block";
@@ -375,7 +402,7 @@ function displayAbout() {
     document.getElementById("displayToveLo").style.display = "none";
     document.getElementById("displayLondonGrammar").style.display = "none";
     document.getElementById("displayWolfAlice").style.display = "none";
-}
+};
 
 function displayAurora() {
     document.getElementById("displayAurora").style.display = "block";
@@ -387,7 +414,7 @@ function displayAurora() {
     document.getElementById("displayToveLo").style.display = "none";
     document.getElementById("displayLondonGrammar").style.display = "none";
     document.getElementById("displayWolfAlice").style.display = "none";
-}
+};
 
 function displayBillieEilish() {
     document.getElementById("displayBillieEilish").style.display = "block";
@@ -399,7 +426,7 @@ function displayBillieEilish() {
     document.getElementById("displayToveLo").style.display = "none";
     document.getElementById("displayLondonGrammar").style.display = "none";
     document.getElementById("displayWolfAlice").style.display = "none";
-}
+};
 
 function displaySabrinaClaudio() {
     document.getElementById("displaySabrinaClaudio").style.display = "block";
@@ -411,7 +438,7 @@ function displaySabrinaClaudio() {
     document.getElementById("displayToveLo").style.display = "none";
     document.getElementById("displayLondonGrammar").style.display = "none";
     document.getElementById("displayWolfAlice").style.display = "none";
-}
+};
 
 function displayToveLo() {
     document.getElementById("displayToveLo").style.display = "block";
@@ -423,7 +450,7 @@ function displayToveLo() {
     document.getElementById("displaySabrinaClaudio").style.display = "none";
     document.getElementById("displayLondonGrammar").style.display = "none";
     document.getElementById("displayWolfAlice").style.display = "none";
-}
+};
 
 function displayLondonGrammar() {
     document.getElementById("displayLondonGrammar").style.display = "block";
@@ -435,7 +462,7 @@ function displayLondonGrammar() {
     document.getElementById("displaySabrinaClaudio").style.display = "none";
     document.getElementById("displayToveLo").style.display = "none";
     document.getElementById("displayWolfAlice").style.display = "none";
-}
+};
 
 function displayWolfAlice() {
     document.getElementById("displayWolfAlice").style.display = "block";
@@ -447,7 +474,7 @@ function displayWolfAlice() {
     document.getElementById("displaySabrinaClaudio").style.display = "none";
     document.getElementById("displayToveLo").style.display = "none";
     document.getElementById("displayLondonGrammar").style.display = "none";
-}
+};
 
 $(function() {
 
@@ -525,7 +552,7 @@ $(document).ready(function(){
 
         for (var i = 0; i < melancholic.length; i++) {
 
-            $(".playlistabout").append("<img src=" + melancholic[i].image.original.url + " width='25%'>")
+            $(".carousel").append("<div class='carousel-cell'><img src=" + melancholic[i].image.original.url + " width='25%'></div>")
         };
 
     });

@@ -397,9 +397,15 @@ font-size: 1.2vw;
 	display: none;
 }
 
+.mySlides {
+	display: none;
+}
+
 #displayAbout {
 	/*display: none;*/
 }
+
+
 
 .playlistartists {
 	color: #707070;
@@ -528,16 +534,17 @@ font-size: 1.2vw;
 	position: absolute;
 	width: 52%;
 	text-align: center;
-	margin-left: 24vw;
-	margin-top: 12vw;
+	margin-left: 19vw;
+	margin-top: 0vw;
 }
 
-.playlistabout img {
+/*.playlistabout img {
 	vertical-align: top;
 	margin-left: 1vw;
 	margin-right: 1vw;
 	margin-bottom: 2vw;	
 }
+*/
 
 /* Audio Player Styles */
 
@@ -752,8 +759,36 @@ font-size: 1.2vw;
 	margin-top: 0vw;
 }
 
-.menu {
+.phonemenu a {
+	padding-bottom: 2vw;
+	text-decoration: none;
+	font-size: 3vw;
+	letter-spacing: 0.4vw;
+	color: #707070;
+	font-weight: 300;
+	display: block;
+}
+
+.phonemenu {
+	position: absolute;
+	width: 11vw;
+	font-family: helvetica, sans-serif;
+	text-transform: uppercase;
+	margin-top: 13.5vw;
+	margin-left: 4vw;
+}
+
+.menu, .dropdown {
 	display: none;
+}
+
+.playlisttitle {
+	position: absolute;
+	margin-top: 5vw;
+}
+
+.melancholic {
+	font-size: 10vw;
 }
 
 .indexcontent {
@@ -773,5 +808,39 @@ font-size: 1.2vw;
 	padding-left: 4vw;
 	padding-right: 4vw;
 }
+
+.player {
+	position: fixed;
+	margin-top: 152vw;
+	width: 65vw;
+	height: 25vw;
+	margin-left: -41vw;
+}
+
+/*playlistartists*/
+.playlistartists {
+	position: absolute;
+	margin-top: 25vw;
+	margin-left: 30vw;
+	width: 41vw;
+}
+
+.playlistartists img {
+	width: 100%;
+	margin-bottom: 15vw;
+}
+
+.playlistartists span {
+	position: absolute;
+	margin-top: -13vw;
+	padding-top: 0vw;
+	font-size: 3vw;
+}
+
+.playlistartists a {
+	font-size: 2vw;
+	margin-top: -8.5vw;
+}
+
 
 }
