@@ -1066,10 +1066,6 @@ input {
 	display: block;
 }
 
-.opacity {
-	opacity: 1;
-}
-
 .searchinfo img {
 	width: 55%;
 	padding-bottom: 13vw;
@@ -1115,6 +1111,52 @@ input {
 
 .searchartist {
 	margin-top: -8vw;
+}
+
+.playlistsongs {
+	margin-top: 30vw;
+	margin-left: 31vw;
+}
+
+.playlist img {
+	width: 55%;
+	margin-bottom: 15vw;
+}
+
+.icons img {
+	width: 5%;
+}
+
+.playicon {
+	margin-left: -10vw;
+	margin-top: 20vw;
+}
+
+.moreicon {
+	margin-left: -10vw;
+	margin-top: 9vw;
+	font-size: 7.5vw;
+}
+
+.icons {
+	/*margin-left: -2vw;*/
+}
+
+.playlistsongs span {
+	/*position: absolute;*/
+	display: block;
+	font-size: 2.6vw;
+	font-weight: 700;
+	letter-spacing: 0.1vw
+	/*margin-top: -100vw;*/
+}
+
+.playlistsongs text {
+	display: block;
+	font-size: 2.5vw;
+	font-weight: 500;
+	letter-spacing: 0.1vw;
+	margin-top: -12vw;
 }
 
 }

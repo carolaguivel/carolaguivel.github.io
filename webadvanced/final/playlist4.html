@@ -28,6 +28,38 @@
 </div>
 <!-- menu -->
 
+<!-- phonemenu -->
+<article class="menubar">
+    <div class="phonemenu" id="open-toggle">
+        <h1>Gloomy</h1>
+        <div class="line1"></div>
+        <a href="index.html">Playlists</a>
+        <div class="line2"></div>
+        <a href="artists.html">Artists</a>
+        <div class="line3"></div>
+        <a href="search.html">Search</a>
+        <div class="playlistphonemenu">
+            <a onclick="displayAbout()">about</a>
+            <a onclick="displaySongs()">songs</a>
+            <a onclick="displayArtists()">artists</a>
+        </div>
+        <div class="phoneplayer">
+            <div class="pl"></div>
+            <div class="title"></div>
+            <div class="artist"></div>
+            <div class="controls">
+                <img src="images/playicon2.png" class="play audio-play-button2" width="10%">
+                <img src="images/stopicon.png" class="pause audio-stop-button" width="10%">
+                <img src="images/left.png" class="rew" width="10%">
+                <img src="images/right.png" class="fwd" width="10%">
+            </div>
+            <div class="volume"></div>
+            <div class="tracker"></div>
+        </div>
+    </div>
+</article>
+<!-- phonemenu -->
+
 <div class="playlisttitle">
     <h1 class="gloomy">Gloomy<h1>
 </div>
@@ -329,6 +361,17 @@ $(".dropbtn").click(function () {
 
     $dropdowncontent.toggleClass("opened")
 
+});
+
+var openToggle = document.querySelector ('#open-toggle')
+
+openToggle.addEventListener ('click', function () {
+
+  var article = this.closest('article');
+
+  var drawer = article.querySelector('.phonemenu');
+  drawer.classList.toggle('is-open');
+  // console.log(article.querySelector('.phonemenu'));
 });
 
 function displayArtists() {
