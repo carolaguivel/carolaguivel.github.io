@@ -855,15 +855,21 @@ font-size: 1.2vw;
 
 .bio p {
 	position: absolute;
-	font-size: 2vw;
+	font-size: 2.5vw;
 	margin-left: -31.5vw;
-	width: 20vw;
+	margin-top: 31.5vw;
+	width: 47vw;
+	line-height: 3vw;
 	background-color: red;
 }
 
 .artistabout img {
 	width: 70%;
 	margin-left: -1.5vw;
+}
+
+.info {
+	margin-top: 52vw;
 }
 
 .info img {
