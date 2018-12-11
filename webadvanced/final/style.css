@@ -769,6 +769,15 @@ font-size: 1.2vw;
 	background-color: #707070;
 }
 
+.line3 {
+	position: absolute;
+	margin-left: 2vw;
+	margin-top: -6vw;
+	width: 75vw;
+	height: 1vw;
+	background-color: #707070;
+}
+
 .phonemenu a {
 	padding-bottom: 8vw;
 	text-decoration: none;
