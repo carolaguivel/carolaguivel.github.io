@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="https://use.typekit.net/kmk8gyv.css">
 	<link rel="stylesheet" type="text/css" href="flickity/flickity.css">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
@@ -17,15 +18,29 @@
 </ul>
 <!-- menu -->
 
+<!-- phonemenu -->
+<article class="menubar">
+  <div class="phonemenu" id="open-toggle">
+    <h1>Sylvan Esso</h1>
+    <div class="line1"></div>
+    <a href="index.html">Playlists</a>
+    <div class="line2"></div>
+    <a href="artists.html">Artists</a>
+    <div class="line3"></div>
+    <a href="search.html">Search</a>
+  </div>
+</article>
+<!-- phonemenu -->
+
 <!-- content -->
-<div class="artistabout">
+<div class="artistabout artistaboutwtitle">
     <img src="images/sylvanesso.png" width="33%">
     <div class="bio">
-        <h2>Sylvan Esso</h2>
+        <h2 class="biopagetitle">Sylvan Esso</h2>
         <p>Sylvan Esso is an American electronic pop duo from Durham, North Carolina formed in 2013. The band consists of singer Amelia Meath and producer Nick Sanborn. They made their debut with the single "Hey Mami" and released their eponymous debut album on Partisan Records on May 12, 2014, which reached No. 39 on the Billboard 200. They released their second album What Now with Loma Vista Recordings on April 28, 2017, which was nominated for a Grammy in the "Best Dance/Electronic Album category."</p>
         <span>Appears on <a href="playlist6.html" class="appearson">Peculiar</a></span>
     </div>
-    <div class="info">
+    <div class="info lines13">
         <h3>More Info</h3>
         <img src="images/instagram.png" width="1.5%">
         <a class="infolink" href="https://www.instagram.com/sylvanesso/?hl=en" target="_blank">Instagram</a>
@@ -36,13 +51,24 @@
         <img src="images/facebook.png" width="1.5%">
         <a class="infolink" href="https://www.facebook.com/SylvanEsso/" target="_blank">Facebook</a>
         <br>
-        <img src="images/Wikipedia.png" width="1.5%">
+        <img src="images/wikipedia.png" width="1.5%">
         <a class="infolink" href="https://en.wikipedia.org/wiki/Sylvan_Esso" target="_blank">Wikipedia</a>
     </div>
 </div>
 <!-- content -->
 
 
-<script></script>
+<script>
+var openToggle = document.querySelector ('#open-toggle')
+
+openToggle.addEventListener ('click', function () {
+
+  var article = this.closest('article');
+
+  var drawer = article.querySelector('.phonemenu');
+  drawer.classList.toggle('is-open');
+  // console.log(article.querySelector('.phonemenu'));
+});
+</script>
 </body>
 </html>

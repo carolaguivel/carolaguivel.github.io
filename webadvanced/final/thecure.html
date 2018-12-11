@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="https://use.typekit.net/kmk8gyv.css">
 	<link rel="stylesheet" type="text/css" href="flickity/flickity.css">
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
@@ -17,15 +18,29 @@
 </ul>
 <!-- menu -->
 
+<!-- phonemenu -->
+<article class="menubar">
+  <div class="phonemenu" id="open-toggle">
+    <h1>The Cure</h1>
+    <div class="line1"></div>
+    <a href="index.html">Playlists</a>
+    <div class="line2"></div>
+    <a href="artists.html">Artists</a>
+    <div class="line3"></div>
+    <a href="search.html">Search</a>
+  </div>
+</article>
+<!-- phonemenu -->
+
 <!-- content -->
-<div class="artistabout">
+<div class="artistabout artistaboutwtitle">
 	<img src="images/thecure.png" width="33%">
 	<div class="bio">
-		<h2>The Cure</h2>
+		<h2 class="biopagetitle">The Cure</h2>
 		<p>Out of all the bands that emerged in the immediate aftermath of punk rock in the late '70s, few were as enduring and popular as the Cure. Led through numerous incarnations by guitarist/vocalist Rober Smith, the band became well-known for its slow, gloomy dirges and Smith's ghoulish appearance, a public image that often hid the diversity of the Cure's music. At the outset, the Cure played jagged, edgy pop songs before slowly evolving into a more textured outfit. As one of the bands that laid the seeds for goth rock, the group created towering layers of guitar and synthesizers.</p>
 		<span>Appears on <a href="playlist4.html" class="appearson">Gloomy</a></span>
 	</div>
-	<div class="info">
+	<div class="info lines14">
 		<h3>More Info</h3>
 		<!-- <img src="images/instagram.png" width="1.5%">
 		<a class="infolink" href="https://www.instagram.com/officialjoydivision/?hl=en" target="_blank">Instagram</a>
@@ -36,13 +51,23 @@
 		<img src="images/facebook.png" width="1.5%">
 		<a class="infolink" href="https://www.facebook.com/thecure/" target="_blank">Facebook</a>
 		<br>
-		<img src="images/Wikipedia.png" width="1.5%">
+		<img src="images/wikipedia.png" width="1.5%">
 		<a class="infolink" href="https://en.wikipedia.org/wiki/The_Cure" target="_blank">Wikipedia</a>
 	</div>
 </div>
 <!-- content -->
 
+<script>
+var openToggle = document.querySelector ('#open-toggle')
 
-<script></script>
+openToggle.addEventListener ('click', function () {
+
+  var article = this.closest('article');
+
+  var drawer = article.querySelector('.phonemenu');
+  drawer.classList.toggle('is-open');
+  // console.log(article.querySelector('.phonemenu'));
+});
+</script>
 </body>
 </html>

@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="https://use.typekit.net/kmk8gyv.css">
 	<link rel="stylesheet" type="text/css" href="flickity/flickity.css">
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
@@ -17,15 +18,29 @@
 </ul>
 <!-- menu -->
 
+<!-- phonemenu -->
+<article class="menubar">
+  <div class="phonemenu" id="open-toggle">
+    <h1>The xx</h1>
+    <div class="line1"></div>
+    <a href="index.html">Playlists</a>
+    <div class="line2"></div>
+    <a href="artists.html">Artists</a>
+    <div class="line3"></div>
+    <a href="search.html">Search</a>
+  </div>
+</article>
+<!-- phonemenu -->
+
 <!-- content -->
-<div class="artistabout">
+<div class="artistabout artistaboutwtitle">
 	<img src="images/thexx.png" width="33%">
 	<div class="bio">
-		<h2>The xx</h2>
+		<h2 class="biopagetitle">The xx</h2>
 		<p>Atmospheric English indie pop group the xx formed in London around the talents of Romy Madley Croft, Oliver Sim, Baria Qureshi, and Jamie Smith, when the bandmembers were still in high school. Captivating and cool, the group cites influences that run the gamut from R&amp;B to classic alternative rock. The group's signature brand of moody, soulful indie rock first appeared on the public radar early 2009 with the single "Crystalised," which created a huge buzz among critics and fans alike. The xx released their self-titled debut LP in July that year. Later that year, Qureshi was no longer part of the group; the rest of the xx released a statement saying this was due to "personal differences."</p>
 		<span>Appears on <a href="playlist2.html" class="appearson">Ecstatic</a></span>
 	</div>
-	<div class="info">
+	<div class="info lines17">
 		<h3>More Info</h3>
 		<img src="images/instagram.png" width="1.5%">
 		<a class="infolink" href="https://www.instagram.com/thexx/?hl=en" target="_blank">Instagram</a>
@@ -36,13 +51,24 @@
 		<img src="images/facebook.png" width="1.5%">
 		<a class="infolink" href="https://www.facebook.com/thexx/" target="_blank">Facebook</a>
 		<br>
-		<img src="images/Wikipedia.png" width="1.5%">
+		<img src="images/wikipedia.png" width="1.5%">
 		<a class="infolink" href="https://en.wikipedia.org/wiki/The_xx" target="_blank">Wikipedia</a>
 	</div>
 </div>
 <!-- content -->
 
 
-<script></script>
+<script>
+var openToggle = document.querySelector ('#open-toggle')
+
+openToggle.addEventListener ('click', function () {
+
+  var article = this.closest('article');
+
+  var drawer = article.querySelector('.phonemenu');
+  drawer.classList.toggle('is-open');
+  // console.log(article.querySelector('.phonemenu'));
+});
+</script>
 </body>
 </html>

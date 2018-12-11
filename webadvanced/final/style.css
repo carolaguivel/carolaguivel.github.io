@@ -921,7 +921,7 @@ font-size: 1.2vw;
 .info {
 	position: absolute;
 	margin-left: -2vw;
-	height: 36vw;
+	height: 38vw;
 	/*background-color: red;*/
 }
 
@@ -968,6 +968,10 @@ font-size: 1.2vw;
 
 .lines12 {
 	margin-top: 50vw;
+}
+
+.lines13 {
+	margin-top: 54vw;
 }
 
 .lines18 {
