@@ -982,4 +982,73 @@ font-size: 1.2vw;
 	margin-top: 36vw;
 }
 
+.row {
+	position: absolute;
+	font-family: Helvetica, sans-serif;
+	display: block;
+	margin-top: 30vw;
+	margin-left: 25.5vw;
+	/*background-color: red;*/
+	width: 48vw;
+}
+
+div .one {
+	height: 13vw;
+}
+
+div .two {
+	height: 19vw;
+}
+
+div .three {
+	height: 25vw;
+}
+
+div .four {
+	height: 31vw;
+}
+
+.row div {
+	position: relative;
+	display: block;
+	margin-right: 0vw;
+	margin-left: 0vw;
+	margin-top: 0vw;
+	margin-bottom: 10vw;
+}
+
+.row h1 {
+	position: relative;
+	font-size: 5vw;
+	margin: 0;
+	width: 30vw;
+	display: block;
+	margin: 0vw;
+
+}
+
+.row a {
+	position: relative;
+	margin: 0vw;
+	font-size: 5vw;
+	width: 48vw;
+	display: block;
+}
+
+.second {
+	margin-top: 0vw;
+}
+
+.third {
+	margin-top: 0vw;
+}
+
+.fourth {
+	margin-top: 0vw;
+}
+
+.artistlink:hover {
+	border-bottom: none;
+}
+
 }

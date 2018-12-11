@@ -17,70 +17,82 @@
 </ul>
 <!-- menu -->
 
+<!-- phonemenu -->
+<article class="menubar">
+  <div class="phonemenu" id="open-toggle">
+    <h1>Artists</h1>
+    <div class="line1"></div>
+    <a href="index.html">Playlists</a>
+    <div class="line2"></div>
+    <a href="search.html">Search</a>
+  </div>
+</article>
+<!-- phonemenu -->
+
 <!-- content -->
 <div class="row">
-	<div class="A">
+	<div class="A two">
 		<h1>A</h1>
 		<a href="altj.html" class="artistlink">alt-J</a>
 		<a href="aurora.html" class="artistlink second">AURORA</a>
 	</div>
-	<div class="B">
+	<div class="B four">
 		<h1>B</h1>
 		<a href="batforlashes.html" class="artistlink">Bat For Lashes</a>
 		<a href="bauhaus.html" class="artistlink second">Bauhaus</a>
 		<a href="beshken.html" class="artistlink third">Beshken</a>
 		<a href="billieeilish.html" class="artistlink fourth">Billie Eilish</a>
 	</div>	
-	<div class="C">
+	<div class="C two">
 		<h1>C</h1>
 		<a href="christianloffler.html" class="artistlink">Christian L&ouml;ffler</a>
 		<a href="thecure.html" class="artistlink second">The Cure</a>
 	</div>	
-	<div class="F">
+	<div class="F two">
 		<h1>F</h1>
 		<a href="fengsuave.html" class="artistlink">Feng Suave</a>
 		<a href="foreignair.html" class="artistlink second">Foreign Air</a>
 	</div>
-	<div class="H">
+	<div class="H one">
 		<h1>H</h1>
 		<a href="homeshake.html" class="artistlink">HOMESHAKE</a>
 	</div>
-	<div class="J">
+	<div class="J two">
 		<h1>J</h1>
 		<a href="jamiexx.html" class="artistlink">Jamie xx</a>
 		<a href="joydivision.html" class="artistlink second">Joy Division</a>
 	</div>
-	<div class="K">
+	<div class="K one">
 		<h1>K</h1>
 		<a href="kingkrule.html" class="artistlink">King Krule</a>
 	</div>
-	<div class="L">
+	<div class="L three">
 		<h1>L</h1>
 		<a href="lewisdelmar.html" class="artistlink">Lewis Del Mar</a>
 		<a href="londongrammar.html" class="artistlink second">London Grammar</a>
 		<a href="lorde.html" class="artistlink third">Lorde</a>
 	</div>
-	<div class="M">
+	<div class="M four">
 		<h1>M</h1>
 		<a href="macdemarco.html" class="artistlink">Mac DeMarco</a>
 		<a href="mavipheonix.html" class="artistlink second">Mavi Pheonix</a>
 		<a href="mountkimbie.html" class="artistlink third">Mount Kimbie</a>
 		<a href="muramasa.html" class="artistlink fourth">Mura Masa</a>
 	</div>
-	<div class="S">
+	<div class="S four">
 		<h1>S</h1>
 		<a href="sabrinaclaudio.html" class="artistlink">Sabrina Claudio</a>
 		<a href="shewantsrevenge.html" class="artistlink second">She Wants Revenge</a>
 		<a href="thesoftmoon.html" class="artistlink third">The Soft Moon</a>
 		<a href="sylvanesso.html" class="artistlink fourth">Sylvan Esso</a>
 	</div>
-	<div class="T">
+	<div class="T three">
 		<h1>T</h1>
 		<a href="tchami.html" class="artistlink">Tchami</a>
 		<a href="thexx.html" class="artistlink third">The xx</a>
 		<a href="tovelo.html" class="artistlink second">Tove Lo</a>
 	</div>	
-	<div class="W">
+	<div class="W one">
 		<h1>W</h1>
 		<a href="wolfalice.html" class="artistlink">Wolf Alice</a>
 	</div>	
@@ -89,5 +101,17 @@
 
 
 <script src="flickity/flickity.pkgd.js"></script>
+<script>
+var openToggle = document.querySelector ('#open-toggle')
+
+openToggle.addEventListener ('click', function () {
+
+  var article = this.closest('article');
+
+  var drawer = article.querySelector('.phonemenu');
+  drawer.classList.toggle('is-open');
+  // console.log(article.querySelector('.phonemenu'));
+});
+</script>
 </body>
 </html>
