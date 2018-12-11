@@ -753,7 +753,7 @@ font-size: 1.2vw;
 
 .phonemenu.is-open {
   	width: 80vw;
-  	height: 75vh;
+  	height: 74.5vh;
 }
 
 .line1 {
@@ -803,11 +803,18 @@ font-size: 1.2vw;
 	color: #707070;
 }
 
+.playlistphonemenu a {
+	font-family: Helvetica, sans-serif;
+	font-size: 5vw;
+	text-transform: uppercase;
+	letter-spacing: 0.8vw;
+}
+
 .phoneplayer {
 	display: block;
 	position: absolute;
 	z-index: 3;
-	margin-top: 2vw;
+	margin-top: -4vw;
 	margin-left: -42vw;
 }
 
@@ -844,7 +851,7 @@ font-size: 1.2vw;
 /*playlistartists*/
 .playlistartists {
 	position: absolute;
-	margin-top: 25vw;
+	margin-top: 30vw;
 	margin-left: 30vw;
 	width: 41vw;
 }
@@ -867,7 +874,7 @@ font-size: 1.2vw;
 }
 
 .artistabout {
-	margin-top: 24vw;
+	margin-top: 33vw;
 }
 
 .bio h2 {
@@ -881,9 +888,21 @@ font-size: 1.2vw;
 	position: absolute;
 	font-size: 2.5vw;
 	margin-left: -31.5vw;
-	margin-top: 31.5vw;
+	margin-top: 32.5vw;
 	width: 47vw;
 	line-height: 3.5vw;
+}
+
+.bio span {
+	/*position: absolute;
+	font-size: 2.5vw;
+	margin-left: -31.5vw;
+	margin-top: 87vw;*/
+	display: none;
+}
+
+.bio a {
+	font-size: 2.5vw;
 }
 
 .artistabout img {
@@ -893,7 +912,7 @@ font-size: 1.2vw;
 
 .info {
 	position: absolute;
-	margin-top: 58.5vw;
+	margin-top: 65.5vw;
 	margin-left: -2vw;
 }
 
