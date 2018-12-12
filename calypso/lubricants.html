@@ -39,7 +39,31 @@
 <!-- menu -->
 
 <!-- content -->
+<div class="smalllube" id="smalllube">
+	<img src="images/lubricant3.png" width="25%">
+	<div class="info">
+		<h1>Organic Lubricant</h1>
+		<span>$10</span>
+		<p>Made with moisturizing aloe, this 100% natural lubricant is organic and ultra-hydrating. The gentle pH-balanced formula is free from glycerin and parabens and manufactured to the ideal osmolality for the body. Safe to use when trying to conceive.
+		<br><br>Can be used with toys and condoms.</p>
+		<a onclick="displaySmallLube()" class="selectedlube">0.02 oz</a>
+		<a onclick="displayBigLube()">8 oz</a>
+		<div class="cartbutton">Add to Cart</div>
+	</div>
+</div>
 
+<div class="biglube" id="biglube">
+	<img src="images/lubricant4.png" width="25%">
+	<div class="info">
+		<h1>Organic Lubricant</h1>
+		<span>$20</span>
+		<p>Made with moisturizing aloe, this 100% natural lubricant is organic and ultra-hydrating. The gentle pH-balanced formula is free from glycerin and parabens and manufactured to the ideal osmolality for the body. Safe to use when trying to conceive.
+		<br><br>Can be used with toys and condoms.</p>
+		<a onclick="displaySmallLube()">0.02 oz</a>
+		<a onclick="displayBigLube()" class="selectedlube">8 oz</a>
+		<div class="cartbutton">Add to Cart</div>
+	</div>
+</div>
 <!-- content -->
 
 <!-- footer -->
@@ -68,5 +92,17 @@
 	</li>
 </ul>
 <!-- footer -->
+<script>
+function displayBigLube() {
+    document.getElementById("biglube").style.display = "block";
+    document.getElementById("smalllube").style.display = "none";
+};
+
+function displaySmallLube() {
+    document.getElementById("smalllube").style.display = "block";
+    document.getElementById("biglube").style.display = "none";
+};
+
+</script>
 </body>
 </html>
