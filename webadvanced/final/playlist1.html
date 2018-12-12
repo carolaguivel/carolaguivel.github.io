@@ -80,7 +80,14 @@
 </div>
 
 <div class="playlistabout" id="displayAbout">
-    <div class="carousel" data-flickity='{ "groupCells": true, "wrapAround": true }'>
+    <div class="carousel">
+        <!-- <img src="images/billieeilish.png" width="100%">
+        <img src="images/billieeilish.png" width="100%">
+        <img src="images/billieeilish.png" width="100%">
+        <img src="images/billieeilish.png" width="100%">
+        <img src="images/billieeilish.png" width="100%">
+        <img src="images/billieeilish.png" width="100%">
+        <img src="images/billieeilish.png" width="100%"> -->
     </div>
 </div>
 
@@ -597,6 +604,13 @@ $(document).ready(function(){
 
     });
 });
+
+$('.carousel').flickity({
+        // options
+        grouCells: true,
+        wrapAround: true,
+});
+
 
 </script>
 </body>
