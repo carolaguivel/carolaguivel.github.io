@@ -381,35 +381,42 @@ input:focus {
 }
 
 .info h1 {
+	color: #819FA2;
 	font-size: 3vw;
 	margin-bottom: 1vw;
 }
 
 .info span {
-	color: #819FA2;
-	font-family: avenir, sans-serif;
+	color: #000000;
+	/*font-family: avenir, sans-serif;*/
 	font-weight: 500;
 	font-size: 2vw;
 }
 
 .info p {
-	font-family: avenir, sans-serif;
+	/*font-family: avenir, sans-serif;*/
 	width: 19vw;
-	margin-top: 3vw;
-	margin-bottom: 4vw;
+	margin-top: 2.8vw;
+	margin-bottom: 3.2vw;
+	font-size: 1.05vw;
 }
 
 .info a {
-	color: #f0f0f0;
-	font-family: avenir, sans-serif;
-	background-color: #819FA2;
-	padding: 0.8vw 1.1vw 0.8vw 1.1vw;
+	color: #666666;
+	/*font-family: avenir, sans-serif;*/
+	font-size: 2vw;
+	/*background-color: #819FA2;*/
+	/*padding: 0.8vw 1.1vw 0.8vw 1.1vw;*/
 	margin-right: 2vw;
 }
 
 .info a:hover {
 	cursor: pointer;
-	font-weight: 500;
+	color: black;
+}
+
+.info .selectedlube {
+	color: #000000;
 }
 
 .cartbutton {
@@ -425,10 +432,6 @@ input:focus {
 	cursor: pointer;
 	color: #f0f0f0;
 	background-color: #819FA2;
-}
-
-.selectedlube {
-	font-weight: 500;
 }
 
 #biglube {
