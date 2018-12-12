@@ -531,7 +531,7 @@ $(function() {
     //     }
     //     initAudio(next);
 
-    };
+    // };
 
     $('.fwd').click(function (e) {
         e.preventDefault();
@@ -601,18 +601,18 @@ $(document).ready(function(){
 });
 
 // initialize Packery
-var $grid = $('.grid').packery({
-  itemSelector: '.grid-item',
-  columnWidth: 33.333,
-  gutter: 100,
-  percentPosition: true
+// var $grid = $('.grid').packery({
+//   itemSelector: '.grid-item',
+//   columnWidth: 33.333,
+//   gutter: 100,
+//   percentPosition: true
 
-});
+// });
 
-$grid.find('.grid-item').each( function( i, gridItem ) {
-  var draggie = new Draggabilly( gridItem );
-  $grid.packery( 'bindDraggabillyEvents', draggie );
-});
+// $grid.find('.grid-item').each( function( i, gridItem ) {
+//   var draggie = new Draggabilly( gridItem );
+//   $grid.packery( 'bindDraggabillyEvents', draggie );
+// });
 
 </script>
 </body>

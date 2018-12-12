@@ -34,25 +34,66 @@
 <!-- content -->
 <div class="indexcontent">
 	<div class="carousel" data-flickity='{ "groupCells": true, "wrapAround": true }'>
-		<a href="playlist1.html" class="carousel-cell"><img src="images/cd.jpg"></a>
-		<a href="playlist2.html" class="carousel-cell"><img src="images/cd.jpg"></a>
-		<a href="playlist3.html" class="carousel-cell"><img src="images/cd.jpg"></a>
-		<a href="playlist4.html" class="carousel-cell"><img src="images/cd.jpg"></a>
-		<a href="playlist5.html" class="carousel-cell"><img src="images/cd.jpg"></a>
-		<a href="playlist6.html" class="carousel-cell"><img src="images/cd.jpg"></a>
+		<a href="playlist1.html" class="carousel-cell" id="playlist1"><img src="images/cd.jpg"></a>
+		<a href="playlist2.html" class="carousel-cell" id="playlist2"><img src="images/cd.jpg"></a>
+		<a href="playlist3.html" class="carousel-cell" id="playlist3"><img src="images/cd.jpg"></a>
+		<a href="playlist4.html" class="carousel-cell" id="playlist4"><img src="images/cd.jpg"></a>
+		<a href="playlist5.html" class="carousel-cell" id="playlist5"><img src="images/cd.jpg"></a>
+		<a href="playlist6.html" class="carousel-cell" id="playlist6"><img src="images/cd.jpg"></a>
 	</div>
 </div>
 <!-- content -->
 
 <script src="flickity/flickity.pkgd.js"></script>
 <script>
-// $( "#playlist1" ).mouseenter(function() {
-//   $( "#melancholic" ).removeClass( "hidden" );
-// });
 
-// $( "#playlist1" ).mouseleave(function() {
-//   $( "#melancholic" ).addClass( "hidden" );
-// });
+$( "#playlist1" ).mouseenter(function() {
+  $( "body" ).addClass( "melancholicgradient" );
+});
+
+$( "#playlist1" ).mouseleave(function() {
+  $( "body" ).removeClass( "melancholicgradient" );
+});
+
+$( "#playlist2" ).mouseenter(function() {
+  $( "body" ).addClass( "ecstaticgradient" );
+});
+
+$( "#playlist2" ).mouseleave(function() {
+  $( "body" ).removeClass( "ecstaticgradient" );
+});
+
+$( "#playlist3" ).mouseenter(function() {
+  $( "body" ).addClass( "idyllicgradient" );
+});
+
+$( "#playlist3" ).mouseleave(function() {
+  $( "body" ).removeClass( "idyllicgradient" );
+});
+
+$( "#playlist4" ).mouseenter(function() {
+  $( "body" ).addClass( "gloomygradient" );
+});
+
+$( "#playlist4" ).mouseleave(function() {
+  $( "body" ).removeClass( "gloomygradient" );
+});
+
+$( "#playlist5" ).mouseenter(function() {
+  $( "body" ).addClass( "restlessgradient" );
+});
+
+$( "#playlist5" ).mouseleave(function() {
+  $( "body" ).removeClass( "restlessgradient" );
+});
+
+$( "#playlist6" ).mouseenter(function() {
+  $( "body" ).addClass( "peculiargradient" );
+});
+
+$( "#playlist6" ).mouseleave(function() {
+  $( "body" ).removeClass( "peculiargradient" );
+});
 
 // document.getElementById('playlist1').addEventListener('mousemove', function(ev){
 //    document.getElementById('melancholic').style.transform = 'translateY('+(ev.clientY-500)+'px)';

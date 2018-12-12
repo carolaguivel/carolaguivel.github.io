@@ -3,11 +3,289 @@ html, body {
 }
 
 body {
+	width: 100%;
+	height: 100%;
 	margin: 0;
 	background-color: #000000;
 	font-family: bebas-neue, sans-serif;
 	font-weight: 400;
 	font-style: normal;
+}
+
+.melancholicgradient {
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(116deg, #c3cfff, #ded4ff, #e1ebff);
+	background-size: 600% 600%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 51%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 51%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 51%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 51%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 51%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 51%
+	}
+}
+
+.ecstaticgradient {
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(220deg, #1946ff, #839cff, #002dbb, #aabfff);
+	background-size: 600% 600%;
+	-webkit-animation: Gradients 2s ease infinite;
+	-moz-animation: Gradients 2s ease infinite;
+	animation: Gradients 2s ease infinite;
+}
+
+@-webkit-keyframes Gradients {
+	0% {
+		background-position: 0% 51%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 51%
+	}
+}
+
+@-moz-keyframes Gradients {
+	0% {
+		background-position: 0% 51%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 51%
+	}
+}
+
+@keyframes Gradients {
+	0% {
+		background-position: 0% 51%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 51%
+	}
+}
+
+.idyllicgradient {
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(324deg, #9ba593, #f2e9cb, #bdc1a4, #d9d2bd);
+	background-size: 800% 800%;
+	-webkit-animation: Idyllic 34s ease infinite;
+	-moz-animation: Idyllic 34s ease infinite;
+	animation: Idyllic 34s ease infinite;
+}
+
+@-webkit-keyframes Idyllic {
+	0% {
+		background-position: 0% 51%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 51%
+	}
+}
+
+@-moz-keyframes Idyllic {
+	0% {
+		background-position: 0% 51%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 51%
+	}
+}
+
+@keyframes Idyllic {
+	0% {
+		background-position: 0% 51%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 51%
+	}
+}
+
+.gloomygradient {
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(46deg, #000000, #727272, #b2aa95, #000000);
+	background-size: 800% 800%;
+	-webkit-animation: Gloomy 16s ease infinite;
+	-moz-animation: Gloomy 16s ease infinite;
+	animation: Gloomy 16s ease infinite;
+}
+
+@-webkit-keyframes Gloomy {
+	0% {
+		background-position: 0% 51%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 51%
+	}
+}
+
+@-moz-keyframes Gloomy {
+	0% {
+		background-position: 0% 51%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 51%
+	}
+}
+
+@keyframes Gloomy {
+	0% {
+		background-position: 0% 51%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 51%
+	}
+}
+
+.restlessgradient {
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(55deg, #8a0000, #000000, #656565, #000000, #8a0000);
+	background-size: 800% 800%;
+	-webkit-animation: Restless 5s ease infinite;
+	-moz-animation: Restless 5s ease infinite;
+	animation: Restless 5s ease infinite;
+}
+
+@-webkit-keyframes Restless {
+	0% {
+		background-position: 0% 51%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 51%
+	}
+}
+
+@-moz-keyframes Restless {
+	0% {
+		background-position: 0% 51%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 51%
+	}
+}
+
+@keyframes Restless {
+	0% {
+		background-position: 0% 51%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 51%
+	}
+}
+
+.peculiargradient {
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(220deg, #ff3c3c, #ffa5d0, #ec5582, #ff5252, #ff4980);
+	background-size: 1000% 1000%;
+	-webkit-animation: Peculiar 4s ease infinite;
+	-moz-animation: Peculiar 4s ease infinite;
+	animation: Peculiar 4s ease infinite;
+}
+
+@-webkit-keyframes Peculiar {
+	0% {
+		background-position: 0% 51%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 51%
+	}
+}
+
+@-moz-keyframes Peculiar {
+	0% {
+		background-position: 0% 51%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 51%
+	}
+}
+
+@keyframes Peculiar {
+	0% {
+		background-position: 0% 51%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 51%
+	}
 }
 
 a {
