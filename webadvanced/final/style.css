@@ -1121,7 +1121,7 @@ font-size: 1.2vw;
 	display: block;
 	position: absolute;
 	z-index: 3;
-	margin-top: 5vw;
+	margin-top: 0vw;
 	margin-left: -40vw;
 }
 
