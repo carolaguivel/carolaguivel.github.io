@@ -7,6 +7,8 @@
 	<link rel="stylesheet" type="text/css" href="flickity/flickity.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/jquery-ui-1.8.21.custom.min.js"></script>
+    <script src="packery/packery.js"></script>
+    <script src="packery/draggabilly.js"></script>
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -51,11 +53,7 @@
             <div class="controls">
                 <img src="images/playicon2.png" class="play audio-play-button2" width="10%">
                 <img src="images/stopicon.png" class="pause audio-stop-button" width="10%">
-                <img src="images/left.png" class="rew" width="10%">
-                <img src="images/right.png" class="fwd" width="10%">
             </div>
-            <div class="volume"></div>
-            <div class="tracker"></div>
         </div>
     </div>
 </article>
@@ -72,21 +70,20 @@
     <div class="controls">
         <img src="images/playicon2.png" class="play audio-play-button2" width="10%">
         <img src="images/stopicon.png" class="pause audio-stop-button" width="10%">
-        <img src="images/left.png" class="rew" width="10%">
-        <img src="images/right.png" class="fwd" width="10%">
     </div>
-    <div class="volume"></div>
-    <div class="tracker"></div>
 </div>
 
-<div class="playlistabout" id="displayAbout"></div>
+<div class="playlistabout" id="displayAbout">
+    <div class="grid"></div>
+</div>
 
 <div class="playlistsongs" id="displaySongs">
     <ul class="playlist">
         <li>
             <div class="icons">
                 <a onclick="displayKingKrule()" class="moreicon">+</a>
-                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-halfmanhalfshark" data-artist="King Krule" data-title="Half Man Half Shark" width="2.1%">
+                <img src="images/playicon.png" class="pressplayhalfman playicon audio-play-button" data-audio-selector="#audio-halfmanhalfshark" data-artist="King Krule" data-title="Half Man Half Shark" width="2.1%">
+                <img src="images/stopicon.png" class="playinghalfman playicon audio-stop-button" width="2.1%">
             </div>
             <img src="images/theooz.png" width="22%">
             <span class="songtitle">Half Man Half Shark</span>
@@ -95,7 +92,8 @@
         <li>
             <div class="icons">
                 <a onclick="displayBeshken()" class="moreicon">+</a>
-                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-forceofevil" data-artist="Beshken" data-title="Force of Evil" width="2.1%">
+                <img src="images/playicon.png" class="pressplayforceofevil playicon audio-play-button" data-audio-selector="#audio-forceofevil" data-artist="Beshken" data-title="Force of Evil" width="2.1%">
+                <img src="images/stopicon.png" class="playingforceofevil playicon audio-stop-button" width="2.1%">
             </div>
             <img src="images/fortime.png" width="22%">
             <span class="songtitle">Force of Evil</span>
@@ -104,7 +102,8 @@
         <li>
             <div class="icons">
                 <a onclick="displayLewisDelMar()" class="moreicon">+</a>
-                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-suchsmallscenes" data-artist="Lewis Del Mar" data-title="Such Small Scenes" width="2.1%">
+                <img src="images/playicon.png" class="pressplaysmallscenes playicon audio-play-button" data-audio-selector="#audio-suchsmallscenes" data-artist="Lewis Del Mar" data-title="Such Small Scenes" width="2.1%">
+                <img src="images/stopicon.png" class="playingsmallscenes playicon audio-stop-button" width="2.1%">
             </div>
             <img src="images/lewisdelmar.png" width="22%">
             <span class="songtitle">Such Small Scenes</span>
@@ -113,7 +112,8 @@
         <li>
             <div class="icons">
                 <a onclick="displayaltJ()" class="moreicon">+</a>
-                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-deadcrush" data-artist="alt-J" data-title="Deadcrush" width="2.1%">
+                <img src="images/playicon.png" class="pressplaydeadcrush playicon audio-play-button" data-audio-selector="#audio-deadcrush" data-artist="alt-J" data-title="Deadcrush" width="2.1%">
+                <img src="images/stopicon.png" class="playingdeadcrush playicon audio-stop-button" width="2.1%">
             </div>
             <img src="images/relaxer.png" width="22%">
             <span class="songtitle">Deadcrush</span>
@@ -122,7 +122,8 @@
         <li>
             <div class="icons">
                 <a onclick="displayKingKrule()" class="moreicon">+</a>
-                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-alizardstate" data-artist="King Krule" data-title="A Lizard State" width="2.1%">
+                <img src="images/playicon.png" class="pressplaylizard playicon audio-play-button" data-audio-selector="#audio-alizardstate" data-artist="King Krule" data-title="A Lizard State" width="2.1%">
+                <img src="images/stopicon.png" class="playinglizard playicon audio-stop-button" width="2.1%">
             </div>
             <img src="images/6feetbeneaththemoon.png" width="22%">
             <span class="songtitle">A Lizard State</span>
@@ -131,7 +132,8 @@
         <li>
             <div class="icons">
                 <a onclick="displayForeignAir()" class="moreicon">+</a>
-                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-freeanimal" data-artist="Foreign Air" data-title="Free Animal" width="2.1%">
+                <img src="images/playicon.png" class="pressplayfreeanimal playicon audio-play-button" data-audio-selector="#audio-freeanimal" data-artist="Foreign Air" data-title="Free Animal" width="2.1%">
+                <img src="images/stopicon.png" class="playingfreeanimal playicon audio-stop-button" width="2.1%">
             </div>
             <img src="images/forthelight.png" width="22%">
             <span class="songtitle">Free Animal</span>
@@ -140,7 +142,8 @@
         <li>
             <div class="icons">
                 <a onclick="displayaltJ()" class="moreicon">+</a>
-                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-breezeblocks" data-artist="alt-J" data-title="Breezeblocks" width="2.1%">
+                <img src="images/playicon.png" class="pressplaybreezeblocks playicon audio-play-button" data-audio-selector="#audio-breezeblocks" data-artist="alt-J" data-title="Breezeblocks" width="2.1%">
+                <img src="images/stopicon.png" class="playingbreezeblocks playicon audio-stop-button" width="2.1%">
             </div>
             <img src="images/anawesomewave.png" width="22%">
             <span class="songtitle">Breezeblocks</span>
@@ -149,7 +152,8 @@
         <li>
             <div class="icons">
                 <a onclick="displayLewisDelMar()" class="moreicon">+</a>
-                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-loudy" data-artist="Lewis Del Mar" data-title="loud(y)" width="2.1%">
+                <img src="images/playicon.png" class="pressplayloudy playicon audio-play-button" data-audio-selector="#audio-loudy" data-artist="Lewis Del Mar" data-title="loud(y)" width="2.1%">
+                <img src="images/stopicon.png" class="playingloudy playicon audio-stop-button" width="2.1%">
             </div>
             <img src="images/ep.png" width="22%">
             <span class="songtitle">loud(y)</span>
@@ -158,7 +162,8 @@
         <li>
             <div class="icons">
                 <a onclick="displayaltJ()" class="moreicon">+</a>
-                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-everyotherfreckle" data-artist="alt-J" data-title="Every Other Freckle" width="2.1%">
+                <img src="images/playicon.png" class="pressplayfreckle playicon audio-play-button" data-audio-selector="#audio-everyotherfreckle" data-artist="alt-J" data-title="Every Other Freckle" width="2.1%">
+                <img src="images/stopicon.png" class="playingfreckle playicon audio-stop-button" width="2.1%">
             </div>
             <img src="images/thisisallyours.png" width="22%">
             <span class="songtitle">Every Other Freckle</span>
@@ -442,6 +447,33 @@ $(function() {
 
         $('.play').removeClass('hidden');
         $('.pause').removeClass('visible');
+
+        $('.pressplayhalfman').removeClass('hidden');
+        $('.playinghalfman').removeClass('visible');
+
+        $('.pressplaysmallscenes').removeClass('hidden');
+        $('.playingsmallscenes').removeClass('visible');
+
+        $('.pressplayforceofevil').removeClass('hidden');
+        $('.playingforceofevil').removeClass('visible');
+
+        $('.pressplaylizard').removeClass('hidden');
+        $('.playinglizard').removeClass('visible');
+
+        $('.pressplaydeadcrush').removeClass('hidden');
+        $('.playingdeadcrush').removeClass('visible');
+
+        $('.pressplayfreckle').removeClass('hidden');
+        $('.playingfreckle').removeClass('visible');
+
+        $('.pressplayloudy').removeClass('hidden');
+        $('.playingloudy').removeClass('visible');
+
+        $('.pressplaybreezeblocks').removeClass('hidden');
+        $('.playingbreezeblocks').removeClass('visible');
+
+        $('.pressplayfreeanimal').removeClass('hidden');
+        $('.playingfreeanimal').removeClass('visible');
     };
 
     $('.audio-play-button').click(function() {
@@ -471,26 +503,66 @@ $(function() {
 
     });
 
+    $('.pressplayhalfman').click(function() {
+
+            $('.pressplayhalfman').addClass('hidden');
+            $('.playinghalfman').addClass('visible');
+    });
+
+    $('.pressplayforceofevil').click(function() {
+
+            $('.pressplayforceofevil').addClass('hidden');
+            $('.playingforceofevil').addClass('visible');
+    });
+
+    $('.pressplaysmallscenes').click(function() {
+
+            $('.pressplaysmallscenes').addClass('hidden');
+            $('.playingsmallscenes').addClass('visible');
+    });
+
+    $('.pressplaydeadcrush').click(function() {
+
+            $('.pressplaydeadcrush').addClass('hidden');
+            $('.playingdeadcrush').addClass('visible');
+    });
+
+    $('.pressplaylizard').click(function() {
+
+            $('.pressplaylizard').addClass('hidden');
+            $('.playinglizard').addClass('visible');
+    });
+
+    $('.pressplayfreckle').click(function() {
+
+            $('.pressplayfreckle').addClass('hidden');
+            $('.playingfreckle').addClass('visible');
+    });
+
+    $('.pressplayloudy').click(function() {
+
+            $('.pressplayloudy').addClass('hidden');
+            $('.playingloudy').addClass('visible');
+    });
+
+    $('.pressplaybreezeblocks').click(function() {
+
+            $('.pressplaybreezeblocks').addClass('hidden');
+            $('.playingbreezeblocks').addClass('visible');
+    });
+
+    $('.pressplayfreeanimal').click(function() {
+
+            $('.pressplayfreeanimal').addClass('hidden');
+            $('.playingfreeanimal').addClass('visible');
+    });
+
     // Stop audio when clicking the stop button.
     $('.audio-stop-button').click(function() {
         stopAudio();
     });
 
 });
-
-  // var resumeAudio = function() {
-  //   var $allAudio = $('audio');
-
-  //   $allAudio.each(function() {
-  //     var $audio = $(this);
-
-  //     $audio.get(0).play();
-  //   });
-  // };
-
-  // $('.audio-play-button2').click(function() {
-  //   resumeAudio();
-  // });
 
 $(document).ready(function(){
 
@@ -500,12 +572,28 @@ $(document).ready(function(){
         var restless = data.contents;
 
         console.log(restless)
-    
 
         for (var i = 0; i < restless.length; i++) {
 
-            $(".playlistabout").append("<img src=" + restless[i].image.original.url + " width='25%'>")
+            var images = restless[i].image.original.url
+
+            $(".grid").append("<div class='grid-item'><img src=" + images + " width='100%'></div>")
         };
+
+        // $('.grid').packery({
+        //     itemSelector: '.grid-item',
+        //     gutter: 10,
+        // });
+
+        var $grid = $('.grid').packery({
+            itemSelector: '.grid-item',
+            gutter: 10
+        });
+
+        $grid.find('.grid-item').each( function( i, gridItem ) {
+            var draggie = new Draggabilly( gridItem );
+            $grid.packery( 'bindDraggabillyEvents', draggie );
+        });
 
     });
 });

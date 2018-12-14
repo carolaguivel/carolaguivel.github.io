@@ -26,11 +26,7 @@
         <div class="controls">
             <img src="images/playicon2.png" class="play audio-play-button2" width="10%">
             <img src="images/stopicon.png" class="pause audio-stop-button" width="10%">
-            <img src="images/left.png" class="rew" width="10%">
-            <img src="images/right.png" class="fwd" width="10%">
         </div>
-        <div class="volume"></div>
-        <div class="tracker"></div>
     </div>
 </article>
 <!-- phonemenu -->
@@ -120,11 +116,22 @@
     <li>
         <div class="searchicon">
             <p onclick="openAurora()" class="searchmoreicon">+</p>
-            <img src="images/playicon.png" class="searchplayicon audio-play-button" data-audio-selector="#audio-iwenttoofar" data-artist="AURORA" data-title="I went too far" width="8%">
+            <img src="images/playicon.png" class="searchplayicon audio-play-button" data-audio-selector="#audio-iwenttoofar" data-artist="AURORA" data-title="I Went Too Far (MK Remix)" width="8%">
         </div>
         <a class="searchinfo">
-            <img src="images/allmydemons.png" width="29%">
-            <span class="searchtitle">I went too far</span>
+            <img src="images/iwenttoofar.png" width="29%">
+            <span class="searchtitle">I Went Too Far (MK Remix)</span>
+            <text class="searchartist">AURORA</text>
+        </a>
+    </li>
+    <li>
+        <div class="searchicon">
+            <p onclick="openAurora()" class="searchmoreicon">+</p>
+            <img src="images/playicon.png" class="searchplayicon audio-play-button" data-audio-selector="#audio-forgottenlove" data-artist="AURORA" data-title="Forgotten Love" width="8%">
+        </div>
+        <a class="searchinfo">
+            <img src="images/forgottenlove.png" width="29%">
+            <span class="searchtitle">Forgotten Love</span>
             <text class="searchartist">AURORA</text>
         </a>
     </li>
@@ -380,7 +387,7 @@
         </div>
         <a class="searchinfo">
             <img src="images/fortime.png" width="29%">
-            <span class="searchtitle">For of Evil</span>
+            <span class="searchtitle">Force of Evil</span>
             <text class="searchartist">Beshken</text>
         </a>
     </li>
@@ -650,17 +657,6 @@
             <text class="searchartist">Lorde</text>
         </a>
     </li>
-    <li>
-        <div class="searchicon">
-            <p onclick="openSylvanEsso()" class="searchmoreicon">+</p>
-            <img src="images/playicon.png" class="searchplayicon audio-play-button" data-audio-selector="#audio-coffee" width="8%">
-        </div>
-        <a class="searchinfo">
-            <img src="images/sylvanessoalbum.png" width="29%">
-            <span class="searchtitle">Coffee</span>
-            <text class="searchartist">Sylvan Esso</text>
-        </a>
-    </li>
 </ul>
 <!-- content -->
 
@@ -671,11 +667,7 @@
     <div class="controls">
         <img src="images/playicon2.png" class="play audio-play-button2" width="10%">
         <img src="images/stopicon.png" class="pause audio-stop-button" width="10%">
-        <img src="images/left.png" class="rew" width="10%">
-        <img src="images/right.png" class="fwd" width="10%">
     </div>
-    <div class="volume"></div>
-    <div class="tracker"></div>
 </div>
 
 <!-- audio -->
@@ -688,7 +680,7 @@
     <audio id="audio-idontwannabeyouanymore" src="music/melancholic/idontwannabeyouanymore.mp3"></audio>
     <audio id="audio-heavenlycreatures" src="music/melancholic/heavenlycreatures.mp3"></audio>
     <audio id="audio-interlude" src="music/melancholic/interlude.mp3"></audio>
-    <audio id="audio-iwenttoofar" src="music/melancholic/iwenttoofar.mp3"></audio>
+    <audio id="audio-forgottenlove" src="music/melancholic/forgottenlove.mp3"></audio>
     <audio id="audio-orionsbelt" src="music/melancholic/orionsbelt.mp3"></audio>
     <audio id="audio-sixfeetunder" src="music/melancholic/sixfeetunder.mp3"></audio>
     <!-- ecstatic -->
@@ -741,6 +733,7 @@
     <audio id="audio-homemadedynamite" src="music/peculiar/homemadedynamite.mp3"></audio>
     <audio id="audio-hskt" src="music/peculiar/hskt.mp3"></audio>
     <audio id="audio-prime" src="music/peculiar/prime.mp3"></audio>
+    <audio id="audio-iwenttoofar" src="music/peculiar/iwenttoofar.mp3"></audio>
     <audio id="audio-youshouldseemeinacrown" src="music/peculiar/youshouldseemeinacrown.mp3"></audio>
 </div>
 <!-- audio -->
@@ -876,6 +869,180 @@ $(function() {
 
         $('.play').removeClass('hidden');
         $('.pause').removeClass('visible');
+
+        $('.pressplaypartyover').removeClass('hidden');
+        $('.playingpartyover').removeClass('visible');
+
+        $('.pressplayorionsbelt').removeClass('hidden');
+        $('.playingorionsbelt').removeClass('visible');
+
+        $('.pressplayforgottenlove').removeClass('hidden');
+        $('.playingforgottenlove').removeClass('visible');
+
+        $('.pressplaybaddays').removeClass('hidden');
+        $('.playingbaddays').removeClass('visible');
+
+        $('.pressplayidontwanna').removeClass('hidden');
+        $('.playingidontwanna').removeClass('visible');
+
+        $('.pressplayinterlude').removeClass('hidden');
+        $('.playinginterlude').removeClass('visible');
+
+        $('.pressplaylovely').removeClass('hidden');
+        $('.playinglovely').removeClass('visible');
+
+        $('.pressplayheavenly').removeClass('hidden');
+        $('.playingheavenly').removeClass('visible');
+
+        $('.pressplaysixfeet').removeClass('hidden');
+        $('.playingsixfeet').removeClass('visible');
+
+        $('.pressplayhome').removeClass('hidden');
+        $('.playinghome').removeClass('visible');
+
+        $('.pressplaybluetrain').removeClass('hidden');
+        $('.playingbluetrain').removeClass('visible');
+
+        $('.pressplayonhold').removeClass('hidden');
+        $('.playingonhold').removeClass('visible');
+
+        $('.pressplaycarbonated').removeClass('hidden');
+        $('.playingcarbonated').removeClass('visible');
+
+        $('.pressplayyork').removeClass('hidden');
+        $('.playingyork').removeClass('visible');
+
+        $('.pressplaythames').removeClass('hidden');
+        $('.playingthames').removeClass('visible');
+
+        $('.pressplayadieu').removeClass('hidden');
+        $('.playingadieu').removeClass('visible');
+
+        $('.pressplaydelta').removeClass('hidden');
+        $('.playingdelta').removeClass('visible');
+
+        $('.pressplaysleep').removeClass('hidden');
+        $('.playingsleep').removeClass('visible');
+
+        $('.pressplayuntitled').removeClass('hidden');
+        $('.playinguntitled').removeClass('visible');
+
+        $('.pressplaybermondsey').removeClass('hidden');
+        $('.playingbermondsey').removeClass('visible');
+
+        $('.pressplaybabyblue').removeClass('hidden');
+        $('.playingbabyblue').removeClass('visible');
+
+        $('.pressplaygiveit').removeClass('hidden');
+        $('.playinggiveit').removeClass('visible');
+
+        $('.pressplayfreaking').removeClass('hidden');
+        $('.playingfreaking').removeClass('visible');
+
+        $('.pressplaykh').removeClass('hidden');
+        $('.playingkh').removeClass('visible');
+
+        $('.pressplayoceanbed').removeClass('hidden');
+        $('.playingoceanbed').removeClass('visible');
+
+        $('.pressplayvenus').removeClass('hidden');
+        $('.playingvenus').removeClass('visible');
+
+        $('.pressplayborderline').removeClass('hidden');
+        $('.playingborderline').removeClass('visible');
+
+        $('.pressplayhoneymoon').removeClass('hidden');
+        $('.playinghoneymoon').removeClass('visible');
+
+        $('.pressplaywhatsagirl').removeClass('hidden');
+        $('.playingwhatsagirl').removeClass('visible');
+
+        $('.pressplaylostcontrol').removeClass('hidden');
+        $('.playinglostcontrol').removeClass('visible');
+
+        $('.pressplaylullaby').removeClass('hidden');
+        $('.playinglullaby').removeClass('visible');
+
+        $('.pressplaybela').removeClass('hidden');
+        $('.playingbela').removeClass('visible');
+
+        $('.pressplaydarkentries').removeClass('hidden');
+        $('.playingdarkentries').removeClass('visible');
+
+        $('.pressplaytearyou').removeClass('hidden');
+        $('.playingtearyou').removeClass('visible');
+
+        $('.pressplayzeros').removeClass('hidden');
+        $('.playingzeros').removeClass('visible');
+
+        $('.pressplaysister').removeClass('hidden');
+        $('.playingsister').removeClass('visible');
+
+        $('.pressplayeternal').removeClass('hidden');
+        $('.playingeternal').removeClass('visible');
+
+        $('.pressplaysiamese').removeClass('hidden');
+        $('.playingsiamese').removeClass('visible');
+
+        $('.play').removeClass('hidden');
+        $('.pause').removeClass('visible');
+
+        $('.pressplayhalfman').removeClass('hidden');
+        $('.playinghalfman').removeClass('visible');
+
+        $('.pressplaysmallscenes').removeClass('hidden');
+        $('.playingsmallscenes').removeClass('visible');
+
+        $('.pressplayforceofevil').removeClass('hidden');
+        $('.playingforceofevil').removeClass('visible');
+
+        $('.pressplaylizard').removeClass('hidden');
+        $('.playinglizard').removeClass('visible');
+
+        $('.pressplaydeadcrush').removeClass('hidden');
+        $('.playingdeadcrush').removeClass('visible');
+
+        $('.pressplayfreckle').removeClass('hidden');
+        $('.playingfreckle').removeClass('visible');
+
+        $('.pressplayloudy').removeClass('hidden');
+        $('.playingloudy').removeClass('visible');
+
+        $('.pressplaybreezeblocks').removeClass('hidden');
+        $('.playingbreezeblocks').removeClass('visible');
+
+        $('.pressplayfreeanimal').removeClass('hidden');
+        $('.playingfreeanimal').removeClass('visible');
+
+        $('.play').removeClass('hidden');
+        $('.pause').removeClass('visible');
+
+        $('.pressplayprime').removeClass('hidden');
+        $('.playingprime').removeClass('visible');
+
+        $('.pressplayheymami').removeClass('hidden');
+        $('.playingheymami').removeClass('visible');
+
+        $('.pressplayyoushould').removeClass('hidden');
+        $('.playingyoushould').removeClass('visible');
+
+        $('.pressplayhskt').removeClass('hidden');
+        $('.playinghskt').removeClass('visible');
+
+        $('.pressplaydiscotits').removeClass('hidden');
+        $('.playingdiscotits').removeClass('visible');
+
+        $('.pressplayfly').removeClass('hidden');
+        $('.playingfly').removeClass('visible');
+
+        $('.pressplaycopycat').removeClass('hidden');
+        $('.playingcopycat').removeClass('visible');
+
+        $('.pressplayiwenttoofar').removeClass('hidden');
+        $('.playingiwenttoofar').removeClass('visible');
+
+        $('.pressplayhomemade').removeClass('hidden');
+        $('.playinghomemade').removeClass('visible');
     };
 
     $('.audio-play-button').click(function() {
@@ -903,6 +1070,342 @@ $(function() {
         $('.play').addClass('hidden');
         $('.pause').addClass('visible');
 
+    });
+
+    $('.pressplaypartyover').click(function() {
+
+            $('.pressplaypartyover').addClass('hidden');
+            $('.playingpartyover').addClass('visible');
+    });
+
+    $('.pressplayorionsbelt').click(function() {
+
+            $('.pressplayorionsbelt').addClass('hidden');
+            $('.playingorionsbelt').addClass('visible');
+    });
+
+    $('.pressplayforgottenlove').click(function() {
+
+            $('.pressplayforgottenlove').addClass('hidden');
+            $('.playingforgottenlove').addClass('visible');
+    });
+
+    $('.pressplaybaddays').click(function() {
+
+            $('.pressplaybaddays').addClass('hidden');
+            $('.playingbaddays').addClass('visible');
+    });
+
+    $('.pressplayidontwanna').click(function() {
+
+            $('.pressplayidontwanna').addClass('hidden');
+            $('.playingidontwanna').addClass('visible');
+    });
+
+    $('.pressplayinterlude').click(function() {
+
+            $('.pressplayinterlude').addClass('hidden');
+            $('.playinginterlude').addClass('visible');
+    });
+
+    $('.pressplaylovely').click(function() {
+
+            $('.pressplaylovely').addClass('hidden');
+            $('.playinglovely').addClass('visible');
+    });
+
+    $('.pressplayheavenly').click(function() {
+
+            $('.pressplayheavenly').addClass('hidden');
+            $('.playingheavenly').addClass('visible');
+    });
+
+    $('.pressplaysixfeet').click(function() {
+
+            $('.pressplaysixfeet').addClass('hidden');
+            $('.playingsixfeet').addClass('visible');
+    });
+
+    $('.pressplayhome').click(function() {
+
+            $('.pressplayhome').addClass('hidden');
+            $('.playinghome').addClass('visible');
+    });
+
+    $('.pressplaybluetrain').click(function() {
+
+            $('.pressplaybluetrain').addClass('hidden');
+            $('.playingbluetrain').addClass('visible');
+    });
+
+    $('.pressplayonhold').click(function() {
+
+            $('.pressplayonhold').addClass('hidden');
+            $('.playingonhold').addClass('visible');
+    });
+
+    $('.pressplaycarbonated').click(function() {
+
+            $('.pressplaycarbonated').addClass('hidden');
+            $('.playingcarbonated').addClass('visible');
+    });
+
+    $('.pressplayyork').click(function() {
+
+            $('.pressplayyork').addClass('hidden');
+            $('.playingyork').addClass('visible');
+    });
+
+    $('.pressplaythames').click(function() {
+
+            $('.pressplaythames').addClass('hidden');
+            $('.playingthames').addClass('visible');
+    });
+
+    $('.pressplayadieu').click(function() {
+
+            $('.pressplayadieu').addClass('hidden');
+            $('.playingadieu').addClass('visible');
+    });
+
+    $('.pressplayuntitled').click(function() {
+
+            $('.pressplayuntitled').addClass('hidden');
+            $('.playinguntitled').addClass('visible');
+    });
+
+    $('.pressplaysleep').click(function() {
+
+            $('.pressplaysleep').addClass('hidden');
+            $('.playingsleep').addClass('visible');
+    });
+
+    $('.pressplaydelta').click(function() {
+
+            $('.pressplaydelta').addClass('hidden');
+            $('.playingdelta').addClass('visible');
+    });
+
+    $('.pressplaybermondsey').click(function() {
+
+            $('.pressplaybermondsey').addClass('hidden');
+            $('.playingbermondsey').addClass('visible');
+    });
+
+    $('.pressplaybabyblue').click(function() {
+
+            $('.pressplaybabyblue').addClass('hidden');
+            $('.playingbabyblue').addClass('visible');
+    });
+
+    $('.pressplayfreaking').click(function() {
+
+            $('.pressplayfreaking').addClass('hidden');
+            $('.playingfreaking').addClass('visible');
+    });
+
+    $('.pressplaygiveit').click(function() {
+
+            $('.pressplaygiveit').addClass('hidden');
+            $('.playinggiveit').addClass('visible');
+    });
+
+    $('.pressplaykh').click(function() {
+
+            $('.pressplaykh').addClass('hidden');
+            $('.playingkh').addClass('visible');
+    });
+
+    $('.pressplayoceanbed').click(function() {
+
+            $('.pressplayoceanbed').addClass('hidden');
+            $('.playingoceanbed').addClass('visible');
+    });
+
+    $('.pressplayborderline').click(function() {
+
+            $('.pressplayborderline').addClass('hidden');
+            $('.playingborderline').addClass('visible');
+    });
+
+    $('.pressplayvenus').click(function() {
+
+            $('.pressplayvenus').addClass('hidden');
+            $('.playingvenus').addClass('visible');
+    });
+
+    $('.pressplayhoneymoon').click(function() {
+
+            $('.pressplayhoneymoon').addClass('hidden');
+            $('.playinghoneymoon').addClass('visible');
+    });
+
+    $('.pressplaylostcontrol').click(function() {
+
+            $('.pressplaylostcontrol').addClass('hidden');
+            $('.playinglostcontrol').addClass('visible');
+    });
+
+    $('.pressplaywhatsagirl').click(function() {
+
+            $('.pressplaywhatsagirl').addClass('hidden');
+            $('.playingwhatsagirl').addClass('visible');
+    });
+
+    $('.pressplaylullaby').click(function() {
+
+            $('.pressplaylullaby').addClass('hidden');
+            $('.playinglullaby').addClass('visible');
+    });
+
+    $('.pressplaybela').click(function() {
+
+            $('.pressplaybela').addClass('hidden');
+            $('.playingbela').addClass('visible');
+    });
+
+    $('.pressplaydarkentries').click(function() {
+
+            $('.pressplaydarkentries').addClass('hidden');
+            $('.playingdarkentries').addClass('visible');
+    });
+
+    $('.pressplaytearyou').click(function() {
+
+            $('.pressplaytearyou').addClass('hidden');
+            $('.playingtearyou').addClass('visible');
+    });
+
+    $('.pressplayzeros').click(function() {
+
+            $('.pressplayzeros').addClass('hidden');
+            $('.playingzeros').addClass('visible');
+    });
+
+    $('.pressplaysister').click(function() {
+
+            $('.pressplaysister').addClass('hidden');
+            $('.playingsister').addClass('visible');
+    });
+
+    $('.pressplaysiamese').click(function() {
+
+            $('.pressplaysiamese').addClass('hidden');
+            $('.playingsiamese').addClass('visible');
+    });
+
+    $('.pressplayeternal').click(function() {
+
+            $('.pressplayeternal').addClass('hidden');
+            $('.playingeternal').addClass('visible');
+    });
+
+    $('.pressplayhalfman').click(function() {
+
+            $('.pressplayhalfman').addClass('hidden');
+            $('.playinghalfman').addClass('visible');
+    });
+
+    $('.pressplayforceofevil').click(function() {
+
+            $('.pressplayforceofevil').addClass('hidden');
+            $('.playingforceofevil').addClass('visible');
+    });
+
+    $('.pressplaysmallscenes').click(function() {
+
+            $('.pressplaysmallscenes').addClass('hidden');
+            $('.playingsmallscenes').addClass('visible');
+    });
+
+    $('.pressplaydeadcrush').click(function() {
+
+            $('.pressplaydeadcrush').addClass('hidden');
+            $('.playingdeadcrush').addClass('visible');
+    });
+
+    $('.pressplaylizard').click(function() {
+
+            $('.pressplaylizard').addClass('hidden');
+            $('.playinglizard').addClass('visible');
+    });
+
+    $('.pressplayfreckle').click(function() {
+
+            $('.pressplayfreckle').addClass('hidden');
+            $('.playingfreckle').addClass('visible');
+    });
+
+    $('.pressplayloudy').click(function() {
+
+            $('.pressplayloudy').addClass('hidden');
+            $('.playingloudy').addClass('visible');
+    });
+
+    $('.pressplaybreezeblocks').click(function() {
+
+            $('.pressplaybreezeblocks').addClass('hidden');
+            $('.playingbreezeblocks').addClass('visible');
+    });
+
+    $('.pressplayfreeanimal').click(function() {
+
+            $('.pressplayfreeanimal').addClass('hidden');
+            $('.playingfreeanimal').addClass('visible');
+    });
+
+    $('.pressplayprime').click(function() {
+
+            $('.pressplayprime').addClass('hidden');
+            $('.playingprime').addClass('visible');
+    });
+
+    $('.pressplayheymami').click(function() {
+
+            $('.pressplayheymami').addClass('hidden');
+            $('.playingheymami').addClass('visible');
+    });
+
+    $('.pressplayyoushould').click(function() {
+
+            $('.pressplayyoushould').addClass('hidden');
+            $('.playingyoushould').addClass('visible');
+    });
+
+    $('.pressplayhskt').click(function() {
+
+            $('.pressplayhskt').addClass('hidden');
+            $('.playinghskt').addClass('visible');
+    });
+
+    $('.pressplaydiscotits').click(function() {
+
+            $('.pressplaydiscotits').addClass('hidden');
+            $('.playingdiscotits').addClass('visible');
+    });
+
+    $('.pressplayfly').click(function() {
+
+            $('.pressplayfly').addClass('hidden');
+            $('.playingfly').addClass('visible');
+    });
+
+    $('.pressplaycopycat').click(function() {
+
+            $('.pressplaycopycat').addClass('hidden');
+            $('.playingcopycat').addClass('visible');
+    });
+
+    $('.pressplayhomemade').click(function() {
+
+            $('.pressplayhomemade').addClass('hidden');
+            $('.playinghomemade').addClass('visible');
+    });
+
+    $('.pressplayiwenttoofar').click(function() {
+
+            $('.pressplayiwenttoofar').addClass('hidden');
+            $('.playingiwenttoofar').addClass('visible');
     });
 
     // Stop audio when clicking the stop button.

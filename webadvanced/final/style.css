@@ -17,9 +17,9 @@ body {
 	height: 100%;
 	background: linear-gradient(116deg, #c3cfff, #ded4ff, #e1ebff);
 	background-size: 600% 600%;
-	-webkit-animation: Gradient 15s ease infinite;
-	-moz-animation: Gradient 15s ease infinite;
-	animation: Gradient 15s ease infinite;
+	-webkit-animation: Gradient 4s ease infinite;
+	-moz-animation: Gradient 4s ease infinite;
+	animation: Gradient 4s ease infinite;
 }
 
 @-webkit-keyframes Gradient {
@@ -109,9 +109,9 @@ body {
 	height: 100%;
 	background: linear-gradient(324deg, #9ba593, #f2e9cb, #bdc1a4, #d9d2bd);
 	background-size: 800% 800%;
-	-webkit-animation: Idyllic 34s ease infinite;
-	-moz-animation: Idyllic 34s ease infinite;
-	animation: Idyllic 34s ease infinite;
+	-webkit-animation: Idyllic 5s ease infinite;
+	-moz-animation: Idyllic 5s ease infinite;
+	animation: Idyllic 5s ease infinite;
 }
 
 @-webkit-keyframes Idyllic {
@@ -155,9 +155,9 @@ body {
 	height: 100%;
 	background: linear-gradient(46deg, #000000, #727272, #b2aa95, #000000);
 	background-size: 800% 800%;
-	-webkit-animation: Gloomy 16s ease infinite;
-	-moz-animation: Gloomy 16s ease infinite;
-	animation: Gloomy 16s ease infinite;
+	-webkit-animation: Gloomy 8s ease infinite;
+	-moz-animation: Gloomy 8s ease infinite;
+	animation: Gloomy 8s ease infinite;
 }
 
 @-webkit-keyframes Gloomy {
@@ -597,8 +597,24 @@ input:focus {
 
 /*grid*/
 
+.playlistabout {
+	width: 60%;
+	margin-left: 24vw;
+	margin-top: 14vw;
+}
+
+.grid {
+	width: 90%;
+}
+
 .grid-item {
+	width: 18%;
 	margin: 0;
+}
+
+.grid-item.is-dragging,
+.grid-item.is-positioning-post-drag {
+	z-index: 2; 
 }
 
 #melancholic, #ecstatic, #idyllic, #gloomy, #restless, #peculiar {  
@@ -608,6 +624,11 @@ color: #cccccc;
 font-family: bebas-neue, sans-serif;
 text-transform: capitalize;
 font-size: 1.2vw;
+}
+
+.playlistcarousel {
+	margin-top: 15vw;
+	width: 100%;
 }
 
 .notshown {
@@ -810,13 +831,7 @@ font-size: 1.2vw;
 	cursor: pointer;
 }
 
-.playlistabout {
-	position: absolute;
-	width: 52%;
-	text-align: center;
-	margin-left: 19vw;
-	margin-top: 0vw;
-}
+
 
 /*.playlistabout img {
 	vertical-align: top;
@@ -837,9 +852,9 @@ font-size: 1.2vw;
     /*background: transparent url("images/spr.png") no-repeat scroll center top;*/
     height: 162px;
     position: fixed;
-    width: 326px;
+    width: 28vw;
     z-index: 2;
-    margin-top: 45vw;
+    margin-top: 46vw;
     margin-left: -9.5vw;
     display: block;
 }
@@ -852,16 +867,15 @@ font-size: 1.2vw;
     font-family: helvetica, sans-serif;
     left: 167px;
     position: absolute;
-
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
+    letter-spacing: 0.1vw
 }
 .title {
 	font-family: helvetica, sans-serif;
 	font-size: 1.1vw;
 	font-weight: 700;
-	/*letter-spacing: 0.1vw*/
     color: #707070;
     font-size: 14px;
     font-weight: bold;
@@ -871,7 +885,6 @@ font-size: 1.2vw;
 	font-family: helvetica, sans-serif;
 	font-size: 1vw;
 	font-weight: 500;
-	/*letter-spacing: 0.1vw*/
     color: #707070;
     font-size: 12px;
     top: 40px;
@@ -887,16 +900,6 @@ font-size: 1.2vw;
 }
 .pl:hover {
     top: 21px;
-}
-
-.cover {
-    background: transparent url(data/cover) no-repeat scroll center top;
-    border-radius: 5px 5px 5px 5px;
-    height: 94px;
-    left: 20px;
-    position: absolute;
-    top: 20px;
-    width: 94px;
 }
 
 .controls {
@@ -920,24 +923,40 @@ font-size: 1.2vw;
     background-position: -8px -198px;
     display: none;
 }
-.controls .rew {
+
+.playingpartyover, .playingorionsbelt, .playingforgottenlove, .playingbaddays,
+.playingidontwanna, .playinginterlude, .playinglovely, .playingheavenly, .playinghome,
+.playingsixfeet, .playingprime, .playingyoushould, .playingheymami, .playinghskt,
+.playingdiscotits, .playingfly, .playingcopycat, .playinghomemade, .playingiwenttoofar,
+.playingonhold, .playingbluetrain, .playingyork, .playingcarbonated, .playingadieu,
+.playingthames, .playinguntitled, .playingdelta, .playingsleep, .playingdelta,
+.playinguntitled, .playingbabyblue, .playingbermondsey, .playingfreaking, .playinggiveit,
+.playingkh, .playingoceanbed, .playingborderline, .playingvenus, .playinghoneymoon,
+.playinglostcontrol, .playingwhatsagirl, .playinglullaby, .playingbela, .playingtearyou,
+.playingdarkentries, .playingzeros, .playingsister, .playingeternal, .playingsiamese,
+.playinghalfman, .playingsmallscenes, .playingforceofevil, .playinglizard,
+.playingdeadcrush, .playingloudy, .playingfreckle, .playingbreezeblocks,
+.playingfreeanimal {
+	display: none;
+}
+/*.controls .rew {
     background-position: -54px -171px;
 }
 .controls .fwd {
     background-position: -100px -171px;
-}
+}*/
 .controls .play:hover {
     background-position: -8px -170px;
 }
 .controls .pause:hover {
     background-position: -8px -197px;
 }
-.controls .rew:hover {
+/*.controls .rew:hover {
     background-position: -54px -170px;
 }
 .controls .fwd:hover {
     background-position: -100px -170px;
-}
+}*/
 .hidden {
     display: none;
 }
@@ -949,7 +968,7 @@ font-size: 1.2vw;
 	display: block;
 }
 
-.volume {
+/*.volume {
     height: 11px;
     left: 186px;
     position: absolute;
@@ -962,7 +981,7 @@ font-size: 1.2vw;
     position: absolute;
     top: 126px;
     width: 285px;
-}
+}*/
 .ui-slider-range {
     /*background: transparent url("images/spr.png") no-repeat scroll 5px -222px;*/
     height: 100%;
@@ -1350,7 +1369,7 @@ input {
 }
 
 .searchicon {
-	margin-left: -6vw;
+	/*margin-left: -6vw;*/
 }
 
 .searchmoreicon {
@@ -1359,8 +1378,9 @@ input {
 }
 
 .searchplayicon {
-	width: 7%;
-	margin-top: 20vw;
+	/*position: absolute;*/
+	/*width: 7%;*/
+	margin-left: -10vw;
 }
 
 #searchlist span {

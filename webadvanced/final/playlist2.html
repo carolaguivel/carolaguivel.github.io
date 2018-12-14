@@ -7,14 +7,12 @@
 	<link rel="stylesheet" type="text/css" href="flickity/flickity.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/jquery-ui-1.8.21.custom.min.js"></script>
+    <script src="packery/packery.js"></script>
+    <script src="packery/draggabilly.js"></script>
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-
-<audio>
-    <source src="" type="">
-</audio>
 
 <!-- menu -->
 <ul class="menu">
@@ -55,11 +53,7 @@
             <div class="controls">
                 <img src="images/playicon2.png" class="play audio-play-button2" width="10%">
                 <img src="images/stopicon.png" class="pause audio-stop-button" width="10%">
-                <img src="images/left.png" class="rew" width="10%">
-                <img src="images/right.png" class="fwd" width="10%">
             </div>
-            <div class="volume"></div>
-            <div class="tracker"></div>
         </div>
     </div>
 </article>
@@ -77,16 +71,14 @@
     <div class="controls">
         <img src="images/playicon2.png" class="play audio-play-button2" width="10%">
         <img src="images/stopicon.png" class="pause audio-stop-button" width="10%">
-        <img src="images/left.png" class="rew" width="10%">
-        <img src="images/right.png" class="fwd" width="10%">
     </div>
-    <div class="volume"></div>
-    <div class="tracker"></div>
 </div>
 <!-- player -->
 
 <!-- moodboard -->
-<div class="playlistabout" id="displayAbout"></div>
+<div class="playlistabout" id="displayAbout">
+    <div class="grid"></div>
+</div>
 <!-- moodboard -->
 
 <!-- songs -->
@@ -95,7 +87,8 @@
         <li>
             <div class="icons">
                 <a onclick="displayMountKimbie()" class="moreicon">+</a>
-                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-bluetrainlines" data-artist="Mount Kimbie" data-title="Blue Train Lines" width="2.1%">
+                <img src="images/playicon.png" class="pressplaybluetrain playicon audio-play-button" data-audio-selector="#audio-bluetrainlines" data-artist="Mount Kimbie" data-title="Blue Train Lines" width="2.1%">
+                <img src="images/stopicon.png" class="playingbluetrain playicon audio-stop-button" width="2.1%">
             </div>
             <img src="images/lovewhatsurvives.png" width="22%">
             <span class="songtitle" id="info-bluetrainlines">Blue Train Lines</span>
@@ -104,7 +97,8 @@
         <li>
             <div class="icons">
                 <a onclick="displayThexx()" class="moreicon">+</a>
-                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-onhold" data-artist="The XX" data-title="On Hold (Jamie xx Remix)" width="2.1%">
+                <img src="images/playicon.png" class="pressplayonhold playicon audio-play-button" data-audio-selector="#audio-onhold" data-artist="The XX" data-title="On Hold (Jamie xx Remix)" width="2.1%">
+                <img src="images/stopicon.png" class="playingonhold playicon audio-stop-button" width="2.1%">
             </div>
             <img src="images/onhold.png" width="22%">
             <span class="songtitle">On Hold (Jamie xx Remix)</span>
@@ -113,7 +107,8 @@
         <li>
             <div class="icons">
                 <a onclick="displayMountKimbie()" class="moreicon">+</a>
-                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-carbonated" data-artist="Mount Kimbie" data-title="Carbonated" width="2.1%">
+                <img src="images/playicon.png" class="pressplaycarbonated playicon audio-play-button" data-audio-selector="#audio-carbonated" data-artist="Mount Kimbie" data-title="Carbonated" width="2.1%">
+                <img src="images/stopicon.png" class="playingcarbonated playicon audio-stop-button" width="2.1%">
             </div>
             <img src="images/crooksandlovers.png" width="22%">
             <span class="songtitle">Carbonated</span>
@@ -122,7 +117,8 @@
         <li>
             <div class="icons">
                 <a onclick="displayChristianLoffler()" class="moreicon">+</a>
-                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-york" data-artist="Christian Löffler" data-title="York" width="2.1%">
+                <img src="images/playicon.png" class="pressplayyork playicon audio-play-button" data-audio-selector="#audio-york" data-artist="Christian Löffler" data-title="York" width="2.1%">
+                <img src="images/stopicon.png" class="playingyork playicon audio-stop-button" width="2.1%">
             </div>
             <img src="images/york.png" width="22%">
             <span class="songtitle">York</span>
@@ -131,7 +127,8 @@
         <li>
             <div class="icons">
                 <a onclick="displayKingKrule()" class="moreicon">+</a>
-                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-thameswater" data-artist="Archy Marshall" data-title="Thames Water" width="2.1%">
+                <img src="images/playicon.png" class="pressplaythames playicon audio-play-button" data-audio-selector="#audio-thameswater" data-artist="Archy Marshall" data-title="Thames Water" width="2.1%">
+                <img src="images/stopicon.png" class="playingthames playicon audio-stop-button" width="2.1%">
             </div>
             <img src="images/anewplace2drown.png" width="22%">
             <span class="songtitle">Thames Water</span>
@@ -140,7 +137,8 @@
         <li>
             <div class="icons">
                 <a onclick="displayTchami()" class="moreicon">+</a>
-                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-adieu" data-artist="Tchami" data-title="Adieu" width="2.1%">
+                <img src="images/playicon.png" class="pressplayadieu playicon audio-play-button" data-audio-selector="#audio-adieu" data-artist="Tchami" data-title="Adieu" width="2.1%">
+                <img src="images/stopicon.png" class="playingadieu playicon audio-stop-button" width="2.1%">
             </div>
             <img src="images/adieu.png" width="22%">
             <span class="songtitle">Adieu</span>
@@ -149,7 +147,8 @@
         <li>
             <div class="icons">
                 <a onclick="displayMountKimbie()" class="moreicon">+</a>
-                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-delta" data-artist="Mount Kimbie" data-title="Delta" width="2.1%">
+                <img src="images/playicon.png" class="pressplaydelta playicon audio-play-button" data-audio-selector="#audio-delta" data-artist="Mount Kimbie" data-title="Delta" width="2.1%">
+                <img src="images/stopicon.png" class="playingdelta playicon audio-stop-button" width="2.1%">
             </div>
             <img src="images/lovewhatsurvives.png" width="22%">
             <span class="songtitle">Delta</span>
@@ -158,7 +157,8 @@
         <li>
             <div class="icons">
                 <a onclick="displayMuraMasa()" class="moreicon">+</a>
-                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-untitled" data-artist="Mura Masa" data-title="Untitled" width="2.1%">
+                <img src="images/playicon.png" class="pressplayuntitled playicon audio-play-button" data-audio-selector="#audio-untitled" data-artist="Mura Masa" data-title="Untitled" width="2.1%">
+                <img src="images/stopicon.png" class="playinguntitled playicon audio-stop-button" width="2.1%">
             </div>
             <img src="images/untitled.png" width="22%">
             <span class="songtitle">Untitled</span>
@@ -167,7 +167,8 @@
         <li>
             <div class="icons">
                 <a onclick="displayJamiexx()" class="moreicon">+</a>
-                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-sleepsound" data-artist="Jamie xx" data-title="Sleep Sound" width="2.1%">
+                <img src="images/playicon.png" class="pressplaysleep playicon audio-play-button" data-audio-selector="#audio-sleepsound" data-artist="Jamie xx" data-title="Sleep Sound" width="2.1%">
+                <img src="images/stopicon.png" class="playingsleep playicon audio-stop-button" width="2.1%">
             </div>
             <img src="images/girlsleepsound.png" width="22%">
             <span class="songtitle">Sleep Sound</span>
@@ -408,7 +409,6 @@ openToggle.addEventListener ('click', function () {
 
   var drawer = article.querySelector('.phonemenu');
   drawer.classList.toggle('is-open');
-  // console.log(article.querySelector('.phonemenu'));
 });
 
 function displayArtists() {
@@ -555,6 +555,33 @@ $(function() {
 
         $('.play').removeClass('hidden');
         $('.pause').removeClass('visible');
+
+        $('.pressplaybluetrain').removeClass('hidden');
+        $('.playingbluetrain').removeClass('visible');
+
+        $('.pressplayonhold').removeClass('hidden');
+        $('.playingonhold').removeClass('visible');
+
+        $('.pressplaycarbonated').removeClass('hidden');
+        $('.playingcarbonated').removeClass('visible');
+
+        $('.pressplayyork').removeClass('hidden');
+        $('.playingyork').removeClass('visible');
+
+        $('.pressplaythames').removeClass('hidden');
+        $('.playingthames').removeClass('visible');
+
+        $('.pressplayadieu').removeClass('hidden');
+        $('.playingadieu').removeClass('visible');
+
+        $('.pressplaydelta').removeClass('hidden');
+        $('.playingdelta').removeClass('visible');
+
+        $('.pressplaysleep').removeClass('hidden');
+        $('.playingsleep').removeClass('visible');
+
+        $('.pressplayuntitled').removeClass('hidden');
+        $('.playinguntitled').removeClass('visible');
     };
 
     $('.audio-play-button').click(function() {
@@ -584,26 +611,66 @@ $(function() {
 
     });
 
+    $('.pressplaybluetrain').click(function() {
+
+            $('.pressplaybluetrain').addClass('hidden');
+            $('.playingbluetrain').addClass('visible');
+    });
+
+    $('.pressplayonhold').click(function() {
+
+            $('.pressplayonhold').addClass('hidden');
+            $('.playingonhold').addClass('visible');
+    });
+
+    $('.pressplaycarbonated').click(function() {
+
+            $('.pressplaycarbonated').addClass('hidden');
+            $('.playingcarbonated').addClass('visible');
+    });
+
+    $('.pressplayyork').click(function() {
+
+            $('.pressplayyork').addClass('hidden');
+            $('.playingyork').addClass('visible');
+    });
+
+    $('.pressplaythames').click(function() {
+
+            $('.pressplaythames').addClass('hidden');
+            $('.playingthames').addClass('visible');
+    });
+
+    $('.pressplayadieu').click(function() {
+
+            $('.pressplayadieu').addClass('hidden');
+            $('.playingadieu').addClass('visible');
+    });
+
+    $('.pressplayuntitled').click(function() {
+
+            $('.pressplayuntitled').addClass('hidden');
+            $('.playinguntitled').addClass('visible');
+    });
+
+    $('.pressplaysleep').click(function() {
+
+            $('.pressplaysleep').addClass('hidden');
+            $('.playingsleep').addClass('visible');
+    });
+
+    $('.pressplaydelta').click(function() {
+
+            $('.pressplaydelta').addClass('hidden');
+            $('.playingdelta').addClass('visible');
+    });
+
     // Stop audio when clicking the stop button.
     $('.audio-stop-button').click(function() {
         stopAudio();
     });
 
 });
-
-  // var resumeAudio = function() {
-  //   var $allAudio = $('audio');
-
-  //   $allAudio.each(function() {
-  //     var $audio = $(this);
-
-  //     $audio.get(0).play();
-  //   });
-  // };
-
-  // $('.audio-play-button2').click(function() {
-  //   resumeAudio();
-  // });
 
 $(document).ready(function(){
 
@@ -613,12 +680,28 @@ $(document).ready(function(){
         var ecstatic = data.contents;
 
         console.log(ecstatic)
-    
 
         for (var i = 0; i < ecstatic.length; i++) {
 
-            $(".playlistabout").append("<img src=" + ecstatic[i].image.original.url + " width='25%'>")
+            var images = ecstatic[i].image.original.url
+
+            $(".grid").append("<div class='grid-item'><img src=" + images + " width='100%'></div>")
         };
+
+        // $('.grid').packery({
+        //     itemSelector: '.grid-item',
+        //     gutter: 10,
+        // });
+
+        var $grid = $('.grid').packery({
+            itemSelector: '.grid-item',
+            gutter: 10
+        });
+
+        $grid.find('.grid-item').each( function( i, gridItem ) {
+            var draggie = new Draggabilly( gridItem );
+            $grid.packery( 'bindDraggabillyEvents', draggie );
+        });
 
     });
 });

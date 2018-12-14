@@ -7,6 +7,8 @@
 	<link rel="stylesheet" type="text/css" href="flickity/flickity.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/jquery-ui-1.8.21.custom.min.js"></script>
+    <script src="packery/packery.js"></script>
+    <script src="packery/draggabilly.js"></script>
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -51,11 +53,7 @@
             <div class="controls">
                 <img src="images/playicon2.png" class="play audio-play-button2" width="10%">
                 <img src="images/stopicon.png" class="pause audio-stop-button" width="10%">
-                <img src="images/left.png" class="rew" width="10%">
-                <img src="images/right.png" class="fwd" width="10%">
             </div>
-            <div class="volume"></div>
-            <div class="tracker"></div>
         </div>
     </div>
 </article>
@@ -72,22 +70,11 @@
     <div class="controls">
         <img src="images/playicon2.png" class="play audio-play-button2" width="10%">
         <img src="images/stopicon.png" class="pause audio-stop-button" width="10%">
-        <img src="images/left.png" class="rew" width="10%">
-        <img src="images/right.png" class="fwd" width="10%">
     </div>
-    <div class="volume"></div>
-    <div class="tracker"></div>
 </div>
 
 <div class="playlistabout" id="displayAbout">
-    <div class="carousel">
-        <!-- <img src="images/billieeilish.png" width="100%">
-        <img src="images/billieeilish.png" width="100%">
-        <img src="images/billieeilish.png" width="100%">
-        <img src="images/billieeilish.png" width="100%">
-        <img src="images/billieeilish.png" width="100%">
-        <img src="images/billieeilish.png" width="100%">
-        <img src="images/billieeilish.png" width="100%"> -->
+    <div class="grid">
     </div>
 </div>
 
@@ -97,7 +84,8 @@
         <li>
             <div class="icons">
                 <a onclick="displayBillieEilish()" class="moreicon">+</a>
-                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-partyover" data-artist="Billie Eilish" data-title="when the party's over" width="2.1%">
+                <img src="images/playicon.png" class="pressplaypartyover playicon audio-play-button" data-audio-selector="#audio-partyover" data-artist="Billie Eilish" data-title="when the party's over" width="2.1%">
+                <img src="images/stopicon.png" class="playingpartyover playicon audio-stop-button" width="2.1%">
             </div>
             <div class="playlistinfo">
                 <img src="images/whenthepartysover.png" width="22%">
@@ -108,7 +96,8 @@
         <li>
             <div class="icons">
                 <a onclick="displaySabrinaClaudio()" class="moreicon">+</a>
-                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-orionsbelt" data-artist="Sabrina Claudio" data-title="Orion's Belt" width="2.1%">
+                <img src="images/playicon.png" class="pressplayorionsbelt playicon audio-play-button" data-audio-selector="#audio-orionsbelt" data-artist="Sabrina Claudio" data-title="Orion's Belt" width="2.1%">
+                <img src="images/stopicon.png" class="playingorionsbelt playicon audio-stop-button" width="2.1%">
             </div>
             <div class="playlistinfo">
                 <img src="images/confidentlylost.png" width="22%">
@@ -119,18 +108,20 @@
         <li>
             <div class="icons">
                 <a onclick="displayAurora()" class="moreicon">+</a>
-                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-iwenttoofar" data-artist="AURORA" data-title="I went too far" width="2.1%">
+                <img src="images/playicon.png" class="pressplayforgottenlove playicon audio-play-button" data-audio-selector="#audio-forgottenlove" data-artist="AURORA" data-title="Forgotten Love" width="2.1%">
+                <img src="images/stopicon.png" class="playingforgottenlove playicon audio-stop-button" width="2.1%">
             </div>
             <div class="playlistinfo">
-                <img src="images/allmydemons.png" width="22%">
-                <span class="songtitle">I went too far</span>
+                <img src="images/forgottenlove.png" width="22%">
+                <span class="songtitle">Forgotten Love</span>
                 <text class="songartist">AURORA</text>
             </div>
         </li>
         <li cover="images/bluelips.png" artist="Tove Lo">
             <div class="icons">
                 <a onclick="displayToveLo()" class="moreicon">+</a>
-                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-baddays" data-artist="Tove Lo" data-title="bad days" width="2.1%">
+                <img src="images/playicon.png" class="pressplaybaddays playicon audio-play-button" data-audio-selector="#audio-baddays" data-artist="Tove Lo" data-title="bad days" width="2.1%">
+                <img src="images/stopicon.png" class="playingbaddays playicon audio-stop-button" width="2.1%">
             </div>
             <div class="playlistinfo">
                 <img src="images/bluelips.png" width="22%">
@@ -141,7 +132,8 @@
         <li>
             <div class="icons">
                 <a onclick="displayBillieEilish()" class="moreicon">+</a>
-                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-idontwannabeyouanymore" data-artist="Billie Eilish" data-title="idontwannabeyouanymore" width="2.1%">
+                <img src="images/playicon.png" class="pressplayidontwanna playicon audio-play-button" data-audio-selector="#audio-idontwannabeyouanymore" data-artist="Billie Eilish" data-title="idontwannabeyouanymore" width="2.1%">
+                <img src="images/stopicon.png" class="playingidontwanna playicon audio-stop-button" width="2.1%">
             </div>
             <div class="playlistinfo">
                 <img src="images/dontsmileatme.png" width="22%">
@@ -152,7 +144,8 @@
         <li>
             <div class="icons">
                 <a onclick="displayLondonGrammar()" class="moreicon">+</a>
-                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-interlude" data-artist="London Grammar" data-title="Interlude" width="2.1%">
+                <img src="images/playicon.png" class="pressplayinterlude playicon audio-play-button" data-audio-selector="#audio-interlude" data-artist="London Grammar" data-title="Interlude" width="2.1%">
+                <img src="images/stopicon.png" class="playinginterlude playicon audio-stop-button" width="2.1%">
             </div>
             <div class="playlistinfo">
                 <img src="images/ifyouwait.png" width="22%">
@@ -163,7 +156,8 @@
         <li cover="images/dontsmileatme.png" artist="Billie Eilish">
             <div class="icons">
                 <a onclick="displayBillieEilish()" class="moreicon">+</a>
-                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-lovely" data-artist="Billie Eilish" data-title="lovely (with Khalid)" width="2.1%">
+                <img src="images/playicon.png" class="pressplaylovely playicon audio-play-button" data-audio-selector="#audio-lovely" data-artist="Billie Eilish" data-title="lovely (with Khalid)" width="2.1%">
+                <img src="images/stopicon.png" class="playinglovely playicon audio-stop-button" width="2.1%">
             </div>
             <div class="playlistinfo">
                 <img src="images/lovely.png" width="22%">
@@ -174,7 +168,8 @@
         <li cover="images/creaturesongs.png" artist="Wolf Alice">
             <div class="icons">
                 <a onclick="displayWolfAlice()" class="moreicon">+</a>
-                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-heavenlycreatures" data-artist="Wolf Alice" data-title="Heavenly Creatures" width="2.1%">
+                <img src="images/playicon.png" class="pressplayheavenly playicon audio-play-button" data-audio-selector="#audio-heavenlycreatures" data-artist="Wolf Alice" data-title="Heavenly Creatures" width="2.1%">
+                <img src="images/stopicon.png" class="playingheavenly playicon audio-stop-button" width="2.1%">
             </div>
             <div class="playlistinfo">
                 <img src="images/creaturesongs.png" width="22%">
@@ -185,7 +180,8 @@
         <li cover="images/sixfeetunder.png" artist="Billie Eilish">
             <div class="icons">
                 <a onclick="displayBillieEilish()" class="moreicon">+</a>
-                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-sixfeetunder" data-artist="Billie Eilish" data-title="Six Feet Under" width="2.1%">
+                <img src="images/playicon.png" class="pressplaysixfeet playicon audio-play-button" data-audio-selector="#audio-sixfeetunder" data-artist="Billie Eilish" data-title="Six Feet Under" width="2.1%">
+                <img src="images/stopicon.png" class="playingsixfeet playicon audio-stop-button" width="2.1%">
             </div>
             <div class="playlistinfo">
                 <img src="images/sixfeetunder.png" width="22%">
@@ -196,7 +192,8 @@
         <li cover="images/allmydemons.png" artist="AURORA">
             <div class="icons">
                 <a onclick="displayAurora()" class="moreicon">+</a>
-                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-home" data-artist="AURORA" data-title="Home" width="2.1%">
+                <img src="images/playicon.png" class="pressplayhome playicon audio-play-button" data-audio-selector="#audio-home" data-artist="AURORA" data-title="Home" width="2.1%">
+                <img src="images/stopicon.png" class="playinghome playicon audio-stop-button" width="2.1%">
             </div>
             <div class="playlistinfo">
                 <img src="images/allmydemons.png" width="22%">
@@ -263,7 +260,10 @@
     <div class="bio">
         <h2>AURORA</h2>
         <p>Mixing frosty electronic textures, spare beats, and clear, emotive vocals, Norwegian singer/songwriter AURORA works in a similar dark pop milieu as artists like Lykke Li and Lorde. Born Aurora Aksnes near the city of Bergen, she began writing music and lyrics at a young age, releasing her debut single, "Awakening," in late 2013. Honing her live show and building on the momentum from the song, AURORA issued the follow-up single "Under Stars" in late 2014 and announced that she had signed with American label Glassnote. Her debut EP, "Running with the Wolves," was released in the spring of 2015.</p>
-        <span>Appears on <a onclick="displayAbout()" class="appearson">Melancholy</a></span>
+        <span>Appears on 
+            <a href="playlist6.html" class="appearson">Ecstatic</a>,
+            <a onclick="displayAbout()" class="appearson">Melancholy</a>
+        </span>
     </div>
     <div class="info lines15">
         <h3>More Info</h3>
@@ -383,7 +383,7 @@
     <audio id="audio-idontwannabeyouanymore" src="music/melancholic/idontwannabeyouanymore.mp3"></audio>
     <audio id="audio-heavenlycreatures" src="music/melancholic/heavenlycreatures.mp3"></audio>
     <audio id="audio-interlude" src="music/melancholic/interlude.mp3"></audio>
-    <audio id="audio-iwenttoofar" src="music/melancholic/iwenttoofar.mp3"></audio>
+    <audio id="audio-forgottenlove" src="music/melancholic/forgottenlove.mp3"></audio>
     <audio id="audio-orionsbelt" src="music/melancholic/orionsbelt.mp3"></audio>
     <audio id="audio-sixfeetunder" src="music/melancholic/sixfeetunder.mp3"></audio>
 </div>
@@ -412,7 +412,6 @@ openToggle.addEventListener ('click', function () {
 
   var drawer = article.querySelector('.phonemenu');
   drawer.classList.toggle('is-open');
-  // console.log(article.querySelector('.phonemenu'));
 });
 
 function displayArtists() {
@@ -537,6 +536,36 @@ $(function() {
 
         $('.play').removeClass('hidden');
         $('.pause').removeClass('visible');
+
+        $('.pressplaypartyover').removeClass('hidden');
+        $('.playingpartyover').removeClass('visible');
+
+        $('.pressplayorionsbelt').removeClass('hidden');
+        $('.playingorionsbelt').removeClass('visible');
+
+        $('.pressplayforgottenlove').removeClass('hidden');
+        $('.playingforgottenlove').removeClass('visible');
+
+        $('.pressplaybaddays').removeClass('hidden');
+        $('.playingbaddays').removeClass('visible');
+
+        $('.pressplayidontwanna').removeClass('hidden');
+        $('.playingidontwanna').removeClass('visible');
+
+        $('.pressplayinterlude').removeClass('hidden');
+        $('.playinginterlude').removeClass('visible');
+
+        $('.pressplaylovely').removeClass('hidden');
+        $('.playinglovely').removeClass('visible');
+
+        $('.pressplayheavenly').removeClass('hidden');
+        $('.playingheavenly').removeClass('visible');
+
+        $('.pressplaysixfeet').removeClass('hidden');
+        $('.playingsixfeet').removeClass('visible');
+
+        $('.pressplayhome').removeClass('hidden');
+        $('.playinghome').removeClass('visible');
     };
 
     $('.audio-play-button').click(function() {
@@ -566,6 +595,66 @@ $(function() {
 
     });
 
+    $('.pressplaypartyover').click(function() {
+
+            $('.pressplaypartyover').addClass('hidden');
+            $('.playingpartyover').addClass('visible');
+    });
+
+    $('.pressplayorionsbelt').click(function() {
+
+            $('.pressplayorionsbelt').addClass('hidden');
+            $('.playingorionsbelt').addClass('visible');
+    });
+
+    $('.pressplayforgottenlove').click(function() {
+
+            $('.pressplayforgottenlove').addClass('hidden');
+            $('.playingforgottenlove').addClass('visible');
+    });
+
+    $('.pressplaybaddays').click(function() {
+
+            $('.pressplaybaddays').addClass('hidden');
+            $('.playingbaddays').addClass('visible');
+    });
+
+    $('.pressplayidontwanna').click(function() {
+
+            $('.pressplayidontwanna').addClass('hidden');
+            $('.playingidontwanna').addClass('visible');
+    });
+
+    $('.pressplayinterlude').click(function() {
+
+            $('.pressplayinterlude').addClass('hidden');
+            $('.playinginterlude').addClass('visible');
+    });
+
+    $('.pressplaylovely').click(function() {
+
+            $('.pressplaylovely').addClass('hidden');
+            $('.playinglovely').addClass('visible');
+    });
+
+    $('.pressplayheavenly').click(function() {
+
+            $('.pressplayheavenly').addClass('hidden');
+            $('.playingheavenly').addClass('visible');
+    });
+
+    $('.pressplaysixfeet').click(function() {
+
+            $('.pressplaysixfeet').addClass('hidden');
+            $('.playingsixfeet').addClass('visible');
+    });
+
+    $('.pressplayhome').click(function() {
+
+            $('.pressplayhome').addClass('hidden');
+            $('.playinghome').addClass('visible');
+    });
+
     // Stop audio when clicking the stop button.
     $('.audio-stop-button').click(function() {
         stopAudio();
@@ -573,19 +662,6 @@ $(function() {
 
 });
 
-  // var resumeAudio = function() {
-  //   var $allAudio = $('audio');
-
-  //   $allAudio.each(function() {
-  //     var $audio = $(this);
-
-  //     $audio.get(0).play();
-  //   });
-  // };
-
-  // $('.audio-play-button2').click(function() {
-  //   resumeAudio();
-  // });
 
 $(document).ready(function(){
 
@@ -599,17 +675,30 @@ $(document).ready(function(){
 
         for (var i = 0; i < melancholic.length; i++) {
 
-            $(".carousel").append("<div class='carousel-cell'><img src=" + melancholic[i].image.original.url + " width='25%'></div>")
+            var images = melancholic[i].image.original.url
+
+            $(".grid").append("<div class='grid-item'><img src=" + images + " width='100%'></div>")
         };
+
+        // $('.grid').packery({
+        //     itemSelector: '.grid-item',
+        //     gutter: 10,
+        // });
+
+        var $grid = $('.grid').packery({
+            itemSelector: '.grid-item',
+            gutter: 10
+        });
+
+        $grid.find('.grid-item').each( function( i, gridItem ) {
+            var draggie = new Draggabilly( gridItem );
+            $grid.packery( 'bindDraggabillyEvents', draggie );
+        });
 
     });
 });
 
-$('.carousel').flickity({
-        // options
-        grouCells: true,
-        wrapAround: true,
-});
+
 
 
 </script>

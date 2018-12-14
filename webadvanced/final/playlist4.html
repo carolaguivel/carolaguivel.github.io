@@ -7,6 +7,8 @@
 	<link rel="stylesheet" type="text/css" href="flickity/flickity.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/jquery-ui-1.8.21.custom.min.js"></script>
+    <script src="packery/packery.js"></script>
+    <script src="packery/draggabilly.js"></script>
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -51,11 +53,7 @@
             <div class="controls">
                 <img src="images/playicon2.png" class="play audio-play-button2" width="10%">
                 <img src="images/stopicon.png" class="pause audio-stop-button" width="10%">
-                <img src="images/left.png" class="rew" width="10%">
-                <img src="images/right.png" class="fwd" width="10%">
             </div>
-            <div class="volume"></div>
-            <div class="tracker"></div>
         </div>
     </div>
 </article>
@@ -72,21 +70,20 @@
     <div class="controls">
         <img src="images/playicon2.png" class="play audio-play-button2" width="10%">
         <img src="images/stopicon.png" class="pause audio-stop-button" width="10%">
-        <img src="images/left.png" class="rew" width="10%">
-        <img src="images/right.png" class="fwd" width="10%">
     </div>
-    <div class="volume"></div>
-    <div class="tracker"></div>
 </div>
 
-<div class="playlistabout" id="displayAbout"></div>
+<div class="playlistabout" id="displayAbout">
+    <div class="grid"></div>
+</div>
 
 <div class="playlistsongs" id="displaySongs">
     <ul class="playlist">
         <li>
             <div class="icons">
                 <a onclick="displayBatForLashes()" class="moreicon">+</a>
-                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-whatsagirltodo" data-artist="Bat For Lashes" data-title="What's A Girl To Do?" width="2.1%">
+                <img src="images/playicon.png" class="pressplaywhatsagirl playicon audio-play-button" data-audio-selector="#audio-whatsagirltodo" data-artist="Bat For Lashes" data-title="What's A Girl To Do?" width="2.1%">
+                <img src="images/stopicon.png" class="playingwhatsagirl playicon audio-stop-button" width="2.1%">
             </div>
             <img src="images/furandgold.png" width="22%">
             <span class="songtitle">What's A Girl To Do?</span>
@@ -95,7 +92,8 @@
         <li>
             <div class="icons">
                 <a onclick="displayJoyDivision()" class="moreicon">+</a>
-                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-sheslostcontrol" data-artist="Joy Division" data-title="She's Lost Control" width="2.1%">
+                <img src="images/playicon.png" class="pressplaylostcontrol playicon audio-play-button" data-audio-selector="#audio-sheslostcontrol" data-artist="Joy Division" data-title="She's Lost Control" width="2.1%">
+                <img src="images/stopicon.png" class="playinglostcontrol playicon audio-stop-button" width="2.1%">
             </div>
             <img src="images/unknownpleasures.png" width="22%">
             <span class="songtitle">She's Lost Control</span>
@@ -104,7 +102,8 @@
         <li>
             <div class="icons">
                 <a onclick="displayTheCure()" class="moreicon">+</a>
-                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-lullaby" data-artist="The Cure" data-title="Lullaby" width="2.1%">
+                <img src="images/playicon.png" class="pressplaylullaby playicon audio-play-button" data-audio-selector="#audio-lullaby" data-artist="The Cure" data-title="Lullaby" width="2.1%">
+                <img src="images/stopicon.png" class="playinglullaby playicon audio-stop-button" width="2.1%">
             </div>
             <img src="images/disintegration.png" width="22%">
             <span class="songtitle">Lullaby</span>
@@ -113,7 +112,8 @@
         <li>
             <div class="icons">
                 <a onclick="displayBauhaus()" class="moreicon">+</a>
-                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-belalugosisdead" data-artist="Bauhaus" data-title="Bela Lugosi's Dead" width="2.1%">
+                <img src="images/playicon.png" class="pressplaybela playicon audio-play-button" data-audio-selector="#audio-belalugosisdead" data-artist="Bauhaus" data-title="Bela Lugosi's Dead" width="2.1%">
+                <img src="images/stopicon.png" class="playingbela playicon audio-stop-button" width="2.1%">
             </div>
             <img src="images/bauhausalbum.png" width="22%">
             <span class="songtitle">Bela Lugosi's Dead</span>
@@ -122,7 +122,8 @@
         <li>
             <div class="icons">
                 <a onclick="displaySheWantsRevenge()" class="moreicon">+</a>
-                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-tearyouapart" data-artist="She Wants Revenge" data-title="Tear You Apart" width="2.1%">
+                <img src="images/playicon.png" class="pressplaytearyou playicon audio-play-button" data-audio-selector="#audio-tearyouapart" data-artist="She Wants Revenge" data-title="Tear You Apart" width="2.1%">
+                <img src="images/stopicon.png" class="playingtearyou playicon audio-stop-button" width="2.1%">
             </div>
             <img src="images/shewantsrevengealbum.png" width="22%">
             <span class="songtitle">Tear You Apart</span>
@@ -131,7 +132,8 @@
         <li>
             <div class="icons">
                 <a onclick="displayBauhaus()" class="moreicon">+</a>
-                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-darkentries" data-artist="Bauhaus" data-title="Dark Entries" width="2.1%">
+                <img src="images/playicon.png" class="pressplaydarkentries playicon audio-play-button" data-audio-selector="#audio-darkentries" data-artist="Bauhaus" data-title="Dark Entries" width="2.1%">
+                <img src="images/stopicon.png" class="playingdarkentries playicon audio-stop-button" width="2.1%">
             </div>
             <img src="images/bauhausalbum.png" width="22%">
             <span class="songtitle">Dark Entries</span>
@@ -140,7 +142,8 @@
         <li>
             <div class="icons">
                 <a onclick="displayTheSoftMoon()" class="moreicon">+</a>
-                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-zeros" data-artist="The Soft Moon" data-title="Zeros" width="2.1%">
+                <img src="images/playicon.png" class="pressplayzeros playicon audio-play-button" data-audio-selector="#audio-zeros" data-artist="The Soft Moon" data-title="Zeros" width="2.1%">
+                <img src="images/stopicon.png" class="playingzeros playicon audio-stop-button" width="2.1%">
             </div>
             <img src="images/zeros.png" width="22%">
             <span class="songtitle">Zeros</span>
@@ -149,7 +152,8 @@
         <li>
             <div class="icons">
                 <a onclick="displaySheWantsRevenge()" class="moreicon">+</a>
-                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-sister" data-artist="She Wants Revenge" data-title="Sister" width="2.1%">
+                <img src="images/playicon.png" class="pressplaysister playicon audio-play-button" data-audio-selector="#audio-sister" data-artist="She Wants Revenge" data-title="Sister" width="2.1%">
+                <img src="images/stopicon.png" class="playingsister playicon audio-stop-button" width="2.1%">
             </div>
             <img src="images/shewantsrevengealbum.png" width="22%">
             <span class="songtitle">Sister</span>
@@ -158,7 +162,8 @@
         <li>
             <div class="icons">
                 <a onclick="displayTheCure()" class="moreicon">+</a>
-                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-siamesetwins" data-artist="The Cure" data-title="Siamese Twins" width="2.1%">
+                <img src="images/playicon.png" class="pressplaysiamese playicon audio-play-button" data-audio-selector="#audio-siamesetwins" data-artist="The Cure" data-title="Siamese Twins" width="2.1%">
+                <img src="images/stopicon.png" class="playingsiamese playicon audio-stop-button" width="2.1%">
             </div>
             <img src="images/pornography.png" width="22%">
             <span class="songtitle">Siamese Twins</span>
@@ -167,7 +172,8 @@
         <li>
             <div class="icons">
                 <a onclick="displayJoyDivision()" class="moreicon">+</a>
-                <img src="images/playicon.png" class="playicon audio-play-button" data-audio-selector="#audio-theeternal" data-artist="Joy Division" data-title="The Eternal" width="2.1%">
+                <img src="images/playicon.png" class="pressplayeternal playicon audio-play-button" data-audio-selector="#audio-theeternal" data-artist="Joy Division" data-title="The Eternal" width="2.1%">
+                <img src="images/stopicon.png" class="playingeternal playicon audio-stop-button" width="2.1%">
             </div>
             <img src="images/closer.png" width="22%">
             <span class="songtitle">The Eternal</span>
@@ -372,7 +378,6 @@ openToggle.addEventListener ('click', function () {
 
   var drawer = article.querySelector('.phonemenu');
   drawer.classList.toggle('is-open');
-  // console.log(article.querySelector('.phonemenu'));
 });
 
 function displayArtists() {
@@ -497,6 +502,36 @@ $(function() {
 
         $('.play').removeClass('hidden');
         $('.pause').removeClass('visible');
+
+        $('.pressplaywhatsagirl').removeClass('hidden');
+        $('.playingwhatsagirl').removeClass('visible');
+
+        $('.pressplaylostcontrol').removeClass('hidden');
+        $('.playinglostcontrol').removeClass('visible');
+
+        $('.pressplaylullaby').removeClass('hidden');
+        $('.playinglullaby').removeClass('visible');
+
+        $('.pressplaybela').removeClass('hidden');
+        $('.playingbela').removeClass('visible');
+
+        $('.pressplaydarkentries').removeClass('hidden');
+        $('.playingdarkentries').removeClass('visible');
+
+        $('.pressplaytearyou').removeClass('hidden');
+        $('.playingtearyou').removeClass('visible');
+
+        $('.pressplayzeros').removeClass('hidden');
+        $('.playingzeros').removeClass('visible');
+
+        $('.pressplaysister').removeClass('hidden');
+        $('.playingsister').removeClass('visible');
+
+        $('.pressplayeternal').removeClass('hidden');
+        $('.playingeternal').removeClass('visible');
+
+        $('.pressplaysiamese').removeClass('hidden');
+        $('.playingsiamese').removeClass('visible');
     };
 
     $('.audio-play-button').click(function() {
@@ -526,26 +561,72 @@ $(function() {
 
     });
 
+    $('.pressplaylostcontrol').click(function() {
+
+            $('.pressplaylostcontrol').addClass('hidden');
+            $('.playinglostcontrol').addClass('visible');
+    });
+
+    $('.pressplaywhatsagirl').click(function() {
+
+            $('.pressplaywhatsagirl').addClass('hidden');
+            $('.playingwhatsagirl').addClass('visible');
+    });
+
+    $('.pressplaylullaby').click(function() {
+
+            $('.pressplaylullaby').addClass('hidden');
+            $('.playinglullaby').addClass('visible');
+    });
+
+    $('.pressplaybela').click(function() {
+
+            $('.pressplaybela').addClass('hidden');
+            $('.playingbela').addClass('visible');
+    });
+
+    $('.pressplaydarkentries').click(function() {
+
+            $('.pressplaydarkentries').addClass('hidden');
+            $('.playingdarkentries').addClass('visible');
+    });
+
+    $('.pressplaytearyou').click(function() {
+
+            $('.pressplaytearyou').addClass('hidden');
+            $('.playingtearyou').addClass('visible');
+    });
+
+    $('.pressplayzeros').click(function() {
+
+            $('.pressplayzeros').addClass('hidden');
+            $('.playingzeros').addClass('visible');
+    });
+
+    $('.pressplaysister').click(function() {
+
+            $('.pressplaysister').addClass('hidden');
+            $('.playingsister').addClass('visible');
+    });
+
+    $('.pressplaysiamese').click(function() {
+
+            $('.pressplaysiamese').addClass('hidden');
+            $('.playingsiamese').addClass('visible');
+    });
+
+    $('.pressplayeternal').click(function() {
+
+            $('.pressplayeternal').addClass('hidden');
+            $('.playingeternal').addClass('visible');
+    });
+
     // Stop audio when clicking the stop button.
     $('.audio-stop-button').click(function() {
         stopAudio();
     });
 
 });
-
-  // var resumeAudio = function() {
-  //   var $allAudio = $('audio');
-
-  //   $allAudio.each(function() {
-  //     var $audio = $(this);
-
-  //     $audio.get(0).play();
-  //   });
-  // };
-
-  // $('.audio-play-button2').click(function() {
-  //   resumeAudio();
-  // });
 
 $(document).ready(function(){
 
@@ -555,12 +636,28 @@ $(document).ready(function(){
         var gloomy = data.contents;
 
         console.log(gloomy)
-    
 
         for (var i = 0; i < gloomy.length; i++) {
 
-            $(".playlistabout").append("<img src=" + gloomy[i].image.original.url + " width='25%'>")
+            var images = gloomy[i].image.original.url
+
+            $(".grid").append("<div class='grid-item'><img src=" + images + " width='100%'></div>")
         };
+
+        // $('.grid').packery({
+        //     itemSelector: '.grid-item',
+        //     gutter: 10,
+        // });
+
+        var $grid = $('.grid').packery({
+            itemSelector: '.grid-item',
+            gutter: 10
+        });
+
+        $grid.find('.grid-item').each( function( i, gridItem ) {
+            var draggie = new Draggabilly( gridItem );
+            $grid.packery( 'bindDraggabillyEvents', draggie );
+        });
 
     });
 });
