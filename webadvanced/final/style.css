@@ -599,18 +599,20 @@ input:focus {
 
 .playlistabout {
 	width: 60%;
-	margin-left: 24vw;
+	margin-left: 26.5vw;
 	margin-top: 14vw;
 }
 
 .grid {
-	width: 90%;
+	width: 80%;
 }
 
 .grid-item {
-	width: 18%;
+	width: 30%;
 	margin: 0;
 }
+
+.mySlides {display:none;}
 
 .grid-item.is-dragging,
 .grid-item.is-positioning-post-drag {
