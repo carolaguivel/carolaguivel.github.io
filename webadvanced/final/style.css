@@ -1113,18 +1113,21 @@ font-size: 1.2vw;
 	letter-spacing: 0.8vw;
 }
 
+.playlistphonemenu {
+	margin-top: 14vw;
+}
+
 .phoneplayer {
 	display: block;
 	position: absolute;
 	z-index: 3;
-	margin-top: -4vw;
+	margin-top: 8vw;
 	margin-left: -42vw;
 }
 
 .player, .player2 {
 	display: none;
 }
-
 .menu, .dropdown {
 	display: none;
 }
@@ -1466,6 +1469,21 @@ input {
 	font-size: 2.6vw;
 	font-weight: 500;
 	letter-spacing: 0.1vw
+}
+
+.playlistabout {
+	width: 70%;
+	margin-left: 20.5vw;
+	margin-top: 30vw;
+}
+
+.grid {
+	width: 100%;
+}
+
+.grid-item {
+	width: 40%;
+	margin: 0;
 }
 
 }
