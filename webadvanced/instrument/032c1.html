@@ -95,6 +95,12 @@ var cart = [];
 $(document).ready(function(){
 
 	$(".addit").click(function(){
+
+		//check if cookie has any contents fill your local cart with cookie's contents
+		if(Cookies.getJSON('cart')){
+			cart = Cookies.getJSON('cart');
+		};
+
 		console.log('test');
 
 		var gender = $(this).attr("data-gender");
