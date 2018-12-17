@@ -53,22 +53,94 @@
 
 <div class="slideshow-container">
 
-	<div class="mySlides fade">
-  		<div class="numbertext">1 / 3</div>
-		<img src="img_nature_wide.jpg" style="width:100%">
-		<div class="text">Caption Text</div>
+	<div class="mySlides">
+  		<div class="numbertext">1 / 18</div>
+		<img class="fade" src="images/1.png" style="width:100%">
 	</div>
 
-	<div class="mySlides fade">
-  		<div class="numbertext">2 / 3</div>
-  		<img src="img_snow_wide.jpg" style="width:100%">
-  		<div class="text">Caption Two</div>
+	<div class="mySlides">
+  		<div class="numbertext">2 / 18</div>
+  		<img class="fade" src="images/2.png" style="width:100%">
 	</div>
 
-	<div class="mySlides fade">
-  		<div class="numbertext">3 / 3</div>
-  		<img src="img_mountains_wide.jpg" style="width:100%">
-  		<div class="text">Caption Three</div>
+	<div class="mySlides">
+  		<div class="numbertext">3 / 18</div>
+  		<img class="fade" src="images/3.png" style="width:100%">
+	</div>
+
+	<div class="mySlides">
+  		<div class="numbertext">4 / 18</div>
+		<img class="fade" src="images/4.png" style="width:100%">
+	</div>
+
+	<div class="mySlides">
+  		<div class="numbertext">5 / 18</div>
+  		<img class="fade" src="images/5.png" style="width:100%">
+	</div>
+
+	<div class="mySlides">
+  		<div class="numbertext">6 / 18</div>
+  		<img class="fade" src="images/6.png" style="width:100%">
+	</div>
+
+	<div class="mySlides">
+  		<div class="numbertext">7 / 18</div>
+		<img class="fade" src="images/7.png" style="width:100%">
+	</div>
+
+	<div class="mySlides">
+  		<div class="numbertext">8 / 18</div>
+  		<img class="fade" src="images/8.png" style="width:100%">
+	</div>
+
+	<div class="mySlides">
+  		<div class="numbertext">9 / 18</div>
+  		<img class="fade" src="images/9.png" style="width:100%">
+	</div>
+
+	<div class="mySlides">
+  		<div class="numbertext">10 / 18</div>
+		<img class="fade" src="images/10.png" style="width:100%">
+	</div>
+
+	<div class="mySlides">
+  		<div class="numbertext">11 / 18</div>
+  		<img class="fade" src="images/11.png" style="width:100%">
+	</div>
+
+	<div class="mySlides">
+  		<div class="numbertext">12 / 18</div>
+  		<img class="fade" src="images/12.png" style="width:100%">
+	</div>
+
+	<div class="mySlides">
+  		<div class="numbertext">13 / 18</div>
+		<img class="fade" src="images/13.png" style="width:100%">
+	</div>
+
+	<div class="mySlides">
+  		<div class="numbertext">14 / 18</div>
+  		<img class="fade" src="images/14.png" style="width:100%">
+	</div>
+
+	<div class="mySlides">
+  		<div class="numbertext">15 / 18</div>
+  		<img class="fade" src="images/15.png" style="width:100%">
+	</div>
+
+	<div class="mySlides">
+  		<div class="numbertext">16 / 18</div>
+		<img class="fade" src="images/16.png" style="width:100%">
+	</div>
+
+	<div class="mySlides">
+  		<div class="numbertext">17 / 18</div>
+  		<img class="fade" src="images/17.png" style="width:100%">
+	</div>
+
+	<div class="mySlides">
+  		<div class="numbertext">18 / 18</div>
+  		<img class="fade" src="images/18.png" style="width:100%">
 	</div>
 
 </div>
@@ -76,6 +148,21 @@
 
 <div style="text-align:center">
 	<span class="dot"></span> 
+  	<span class="dot"></span> 
+  	<span class="dot"></span> 
+  	<span class="dot"></span> 
+  	<span class="dot"></span> 
+  	<span class="dot"></span> 
+  	<span class="dot"></span> 
+  	<span class="dot"></span> 
+  	<span class="dot"></span> 
+  	<span class="dot"></span> 
+  	<span class="dot"></span> 
+  	<span class="dot"></span> 
+  	<span class="dot"></span> 
+  	<span class="dot"></span> 
+  	<span class="dot"></span> 
+  	<span class="dot"></span> 
   	<span class="dot"></span> 
   	<span class="dot"></span> 
 </div>
@@ -89,7 +176,25 @@
 <script>
 	
 
+var slideIndex = 0;
+showSlides();
 
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
 
 </script>
 </body>
