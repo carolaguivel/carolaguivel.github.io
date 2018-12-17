@@ -118,6 +118,7 @@ input:focus {
 	margin-left: 96vw;
 	margin-top: 52vw;
 	font-size: 2.5vw;
+	z-index: 2;
 }
 
 .customize > a {
@@ -398,6 +399,22 @@ div .german {
     margin-left: -17vw;
 }
 
+.customizedropdown span {
+	font-family: avenir next condensed, sans-serif;
+	font-size: 1vw;
+	display: block;
+	margin-left: 2vw;
+	margin-top: 0.2vw;
+}
+
+.customizedropdown text {
+	font-family: avenir next condensed, sans-serif;
+	font-size: 1vw;
+	font-weight: 500;
+	text-transform: uppercase;
+	margin-left: 2vw;
+}
+
 .dropdown:hover .customizedropdown {
     display: block;
 }
@@ -406,7 +423,7 @@ div .german {
 	font-size: 1.3vw;
 	letter-spacing: 0.1vw;
 	text-transform: uppercase;
-	margin-top: 2vw;
+	margin-top: 2.3vw;
 	margin-left: 2vw;
 }
 
@@ -500,11 +517,11 @@ to {opacity: 1;}
 
 .wnamilia a {
 	position: absolute;
-	font-family: avenir, sans;
+	font-family: avenir next condensed, sans;
 	font-weight: 500;
-	font-size: 1.2vw;
+	font-size: 1.25vw;
 	margin-top: 37.1vw;
-	margin-left: -15vw;
+	margin-left: -13.8vw;
 }
 
 .wnamilia span {
@@ -551,11 +568,11 @@ to {opacity: 1;}
 
 .wiamgia a {
 	position: absolute;
-	font-family: avenir, sans;
+	font-family: avenir next condensed, sans;
 	font-weight: 500;
-	font-size: 1.2vw;
+	font-size: 1.25vw;
 	margin-top: 41.8vw;
-	margin-left: -15.5vw;
+	margin-left: -14.7vw;
 }
 
 .wiamgia span {
@@ -573,55 +590,116 @@ to {opacity: 1;}
 	margin-left: 11vw;
 	margin-top: 6vw;
 }
+
 /*women*/
 
 /*men*/
-.mengoose {
+.mheronstart {
 	position: absolute;
 	text-align: center;
 	margin-top: 12vw;
 	z-index: -1;
 }
 
-.mengoose img {
+.mheronstart img {
 	position: absolute;
 	border: 0.4vw solid #000000;
 }
 
-.mengoose p {
+.mheronstart p {
 	position: absolute;
 	font-size: 3.4vw;
 	letter-spacing: 0.3vw;
 	text-transform: uppercase;
-	margin-top: 26vw;
-	margin-left: 56vw;
+	margin-top: 27.2vw;
+	margin-left: 15.45vw;
 	border: 0.3vw solid #000000;
 	background-color: #ffffff;
 	padding: 1.2vw 1.7vw 1.2vw 1.7vw;
 }
 
-.mengoose a {
+.mheronstart a {
 	position: absolute;
-	font-family: avenir, sans;
+	font-family: avenir next condensed, sans;
 	font-weight: 500;
-	font-size: 1.2vw;
-	margin-top: 35vw;
-	margin-left: 6vw;
+	font-size: 1.25vw;
+	margin-top: 35.3vw;
+	margin-left: -12.7vw;
 }
 
-.mengoose span {
+.mheronstart span {
 	position: absolute;
 	font-family: motor, sans;
 	font-size: 1.5vw;
 	margin-left: 0.4vw;
 }
 
-.mgooseimg1 {
+.mheronimg1 {
 	margin-left: -25vw;
+	/*margin-top: 0vw;*/
 }
 
-.mgooseimg2 {
-	margin-left: 6vw;
+.mheronimg2 {
+	margin-left: -3vw;
+	margin-top: 5vw;
+}
+
+.macw {
+	position: absolute;
+	text-align: center;
+	margin-top: 68vw;
+	z-index: -1;
+	height: 48vw;
+	/*background-color: red;*/
+}
+
+.macw img {
+	position: absolute;
+	border: 0.4vw solid #000000;
+}
+
+.macw p {
+	position: absolute;
+	font-size: 3.4vw;
+	letter-spacing: 0.3vw;
+	text-transform: uppercase;
+	border: 0.3vw solid #000000;
+	background-color: #ffffff;
+	width: 20vw;
+	padding: 1.2vw 1.7vw 1.2vw 1.7vw;
+	margin-top: 32vw;
+	margin-left: 58.3vw;
+}
+
+.macw a {
+	position: absolute;
+	font-family: avenir next condensed, sans;
+	font-weight: 500;
+	font-size: 1.25vw;
+	margin-top: 40.3vw;
+	margin-left: 24.8vw;
+}
+
+.macw span {
+	position: absolute;
+	font-family: motor, sans;
+	font-size: 1.5vw;
+	margin-left: 0.4vw;
+}
+
+.macwimg1 {
+	margin-left: -34.5vw;
+	margin-top: 4.5vw;
+}
+
+.macwimg2 {
+	margin-left: -10.5vw;
+	margin-top: 4.5vw;
+}
+
+.macwimg3 {
+	margin-left: 13.5vw;
+	margin-top: 4.5vw;
 }
 /* men */
 

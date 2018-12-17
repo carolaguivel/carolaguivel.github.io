@@ -26,7 +26,7 @@ $(".dropbtn").click(function () {
 // typed
 $(function(){
 	$(".typed").typed({
-		strings: ["wash your face","with the tears of your enemies","exfoliate with glitter"],
+		strings: ["Carolyn Olaguivel","Web Advanced","Javascript"],
 		stringsElement: null,
 		typeSpeed: 80,
 		startDelay: 1200,

@@ -61,6 +61,15 @@
 <div class="customize dropdown">
 	<a href="javascript:void(0)">+
 		<div class="customizedropdown">
+			<p class="customizetitle">Hyper</p>
+			<span>Contact Us</span>
+			<span>Orders &amp; Shipping</span>
+			<span>Prices &amp; Currency</span>
+			<span>Return &amp; Refunds</span>
+			<span>Payment Methods</span>
+			<span>Site Policy</span>
+			<span>Faqs</span>
+			<text>&copy; 2018 Hyper</text>
 		</div>
 	</a>
 </div>
@@ -97,6 +106,10 @@ $(document).ready(function(){
 
 	$(".addit").click(function(){
 		console.log('test');
+
+		if(Cookies.getJSON('cart')){
+			cart = Cookies.getJSON('cart');
+		};
 
 		var gender = $(this).attr("data-gender");
 		var brand = $(this).attr("data-brand");
