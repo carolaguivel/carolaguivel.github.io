@@ -312,5 +312,18 @@ img {
     margin-top: 40vw;
     }
 
+    /*slideshow*/
+.slideshow-container {
+  margin-top: 5vw;
+}
+
+.numbertext {
+  margin-top: 42.3vw;
+}
+
+.dot {
+  display: none;
+}
+
 
 }
