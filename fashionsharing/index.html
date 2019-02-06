@@ -30,32 +30,37 @@ $.getJSON(myurl, function(data){
 			);
 		};
 
-		// for (var i = 0; i < brandInfo.collection.Brands.length; i++) {
+		for (var i = 0; i < data.Brands.length; i++) {
 
-		// var name = brandInfo.collection.Brands[i].name,
-		// 	idname = brandInfo.collection.Brands[i].idname,
-		// 	year = brandInfo.collection.Brands[i].year,
-		// 	description = brandInfo.collection.Brands[i].description,
-		// 	image = brandInfo.collection.Brands[i].image;
-		// 	collectionurl = brandInfo.collection.Brands[i].collectionurl,
+		var name = data.Brands[i].name,
+			idname = data.Brands[i].idname,
+			year = data.Brands[i].year,
+			description = data.Brands[i].description,
+			image = data.Brands[i].image;
+			collectionurl = data.Brands[i].collectionurl,
 
-		// 	$("#brands")(
-		// 		"<div class='brandwrapper draggable' id='" + data.Brands[i].idname "'><div class='imgwrapper'><div class='imgcaption'><h1>" + data.Brands[i].name "</h1></div><img src=" + data.Brands[i].image + " width='100%' ></div><div class='close' onclick='close" + data.Brands[i].idname '()"></div><div class="contentwrapper">
-		// 				<div class="contentcaption">
-		// 					<h2>${year}</h2>
-		// 				</div>
-		// 				<div class="contentdescription">
-		// 					<p>${description}</p>	
-		// 					<a href="${collectionurl}" target="_blank">click here for the full collection</a>
-		// 				</div>
-		// 			</div>
-		// 		</div>
-		// 	`);
+			$("#brands").append(`
+				<div class="brandwrapper draggable" id="${idname}">
+					<div class="imgwrapper">
+						<div class="imgcaption">
+							<h1>${name}</h1>
+						</div>
+						<img src="${image}" width="100%">
+					</div>
+					<div class="close" onclick="close${idname}()"></div>
+					<div class="contentwrapper">
+						<div class="contentcaption">
+							<h2>${year}</h2>
+						</div>
+						<div class="contentdescription">
+							<p>${description}</p>
+							<a href="${collectionurl}" target="_blank">click here for the full collection</a>
+						</div>
+					</div>
+				</div>
+			`);
 
-		// 	console.log(brandContainer)
-
-
-		// };
+		 };
 
         var draggableElems = document.querySelectorAll('.draggable');
 
