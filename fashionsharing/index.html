@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="draggabilly/draggabilly.pkgd.js"></script>
+	<link rel="stylesheet" href="https://use.typekit.net/vps1vpr.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="menu"></div>
+
+<div id="brands"></div>
+
+<script>
+
+var myurl = "https://carolaguivel.github.io/fashionsharing/collection.json";
+
+
+$.getJSON(myurl, function(data){
+
+		for (var i = 0; i < data.Brands.length; i++) {
+
+		var name = data.Brands[i].name,
+			idname = data.Brands[i].idname;
+
+			$("#menu").append(
+					"<div class='menubutton' onclick='display" + idname + "()' >" + name + "</div>"
+			);
+		};
+
+		// for (var i = 0; i < brandInfo.collection.Brands.length; i++) {
+
+		// var name = brandInfo.collection.Brands[i].name,
+		// 	idname = brandInfo.collection.Brands[i].idname,
+		// 	year = brandInfo.collection.Brands[i].year,
+		// 	description = brandInfo.collection.Brands[i].description,
+		// 	image = brandInfo.collection.Brands[i].image;
+		// 	collectionurl = brandInfo.collection.Brands[i].collectionurl,
+
+		// 	$("#brands")(
+		// 		"<div class='brandwrapper draggable' id='" + data.Brands[i].idname "'><div class='imgwrapper'><div class='imgcaption'><h1>" + data.Brands[i].name "</h1></div><img src=" + data.Brands[i].image + " width='100%' ></div><div class='close' onclick='close" + data.Brands[i].idname '()"></div><div class="contentwrapper">
+		// 				<div class="contentcaption">
+		// 					<h2>${year}</h2>
+		// 				</div>
+		// 				<div class="contentdescription">
+		// 					<p>${description}</p>	
+		// 					<a href="${collectionurl}" target="_blank">click here for the full collection</a>
+		// 				</div>
+		// 			</div>
+		// 		</div>
+		// 	`);
+
+		// 	console.log(brandContainer)
+
+
+		// };
+
+        var draggableElems = document.querySelectorAll('.draggable');
+
+        var draggies = []
+
+        for ( var i=0, len = draggableElems.length; i < len; i++ ) {
+            var draggableElem = draggableElems[i];
+            var draggie = new Draggabilly( draggableElem, {
+            axis: 'x,y',
+            });
+            draggies.push( draggie );
+        };
+
+        $( ".menubutton" ).mousedown(function() {
+            $(this).css({"transform" : "translate(0.3vw,0.3vw)",
+                        "box-shadow" : "none"});
+        });
+
+        $( ".menubutton" ).mouseup(function() {
+            $(this).css({"box-shadow" : "0.3vw 0.3vw black",
+                        "transform" : "none"});
+        });
+
+        // var all = document.getElementsByClassName("draggable");
+        // var prev = false;
+
+        // for(i = 0; i < all.length; i++){
+        // 	all[i].onclick = function(){
+        // 		// all[i].style.position = 'relative';
+        // 		if (prev) {
+        // 			prev.style.zIndex = 3;
+        // 		};
+        // 		this.style.zIndex = 1000;
+        // 		prev = this;
+        // 	};
+        // };
+	
+	});
+
+
+
+function displaythirtytwo() {
+    document.getElementById("thirtytwo").style.display = "block";
+};
+
+function closethirtytwo() {
+    document.getElementById("thirtytwo").style.display = "none";
+};
+
+function displayalexanderwang() {
+    document.getElementById("alexanderwang").style.display = "block";
+};
+
+function closealexanderwang() {
+    document.getElementById("alexanderwang").style.display = "none";
+};
+
+function displayambush() {
+	document.getElementById("ambush").style.display = "block";
+};
+
+function closeambush() {
+    document.getElementById("ambush").style.display = "none";
+};
+
+function displaycalvinklein() {
+	document.getElementById("calvinklein").style.display = "block";
+};
+
+function closecalvinklein() {
+    document.getElementById("calvinklein").style.display = "none";
+};
+
+function displaylouisvuitton() {
+	document.getElementById("louisvuitton").style.display = "block";
+};
+
+function closelouisvuitton() {
+    document.getElementById("louisvuitton").style.display = "none";
+};
+
+function displayoffwhite() {
+	document.getElementById("offwhite").style.display = "block";
+};
+
+function closeoffwhite() {
+    document.getElementById("offwhite").style.display = "none";
+};
+
+function displaytelfar() {
+	document.getElementById("telfar").style.display = "block";
+};
+
+function closetelfar() {
+    document.getElementById("telfar").style.display = "none";
+};
+
+function displayjohnelliot() {
+	document.getElementById("johnelliot").style.display = "block";
+};
+
+function closejohnelliot() {
+    document.getElementById("johnelliot").style.display = "none";
+};
+
+function displayalexandermcqueen() {
+	document.getElementById("alexandermcqueen").style.display = "block";
+};
+
+function closealexandermcqueen() {
+    document.getElementById("alexandermcqueen").style.display = "none";
+};
+
+function displayalyx() {
+	document.getElementById("alyx").style.display = "block";
+};
+
+function closealyx() {
+    document.getElementById("alyx").style.display = "none";
+};
+
+function displayacoldwall() {
+	document.getElementById("acoldwall").style.display = "block";
+};
+
+function closeacoldwall() {
+    document.getElementById("acoldwall").style.display = "none";
+};
+
+function displaybalenciaga() {
+	document.getElementById("balenciaga").style.display = "block";
+};
+
+function closebalenciaga() {
+    document.getElementById("balenciaga").style.display = "none";
+};
+
+function displaymisbhv() {
+	document.getElementById("misbhv").style.display = "block";
+};
+
+function closemisbhv() {
+    document.getElementById("misbhv").style.display = "none";
+};
+
+function displayheronpreston() {
+	document.getElementById("heronpreston").style.display = "block";
+};
+
+function closeheronpreston() {
+    document.getElementById("heronpreston").style.display = "none";
+};
+
+function displaygmbh() {
+	document.getElementById("gmbh").style.display = "block";
+};
+
+function closegmbh() {
+    document.getElementById("gmbh").style.display = "none";
+};
+
+</script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+{
+	"Brands" : [
+		{
+			"name" : "032c",
+			"idname" : "thirtytwo",
+			"year" : "Spring/Summer 19",
+			"description" : "032c debuted its first ever womenswear collection on the runway. Titled \"COSMIC WORKSHOP,\" the women’s ready-to-wear collection joined 032c’s ’90s rave wear-inspired menswear apparel line. The show cemented 032c’s pivot from magazine and occasional apparel designer into fully fledged designer label, one that translates the visual language of its Berlin roots for a global fashion audience using sheer fabrics and a palette of black, gray, white, and metallics.",
+			"image" : "images/032c.png",
+			"collectionurl" : "https://032c.com/runway-recap-032c-cosmic-workshop-at-180-strand-in-london"
+		},
+
+		{
+			"name" : "1017 ALYX 9SM",
+			"idname" : "alyx",
+			"year" : "Spring/Summer 19",
+			"description" : "This season marked a debut runway show for Alyx, as founder and designer Matthew Williams combined his menswear and womenswear lines in an exposed industrial space. Having previously attained success without advertising campaigns or shows, this move positioned the label in a new context. There is also a new name to boot: 1017 ALYX 9SM – referencing Williams’ birth date and an abbreviation of the label’s first studio on Saint Mark’s Place in New York.",
+			"image" : "images/alyx.png",
+			"collectionurl" : "https://hypebeast.com/2018/6/1017-alyx-9sm-spring-summer-2019-collection-show-paris-fashion-week-mens"
+		},
+
+		{
+			"name" : "A-COLD-WALL*",
+			"idname" : "acoldwall",
+			"year" : "Spring/Summer 19",
+			"description" : "Samuel Ross’ brand A-Cold-Wall is continually seeking to expand the fashion vernacular by playing with new proportions and alternative ideas of beauty. Ross’ latest collection was presented as an immersive performance at the Old Truman Brewery that was conceptual — but not necessarily accessible. Guests were advised to put on protective goggles, masks and earplugs monogrammed with the brand’s acronym that were handed out at the door. Wind turbines and haze created a doomed, dystopian atmosphere, and the show began with a group of actors wearing hooded smocks and chalk-painted skin storming down the runway. Models showcasing the collection followed.",
+			"image" : "images/acoldwall.png",
+			"collectionurl" :  "https://wwd.com/fashion-news/shows-reviews/gallery/a-cold-wall-mens-spring-1202700523/"
+		},
+
+		{
+			"name" : "Alexander McQueen",
+			"idname" : "alexandermcqueen",
+			"year" : "Spring/Summer 19",
+			"description" : "The voices of women deserve a far bigger hearing in fashion, as in life. Sarah Burton holds that feeling to heart in a way that strives to connect deep history with the present. This collection was, she said, \"about sisterhood, about women’s milestones and rituals: birth, christenings, weddings, funerals. It’s about being strong and emotional, but also saying it’s okay to show your vulnerability.\" The connections between the team’s immersion in pagan, Christian, and natural history and the makings of the clothes might not be immediately visible to the naked eye, but the finesse and power was.",
+			"image" : "images/alexandermcqueen.png",
+			"collectionurl" :  "https://www.alexandermcqueen.com/experience/us/womens-springsummer-2019-show/"
+		},
+
+		{
+			"name" : "Alexander Wang",
+			"idname" : "alexanderwang",
+			"year" : "Spring/Summer 19",
+			"description" : "In his Collection 1 debut, Alexander Wang does \"Immigrant Americana,\" reflecting on his experiences as a first-generation American, specifically what his home country means to both him and his family. In the collection, Wang took his parents' immigration story and infused it with the classic Americana pop culture iconography that he grew up with. Both women's and men's looks incorporated American football jerseys and championship rings; western Bolo ties; Harley-Davidson aesthetics like leather motorcycle jackets with intricate, DIY safety pin designs; rock-n-roll (particularly heavy metal) references like Axl Rose or Bret Michaels-worthy bandanas; blue jeans; Hawaiian leis; grungy flannel and both stars and stripes aplenty.", 
+			"image" : "images/alexanderwang.png",
+			"collectionurl" : "https://www.alexanderwang.com/us-en/C2-1"
+		},
+
+		{
+			"name" : "Ambush",
+			"idname" : "ambush",
+			"year" : "Fall/Winter 18",
+			"description" : "Track gear and similar sporty goods have proven to be an Ambush staple, and they resurfaced in a big way for the imprint’s Fall/Winter 2018 collection. Windbreakers, nylon pants, fleece-paneled pullovers and anorak jackets all appeared throughout the array, layered underneath blazers, raincoats and leather jackets. Graphic goods bolstered the busy range, with plenty of Ambush branding coinciding with plaids, pinstripes and even some abstract knit detailing. Baseball cap-style varsity letters were seen on floppy-brimmed hats, a playful nod to the brand’s elevation of sportswear staples, while other accessories included chains dangling from slim belts, holster-style bags, slim metal necklaces and even collaborative Beats by Dre headphones.", 
+			"image" : "images/ambush.png",
+			"collectionurl" : "https://hypebeast.com/2018/3/ambush-fall-winter-2018"
+		},
+
+		{
+			"name" : "Balenciaga",
+			"idname" : "balenciaga",
+			"year" : "Spring/Summer 19",
+			"description" : "Demna Gvasalia wants us to look glam for the apocalypse. If Balenciaga’s Fall Winter 2018 collection was a message for us to keep hope alive in an increasingly turbulent world, the Spring Summer 2019 collection was all about letting the world burn — but looking great while it does. For this collection, Demna Gvasalia collaborated with artist Jon Rafman to create an LED tunnel that encased the runway. It lit up, throughout the course of the show, in flames, like the inside of a vein, like tv static—a visual manifestation of the chaotic mental overload of today’s generation.",
+			"image" : "images/balenciaga.png",
+			"collectionurl" : "https://www.vogue.com/fashion-shows/spring-2019-ready-to-wear/balenciaga/slideshow/collection#1"
+		},
+
+		{
+			"name" : "Calvin Klein",
+			"idname" : "calvinklein",
+			"year" : "Fall/Winter 18",
+			"description" : "At the Calvin Klein FW 18 show, a surfeit of dystopian apparel was evident. Simons created a apocalyptic disaster in which the survivors were dressed in one of his most adventurous collections for the house thus far, and looked appropriately protected for a cold, dangerous dystopia. There was neon orange construction-worker garb, a slew of pieces incorporating Mylar and a fashion-y interpretation of hazmat boots and gloves. Most models also wore balaclavas that, while practical, had a very creepy effect en masse.", 
+			"image" : "images/calvinklein.png",
+			"collectionurl" : "https://www.vogue.com/fashion-shows/fall-2018-ready-to-wear/calvin-klein/slideshow/collection#1"
+		},
+
+		{
+			"name" : "GmbH",
+			"idname" : "gmbh",
+			"year" : "Spring/Summer 19",
+			"description" : "An apter title could not have been given, regardless of the body of work that appeared under it: \"Survival Strategies.\" It’s a thought and an instinct that extends so far beyond fashion that it almost feels weird to put it into a fashion context: From immigration to consolidation, frustration to indignation, there are a lot of people right now trying to figure out the next steps in guaranteeing security for their futures. What resulted was GmbH’s finest collection to date. The line now features a dedicated womenswear branch, which was new this season, and actually dominated the runway in terms of looks.",
+			"image" : "images/gmbh.png",
+			"collectionurl" : "https://www.vogue.com/fashion-shows/spring-2019-menswear/gmbh/slideshow/collection#1"
+		},
+
+		{
+			"name" : "Heron Preston",
+			"idname" : "heronpreston",
+			"year" : "Spring/Summer 19",
+			"description" : "Dubbed \"En Vogue,\" the Been Trill alum’s latest offering was firmly rooted in his trademark penchant for workwear inspired ready to wear. Familiar HP tropes such as utility belts, vests, work shirts and chore jackets were styled with boldly colored sportswear, metallic leather coats, denim and bottoms featuring satellite images of Australian terrain. Italicized Cantonese characters replaced Preston’s signature Cyrillic Style logo. Furthermore, the collection marked a debut collaboration with Nike Vision, featuring a series of speed racer shades with four interchangeable accessory lenses in reflective grey, orange grey, yellow and dark grey.",
+			"image" : "images/heronpreston.png",
+			"collectionurl" : "https://hypebeast.com/2018/6/heron-preston-spring-summer-2019-paris-fashion-week-mens"
+		},
+
+		{
+			"name" : "Louis Vuitton",
+			"idname" : "louisvuitton",
+			"year" : "Spring/Summer 19",
+			"description" : "This collection was Virgil Abloh's debut as menswear creative director for Louis Vuitton. Titled \"We are the World,\" Abloh wanted to create a show that was open to all colors, all nationalities, all identities, and all generations welcome here. The inspiration for the show came from a white light hitting a prism, and dividing into its component colors.", 
+			"image" : "images/louisvuitton.png",
+			"collectionurl" : "https://www.vogue.com/fashion-shows/spring-2019-menswear/louis-vuitton/slideshow/collection#1"
+		},
+
+		{
+			"name" : "MISBHV",
+			"idname" : "misbhv",
+			"year" : "Spring/Summer 19",
+			"description" : "For MISBHV’s first fashion show, designers Natalia Maczek and Thomas Wirski paid tribute to their homeland and its storied history by presenting a collection that took cues from the Polish poster art, bringing elements of Warszawa 1966 into 2018 for a riveting look at what this brand is capable of. Though the line offers a post Soviet vision, one that isn’t entirely dissimilar to Vetements or Gosha Rubinsky, Maczek’s take is distinct in its ability to evade the familiar, to still feel fresh and new despite being inspired by age old traditions.",
+			"image" : "images/misbhv.png",
+			"collectionurl" : "http://material-magazine.com/misbhv-ss19/"
+		},
+
+		{
+			"name" : "Off White",
+			"idname" : "offwhite",
+			"year" : "Spring/Summer 19",
+			"description" : "Titled \"Track and Field,\" Off White's spring 2019 collection blends sporty nods with refined feminine silhouettes. Flowing gowns and trim blazers were subverted by track-ready body suits and Nike T-shirts, emphasizing sportswear’s continuing influence upon Virgil Abloh‘s designs. Accompanying the sportswear-leaning looks were a host of gargantuan gowns and feminine tulle skirts, appropriately crafted with mesh panels or juxtaposed with tucked-in Off-White & Nike tees, subverting the feminine lean.",
+			"image" : "images/offwhite.png",
+			"collectionurl" :  "https://www.vogue.com/fashion-shows/spring-2019-ready-to-wear/off-white/slideshow/collection#1"
+		},
+
+		{
+			"name" : "Telfar",
+			"idname" : "telfar",
+			"year" : "Spring/Summer 19",
+			"description" : "Upcoming NYC label Telfar took to a rainswept runway to unveil its SS19 collection. Like many designers working in the shadow of a Trump presidency, Telfar tore up all-American classics and made them his own. The label turned to the the good old Stars and Stripes as a foundation for its graphics, and notched up the \"Murican\" vibes by putting a Budweiser collaboration on the runway.",
+			"image" : "images/telfar.png",
+			"collectionurl" :  "https://www.vogue.com/fashion-shows/spring-2019-ready-to-wear/telfar/slideshow/collection#1"
+		},
+
+		{
+			"name" : "John Elliot",
+			"idname" : "johnelliot",
+			"year" : "Spring/Summer 19",
+			"description" : "John Elliott took his eponymous label back to New York Fashion Week to debut his latest range of effortless sportswear and laid-back denim. John Elliot has a personal approach to design that is immediately apparent upon viewing the new range, with worn-in accents reflecting the designer’s intent to create comfortable clothing for daily life. The new collection showcased more collaborative Suicoke sandals and new jewelry designed in collaboration with Japanese brand Mars. Lived-in touches included blown-out knees in the Japanese denim, cardigans buttoned insouciantly and cracked leather jackets courtesy of Blackmeans.",
+			"image" : "images/johnelliot.png",
+			"collectionurl" :  "https://hypebeast.com/2018/9/john-elliott-spring-summer-2019-runway-collection"
+		}
+		
+	]
+
+}

@@ -90,7 +90,7 @@ var myurl = "https://carolaguivel.github.io/webadvanced/instrument/men.json";
 
 $.getJSON(myurl, function(data){
 		
-	$(".prodinfo").append( "<p class='backlink'><a href='032c.html'>Back to 032c</a></p><p class='title'>" + data.thirtytwo[0].title + "</p><p class='description'>" + data.thirtytwo[0].description + "</p><p class='prodprice'>" + data.thirtytwo[0].price + "</p><p class='wishlist'><a class='addwishlist' data-wishlistgender='men' data-wishlistbrand='thirtytwo' data-wishlistindex'0'>wishlist</a></p><div class='addit' data-gender='men' data-brand='thirtytwo' data-index='0' data-quantity='1'><a class='addtocart'>Add to Bag</a></div>")
+	$(".prodinfo").append( "<p class='backlink'><a href='032c.html'>Back to 032c</a></p><p class='title'>" + data.thirtytwo[0].title + "</p><p class='description'>" + data.thirtytwo[0].description + "</p><p class='prodprice'>" + data.thirtytwo[0].price + "</p><p class='wishlist'><a class='addwishlist' data-wishlistgender='men' data-wishlistbrand='thirtytwo' data-wishlistindex='0'>wishlist</a></p><div class='addit' data-gender='men' data-brand='thirtytwo' data-index='0' data-quantity='1'><a class='addtocart'>Add to Bag</a></div>")
 
 
 	for (var i = 0; i < data.thirtytwo[0].images.length; i++) {

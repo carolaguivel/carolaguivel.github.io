@@ -1,0 +1,147 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+	font-family: lores-12-narrow, sans-serif;
+	color: black;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	color: blue;
+}
+
+#thirtytwo, #ambush, #gmbh, #louisvuitton, #offwhite, #calvinklein, #alexanderwang, #telfar, #johnelliot,
+#alexandermcqueen, #alyx, #acoldwall, #balenciaga, #misbhv, #heronpreston {
+	display: none;
+}
+
+#menu {
+	position: absolute;
+	width: 55vw;
+	margin-left: 26vw;
+	margin-top: 12vw;
+}
+
+.menubutton {
+	text-align: center;
+	display: inline-block;
+	background-color: white;
+	cursor: pointer;
+	font-size: 1.25vw;
+	border: 0.2vw solid black;
+	margin-bottom: 5vw;
+	margin-right: 6vw;
+	box-shadow: 0.3vw 0.3vw;
+	padding: 0.2vw;
+	width: 11vw;
+	z-index: 3;
+}
+
+#brands {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+} 
+
+.brandwrapper {
+	position: absolute;
+	margin-left: 20vw;
+	margin-top: 10vw;
+}
+
+.imgwrapper {
+	position: absolute;
+	width: 23vw;
+	height: 10vw;
+	z-index: 1;
+	margin-left: 10vw;
+}
+
+.imgcaption {
+	border-top: 0.2vw solid black;
+	border-left: 0.2vw solid black;
+	border-right: 0.2vw solid black;
+	text-align: center;
+	background-color: white;
+}
+
+.imgcaption h1 {
+	font-weight: 400;
+	font-size: 1.25vw;
+	display: inline-block;
+	margin: 0;
+	color: white;
+	background-color: black;
+	padding-left: 0.1vw;
+	padding-right: 0.1vw;
+}
+
+.draggable {
+	cursor: move;
+}
+
+.draggable.is-dragging {
+	z-index: 3;
+}
+
+.close {
+	position: absolute;
+	z-index: 1;
+	width: 1.4vw;
+	height: 0.3vw;
+	background-color: white;
+	border: 0.01vw solid black;
+	box-shadow: 0.1vw 0.1vw;
+	color: black;
+	margin-left: 30.4vw;
+	margin-top: 0.7vw;
+	cursor: pointer;
+}
+
+.imgwrapper img {
+	border: 0.2vw solid black;
+}
+
+.contentwrapper {
+	position: absolute;
+	font-size: 1vw;
+	width: 22vw;
+	margin-left: 30vw;
+	margin-top: 3vw;
+	z-index: 1;
+}
+
+.contentdescription {
+	margin-top: 0;
+	padding: 1.2vw;
+	border: 0.2vw solid black;
+	background-color: white;
+}
+
+.contentdescription p {
+	margin-top: 0;
+}
+
+.contentcaption {
+	border-top: 0.2vw solid black;
+	border-left: 0.2vw solid black;
+	border-right: 0.2vw solid black;
+	text-align: center;
+	background-color: white;
+}
+
+.contentcaption h2 {
+	font-weight: 400;
+	font-size: 1.25vw;
+	display: inline-block;
+	margin: 0;
+	color: white;
+	background-color: black;
+	padding-left: 0.1vw;
+	padding-right: 0.1vw;
+}
