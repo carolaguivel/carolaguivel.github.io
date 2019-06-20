@@ -27,10 +27,12 @@ $.getJSON(myurl, function(data){
 			image = data.Brands[i].image;
 
 		$("#brands").append(`
-			<div class="imgwrapper" onclick="display${idname}>"
-				<h1>${name}</h1>
+			<div class="imgwrapper" onclick="display${idname}">
+				<div class="imgcaption">
+					<h1>${name}</h1>
+				</div>
+				<img src="${image}" width="100%">
 			</div>
-			<img src="${image}" width="100%">
 		`);
 	};
 
