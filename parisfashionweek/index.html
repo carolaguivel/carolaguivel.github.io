@@ -19,7 +19,7 @@ var myurl = "https://carolaguivel.github.io/parisfashionweek/collection.json";
 
 $.getJSON(myurl, function(data){
 
-	for (var i = 0; i < data.Brands1.length; i++) {
+	for (var i = 0; i < data.Brands.length; i++) {
 
 		var name = data.Brands[i].name,
 			idname = data.Brands[i].idname,
