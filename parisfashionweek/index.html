@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Paris Fashion Week Men's SS20</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://use.typekit.net/vps1vpr.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+
+
+<div id="brands"></div>
+	
+
+<div class="imgwrapper">
+	<div class="imgcaption">
+		<h1>Versace</h1>
+	</div>
+	<img src="images/versace1.jpg" width="100%">
+</div>
+					
+
+
+</div>
+
+
+
+
+<script>
+
+var myurl = "https://carolaguivel.github.io/fashionsharing/collection.json";
+
+
+$.getJSON(myurl, function(data){
+
+	for (var i = 0; i < data.Brands.length; i++) {
+
+		var name = data.Brands[i].name,
+			idname = data.Brands[i].idname;
+
+		$("#menu").append(`
+			<div class="imgwrapper" onclick="display${idname}>"
+				<h1>${name}</h1>
+			</div>
+			<img src="${image}" width="100%">
+		`);
+	};
+
+});
+
+</script>
+</body>
+</html>

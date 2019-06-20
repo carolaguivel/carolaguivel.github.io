@@ -1,0 +1,30 @@
+{
+	"Brands" : [
+		{
+			"name" : "Versace",
+			"idname" : "versace",
+			"year" : "Spring/Summer 20 Men's",
+			"description" : "",
+			"image" : "images/versace1.jpg",
+			"collectionurl" : "https://032c.com/runway-recap-032c-cosmic-workshop-at-180-strand-in-london"
+		},
+
+		{
+			"name" : "Versace",
+			"idname" : "versace",
+			"year" : "Spring/Summer 20 Men's",
+			"description" : "",
+			"image" : "images/versace1.jpg",
+			"collectionurl" : "https://032c.com/runway-recap-032c-cosmic-workshop-at-180-strand-in-london"
+		},
+
+		{
+			"name" : "Versace",
+			"idname" : "versace",
+			"year" : "Spring/Summer 20 Men's",
+			"description" : "",
+			"image" : "images/versace1.jpg",
+			"collectionurl" : "https://032c.com/runway-recap-032c-cosmic-workshop-at-180-strand-in-london"
+		}
+	]
+}
