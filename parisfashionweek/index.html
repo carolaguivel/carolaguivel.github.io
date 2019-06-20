@@ -5,13 +5,14 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://use.typekit.net/vps1vpr.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="flickity/flickity.css">
 </head>
 <body>
 
-<div id="brands1" class="carousel" data-flickity='{ "wrapAround": true }'></div>
+<div id="brands"></div>
 
-<script src="flickity/flickity.pkgd.js"></script>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
 <script>
 
 var myurl = "https://carolaguivel.github.io/parisfashionweek/collection.json";
@@ -28,7 +29,7 @@ $.getJSON(myurl, function(data){
 			image3 = data.Brands[i].imagethree;
 
 		$("#brands").append(`
-			<div class="imgwrapper carousel-cell">
+			<div class="imgwrapper">
 				<div class="imgcaption">
 					<h1>${name}</h1>
 				</div>
@@ -82,8 +83,33 @@ $.getJSON(myurl, function(data){
     	$(this).css({"background-color" : "#54fcfc", "color" : "black"});
 	});
 
+
+
+	var slideIndex = 1;
+	showSlides(slideIndex);
+
 });
 
+// Slide Show
+
+slideIndex = 1;
+
+function plusSlides(n) {
+	showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+	var i;
+	var slides = document.getElementsByClassName("imgwrapper");
+	if (n > slides.length) {slideIndex = 1}    
+	if (n < 1) {slideIndex = slides.length}
+	for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";  
+	}
+	slides[slideIndex-1].style.display = "block";  
+}
+
+// Display Functions
 
 function displayacnestudiosimg2() {
 	console.log("hello!")
@@ -121,6 +147,7 @@ function displayoffwhiteimg3() {
     document.getElementById("offwhiteimg2").style.display = "none";
     document.getElementById("offwhiteimg3").style.display = "block";
 };
+
 
 </script>
 </body>

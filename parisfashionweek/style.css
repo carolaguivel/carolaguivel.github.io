@@ -11,30 +11,24 @@ html, body {
 	box-sizing: border-box;
 }
 
-#brands1 {
+#brands {
 	position: absolute;
 	display: flex;
-	width: 70%;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
 	height: 50%;
 	margin-top: 12vw;
-	margin-left: 14.5vw;
-	/*background-color: white;*/
-}
-
-#brands2 {
-	position: absolute;
-	display: flex;
-	width: 65%;
-	height: 50%;
-	margin-top: 28vw;
-	display: none;
+	/*margin-left: 14.5vw;*/
 	/*background-color: white;*/
 }
 
 .imgwrapper {
+	display: none;
 	margin-top: 0.5vw;
 	margin-left: 0.5vw;
 	margin-right: 0.5vw;
+	width: 25%;
 }
 
 .imgwrapper img {
@@ -84,12 +78,28 @@ html, body {
 	cursor: pointer;
 }
 
-.carousel-cell {
-	counter-increment: carousel-cell;
-	width: 100%;
-}
-
 #acnestudiosimg2, #acnestudiosimg3, #heronprestonimg2, #heronprestonimg3, #offwhiteimg2,
 #offwhiteimg3, #versaceimg2, #versaceimg3 {
 	display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
