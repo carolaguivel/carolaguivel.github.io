@@ -77,3 +77,7 @@ html, body {
 .toolbar text {
 	text-decoration: underline;
 }
+
+.img2, .img3 {
+	display: none;
+}

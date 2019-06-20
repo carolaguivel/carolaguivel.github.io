@@ -6,9 +6,9 @@
 			"idname" : "acnestudios",
 			"year" : "Spring/Summer 20 Men's",
 			"description" : "",
-			"image1" : "images/acne1.jpg",
-			"image2" : "images/acne2.jpg",
-			"image3" : "images/acne3.jpg",
+			"imageone" : "images/acne1.jpg",
+			"imagetwo" : "images/acne2.jpg",
+			"imagethree" : "images/acne3.jpg",
 			"collectionurl" : "https://032c.com/runway-recap-032c-cosmic-workshop-at-180-strand-in-london"
 		},
 
@@ -17,9 +17,9 @@
 			"idname" : "heronpreston",
 			"year" : "Spring/Summer 20 Men's",
 			"description" : "",
-			"image1" : "images/heronpreston1.jpg",
-			"image2" : "images/heronpreston2.jpg",
-			"image3" : "images/heronpreston3.jpg",
+			"imageone" : "images/heronpreston1.jpg",
+			"imagetwo" : "images/heronpreston2.jpg",
+			"imagethree" : "images/heronpreston3.jpg",
 			"collectionurl" : "https://032c.com/runway-recap-032c-cosmic-workshop-at-180-strand-in-london"
 		},
 
@@ -28,9 +28,9 @@
 			"idname" : "offwhite",
 			"year" : "Spring/Summer 20 Men's",
 			"description" : "",
-			"image1" : "images/offwhite1.jpg",
-			"image2" : "images/offwhite2.jpg",
-			"image3" : "images/offwhite3.jpg",
+			"imageone" : "images/offwhite1.jpg",
+			"imagetwo" : "images/offwhite2.jpg",
+			"imagethree" : "images/offwhite3.jpg",
 			"collectionurl" : "https://032c.com/runway-recap-032c-cosmic-workshop-at-180-strand-in-london"
 		},
 
@@ -39,9 +39,9 @@
 			"idname" : "versace",
 			"year" : "Spring/Summer 20 Men's",
 			"description" : "",
-			"image1" : "images/versace1.jpg",
-			"image2" : "images/versace2.jpg",
-			"image3" : "images/versace3.jpg",
+			"imageone" : "images/versace1.jpg",
+			"imagetwo" : "images/versace2.jpg",
+			"imagethree" : "images/versace3.jpg",
 			"collectionurl" : "https://032c.com/runway-recap-032c-cosmic-workshop-at-180-strand-in-london"
 		}
 	],
