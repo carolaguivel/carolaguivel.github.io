@@ -33,6 +33,7 @@ html, body {
 	border-top: 0.2vw solid black;
 	border-left: 0.2vw solid black;
 	border-right: 0.2vw solid black;
+	border-bottom: 0.2vw solid black;
 	text-align: center;
 	background-color: white;
 }
@@ -46,6 +47,19 @@ html, body {
 	background-color: black;
 	padding-left: 0.1vw;
 	padding-right: 0.1vw;
-	/*padding-top: 0;*/
-	/*padding-bottom: 0;*/
+}
+
+.toolbar {
+	border-left: 0.2vw solid black;
+	border-right: 0.2vw solid black;
+	height: 1.6vw;
+}
+
+.toolbar span {
+	margin-right: 0.2vw;
+	margin-left: 0.2vw;
+}
+
+.toolbar text {
+	text-decoration: underline;
 }
