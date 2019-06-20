@@ -8,10 +8,10 @@
 </head>
 <body>
 
-
-<div id="brands"></div>
-
-
+<div id="brands">
+	<div id="brands1"></div>
+	<div id="brands2"></div>
+</div>
 
 <script>
 
@@ -26,7 +26,7 @@ $.getJSON(myurl, function(data){
 			idname = data.Brands[i].idname,
 			image = data.Brands[i].image;
 
-		$("#brands").append(`
+		$("#brands1").append(`
 			<div class="imgwrapper" onclick="display${idname}">
 				<div class="imgcaption">
 					<h1>${name}</h1>

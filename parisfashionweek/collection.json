@@ -1,5 +1,5 @@
 {
-	"Brands" : [
+	"Brands1" : [
 
 		{
 			"name" : "Acne Studios",
@@ -35,7 +35,10 @@
 			"description" : "",
 			"image" : "images/versace1.jpg",
 			"collectionurl" : "https://032c.com/runway-recap-032c-cosmic-workshop-at-180-strand-in-london"
-		},
+		}
+	],
+
+	"Brands2" : [
 
 		{
 			"name" : "Maison Valentino",
