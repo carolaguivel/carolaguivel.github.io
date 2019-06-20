@@ -23,7 +23,8 @@ $.getJSON(myurl, function(data){
 	for (var i = 0; i < data.Brands.length; i++) {
 
 		var name = data.Brands[i].name,
-			idname = data.Brands[i].idname;
+			idname = data.Brands[i].idname,
+			image = data.Brands[i].image;
 
 		$("#brands").append(`
 			<div class="imgwrapper" onclick="display${idname}>"
