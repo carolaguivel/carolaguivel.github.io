@@ -5,6 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://use.typekit.net/vps1vpr.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="draggabilly/draggabilly.pkgd.js"></script>
 </head>
 <body>
 
@@ -29,25 +30,45 @@ $.getJSON(myurl, function(data){
 			image3 = data.Brands[i].imagethree;
 
 		$("#brands").append(`
-			<div class="imgwrapper">
-				<div class="imgcaption">
-					<h1>${name}</h1>
+			<div class="brandwrapper">
+				<div class="mainimg">
+					<div class="imgcaption">
+						<h1>${name}</h1>
+					</div>
+					<div class="toolbar">
+						<span onclick="display${idname}img2()" class="file">
+							<text>L</text>ook1</span>
+						<span onclick="display${idname}img3()" class="edit">
+							<text>E</text>dit</span>
+						<span onclick="display${idname}img1()" class="view">
+							<text>V</text>iew</span>
+						<span onclick="display${idname}descr()" class="notes">
+							<text>N</text>otes</span>
+					</div>
+					<img src="${image1}" width="100%">
 				</div>
-				<div class="toolbar">
-					<span onclick="display${idname}img2()" class="file">
-						<text>L</text>ook1</span>
-					<span onclick="display${idname}img3()" class="edit">
-						<text>E</text>dit</span>
-					<span onclick="display${idname}img1()" class="view">
-						<text>V</text>iew</span>
-					<span onclick="display${idname}descr()" class="notes">
-						<text>N</text>otes</span>
+				<div class="draggable" id="${idname}img2">
+					<div class="imgcaption">
+						<h1>Look1</h1>
+					</div>
+					<img src="${image2}" width="100%" class="img2">
 				</div>
-				<img src="${image1}" id="${idname}img1" width="100%">
-				<img src="${image2}" id="${idname}img2" width="100%">
-				<img src="${image3}" id="${idname}img3" width="100%">
+				<img src="${image3}" id="${idname}img3" width="100%" class="draggable">
 			</div>
 		`);
+	};
+
+	
+	var draggableElems = document.querySelectorAll('.draggable');
+
+	var draggies = []
+
+	for ( var i=0, len = draggableElems.length; i < len; i++ ) {
+		var draggableElem = draggableElems[i];
+		var draggie = new Draggabilly( draggableElem, {
+			axis: 'x,y',
+		});
+		draggies.push( draggie );
 	};
 
 
@@ -83,8 +104,6 @@ $.getJSON(myurl, function(data){
     	$(this).css({"background-color" : "#54fcfc", "color" : "black"});
 	});
 
-
-
 	var slideIndex = 1;
 	showSlides(slideIndex);
 
@@ -100,7 +119,7 @@ function plusSlides(n) {
 
 function showSlides(n) {
 	var i;
-	var slides = document.getElementsByClassName("imgwrapper");
+	var slides = document.getElementsByClassName("brandwrapper");
 	if (n > slides.length) {slideIndex = 1}    
 	if (n < 1) {slideIndex = slides.length}
 	for (i = 0; i < slides.length; i++) {
@@ -112,34 +131,15 @@ function showSlides(n) {
 // Display Functions
 
 function displayacnestudiosimg2() {
-	console.log("hello!")
-    document.getElementById("acnestudiosimg1").style.display = "none";
     document.getElementById("acnestudiosimg2").style.display = "block";
-    document.getElementById("acnestudiosimg3").style.display = "none";
-};
-
-function displayacnestudiosimg1() {
-    document.getElementById("acnestudiosimg1").style.display = "block";
-    document.getElementById("acnestudiosimg2").style.display = "none";
-    document.getElementById("acnestudiosimg3").style.display = "none";
 };
 
 function displayacnestudiosimg3() {
-    document.getElementById("acnestudiosimg1").style.display = "none";
-    document.getElementById("acnestudiosimg2").style.display = "none";
     document.getElementById("acnestudiosimg3").style.display = "block";
 };
 
 function displayoffwhiteimg2() {
-    document.getElementById("offwhiteimg1").style.display = "none";
     document.getElementById("offwhiteimg2").style.display = "block";
-    document.getElementById("offwhiteimg3").style.display = "none";
-};
-
-function displayoffwhiteimg1() {
-    document.getElementById("offwhiteimg1").style.display = "block";
-    document.getElementById("offwhiteimg2").style.display = "none";
-    document.getElementById("offwhiteimg3").style.display = "none";
 };
 
 function displayoffwhiteimg3() {

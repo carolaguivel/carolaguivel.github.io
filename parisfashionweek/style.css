@@ -23,7 +23,7 @@ html, body {
 	/*background-color: white;*/
 }
 
-.imgwrapper {
+.brandwrapper {
 	display: none;
 	margin-top: 0.5vw;
 	margin-left: 0.5vw;
@@ -31,7 +31,7 @@ html, body {
 	width: 25%;
 }
 
-.imgwrapper img {
+.mainimg img {
 	border: 0.2vw solid black;
 }
 
@@ -78,9 +78,21 @@ html, body {
 	cursor: pointer;
 }
 
-#acnestudiosimg2, #acnestudiosimg3, #heronprestonimg2, #heronprestonimg3, #offwhiteimg2,
-#offwhiteimg3, #versaceimg2, #versaceimg3 {
+.img2 {
+	border: 0.2vw solid black;
+}
+
+#acnestudiosimg2, #heronprestonimg2, #offwhiteimg2, #versaceimg2 {
 	display: none;
+	position: absolute;
+	width: 15%;
+}
+
+#acnestudiosimg3, #heronprestonimg3, #offwhiteimg3, #versaceimg3 {
+	display: none;
+	position: absolute;
+	width: 15%;
+	border: 0.2vw solid black;
 }
 
 .prev, .next {
@@ -102,4 +114,8 @@ html, body {
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
+}
+
+.draggable {
+	cursor: move;
 }
