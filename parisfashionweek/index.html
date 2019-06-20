@@ -5,14 +5,13 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://use.typekit.net/vps1vpr.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="flickity/flickity.css">
 </head>
 <body>
 
-<div id="brands">
-	<div id="brands1"></div>
-	<div id="brands2"></div>
-</div>
+<div id="brands1" class="carousel" data-flickity='{ "wrapAround": true }'></div>
 
+<script src="flickity/flickity.pkgd.js"></script>
 <script>
 
 var myurl = "https://carolaguivel.github.io/parisfashionweek/collection.json";
@@ -22,55 +21,106 @@ $.getJSON(myurl, function(data){
 
 	for (var i = 0; i < data.Brands1.length; i++) {
 
-		var name = data.Brands1[i].name,
-			idname = data.Brands1[i].idname,
-			image1 = data.Brands1[i].imageone,
-			image2 = data.Brands1[i].imagetwo,
-			image3 = data.Brands1[i].imagethree;
+		var name = data.Brands[i].name,
+			idname = data.Brands[i].idname,
+			image1 = data.Brands[i].imageone,
+			image2 = data.Brands[i].imagetwo,
+			image3 = data.Brands[i].imagethree;
 
-		$("#brands1").append(`
-			<div class="imgwrapper">
+		$("#brands").append(`
+			<div class="imgwrapper carousel-cell">
 				<div class="imgcaption">
 					<h1>${name}</h1>
 				</div>
 				<div class="toolbar">
-					<span onclick="display${idname}img1"><text>F</text>ile</span>
-					<span onclick="display${idname}img2"><text>E</text>dit</span>
-					<span onclick="display${idname}img3"><text>V</text>iew</span>
-					<span><text>N</text>otes</span>
+					<span onclick="display${idname}img2()" class="file">
+						<text>L</text>ook1</span>
+					<span onclick="display${idname}img3()" class="edit">
+						<text>E</text>dit</span>
+					<span onclick="display${idname}img1()" class="view">
+						<text>V</text>iew</span>
+					<span onclick="display${idname}descr()" class="notes">
+						<text>N</text>otes</span>
 				</div>
-				<img src="${image1}" class="img1" id="${idname}img1" width="100%">
-				<img src="${image2}" class="img2" id="${idname}img2" width="100%">
-				<img src="${image3}" class="img3" id="${idname}img3" width="100%">
+				<img src="${image1}" id="${idname}img1" width="100%">
+				<img src="${image2}" id="${idname}img2" width="100%">
+				<img src="${image3}" id="${idname}img3" width="100%">
 			</div>
 		`);
 	};
 
-	// for (var i = 0; i < data.Brands2.length; i++) {
 
-	// 	var name = data.Brands2[i].name,
-	// 		idname = data.Brands2[i].idname,
-	// 		image1 = data.Brands2[i].image1,
-	// 		image2 = data.Brands2[i].image2,
-	// 		image3 = data.Brands2[i].image3;
+	$( ".file" ).mousedown(function() {
+		$(this).css({"background-color" : "black", "color" : "white"});
+	});
 
-	// 	$("#brands2").append(`
-	// 		<div class="imgwrapper" onclick="display${idname}">
-	// 			<div class="imgcaption">
-	// 				<h1>${name}</h1>
-	// 			</div>
-	// 			<div class="toolbar">
-	// 				<span><text>F</text>ile</span>
-	// 				<span><text>E</text>dit</span>
-	// 				<span><text>V</text>iew</span>
-	// 				<span><text>N</text>otes</span>
-	// 			</div>
-	// 			<img src="${image1}" width="100%">
-	// 		</div>
-	// 	`);
-	// };
+	$( ".file" ).mouseup(function() {
+    	$(this).css({"background-color" : "#54fcfc", "color" : "black"});
+	});
+
+	$( ".edit" ).mousedown(function() {
+		$(this).css({"background-color" : "black", "color" : "white"});
+	});
+
+	$( ".edit" ).mouseup(function() {
+    	$(this).css({"background-color" : "#54fcfc", "color" : "black"});
+	});
+
+	$( ".view" ).mousedown(function() {
+		$(this).css({"background-color" : "black", "color" : "white"});
+	});
+
+	$( ".view" ).mouseup(function() {
+    	$(this).css({"background-color" : "#54fcfc", "color" : "black"});
+	});
+
+	$( ".notes" ).mousedown(function() {
+		$(this).css({"background-color" : "black", "color" : "white"});
+	});
+
+	$( ".notes" ).mouseup(function() {
+    	$(this).css({"background-color" : "#54fcfc", "color" : "black"});
+	});
 
 });
+
+
+function displayacnestudiosimg2() {
+	console.log("hello!")
+    document.getElementById("acnestudiosimg1").style.display = "none";
+    document.getElementById("acnestudiosimg2").style.display = "block";
+    document.getElementById("acnestudiosimg3").style.display = "none";
+};
+
+function displayacnestudiosimg1() {
+    document.getElementById("acnestudiosimg1").style.display = "block";
+    document.getElementById("acnestudiosimg2").style.display = "none";
+    document.getElementById("acnestudiosimg3").style.display = "none";
+};
+
+function displayacnestudiosimg3() {
+    document.getElementById("acnestudiosimg1").style.display = "none";
+    document.getElementById("acnestudiosimg2").style.display = "none";
+    document.getElementById("acnestudiosimg3").style.display = "block";
+};
+
+function displayoffwhiteimg2() {
+    document.getElementById("offwhiteimg1").style.display = "none";
+    document.getElementById("offwhiteimg2").style.display = "block";
+    document.getElementById("offwhiteimg3").style.display = "none";
+};
+
+function displayoffwhiteimg1() {
+    document.getElementById("offwhiteimg1").style.display = "block";
+    document.getElementById("offwhiteimg2").style.display = "none";
+    document.getElementById("offwhiteimg3").style.display = "none";
+};
+
+function displayoffwhiteimg3() {
+    document.getElementById("offwhiteimg1").style.display = "none";
+    document.getElementById("offwhiteimg2").style.display = "none";
+    document.getElementById("offwhiteimg3").style.display = "block";
+};
 
 </script>
 </body>

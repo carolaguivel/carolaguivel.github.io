@@ -45,7 +45,6 @@ html, body {
 	border-top: 0.2vw solid black;
 	border-left: 0.2vw solid black;
 	border-right: 0.2vw solid black;
-	border-bottom: 0.2vw solid black;
 	text-align: center;
 	background-color: white;
 }
@@ -64,13 +63,16 @@ html, body {
 .toolbar {
 	border-left: 0.2vw solid black;
 	border-right: 0.2vw solid black;
-	height: 1.5vw;
+	border-top: 0.2vw solid black;
+	/*height: 1.5vw;*/
 	background-color: rgb(84,252,252);
 }
 
 .toolbar span {
-	margin-right: 0.2vw;
-	margin-left: 0.2vw;
+	z-index: -2;
+	padding-right: 0.2vw;
+	padding-left: 0.2vw;
+	padding-top: 0.08vw;
 	font-size: 16px;
 }
 
@@ -78,6 +80,16 @@ html, body {
 	text-decoration: underline;
 }
 
-.img2, .img3 {
+.file, .edit, .view, .notes {
+	cursor: pointer;
+}
+
+.carousel-cell {
+	counter-increment: carousel-cell;
+	width: 100%;
+}
+
+#acnestudiosimg2, #acnestudiosimg3, #heronprestonimg2, #heronprestonimg3, #offwhiteimg2,
+#offwhiteimg3, #versaceimg2, #versaceimg3 {
 	display: none;
 }
