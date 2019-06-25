@@ -52,6 +52,7 @@ $.getJSON(myurl, function(data){
 						<h1>Look1</h1>
 					</div>
 					<img src="${image2}" width="100%" class="img2">
+					<div class="close" onclick="close${idname}img2()"></div>
 				</div>
 				<img src="${image3}" id="${idname}img3" width="100%" class="draggable">
 			</div>
@@ -130,12 +131,18 @@ function showSlides(n) {
 
 // Display Functions
 
-function displayacnestudiosimg2() {
-    document.getElementById("acnestudiosimg2").style.display = "block";
+function displayalyximg2() {
+    document.getElementById("alyximg2").style.display = "block";
+};
+function closealyximg2() {
+    document.getElementById("alyximg2").style.display = "none";
 };
 
-function displayacnestudiosimg3() {
-    document.getElementById("acnestudiosimg3").style.display = "block";
+function displayalyximg3() {
+    document.getElementById("alyximg3").style.display = "block";
+};
+function closealyximg3() {
+    document.getElementById("alyximg3").style.display = "none";
 };
 
 function displayoffwhiteimg2() {
@@ -143,8 +150,6 @@ function displayoffwhiteimg2() {
 };
 
 function displayoffwhiteimg3() {
-    document.getElementById("offwhiteimg1").style.display = "none";
-    document.getElementById("offwhiteimg2").style.display = "none";
     document.getElementById("offwhiteimg3").style.display = "block";
 };
 
