@@ -13,6 +13,17 @@
 		},
 
 		{
+			"name" : "Dior",
+			"idname" : "dior",
+			"year" : "Spring/Summer 20 Paris",
+			"description" : "",
+			"imageone" : "images/dior1.jpg",
+			"imagetwo" : "images/dior2.jpg",
+			"imagethree" : "images/dior3.jpg",
+			"collectionurl" : "https://032c.com/runway-recap-032c-cosmic-workshop-at-180-strand-in-london"
+		},
+
+		{
 			"name" : "Heron Preston",
 			"idname" : "heronpreston",
 			"year" : "Spring/Summer 20 Men's",
@@ -20,6 +31,17 @@
 			"imageone" : "images/heronpreston1.jpg",
 			"imagetwo" : "images/heronpreston2.jpg",
 			"imagethree" : "images/heronpreston3.jpg",
+			"collectionurl" : "https://032c.com/runway-recap-032c-cosmic-workshop-at-180-strand-in-london"
+		},
+
+		{
+			"name" : "Louis Vuitton",
+			"idname" : "lv",
+			"year" : "Spring/Summer 20 Paris",
+			"description" : "",
+			"imageone" : "images/lv1.jpg",
+			"imagetwo" : "images/lv2.jpg",
+			"imagethree" : "images/lv3.jpg",
 			"collectionurl" : "https://032c.com/runway-recap-032c-cosmic-workshop-at-180-strand-in-london"
 		},
 
@@ -35,9 +57,20 @@
 		},
 
 		{
+			"name" : "Sacai",
+			"idname" : "sacai",
+			"year" : "Spring/Summer 20 Paris",
+			"description" : "",
+			"imageone" : "images/sacai1.jpg",
+			"imagetwo" : "images/sacai2.jpg",
+			"imagethree" : "images/sacai3.jpg",
+			"collectionurl" : "https://032c.com/runway-recap-032c-cosmic-workshop-at-180-strand-in-london"
+		},
+
+		{
 			"name" : "Versace",
 			"idname" : "versace",
-			"year" : "Spring/Summer 20 Men's",
+			"year" : "Spring/Summer 20 Milano",
 			"description" : "",
 			"imageone" : "images/versace1.jpg",
 			"imagetwo" : "images/versace2.jpg",
