@@ -13,6 +13,17 @@
 		},
 
 		{
+			"name" : "1017 ALYX 9SM",
+			"idname" : "alyx",
+			"year" : "Spring/Summer 20 Paris",
+			"description" : "",
+			"imageone" : "images/alyx1.jpg",
+			"imagetwo" : "images/alyx2.jpg",
+			"imagethree" : "images/alyx3.jpg",
+			"collectionurl" : "https://032c.com/runway-recap-032c-cosmic-workshop-at-180-strand-in-london"
+		},
+
+		{
 			"name" : "Heron Preston",
 			"idname" : "heronpreston",
 			"year" : "Spring/Summer 20 Men's",
