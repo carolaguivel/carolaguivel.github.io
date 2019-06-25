@@ -52,9 +52,15 @@ $.getJSON(myurl, function(data){
 						<h1>File</h1>
 					</div>
 					<img src="${image2}" width="100%" class="img2">
-					<div class="close" onclick="close${idname}img2()"></div>
+					<div class="closeimg2" onclick="close${idname}img2()"></div>
 				</div>
-				<img src="${image3}" id="${idname}img3" width="100%" class="draggable">
+				<div class="draggable" id="${idname}img3">
+					<div class="imgcaption">
+						<h1>Edit</h1>
+					</div>
+					<img src="${image3}" width="100%" class="img3">
+					<div class="closeimg3" onclick="close${idname}img3()"></div>
+				</div>
 			</div>
 		`);
 	};
@@ -145,12 +151,34 @@ function closealyximg3() {
     document.getElementById("alyximg3").style.display = "none";
 };
 
+
 function displayoffwhiteimg2() {
     document.getElementById("offwhiteimg2").style.display = "block";
+};
+function closeoffwhiteimg2() {
+    document.getElementById("offwhiteimg2").style.display = "none";
 };
 
 function displayoffwhiteimg3() {
     document.getElementById("offwhiteimg3").style.display = "block";
+};
+function closeoffwhiteimg3() {
+    document.getElementById("offwhiteimg3").style.display = "none";
+};
+
+
+function displayheronprestonimg2() {
+    document.getElementById("heronprestonimg2").style.display = "block";
+};
+function closeheronprestonimg2() {
+    document.getElementById("heronprestonimg2").style.display = "none";
+};
+
+function displayheronprestonimg3() {
+    document.getElementById("heronprestonimg3").style.display = "block";
+};
+function closeheronprestonimg3() {
+    document.getElementById("heronprestonimg3").style.display = "none";
 };
 
 
