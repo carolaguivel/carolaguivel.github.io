@@ -2,17 +2,6 @@
 	"Brands" : [
 
 		{
-			"name" : "Acne Studios",
-			"idname" : "acnestudios",
-			"year" : "Spring/Summer 20 Men's",
-			"description" : "",
-			"imageone" : "images/acne1.jpg",
-			"imagetwo" : "images/acne2.jpg",
-			"imagethree" : "images/acne3.jpg",
-			"collectionurl" : "https://032c.com/runway-recap-032c-cosmic-workshop-at-180-strand-in-london"
-		},
-
-		{
 			"name" : "1017 ALYX 9SM",
 			"idname" : "alyx",
 			"year" : "Spring/Summer 20 Paris",
