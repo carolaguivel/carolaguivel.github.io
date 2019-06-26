@@ -160,3 +160,12 @@ a {
 	margin-top: -23.3vw;
 	cursor: pointer;
 }
+
+#alyxdescr {
+	display: none;
+}
+
+.descrcontainer {
+	position: absolute;
+	border: 0.2vw solid black;
+}

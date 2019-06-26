@@ -28,7 +28,8 @@ $.getJSON(myurl, function(data){
 			image1 = data.Brands[i].imageone,
 			image2 = data.Brands[i].imagetwo,
 			image3 = data.Brands[i].imagethree,
-			collectionurl = data.Brands[i].collectionurl;
+			collectionurl = data.Brands[i].collectionurl,
+			year = data.Brands[i].year;
 
 		$("#brands").append(`
 			<div class="brandwrapper">
@@ -60,6 +61,12 @@ $.getJSON(myurl, function(data){
 					</div>
 					<img src="${image3}" width="100%" class="img3">
 					<div class="closeimg3" onclick="close${idname}img3()"></div>
+				</div>
+				<div class="draggable descrcontainer" id="${idname}descr">
+					<div class="imgcaption">
+						<h1>${year}</h1>
+					</div>
+					<div class="closedescr" onclick="close${idname}descr()"></div>
 				</div>
 			</div>
 		`);
@@ -149,6 +156,12 @@ function displayalyximg3() {
 };
 function closealyximg3() {
     document.getElementById("alyximg3").style.display = "none";
+};
+function displayalyxdescr() {
+    document.getElementById("alyxdescr").style.display = "block";
+};
+function closealyxdescr() {
+    document.getElementById("alyxdescr").style.display = "none";
 };
 
 
