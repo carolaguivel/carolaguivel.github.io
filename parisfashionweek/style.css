@@ -82,8 +82,18 @@ html, body {
 	border: 0.2vw solid black;
 }
 
+.img2container {
+	margin-left: -12vw;
+	margin-top: -20vw;
+}
+
 .img3 {
 	border: 0.2vw solid black;
+}
+
+.img3container {
+	margin-left: 22vw;
+	margin-top: -32vw;
 }
 
 #alyximg2, #heronprestonimg2, #offwhiteimg2, #versaceimg2, #lvimg2, #sacaiimg2,
@@ -101,24 +111,19 @@ html, body {
 }
 
 .prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	margin-top: -50px;
+	user-select: none;
+	background-color: white;
+	border: 0.2vw solid black;
+	margin-left: 1vw;
 }
 
-/* Position the "next button" to the right */
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+	right: 0;
+	margin-right: 1vw;
 }
 
 .draggable {
@@ -127,7 +132,6 @@ html, body {
 
 .closeimg2 {
 	position: absolute;
-	z-index: 1;
 	width: 1.4vw;
 	height: 0.3vw;
 	background-color: white;
@@ -141,7 +145,6 @@ html, body {
 
 .closeimg3 {
 	position: absolute;
-	z-index: 1;
 	width: 1.4vw;
 	height: 0.3vw;
 	background-color: white;
