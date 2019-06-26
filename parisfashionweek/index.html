@@ -27,7 +27,8 @@ $.getJSON(myurl, function(data){
 			idname = data.Brands[i].idname,
 			image1 = data.Brands[i].imageone,
 			image2 = data.Brands[i].imagetwo,
-			image3 = data.Brands[i].imagethree;
+			image3 = data.Brands[i].imagethree,
+			collectionurl = data.Brands[i].collectionurl;
 
 		$("#brands").append(`
 			<div class="brandwrapper">
@@ -40,10 +41,9 @@ $.getJSON(myurl, function(data){
 							<text>F</text>ile</span>
 						<span onclick="display${idname}img3()" class="edit">
 							<text>E</text>dit</span>
-						<span onclick="display${idname}img1()" class="notes">
+						<span onclick="display${idname}descr()" class="notes">
 							<text>N</text>otes</span>
-						<span onclick="display${idname}descr()" class="view">
-							<text>V</text>iew</span>
+						<a href="${collectionurl}" target="_blank" class="view"><text>V</text>iew</a>
 					</div>
 					<img src="${image1}" width="100%">
 				</div>
