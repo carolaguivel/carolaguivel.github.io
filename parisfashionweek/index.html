@@ -29,7 +29,8 @@ $.getJSON(myurl, function(data){
 			image2 = data.Brands[i].imagetwo,
 			image3 = data.Brands[i].imagethree,
 			collectionurl = data.Brands[i].collectionurl,
-			year = data.Brands[i].year;
+			year = data.Brands[i].year,
+			description = data.Brands[i].description;
 
 		$("#brands").append(`
 			<div class="brandwrapper">
@@ -48,6 +49,13 @@ $.getJSON(myurl, function(data){
 					</div>
 					<img src="${image1}" width="100%">
 				</div>
+				<div class="draggable descrcontainer" id="${idname}descr">
+					<div class="imgcaption">
+						<h1>${year}</h1>
+					</div>
+					<p class="descrcontent">${description}</p>
+					<div class="closedescr" onclick="close${idname}descr()"></div>
+				</div>
 				<div class="draggable img2container" id="${idname}img2">
 					<div class="imgcaption">
 						<h1>File</h1>
@@ -61,12 +69,6 @@ $.getJSON(myurl, function(data){
 					</div>
 					<img src="${image3}" width="100%" class="img3">
 					<div class="closeimg3" onclick="close${idname}img3()"></div>
-				</div>
-				<div class="draggable descrcontainer" id="${idname}descr">
-					<div class="imgcaption">
-						<h1>${year}</h1>
-					</div>
-					<div class="closedescr" onclick="close${idname}descr()"></div>
 				</div>
 			</div>
 		`);

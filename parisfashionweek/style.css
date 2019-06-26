@@ -161,11 +161,33 @@ a {
 	cursor: pointer;
 }
 
-#alyxdescr {
+#alyxdescr, #heronprestondescr, #offwhitedescr, #versacedescr, #lvdescr, #sacaidescr,
+#diordescr {
 	display: none;
 }
 
 .descrcontainer {
 	position: absolute;
+	width: 22vw;
+}
+
+.descrcontent {
 	border: 0.2vw solid black;
+	padding: 1.2vw;
+	margin-top: 0;
+	padding: 1.2vw;
+	background-color: white;
+}
+
+.closedescr {
+	position: absolute;
+	width: 1.4vw;
+	height: 0.3vw;
+	background-color: white;
+	border: 0.1vw solid black;
+	box-shadow: 0.1vw 0.1vw;
+	color: black;
+	margin-left: 12.7vw;
+	margin-top: -23.3vw;
+	cursor: pointer;
 }
