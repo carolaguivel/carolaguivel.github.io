@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PHE-2001</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="https://bismuth-csscore.now.sh/main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/mpe3tnb.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <div class="content width-full">
+        <div class="header">
+            <p id="header-location">Welcome to your Home Portal</p>
+        </div>   
+
+        <div class="form grid-1 grid-gap-xxs">
+            <div class="input-box-initial">
+                <span id="input-location" class="input-location hidden">~</span>
+                <p class="italic">Message:</p>
+                <div id="message" placeholder="hello" rows="1" contenteditable></div>
+                <p class="italic text-right">Session: <span id="clock"></span></p>
+            </div>
+        </div>
+
+        <div id="message-board-wrapper">
+            <div id="message-board"></div>
+            <div id="product-view"></div>
+        </div>
+    </div>
+
+<!-- <script src="welcome-message.js"></script> -->
+<script>
+
+    
+
+        $("#message").on("keyup", (event) => {
+		    if (event.which === 13) $postMessage(); // Use enter to send
+	    }).on("focus", () => {
+		    $("#message").addClass("focus");
+	    }).on("blur", () => {
+		    $("#message").removeClass("focus");
+        });
+
+        function $postMessage() {
+		$("#message").find("br").remove();
+        let $message = $("#message").html().trim();
+        let $location = $("#input-location").html().trim();
+		$message = $message.replace(/<div>/, "<br>").replace(/<div>/g, "").replace(/<\/div>/g, "<br>").replace(/<br>/g, " ").trim();
+        if ($message == "ls") { // if text is not empty
+            if ($location == "~") {
+                const html = `<div class="form-posted grid-1 grid-gap-xxs">
+                                <div class="input-box italic">
+                                    <span class="input-location hidden">~</span>
+                                    <p><span>${timeStamp()}</span></p>
+                                    <p>Message:</p>
+                                    <div id="message" placeholder="hello" rows="1">${$message}</div>
+                                </div>
+                                <div class="grid-3 grid-break-3 grid-gap-xxs width-content options">
+                                    <p>HOME</p>
+                                    <p>INFO</p>
+                                    <p>WARCORE</p>
+                                    <p>H+ TIMES</p>
+                                    <p>RUNDFUNK</p>
+                                    <p>FAVORITES</p>
+                                    <p>CART</p>
+                                    <p>TERMS</p>
+                                    <p>SETTINGS</p>
+                                </div>
+                            </div>`;
+                $("#message-board").append(html);
+			    $scrollDown();
+            } else if ($location == "WARCORE"){
+                const html = `<div class="form-posted grid-1 grid-gap-xxs">
+                                <div class="input-box italic">
+                                    <span class="input-location hidden">${$location}</span>
+                                    <p><span>${timeStamp()}</span></p>
+                                    <p>Message:</p>
+                                    <div id="message" placeholder="hello" rows="1">${$message}</div>
+                                </div>
+                                <div class="grid-3 grid-break-3 grid-gap-xxs width-content options">
+                                    <p>OUTERWEAR</p>
+                                    <p>BOTTOMS</p>
+                                    <p>SHIRTS</p>
+                                    <p>HOODIES</p>
+                                    <p>BAGS</p>
+                                    <p>SHOES</p>
+                                    <p>ACCESSORIES</p>
+                                    <p>SUNGLASSES</p>
+                                </div>
+                            </div>`;
+                $("#message-board").append(html);
+			    $scrollDown();
+            } else if ($location == "SUNGLASSES"){
+                const html = `<div class="form-posted grid-1 grid-gap-xxs">
+                                <div class="input-box italic">
+                                    <span class="input-location hidden">${$location}</span>
+                                    <p><span>${timeStamp()}</span></p>
+                                    <p>Message:</p>
+                                    <div id="message" placeholder="hello" rows="1">${$message}</div>
+                                </div>
+                                <div class="grid-3 grid-break-3 grid-gap-xxs width-content options">
+                                    <div class="product-view">
+                                        <p>SKI SUNGLASSES</p>
+                                        <img class="product-img-pad" src="images/sunglass1.jpg">
+                                    </div>
+                                    <div class="product-view">
+                                        <p>ZIP TIE OC1</p>
+                                        <img class="product-img-pad" src="images/sunglass2.jpg">
+                                    </div>
+                                    <div class="product-view">
+                                        <p>COLD YC2</p>
+                                        <img class="product-img-pad" src="images/sunglass3.jpg">
+                                    </div>
+                                    <div class="product-view">
+                                        <p>TRALYX MOON</p>
+                                        <img class="product-img-pad" src="images/sunglass4.jpg">
+                                    </div>
+                                    <div class="product-view">
+                                        <p>BLACK GRADIENT</p>
+                                        <img class="product-img-pad" src="images/sunglass5.jpg">
+                                    </div>
+                                    <div class="product-view">
+                                        <p>NEWTURTLE GR1</p>
+                                        <img class="product-img-pad" src="images/sunglass6.jpg">
+                                    </div>
+                                    <div class="product-view">
+                                        <p>MOHENIC MO1</p>
+                                        <img class="product-img-pad" src="images/sunglass7.jpg">
+                                    </div>
+                                    <div class="product-view">
+                                        <p>SCON MO1</p>
+                                        <img class="product-img-pad" src="images/sunglass8.jpg">
+                                    </div>
+                                    <div class="product-view">
+                                        <p>NEO ROUND</p>
+                                        <img class="product-img-pad" src="images/sunglass9.jpg">
+                                    </div>
+                                    <div class="product-view">
+                                        <p>MOON AIRBLAST</p>
+                                        <img class="product-img-pad" src="images/sunglass10.jpg">
+                                    </div>
+                                    <div class="product-view">
+                                        <p>FARROW CUT-OUT</p>
+                                        <img class="product-img-pad" src="images/sunglass11.jpg">
+                                    </div>
+                                    <div class="product-view">
+                                        <p>AFIX 032(14M)</p>
+                                        <img class="product-img-pad" src="images/sunglass12.jpg">
+                                    </div>
+                                    <div class="product-view">
+                                        <p>TAILWIND 001</p>
+                                        <img class="product-img-pad" src="images/sunglass13.jpg">
+                                    </div>
+                                    <div class="product-view">
+                                        <p>MMECH0005</p>
+                                        <img class="product-img-pad" src="images/sunglass14.jpg">
+                                    </div>
+                                    <div class="product-view">
+                                        <p>MONO CAT</p>
+                                        <img class="product-img-pad" src="images/sunglass15.jpg">
+                                    </div>
+                                </div>
+                              </div>`;
+                $("#message-board").append(html);
+			    $scrollDown();
+            } else if ($location == "SHOES"){
+                const html = `<div class="form-posted grid-1 grid-gap-xxs">
+                                <div class="input-box italic">
+                                    <span class="input-location hidden">${$location}</span>
+                                    <p><span>${timeStamp()}</span></p>
+                                    <p>Message:</p>
+                                    <div id="message" placeholder="hello" rows="1">${$message}</div>
+                                </div>
+                                <div class="grid-3 grid-break-3 grid-gap-xxs width-content options">
+                                    <div class="product-view">
+                                        <p>BLK0001</p>
+                                        <img class="product-img-pad" src="images/shoe1.jpg">
+                                    </div>
+                                    <div class="product-view">
+                                        <p>KNIT A02</p>
+                                        <img class="product-img-pad" src="images/shoe2.jpg">
+                                    </div>
+                                    <div class="product-view">
+                                        <p>VIBRAM H1K</p>
+                                        <img class="product-img-pad" src="images/shoe3.jpg">
+                                    </div>
+                                    <div class="product-view">
+                                        <p>SNOWCROSS ADV</p>
+                                        <img class="product-img-pad" src="images/shoe4.jpg">
+                                    </div>
+                                    <div class="product-view">
+                                        <p>XT QUEST GTX</p>
+                                        <img class="product-img-pad" src="images/shoe5.jpg">
+                                    </div>
+                                    <div class="product-view">
+                                        <p>AW FUTURESHELL</p>
+                                        <img class="product-img-pad" src="images/shoe5.jpg">
+                                    </div>
+                                </div>
+                              </div>`;
+                $("#message-board").append(html);
+			    $scrollDown();
+            } else if ($location == "H+ TIMES"){
+                const html = `<div class="form-posted grid-1 grid-gap-xxs">
+                                <div class="input-box italic">
+                                    <span class="input-location hidden">${$location}</span>
+                                    <p><span>${timeStamp()}</span></p>
+                                    <p>Message:</p>
+                                    <div id="message" placeholder="hello" rows="1">${$message}</div>
+                                </div>
+                                <div class="grid-3 grid-break-3 grid-gap-xxs width-content options">
+                                    <p>EARTH</p>
+                                    <p>MOON</p>
+                                    <p>MARS</p>
+                                    <p>POLITICS</p>
+                                    <p>BUSINESS</p>
+                                    <p>TECH</p>
+                                    <p>SCIENCE</p>
+                                    <p>HEALTH</p>
+                                    <p>SPORTS</p>
+                                </div>
+                            </div>`;
+                $("#message-board").append(html);
+			    $scrollDown();
+            } else if ($location == "MOON"){
+                const html = `<div class="form-posted grid-1 grid-gap-xxs">
+                                <div class="input-box italic">
+                                    <span class="input-location hidden">${$location}</span>
+                                    <p><span>${timeStamp()}</span></p>
+                                    <p>Message:</p>
+                                    <div id="message" placeholder="hello" rows="1">${$message}</div>
+                                </div>
+                                <div class="grid-2 grid-break-1 grid-gap-xxs width-content options">
+                                    <div class="article-view">
+                                        <p>HUMANITY'S FUTURE IN SPACE</p>
+                                        <img class="product-img-pad" src="images/article1.jpg">
+                                    </div>
+                                    <div class="article-view">
+                                        <p>ARCHITECTURE IN ZERO GRAVITY</p>
+                                        <img class="product-img-pad" src="images/article1.jpg">
+                                    </div>
+                                    <div class="article-view">
+                                        <p>NASA'S FIRST ALL WOMEN SPACEWALK</p>
+                                        <img class="product-img-pad" src="images/article1.jpg">
+                                    </div>
+                                    <div class="article-view">
+                                        <p>INFLEXION POINT OF SPACE FLIGHT</p>
+                                        <img class="product-img-pad" src="images/article2.jpg">
+                                    </div>
+                                    <div class="article-view">
+                                        <p>NASA AND SPACE X DECLARE A SHARED MISSION</p>
+                                        <img class="product-img-pad" src="images/article1.jpg">
+                                    </div>
+                                    <div class="article-view">
+                                        <p>FIVE WOMEN WHO MADE THE MOON LANDING POSSIBLE</p>
+                                        <img class="product-img-pad" src="images/article3.jpg">
+                                    </div>
+                                    <div class="article-view">
+                                        <p>WHY EVERYONE WANTS TO GO BACK TO THE MOON</p>
+                                        <img class="product-img-pad" src="images/article1.jpg">
+                                    </div>
+                                    <div class="article-view">
+                                        <p>MESSAGES ON THE MOON</p>
+                                        <img class="product-img-pad" src="images/article1.jpg">
+                                    </div>
+                                </div>
+                              </div>`;
+                $("#message-board").append(html);
+			    $scrollDown();
+            }
+		} else if ($message == "back -b") {
+            if ($location == "SUNGLASSES") {
+                const html = `<div class="form-posted grid-1 grid-gap-xxs">
+                                <div class="input-box italic">
+                                    <span class="input-location hidden">${$location}</span>
+                                    <p><span>${timeStamp()}</span></p>
+                                    <p>Message:</p>
+                                    <div id="message" placeholder="hello" rows="1">${$message}</div>
+                                </div>
+                                <p>-bash: one step back</p>
+                          </div>`;
+                $("#input-location").text("WARCORE")
+                $("#header-location").text("Warcore")
+			    $("#message-board").append(html);
+			    $scrollDown(); 
+            } else if ($location == "SHOES") {
+                const html = `<div class="form-posted grid-1 grid-gap-xxs">
+                                <div class="input-box italic">
+                                    <span class="input-location hidden">${$location}</span>
+                                    <p><span>${timeStamp()}</span></p>
+                                    <p>Message:</p>
+                                    <div id="message" placeholder="hello" rows="1">${$message}</div>
+                                </div>
+                                <p>-bash: one step back</p>
+                          </div>`;
+                $("#input-location").text("WARCORE")
+                $("#header-location").text("Warcore")
+			    $("#message-board").append(html);
+			    $scrollDown(); 
+            } else if ($location == "WARCORE") {
+                const html = `<div class="form-posted grid-1 grid-gap-xxs">
+                                <div class="input-box italic">
+                                    <span class="input-location hidden">${$location}</span>
+                                    <p><span>${timeStamp()}</span></p>
+                                    <p>Message:</p>
+                                    <div id="message" placeholder="hello" rows="1">${$message}</div>
+                                </div>
+                                <p>-bash: one step back</p>
+                          </div>`;
+                $("#input-location").text("~")
+                $("#header-location").text("Welcome to your Home Portal")
+			    $("#message-board").append(html);
+			    $scrollDown(); 
+            } else if ($location == "MOON") {
+                const html = `<div class="form-posted grid-1 grid-gap-xxs">
+                                <div class="input-box italic">
+                                    <span class="input-location hidden">${$location}</span>
+                                    <p><span>${timeStamp()}</span></p>
+                                    <p>Message:</p>
+                                    <div id="message" placeholder="hello" rows="1">${$message}</div>
+                                </div>
+                                <p>-bash: one step back</p>
+                          </div>`;
+                $("#input-location").text("H+ TIMES")
+                $("#header-location").text("H+ TIMES")
+			    $("#message-board").append(html);
+			    $scrollDown(); 
+            } else if ($location == "H+ TIMES") {
+                const html = `<div class="form-posted grid-1 grid-gap-xxs">
+                                <div class="input-box italic">
+                                    <span class="input-location hidden">${$location}</span>
+                                    <p><span>${timeStamp()}</span></p>
+                                    <p>Message:</p>
+                                    <div id="message" placeholder="hello" rows="1">${$message}</div>
+                                </div>
+                                <p>-bash: one step back</p>
+                          </div>`;
+                $("#input-location").text("~")
+                $("#header-location").text("Welcome to your Home Portal")
+			    $("#message-board").append(html);
+			    $scrollDown(); 
+            }
+        } else if ($message == "cd WARCORE") {
+            if ($location == "~") {
+            const html = `<div class="form-posted grid-1 grid-gap-xxs">
+                                <div class="input-box italic">
+                                    <span class="input-location hidden">${$location}</span>
+                                    <p><span>${timeStamp()}</span></p>
+                                    <p>Message:</p>
+                                    <div id="message" placeholder="hello" rows="1">${$message}</div>
+                                </div>
+                          </div>`;
+            $("#input-location").text("WARCORE")
+            $("#header-location").text("Warcore")
+			$("#message-board").append(html);
+			$scrollDown(); 
+            } else {
+                const html = `<div class="form-posted grid-1 grid-gap-xxs">
+                                <div class="input-box italic">
+                                    <span class="input-location hidden">${$location}</span>
+                                    <p><span>${timeStamp()}</span></p>
+                                    <p>Message:</p>
+                                    <div id="message" placeholder="hello" rows="1">${$message}</div>
+                                </div>
+                                <p>-bash: ${$message}: No such file or directory</p>
+                              </div>`;
+			    $("#message-board").append(html);
+			    $scrollDown();
+            }
+        } else if ($message == "cd SUNGLASSES") {
+            if ($location == "WARCORE") {
+                const html = `<div class="form-posted grid-1 grid-gap-xxs">
+                                <div class="input-box italic">
+                                    <span class="input-location hidden">WARCORE</span>
+                                    <p><span>${timeStamp()}</span></p>
+                                    <p>Message:</p>
+                                    <div id="message" placeholder="hello" rows="1">${$message}</div>
+                                </div>
+                            </div>`;
+            $("#input-location").text("SUNGLASSES")
+            $("#header-location").text("Warcore >> Sunglasses")
+			$("#message-board").append(html);
+			$scrollDown(); 
+            } else {
+                const html = `<div class="form-posted grid-1 grid-gap-xxs">
+                                <div class="input-box italic">
+                                    <span class="input-location hidden">${$location}</span>
+                                    <p><span>${timeStamp()}</span></p>
+                                    <p>Message:</p>
+                                    <div id="message" placeholder="hello" rows="1">${$message}</div>
+                                </div>
+                                <p>-bash: ${$message}: No such file or directory</p>
+                               </div>`;
+			    $("#message-board").append(html);
+			    $scrollDown();
+            }
+        } else if ($message == "cd TRALYX MOON") {
+            if ($location == "SUNGLASSES") {
+                const html = `<div class="form-posted grid-1 grid-gap-xxs">
+                                <div class="input-box italic">
+                                    <span class="input-location hidden">SUNGLASSES</span>
+                                    <p><span>${timeStamp()}</span></p>
+                                    <p>Message:</p>
+                                    <div id="message" placeholder="hello" rows="1">${$message}</div>
+                                </div>
+                            </div>`;
+                const product = `<div class="product">
+                                        <p class="product-title"><span>Name:</span> TRALYX MOON - MARINE SERRE</p>
+                                        <span class="product-button product-button-close"><span class="underline">C</span>lose</span>
+                                        <div class="spacer-m"></div>
+                                    <div class="swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <img class="swiper-slide" src="images/sunglass4.jpg">
+                                            <img class="swiper-slide" src="images/sunglass4_2.jpg">
+                                            <img class="swiper-slide" src="images/sunglass4_3.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="spacer-m"></div>
+                                    <div class="product-details">
+                                        <span>Details:</span>
+                                        <div>
+                                            <p>- Semi Rimless</p>
+                                            <p>- Standard fit</p>
+                                            <p>- Tonal printed glass</p>
+                                            <p>- Rubberized logo in white at temples</p>
+                                            <p>- Cut-out detailing at temple tips</p>
+                                            <p>- Lens Category 2</p>
+                                            <p>- 100% UVA/UVB protection</p>
+                                            <p>- Made in Italy</p>
+                                            <p>- Wipe with a soft cloth</p>
+                                            <p>- Rubberized nose pads</p>
+                                        </div>
+                                    </div>
+                                    <div class="spacer-s"></div>
+                                    <p class="product-details-2"><span>Composition: </span>50% Rubber, 50% Glass</p>
+                                    <div class="spacer-s"></div>
+                                    <p class="product-details-2"><span>Prize: </span>$ 500.00</p>
+                                    <div class="spacer-m"></div>
+                                    <span class="product-button"><span class="underline">A</span>dd to Cart</span>
+                            </div>`;
+            $("#message-board").append(html);
+            $("#product-view").append(product);
+            $(".input-box").css("grid-template-columns", "11% 11% 78%")
+			$scrollDown();
+            $("#product-view").addClass("split-view");
+            $("#message-board").addClass("split-view");
+            } else {
+                const html = `<div class="form-posted grid-1 grid-gap-xxs">
+                                <div class="input-box italic">
+                                    <span class="input-location hidden">SUNGLASSES</span>
+                                    <p><span>${timeStamp()}</span></p>
+                                    <p>Message:</p>
+                                    <div id="message" placeholder="hello" rows="1">${$message}</div>
+                                </div>
+                                <p>-bash: ${$message}: No such file or directory</p>
+                               </div>`;
+			    $("#message-board").append(html);
+			    $scrollDown();
+            }
+        } else if ($message == "cd NEO ROUND") {
+            if ($location == "SUNGLASSES") {
+                const html = `<div class="form-posted grid-1 grid-gap-xxs">
+                                <div class="input-box italic">
+                                    <span class="input-location hidden">SUNGLASSES</span>
+                                    <p><span>${timeStamp()}</span></p>
+                                    <p>Message:</p>
+                                    <div id="message" placeholder="hello" rows="1">${$message}</div>
+                                </div>
+                            </div>`;
+                const product = `<div class="product">
+                                        <p class="product-title"><span>Name:</span> NEO ROUND - BALENCIAGA</p>
+                                        <span class="product-button product-button-close"><span class="underline">C</span>lose</span>
+                                        <div class="spacer-m"></div>
+                                    <div class="swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <img class="swiper-slide" src="images/sunglass9.jpg">
+                                            <img class="swiper-slide" src="images/sunglass9_2.jpg">
+                                            <img class="swiper-slide" src="images/sunglass9_3.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="spacer-m"></div>
+                                    <div class="product-details">
+                                        <span>Details:</span>
+                                        <div>
+                                            <p>- Narrow rounded shape</p>
+                                            <p>- Standard fit</p>
+                                            <p>- Sharply wrapped frame in thin acetate</p>
+                                            <p>- Mineral lenses to increase the vision’s comfort</p>
+                                            <p>- Balenciaga logo laser engraved</p>
+                                            <p>- Lens Category 2</p>
+                                            <p>- 100% UVA/UVB protection</p>
+                                            <p>- Made in Italy</p>
+                                            <p>- Wipe with a soft cloth</p>
+                                            <p>- BB0007S 004</p>
+                                        </div>
+                                    </div>
+                                    <div class="spacer-s"></div>
+                                    <p class="product-details-2"><span>Composition: </span>50% Acetate, 50% Glass</p>
+                                    <div class="spacer-s"></div>
+                                    <p class="product-details-2"><span>Prize: </span>$ 350.00</p>
+                                    <div class="spacer-m"></div>
+                                    <span class="product-button"><span class="underline">A</span>dd to Cart</span>
+                            </div>`;
+            $("#message-board").append(html);
+            $("#product-view").append(product);
+            $(".input-box").css("grid-template-columns", "11% 11% 78%")
+			$scrollDown();
+            $("#product-view").addClass("split-view");
+            $("#message-board").addClass("split-view");
+            } else {
+                const html = `<div class="form-posted grid-1 grid-gap-xxs">
+                                <div class="input-box italic">
+                                    <span class="input-location hidden">SUNGLASSES</span>
+                                    <p><span>${timeStamp()}</span></p>
+                                    <p>Message:</p>
+                                    <div id="message" placeholder="hello" rows="1">${$message}</div>
+                                </div>
+                                <p>-bash: ${$message}: No such file or directory</p>
+                               </div>`;
+			    $("#message-board").append(html);
+			    $scrollDown();
+            }
+        } else if ($message == "cd COLD YC2") {
+            if ($location == "SUNGLASSES") {
+                const html = `<div class="form-posted grid-1 grid-gap-xxs">
+                                <div class="input-box italic">
+                                    <span class="input-location hidden">SUNGLASSES</span>
+                                    <p><span>${timeStamp()}</span></p>
+                                    <p>Message:</p>
+                                    <div id="message" placeholder="hello" rows="1">${$message}</div>
+                                </div>
+                            </div>`;
+                const product = `<div class="product">
+                                        <p class="product-title"><span>Name:</span> COLD YC2 - GENTLE MONSTER</p>
+                                        <span class="product-button product-button-close"><span class="underline">C</span>lose</span>
+                                        <div class="spacer-m"></div>
+                                    <div class="swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <img class="swiper-slide" src="images/sunglass3.jpg">
+                                            <img class="swiper-slide" src="images/sunglass3_2.jpg">
+                                            <img class="swiper-slide" src="images/sunglass3_3.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="spacer-m"></div>
+                                    <div class="product-details">
+                                        <span>Details:</span>
+                                        <div>
+                                            <p>- Flatba acetate frame</p>
+                                            <p>- Standard fit</p>
+                                            <p>- Unique detail place in center</p>
+                                            <p>- Uni frame lens</p>
+                                            <p>- Tinted Glass</p>
+                                            <p>- Gentle Monster logo engraved</p>
+                                            <p>- Lens Category 2</p>
+                                            <p>- 100% UVA/UVB protection</p>
+                                            <p>- Made in China</p>
+                                            <p>- Wipe with a soft cloth</p>
+                                        </div>
+                                    </div>
+                                    <div class="spacer-s"></div>
+                                    <p class="product-details-2"><span>Composition: </span>50% Acetate, 50% Glass</p>
+                                    <div class="spacer-s"></div>
+                                    <p class="product-details-2"><span>Prize: </span>$ 350.00</p>
+                                    <div class="spacer-m"></div>
+                                    <span class="product-button"><span class="underline">A</span>dd to Cart</span>
+                            </div>`;
+            $("#message-board").append(html);
+            $("#product-view").append(product);
+            $(".input-box").css("grid-template-columns", "11% 11% 78%")
+			$scrollDown();
+            $("#product-view").addClass("split-view");
+            $("#message-board").addClass("split-view");
+            } else {
+                const html = `<div class="form-posted grid-1 grid-gap-xxs">
+                                <div class="input-box italic">
+                                    <span class="input-location hidden">SUNGLASSES</span>
+                                    <p><span>${timeStamp()}</span></p>
+                                    <p>Message:</p>
+                                    <div id="message" placeholder="hello" rows="1">${$message}</div>
+                                </div>
+                                <p>-bash: ${$message}: No such file or directory</p>
+                               </div>`;
+			    $("#message-board").append(html);
+			    $scrollDown();
+            }
+        } else if ($message == "cd SHOES") {
+            if ($location == "WARCORE") {
+                const html = `<div class="form-posted grid-1 grid-gap-xxs">
+                                <div class="input-box italic">
+                                    <span class="input-location hidden">SHOES</span>
+                                    <p><span>${timeStamp()}</span></p>
+                                    <p>Message:</p>
+                                    <div id="message" placeholder="hello" rows="1">${$message}</div>
+                                </div>
+                            </div>`;
+            $("#input-location").text("SHOES")
+            $("#header-location").text("Warcore >> Shoes")
+			$("#message-board").append(html);
+			$scrollDown(); 
+            } else {
+                const html = `<div class="form-posted grid-1 grid-gap-xxs">
+                                <div class="input-box italic">
+                                    <span class="input-location hidden">${$location}</span>
+                                    <p><span>${timeStamp()}</span></p>
+                                    <p>Message:</p>
+                                    <div id="message" placeholder="hello" rows="1">${$message}</div>
+                                </div>
+                                <p>-bash: ${$message}: No such file or directory</p>
+                               </div>`;
+			    $("#message-board").append(html);
+			    $scrollDown();
+            }
+        } else if ($message == "cd BLK0001") {
+            if ($location == "SHOES") {
+                const html = `<div class="form-posted grid-1 grid-gap-xxs">
+                                <div class="input-box italic">
+                                    <span class="input-location hidden">SHOES</span>
+                                    <p><span>${timeStamp()}</span></p>
+                                    <p>Message:</p>
+                                    <div id="message" placeholder="hello" rows="1">${$message}</div>
+                                </div>
+                            </div>`;
+                const product = `<div class="product">
+                                        <p class="product-title"><span>Name:</span> BLK0001 - ALYX</p>
+                                        <span class="product-button product-button-close"><span class="underline">C</span>lose</span>
+                                        <div class="spacer-m"></div>
+                                    <div class="swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <img class="swiper-slide" src="images/shoe1.jpg">
+                                            <img class="swiper-slide" src="images/shoe1_2.jpg">
+                                            <img class="swiper-slide" src="images/shoe1_3.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="spacer-m"></div>
+                                    <div class="product-details">
+                                        <span>Details:</span>
+                                        <div>
+                                            <p>- Narrow rounded shape</p>
+                                            <p>- Standard fit</p>
+                                            <p>- Sharply wrapped frame in thin acetate</p>
+                                            <p>- Mineral lenses to increase the vision’s comfort</p>
+                                            <p>- Balenciaga logo laser engraved</p>
+                                            <p>- Lens Category 2</p>
+                                            <p>- 100% UVA/UVB protection</p>
+                                            <p>- Made in Italy</p>
+                                            <p>- Wipe with a soft cloth</p>
+                                            <p>- BB0007S 004</p>
+                                        </div>
+                                    </div>
+                                    <div class="spacer-s"></div>
+                                    <p class="product-details-2"><span>Composition: </span>50% Acetate, 50% Glass</p>
+                                    <div class="spacer-s"></div>
+                                    <p class="product-details-2"><span>Prize: </span>$ 350.00</p>
+                                    <div class="spacer-m"></div>
+                                    <span class="product-button"><span class="underline">A</span>dd to Cart</span>
+                            </div>`;
+            $("#message-board").append(html);
+            $("#product-view").append(product);
+            $(".input-box").css("grid-template-columns", "11% 11% 78%")
+			$scrollDown();
+            $("#product-view").addClass("split-view");
+            $("#message-board").addClass("split-view");
+            } else {
+                const html = `<div class="form-posted grid-1 grid-gap-xxs">
+                                <div class="input-box italic">
+                                    <span class="input-location hidden">SHOES</span>
+                                    <p><span>${timeStamp()}</span></p>
+                                    <p>Message:</p>
+                                    <div id="message" placeholder="hello" rows="1">${$message}</div>
+                                </div>
+                                <p>-bash: ${$message}: No such file or directory</p>
+                               </div>`;
+			    $("#message-board").append(html);
+			    $scrollDown();
+            }
+        } else if ($message == "cd H+ TIMES") {
+            if ($location == "~") {
+            const html = `<div class="form-posted grid-1 grid-gap-xxs">
+                            <div class="input-box italic">
+                                <span class="input-location hidden">~</span>
+                                <p><span>${timeStamp()}</span></p>
+                                <p>Message:</p>
+                                <div id="message" placeholder="hello" rows="1">${$message}</div>
+                            </div>
+                          </div>`;
+            $("#input-location").text("H+ TIMES")
+            $("#header-location").text("H+ Times")
+			$("#message-board").append(html);
+			$scrollDown(); 
+            } else {
+                const html = `<div class="form-posted grid-1 grid-gap-xxs">
+                                <div class="input-box italic">
+                                    <span class="input-location hidden">~</span>
+                                    <p><span>${timeStamp()}</span></p>
+                                    <p>Message:</p>
+                                    <div id="message" placeholder="hello" rows="1">${$message}</div>
+                                </div>
+                                <p>-bash: ${$message}: No such file or directory</p>
+                               </div>`;
+			    $("#message-board").append(html);
+			    $scrollDown();
+            }
+        } else if ($message == "cd MOON") {
+            if ($location == "H+ TIMES") {
+            const html = `<div class="form-posted grid-1 grid-gap-xxs">
+                                <div class="input-box italic">
+                                    <span class="input-location hidden">H+ TIMES</span>
+                                    <p><span>${timeStamp()}</span></p>
+                                    <p>Message:</p>
+                                    <div id="message" placeholder="hello" rows="1">${$message}</div>
+                                </div>
+                          </div>`;
+            $("#input-location").text("MOON")
+            $("#header-location").text("H+ Times >> Moon")
+			$("#message-board").append(html);
+			$scrollDown(); 
+            } else {
+                const html = `<div class="form-posted grid-1 grid-gap-xxs">
+                                <div class="input-box italic">
+                                    <span class="input-location hidden">H+ TIMES</span>
+                                    <p><span>${timeStamp()}</span></p>
+                                    <p>Message:</p>
+                                    <div id="message" placeholder="hello" rows="1">${$message}</div>
+                                </div>
+                                <p>-bash: ${$message}: No such file or directory</p>
+                               </div>`;
+			    $("#message-board").append(html);
+			    $scrollDown();
+            }
+        } else if ($message == "cd HUMANITY'S FUTURE IN SPACE") {
+            if ($location == "MOON") {
+                const html = `<div class="form-posted grid-1 grid-gap-xxs">
+                                <div class="input-box italic">
+                                    <span class="input-location hidden">MOON</span>
+                                    <p><span>${timeStamp()}</span></p>
+                                    <p>Message:</p>
+                                    <div id="message" placeholder="hello" rows="1">${$message}</div>
+                                </div>
+                            </div>`;
+                const product = `<div class="article">
+                                    <span class="article-button"><span class="underline">C</span>lose</span>
+                                    <div class="spacer-s"></div>
+                                    <div class="article-head">
+                                        <div>
+                                            <img src="images/article1.jpg">
+                                        </div>
+                                        <div class="spacer-xs"></div>
+                                        <p class="underline">Buzz Aldrin</p>
+                                    </div>
+                                    <div class="spacer-m"></div>
+                                    <div class="article-title text-center">
+                                        <p>Humanity's Future in Space</p>
+                                        <div class="spacer-xs"></div>
+                                        <span>Nov 7, 1991</span>
+                                    </div>
+                                    <div class="spacer-m"></div>
+                                    <div class="article-text">
+                                        <p>Looking back on those early, frenzied years of the “Space Race” between the former Soviet Union and the United States, it became quite clear in my own mind that if space was destined to be a new frontier, then I wanted to be part of getting there.<br/>After serving my country during the Korean conflict, flying over 65 combat missions, I decided to continue my education and earned my Doctorate of Science in Astronautics from the Massachusetts Institute of Technology - the same university my father had attended. My MIT thesis was titled “Guidance for Manned Orbital Rendezvous,” dedicating that research work to the American astronauts. To write that lengthy treatment of the topic, I drew upon my experience as a fighter pilot and the skills needed to intercept enemy aircraft. From that expertise I developed a technique for two piloted spacecraft to rendezvous in space.<br/><div class="spacer-m"></div>
+                                        <p class="quote">My hopes of becoming an astronaut, however, were short-circuited early on when my NASA application was first turned down.</p><div class="spacer-m"></div>I was not a test pilot. But with dogged determination to seek a career as an astronaut, I applied again. This time, my jet fighter experience and NASA’s growing interesting in mastering space rendezvous influenced them to accept me into the third group of astronauts in October 1963. I was the first astronaut selected with a doctorate and became known to my fellow astronauts as “Dr. Rendezvous.”<br/><div class="spacer-m"></div>
+                                        I am proud to say that my rendezvous and docking ideas were vital to the success of the Gemini and Apollo programs, and they are still used today. My early astronaut years allowed me also to pioneer underwater training techniques, as a substitute for zero gravity flights, to simulate spacewalking. My first space journey was in 1966, as pilot of Gemini 12, with James Lovell as command pilot of the mission. That nearly four-day flight brought to a successful close the stepping stone Gemini program of ten piloted missions. During that flight I was able to establish a new record for spacewalking, spending five and a half hours outside the two-seater Gemini.<br/><div class="spacer-m"></div>
+                                        <div class="article-text-image"><img src="images/article1_2.jpg"/></div><br/><div class="spacer-m"></div>
+                                        But when Gemini 12 splashed down, the unmistakable realization was that we had but a handful of years remaining to achieve Kennedy’s challenge to land a man on the Moon by the end of the decade. There was much work ahead of us. It was inspirational watching a team of 400,000 people working together on a common dream. It was a unified enterprise, a synergy of innovation, effort, and teamwork that was unstoppable - all necessary ingredients to make real a long-held dream of humankind leaning forward to the Moon.</p>
+                                    </div>
+                                    <div class="spacer-m"></div>
+                            </div>`;
+			$("#message-board").append(html);
+            $("#product-view").append(product);
+            $(".input-box").css("grid-template-columns", "11% 11% 78%")
+			$scrollDown();
+            $("#product-view").addClass("split-view");
+            $("#message-board").addClass("split-view");
+            } else {
+                const html = `<div class="form-posted grid-1 grid-gap-xxs">
+                                <div class="input-box italic">
+                                    <span class="input-location hidden">MOON</span>
+                                    <p><span>${timeStamp()}</span></p>
+                                    <p>Message:</p>
+                                    <div id="message" placeholder="hello" rows="1">${$message}</div>
+                                </div>
+                                <p>-bash: ${$message}: No such file or directory</p>
+                               </div>`;
+			    $("#message-board").append(html);
+			    $scrollDown();
+            }
+        } else if ($message == "cd INFLEXION POINT OF SPACE FLIGHT") {
+            if ($location == "MOON") {
+                const html = `<div class="form-posted grid-1 grid-gap-xxs">
+                                <div class="input-box italic">
+                                    <span class="input-location hidden">MOON</span>
+                                    <p><span>${timeStamp()}</span></p>
+                                    <p>Message:</p>
+                                    <div id="message" placeholder="hello" rows="1">${$message}</div>
+                                </div>
+                            </div>`;
+                const product = `<div class="article">
+                                    <span class="article-button"><span class="underline">C</span>lose</span>
+                                    <div class="spacer-s"></div>
+                                    <div class="article-head">
+                                        <div>
+                                            <img src="images/article2.jpg">
+                                        </div>
+                                        <div class="spacer-xs"></div>
+                                        <p class="underline">Michael López-Alegría</p>
+                                    </div>
+                                    <div class="spacer-m"></div>
+                                    <div class="article-title text-center">
+                                        <p>The Inflexion Point of Human Space Flight</p>
+                                        <div class="spacer-xs"></div>
+                                        <span>June 23, 1995</span>
+                                    </div>
+                                    <div class="spacer-m"></div>
+                                    <div class="article-text">
+                                        <p>We are at an inflexion point in the curve of human space flight. Men and women have been traveling to low Earth orbit for over 50 years. Some completed a handful of orbits; others - thousands. But to date, those that have had the privilege of seeing our planet from above its atmosphere number not much more than 500.<br/><div class="spacer-m"></div>
+                                        This is about to change. Companies offering ordinary citizens the possibility to fly to above the Kármán line 100km above the surface of the Earth - accepted to be the beginning of space -  have emerged in America and will soon do so elsewhere.<br/><div class="spacer-m"></div>
+                                        <p class="quote">The number of space travelers will have doubled in the next few years, and will increase by an order of magnitude in the decade to come.</p><div class="spacer-m"></div>
+                                        I was not a test pilot. But with dogged determination to seek a career as an astronaut, I applied again. This time, my jet fighter experience and NASA’s growing interesting in mastering space rendezvous influenced them to accept me into the third group of astronauts in October 1963. I was the first astronaut selected with a doctorate and became known to my fellow astronauts as “Dr. Rendezvous.”<br/><div class="spacer-m"></div>
+                                        As the number of flights increases and lessons in operations and reusability are learned and applied, launch costs and ticket prices will come down. That will in turn escalate demand, which will increase flight rates, further reducing costs, once again driving down prices and ultimately leading to a virtuous cycle. We are soon to witness the first steps of the evolution of commercial space transportation not online that which occurred in commercial aviation in the late 1920’s. What was once the domain of only those with the “right stuff” will be accessible to millions. Access to space is being democratized.<br/><div class="spacer-m"></div>
+                                        <div class="article-text-image"><img src="images/article2_2.jpg"/></div><br/><div class="spacer-m"></div>
+                                        While the technical and financial hurdles to get to orbit remain significantly more challenging than hose facing suborbital spacecraft developers, they too are being overcome by private enterprises. Several companies are vying to achieve what has only been accomplished heretofore by a handful of governments - sending humans to low Earth orbit. At first, their destination will be the massive and magnificent International Space Station, and their customers will be government astronauts of the five partner space agencies involved in that project. But other firms conceiving orbital destinations for research customers, by the companies or countries, and will later develop habitats for other users. With transportation and destinations in development today, the establishment of a marketplace in low Earth orbit is around the corner.</p>
+                                    </div>
+                                    <div class="spacer-m"></div>
+                            </div>`;
+			$("#message-board").append(html);
+            $("#product-view").append(product);
+            $(".input-box").css("grid-template-columns", "11% 11% 78%")
+			$scrollDown();
+            $("#product-view").addClass("split-view");
+            $("#message-board").addClass("split-view");
+            } else {
+                const html = `<div class="form-posted grid-1 grid-gap-xxs">
+                                <div class="input-box italic">
+                                    <span class="input-location hidden">MOON</span>
+                                    <p><span>${timeStamp()}</span></p>
+                                    <p>Message:</p>
+                                    <div id="message" placeholder="hello" rows="1">${$message}</div>
+                                </div>
+                                <p>-bash: ${$message}: No such file or directory</p>
+                               </div>`;
+			    $("#message-board").append(html);
+			    $scrollDown();
+            }
+        }  else if ($message == "cd FIVE WOMEN WHO MADE THE MOON LANDING POSSIBLE") {
+            if ($location == "MOON") {
+                const html = `<div class="form-posted grid-1 grid-gap-xxs">
+                                <div class="input-box italic">
+                                    <span class="input-location hidden">MOON</span>
+                                    <p><span>${timeStamp()}</span></p>
+                                    <p>Message:</p>
+                                    <div id="message" placeholder="hello" rows="1">${$message}</div>
+                                </div>
+                            </div>`;
+                const product = `<div class="article">
+                                    <span class="article-button"><span class="underline">C</span>lose</span>
+                                    <div class="spacer-s"></div>
+                                    <div class="article-head">
+                                        <div>
+                                            <img src="images/article3.jpg">
+                                        </div>
+                                        <div class="spacer-xs"></div>
+                                        <p class="underline">Maya Salam</p>
+                                    </div>
+                                    <div class="spacer-m"></div>
+                                    <div class="article-title text-center">
+                                        <p>Five Women who made the Moon landing possible</p>
+                                        <div class="spacer-xs"></div>
+                                        <span>May 3, 1980</span>
+                                    </div>
+                                    <div class="spacer-m"></div>
+                                    <div class="article-text">
+                                        <p>The photograph is an American classic: members of the Kennedy Space Center team, packed into the control room shortly after the Apollo 11 mission lifted off on July 16, 1969. The rocket would successfully carry humans to the surface of the moon for the first time.<br/><div class="spacer-m"></div>
+                                        Unless you scan the image closely, it’d be easy to miss her: JoAnn Morgan, an American aerospace engineer, who sat in the center with her hand to her chin. She was the only woman working in the room during liftoff.<br/><div class="spacer-m"></div>
+                                        This month, NASA celebrated Morgan along with some of the many other women who were instrumental in the eight-day Apollo 11 mission, which returned to Earth 50 years ago this week. Here’s a look at five of these women and their contributions.<br/><div class="spacer-m"></div>
+                                        <p class="quote">JoAnn Morgan was NASA’s only female engineer at that time and Apollo 11 was her debut as the first female launch controller.</p><div class="spacer-m"></div>
+                                        Her road to that moment started when she spotted a summer job listing seeking two students to work as engineer’s aides with the Army Ballistic Missile Agency in Alabama. “Thank God it said ‘students’ and not ‘boys,’” Morgan, now 78, recalled, according to NASA, “otherwise I wouldn’t have applied.” She would become NASA’s first female senior executive, and her career there spanned more than 45 years.<br/><div class="spacer-m"></div>
+                                        Margaret Hamilton, now 82, was the computer scientist who led NASA’s team of software engineers. In fact, she’s credited with creating the term “software engineering.” As a director at the M.I.T. Instrumentation Laboratory, Hamilton helped develop the onboard flight software — the most sophisticated of its day — for NASA’s Apollo moon missions.</p>
+                                    </div>
+                                    <div class="spacer-m"></div>
+                            </div>`;
+			$("#message-board").append(html);
+            $("#product-view").append(product);
+            $(".input-box").css("grid-template-columns", "11% 11% 78%")
+			$scrollDown();
+            $("#product-view").addClass("split-view");
+            $("#message-board").addClass("split-view");
+            } else {
+                const html = `<div class="form-posted grid-1 grid-gap-xxs">
+                                <div class="input-box italic">
+                                    <span class="input-location hidden">MOON</span>
+                                    <p><span>${timeStamp()}</span></p>
+                                    <p>Message:</p>
+                                    <div id="message" placeholder="hello" rows="1">${$message}</div>
+                                </div>
+                                <p>-bash: ${$message}: No such file or directory</p>
+                               </div>`;
+			    $("#message-board").append(html);
+			    $scrollDown();
+            }
+        } else if ($message == "reset -r") {
+            const html = `<div class="form-posted grid-1 grid-gap-xxs">
+                            <div class="input-box italic">
+                                <span class="input-location hidden">~</span>
+                                <p><span>${timeStamp()}</span></p>
+                                <p>Message:</p>
+                                <div id="message" placeholder="hello" rows="1">${$message}</div>
+                            </div>
+                            <p>-bash: session restarted</p>
+                          </div>`;
+            $("#input-location").text("~")
+            $("#header-location").text("Welcome to your Home Portal")
+			$("#message-board").append(html);
+			$scrollDown(); 
+        } else {
+            const html = `<div class="form-posted grid-1 grid-gap-xxs">
+                                <div class="input-box italic">
+                                    <span class="input-location hidden">${$location}</span>
+                                    <p><span>${timeStamp()}</span></p>
+                                    <p>Message:</p>
+                                    <div id="message" placeholder="hello" rows="1">${$message}</div>
+                                </div>
+                            <p>-bash: ${$message}: command not found</p>
+                          </div>`;
+			$("#message-board").append(html);
+			$scrollDown();
+        }
+		$("#message").empty();
+        $(".close-button, .product-button-close, .article-button").click(function(){
+            $(this).parent("div").addClass("close");
+            $("#message-board-wrapper").removeClass("grid-2");
+            $("#product-view").removeClass("split-view");
+            $("#message-board").removeClass("split-view");
+            $(".input-box").css("grid-template-columns", "6% 6% 88%")
+        });
+
+        $('.swiper-wrapper').flickity({
+            cellAlign: 'left',
+            contain: true,
+            draggable: false,
+            wrapAround: true
+        });
+	};
+
+    function $scrollDown() {
+		const $container = $("#message-board");
+		const $maxHeight = $container.height();
+		const $scrollHeight = $container[0].scrollHeight;
+		if ($scrollHeight > $maxHeight) $container.scrollTop($scrollHeight);
+	}
+
+    function showTime(){
+    let date = new Date();
+    let h = date.getHours();
+    let m = date.getMinutes();
+    let s = date.getSeconds();
+    
+    h = (h < 10) ? "0" + h : h;
+    m = (m < 10) ? "0" + m : m;
+    s = (s < 10) ? "0" + s : s;
+    
+    let time = h + ":" + m + ":" + s;
+    document.getElementById("clock").innerText = time;
+    document.getElementById("clock").textContent = time;
+    
+    setTimeout(showTime, 1000);
+    
+}
+showTime();
+
+function timeStamp() {
+	const timestamp = new Date();
+	let hours = timestamp.getHours();
+    let minutes = timestamp.getMinutes();
+    let seconds = timestamp.getSeconds();
+    if (hours < 10) hours = "0" + hours;
+    if (minutes < 10) minutes = "0" + minutes;
+    if (seconds < 10) seconds = "0" + seconds;
+	const html = `<span class="timestamp">${hours}:${minutes}:${seconds}</span>`;
+    return html;
+};
+
+
+
+// function Speech(say) {
+//     if ('speechSynthesis' in window) {
+//         var utterance = new SpeechSynthesisUtterance(say);
+//         //msg.voice = voices[10]; // Note: some voices don't support altering params
+//         //msg.voiceURI = 'native';
+//         //utterance.volume = 1; // 0 to 1
+//         //utterance.rate = 0.1; // 0.1 to 10
+//         //utterance.pitch = 1; //0 to 2
+//         //utterance.text = 'Hello World';
+//         //utterance.lang = 'en-US';
+//     speechSynthesis.speak(utterance);
+//   }
+// }
+
+// let $speech = $("#welcome").html().trim();
+
+// Speech($speech);
+
+</script>
+</body>
+</html>
