@@ -157,6 +157,17 @@
             "SHOES" : [
 
                 {
+                    "title" : "1017 Alison WH7",
+                    "brand" : "Moncler Genius",
+                    "details" : "Round Toe, Bungee-Style Drawstring, Treaded Rubber Sole, Black Hardware, Embossed Logo at Vamp, Imported",
+                    "composition" : "Upper: textile, leather, rubber, Sole: rubber",
+                    "size" : "38, 39, 40, 41, 42, 43, 44",
+                    "price" : "USD 715.00",
+                    "path" : "images/shoes",
+                    "images" : [ "alison1.jpg", "alison2.jpg", "alison3.jpg" ]
+                },
+
+                {
                     "title" : "Brown Jaw BR02",
                     "brand" : "Givenchy",
                     "details" : "Round Toe, Woven Lace-Up Closure, Zip Closure at Vamp, Rubberized Trim, Embossed Logo in Yellow, Made in Italy",
