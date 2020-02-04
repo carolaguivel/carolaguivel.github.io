@@ -20,7 +20,7 @@
                     "composition" : "50% metal, 50% glass",
                     "price" : "USD 290.00",
                     "path" : "images/sunglasses",
-                    "images" : [ "blck1.jpg", "blck2.jpg" ]
+                    "images" : [ "blck1.jpg", "blck2.jpg", "blck3.jpg" ]
                 },
                 
                 {
@@ -30,7 +30,7 @@
                     "composition" : "50% acetate, 50% glass",
                     "price" : "USD 320.00",
                     "path" : "images/sunglasses",
-                    "images" : [ "cold1.jpg", "cold2.jpg" ]
+                    "images" : [ "cold1.jpg", "cold2.jpg", "cold3.jpg" ]
                 },
 
                 {
@@ -40,7 +40,7 @@
                     "composition" : "100% metal",
                     "price" : "USD 450.00",
                     "path" : "images/sunglasses",
-                    "images" : [ "fire1.jpg", "fire2.jpg" ]
+                    "images" : [ "fire1.jpg", "fire2.jpg", "fire3.jpg" ]
                 },
 
                 {
@@ -50,7 +50,7 @@
                     "composition" : "10% leather, 40% metal, 50% glass",
                     "price" : "USD 430.00",
                     "path" : "images/sunglasses",
-                    "images" : [ "geom1.jpg", "geom2.jpg" ]
+                    "images" : [ "geom1.jpg", "geom2.jpg", "geom3.jpg" ]
                 },
 
                 {
@@ -60,17 +60,7 @@
                     "composition" : "100% acetate",
                     "price" : "USD 648.00",
                     "path" : "images/sunglasses",
-                    "images" : [ "mmech01.jpg", "mmech02.jpg" ]
-                },
-
-                {
-                    "title" : "Mohenic MO1",
-                    "brand" : "Gentle Monster",
-                    "details" : "Rectangular Frame, Uncut clear lens, Standard Fit, Cut lenses, 100% UV Protection, Rubber Nose Pads, Engraved Logo, Made in Korea",
-                    "composition" : "50% metal, 50% glass",
-                    "price" : "USD 360.00",
-                    "path" : "images/sunglasses",
-                    "images" : [ "mohenic1.jpg", "mohenic2.jpg" ]
+                    "images" : [ "mmech01.jpg", "mmech02.jpg", "mmech03.jpg" ]
                 },
 
                 {
@@ -80,7 +70,7 @@
                     "composition" : "50% plastic, 50% acetate",
                     "price" : "USD 595.00",
                     "path" : "images/sunglasses",
-                    "images" : [ "moon1.jpg", "moon2.jpg" ]
+                    "images" : [ "moon1.jpg", "moon2.jpg", "moon3.jpg" ]
                 },
 
                 {
@@ -100,7 +90,7 @@
                     "composition" : "50% acetate, 50% glass",
                     "price" : "USD 320.00",
                     "path" : "images/sunglasses",
-                    "images" : [ "newturtle1.jpg", "newturtle2.jpg" ]
+                    "images" : [ "newturtle1.jpg", "newturtle2.jpg", "newturtle3.jpg" ]
                 },
 
                 {
@@ -121,6 +111,16 @@
                     "price" : "USD 485.00",
                     "path" : "images/sunglasses",
                     "images" : [ "ski1.jpg", "ski2.jpg" ]
+                },
+
+                {
+                    "title" : "Spike GR2",
+                    "brand" : "Vetements",
+                    "details" : "Acetate Frame, Reflective Uni Lens, Standard Fit, Acetate Temple Tips, 100% UV Protection, Silicone Nose Pad, Etched Logo, Made in Italy",
+                    "composition" : "100% acetate",
+                    "price" : "USD 1040.00",
+                    "path" : "images/sunglasses",
+                    "images" : [ "spike1.jpg", "spike2.jpg", "spike3.jpg" ]
                 },
 
                 {
@@ -156,7 +156,7 @@
 
             "SHOES" : [
                 {
-                    "title" : "",
+                    "title" : "idk",
                     "brand" : "",
                     "details" : "",
                     "composition" : "",
