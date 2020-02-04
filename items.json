@@ -110,7 +110,7 @@
                     "composition" : "100% acetate",
                     "price" : "USD 485.00",
                     "path" : "images/sunglasses",
-                    "images" : [ "ski1.jpg", "ski2.jpg" ]
+                    "images" : [ "ski1.jpg", "ski2.jpg", "ski3.jpg" ]
                 },
 
                 {
@@ -156,13 +156,13 @@
 
             "SHOES" : [
                 {
-                    "title" : "idk",
-                    "brand" : "",
-                    "details" : "",
-                    "composition" : "",
-                    "price" : "USD 310.00",
-                    "path" : "images/sunglasses",
-                    "images" : [ "afix1.jpg", "afix2.jpg" ]
+                    "title" : "Hiking Boot BLK0001",
+                    "brand" : "Alyx",
+                    "details" : "Breathable Mesh Lining, Cotton Fastening Cord, Metal Boot Lace Hooks, Vibram Rubber Sole, Embroidered Logo",
+                    "size" : "40, 41, 42, 43, 44",
+                    "price" : "USD 670.00",
+                    "path" : "images/shoes",
+                    "images" : [ "alyxhiking1.jpg", "alyxhiking2.jpg", "alyxhiking3.jpg" ]
                 }
             ]
         }
