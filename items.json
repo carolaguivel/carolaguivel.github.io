@@ -162,7 +162,17 @@
                     "size" : "40, 41, 42, 43, 44",
                     "price" : "USD 670.00",
                     "path" : "images/shoes",
-                    "images" : [ "alyxhiking1.jpg", "alyxhiking2.jpg", "alyxhiking3.jpg" ]
+                    "images" : [ "alyxhiking1.jpg", "alyxhiking2.jpg", "alyxhiking3.jpg", "alyxhiking4.jpg" ]
+                },
+
+                {
+                    "title" : "VaporMax 360",
+                    "brand" : "Nike",
+                    "details" : "Black Mesh Lining, Tonal Lace-Up Closure, Transparent Metallic Sole, VaporMax Technology, Metallic Swoosh Appliqué",
+                    "size" : "39, 40, 41, 42, 43, 44, 45, 46",
+                    "price" : "USD 225.00",
+                    "path" : "images/shoes",
+                    "images" : [ "vapormax1.jpg", "vapormax2.jpg", "vapormax3.jpg" ]
                 }
             ]
         }
