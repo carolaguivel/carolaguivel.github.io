@@ -170,7 +170,7 @@
                 {
                     "title" : "Bamba02",
                     "brand" : "11 by Boris Bidjan Saberi",
-                    "details" : "Round Toe, Woven Lace-Up Closure, Zip Closure at Vamp, Rubberized Trim, Embossed Logo in Yellow, Imported",
+                    "details" : "Round Toe, Overdyed Detailing, Smudge Details Throughout, Zip Closure, Logo and Text Printed, Imported",
                     "composition" : "Upper: synthetic, textile, Sole: rubber",
                     "size" : "40, 41, 42, 43, 44",
                     "price" : "USD 595.00",
@@ -220,6 +220,17 @@
                     "price" : "USD 295.00",
                     "path" : "images/shoes",
                     "images" : [ "hybrid1.jpg", "hybrid2.jpg", "hybrid3.jpg" ]
+                },
+
+                {
+                    "title" : "Nubuck PR2",
+                    "brand" : "Diemme",
+                    "details" : "Round Toe, Woven Lace-Up Closure, Iridescent Trim, Treaded Vibram Rubber Sole, Textile Logo Appliqué, Imported",
+                    "composition" : "Upper: leather, textile, Sole: rubber",
+                    "size" : "35, 36, 37, 38, 39, 40, 41",
+                    "price" : "USD 485.00",
+                    "path" : "images/shoes",
+                    "images" : [ "nubuck1.jpg", "nubuck2.jpg", "nubuck3.jpg" ]
                 },
 
                 {
