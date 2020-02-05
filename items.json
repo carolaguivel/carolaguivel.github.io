@@ -130,7 +130,7 @@
                     "composition" : "100% polycarbonate",
                     "price" : "USD 400.00",
                     "path" : "images/sunglasses",
-                    "images" : [ "tailwind1.jpg", "tailwind2.jpg" ]
+                    "images" : [ "tailwind1.jpg", "tailwind2.jpg", "tailwind3.jpg" ]
                 },
 
                 {
@@ -140,7 +140,7 @@
                     "composition" : "50% plastic, 50% acetate",
                     "price" : "USD 462.00",
                     "path" : "images/sunglasses",
-                    "images" : [ "tralyx1.jpg", "tralyx2.jpg" ]
+                    "images" : [ "tralyx1.jpg", "tralyx2.jpg", "tralyx3.jpg" ]
                 },
 
                 {
@@ -150,7 +150,7 @@
                     "composition" : "100% acetate",
                     "price" : "USD 350.00",
                     "path" : "images/sunglasses",
-                    "images" : [ "zip1.jpg", "zip2.jpg" ]
+                    "images" : [ "zip1.jpg", "zip2.jpg", "zip3.jpg" ]
                 }
             ], 
 
@@ -165,6 +165,17 @@
                     "price" : "USD 715.00",
                     "path" : "images/shoes",
                     "images" : [ "alison1.jpg", "alison2.jpg", "alison3.jpg" ]
+                },
+
+                {
+                    "title" : "Bamba02",
+                    "brand" : "11 by Boris Bidjan Saberi",
+                    "details" : "Round Toe, Woven Lace-Up Closure, Zip Closure at Vamp, Rubberized Trim, Embossed Logo in Yellow, Imported",
+                    "composition" : "Upper: synthetic, textile, Sole: rubber",
+                    "size" : "40, 41, 42, 43, 44",
+                    "price" : "USD 595.00",
+                    "path" : "images/shoes",
+                    "images" : [ "bamba1.jpg", "bamba2.jpg", "bamba3.jpg" ]
                 },
 
                 {
@@ -209,6 +220,17 @@
                     "price" : "USD 295.00",
                     "path" : "images/shoes",
                     "images" : [ "hybrid1.jpg", "hybrid2.jpg", "hybrid3.jpg" ]
+                },
+
+                {
+                    "title" : "Off BR3",
+                    "brand" : "Off-White",
+                    "details" : "Almond Toe, Lace-Up Closure, Red and Silver Hardware, Treaded Vibram Rubber Sole, Embossed Logo, Imported",
+                    "composition" : "Upper: leather, Sole: rubber",
+                    "size" : "38, 39, 40, 41, 42, 43, 44, 45, 46",
+                    "price" : "USD 965.00",
+                    "path" : "images/shoes",
+                    "images" : [ "off1.jpg", "off2.jpg", "off3.jpg" ]
                 },
 
                 {
