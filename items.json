@@ -13,13 +13,33 @@
                 },
 
                 {
-                    "title" : "TOOL BAG BCK002",
+                    "title" : "Padded Nylon BL1",
+                    "brand" : "A-Cold-Wall*",
+                    "details" : "Curved Front Compartment, Zip Closure, Transparent Mission Statement, Light Nylon Lining, Screen-Printed Logo, Imported",
+                    "composition" : "Nylon, Leather",
+                    "price" : "USD 680.00",
+                    "path" : "images/bags",
+                    "images" : [ "paddednylon1.jpg", "paddednylon2.jpg" ]
+                },
+
+                {
+                    "title" : "Tool Bag BCK002",
                     "brand" : "Heron Preston",
                     "details" : "Hinged Carry Handle, Yellow Leather Detailing, Orange Shoulder Strap, Flip-Clasp Fastenings, Logo Sticker in Orange, Made in Italy",
                     "composition" : "Polypropylene",
                     "price" : "USD 825.00",
                     "path" : "images/bags",
                     "images" : [ "toolbag1.jpg", "toolbag2.jpg" ]
+                },
+
+                {
+                    "title" : "Utility Case BL2",
+                    "brand" : "A-Cold-Wall*",
+                    "details" : "Reinforced Plastic, Foldable Handle, Laser-Etched Graphic, Flip-Clasp Fastenings, Laser-Etched Logo, Imported",
+                    "composition" : "Nylon, Leather",
+                    "price" : "USD 530.00",
+                    "path" : "images/bags",
+                    "images" : [ "utilitycase1.jpg", "utilitycase2.jpg" ]
                 }
             ],
 
