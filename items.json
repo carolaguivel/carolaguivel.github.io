@@ -118,7 +118,18 @@
                     "size" : "XS, XS, S, M, L, XL, XXL",
                     "price" : "USD 1090.00",
                     "path" : "images/outerwear",
-                    "images" : [ "memorynylon1.jpg", "memorynylon2.jpg", "memorynylon3.jpg" ]
+                    "images" : [ "memorynylon1.jpg", "memorynylon2.jpg", "memorynylon3.jpg", "memorynylon4.jpg" ]
+                },
+
+                {
+                    "title" : "Deimos ORNG001",
+                    "brand" : "Alyx",
+                    "details" : "Garment Dyed Matte Coated Fabric, Front Metal Zipper Closure, Metal Buckle, Logo Patches on Sleeves, Made in Italy",
+                    "composition" : "100% textile",
+                    "size" : "XS, XS, S, M, L, XL, XXL",
+                    "price" : "USD 1400.00",
+                    "path" : "images/outerwear",
+                    "images" : [ "deimos1.jpg", "deimos2.jpg", "deimos3.jpg", "deimos4.jpg" ]
                 }
             ],
 
