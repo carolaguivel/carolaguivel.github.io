@@ -111,25 +111,36 @@
 
             "OUTERWEAR" : [
                 {
+                    "title" : "Deimos ORNG001",
+                    "brand" : "Alyx",
+                    "details" : "Garment Dyed Matte Coated Fabric, Front Metal Zipper Closure, Metal Buckle, Logo Patches on Sleeves, Made in Italy",
+                    "composition" : "100% textile",
+                    "size" : "XS, S, M, L, XL, XXL",
+                    "price" : "USD 1400.00",
+                    "path" : "images/outerwear",
+                    "images" : [ "deimos1.jpg", "deimos2.jpg", "deimos3.jpg", "deimos4.jpg" ]
+                },
+
+                {
                     "title" : "Memory Nylon GR1",
                     "brand" : "A-Cold-Wall*",
                     "details" : "Water-Resistant, Iridescent-Granite Memory Nylon, Blue Mission Statement on Cuff, Bracket Logo, Imported",
                     "composition" : "100% Nylon",
-                    "size" : "XS, XS, S, M, L, XL, XXL",
+                    "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 1090.00",
                     "path" : "images/outerwear",
                     "images" : [ "memorynylon1.jpg", "memorynylon2.jpg", "memorynylon3.jpg", "memorynylon4.jpg" ]
                 },
 
                 {
-                    "title" : "Deimos ORNG001",
-                    "brand" : "Alyx",
-                    "details" : "Garment Dyed Matte Coated Fabric, Front Metal Zipper Closure, Metal Buckle, Logo Patches on Sleeves, Made in Italy",
-                    "composition" : "100% textile",
-                    "size" : "XS, XS, S, M, L, XL, XXL",
-                    "price" : "USD 1400.00",
+                    "title" : "Iridescent Down GR2",
+                    "brand" : "Kenzo",
+                    "details" : "Bungee-style Drawstring, Two-Way Zip Closure, Detachable Logo Patch, Logo-Printed Nylon Lining, Imported",
+                    "composition" : "Fill: 90% down, 10% feather, Body: 100% polyamide",
+                    "size" : "XS, S, M, L, XL, XXL",
+                    "price" : "USD 695.00",
                     "path" : "images/outerwear",
-                    "images" : [ "deimos1.jpg", "deimos2.jpg", "deimos3.jpg", "deimos4.jpg" ]
+                    "images" : [ "iridescent1.jpg", "iridescent2.jpg", "iridescent3.jpg", "iridescent4.jpg" ]
                 }
             ],
 
