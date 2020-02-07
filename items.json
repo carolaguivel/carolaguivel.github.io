@@ -269,6 +269,16 @@
                     "quote" : "My hopes of becoming an astronaut, however, were short-circuited early on when my NASA application was first turned down.",
                     "path" : "images/times",
                     "images" : [ "futureinspace1.jpg", "futureinspace2.jpg" ] 
+                },
+
+                {
+                    "title" : "Inflexion Point of Human Space Flight",
+                    "author" : "Michael López-Alegría",
+                    "date" : "June 23, 1995",
+                    "text" : "We are at an inflexion point in the curve of human space flight. Men and women have been traveling to low Earth orbit for over 50 years. Some completed a handful of orbits; others - thousands. But to date, those that have had the privilege of seeing our planet from above its atmosphere number not much more than 500. This is about to change. Companies offering ordinary citizens the possibility to fly to above the Kármán line 100km above the surface of the Earth - accepted to be the beginning of space - have emerged in America and will soon do so elsewhere.",
+                    "quote" : "The number of space travelers will have doubled in the next few years, and will increase by an order of magnitude in the decade to come.",
+                    "path" : "images/times",
+                    "images" : [ "inflexionpoint1.jpg", "inflexionpoint2.jpg" ] 
                 }
             ]
         }
