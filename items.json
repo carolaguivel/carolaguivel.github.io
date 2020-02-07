@@ -13,6 +13,16 @@
                 },
 
                 {
+                    "title" : "Fragment N05GR1",
+                    "brand" : "Moncler Genius",
+                    "details" : "Collaboration with Craig Green, Military Green/Black, Waterproof Teflon Nylon, Zip Closure, Zip Closure, Imported",
+                    "composition" : "100% Polyamide",
+                    "price" : "USD 751.00",
+                    "path" : "images/bags",
+                    "images" : [ "babyx1.jpg", "babyx2.jpg" ]
+                },
+
+                {
                     "title" : "Padded Nylon BL1",
                     "brand" : "A-Cold-Wall*",
                     "details" : "Curved Front Compartment, Zip Closure, Transparent Mission Statement, Light Nylon Lining, Screen-Printed Logo, Imported",
