@@ -155,6 +155,17 @@
                 },
 
                 {
+                    "title" : "Iridescent Down GR2",
+                    "brand" : "Kenzo",
+                    "details" : "Bungee-style Drawstring, Two-Way Zip Closure, Detachable Logo Patch, Logo-Printed Nylon Lining, Imported",
+                    "composition" : "Fill: 90% down, 10% feather, Body: 100% polyamide",
+                    "size" : "XS, S, M, L, XL, XXL",
+                    "price" : "USD 695.00",
+                    "path" : "images/outerwear",
+                    "images" : [ "iridescent1.jpg", "iridescent2.jpg", "iridescent3.jpg" ]
+                },
+
+                {
                     "title" : "Memory Nylon GR1",
                     "brand" : "A-Cold-Wall*",
                     "details" : "Water-Resistant, Iridescent-Granite Memory Nylon, Blue Mission Statement on Cuff, Bracket Logo, Imported",
@@ -166,14 +177,14 @@
                 },
 
                 {
-                    "title" : "Iridescent Down GR2",
-                    "brand" : "Kenzo",
-                    "details" : "Bungee-style Drawstring, Two-Way Zip Closure, Detachable Logo Patch, Logo-Printed Nylon Lining, Imported",
-                    "composition" : "Fill: 90% down, 10% feather, Body: 100% polyamide",
+                    "title" : "Puffer Gilet ORNG1",
+                    "brand" : "A-Cold-Wall*",
+                    "details" : "Asymmetric 3D Pockets, Funnel Neckline, Jacquard Lining, Hardware Branded with Bracket Logo, Imported",
+                    "composition" : "Nylon, Textile",
                     "size" : "XS, S, M, L, XL, XXL",
-                    "price" : "USD 695.00",
+                    "price" : "USD 740.00",
                     "path" : "images/outerwear",
-                    "images" : [ "iridescent1.jpg", "iridescent2.jpg", "iridescent3.jpg" ]
+                    "images" : [ "puffergilet1.jpg", "puffergilet2.jpg", "puffergilet3.jpg" ]
                 }
             ],
 
