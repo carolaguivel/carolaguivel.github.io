@@ -122,6 +122,17 @@
                 },
 
                 {
+                    "title" : "Camo Beige02",
+                    "brand" : "Alyx",
+                    "details" : "Digital Camo Print, Front Covered Zipper, 3M Picket Tape Detail, Snap Details, Made in Italy",
+                    "composition" : "Nylon, Textile",
+                    "size" : "XS, S, M, L, XL",
+                    "price" : "USD 1850.00",
+                    "path" : "images/outerwear",
+                    "images" : [ "camo1.jpg", "camo2.jpg", "camo3.jpg", "camo4.jpg" ]
+                },
+
+                {
                     "title" : "Debs Beige01",
                     "brand" : "GmbH",
                     "details" : "Stand Collar, Elasticized Cuffs, Zip Closure at Front, Welt Pockets at Waist, Logo Embroidered in Grey, Imported",
