@@ -35,7 +35,7 @@
                 {
                     "title" : "Pixelated Tote B1",
                     "brand" : "Cav Empt",
-                    "details" : "Gray Textile, Velcro Flap Closure, Pixel Pattern, Shoulder Straps, BLUE CE PATCH DETAIL, Imported",
+                    "details" : "Gray Textile, Velcro Flap Closure, Pixel Pattern, Shoulder Straps, Blue CE Patch Detail, Imported",
                     "composition" : "100% cotton",
                     "price" : "USD 307.00",
                     "path" : "images/bags",
@@ -67,7 +67,7 @@
                 {
                     "title" : "Alby-Y BL3",
                     "brand" : "Diesel",
-                    "details" : "Drawstring at Hood, Kangaroo Pocket at Waist, Textile Logo Patch , Rib Knit Cuffs and Hem, Logo Flag, Imported",
+                    "details" : "Drawstring at Hood, Kangaroo Pocket at Waist, Textile Logo Patch, Rib Knit Cuffs and Hem, Logo Flag, Imported",
                     "composition" : "Body: 100% cotton, Trim: 95% cotton, 5% elastane",
                     "size" : "XXS, XS, S, M, L, XL, XXL",
                     "price" : "USD 250.00",
@@ -78,7 +78,7 @@
                 {
                     "title" : "Manual Hoodie WH01",
                     "brand" : "Heron Preston",
-                    "details" : "Drawstring at Hood, Kangaroo Pocket at Waist, Textile Logo Patch , Rib Knit Hem, Logo Printed in Red, Made in Portugal",
+                    "details" : "Drawstring at Hood, Kangaroo Pocket at Waist, Textile Logo Patch, Rib Knit Hem, Logo Printed in Red, Made in Portugal",
                     "composition" : "100% cotton. Trim 1: 95% cotton, 5% elastane. Trim 2: 100% polyvinyl.",
                     "size" : "XXS, XS, S, M, L, XL",
                     "price" : "USD 520.00",
@@ -122,6 +122,17 @@
                 },
 
                 {
+                    "title" : "Debs Beige01",
+                    "brand" : "GmbH",
+                    "details" : "Stand Collar, Elasticized Cuffs, Zip Closure at Front, Welt Pockets at Waist, Logo Embroidered in Grey, Imported",
+                    "composition" : "Body: 53% wool, 47% polyester, Lining: 100% cupro, Padding: 100% polyester",
+                    "size" : "XXS, XS, S, M, L, XL, XXL",
+                    "price" : "USD 1225.00",
+                    "path" : "images/hoodies",
+                    "images" : [ "debs1.jpg", "debs2.jpg", "debs3.jpg" ]
+                },
+
+                {
                     "title" : "Deimos ORNG001",
                     "brand" : "Alyx",
                     "details" : "Garment Dyed Matte Coated Fabric, Front Metal Zipper Closure, Metal Buckle, Logo Patches on Sleeves, Made in Italy",
@@ -151,7 +162,7 @@
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 695.00",
                     "path" : "images/outerwear",
-                    "images" : [ "iridescent1.jpg", "iridescent2.jpg", "iridescent3.jpg", "iridescent4.jpg" ]
+                    "images" : [ "iridescent1.jpg", "iridescent2.jpg", "iridescent3.jpg" ]
                 }
             ],
 
