@@ -43,6 +43,121 @@
                 }
             ],
 
+            "HOODIES" : [
+                {
+                    "title" : "Manual Hoodie WH01",
+                    "brand" : "Heron Preston",
+                    "details" : "Drawstring at Hood, Kangaroo Pocket at Waist, Textile Logo Patch , Rib Knit Hem, Logo Printed in Red, Made in Portugal",
+                    "composition" : " 100% cotton. Trim 1: 95% cotton, 5% elastane. Trim 2: 100% polyvinyl.",
+                    "size" : "XXS, XS, S, M, L, XL",
+                    "price" : "USD 520.00",
+                    "path" : "images/hoodies",
+                    "images" : [ "manual1.jpg", "manual2.jpg", "manual3.jpg" ]
+                }
+            ],
+
+            "SHOES" : [
+
+                {
+                    "title" : "1017 Alison WH7",
+                    "brand" : "Moncler Genius",
+                    "details" : "Round Toe, Bungee-Style Drawstring, Treaded Rubber Sole, Black Hardware, Embossed Logo at Vamp, Imported",
+                    "composition" : "Upper: textile, leather, rubber, Sole: rubber",
+                    "size" : "38, 39, 40, 41, 42, 43, 44",
+                    "price" : "USD 715.00",
+                    "path" : "images/shoes",
+                    "images" : [ "alison1.jpg", "alison2.jpg", "alison3.jpg" ]
+                },
+
+                {
+                    "title" : "Bamba02",
+                    "brand" : "11 by Boris Bidjan Saberi",
+                    "details" : "Round Toe, Overdyed Detailing, Smudge Details Throughout, Zip Closure, Logo and Text Printed, Imported",
+                    "composition" : "Upper: synthetic, textile, Sole: rubber",
+                    "size" : "40, 41, 42, 43, 44",
+                    "price" : "USD 595.00",
+                    "path" : "images/shoes",
+                    "images" : [ "bamba1.jpg", "bamba2.jpg", "bamba3.jpg" ]
+                },
+
+                {
+                    "title" : "Brown Jaw BR02",
+                    "brand" : "Givenchy",
+                    "details" : "Round Toe, Woven Lace-Up Closure, Zip Closure at Vamp, Rubberized Trim, Embossed Logo in Yellow, Made in Italy",
+                    "composition" : "Upper: calfskin, Sole: rubber",
+                    "size" : "39, 40, 41, 42, 43, 44, 45, 46, 47",
+                    "price" : "USD 1095.00",
+                    "path" : "images/shoes",
+                    "images" : [ "brownjaw1.jpg", "brownjaw2.jpg", "brownjaw3.jpg" ]
+                },
+
+                {
+                    "title" : "GSG 9High",
+                    "brand" : "032c",
+                    "details" : "Tonal Reflective Detailing, Tonal Lace-Up Closure, Perforated Detailing, Treaded Rubber Sole, Tonal and Red Printed Logos, Imported",
+                    "composition" : "Upper: leather, textile, Sole: rubber",
+                    "size" : "35, 36, 37, 38, 39, 40, 41",
+                    "price" : "USD 220.00",
+                    "path" : "images/shoes",
+                    "images" : [ "gsg1.jpg", "gsg2.jpg", "gsg3.jpg", "gsg4.jpg" ]
+                },
+
+                {
+                    "title" : "Hiking Boot BLK0001",
+                    "brand" : "Alyx",
+                    "details" : "Breathable Mesh Lining, Cotton Fastening Cord, Metal Boot Lace Hooks, Vibram Rubber Sole, Embroidered Logo, Made in Italy",
+                    "composition" : "Upper: leather, Sole: rubber",
+                    "size" : "40, 41, 42, 43, 44",
+                    "price" : "USD 670.00",
+                    "path" : "images/shoes",
+                    "images" : [ "alyxhiking1.jpg", "alyxhiking2.jpg", "alyxhiking3.jpg", "alyxhiking4.jpg" ]
+                },
+
+                {
+                    "title" : "Hybrid 1941",
+                    "brand" : "Coach",
+                    "details" : "Textile Trim, Lace-Up Closure, Gunmetal Tone Hardware, Treaded Vibram Outsole, Silver Tone Logo Stamp, Imported",
+                    "composition" : "Upper: leather, textile, Sole: rubber",
+                    "size" : "41, 42, 43, 44, 45, 46",
+                    "price" : "USD 295.00",
+                    "path" : "images/shoes",
+                    "images" : [ "hybrid1.jpg", "hybrid2.jpg", "hybrid3.jpg" ]
+                },
+
+                {
+                    "title" : "Nubuck PR2",
+                    "brand" : "Diemme",
+                    "details" : "Round Toe, Woven Lace-Up Closure, Iridescent Trim, Treaded Vibram Rubber Sole, Textile Logo Appliqué, Imported",
+                    "composition" : "Upper: leather, textile, Sole: rubber",
+                    "size" : "35, 36, 37, 38, 39, 40, 41",
+                    "price" : "USD 485.00",
+                    "path" : "images/shoes",
+                    "images" : [ "nubuck1.jpg", "nubuck2.jpg", "nubuck3.jpg" ]
+                },
+
+                {
+                    "title" : "Off BR3",
+                    "brand" : "Off-White",
+                    "details" : "Almond Toe, Lace-Up Closure, Red and Silver Hardware, Treaded Vibram Rubber Sole, Embossed Logo, Imported",
+                    "composition" : "Upper: leather, Sole: rubber",
+                    "size" : "38, 39, 40, 41, 42, 43, 44, 45, 46",
+                    "price" : "USD 965.00",
+                    "path" : "images/shoes",
+                    "images" : [ "off1.jpg", "off2.jpg", "off3.jpg" ]
+                },
+
+                {
+                    "title" : "VaporMax 360",
+                    "brand" : "Nike",
+                    "details" : "Black Mesh Lining, Tonal Lace-Up Closure, Transparent Metallic Sole, VaporMax Technology, Metallic Swoosh Appliqué, Imported",
+                    "composition" : "Upper: synthetic, textile, Sole: rubber",
+                    "size" : "39, 40, 41, 42, 43, 44, 45, 46",
+                    "price" : "USD 225.00",
+                    "path" : "images/shoes",
+                    "images" : [ "vapormax1.jpg", "vapormax2.jpg", "vapormax3.jpg" ]
+                }
+            ],
+
             "SUNGLASSES" : [
                 {
                     "title" : "AFIX 032",
@@ -193,108 +308,6 @@
                     "price" : "USD 350.00",
                     "path" : "images/sunglasses",
                     "images" : [ "zip1.jpg", "zip2.jpg", "zip3.jpg" ]
-                }
-            ], 
-
-            "SHOES" : [
-
-                {
-                    "title" : "1017 Alison WH7",
-                    "brand" : "Moncler Genius",
-                    "details" : "Round Toe, Bungee-Style Drawstring, Treaded Rubber Sole, Black Hardware, Embossed Logo at Vamp, Imported",
-                    "composition" : "Upper: textile, leather, rubber, Sole: rubber",
-                    "size" : "38, 39, 40, 41, 42, 43, 44",
-                    "price" : "USD 715.00",
-                    "path" : "images/shoes",
-                    "images" : [ "alison1.jpg", "alison2.jpg", "alison3.jpg" ]
-                },
-
-                {
-                    "title" : "Bamba02",
-                    "brand" : "11 by Boris Bidjan Saberi",
-                    "details" : "Round Toe, Overdyed Detailing, Smudge Details Throughout, Zip Closure, Logo and Text Printed, Imported",
-                    "composition" : "Upper: synthetic, textile, Sole: rubber",
-                    "size" : "40, 41, 42, 43, 44",
-                    "price" : "USD 595.00",
-                    "path" : "images/shoes",
-                    "images" : [ "bamba1.jpg", "bamba2.jpg", "bamba3.jpg" ]
-                },
-
-                {
-                    "title" : "Brown Jaw BR02",
-                    "brand" : "Givenchy",
-                    "details" : "Round Toe, Woven Lace-Up Closure, Zip Closure at Vamp, Rubberized Trim, Embossed Logo in Yellow, Made in Italy",
-                    "composition" : "Upper: calfskin, Sole: rubber",
-                    "size" : "39, 40, 41, 42, 43, 44, 45, 46, 47",
-                    "price" : "USD 1095.00",
-                    "path" : "images/shoes",
-                    "images" : [ "brownjaw1.jpg", "brownjaw2.jpg", "brownjaw3.jpg" ]
-                },
-
-                {
-                    "title" : "GSG 9High",
-                    "brand" : "032c",
-                    "details" : "Tonal Reflective Detailing, Tonal Lace-Up Closure, Perforated Detailing, Treaded Rubber Sole, Tonal and Red Printed Logos, Imported",
-                    "composition" : "Upper: leather, textile, Sole: rubber",
-                    "size" : "35, 36, 37, 38, 39, 40, 41",
-                    "price" : "USD 220.00",
-                    "path" : "images/shoes",
-                    "images" : [ "gsg1.jpg", "gsg2.jpg", "gsg3.jpg", "gsg4.jpg" ]
-                },
-
-                {
-                    "title" : "Hiking Boot BLK0001",
-                    "brand" : "Alyx",
-                    "details" : "Breathable Mesh Lining, Cotton Fastening Cord, Metal Boot Lace Hooks, Vibram Rubber Sole, Embroidered Logo, Made in Italy",
-                    "composition" : "Upper: leather, Sole: rubber",
-                    "size" : "40, 41, 42, 43, 44",
-                    "price" : "USD 670.00",
-                    "path" : "images/shoes",
-                    "images" : [ "alyxhiking1.jpg", "alyxhiking2.jpg", "alyxhiking3.jpg", "alyxhiking4.jpg" ]
-                },
-
-                {
-                    "title" : "Hybrid 1941",
-                    "brand" : "Coach",
-                    "details" : "Textile Trim, Lace-Up Closure, Gunmetal Tone Hardware, Treaded Vibram Outsole, Silver Tone Logo Stamp, Imported",
-                    "composition" : "Upper: leather, textile, Sole: rubber",
-                    "size" : "41, 42, 43, 44, 45, 46",
-                    "price" : "USD 295.00",
-                    "path" : "images/shoes",
-                    "images" : [ "hybrid1.jpg", "hybrid2.jpg", "hybrid3.jpg" ]
-                },
-
-                {
-                    "title" : "Nubuck PR2",
-                    "brand" : "Diemme",
-                    "details" : "Round Toe, Woven Lace-Up Closure, Iridescent Trim, Treaded Vibram Rubber Sole, Textile Logo Appliqué, Imported",
-                    "composition" : "Upper: leather, textile, Sole: rubber",
-                    "size" : "35, 36, 37, 38, 39, 40, 41",
-                    "price" : "USD 485.00",
-                    "path" : "images/shoes",
-                    "images" : [ "nubuck1.jpg", "nubuck2.jpg", "nubuck3.jpg" ]
-                },
-
-                {
-                    "title" : "Off BR3",
-                    "brand" : "Off-White",
-                    "details" : "Almond Toe, Lace-Up Closure, Red and Silver Hardware, Treaded Vibram Rubber Sole, Embossed Logo, Imported",
-                    "composition" : "Upper: leather, Sole: rubber",
-                    "size" : "38, 39, 40, 41, 42, 43, 44, 45, 46",
-                    "price" : "USD 965.00",
-                    "path" : "images/shoes",
-                    "images" : [ "off1.jpg", "off2.jpg", "off3.jpg" ]
-                },
-
-                {
-                    "title" : "VaporMax 360",
-                    "brand" : "Nike",
-                    "details" : "Black Mesh Lining, Tonal Lace-Up Closure, Transparent Metallic Sole, VaporMax Technology, Metallic Swoosh Appliqué, Imported",
-                    "composition" : "Upper: synthetic, textile, Sole: rubber",
-                    "size" : "39, 40, 41, 42, 43, 44, 45, 46",
-                    "price" : "USD 225.00",
-                    "path" : "images/shoes",
-                    "images" : [ "vapormax1.jpg", "vapormax2.jpg", "vapormax3.jpg" ]
                 }
             ]
         }
