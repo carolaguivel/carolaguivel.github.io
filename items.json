@@ -45,6 +45,17 @@
 
             "HOODIES" : [
                 {
+                    "title" : "Alby-Y BL3",
+                    "brand" : "Diesel",
+                    "details" : "Drawstring at Hood, Kangaroo Pocket at Waist, Textile Logo Patch , Rib Knit Cuffs and Hem, Logo Flag, Imported",
+                    "composition" : "Body: 100% cotton, Trim: 95% cotton, 5% elastane",
+                    "size" : "XXS, XS, S, M, L, XL, XXL",
+                    "price" : "USD 250.00",
+                    "path" : "images/hoodies",
+                    "images" : [ "alby1.jpg", "alby2.jpg", "alby3.jpg" ]
+                },
+
+                {
                     "title" : "Manual Hoodie WH01",
                     "brand" : "Heron Preston",
                     "details" : "Drawstring at Hood, Kangaroo Pocket at Waist, Textile Logo Patch , Rib Knit Hem, Logo Printed in Red, Made in Portugal",
