@@ -9,7 +9,7 @@
                     "composition" : "Textile, Polyvinyl",
                     "price" : "USD 695.00",
                     "path" : "images/bags",
-                    "images" : [ "babyx1.jpg", "babyx2.jpg" ]
+                    "images" : [ "babyx1.jpg", "babyx2.jpg", "babyx3.jpg" ]
                 },
 
                 {
@@ -19,7 +19,7 @@
                     "composition" : "100% Polyamide",
                     "price" : "USD 751.00",
                     "path" : "images/bags",
-                    "images" : [ "fragment1.jpg", "fragment2.jpg" ]
+                    "images" : [ "fragment1.jpg", "fragment2.jpg", "fragment3.jpg" ]
                 },
 
                 {
@@ -29,7 +29,17 @@
                     "composition" : "Nylon, Leather",
                     "price" : "USD 680.00",
                     "path" : "images/bags",
-                    "images" : [ "paddednylon1.jpg", "paddednylon2.jpg" ]
+                    "images" : [ "paddednylon1.jpg", "paddednylon2.jpg", "paddednylon3.jpg" ]
+                },
+
+                {
+                    "title" : "Pixelated Tote B1",
+                    "brand" : "Cav Empt",
+                    "details" : "Gray Textile, Velcro Flap Closure, Pixel Pattern, Shoulder Straps, BLUE CE PATCH DETAIL, Imported",
+                    "composition" : "100% cotton",
+                    "price" : "USD 307.00",
+                    "path" : "images/bags",
+                    "images" : [ "pixel1.jpg", "pixel2.jpg", "pixel3.jpg" ]
                 },
 
                 {
@@ -39,7 +49,7 @@
                     "composition" : "Polypropylene",
                     "price" : "USD 825.00",
                     "path" : "images/bags",
-                    "images" : [ "toolbag1.jpg", "toolbag2.jpg" ]
+                    "images" : [ "toolbag1.jpg", "toolbag2.jpg", "toolbag3.jpg" ]
                 },
 
                 {
