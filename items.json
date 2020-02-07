@@ -5,11 +5,21 @@
                 {
                     "title" : "Baby-X GRY002",
                     "brand" : "Alyx",
-                    "details" : "Leather Cross Body Strap, Classic Zipper, Rollercoaster Buckle, Imported",
+                    "details" : "Leather Cross Body Strap, Classic Zipper, Rollercoaster Buckle, Foldover Flap, Leather Logo Patch, Imported",
                     "composition" : "Textile, Polyvinyl",
                     "price" : "USD 695.00",
                     "path" : "images/bags",
                     "images" : [ "babyx1.jpg", "babyx2.jpg" ]
+                },
+
+                {
+                    "title" : "TOOL BAG BCK002",
+                    "brand" : "Heron Preston",
+                    "details" : "Hinged Carry Handle, Yellow Leather Detailing, Orange Shoulder Strap, Flip-Clasp Fastenings, Logo Sticker in Orange, Made in Italy",
+                    "composition" : "Polypropylene",
+                    "price" : "USD 825.00",
+                    "path" : "images/bags",
+                    "images" : [ "toolbag1.jpg", "toolbag2.jpg" ]
                 }
             ],
 
