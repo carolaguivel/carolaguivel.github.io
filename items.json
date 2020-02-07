@@ -111,6 +111,17 @@
 
             "OUTERWEAR" : [
                 {
+                    "title" : "Asymmetric GRYBL01",
+                    "brand" : "A-Cold-Wall*",
+                    "details" : "Quarter Zip Closure, Three 3D Pockets, Compass Hardware, Bracket Logo Screen-Print, Imported",
+                    "composition" : "Polyvinyl",
+                    "size" : "XS, S, M, L, XL, XXL",
+                    "price" : "USD 475.00",
+                    "path" : "images/outerwear",
+                    "images" : [ "asymmetric1.jpg", "asymmetric2.jpg", "asymmetric3.jpg", "asymmetric4.jpg" ]
+                },
+
+                {
                     "title" : "Deimos ORNG001",
                     "brand" : "Alyx",
                     "details" : "Garment Dyed Matte Coated Fabric, Front Metal Zipper Closure, Metal Buckle, Logo Patches on Sleeves, Made in Italy",
