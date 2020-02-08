@@ -152,17 +152,6 @@
                 },
 
                 {
-                    "title" : "NRG X SE R1",
-                    "brand" : "Nike",
-                    "details" : "Water and Wind Proof, Sealed Seam Details, Front Zipper Closure, Hood with Built in Face Mask, Imported",
-                    "composition" : "100% Fabric",
-                    "size" : "XS, S, M, L, XL, XXL",
-                    "price" : "USD 454.00",
-                    "path" : "images/outerwear",
-                    "images" : [ "nike1.jpg", "nike2.jpg", "nike3.jpg", "nike4.jpg" ]
-                },
-
-                {
                     "title" : "Sirus WH1",
                     "brand" : "Moncler Genius",
                     "details" : "Nylon Laqué, Front Metal Zipper Closure, Collar with Metal Buckle, Heat Embossed Logo, Imported",
@@ -188,7 +177,7 @@
                     "title" : "Camo Beige02",
                     "brand" : "Alyx",
                     "details" : "Digital Camo Print, Front Covered Zipper, 3M Picket Tape Detail, Snap Details, Made in Italy",
-                    "composition" : "Nylon, Textile",
+                    "composition" : "90% Nylon, 10% Textile",
                     "size" : "XS, S, M, L, XL",
                     "price" : "USD 1850.00",
                     "path" : "images/outerwear",
@@ -210,7 +199,7 @@
                     "title" : "Moncler Cosmos ORNG2",
                     "brand" : "Alyx",
                     "details" : "Ripstop Fabric with Paper-Like Feel, Elastic Drawstring Cord at Hem, Detachable Hood, Logo Buckle for Closure, Made in Italy",
-                    "composition" : "Nylon, Textile",
+                    "composition" : "90% Nylon, 10% Textile",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 1505.00",
                     "path" : "images/outerwear",
@@ -259,6 +248,17 @@
                     "price" : "USD 1445.00",
                     "path" : "images/outerwear",
                     "images" : [ "nightcrawler1.jpg", "nightcrawler2.jpg", "nightcrawler3.jpg", "nightcrawler4.jpg" ]
+                },
+
+                {
+                    "title" : "NRG X SE R1",
+                    "brand" : "Nike",
+                    "details" : "Water and Wind Proof, Sealed Seam Details, Front Zipper Closure, Hood with Built in Face Mask, Imported",
+                    "composition" : "100% Fabric",
+                    "size" : "XS, S, M, L, XL, XXL",
+                    "price" : "USD 454.00",
+                    "path" : "images/outerwear",
+                    "images" : [ "nike1.jpg", "nike2.jpg", "nike3.jpg", "nike4.jpg" ]
                 },
 
                 {
