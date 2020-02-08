@@ -133,17 +133,6 @@
                 },
 
                 {
-                    "title" : "Debs Beige01",
-                    "brand" : "GmbH",
-                    "details" : "Stand Collar, Elasticized Cuffs, Zip Closure at Front, Welt Pockets at Waist, Logo Embroidered in Grey, Imported",
-                    "composition" : "Body: 53% wool, 47% polyester, Lining: 100% cupro, Padding: 100% polyester",
-                    "size" : "XXS, XS, S, M, L, XL, XXL",
-                    "price" : "USD 1225.00",
-                    "path" : "images/outerwear",
-                    "images" : [ "debs1.jpg", "debs2.jpg", "debs3.jpg" ]
-                },
-
-                {
                     "title" : "Deimos ORNG001",
                     "brand" : "Alyx",
                     "details" : "Garment Dyed Matte Coated Fabric, Front Metal Zipper Closure, Metal Buckle, Logo Patches on Sleeves, Made in Italy",
