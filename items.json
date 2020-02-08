@@ -174,6 +174,17 @@
                 },
 
                 {
+                    "title" : "IDRC Allochroic GR3",
+                    "brand" : "C2H4",
+                    "details" : "Throat Guard, Detachable Hood, Concealed Two-Way Zip Closure, Transparent Rubberirzed Logo Flag, Imported",
+                    "composition" : "Fill: 90% white duck down, 10% feather, Body: 100% polyester",
+                    "size" : "XS, S, M, L, XL, XXL",
+                    "price" : "USD 650.00",
+                    "path" : "images/outerwear",
+                    "images" : [ "allochroic1.jpg", "allochroic2.jpg", "allochroic3.jpg" ]
+                },
+
+                {
                     "title" : "Iridescent Down GR2",
                     "brand" : "Kenzo",
                     "details" : "Bungee-style Drawstring, Two-Way Zip Closure, Detachable Logo Patch, Logo-Printed Nylon Lining, Imported",
