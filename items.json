@@ -177,6 +177,17 @@
                 },
 
                 {
+                    "title" : "Moncler Cosmos ORNG2",
+                    "brand" : "ALYX",
+                    "details" : "Ripstop Fabric with Paper-Like Feel, Elastic Drawstring Cord at Hem, Detachable Hood, Logo Buckle for Closure, Made in Italy",
+                    "composition" : "Nylon, Textile",
+                    "size" : "XS, S, M, L, XL, XXL",
+                    "price" : "USD 1505.00",
+                    "path" : "images/outerwear",
+                    "images" : [ "cosmos1.jpg", "cosmos2.jpg", "cosmos3.jpg", "cosmos3.jpg" ]
+                },
+
+                {
                     "title" : "Puffer Gilet ORNG1",
                     "brand" : "A-Cold-Wall*",
                     "details" : "Asymmetric 3D Pockets, Funnel Neckline, Jacquard Lining, Hardware Branded with Bracket Logo, Imported",
