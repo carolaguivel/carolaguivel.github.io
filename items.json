@@ -152,6 +152,17 @@
                 },
 
                 {
+                    "title" : "Sirus WH1",
+                    "brand" : "Moncler Genius",
+                    "details" : "Nylon Laqué, Front Metal Zipper Closure, Collar with Metal Buckle, Heat Embossed Logo, Imported",
+                    "composition" : "Nylon",
+                    "size" : "XS, S, M, L, XL, XXL",
+                    "price" : "USD 1150.00",
+                    "path" : "images/outerwear",
+                    "images" : [ "sirus1.jpg", "sirus2.jpg", "sirus3.jpg", "sirus4.jpg" ]
+                },
+
+                {
                     "title" : "Quantum Dye Para BCK3",
                     "brand" : "Alyx",
                     "details" : "Technical Nylon, Laminated Coating, Collared Long Silhouette, Covered Front Zipper Closure, Imported",
