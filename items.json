@@ -144,7 +144,7 @@
                     "title" : "Asymmetric GRYBL01",
                     "brand" : "A-Cold-Wall*",
                     "details" : "Quarter Zip Closure, Three 3D Pockets, Compass Hardware, Bracket Logo Screen-Print, Imported",
-                    "composition" : "Polyvinyl",
+                    "composition" : "100% Polyvinyl",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 475.00",
                     "path" : "images/outerwear",
@@ -152,10 +152,21 @@
                 },
 
                 {
+                    "title" : "NRG X SE R1",
+                    "brand" : "Nike",
+                    "details" : "Water and Wind Proof, Sealed Seam Details, Front Zipper Closure, Hood with Built in Face Mask, Imported",
+                    "composition" : "100% Fabric",
+                    "size" : "XS, S, M, L, XL, XXL",
+                    "price" : "USD 454.00",
+                    "path" : "images/outerwear",
+                    "images" : [ "nike1.jpg", "nike2.jpg", "nike3.jpg", "nike4.jpg" ]
+                },
+
+                {
                     "title" : "Sirus WH1",
                     "brand" : "Moncler Genius",
                     "details" : "Nylon Laqué, Front Metal Zipper Closure, Collar with Metal Buckle, Heat Embossed Logo, Imported",
-                    "composition" : "Nylon",
+                    "composition" : "100% Nylon",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 1150.00",
                     "path" : "images/outerwear",
@@ -166,7 +177,7 @@
                     "title" : "Quantum Dye Para BCK3",
                     "brand" : "Alyx",
                     "details" : "Technical Nylon, Laminated Coating, Collared Long Silhouette, Covered Front Zipper Closure, Imported",
-                    "composition" : "Nylon, Textile",
+                    "composition" : "90% Nylon, 10% Textile",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 740.00",
                     "path" : "images/outerwear",
