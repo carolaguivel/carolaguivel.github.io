@@ -152,6 +152,17 @@
                 },
 
                 {
+                    "title" : "Quantum Dye Para BCK3",
+                    "brand" : "Alyx",
+                    "details" : "Technical Nylon, Laminated Coating, Collared Long Silhouette, Covered Front Zipper Closure, Imported",
+                    "composition" : "Nylon, Textile",
+                    "size" : "XS, S, M, L, XL, XXL",
+                    "price" : "USD 740.00",
+                    "path" : "images/outerwear",
+                    "images" : [ "quantumdye1.jpg", "quantumdye2.jpg", "quantumdye3.jpg" ]
+                },
+
+                {
                     "title" : "Camo Beige02",
                     "brand" : "Alyx",
                     "details" : "Digital Camo Print, Front Covered Zipper, 3M Picket Tape Detail, Snap Details, Made in Italy",
@@ -229,6 +240,17 @@
                 },
 
                 {
+                    "title" : "Parus Coat BCK3",
+                    "brand" : "Moncler Genius",
+                    "details" : "Bungee-Style Drawstring, Concealed Two-Way Zip Closure, Tonal Textile Logo Appliqué, Tonal Detachable Chain Link Hardware, Made in Italy",
+                    "composition" : "Body: 91% polyester, 9% polyamide, Fill: 90% goose down, 10% feathers",
+                    "size" : "XS, S, M, L, XL, XXL",
+                    "price" : "USD 2670.00",
+                    "path" : "images/outerwear",
+                    "images" : [ "paruscoat1.jpg", "paruscoat2.jpg", "paruscoat3.jpg" ]
+                },
+
+                {
                     "title" : "Puffer Gilet ORNG1",
                     "brand" : "A-Cold-Wall*",
                     "details" : "Asymmetric 3D Pockets, Funnel Neckline, Jacquard Lining, Hardware Branded with Bracket Logo, Imported",
@@ -237,17 +259,6 @@
                     "price" : "USD 740.00",
                     "path" : "images/outerwear",
                     "images" : [ "puffergilet1.jpg", "puffergilet2.jpg", "puffergilet3.jpg" ]
-                },
-
-                {
-                    "title" : "Quantum Dye Para BCK3",
-                    "brand" : "Alyx",
-                    "details" : "Technical Nylon, Laminated Coating, Collared Long Silhouette, Covered Front Zipper Closure, Imported",
-                    "composition" : "Nylon, Textile",
-                    "size" : "XS, S, M, L, XL, XXL",
-                    "price" : "USD 740.00",
-                    "path" : "images/outerwear",
-                    "images" : [ "quantumdye1.jpg", "quantumdye2.jpg", "quantumdye3.jpg" ]
                 }
             ],
 
