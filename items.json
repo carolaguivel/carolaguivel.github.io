@@ -208,13 +208,24 @@
 
                 {
                     "title" : "Moncler Cosmos ORNG2",
-                    "brand" : "ALYX",
+                    "brand" : "Alyx",
                     "details" : "Ripstop Fabric with Paper-Like Feel, Elastic Drawstring Cord at Hem, Detachable Hood, Logo Buckle for Closure, Made in Italy",
                     "composition" : "Nylon, Textile",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 1505.00",
                     "path" : "images/outerwear",
-                    "images" : [ "cosmos1.jpg", "cosmos2.jpg", "cosmos3.jpg", "cosmos3.jpg" ]
+                    "images" : [ "cosmos1.jpg", "cosmos2.jpg", "cosmos3.jpg", "cosmos4.jpg" ]
+                },
+
+                {
+                    "title" : "Night Crawler BG1",
+                    "brand" : "Alyx",
+                    "details" : "Silver Zipper Closure, High Collar, Front Cross Flap, Rubber Patch at Front with Logo, Made in Italy",
+                    "composition" : "Nylon",
+                    "size" : "S, M, L, XL, XXL",
+                    "price" : "USD 1445.00",
+                    "path" : "images/outerwear",
+                    "images" : [ "nightcrawler1.jpg", "nightcrawler2.jpg", "nightcrawler3.jpg", "nightcrawler4.jpg" ]
                 },
 
                 {
@@ -226,6 +237,17 @@
                     "price" : "USD 740.00",
                     "path" : "images/outerwear",
                     "images" : [ "puffergilet1.jpg", "puffergilet2.jpg", "puffergilet3.jpg" ]
+                },
+
+                {
+                    "title" : "Quantum Dye Para BCK3",
+                    "brand" : "Alyx",
+                    "details" : "Technical Nylon, Laminated Coating, Collared Long Silhouette, Covered Front Zipper Closure, Imported",
+                    "composition" : "Nylon, Textile",
+                    "size" : "XS, S, M, L, XL, XXL",
+                    "price" : "USD 740.00",
+                    "path" : "images/outerwear",
+                    "images" : [ "quantumdye1.jpg", "quantumdye2.jpg", "quantumdye3.jpg" ]
                 }
             ],
 
