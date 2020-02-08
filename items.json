@@ -23,6 +23,16 @@
                 },
 
                 {
+                    "title" : "Black Tank BCK003",
+                    "brand" : "Alyx",
+                    "details" : "Padded Shoulder Straps, Signature Fastening at Face, Drawstring Closure, Tonal Twill Lining, Logo Engraved Silver-Tone Hardware, Imported",
+                    "composition" : "Polyvinyl Chloride",
+                    "price" : "USD 725.00",
+                    "path" : "images/bags",
+                    "images" : [ "blacktank1.jpg", "blacktank2.jpg", "blacktank3.jpg" ]
+                },
+
+                {
                     "title" : "Fragment N05GR1",
                     "brand" : "Moncler Genius",
                     "details" : "Collaboration with Craig Green, Military Green/Black, Waterproof Teflon Nylon, Zip Closure, Zip Closure, Imported",
