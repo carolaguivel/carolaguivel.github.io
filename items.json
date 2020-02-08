@@ -185,6 +185,17 @@
                 },
 
                 {
+                    "title" : "Moncler Cosmos ORNG2",
+                    "brand" : "Alyx",
+                    "details" : "Ripstop Fabric with Paper-Like Feel, Elastic Drawstring Cord at Hem, Detachable Hood, Logo Buckle for Closure, Made in Italy",
+                    "composition" : "Nylon, Textile",
+                    "size" : "XS, S, M, L, XL, XXL",
+                    "price" : "USD 1505.00",
+                    "path" : "images/outerwear",
+                    "images" : [ "cosmos1.jpg", "cosmos2.jpg", "cosmos3.jpg", "cosmos4.jpg" ]
+                },
+
+                {
                     "title" : "IDRC Allochroic GR3",
                     "brand" : "C2H4",
                     "details" : "Throat Guard, Detachable Hood, Concealed Two-Way Zip Closure, Transparent Rubberirzed Logo Flag, Imported",
@@ -215,17 +226,6 @@
                     "price" : "USD 1090.00",
                     "path" : "images/outerwear",
                     "images" : [ "memorynylon1.jpg", "memorynylon2.jpg", "memorynylon3.jpg", "memorynylon4.jpg" ]
-                },
-
-                {
-                    "title" : "Moncler Cosmos ORNG2",
-                    "brand" : "Alyx",
-                    "details" : "Ripstop Fabric with Paper-Like Feel, Elastic Drawstring Cord at Hem, Detachable Hood, Logo Buckle for Closure, Made in Italy",
-                    "composition" : "Nylon, Textile",
-                    "size" : "XS, S, M, L, XL, XXL",
-                    "price" : "USD 1505.00",
-                    "path" : "images/outerwear",
-                    "images" : [ "cosmos1.jpg", "cosmos2.jpg", "cosmos3.jpg", "cosmos4.jpg" ]
                 },
 
                 {
