@@ -94,6 +94,18 @@
             ],
 
             "HOODIES" : [
+
+                {
+                    "title" : "Allover GRBL1",
+                    "brand" : "Clot",
+                    "details" : "Paint Splatter Effect, Kangaroo Pocket at Waist, Drawstring, Rib Knit Cuffs and Hem, Tonal Logo Pattern, Imported",
+                    "composition" : "65% cotton, 35% polyester",
+                    "size" : "XXS, XS, S, M, L, XL, XXL",
+                    "price" : "USD 205.00",
+                    "path" : "images/hoodies",
+                    "images" : [ "allover1.jpg", "allover2.jpg", "allover3.jpg" ]
+                },
+
                 {
                     "title" : "Alby-Y BL3",
                     "brand" : "Diesel",
@@ -128,12 +140,12 @@
                 },
 
                 {
-                    "title" : "Stars Allover GRBL1",
+                    "title" : "Stars BCK1",
                     "brand" : "Clot",
-                    "details" : "Paint Splatter Effect, Kangaroo Pocket at Waist, Drawstring, Rib Knit Cuffs and Hem, Tonal Logo Pattern, Imported",
+                    "details" : "Graphic Pattern Throughout, Drawstring at Hood, Kangaroo Pocket at Waist, Rib Knit Cuffs and Hem, Textile Logo Patch, Imported",
                     "composition" : "65% cotton, 35% polyester",
-                    "size" : "XXS, XS, S, M, L, XL, XXL",
-                    "price" : "USD 205.00",
+                    "size" : "S, M, L, XL, XXL",
+                    "price" : "USD 190.00",
                     "path" : "images/hoodies",
                     "images" : [ "stars1.jpg", "stars2.jpg", "stars3.jpg" ]
                 }
