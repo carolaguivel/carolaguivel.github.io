@@ -95,6 +95,28 @@
 
             "BOTTOMS" : [
                 {
+                    "title" : "Manual Sweats BCK3",
+                    "brand" : "Heron Preston",
+                    "details" : "Text Printed in Red Throughout, White Text Embroidered, Transparent PVC Card Slot at Back, Elasticized Waistband, Textile Logo Patch, Made in Portugal",
+                    "composition" : "100% Cotton",
+                    "size" : "XS, S, M, L, XL, XXL",
+                    "price" : "USD 430.00",
+                    "path" : "images/bottoms",
+                    "images" : [ "manual1.jpg", "manual2.jpg", "manual3.jpg", "manual4.jpg" ]
+                },
+
+                {
+                    "title" : "Parachute Cargo GR01",
+                    "brand" : "Off-White",
+                    "details" : "Elasticated Waistband, Buckle Fastening, Side Slid Pockets, Flap Utility Pockets, Fluorescent Yellow Printed Logo, Imported",
+                    "composition" : "100% Cotton",
+                    "size" : "XS, S, M, L, XL, XXL",
+                    "price" : "USD 795.00",
+                    "path" : "images/bottoms",
+                    "images" : [ "parachute1.jpg", "parachute2.jpg", "parachute3.jpg", "parachute4.jpg" ]
+                },
+
+                {
                     "title" : "Scaffolded Circuit BR1",
                     "brand" : "A-Cold-Wall*",
                     "details" : "Water-Resistant, Duplexed Grosgrain Details, Full-Length Drawcord Cinching, Protruding Ankle Fixtures, Rubberised Logo Patch, Imported",
