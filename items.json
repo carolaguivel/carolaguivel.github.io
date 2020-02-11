@@ -525,6 +525,17 @@
                     "path" : "images/shirts",
                     "images" : [ "bruised1.jpg", "bruised2.jpg", "bruised3.jpg" ]
                 },
+
+                {
+                    "title" : "Moon Flag 1969",
+                    "brand" : "Calvin Klein",
+                    "details" : "Classic Collar, Button Closure, Button Flap Chest Pockets, Curved Hem, Imported",
+                    "composition" : "100% Cotton",
+                    "size" : "XS, S, M, L, XL, XXL",
+                    "price" : "USD 601.00",
+                    "path" : "images/shirts",
+                    "images" : [ "moonflag1.jpg", "moonflag2.jpg", "moonflag3.jpg" ]
+                },
                 
                 {
                     "title" : "Silver Lake 003",
