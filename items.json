@@ -118,6 +118,17 @@
                 },
 
                 {
+                    "title" : "Mackintosh BCK2",
+                    "brand" : "Alyx",
+                    "details" : "Lazer Print, Hand Applied Sponge Treatment, Double Hood, Silver Toggles for Adjustment, Mackintosh Icon on Hood, Made in Italy",
+                    "composition" : "100% cotton",
+                    "size" : "XXS, XS, S, M, L, XL",
+                    "price" : "USD 595.00",
+                    "path" : "images/sweaters",
+                    "images" : [ "mackintosh1.jpg", "mackintosh2.jpg", "mackintosh3.jpg" ]
+                },
+
+                {
                     "title" : "Manual Hoodie WH01",
                     "brand" : "Heron Preston",
                     "details" : "Drawstring at Hood, Kangaroo Pocket at Waist, Textile Logo Patch, Rib Knit Hem, Logo Printed in Red, Made in Portugal",
