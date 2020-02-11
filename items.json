@@ -95,6 +95,28 @@
 
             "BOTTOMS" : [
                 {
+                    "title" : "Block Blue BL1",
+                    "brand" : "Y/Project",
+                    "details" : "Elastic Waistband with Drawstrings, Pleated Side Details, White Piping Details, Black and White Color Block, Front White Logo Printed, Imported",
+                    "composition" : "100% Polyester",
+                    "size" : "XS, S, M, L, XL, XXL",
+                    "price" : "USD 604.00",
+                    "path" : "images/bottoms",
+                    "images" : [ "block1.jpg", "block2.jpg", "block3.jpg" ]
+                },
+
+                {
+                    "title" : "Camo GR02",
+                    "brand" : "Heron Preston",
+                    "details" : "Camouflage Print, Elastic Waistband with Drawstrings, Side Pockets, Drawstring Hems, Front Orange Logo Patch, Made in Italy",
+                    "composition" : "100% Polyamide",
+                    "size" : "XS, S, M, L, XL, XXL",
+                    "price" : "USD 682.00",
+                    "path" : "images/bottoms",
+                    "images" : [ "camo1.jpg", "camo2.jpg", "camo3.jpg" ]
+                },
+
+                {
                     "title" : "Manual Sweats BCK3",
                     "brand" : "Heron Preston",
                     "details" : "Text Printed in Red Throughout, White Text Embroidered, Transparent PVC Card Slot at Back, Elasticized Waistband, Textile Logo Patch, Made in Portugal",
