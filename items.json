@@ -118,6 +118,17 @@
                 },
 
                 {
+                    "title" : "Black Memory BCK05",
+                    "brand" : "Maison Margiela",
+                    "details" : "Crewneck Collar, Shadowed Detailing, Signature White Stitching, Raglan Sleeves, Rib Knit Cuffs and Hem, Made in Italy",
+                    "composition" : "Body: 100% cotton, Trim: 94% cotton, 6% elastane",
+                    "size" : "XXS, XS, S, M, L, XL, XXL",
+                    "price" : "USD 790.00",
+                    "path" : "images/sweaters",
+                    "images" : [ "blackmemory1.jpg", "blackmemory2.jpg", "blackmemory3.jpg" ]
+                },
+
+                {
                     "title" : "Burning Casentino 002",
                     "brand" : "Palm Angels",
                     "details" : "Jacquard-Knit Wool-Blend Sweater, Graphic Pattern in Red, Yellow, Orange, Pilling Effect, Crewneck Collar, Rubberized Logo Appliqué, Made in Italy",
@@ -126,6 +137,17 @@
                     "price" : "USD 875.00",
                     "path" : "images/sweaters",
                     "images" : [ "burning1.jpg", "burning2.jpg", "burning3.jpg" ]
+                },
+
+                {
+                    "title" : "Fleece BG01",
+                    "brand" : "Rassvet",
+                    "details" : "Navy Trim, Stand Collar, Bungee-Style Drawstring, Half-Zip Closure at Front, Rubberized Logo Appliqué, Imported",
+                    "composition" : "73% polyester, 27% virgin wool",
+                    "size" : "XXS, XS, S, M, L, XL",
+                    "price" : "USD 265.00",
+                    "path" : "images/sweaters",
+                    "images" : [ "fleece1.jpg", "fleece2.jpg", "fleece3.jpg" ]
                 },
 
                 {
@@ -162,6 +184,17 @@
                 },
 
                 {
+                    "title" : "Sherpa BCK07",
+                    "brand" : "Nike",
+                    "details" : "Tonal Nylon Taffeta Panels, Half-Zip Closure, Zippered Kangaroo Pocket, Fully Lined, Embroidered Logo Appliqué, Imported",
+                    "composition" : "Body: 100% polyester, Trim: 100% nylon, Lining: 100% polyester",
+                    "size" : "XXS, XS, S, M, L, XL, XXL",
+                    "price" : "USD 140.00",
+                    "path" : "images/sweaters",
+                    "images" : [ "sherpa1.jpg", "sherpa2.jpg", "sherpa3.jpg" ]
+                },
+
+                {
                     "title" : "Stars BCK1",
                     "brand" : "Clot",
                     "details" : "Graphic Pattern Throughout, Drawstring at Hood, Kangaroo Pocket at Waist, Rib Knit Cuffs and Hem, Textile Logo Patch, Imported",
@@ -170,6 +203,17 @@
                     "price" : "USD 190.00",
                     "path" : "images/sweaters",
                     "images" : [ "stars1.jpg", "stars2.jpg", "stars3.jpg" ]
+                },
+
+                {
+                    "title" : "Tonal Ray GR1",
+                    "brand" : "A-Cold-Wall*",
+                    "details" : "Tie-Dye Pattern, Exposed Seams, Drawstring at Hood, Welt Pockets at Waist, Logo Bonded in Black, Imported",
+                    "composition" : "100% Cotton",
+                    "size" : "XXS, XS, S, M, L, XL, XXL",
+                    "price" : "USD 425.00",
+                    "path" : "images/sweaters",
+                    "images" : [ "tonalray1.jpg", "tonalray2.jpg", "tonalray3.jpg" ]
                 }
             ],
 
