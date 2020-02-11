@@ -102,7 +102,7 @@
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 430.00",
                     "path" : "images/bottoms",
-                    "images" : [ "manual1.jpg", "manual2.jpg", "manual3.jpg", "manual4.jpg" ]
+                    "images" : [ "manual1.jpg", "manual2.jpg", "manual3.jpg" ]
                 },
 
                 {
