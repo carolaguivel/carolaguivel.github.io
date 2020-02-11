@@ -93,138 +93,156 @@
                 }
             ],
 
-            "SWEATERS" : [
-
+            "EYEWEAR" : [
                 {
-                    "title" : "Allover GRBL1",
-                    "brand" : "Clot",
-                    "details" : "Paint Splatter Effect, Kangaroo Pocket at Waist, Drawstring, Rib Knit Cuffs and Hem, Tonal Logo Pattern, Imported",
-                    "composition" : "65% cotton, 35% polyester",
-                    "size" : "XXS, XS, S, M, L, XL, XXL",
-                    "price" : "USD 205.00",
-                    "path" : "images/sweaters",
-                    "images" : [ "allover1.jpg", "allover2.jpg", "allover3.jpg" ]
+                    "title" : "AFIX 032",
+                    "brand" : "Gentle Monster",
+                    "details" : "Stainless Steel, Gold Frame, Standard Fit, Apricot Mirrored Lens, 100% UV Protection, Adjustable Silicone Nose Pads, Clear Acetate Temple Tips, Made in Korea",
+                    "composition" : "50% stainless steel, 50% glass",
+                    "price" : "USD 310.00",
+                    "path" : "images/eyewear",
+                    "images" : [ "afix1.jpg", "afix2.jpg" ]
+
+                },
+    
+                {
+                    "title" : "Gradient BLCK1",
+                    "brand" : "Prada",
+                    "details" : "Single Reflective Lens, Multicolor Gradient, Standard Fit, Tonal Hardware, 100% UV Protection, Transparent Rubber Nose Pads, Logo Engraved, Made in Italy",
+                    "composition" : "50% metal, 50% glass",
+                    "price" : "USD 290.00",
+                    "path" : "images/eyewear",
+                    "images" : [ "blck1.jpg", "blck2.jpg", "blck3.jpg" ]
+                },
+                
+                {
+                    "title" : "Cold YC2",
+                    "brand" : "Gentle Monster",
+                    "details" : "Uni Frame Lens, Flatba Frame, Standard Fit, Acetate, 100% UV Protection, Transparent Nose Pads, Logo Detailed Center, Made in China",
+                    "composition" : "50% acetate, 50% glass",
+                    "price" : "USD 320.00",
+                    "path" : "images/eyewear",
+                    "images" : [ "cold1.jpg", "cold2.jpg", "cold3.jpg" ]
                 },
 
                 {
-                    "title" : "Alby-Y BL3",
-                    "brand" : "Diesel",
-                    "details" : "Drawstring at Hood, Kangaroo Pocket at Waist, Textile Logo Patch, Rib Knit Cuffs and Hem, Logo Flag, Imported",
-                    "composition" : "Body: 100% cotton, Trim: 95% cotton, 5% elastane",
-                    "size" : "XXS, XS, S, M, L, XL, XXL",
-                    "price" : "USD 250.00",
-                    "path" : "images/sweaters",
-                    "images" : [ "alby1.jpg", "alby2.jpg", "alby3.jpg" ]
+                    "title" : "Fire Oval",
+                    "brand" : "Balenciaga",
+                    "details" : "Wraparound Oval Shape, Sculptural Metal Frame, Adjustable Smart Fit, Nylon Lens, 100% UVA Protection, BB Nose Pads, Lasered Logo, Made in Italy",
+                    "composition" : "100% metal",
+                    "price" : "USD 450.00",
+                    "path" : "images/eyewear",
+                    "images" : [ "fire1.jpg", "fire2.jpg", "fire3.jpg" ]
                 },
 
                 {
-                    "title" : "Black Memory BCK05",
+                    "title" : "Geom GO1",
+                    "brand" : "Loewe",
+                    "details" : "Rectangular Brown Lenses, Gold-Tone Metal, Standard Fit, Leather Trim, 100% UV Protection, Transparent Rubber Nose Pads, Engraved Logo, Made in Italy",
+                    "composition" : "10% leather, 40% metal, 50% glass",
+                    "price" : "USD 430.00",
+                    "path" : "images/eyewear",
+                    "images" : [ "geom1.jpg", "geom2.jpg", "geom3.jpg" ]
+                },
+
+                {
+                    "title" : "MMECH0005",
                     "brand" : "Maison Margiela",
-                    "details" : "Crewneck Collar, Shadowed Detailing, Signature White Stitching, Raglan Sleeves, Rib Knit Cuffs and Hem, Made in Italy",
-                    "composition" : "Body: 100% cotton, Trim: 94% cotton, 6% elastane",
-                    "size" : "XXS, XS, S, M, L, XL, XXL",
-                    "price" : "USD 790.00",
-                    "path" : "images/sweaters",
-                    "images" : [ "blackmemory1.jpg", "blackmemory2.jpg", "blackmemory3.jpg" ]
+                    "details" : "Silver Flash Lens, Black Acetate Frame, Standard Fit, 3D Manufactured, 100% UV Protection, Silicone Nose Pad, Laser Engraved Logo, Made in Berlin",
+                    "composition" : "100% acetate",
+                    "price" : "USD 648.00",
+                    "path" : "images/eyewear",
+                    "images" : [ "mmech01.jpg", "mmech02.jpg", "mmech03.jpg" ]
                 },
 
                 {
-                    "title" : "Burning Casentino 002",
-                    "brand" : "Palm Angels",
-                    "details" : "Jacquard-Knit Wool-Blend Sweater, Graphic Pattern in Red, Yellow, Orange, Pilling Effect, Crewneck Collar, Rubberized Logo Appliqué, Made in Italy",
-                    "composition" : "75% wool, 26% polyamide, 2% viscose",
-                    "size" : "XXS, XS, S, M, L, XL, XXL",
-                    "price" : "USD 875.00",
-                    "path" : "images/sweaters",
-                    "images" : [ "burning1.jpg", "burning2.jpg", "burning3.jpg" ]
-                },
-
-                {
-                    "title" : "Factory BCKGR02",
-                    "brand" : "Off-White",
-                    "details" : "Crewneck Collar, Jacquard Graphic Knit, Knit Wool-Blend, Rib Knit Cuffs and Hem, Green Logo at Front, Made in Italy",
-                    "composition" : "53% wool, 36% polyamide, 11% cotton",
-                    "size" : "XXS, XS, S, M, L, XL, XXL",
-                    "price" : "USD 1105.00",
-                    "path" : "images/sweaters",
-                    "images" : [ "factory1.jpg", "factory2.jpg", "factory3.jpg" ]
-                },
-
-                {
-                    "title" : "Fleece BG01",
-                    "brand" : "Rassvet",
-                    "details" : "Navy Trim, Stand Collar, Bungee-Style Drawstring, Half-Zip Closure at Front, Rubberized Logo Appliqué, Imported",
-                    "composition" : "73% polyester, 27% virgin wool",
-                    "size" : "XXS, XS, S, M, L, XL",
-                    "price" : "USD 265.00",
-                    "path" : "images/sweaters",
-                    "images" : [ "fleece1.jpg", "fleece2.jpg", "fleece3.jpg" ]
-                },
-
-                {
-                    "title" : "Mackintosh BCK2",
-                    "brand" : "Alyx",
-                    "details" : "Lazer Print, Hand Applied Sponge Treatment, Double Hood, Silver Toggles for Adjustment, Mackintosh Icon on Hood, Made in Italy",
-                    "composition" : "100% cotton",
-                    "size" : "XXS, XS, S, M, L, XL",
+                    "title" : "Moon Airblast",
+                    "brand" : "Marine Serre",
+                    "details" : "Rimless Plastic Sunglasses, Brown Uni Lens, Standard Fit, Rubberized Nose Pads, 100% UV Protection, Rubberized Temple Tips, Logo Etched at Lens, Made in Italy",
+                    "composition" : "50% plastic, 50% acetate",
                     "price" : "USD 595.00",
-                    "path" : "images/sweaters",
-                    "images" : [ "mackintosh1.jpg", "mackintosh2.jpg", "mackintosh3.jpg" ]
+                    "path" : "images/eyewear",
+                    "images" : [ "moon1.jpg", "moon2.jpg", "moon3.jpg" ]
                 },
 
                 {
-                    "title" : "Manual Hoodie WH01",
+                    "title" : "Neo Round",
+                    "brand" : "Balenciaga",
+                    "details" : "Narrow Rounded Shape, Sharply Wrapped Frame, Standard Fit, Mineral Lenses, 100% UV Protection, Silicone Nose Pads, Laser Engraved Logo, Made in Italy",
+                    "composition" : "100% acetate",
+                    "price" : "USD 350.00",
+                    "path" : "images/eyewear",
+                    "images" : [ "neo1.jpg", "neo2.jpg" ]
+                },
+
+                {
+                    "title" : "Newturtle R1",
+                    "brand" : "Gentle Monster",
+                    "details" : "Acetate Bridge, Colored Lenses, Standard Fit, Metal Frame, 100% UV Protection, Rubberized Nose Pads, Engraved Logo, Made in China",
+                    "composition" : "50% acetate, 50% glass",
+                    "price" : "USD 320.00",
+                    "path" : "images/eyewear",
+                    "images" : [ "newturtle1.jpg", "newturtle2.jpg", "newturtle3.jpg" ]
+                },
+
+                {
+                    "title" : "Scon MO1",
+                    "brand" : "Gentle Monster",
+                    "details" : "Sporty Frame, Matte Black Metal, Standard Fit, Acetate Temple Tips, 100% UV Protection, Rubber Nose Pads, Acetate Encased Logo, Made in China",
+                    "composition" : "100% acetate",
+                    "price" : "USD 320.00",
+                    "path" : "images/eyewear",
+                    "images" : [ "scon1.jpg", "scon2.jpg" ]
+                },
+
+                {
+                    "title" : "Ski PR3",
+                    "brand" : "Balenciaga",
+                    "details" : "Rectangular Acetate Frame, Mirrored Single Lens, Standard Fit, Acetate Temple Tips, 100% UV Protection, Integrated Nose Pads, Logo and Stripes Etched in Black, Made in Italy",
+                    "composition" : "100% acetate",
+                    "price" : "USD 485.00",
+                    "path" : "images/eyewear",
+                    "images" : [ "ski1.jpg", "ski2.jpg", "ski3.jpg" ]
+                },
+
+                {
+                    "title" : "Spike GR2",
+                    "brand" : "Vetements",
+                    "details" : "Acetate Frame, Reflective Uni Lens, Standard Fit, Acetate Temple Tips, 100% UV Protection, Silicone Nose Pad, Etched Logo, Made in Italy",
+                    "composition" : "100% acetate",
+                    "price" : "USD 1040.00",
+                    "path" : "images/eyewear",
+                    "images" : [ "spike1.jpg", "spike2.jpg", "spike3.jpg" ]
+                },
+
+                {
+                    "title" : "Tailwind 001",
                     "brand" : "Heron Preston",
-                    "details" : "Drawstring at Hood, Kangaroo Pocket at Waist, Textile Logo Patch, Rib Knit Hem, Logo Printed in Red, Made in Portugal",
-                    "composition" : "100% cotton. Trim 1: 95% cotton, 5% elastane. Trim 2: 100% polyvinyl.",
-                    "size" : "XXS, XS, S, M, L, XL",
-                    "price" : "USD 520.00",
-                    "path" : "images/sweaters",
-                    "images" : [ "manual1.jpg", "manual2.jpg", "manual3.jpg" ]
+                    "details" : "Transparent Frame, Four Interchangeable Lenses, Standard Fit, Floating Nose Pads, 100% UV Protection, Rubber Temple Inserts, Engraved Logo Details, Made in Italy",
+                    "composition" : "100% polycarbonate",
+                    "price" : "USD 400.00",
+                    "path" : "images/eyewear",
+                    "images" : [ "tailwind1.jpg", "tailwind2.jpg", "tailwind3.jpg" ]
                 },
 
                 {
-                    "title" : "Pascal Painting BL2",
-                    "brand" : "Off-White",
-                    "details" : "Green Signature Graphics, Kangaroo Pocket at Waist, Drawstring, Rib Knit Cuffs and Hem, Rubberized Logo at Hood, Made in Portugal",
-                    "composition" : "100% cotton",
-                    "size" : "XXS, XS, S, M, L, XL, XXL",
-                    "price" : "USD 605.00",
-                    "path" : "images/sweaters",
-                    "images" : [ "pascal1.jpg", "pascal2.jpg", "pascal3.jpg" ]
+                    "title" : "Tralyx Moon",
+                    "brand" : "Marine Serre",
+                    "details" : "Semi Rimless, Velvet Gold Tone, Standard Fit, Cut-Out Detailing, 100% UV Protection, Mirrored Uni Frame Lens, Laser Engraved Logo, Made in Italy",
+                    "composition" : "50% plastic, 50% acetate",
+                    "price" : "USD 462.00",
+                    "path" : "images/eyewear",
+                    "images" : [ "tralyx1.jpg", "tralyx2.jpg", "tralyx3.jpg" ]
                 },
 
                 {
-                    "title" : "Sherpa BCK07",
-                    "brand" : "Nike",
-                    "details" : "Tonal Nylon Taffeta Panels, Half-Zip Closure, Zippered Kangaroo Pocket, Fully Lined, Embroidered Logo Appliqué, Imported",
-                    "composition" : "Body: 100% polyester, Trim: 100% nylon, Lining: 100% polyester",
-                    "size" : "XXS, XS, S, M, L, XL, XXL",
-                    "price" : "USD 140.00",
-                    "path" : "images/sweaters",
-                    "images" : [ "sherpa1.jpg", "sherpa2.jpg", "sherpa3.jpg" ]
-                },
-
-                {
-                    "title" : "Stars BCK1",
-                    "brand" : "Clot",
-                    "details" : "Graphic Pattern Throughout, Drawstring at Hood, Kangaroo Pocket at Waist, Rib Knit Cuffs and Hem, Textile Logo Patch, Imported",
-                    "composition" : "65% cotton, 35% polyester",
-                    "size" : "S, M, L, XL, XXL",
-                    "price" : "USD 190.00",
-                    "path" : "images/sweaters",
-                    "images" : [ "stars1.jpg", "stars2.jpg", "stars3.jpg" ]
-                },
-
-                {
-                    "title" : "Tonal Ray GR1",
-                    "brand" : "A-Cold-Wall*",
-                    "details" : "Tie-Dye Pattern, Exposed Seams, Drawstring at Hood, Welt Pockets at Waist, Logo Bonded in Black, Imported",
-                    "composition" : "100% Cotton",
-                    "size" : "XXS, XS, S, M, L, XL, XXL",
-                    "price" : "USD 425.00",
-                    "path" : "images/sweaters",
-                    "images" : [ "tonalray1.jpg", "tonalray2.jpg", "tonalray3.jpg" ]
+                    "title" : "Zip Tie OC1",
+                    "brand" : "Ambush",
+                    "details" : "Orange Uni Lens, Rimless, Standard Fit, Zip Tie Details, 100% UV Protection, Silicone Nose Pads, Metallic Logo Accessory, Made in Italy",
+                    "composition" : "100% acetate",
+                    "price" : "USD 350.00",
+                    "path" : "images/eyewear",
+                    "images" : [ "zip1.jpg", "zip2.jpg", "zip3.jpg" ]
                 }
             ],
 
@@ -497,156 +515,138 @@
                 }
             ],
 
-            "EYEWEAR" : [
-                {
-                    "title" : "AFIX 032",
-                    "brand" : "Gentle Monster",
-                    "details" : "Stainless Steel, Gold Frame, Standard Fit, Apricot Mirrored Lens, 100% UV Protection, Adjustable Silicone Nose Pads, Clear Acetate Temple Tips, Made in Korea",
-                    "composition" : "50% stainless steel, 50% glass",
-                    "price" : "USD 310.00",
-                    "path" : "images/eyewear",
-                    "images" : [ "afix1.jpg", "afix2.jpg" ]
+            "SWEATERS" : [
 
-                },
-    
                 {
-                    "title" : "Gradient BLCK1",
-                    "brand" : "Prada",
-                    "details" : "Single Reflective Lens, Multicolor Gradient, Standard Fit, Tonal Hardware, 100% UV Protection, Transparent Rubber Nose Pads, Logo Engraved, Made in Italy",
-                    "composition" : "50% metal, 50% glass",
-                    "price" : "USD 290.00",
-                    "path" : "images/eyewear",
-                    "images" : [ "blck1.jpg", "blck2.jpg", "blck3.jpg" ]
-                },
-                
-                {
-                    "title" : "Cold YC2",
-                    "brand" : "Gentle Monster",
-                    "details" : "Uni Frame Lens, Flatba Frame, Standard Fit, Acetate, 100% UV Protection, Transparent Nose Pads, Logo Detailed Center, Made in China",
-                    "composition" : "50% acetate, 50% glass",
-                    "price" : "USD 320.00",
-                    "path" : "images/eyewear",
-                    "images" : [ "cold1.jpg", "cold2.jpg", "cold3.jpg" ]
+                    "title" : "Allover GRBL1",
+                    "brand" : "Clot",
+                    "details" : "Paint Splatter Effect, Kangaroo Pocket at Waist, Drawstring, Rib Knit Cuffs and Hem, Tonal Logo Pattern, Imported",
+                    "composition" : "65% cotton, 35% polyester",
+                    "size" : "XXS, XS, S, M, L, XL, XXL",
+                    "price" : "USD 205.00",
+                    "path" : "images/sweaters",
+                    "images" : [ "allover1.jpg", "allover2.jpg", "allover3.jpg" ]
                 },
 
                 {
-                    "title" : "Fire Oval",
-                    "brand" : "Balenciaga",
-                    "details" : "Wraparound Oval Shape, Sculptural Metal Frame, Adjustable Smart Fit, Nylon Lens, 100% UVA Protection, BB Nose Pads, Lasered Logo, Made in Italy",
-                    "composition" : "100% metal",
-                    "price" : "USD 450.00",
-                    "path" : "images/eyewear",
-                    "images" : [ "fire1.jpg", "fire2.jpg", "fire3.jpg" ]
+                    "title" : "Alby-Y BL3",
+                    "brand" : "Diesel",
+                    "details" : "Drawstring at Hood, Kangaroo Pocket at Waist, Textile Logo Patch, Rib Knit Cuffs and Hem, Logo Flag, Imported",
+                    "composition" : "Body: 100% cotton, Trim: 95% cotton, 5% elastane",
+                    "size" : "XXS, XS, S, M, L, XL, XXL",
+                    "price" : "USD 250.00",
+                    "path" : "images/sweaters",
+                    "images" : [ "alby1.jpg", "alby2.jpg", "alby3.jpg" ]
                 },
 
                 {
-                    "title" : "Geom GO1",
-                    "brand" : "Loewe",
-                    "details" : "Rectangular Brown Lenses, Gold-Tone Metal, Standard Fit, Leather Trim, 100% UV Protection, Transparent Rubber Nose Pads, Engraved Logo, Made in Italy",
-                    "composition" : "10% leather, 40% metal, 50% glass",
-                    "price" : "USD 430.00",
-                    "path" : "images/eyewear",
-                    "images" : [ "geom1.jpg", "geom2.jpg", "geom3.jpg" ]
-                },
-
-                {
-                    "title" : "MMECH0005",
+                    "title" : "Black Memory BCK05",
                     "brand" : "Maison Margiela",
-                    "details" : "Silver Flash Lens, Black Acetate Frame, Standard Fit, 3D Manufactured, 100% UV Protection, Silicone Nose Pad, Laser Engraved Logo, Made in Berlin",
-                    "composition" : "100% acetate",
-                    "price" : "USD 648.00",
-                    "path" : "images/eyewear",
-                    "images" : [ "mmech01.jpg", "mmech02.jpg", "mmech03.jpg" ]
+                    "details" : "Crewneck Collar, Shadowed Detailing, Signature White Stitching, Raglan Sleeves, Rib Knit Cuffs and Hem, Made in Italy",
+                    "composition" : "Body: 100% cotton, Trim: 94% cotton, 6% elastane",
+                    "size" : "XXS, XS, S, M, L, XL, XXL",
+                    "price" : "USD 790.00",
+                    "path" : "images/sweaters",
+                    "images" : [ "blackmemory1.jpg", "blackmemory2.jpg", "blackmemory3.jpg" ]
                 },
 
                 {
-                    "title" : "Moon Airblast",
-                    "brand" : "Marine Serre",
-                    "details" : "Rimless Plastic Sunglasses, Brown Uni Lens, Standard Fit, Rubberized Nose Pads, 100% UV Protection, Rubberized Temple Tips, Logo Etched at Lens, Made in Italy",
-                    "composition" : "50% plastic, 50% acetate",
+                    "title" : "Burning Casentino 002",
+                    "brand" : "Palm Angels",
+                    "details" : "Jacquard-Knit Wool-Blend Sweater, Graphic Pattern in Red, Yellow, Orange, Pilling Effect, Crewneck Collar, Rubberized Logo Appliqué, Made in Italy",
+                    "composition" : "75% wool, 26% polyamide, 2% viscose",
+                    "size" : "XXS, XS, S, M, L, XL, XXL",
+                    "price" : "USD 875.00",
+                    "path" : "images/sweaters",
+                    "images" : [ "burning1.jpg", "burning2.jpg", "burning3.jpg" ]
+                },
+
+                {
+                    "title" : "Factory BCKGR02",
+                    "brand" : "Off-White",
+                    "details" : "Crewneck Collar, Jacquard Graphic Knit, Knit Wool-Blend, Rib Knit Cuffs and Hem, Green Logo at Front, Made in Italy",
+                    "composition" : "53% wool, 36% polyamide, 11% cotton",
+                    "size" : "XXS, XS, S, M, L, XL, XXL",
+                    "price" : "USD 1105.00",
+                    "path" : "images/sweaters",
+                    "images" : [ "factory1.jpg", "factory2.jpg", "factory3.jpg" ]
+                },
+
+                {
+                    "title" : "Fleece BG01",
+                    "brand" : "Rassvet",
+                    "details" : "Navy Trim, Stand Collar, Bungee-Style Drawstring, Half-Zip Closure at Front, Rubberized Logo Appliqué, Imported",
+                    "composition" : "73% polyester, 27% virgin wool",
+                    "size" : "XXS, XS, S, M, L, XL",
+                    "price" : "USD 265.00",
+                    "path" : "images/sweaters",
+                    "images" : [ "fleece1.jpg", "fleece2.jpg", "fleece3.jpg" ]
+                },
+
+                {
+                    "title" : "Mackintosh BCK2",
+                    "brand" : "Alyx",
+                    "details" : "Lazer Print, Hand Applied Sponge Treatment, Double Hood, Silver Toggles for Adjustment, Mackintosh Icon on Hood, Made in Italy",
+                    "composition" : "100% cotton",
+                    "size" : "XXS, XS, S, M, L, XL",
                     "price" : "USD 595.00",
-                    "path" : "images/eyewear",
-                    "images" : [ "moon1.jpg", "moon2.jpg", "moon3.jpg" ]
+                    "path" : "images/sweaters",
+                    "images" : [ "mackintosh1.jpg", "mackintosh2.jpg", "mackintosh3.jpg" ]
                 },
 
                 {
-                    "title" : "Neo Round",
-                    "brand" : "Balenciaga",
-                    "details" : "Narrow Rounded Shape, Sharply Wrapped Frame, Standard Fit, Mineral Lenses, 100% UV Protection, Silicone Nose Pads, Laser Engraved Logo, Made in Italy",
-                    "composition" : "100% acetate",
-                    "price" : "USD 350.00",
-                    "path" : "images/eyewear",
-                    "images" : [ "neo1.jpg", "neo2.jpg" ]
-                },
-
-                {
-                    "title" : "Newturtle R1",
-                    "brand" : "Gentle Monster",
-                    "details" : "Acetate Bridge, Colored Lenses, Standard Fit, Metal Frame, 100% UV Protection, Rubberized Nose Pads, Engraved Logo, Made in China",
-                    "composition" : "50% acetate, 50% glass",
-                    "price" : "USD 320.00",
-                    "path" : "images/eyewear",
-                    "images" : [ "newturtle1.jpg", "newturtle2.jpg", "newturtle3.jpg" ]
-                },
-
-                {
-                    "title" : "Scon MO1",
-                    "brand" : "Gentle Monster",
-                    "details" : "Sporty Frame, Matte Black Metal, Standard Fit, Acetate Temple Tips, 100% UV Protection, Rubber Nose Pads, Acetate Encased Logo, Made in China",
-                    "composition" : "100% acetate",
-                    "price" : "USD 320.00",
-                    "path" : "images/eyewear",
-                    "images" : [ "scon1.jpg", "scon2.jpg" ]
-                },
-
-                {
-                    "title" : "Ski PR3",
-                    "brand" : "Balenciaga",
-                    "details" : "Rectangular Acetate Frame, Mirrored Single Lens, Standard Fit, Acetate Temple Tips, 100% UV Protection, Integrated Nose Pads, Logo and Stripes Etched in Black, Made in Italy",
-                    "composition" : "100% acetate",
-                    "price" : "USD 485.00",
-                    "path" : "images/eyewear",
-                    "images" : [ "ski1.jpg", "ski2.jpg", "ski3.jpg" ]
-                },
-
-                {
-                    "title" : "Spike GR2",
-                    "brand" : "Vetements",
-                    "details" : "Acetate Frame, Reflective Uni Lens, Standard Fit, Acetate Temple Tips, 100% UV Protection, Silicone Nose Pad, Etched Logo, Made in Italy",
-                    "composition" : "100% acetate",
-                    "price" : "USD 1040.00",
-                    "path" : "images/eyewear",
-                    "images" : [ "spike1.jpg", "spike2.jpg", "spike3.jpg" ]
-                },
-
-                {
-                    "title" : "Tailwind 001",
+                    "title" : "Manual Hoodie WH01",
                     "brand" : "Heron Preston",
-                    "details" : "Transparent Frame, Four Interchangeable Lenses, Standard Fit, Floating Nose Pads, 100% UV Protection, Rubber Temple Inserts, Engraved Logo Details, Made in Italy",
-                    "composition" : "100% polycarbonate",
-                    "price" : "USD 400.00",
-                    "path" : "images/eyewear",
-                    "images" : [ "tailwind1.jpg", "tailwind2.jpg", "tailwind3.jpg" ]
+                    "details" : "Drawstring at Hood, Kangaroo Pocket at Waist, Textile Logo Patch, Rib Knit Hem, Logo Printed in Red, Made in Portugal",
+                    "composition" : "100% cotton. Trim 1: 95% cotton, 5% elastane. Trim 2: 100% polyvinyl.",
+                    "size" : "XXS, XS, S, M, L, XL",
+                    "price" : "USD 520.00",
+                    "path" : "images/sweaters",
+                    "images" : [ "manual1.jpg", "manual2.jpg", "manual3.jpg" ]
                 },
 
                 {
-                    "title" : "Tralyx Moon",
-                    "brand" : "Marine Serre",
-                    "details" : "Semi Rimless, Velvet Gold Tone, Standard Fit, Cut-Out Detailing, 100% UV Protection, Mirrored Uni Frame Lens, Laser Engraved Logo, Made in Italy",
-                    "composition" : "50% plastic, 50% acetate",
-                    "price" : "USD 462.00",
-                    "path" : "images/eyewear",
-                    "images" : [ "tralyx1.jpg", "tralyx2.jpg", "tralyx3.jpg" ]
+                    "title" : "Pascal Painting BL2",
+                    "brand" : "Off-White",
+                    "details" : "Green Signature Graphics, Kangaroo Pocket at Waist, Drawstring, Rib Knit Cuffs and Hem, Rubberized Logo at Hood, Made in Portugal",
+                    "composition" : "100% cotton",
+                    "size" : "XXS, XS, S, M, L, XL, XXL",
+                    "price" : "USD 605.00",
+                    "path" : "images/sweaters",
+                    "images" : [ "pascal1.jpg", "pascal2.jpg", "pascal3.jpg" ]
                 },
 
                 {
-                    "title" : "Zip Tie OC1",
-                    "brand" : "Ambush",
-                    "details" : "Orange Uni Lens, Rimless, Standard Fit, Zip Tie Details, 100% UV Protection, Silicone Nose Pads, Metallic Logo Accessory, Made in Italy",
-                    "composition" : "100% acetate",
-                    "price" : "USD 350.00",
-                    "path" : "images/eyewear",
-                    "images" : [ "zip1.jpg", "zip2.jpg", "zip3.jpg" ]
+                    "title" : "Sherpa BCK07",
+                    "brand" : "Nike",
+                    "details" : "Tonal Nylon Taffeta Panels, Half-Zip Closure, Zippered Kangaroo Pocket, Fully Lined, Embroidered Logo Appliqué, Imported",
+                    "composition" : "Body: 100% polyester, Trim: 100% nylon, Lining: 100% polyester",
+                    "size" : "XXS, XS, S, M, L, XL, XXL",
+                    "price" : "USD 140.00",
+                    "path" : "images/sweaters",
+                    "images" : [ "sherpa1.jpg", "sherpa2.jpg", "sherpa3.jpg" ]
+                },
+
+                {
+                    "title" : "Stars BCK1",
+                    "brand" : "Clot",
+                    "details" : "Graphic Pattern Throughout, Drawstring at Hood, Kangaroo Pocket at Waist, Rib Knit Cuffs and Hem, Textile Logo Patch, Imported",
+                    "composition" : "65% cotton, 35% polyester",
+                    "size" : "S, M, L, XL, XXL",
+                    "price" : "USD 190.00",
+                    "path" : "images/sweaters",
+                    "images" : [ "stars1.jpg", "stars2.jpg", "stars3.jpg" ]
+                },
+
+                {
+                    "title" : "Tonal Ray GR1",
+                    "brand" : "A-Cold-Wall*",
+                    "details" : "Tie-Dye Pattern, Exposed Seams, Drawstring at Hood, Welt Pockets at Waist, Logo Bonded in Black, Imported",
+                    "composition" : "100% Cotton",
+                    "size" : "XXS, XS, S, M, L, XL, XXL",
+                    "price" : "USD 425.00",
+                    "path" : "images/sweaters",
+                    "images" : [ "tonalray1.jpg", "tonalray2.jpg", "tonalray3.jpg" ]
                 }
             ]
         }
