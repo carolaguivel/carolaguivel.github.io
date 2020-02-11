@@ -140,6 +140,17 @@
                 },
 
                 {
+                    "title" : "Factory BCKGR02",
+                    "brand" : "Off-White",
+                    "details" : "Crewneck Collar, Jacquard Graphic Knit, Knit Wool-Blend, Rib Knit Cuffs and Hem, Green Logo at Front, Made in Italy",
+                    "composition" : "53% wool, 36% polyamide, 11% cotton",
+                    "size" : "XXS, XS, S, M, L, XL, XXL",
+                    "price" : "USD 1105.00",
+                    "path" : "images/sweaters",
+                    "images" : [ "factory1.jpg", "factory2.jpg", "factory3.jpg" ]
+                },
+
+                {
                     "title" : "Fleece BG01",
                     "brand" : "Rassvet",
                     "details" : "Navy Trim, Stand Collar, Bungee-Style Drawstring, Half-Zip Closure at Front, Rubberized Logo Appliqué, Imported",
