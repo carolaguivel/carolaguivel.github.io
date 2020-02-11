@@ -527,6 +527,17 @@
                 },
 
                 {
+                    "title" : "Camo + Transfer NEON01",
+                    "brand" : "Nike",
+                    "details" : "Dry Fit Top, Hand Applied Sponge Treatment, Crewneck Collar, Logo Transfer on Front, Imported",
+                    "composition" : "100% Nylon",
+                    "size" : "XS, S, M, L, XL, XXL",
+                    "price" : "USD 160.00",
+                    "path" : "images/shirts",
+                    "images" : [ "camotransfer1.jpg", "camotransfer2.jpg", "camotransfer3.jpg" ]
+                },
+
+                {
                     "title" : "Moon Flag 1969",
                     "brand" : "Calvin Klein",
                     "details" : "Classic Collar, Button Closure, Button Flap Chest Pockets, Curved Hem, Imported",
