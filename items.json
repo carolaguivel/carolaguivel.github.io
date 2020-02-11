@@ -93,7 +93,7 @@
                 }
             ],
 
-            "HOODIES" : [
+            "SWEATERS" : [
 
                 {
                     "title" : "Allover GRBL1",
@@ -102,7 +102,7 @@
                     "composition" : "65% cotton, 35% polyester",
                     "size" : "XXS, XS, S, M, L, XL, XXL",
                     "price" : "USD 205.00",
-                    "path" : "images/hoodies",
+                    "path" : "images/sweaters",
                     "images" : [ "allover1.jpg", "allover2.jpg", "allover3.jpg" ]
                 },
 
@@ -113,7 +113,7 @@
                     "composition" : "Body: 100% cotton, Trim: 95% cotton, 5% elastane",
                     "size" : "XXS, XS, S, M, L, XL, XXL",
                     "price" : "USD 250.00",
-                    "path" : "images/hoodies",
+                    "path" : "images/sweaters",
                     "images" : [ "alby1.jpg", "alby2.jpg", "alby3.jpg" ]
                 },
 
@@ -124,7 +124,7 @@
                     "composition" : "100% cotton. Trim 1: 95% cotton, 5% elastane. Trim 2: 100% polyvinyl.",
                     "size" : "XXS, XS, S, M, L, XL",
                     "price" : "USD 520.00",
-                    "path" : "images/hoodies",
+                    "path" : "images/sweaters",
                     "images" : [ "manual1.jpg", "manual2.jpg", "manual3.jpg" ]
                 },
 
@@ -135,7 +135,7 @@
                     "composition" : "100% cotton",
                     "size" : "XXS, XS, S, M, L, XL, XXL",
                     "price" : "USD 605.00",
-                    "path" : "images/hoodies",
+                    "path" : "images/sweaters",
                     "images" : [ "pascal1.jpg", "pascal2.jpg", "pascal3.jpg" ]
                 },
 
@@ -146,7 +146,7 @@
                     "composition" : "65% cotton, 35% polyester",
                     "size" : "S, M, L, XL, XXL",
                     "price" : "USD 190.00",
-                    "path" : "images/hoodies",
+                    "path" : "images/sweaters",
                     "images" : [ "stars1.jpg", "stars2.jpg", "stars3.jpg" ]
                 }
             ],
