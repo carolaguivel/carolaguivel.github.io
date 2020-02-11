@@ -117,6 +117,17 @@
                 },
 
                 {
+                    "title" : "Tracks BCK2",
+                    "brand" : "Off-White",
+                    "details" : "Water-Resistant, Elasticized Waistband, Ankle Cuffs, Two Pocket Styling, Rubberized Logo at Front, Imported",
+                    "composition" : "100% Polyamide",
+                    "size" : "XXS, XS, S, M, L, XL, XXL",
+                    "price" : "USD 820.00",
+                    "path" : "images/bottoms",
+                    "images" : [ "tracks1.jpg", "tracks2.jpg", "tracks3.jpg" ]
+                },
+
+                {
                     "title" : "Zone-9 Moto BCK1",
                     "brand" : "Alyx",
                     "details" : "Leather Pants, 5 Pockets, Curved Seam Details with Patent Leather, Textured Leather Details, Jacquard Logo, Made in Italy",
