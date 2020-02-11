@@ -93,6 +93,19 @@
                 }
             ],
 
+            "BOTTOMS" : [
+                {
+                    "title" : "Scaffolded Circuit BR1",
+                    "brand" : "A-Cold-Wall*",
+                    "details" : "Water-Resistant, Duplexed Grosgrain Details, Full-Length Drawcord Cinching, Protruding Ankle Fixtures, Rubberised Logo Patch, Imported",
+                    "composition" : "100% Nylon",
+                    "size" : "XS, S, M, L, XL, XXL",
+                    "price" : "USD 415.00",
+                    "path" : "images/bottoms",
+                    "images" : [ "scaffolded1.jpg", "scaffolded2.jpg", "scaffolded3.jpg", "scaffolded4.jpg" ]
+                }
+            ],
+
             "EYEWEAR" : [
                 {
                     "title" : "AFIX 032",
