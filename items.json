@@ -557,6 +557,28 @@
                     "price" : "USD 791.00",
                     "path" : "images/shirts",
                     "images" : [ "silver1.jpg", "silver2.jpg", "silver3.jpg" ]
+                },
+
+                {
+                    "title" : "SS Tee WH1",
+                    "brand" : "Alyx",
+                    "details" : "Short Sleeves, Organic Cotton Blend, Digital Graphic Print, Logo Rubber Patch, Made in Italy",
+                    "composition" : "100% Cotton",
+                    "size" : "XS, S, M, L, XL, XXL",
+                    "price" : "USD 150.00",
+                    "path" : "images/shirts",
+                    "images" : [ "sstee1.jpg", "sstee2.jpg", "sstee3.jpg" ]
+                }
+
+                {
+                    "title" : "The Psytrance Multi 001",
+                    "brand" : "MISBHV",
+                    "details" : "Multicolor, Round Neck, Patchwork Throughout, White Monogram on Chest, Made in Poland",
+                    "composition" : "100% Cotton",
+                    "size" : "XS, S, M, L, XL, XXL",
+                    "price" : "USD 266.00",
+                    "path" : "images/shirts",
+                    "images" : [ "psytrance1.jpg", "psytrance2.jpg", "psytrance3.jpg" ]
                 }
             ],
 
