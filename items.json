@@ -106,6 +106,17 @@
                 },
 
                 {
+                    "title" : "Tactical Taupe 003",
+                    "brand" : "Alyx",
+                    "details" : "Light Garmen Dyed Nylon, Front Velcro Flap, Velcro Details at Knee and Bottom, Cargo Pockets, Logo-Branded Hardware, Made in Italy",
+                    "composition" : "100% Nylon",
+                    "size" : "XS, S, M, L, XL, XXL",
+                    "price" : "USD 550.00",
+                    "path" : "images/bottoms",
+                    "images" : [ "tactical1.jpg", "tactical2.jpg", "tactical3.jpg", "tactical4.jpg" ]
+                },
+
+                {
                     "title" : "Zone-9 Moto BCK1",
                     "brand" : "Alyx",
                     "details" : "Leather Pants, 5 Pockets, Curved Seam Details with Patent Leather, Textured Leather Details, Jacquard Logo, Made in Italy",
