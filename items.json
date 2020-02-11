@@ -524,7 +524,18 @@
                     "price" : "USD 300.00",
                     "path" : "images/shirts",
                     "images" : [ "bruised1.jpg", "bruised2.jpg", "bruised3.jpg" ]
-                }   
+                },
+                
+                {
+                    "title" : "Silver Lake 003",
+                    "brand" : "Ambush",
+                    "details" : "Classic Collar, Button Closure, Chest D-Ring Details, Short Sleeves, Made in Japan",
+                    "composition" : "100% Polyester",
+                    "size" : "XS, S, M, L, XL, XXL",
+                    "price" : "USD 791.00",
+                    "path" : "images/shirts",
+                    "images" : [ "silver1.jpg", "silver2.jpg", "silver3.jpg" ]
+                }
             ],
 
             "SHOES" : [
