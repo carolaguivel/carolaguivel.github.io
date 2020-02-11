@@ -514,6 +514,19 @@
                 }
             ],
 
+            "SHIRTS" : [
+                {
+                    "title" : "Bruised PR1",
+                    "brand" : "A-Cold-Wall*",
+                    "details" : "Relaxed Fit, Discoidal Gradient Graphic, Button-Closed Cuffs, All Hardware Branded, Made in Portugal",
+                    "composition" : "100% Cotton",
+                    "size" : "XS, S, M, L, XL, XXL",
+                    "price" : "USD 300.00",
+                    "path" : "images/shirts",
+                    "images" : [ "bruised1.jpg", "bruised2.jpg", "bruised3.jpg" ]
+                }   
+            ],
+
             "SHOES" : [
 
                 {
