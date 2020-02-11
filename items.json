@@ -102,7 +102,18 @@
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 415.00",
                     "path" : "images/bottoms",
-                    "images" : [ "scaffolded1.jpg", "scaffolded2.jpg", "scaffolded3.jpg", "scaffolded4.jpg" ]
+                    "images" : [ "scaffolded1.jpg", "scaffolded2.jpg", "scaffolded3.jpg" ]
+                },
+
+                {
+                    "title" : "Zone-9 Moto BCK1",
+                    "brand" : "Alyx",
+                    "details" : "Leather Pants, 5 Pockets, Curved Seam Details with Patent Leather, Textured Leather Details, Jacquard Logo, Made in Italy",
+                    "composition" : "100% Leather",
+                    "size" : "XS, S, M, L, XL, XXL",
+                    "price" : "USD 4995.00",
+                    "path" : "images/bottoms",
+                    "images" : [ "zonemoto1.jpg", "zonemoto2.jpg", "zonemoto3.jpg", "zonemoto4.jpg" ]
                 }
             ],
 
