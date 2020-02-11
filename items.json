@@ -118,6 +118,17 @@
                 },
 
                 {
+                    "title" : "Burning Casentino 002",
+                    "brand" : "Palm Angels",
+                    "details" : "Jacquard-Knit Wool-Blend Sweater, Graphic Pattern in Red, Yellow, Orange, Pilling Effect, Crewneck Collar, Rubberized Logo Appliqué, Made in Italy",
+                    "composition" : "75% wool, 26% polyamide, 2% viscose",
+                    "size" : "XXS, XS, S, M, L, XL, XXL",
+                    "price" : "USD 875.00",
+                    "path" : "images/sweaters",
+                    "images" : [ "burning1.jpg", "burning2.jpg", "burning3.jpg" ]
+                },
+
+                {
                     "title" : "Mackintosh BCK2",
                     "brand" : "Alyx",
                     "details" : "Lazer Print, Hand Applied Sponge Treatment, Double Hood, Silver Toggles for Adjustment, Mackintosh Icon on Hood, Made in Italy",
