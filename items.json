@@ -497,14 +497,14 @@
                 }
             ],
 
-            "SUNGLASSES" : [
+            "EYEWEAR" : [
                 {
                     "title" : "AFIX 032",
                     "brand" : "Gentle Monster",
                     "details" : "Stainless Steel, Gold Frame, Standard Fit, Apricot Mirrored Lens, 100% UV Protection, Adjustable Silicone Nose Pads, Clear Acetate Temple Tips, Made in Korea",
                     "composition" : "50% stainless steel, 50% glass",
                     "price" : "USD 310.00",
-                    "path" : "images/sunglasses",
+                    "path" : "images/eyewear",
                     "images" : [ "afix1.jpg", "afix2.jpg" ]
 
                 },
@@ -515,7 +515,7 @@
                     "details" : "Single Reflective Lens, Multicolor Gradient, Standard Fit, Tonal Hardware, 100% UV Protection, Transparent Rubber Nose Pads, Logo Engraved, Made in Italy",
                     "composition" : "50% metal, 50% glass",
                     "price" : "USD 290.00",
-                    "path" : "images/sunglasses",
+                    "path" : "images/eyewear",
                     "images" : [ "blck1.jpg", "blck2.jpg", "blck3.jpg" ]
                 },
                 
@@ -525,7 +525,7 @@
                     "details" : "Uni Frame Lens, Flatba Frame, Standard Fit, Acetate, 100% UV Protection, Transparent Nose Pads, Logo Detailed Center, Made in China",
                     "composition" : "50% acetate, 50% glass",
                     "price" : "USD 320.00",
-                    "path" : "images/sunglasses",
+                    "path" : "images/eyewear",
                     "images" : [ "cold1.jpg", "cold2.jpg", "cold3.jpg" ]
                 },
 
@@ -535,7 +535,7 @@
                     "details" : "Wraparound Oval Shape, Sculptural Metal Frame, Adjustable Smart Fit, Nylon Lens, 100% UVA Protection, BB Nose Pads, Lasered Logo, Made in Italy",
                     "composition" : "100% metal",
                     "price" : "USD 450.00",
-                    "path" : "images/sunglasses",
+                    "path" : "images/eyewear",
                     "images" : [ "fire1.jpg", "fire2.jpg", "fire3.jpg" ]
                 },
 
@@ -545,7 +545,7 @@
                     "details" : "Rectangular Brown Lenses, Gold-Tone Metal, Standard Fit, Leather Trim, 100% UV Protection, Transparent Rubber Nose Pads, Engraved Logo, Made in Italy",
                     "composition" : "10% leather, 40% metal, 50% glass",
                     "price" : "USD 430.00",
-                    "path" : "images/sunglasses",
+                    "path" : "images/eyewear",
                     "images" : [ "geom1.jpg", "geom2.jpg", "geom3.jpg" ]
                 },
 
@@ -555,7 +555,7 @@
                     "details" : "Silver Flash Lens, Black Acetate Frame, Standard Fit, 3D Manufactured, 100% UV Protection, Silicone Nose Pad, Laser Engraved Logo, Made in Berlin",
                     "composition" : "100% acetate",
                     "price" : "USD 648.00",
-                    "path" : "images/sunglasses",
+                    "path" : "images/eyewear",
                     "images" : [ "mmech01.jpg", "mmech02.jpg", "mmech03.jpg" ]
                 },
 
@@ -565,7 +565,7 @@
                     "details" : "Rimless Plastic Sunglasses, Brown Uni Lens, Standard Fit, Rubberized Nose Pads, 100% UV Protection, Rubberized Temple Tips, Logo Etched at Lens, Made in Italy",
                     "composition" : "50% plastic, 50% acetate",
                     "price" : "USD 595.00",
-                    "path" : "images/sunglasses",
+                    "path" : "images/eyewear",
                     "images" : [ "moon1.jpg", "moon2.jpg", "moon3.jpg" ]
                 },
 
@@ -575,7 +575,7 @@
                     "details" : "Narrow Rounded Shape, Sharply Wrapped Frame, Standard Fit, Mineral Lenses, 100% UV Protection, Silicone Nose Pads, Laser Engraved Logo, Made in Italy",
                     "composition" : "100% acetate",
                     "price" : "USD 350.00",
-                    "path" : "images/sunglasses",
+                    "path" : "images/eyewear",
                     "images" : [ "neo1.jpg", "neo2.jpg" ]
                 },
 
@@ -585,7 +585,7 @@
                     "details" : "Acetate Bridge, Colored Lenses, Standard Fit, Metal Frame, 100% UV Protection, Rubberized Nose Pads, Engraved Logo, Made in China",
                     "composition" : "50% acetate, 50% glass",
                     "price" : "USD 320.00",
-                    "path" : "images/sunglasses",
+                    "path" : "images/eyewear",
                     "images" : [ "newturtle1.jpg", "newturtle2.jpg", "newturtle3.jpg" ]
                 },
 
@@ -595,7 +595,7 @@
                     "details" : "Sporty Frame, Matte Black Metal, Standard Fit, Acetate Temple Tips, 100% UV Protection, Rubber Nose Pads, Acetate Encased Logo, Made in China",
                     "composition" : "100% acetate",
                     "price" : "USD 320.00",
-                    "path" : "images/sunglasses",
+                    "path" : "images/eyewear",
                     "images" : [ "scon1.jpg", "scon2.jpg" ]
                 },
 
@@ -605,7 +605,7 @@
                     "details" : "Rectangular Acetate Frame, Mirrored Single Lens, Standard Fit, Acetate Temple Tips, 100% UV Protection, Integrated Nose Pads, Logo and Stripes Etched in Black, Made in Italy",
                     "composition" : "100% acetate",
                     "price" : "USD 485.00",
-                    "path" : "images/sunglasses",
+                    "path" : "images/eyewear",
                     "images" : [ "ski1.jpg", "ski2.jpg", "ski3.jpg" ]
                 },
 
@@ -615,7 +615,7 @@
                     "details" : "Acetate Frame, Reflective Uni Lens, Standard Fit, Acetate Temple Tips, 100% UV Protection, Silicone Nose Pad, Etched Logo, Made in Italy",
                     "composition" : "100% acetate",
                     "price" : "USD 1040.00",
-                    "path" : "images/sunglasses",
+                    "path" : "images/eyewear",
                     "images" : [ "spike1.jpg", "spike2.jpg", "spike3.jpg" ]
                 },
 
@@ -625,7 +625,7 @@
                     "details" : "Transparent Frame, Four Interchangeable Lenses, Standard Fit, Floating Nose Pads, 100% UV Protection, Rubber Temple Inserts, Engraved Logo Details, Made in Italy",
                     "composition" : "100% polycarbonate",
                     "price" : "USD 400.00",
-                    "path" : "images/sunglasses",
+                    "path" : "images/eyewear",
                     "images" : [ "tailwind1.jpg", "tailwind2.jpg", "tailwind3.jpg" ]
                 },
 
@@ -635,7 +635,7 @@
                     "details" : "Semi Rimless, Velvet Gold Tone, Standard Fit, Cut-Out Detailing, 100% UV Protection, Mirrored Uni Frame Lens, Laser Engraved Logo, Made in Italy",
                     "composition" : "50% plastic, 50% acetate",
                     "price" : "USD 462.00",
-                    "path" : "images/sunglasses",
+                    "path" : "images/eyewear",
                     "images" : [ "tralyx1.jpg", "tralyx2.jpg", "tralyx3.jpg" ]
                 },
 
@@ -645,7 +645,7 @@
                     "details" : "Orange Uni Lens, Rimless, Standard Fit, Zip Tie Details, 100% UV Protection, Silicone Nose Pads, Metallic Logo Accessory, Made in Italy",
                     "composition" : "100% acetate",
                     "price" : "USD 350.00",
-                    "path" : "images/sunglasses",
+                    "path" : "images/eyewear",
                     "images" : [ "zip1.jpg", "zip2.jpg", "zip3.jpg" ]
                 }
             ]
