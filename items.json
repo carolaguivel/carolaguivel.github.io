@@ -855,8 +855,9 @@
                     "author" : "John F. Kennedy",
                     "date" : "September 12, 1962",
                     "location" : "Houston, Texas",
-                    "path" : "audio/",
-                    "files" : "wechoosetogotothemoon.mp3"
+                    "path" : "audio/gotomoon",
+                    "audio" : "wechoosetogotothemoon.mp3",
+                    "images" : [ "johnfkennedy1.jpg", "johnfkennedy2.jpg" ]
                 }
             ]
         }
