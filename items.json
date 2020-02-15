@@ -845,5 +845,20 @@
                 }
             ]
         }
+    ],
+
+    "RUNDFUNK" : [
+        {
+            "NEWS1" : [
+                {
+                    "title" : "We choose to go to the Moon",
+                    "author" : "John F. Kennedy",
+                    "date" : "September 12, 1962",
+                    "location" : "Houston, Texas",
+                    "path" : "audio/",
+                    "files" : "wechoosetogotothemoon.mp3"
+                }
+            ]
+        }
     ]
 }
