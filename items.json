@@ -851,11 +851,15 @@
 
                 {
                     "title" : "testing 123",
+                    "author" : "Buzz Aldrin",
+                    "date" : "Nov 7, 1991",
                     "paragraphs1" : ["hello", "bye", "whats up", "cool"],
                     "quote1" : "quote 1",
                     "paragraphs2" : ["hi", "yello", "byeyey", "uncool"],
                     "quote2" : "quote 2",
-                    "paragraphs3" : ["hoho", "heyo", "ok bye", "forever"]
+                    "paragraphs3" : ["hoho", "heyo", "ok bye", "forever"],
+                    "path" : "images/times",
+                    "images" : [ "futureinspace1.jpg", "futureinspace2.jpg" ]
                 }
             ]
         }
