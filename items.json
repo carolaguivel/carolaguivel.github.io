@@ -1,7 +1,7 @@
 {
-    "WARCORE" : [
+    "warcore" : [
         {
-            "BAGS" : [
+            "bags" : [
                 {
                     "title" : "032 Duffel BCK001",
                     "brand" : "032c",
@@ -93,7 +93,7 @@
                 }
             ],
 
-            "BOTTOMS" : [
+            "bottoms" : [
                 {
                     "title" : "Block Blue BL1",
                     "brand" : "Y/Project",
@@ -194,7 +194,7 @@
                 }
             ],
 
-            "EYEWEAR" : [
+            "eyewear" : [
                 {
                     "title" : "AFIX 032",
                     "brand" : "Gentle Monster",
@@ -347,7 +347,7 @@
                 }
             ],
 
-            "OUTERWEAR" : [
+            "outerwear" : [
                 {
                     "title" : "Asymmetric GRYBL01",
                     "brand" : "A-Cold-Wall*",
@@ -514,7 +514,7 @@
                 }
             ],
 
-            "SHIRTS" : [
+            "shirts" : [
                 {
                     "title" : "Bruised PR1",
                     "brand" : "A-Cold-Wall*",
@@ -582,7 +582,7 @@
                 }
             ],
 
-            "SHOES" : [
+            "shoes" : [
 
                 {
                     "title" : "1017 Alison WH7",
@@ -684,7 +684,7 @@
                 }
             ],
 
-            "SWEATERS" : [
+            "sweaters" : [
 
                 {
                     "title" : "Allover GRBL1",
@@ -821,9 +821,9 @@
         }
     ],
 
-    "TIMES" : [
+    "times" : [
         {
-            "MOON" : [
+            "moon" : [
                 {
                     "title" : "Humanity's Future in Space",
                     "author" : "Buzz Aldrin",
@@ -847,9 +847,9 @@
         }
     ],
 
-    "RUNDFUNK" : [
+    "rundfunk" : [
         {
-            "NEWS1" : [
+            "news1" : [
                 {
                     "title" : "We choose to go to the Moon",
                     "author" : "John F. Kennedy",
