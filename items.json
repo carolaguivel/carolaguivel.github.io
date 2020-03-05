@@ -202,7 +202,7 @@
                     "composition" : "50% stainless steel, 50% glass",
                     "price" : "USD 310.00",
                     "path" : "images/eyewear",
-                    "images" : [ "afix1.jpg", "afix2.jpg" ]
+                    "images" : [ "afix1.jpg", "afix2.jpg", "afix3.jpg" ]
 
                 },
     
@@ -253,7 +253,7 @@
                     "composition" : "100% acetate",
                     "price" : "USD 648.00",
                     "path" : "images/eyewear",
-                    "images" : [ "mmech01.jpg", "mmech02.jpg", "mmech03.jpg" ]
+                    "images" : [ "mmech1.jpg", "mmech2.jpg", "mmech3.jpg" ]
                 },
 
                 {
@@ -273,7 +273,7 @@
                     "composition" : "100% acetate",
                     "price" : "USD 350.00",
                     "path" : "images/eyewear",
-                    "images" : [ "neo1.jpg", "neo2.jpg" ]
+                    "images" : [ "neo1.jpg", "neo2.jpg", "neo3.jpg" ]
                 },
 
                 {
@@ -293,7 +293,7 @@
                     "composition" : "100% acetate",
                     "price" : "USD 320.00",
                     "path" : "images/eyewear",
-                    "images" : [ "scon1.jpg", "scon2.jpg" ]
+                    "images" : [ "scon1.jpg", "scon2.jpg", "scon3.jpg" ]
                 },
 
                 {
