@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Portal</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/umw1eou.css">
+    <script src="draggabilly/draggabilly.pkgd.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</head>
+<body>
+
+    <div class="header">
+        <p id="header-location">Welcome to your Home Portal</p>
+    </div>  
+
+    <div class="form">
+        <div class="input-wrapper">
+            <span id="input-location" class="input-location">~</span>
+            <p id="username">Command:</p>
+            <div id="message" rows="1" contenteditable></div>
+            <p id="time">Session: <span id="clock"></span></p>
+        </div>
+    </div>
+
+    <div id="message-board-wrapper">
+        <div id="message-view"></div>
+        <div id="sidepanel-view"></div>
+    </div>
+
+    <div id="windows-wrapper"></div>
+
+<script>
+
+var myurl = "https://carolaguivel.github.io/items.json";
+
+$("#message").on("keyup", (event) => {
+	if (event.which === 13) $postMessage();
+})
+
+function $postMessage() {
+	$("#message").find("br").remove();
+    let $username = "",
+        $message = $("#message").html().trim(),
+        $location = $("#input-location").html().trim();
+    
+    $message = $message.replace(/<div>/, "<br>").replace(/<div>/g, "").replace(/<\/div>/g, "<br>").replace(/<br>/g, " ").trim();
+    
+    let $split = $message.split(" "),
+        $message1 = "",
+        $message2 = "",
+        $message3 = "",
+        $message4 = "",
+        $locationhome = ["credits", "h+ times", "info", "rundfunk", "warcore"],
+        $locationwarcore = ["eyewear", "bags", "bottoms", "outerwear", "shirts", "shoes", "sweaters"];
+        $locationeyewear = ["afix 032", "gradient blck1", "cold yc2", "fire oval", "geom go1", "mmech0005", "moon airblast", "neo round", "newturtle r1", "scon mo1", "ski pr3", "spike gr2", "tailwind 001", "tralyx moon", "zip tie oc1"],
+        $locationbags = ["032 duffel bck001", "moncler dry bck004", "utility case bl2", "baby-x gry002", "padded nylon bl1", "black tank bck003", "pixelated tote b1", "fragment n05gr1", "tool bag bck002"],
+        $locationbottoms = ["block blue bl1", "parachute cargo gr01", "zone-9 moto bck1", "camo gr02", "scaffolded circuit br1", "ispa gr03", "tactical taupe 003", "manual sweats bck3", "tracks bck2"],
+        $locationouterwear = ["asymmetric grybl01", "deimos orng001", "night crawler bg1", "parus coat bck3", "quantum dye para bck3", "moncler cosmos orng2", "memory nylon gr1", "puffer gilet orng1", "sirus wh1", "idrc allochroic gr3", "passage gr1", "oslo down gr3", "camo beige02", "iridescent down gr2", "nrgxse r1"],
+        $locationshirts = ["bruised pr1", "ss tee wh1", "camo + transfer neon01", "the psytrance multi 001", "moon flag 1969", "silver lake 003"],
+        $locationsweaters = ["allover grbl1", "factory bckgr02", "pascal painting bl2", "alby-y bl3", "fleece bg01", "sherpa bck07", "black memory bck05", "mackintosh bck2", "stars bck1", "burning casentino 002", "manual hoodie wh01", "tonal ray gr1"],
+        $locationshoes = ["1017 alison wh7", "hiking boot blk0001", "vapormax 360", "bamba02", "hybrid 1941", "brown jaw br02", "nubuck pr2", "gsg 9high", "off br3"];
+
+    if ( $split.length == 1 ){
+        $message1 = $split[0]
+    } else if ( $split.length == 2 ) {
+        $message1 = $split[0]
+        $message2 = $split[1]
+    } else if ( $split.length == 3) {
+        $message1 = $split[0]
+        $message2 = $split[1]
+        $message3 = $split[2]
+        $message2 = $message2.concat(" ", $message3)
+    } else if ( $split.length == 4) {
+        $message1 = $split[0]
+        $message2 = $split[1]
+        $message3 = $split[2]
+        $message4 = $split[3]
+        $message2 = $message2.concat(" ", $message3, " ", $message4)
+    }
+
+    function homeSearch(location) {
+        return location == $message2;
+    }
+
+    let $form = `<div class="input-posted">
+                    <span class="input-location">${$location}</span>
+                    <p><span>${timeStamp()}</span></p>
+                    <p>Command:</p>
+                    <div id="message" rows="1">${$message}</div>
+                </div>`;
+
+    switch ($message1) {
+        case "nsun":
+            switch ($location) {
+                case "~":
+                    $("#message-view").append(`
+                        <div class="form-posted">${$form}</div>`
+                    );
+                    $("#username").text($message2 + "$:")
+                break;
+                default:
+                    $("#message-view").append(`
+                        <div class="form-posted">
+                            ${$form}
+                            <div class="form-spacer"></div>
+                            <p class="output-posted">-err: wrong location</p>
+                        </div>`
+                    );
+                break;
+            }
+        break;
+        case "sli":
+            switch ($location) {
+                case "~":
+                    $("#message-view").append(`
+                        <div class="form-posted">
+                            ${$form}
+                            <div class="form-spacer"></div>
+                            <div class="output-posted grid-4"><p>credits</p><p>h+ times</p><p></p><p></p><p>info</p><p>rundfunk</p><p></p><p></p><p>warcore</p></div>
+                        </div>`
+                    );
+                break;
+                case "warcore": 
+                    $("#message-view").append(`
+                        <div class="form-posted">
+                            ${$form}
+                            <div class="form-spacer"></div>
+                            <div class="output-posted grid-4"><p>eyewear</p><p>bags</p><p>bottoms</p><p></p><p>outerwear</p><p>shirts</p><p></p><p></p><p>sweaters</p><p>shoes</p></div>
+                        </div>`
+                    );
+                break;    
+                case "h+ times": 
+                    $(".times").empty()
+                    $("#message-view").append(`
+                        <div class="form-posted">
+                            ${$form}
+                            <div class="form-spacer"></div>
+                            <div class="output-posted times grid-4"></div>
+                        </div>`
+                    );
+                    $.getJSON(myurl, function(data){
+                        for (var i = 0; i < data.times[0].moon.length; i++){
+                            $(".times").append( "<p>" + data.times[0].moon[i].title + "</p>")
+                        };
+                    });
+                break;
+                case "eyewear": 
+                    $(".eyewear").empty()
+                    $("#message-view").append(`
+                        <div class="form-posted">
+                            ${$form}
+                            <div class="form-spacer"></div>
+                            <div class="output-posted eyewear grid-4"></div>
+                        </div>`
+                    );
+                    $.getJSON(myurl, function(data){
+                        for (var i = 0; i < data.warcore[0].eyewear.length; i++){
+                            $(".eyewear").append( "<p>" + data.warcore[0].eyewear[i].title + "</p>")
+                        };
+                    });
+                break;
+                case "bags":
+                    $(".bags").empty()
+                    $("#message-view").append(`
+                        <div class="form-posted">
+                            ${$form}
+                            <div class="form-spacer"></div>
+                            <div class="output-posted bags grid-4"></div>
+                        </div>`
+                    );
+                    $.getJSON(myurl, function(data){
+                        for (var i = 0; i < data.warcore[0].bags.length; i++){
+                            $(".bags").append( "<p>" + data.warcore[0].bags[i].title + "</p>")
+                        };
+                    });
+                break;
+                case "bottoms":
+                    $(".bottoms").empty()
+                    $("#message-view").append(`
+                        <div class="form-posted">
+                            ${$form}
+                            <div class="form-spacer"></div>
+                            <div class="output-posted bottoms grid-4"></div>
+                        </div>`
+                    );
+                    $.getJSON(myurl, function(data){
+                        for (var i = 0; i < data.warcore[0].bottoms.length; i++){
+                            $(".bottoms").append( "<p>" + data.warcore[0].bottoms[i].title + "</p>")
+                        };
+                    });
+                break;
+                case "outerwear":
+                    $(".outerwear").empty()
+                    $("#message-view").append(`
+                        <div class="form-posted">
+                            ${$form}
+                            <div class="form-spacer"></div>
+                            <div class="output-posted outerwear grid-4"></div>
+                        </div>`
+                    );
+                    $.getJSON(myurl, function(data){
+                        for (var i = 0; i < data.warcore[0].outerwear.length; i++){
+                            $(".outerwear").append( "<p>" + data.warcore[0].outerwear[i].title + "</p>")
+                        };
+                    });
+                break;
+                case "shirts":
+                    $(".shirts").empty()
+                    $("#message-view").append(`
+                        <div class="form-posted">
+                            ${$form}
+                            <div class="form-spacer"></div>
+                            <div class="output-posted shirts grid-4"></div>
+                        </div>`
+                    );
+                    $.getJSON(myurl, function(data){
+                        for (var i = 0; i < data.warcore[0].shirts.length; i++){
+                            $(".shirts").append( "<p>" + data.warcore[0].shirts[i].title + "</p>")
+                        };
+                    });
+                break;
+                case "shoes":
+                    $(".shoes").empty()
+                    $("#message-view").append(`
+                        <div class="form-posted">
+                            ${$form}
+                            <div class="form-spacer"></div>
+                            <div class="output-posted shoes grid-4"></div>
+                        </div>`
+                    );
+                    $.getJSON(myurl, function(data){
+                        for (var i = 0; i < data.warcore[0].shoes.length; i++){
+                            $(".shoes").append( "<p>" + data.warcore[0].shoes[i].title + "</p>")
+                        };
+                    });
+                break;
+                case "sweaters":
+                    $(".sweaters").empty()
+                    $("#message-view").append(`
+                        <div class="form-posted">
+                            ${$form}
+                            <div class="form-spacer"></div>
+                            <div class="output-posted sweaters grid-4"></div>
+                        </div>`
+                    );
+                    $.getJSON(myurl, function(data){
+                        for (var i = 0; i < data.warcore[0].sweaters.length; i++){
+                            $(".sweaters").append( "<p>" + data.warcore[0].sweaters[i].title + "</p>")
+                        };
+                    });
+                break;
+                case "geom go1": case "newturtle r1": case "tailwind 001": case "zip tie oc1":
+                case "afix 032": case "gradient blck1": case "mmech0005": case "scon mo1": case "tralyx moon":
+                case "cold yc2": case "moon airblast": case "ski pr3": case "fire oval": case "neo round":
+                case "spike gr2": case "032 duffel bck001": case "moncler dry bck004": case "utility case bl2":
+                case "baby-x gry002": case "baby-x gry002": case "padded nylon bl1": case "black tank bck003":
+                case "pixelated tote b1": case "fragment n05gr1": case "tool bag bck002":
+                    $("#message-view").append(`
+                        <div class="form-posted">
+                            ${$form}
+                            <div class="form-spacer"></div>
+                            <div class="output-posted grid-4"><p>brand</p><p>details</p><p></p><p></p><p>composition</p><p>price</p></div>
+                        </div>`
+                    );
+                break;
+                case "block blue bl1": case "parachute cargo gr01": case "zone-9 moto bck1": case "camo gr02":
+                case "scaffolded circuit br1": case "ispa gr03": case "tactical taupe 003": case "manual sweats bck3":
+                case "tracks bck2":
+                    $("#message-view").append(`
+                        <div class="form-posted">
+                            ${$form}
+                            <div class="form-spacer"></div>
+                            <div class="output-posted grid-4"><p>brand</p><p>details</p><p></p><p></p><p>composition</p><p>size</p><p></p><p></p><p>price</p></div>
+                        </div>`
+                    );  
+                break;
+                default: 
+                    $("#message-view").append(`
+                        <div class="form-posted">
+                            ${$form}
+                            <div class="form-spacer"></div>
+                            <p class="output-posted">-err: no directories or items found</p>
+                        </div>`
+                    );
+                break;  
+            }
+        break;
+        case "bd":
+            switch ($location) {
+                case "credits": case "h+ times": case "info": case "rundfunk": case "warcore":
+                    $("#message-view").append(`
+                        <div class="form-posted">${$form}</div>
+                    `);
+                    $("#input-location").text("~")
+                    $("#header-location").text("Welcome to your Home Portal")
+                break;
+                case "eyewear": case "bottoms": case "shirts": case "shoes": case "outerwear": case "bags": case "sweaters": case "shoes":
+                    $("#message-view").append(`
+                        <div class="form-posted">${$form}</div>
+                    `);
+                    $("#input-location").text("warcore")
+                    $("#header-location").text("Warcore")
+                break;
+                default:
+                    $("#message-view").append(`
+                        <div class="form-posted">
+                            ${$form}
+                            <div class="form-spacer"></div>
+                            <p class="output-posted">-err: no directory to go back to</p>
+                        </div>
+                    `);
+                break;
+            }
+        break;
+        case "od":
+            // is this even a directory, if not, error
+            // location, does the directory match the location, if not, error
+            // if it is a directory and location matches, then next step
+            switch ($location){
+                case "~": 
+                    let $inputhomelocation = $locationhome.find(homeSearch)
+
+                    if ($inputhomelocation) {
+                        $("#message-view").append(`
+                            <div class="form-posted">${$form}</div>
+                        `);
+
+                        $("#input-location").text($inputhomelocation)
+                        $("#header-location").text($inputhomelocation)
+                    } else {
+                        $("#message-view").append(`
+                            <div class="form-posted">
+                                ${$form}
+                                <div class="form-spacer"></div>
+                                <p class="output-posted">-err: no such directory found</p>
+                            </div>
+                        `);
+                    }
+                break;
+                case "warcore":
+                    let $inputwarcorelocation = $locationwarcore.find(homeSearch)
+
+                    if ($inputwarcorelocation) {
+                        $("#message-view").append(`
+                            <div class="form-posted">${$form}</div>
+                        `);
+
+                        $("#input-location").text($inputwarcorelocation)
+                        $("#header-location").text("Warcore >> " + $inputwarcorelocation)
+                    } else {
+                        $("#message-view").append(`
+                            <div class="form-posted">
+                                ${$form}
+                                <div class="form-spacer"></div>
+                                <p class="output-posted">-err: no such directory found</p>
+                            </div>
+                        `);
+                    }
+                break;
+                case "eyewear":
+                    let $inputeyewearlocation = $locationeyewear.find(homeSearch)
+
+                    if ($inputeyewearlocation) {
+                        $("#message-view").append(`
+                            <div class="form-posted">${$form}</div>
+                        `);
+
+                        $("#input-location").text($inputeyewearlocation)
+                        $("#header-location").text("Warcore >> Eyewear >> " + $inputeyewearlocation)
+                    } else {
+                        $("#message-view").append(`
+                            <div class="form-posted">
+                                ${$form}
+                                <div class="form-spacer"></div>
+                                <p class="output-posted">-err: no such directory found</p>
+                            </div>
+                        `);
+                    }
+                break;
+                case "bags":
+                    let $inputbagslocation = $locationbags.find(homeSearch)
+
+                    if ($inputbagslocation) {
+                        $$("#message-view").append(`
+                            <div class="form-posted">${$form}</div>
+                        `);
+
+                        $("#input-location").text($inputbagslocation)
+                        $("#header-location").text("Warcore >> Bags >> " + $inputbagslocation)
+                    } else {
+                        $("#message-view").append(`
+                            <div class="form-posted">
+                                ${$form}
+                                <div class="form-spacer"></div>
+                                <p class="output-posted">-err: no such directory found</p>
+                            </div>
+                        `);
+                    }
+                break;
+                case "bottoms":
+                    let $inputbottomslocation = $locationbottoms.find(homeSearch)
+
+                    if ($inputbottomslocation) {
+                        $("#message-view").append(`
+                            <div class="form-posted">${$form}</div>
+                        `);
+
+                        $("#input-location").text($inputbottomslocation)
+                        $("#header-location").text("Warcore >> Bottoms >> " + $inputbottomslocation)
+                    } else {
+                        $("#message-view").append(`
+                            <div class="form-posted">
+                                ${$form}
+                                <div class="form-spacer"></div>
+                                <p class="output-posted">-err: no such directory found</p>
+                            </div>
+                        `);
+                    }
+                break;
+                case "outerwear":
+                    let $inputouterwearlocation = $locationouterwear.find(homeSearch)
+
+                    if ($inputouterwearlocation) {
+                        $("#message-view").append(`
+                            <div class="form-posted">${$form}</div>
+                        `);
+
+                        $("#input-location").text($inputouterwearlocation)
+                        $("#header-location").text("Warcore >> Outerwear >> " + $inputouterwearlocation)
+                    } else {
+                        $("#message-view").append(`
+                            <div class="form-posted">
+                                ${$form}
+                                <div class="form-spacer"></div>
+                                <p class="output-posted">-err: no such directory found</p>
+                            </div>
+                        `);
+                    }
+                break;
+                case "shirts":
+                    let $inputshirtslocation = $locationshirts.find(homeSearch)
+
+                    if ($inputshirtslocation) {
+                        $("#message-view").append(`
+                            <div class="form-posted">${$form}</div>
+                        `);
+
+                        $("#input-location").text($inputshirtslocation)
+                        $("#header-location").text("Warcore >> Shirts >> " + $inputshirtslocation)
+                    } else {
+                        $("#message-view").append(`
+                            <div class="form-posted">
+                                ${$form}
+                                <div class="form-spacer"></div>
+                                <p class="output-posted">-err: no such directory found</p>
+                            </div>
+                        `);
+                    }
+                break;
+                case "sweaters":
+                    let $inputsweaterslocation = $locationsweaters.find(homeSearch)
+
+                    if ($inputsweaterslocation) {
+                        $("#message-view").append(`
+                            <div class="form-posted">${$form}</div>
+                        `);
+
+                        $("#input-location").text($inputsweaterslocation)
+                        $("#header-location").text("Warcore >> Sweaters >> " + $inputsweaterslocation)
+                    } else {
+                        $("#message-view").append(`
+                            <div class="form-posted">
+                                ${$form}
+                                <div class="form-spacer"></div>
+                                <p class="output-posted">-err: no such directory found</p>
+                            </div>
+                        `);
+                    }
+                break;
+                case "shoes":
+                    let $inputshoeslocation = $locationshoes.find(homeSearch)
+
+                    if ($inputshoeslocation) {
+                        $("#message-view").append(`
+                            <div class="form-posted">${$form}</div>
+                        `);
+
+                        $("#input-location").text($inputshoeslocation)
+                        $("#header-location").text("Warcore >> Shoes >> " + $inputshoeslocation)
+                    } else {
+                        $("#message-view").append(`
+                            <div class="form-posted">
+                                ${$form}
+                                <div class="form-spacer"></div>
+                                <p class="output-posted">-err: no such directory found</p>
+                            </div>
+                        `);
+                    }
+                break;
+                default:
+                    $("#message-view").append(`
+                        <div class="form-posted">
+                            ${$form}
+                            <div class="form-spacer"></div>
+                            <p class="output-posted">-err: no such file or directory</p>
+                        </div>
+                    `);
+                break;
+            }
+        break;
+        case "oi":
+            switch ($location) {
+                case "eyewear":
+                    let eyewearnumber = "";
+                    let $inputeyewearlocation = $locationeyewear.find(homeSearch)
+                    if ($inputeyewearlocation == "afix 032") {
+                        eyewearnumber = 0;
+                    } else if ($inputeyewearlocation == "gradient blck1") {
+                        eyewearnumber = 1;
+                    } else if ($inputeyewearlocation == "cold yc2") {
+                        eyewearnumber = 2;
+                    } else if ($inputeyewearlocation == "fire oval") {
+                        eyewearnumber = 3;
+                    } else if ($inputeyewearlocation == "geom go1") {
+                        eyewearnumber = 4;
+                    } else if ($inputeyewearlocation == "mmech0005") {
+                        eyewearnumber = 5;
+                    } else if ($inputeyewearlocation == "moon airblast") {
+                        eyewearnumber = 6;
+                    } else if ($inputeyewearlocation == "neo round") {
+                        eyewearnumber = 7;
+                    } else if ($inputeyewearlocation == "newturtle r1") {
+                        eyewearnumber = 8;
+                    } else if ($inputeyewearlocation == "scon mo1") {
+                        eyewearnumber = 9;
+                    } else if ($inputeyewearlocation == "ski pr3") {
+                        eyewearnumber = 10;
+                    } else if ($inputeyewearlocation == "spike gr2") {
+                        eyewearnumber = 11;
+                    } else if ($inputeyewearlocation == "tailwind 001") {
+                        eyewearnumber = 12;
+                    } else if ($inputeyewearlocation == "tralyx moon") {
+                        eyewearnumber = 13;
+                    } else if ($inputeyewearlocation == "zip tie oc1") {
+                        eyewearnumber = 14;
+                    } else {
+                        eyewearnumber = 15;
+                    }
+                    
+                    if (eyewearnumber != 15) {
+                        $("#message-view").append(`
+                            <div class="form-posted">${$form}</div>
+                        `);
+                    
+                        $.getJSON(myurl, function(data){
+                            $("#windows-wrapper").append(`
+                                <div class="window">
+                                    <div class="window-close">&#10005;</div>
+                                    <p class="window-title">${data.warcore[0].eyewear[eyewearnumber].title}</p>
+                                    <div class="window-details"><p class="window-brand">${data.warcore[0].eyewear[eyewearnumber].brand}</p><p class="window-price">${data.warcore[0].eyewear[eyewearnumber].price}</p></div>
+                                    <div class="window-spacer"></div>
+                                    <div class="swiper-container">
+                                        <img class="swiper-slide" src="${data.warcore[0].eyewear[eyewearnumber].path}/${data.warcore[0].eyewear[eyewearnumber].images[0]}" width="100%">
+                                        <img class="swiper-slide" src="${data.warcore[0].eyewear[eyewearnumber].path}/${data.warcore[0].eyewear[eyewearnumber].images[1]}" width="100%">
+                                        <img class="swiper-slide" src="${data.warcore[0].eyewear[eyewearnumber].path}/${data.warcore[0].eyewear[eyewearnumber].images[2]}" width="100%">
+                                    </div>
+                                </div>`
+                            )
+
+                            var elem = document.querySelector('.window');
+                            var draggie = new Draggabilly( elem, {});
+                            
+                        });
+                    } else {
+                        $("#message-view").append(`
+                            <div class="form-posted">
+                                ${$form}
+                                <div class="form-spacer"></div>
+                                <p class="output-posted">-err: no such file or directory</p>
+                            </div>
+                        `);
+                    }
+                break;
+                default: 
+                    $("#message-view").append(`
+                        <div class="form-posted">
+                            ${$form}
+                            <div class="form-spacer"></div>
+                            <p class="output-posted">-err: no such file or directory</p>
+                        </div>
+                    `);
+                break;
+            }
+        break;
+        case "cl":
+            switch ($message2) {
+                case "all": 
+                    $("#message-view").append(`
+                        <div class="form-posted">${$form}</div>
+                    `);
+                    $("#windows-wrapper").empty();
+                break;
+                default:
+                    $("#message-view").append(`
+                        <div class="form-posted">
+                            ${$form}
+                            <div class="form-spacer"></div>
+                            <p class="output-posted">-err: command not found</p>
+                        </div>
+                    `); 
+                break;
+            }
+        break;
+        case "rs":
+            $("#message-view").empty();
+            $("#message-view").append(`
+                <div class="form-posted">
+                    ${$form}
+                    <div class="form-spacer"></div>
+                    <p class="output-posted">your sessions has been reset</p>
+                </div>
+            `);
+            $("#input-location").text("~")
+            $("#header-location").text("Welcome to your Home Portal")
+        break;
+        default:
+            $("#message-view").append(`
+                <div class="form-posted">
+                    ${$form}
+                    <div class="form-spacer"></div>
+                    <p class="output-posted">-err: command not found</p>
+                </div>
+            `);         
+        break;
+    }
+    $("#message").empty();
+
+    $(document).ready(function () {
+        $('.swiper-container').flickity({
+            // options
+            cellAlign: 'left',
+            contain: true,
+            draggable: false,
+            pageDots: false,
+            wrapAround: true
+        });
+
+        $( ".window-close" ).click(function() {
+            $(this).parent().empty();
+        });
+    });
+
+}
+
+
+
+
+function showTime(){
+    let date = new Date();
+    let h = date.getHours();
+    let m = date.getMinutes();
+    let s = date.getSeconds();
+    
+    h = (h < 10) ? "0" + h : h;
+    m = (m < 10) ? "0" + m : m;
+    s = (s < 10) ? "0" + s : s;
+    
+    let time = h + ":" + m + ":" + s;
+    document.getElementById("clock").innerText = time;
+    document.getElementById("clock").textContent = time;
+    
+    setTimeout(showTime, 1000); 
+}
+showTime();
+
+function timeStamp() {
+	const timestamp = new Date();
+	let h = timestamp.getHours();
+    let m = timestamp.getMinutes();
+    let s = timestamp.getSeconds();
+    if (h < 10) h = "0" + h;
+    if (m < 10) m = "0" + m;
+    if (s < 10) s = "0" + s;
+	const html = `<span class="timestamp">${h}:${m}:${s}</span>`;
+    return html;
+};
+
+</script>
+</body>
+</html>

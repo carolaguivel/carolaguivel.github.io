@@ -1,0 +1,231 @@
+body, html {
+    width: 100%;
+    margin: 0;
+	padding: 0;
+	color: #000000;
+    font-family: 'roboto-mono', monospace;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+}
+
+p, h1, h2, h3, h4, span, a, div {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+#username, #time, .input-posted {
+    font-style: italic;
+} 
+
+.input-posted, .form, .form-posted {
+    font-size: 1vw;
+}
+
+#time, .window-price {
+    text-align: right;
+}
+
+#message:focus {
+    outline: none;
+}
+
+.header, .window-title {
+    font-family: titling-gothic-fb-wide;
+}
+
+.header, .form, .form-posted {
+    width: 100%;
+}
+
+.header, .form {
+    position: fixed;
+}
+
+.input-location {
+    display: none;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 5%;
+}
+
+.output-posted {
+    text-transform: lowercase;
+}
+
+#header-location {
+    text-transform: capitalize;
+}
+
+/* location */
+
+.header {
+    font-weight: 400;
+    padding: 12px 0px;
+    top: 0%;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8vw;
+    text-shadow: rgb(255, 255, 255) 0px 1px 0px;
+    background: linear-gradient(180deg, #B0B0B0 0%, #FFFFFF 16.67%, #FFFFFF 23.96%, #B0B0B0 100%);
+}
+
+
+/* command line */
+
+.input-wrapper {
+    display: grid;
+    grid-template-columns: 6% 82% 12%;
+}
+
+.form {
+    background: linear-gradient(180deg, #D3D3D3 0%, #FFFFFF 19.79%, #B0B0B0 100%);
+    bottom: 0%;
+    padding: 10px 10px;
+    z-index: 10;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.form-posted {
+    padding: 20px 15px 24px;
+}
+
+.form-spacer {
+    width: 100%;
+    height: 15px;
+}
+
+/* logs */
+
+#message-board-wrapper {
+    height: 100%;
+}
+
+#message-view {
+    margin-top: 2.5%;
+    margin-bottom: 3%;
+}
+
+.welcome {
+    display: grid;
+    grid-template-columns: 6% 94%;
+}
+
+.input-posted {
+    display: grid;
+    grid-template-columns: 6% 6% 88%;
+}
+
+/* windows */
+
+.window-details, .window-spacer, .swiper-container {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.window {
+    position: absolute;
+    background-color: #F4F4F4;
+    top: 10%;
+    right: 20%;
+    width: 17%;
+}
+
+.window-title {
+    border: 1px solid black;
+    font-size: 0.8vw;
+    font-weight: 400;
+    text-shadow: rgb(255, 255, 255) 0px 1px 0px;
+    padding: 6px 2px;
+    text-align: center;
+    background: linear-gradient(180deg, #A7A7A7 0%, #FFFFFF 25%, #A0A0A0 97.92%);
+}
+
+.window-spacer {
+    height: 3px;
+    background-color: #C4C4C4;
+}
+
+.window-details {
+    font-size: 0.6vw;
+    padding: 2px 5px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: #F4F4F4;
+}
+
+.window-close {
+    position: absolute;
+    color: #000000;
+    border: 1px solid #000000;
+    border-radius: 2px;
+    padding: 5px 9px;
+    z-index: 1;
+    background: linear-gradient(180deg, #B0B0B0 0%, #FFFFFF 16.67%, #FFFFFF 23.96%, #B0B0B0 100%);
+    bottom: 2%;
+    left: 3%;
+    cursor: pointer;
+}
+
+.flickity-prev-next-button {
+    border-radius: 2px !important;
+    width: 31px !important;
+    height: 31px !important;
+}
+
+.flickity-button {
+    background: linear-gradient(180deg, #B0B0B0 0%, #FFFFFF 16.67%, #FFFFFF 23.96%, #B0B0B0 100%) !important;
+    border: 1px solid #000000 !important;
+    top: 93% !important;
+}
+
+.flickity-prev-next-button.previous {
+    left: 69% !important;
+}
+
+.flickity-prev-next-button.next {
+    right: 3% !important;
+}
+
+.flickity-button:active, .window-close:active {
+    background: linear-gradient(180deg, #828282 0%, #FFFFFF 71.87%, #FFFFFF 81.77%, #828282 100%) !important;
+    opacity: 1 !important;
+}
+
+/* sidepanel */
+
+.split-view {
+    display: flex;
+}
+
+.split {
+    height: 100%;
+    width: 50%;
+    overflow: scroll;
+}
+
+#sidepanel-view {
+    background-color: red;
+    right: 0%;
+}
