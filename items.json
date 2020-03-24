@@ -95,7 +95,7 @@
 
             "bottoms" : [
                 {
-                    "title" : "Block Blue BL1",
+                    "title" : "block blue bl1",
                     "brand" : "Y/Project",
                     "details" : "Elastic Waistband with Drawstrings, Pleated Side Details, White Piping Details, Black and White Color Block, Front White Logo Printed, Imported",
                     "composition" : "100% Polyester",
@@ -106,7 +106,7 @@
                 },
 
                 {
-                    "title" : "Camo GR02",
+                    "title" : "camo gr02",
                     "brand" : "Heron Preston",
                     "details" : "Camouflage Print, Elastic Waistband with Drawstrings, Side Pockets, Drawstring Hems, Front Orange Logo Patch, Made in Italy",
                     "composition" : "100% Polyamide",
@@ -117,7 +117,7 @@
                 },
 
                 {
-                    "title" : "Ispa GR03",
+                    "title" : "ispa gr03",
                     "brand" : "Nike",
                     "details" : "Wolf Grey, Elastic Waistband with Drawstrings, Side Zipped Pockets, Hem Cargo Pockets, Back Zipped Splits, Imported",
                     "composition" : "100% Nylon",
@@ -128,7 +128,7 @@
                 },
 
                 {
-                    "title" : "Manual Sweats BCK3",
+                    "title" : "manual sweats bck3",
                     "brand" : "Heron Preston",
                     "details" : "Text Printed in Red Throughout, White Text Embroidered, Transparent PVC Card Slot at Back, Elasticized Waistband, Textile Logo Patch, Made in Portugal",
                     "composition" : "100% Cotton",
@@ -139,18 +139,18 @@
                 },
 
                 {
-                    "title" : "Parachute Cargo GR01",
+                    "title" : "parachute cargo gr01",
                     "brand" : "Off-White",
                     "details" : "Elasticated Waistband, Buckle Fastening, Side Slid Pockets, Flap Utility Pockets, Fluorescent Yellow Printed Logo, Imported",
                     "composition" : "100% Cotton",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 795.00",
                     "path" : "images/bottoms",
-                    "images" : [ "parachute1.jpg", "parachute2.jpg", "parachute3.jpg", "parachute4.jpg" ]
+                    "images" : [ "parachute1.jpg", "parachute2.jpg", "parachute3.jpg" ]
                 },
 
                 {
-                    "title" : "Scaffolded Circuit BR1",
+                    "title" : "scaffolded circuit br1",
                     "brand" : "A-Cold-Wall*",
                     "details" : "Water-Resistant, Duplexed Grosgrain Details, Full-Length Drawcord Cinching, Protruding Ankle Fixtures, Rubberised Logo Patch, Imported",
                     "composition" : "100% Nylon",
@@ -161,14 +161,14 @@
                 },
 
                 {
-                    "title" : "Tactical Taupe 003",
+                    "title" : "tactical taupe 003",
                     "brand" : "Alyx",
                     "details" : "Light Garmen Dyed Nylon, Front Velcro Flap, Velcro Details at Knee and Bottom, Cargo Pockets, Logo-Branded Hardware, Made in Italy",
                     "composition" : "100% Nylon",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 550.00",
                     "path" : "images/bottoms",
-                    "images" : [ "tactical1.jpg", "tactical2.jpg", "tactical3.jpg", "tactical4.jpg" ]
+                    "images" : [ "tactical1.jpg", "tactical2.jpg", "tactical3.jpg" ]
                 },
 
                 {
@@ -183,20 +183,20 @@
                 },
 
                 {
-                    "title" : "Zone-9 Moto BCK1",
+                    "title" : "zone-9 moto bck1",
                     "brand" : "Alyx",
                     "details" : "Leather Pants, 5 Pockets, Curved Seam Details with Patent Leather, Textured Leather Details, Jacquard Logo, Made in Italy",
                     "composition" : "100% Leather",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 4995.00",
                     "path" : "images/bottoms",
-                    "images" : [ "zonemoto1.jpg", "zonemoto2.jpg", "zonemoto3.jpg", "zonemoto4.jpg" ]
+                    "images" : [ "zonemoto1.jpg", "zonemoto2.jpg", "zonemoto3.jpg" ]
                 }
             ],
 
             "eyewear" : [
                 {
-                    "title" : "AFIX 032",
+                    "title" : "afix 032",
                     "brand" : "Gentle Monster",
                     "details" : "Stainless Steel, Gold Frame, Standard Fit, Apricot Mirrored Lens, 100% UV Protection, Adjustable Silicone Nose Pads, Clear Acetate Temple Tips, Made in Korea",
                     "composition" : "50% stainless steel, 50% glass",
@@ -207,7 +207,7 @@
                 },
     
                 {
-                    "title" : "Gradient BLCK1",
+                    "title" : "gradient blck1",
                     "brand" : "Prada",
                     "details" : "Single Reflective Lens, Multicolor Gradient, Standard Fit, Tonal Hardware, 100% UV Protection, Transparent Rubber Nose Pads, Logo Engraved, Made in Italy",
                     "composition" : "50% metal, 50% glass",
@@ -217,7 +217,7 @@
                 },
                 
                 {
-                    "title" : "Cold YC2",
+                    "title" : "cold yc2",
                     "brand" : "Gentle Monster",
                     "details" : "Uni Frame Lens, Flatba Frame, Standard Fit, Acetate, 100% UV Protection, Transparent Nose Pads, Logo Detailed Center, Made in China",
                     "composition" : "50% acetate, 50% glass",
@@ -227,7 +227,7 @@
                 },
 
                 {
-                    "title" : "Fire Oval",
+                    "title" : "fire oval",
                     "brand" : "Balenciaga",
                     "details" : "Wraparound Oval Shape, Sculptural Metal Frame, Adjustable Smart Fit, Nylon Lens, 100% UVA Protection, BB Nose Pads, Lasered Logo, Made in Italy",
                     "composition" : "100% metal",
@@ -237,7 +237,7 @@
                 },
 
                 {
-                    "title" : "Geom GO1",
+                    "title" : "geom go1",
                     "brand" : "Loewe",
                     "details" : "Rectangular Brown Lenses, Gold-Tone Metal, Standard Fit, Leather Trim, 100% UV Protection, Transparent Rubber Nose Pads, Engraved Logo, Made in Italy",
                     "composition" : "10% leather, 40% metal, 50% glass",
@@ -247,7 +247,7 @@
                 },
 
                 {
-                    "title" : "MMECH0005",
+                    "title" : "mmech0005",
                     "brand" : "Maison Margiela",
                     "details" : "Silver Flash Lens, Black Acetate Frame, Standard Fit, 3D Manufactured, 100% UV Protection, Silicone Nose Pad, Laser Engraved Logo, Made in Berlin",
                     "composition" : "100% acetate",
@@ -257,7 +257,7 @@
                 },
 
                 {
-                    "title" : "Moon Airblast",
+                    "title" : "moon airblast",
                     "brand" : "Marine Serre",
                     "details" : "Rimless Plastic Sunglasses, Brown Uni Lens, Standard Fit, Rubberized Nose Pads, 100% UV Protection, Rubberized Temple Tips, Logo Etched at Lens, Made in Italy",
                     "composition" : "50% plastic, 50% acetate",
@@ -267,7 +267,7 @@
                 },
 
                 {
-                    "title" : "Neo Round",
+                    "title" : "neo round",
                     "brand" : "Balenciaga",
                     "details" : "Narrow Rounded Shape, Sharply Wrapped Frame, Standard Fit, Mineral Lenses, 100% UV Protection, Silicone Nose Pads, Laser Engraved Logo, Made in Italy",
                     "composition" : "100% acetate",
@@ -277,7 +277,7 @@
                 },
 
                 {
-                    "title" : "Newturtle R1",
+                    "title" : "newturtle r1",
                     "brand" : "Gentle Monster",
                     "details" : "Acetate Bridge, Colored Lenses, Standard Fit, Metal Frame, 100% UV Protection, Rubberized Nose Pads, Engraved Logo, Made in China",
                     "composition" : "50% acetate, 50% glass",
@@ -287,7 +287,7 @@
                 },
 
                 {
-                    "title" : "Scon MO1",
+                    "title" : "scon mo1",
                     "brand" : "Gentle Monster",
                     "details" : "Sporty Frame, Matte Black Metal, Standard Fit, Acetate Temple Tips, 100% UV Protection, Rubber Nose Pads, Acetate Encased Logo, Made in China",
                     "composition" : "100% acetate",
@@ -297,7 +297,7 @@
                 },
 
                 {
-                    "title" : "Ski PR3",
+                    "title" : "ski pr3",
                     "brand" : "Balenciaga",
                     "details" : "Rectangular Acetate Frame, Mirrored Single Lens, Standard Fit, Acetate Temple Tips, 100% UV Protection, Integrated Nose Pads, Logo and Stripes Etched in Black, Made in Italy",
                     "composition" : "100% acetate",
@@ -307,7 +307,7 @@
                 },
 
                 {
-                    "title" : "Spike GR2",
+                    "title" : "spike gr2",
                     "brand" : "Vetements",
                     "details" : "Acetate Frame, Reflective Uni Lens, Standard Fit, Acetate Temple Tips, 100% UV Protection, Silicone Nose Pad, Etched Logo, Made in Italy",
                     "composition" : "100% acetate",
@@ -317,7 +317,7 @@
                 },
 
                 {
-                    "title" : "Tailwind 001",
+                    "title" : "tailwind 001",
                     "brand" : "Heron Preston",
                     "details" : "Transparent Frame, Four Interchangeable Lenses, Standard Fit, Floating Nose Pads, 100% UV Protection, Rubber Temple Inserts, Engraved Logo Details, Made in Italy",
                     "composition" : "100% polycarbonate",
@@ -327,7 +327,7 @@
                 },
 
                 {
-                    "title" : "Tralyx Moon",
+                    "title" : "tralyx moon",
                     "brand" : "Marine Serre",
                     "details" : "Semi Rimless, Velvet Gold Tone, Standard Fit, Cut-Out Detailing, 100% UV Protection, Mirrored Uni Frame Lens, Laser Engraved Logo, Made in Italy",
                     "composition" : "50% plastic, 50% acetate",
@@ -337,7 +337,7 @@
                 },
 
                 {
-                    "title" : "Zip Tie OC1",
+                    "title" : "zip tie oc1",
                     "brand" : "Ambush",
                     "details" : "Orange Uni Lens, Rimless, Standard Fit, Zip Tie Details, 100% UV Protection, Silicone Nose Pads, Metallic Logo Accessory, Made in Italy",
                     "composition" : "100% acetate",
@@ -349,7 +349,7 @@
 
             "outerwear" : [
                 {
-                    "title" : "Asymmetric GRYBL01",
+                    "title" : "asymmetric grybl01",
                     "brand" : "A-Cold-Wall*",
                     "details" : "Quarter Zip Closure, Three 3D Pockets, Compass Hardware, Bracket Logo Screen-Print, Imported",
                     "composition" : "100% Polyvinyl",
@@ -360,7 +360,7 @@
                 },
 
                 {
-                    "title" : "Quantum Para BCK3",
+                    "title" : "quantum para bck3",
                     "brand" : "Alyx",
                     "details" : "Technical Nylon, Laminated Coating, Collared Long Silhouette, Covered Front Zipper Closure, Imported",
                     "composition" : "90% Nylon, 10% Textile",
@@ -371,7 +371,7 @@
                 },
 
                 {
-                    "title" : "Sirus WH1",
+                    "title" : "sirus wh1",
                     "brand" : "Moncler Genius",
                     "details" : "Nylon Laqué, Front Metal Zipper Closure, Collar with Metal Buckle, Heat Embossed Logo, Imported",
                     "composition" : "100% Nylon",
@@ -382,7 +382,7 @@
                 },
 
                 {
-                    "title" : "Camo Beige02",
+                    "title" : "camo beige02",
                     "brand" : "Alyx",
                     "details" : "Digital Camo Print, Front Covered Zipper, 3M Picket Tape Detail, Snap Details, Made in Italy",
                     "composition" : "90% Nylon, 10% Textile",
@@ -393,7 +393,7 @@
                 },
 
                 {
-                    "title" : "Deimos ORNG001",
+                    "title" : "deimos orng001",
                     "brand" : "Alyx",
                     "details" : "Garment Dyed Matte Coated Fabric, Front Metal Zipper Closure, Metal Buckle, Logo Patches on Sleeves, Made in Italy",
                     "composition" : "100% textile",
@@ -404,7 +404,7 @@
                 },
 
                 {
-                    "title" : "Moncler Cosmos ORNG2",
+                    "title" : "moncler cosmos orng2",
                     "brand" : "Alyx",
                     "details" : "Ripstop Fabric with Paper-Like Feel, Elastic Drawstring Cord at Hem, Detachable Hood, Logo Buckle for Closure, Made in Italy",
                     "composition" : "90% Nylon, 10% Textile",
@@ -415,7 +415,7 @@
                 },
 
                 {
-                    "title" : "IDRC Allochroic GR3",
+                    "title" : "idrc allochroic gr3",
                     "brand" : "C2H4",
                     "details" : "Throat Guard, Detachable Hood, Concealed Two-Way Zip Closure, Transparent Rubberirzed Logo Flag, Imported",
                     "composition" : "Fill: 90% white duck down, 10% feather, Body: 100% polyester",
@@ -426,7 +426,7 @@
                 },
 
                 {
-                    "title" : "Iridescent Down GR2",
+                    "title" : "iridescent down gr2",
                     "brand" : "Kenzo",
                     "details" : "Bungee-style Drawstring, Two-Way Zip Closure, Detachable Logo Patch, Logo-Printed Nylon Lining, Imported",
                     "composition" : "Fill: 90% down, 10% feather, Body: 100% polyamide",
@@ -437,7 +437,7 @@
                 },
 
                 {
-                    "title" : "Night Crawler BG1",
+                    "title" : "night crawler bg1",
                     "brand" : "Alyx",
                     "details" : "Silver Zipper Closure, High Collar, Front Cross Flap, Rubber Patch at Front with Logo, Made in Italy",
                     "composition" : "Nylon",
@@ -448,7 +448,7 @@
                 },
 
                 {
-                    "title" : "Memory Nylon GR1",
+                    "title" : "memory nylon gr1",
                     "brand" : "A-Cold-Wall*",
                     "details" : "Water-Resistant, Iridescent-Granite Memory Nylon, Blue Mission Statement on Cuff, Bracket Logo, Imported",
                     "composition" : "100% Nylon",
@@ -459,7 +459,7 @@
                 },
 
                 {
-                    "title" : "Passage GR1",
+                    "title" : "passage gr1",
                     "brand" : "A-Cold-Wall*",
                     "details" : "Exaggerated Asymmetrical Front Pockets, Blind Etched Metal Hardware, Rubberised Grosgrain Tape, Reflective Bracket Logo, Imported",
                     "composition" : "100% Nylon",
@@ -470,7 +470,7 @@
                 },
 
                 {
-                    "title" : "NRGXSE R1",
+                    "title" : "nrgxse r1",
                     "brand" : "Nike",
                     "details" : "Water and Wind Proof, Sealed Seam Details, Front Zipper Closure, Hood with Built in Face Mask, Imported",
                     "composition" : "100% Fabric",
@@ -481,7 +481,7 @@
                 },
 
                 {
-                    "title" : "Parus Coat BCK3",
+                    "title" : "parus coat bck3",
                     "brand" : "Moncler Genius",
                     "details" : "Bungee-Style Drawstring, Concealed Two-Way Zip Closure, Tonal Textile Logo Appliqué, Tonal Detachable Chain Link Hardware, Made in Italy",
                     "composition" : "Body: 91% polyester, 9% polyamide, Fill: 90% goose down, 10% feathers",
@@ -492,7 +492,7 @@
                 },
 
                 {
-                    "title" : "Puffer Gilet ORNG1",
+                    "title" : "puffer gilet orng1",
                     "brand" : "A-Cold-Wall*",
                     "details" : "Asymmetric 3D Pockets, Funnel Neckline, Jacquard Lining, Hardware Branded with Bracket Logo, Imported",
                     "composition" : "Nylon, Textile",
@@ -503,7 +503,7 @@
                 },
 
                 {
-                    "title" : "Oslo Down GR3",
+                    "title" : "oslo down gr3",
                     "brand" : "Acne Studios",
                     "details" : "Stand Collar, Offset Half-Zip Closure, Buttoned Welt Pockets, Black Printed Logo, Imported",
                     "composition" : "Fill: 90% grey duck down, 10% feather, Body & Lining: 100% nylon, Trim: 100% ",
