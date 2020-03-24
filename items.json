@@ -516,7 +516,7 @@
 
             "shirts" : [
                 {
-                    "title" : "Bruised PR1",
+                    "title" : "bruised pr1",
                     "brand" : "A-Cold-Wall*",
                     "details" : "Relaxed Fit, Discoidal Gradient Graphic, Button-Closed Cuffs, All Hardware Branded, Made in Portugal",
                     "composition" : "100% Cotton",
@@ -527,7 +527,7 @@
                 },
 
                 {
-                    "title" : "Camo Transfer NEON01",
+                    "title" : "camo transfer neon01",
                     "brand" : "Nike",
                     "details" : "Dry Fit Top, Hand Applied Sponge Treatment, Crewneck Collar, Logo Transfer on Front, Imported",
                     "composition" : "100% Nylon",
@@ -538,7 +538,7 @@
                 },
 
                 {
-                    "title" : "Moon Flag 1969",
+                    "title" : "moon flag 1969",
                     "brand" : "Calvin Klein",
                     "details" : "Classic Collar, Button Closure, Button Flap Chest Pockets, Curved Hem, Imported",
                     "composition" : "100% Cotton",
@@ -549,7 +549,7 @@
                 },
                 
                 {
-                    "title" : "Silver Lake 003",
+                    "title" : "silver lake 003",
                     "brand" : "Ambush",
                     "details" : "Classic Collar, Button Closure, Chest D-Ring Details, Short Sleeves, Made in Japan",
                     "composition" : "100% Polyester",
@@ -560,7 +560,7 @@
                 },
 
                 {
-                    "title" : "SS Tee WH1",
+                    "title" : "ss tee wh1",
                     "brand" : "Alyx",
                     "details" : "Short Sleeves, Organic Cotton Blend, Digital Graphic Print, Logo Rubber Patch, Made in Italy",
                     "composition" : "100% Cotton",
@@ -571,7 +571,7 @@
                 },
 
                 {
-                    "title" : "Psytrance Multi 001",
+                    "title" : "psytrance multi 001",
                     "brand" : "MISBHV",
                     "details" : "Multicolor, Round Neck, Patchwork Throughout, White Monogram on Chest, Made in Poland",
                     "composition" : "100% Cotton",
@@ -585,7 +585,7 @@
             "shoes" : [
 
                 {
-                    "title" : "1017 Alison WH7",
+                    "title" : "1017 alison wh7",
                     "brand" : "Moncler Genius",
                     "details" : "Round Toe, Bungee-Style Drawstring, Treaded Rubber Sole, Black Hardware, Embossed Logo at Vamp, Imported",
                     "composition" : "Upper: textile, leather, rubber, Sole: rubber",
@@ -596,7 +596,7 @@
                 },
 
                 {
-                    "title" : "Bamba02",
+                    "title" : "bamba02",
                     "brand" : "11 by Boris Bidjan Saberi",
                     "details" : "Round Toe, Overdyed Detailing, Smudge Details Throughout, Zip Closure, Logo and Text Printed, Imported",
                     "composition" : "Upper: synthetic, textile, Sole: rubber",
@@ -607,7 +607,7 @@
                 },
 
                 {
-                    "title" : "Brown Jaw BR02",
+                    "title" : "brown jaw br02",
                     "brand" : "Givenchy",
                     "details" : "Round Toe, Woven Lace-Up Closure, Zip Closure at Vamp, Rubberized Trim, Embossed Logo in Yellow, Made in Italy",
                     "composition" : "Upper: calfskin, Sole: rubber",
@@ -618,7 +618,7 @@
                 },
 
                 {
-                    "title" : "GSG 9High",
+                    "title" : "gsg 9high",
                     "brand" : "032c",
                     "details" : "Tonal Reflective Detailing, Tonal Lace-Up Closure, Perforated Detailing, Treaded Rubber Sole, Tonal and Red Printed Logos, Imported",
                     "composition" : "Upper: leather, textile, Sole: rubber",
@@ -629,18 +629,18 @@
                 },
 
                 {
-                    "title" : "Hiking Boot BLK0001",
+                    "title" : "hiking boot blk0001",
                     "brand" : "Alyx",
                     "details" : "Breathable Mesh Lining, Cotton Fastening Cord, Metal Boot Lace Hooks, Vibram Rubber Sole, Embroidered Logo, Made in Italy",
                     "composition" : "Upper: leather, Sole: rubber",
                     "size" : "40, 41, 42, 43, 44",
                     "price" : "USD 670.00",
                     "path" : "images/shoes",
-                    "images" : [ "alyxhiking1.jpg", "alyxhiking2.jpg", "alyxhiking3.jpg", "alyxhiking4.jpg" ]
+                    "images" : [ "alyxhiking1.jpg", "alyxhiking2.jpg", "alyxhiking3.jpg" ]
                 },
 
                 {
-                    "title" : "Hybrid 1941",
+                    "title" : "hybrid 1941",
                     "brand" : "Coach",
                     "details" : "Textile Trim, Lace-Up Closure, Gunmetal Tone Hardware, Treaded Vibram Outsole, Silver Tone Logo Stamp, Imported",
                     "composition" : "Upper: leather, textile, Sole: rubber",
@@ -651,7 +651,7 @@
                 },
 
                 {
-                    "title" : "Nubuck PR2",
+                    "title" : "nubuck pr2",
                     "brand" : "Diemme",
                     "details" : "Round Toe, Woven Lace-Up Closure, Iridescent Trim, Treaded Vibram Rubber Sole, Textile Logo Appliqué, Imported",
                     "composition" : "Upper: leather, textile, Sole: rubber",
@@ -662,7 +662,7 @@
                 },
 
                 {
-                    "title" : "Off BR3",
+                    "title" : "off br3",
                     "brand" : "Off-White",
                     "details" : "Almond Toe, Lace-Up Closure, Red and Silver Hardware, Treaded Vibram Rubber Sole, Embossed Logo, Imported",
                     "composition" : "Upper: leather, Sole: rubber",
@@ -673,7 +673,7 @@
                 },
 
                 {
-                    "title" : "VaporMax 360",
+                    "title" : "vapormax 360",
                     "brand" : "Nike",
                     "details" : "Black Mesh Lining, Tonal Lace-Up Closure, Transparent Metallic Sole, VaporMax Technology, Metallic Swoosh Appliqué, Imported",
                     "composition" : "Upper: synthetic, textile, Sole: rubber",
@@ -687,7 +687,7 @@
             "sweaters" : [
 
                 {
-                    "title" : "Allover GRBL1",
+                    "title" : "allover grbl1",
                     "brand" : "Clot",
                     "details" : "Paint Splatter Effect, Kangaroo Pocket at Waist, Drawstring, Rib Knit Cuffs and Hem, Tonal Logo Pattern, Imported",
                     "composition" : "65% cotton, 35% polyester",
@@ -698,7 +698,7 @@
                 },
 
                 {
-                    "title" : "Alby-Y BL3",
+                    "title" : "alby-y bl3",
                     "brand" : "Diesel",
                     "details" : "Drawstring at Hood, Kangaroo Pocket at Waist, Textile Logo Patch, Rib Knit Cuffs and Hem, Logo Flag, Imported",
                     "composition" : "Body: 100% cotton, Trim: 95% cotton, 5% elastane",
@@ -709,7 +709,7 @@
                 },
 
                 {
-                    "title" : "Black Memory BCK05",
+                    "title" : "black memory bck05",
                     "brand" : "Maison Margiela",
                     "details" : "Crewneck Collar, Shadowed Detailing, Signature White Stitching, Raglan Sleeves, Rib Knit Cuffs and Hem, Made in Italy",
                     "composition" : "Body: 100% cotton, Trim: 94% cotton, 6% elastane",
@@ -720,7 +720,7 @@
                 },
 
                 {
-                    "title" : "Burning Casentino 002",
+                    "title" : "burning casentino 002",
                     "brand" : "Palm Angels",
                     "details" : "Jacquard-Knit Wool-Blend Sweater, Graphic Pattern in Red, Yellow, Orange, Pilling Effect, Crewneck Collar, Rubberized Logo Appliqué, Made in Italy",
                     "composition" : "75% wool, 26% polyamide, 2% viscose",
@@ -731,7 +731,7 @@
                 },
 
                 {
-                    "title" : "Factory BCKGR02",
+                    "title" : "factory bckgr02",
                     "brand" : "Off-White",
                     "details" : "Crewneck Collar, Jacquard Graphic Knit, Knit Wool-Blend, Rib Knit Cuffs and Hem, Green Logo at Front, Made in Italy",
                     "composition" : "53% wool, 36% polyamide, 11% cotton",
@@ -742,7 +742,7 @@
                 },
 
                 {
-                    "title" : "Fleece BG01",
+                    "title" : "fleece bg01",
                     "brand" : "Rassvet",
                     "details" : "Navy Trim, Stand Collar, Bungee-Style Drawstring, Half-Zip Closure at Front, Rubberized Logo Appliqué, Imported",
                     "composition" : "73% polyester, 27% virgin wool",
@@ -753,7 +753,7 @@
                 },
 
                 {
-                    "title" : "Mackintosh BCK2",
+                    "title" : "mackintosh bck2",
                     "brand" : "Alyx",
                     "details" : "Lazer Print, Hand Applied Sponge Treatment, Double Hood, Silver Toggles for Adjustment, Mackintosh Icon on Hood, Made in Italy",
                     "composition" : "100% cotton",
@@ -764,7 +764,7 @@
                 },
 
                 {
-                    "title" : "Manual Hoodie WH01",
+                    "title" : "manual hoodie wh01",
                     "brand" : "Heron Preston",
                     "details" : "Drawstring at Hood, Kangaroo Pocket at Waist, Textile Logo Patch, Rib Knit Hem, Logo Printed in Red, Made in Portugal",
                     "composition" : "100% cotton. Trim 1: 95% cotton, 5% elastane. Trim 2: 100% polyvinyl.",
@@ -775,7 +775,7 @@
                 },
 
                 {
-                    "title" : "Pascal Painting BL2",
+                    "title" : "pascal painting bl2",
                     "brand" : "Off-White",
                     "details" : "Green Signature Graphics, Kangaroo Pocket at Waist, Drawstring, Rib Knit Cuffs and Hem, Rubberized Logo at Hood, Made in Portugal",
                     "composition" : "100% cotton",
@@ -786,7 +786,7 @@
                 },
 
                 {
-                    "title" : "Sherpa BCK07",
+                    "title" : "sherpa bck07",
                     "brand" : "Nike",
                     "details" : "Tonal Nylon Taffeta Panels, Half-Zip Closure, Zippered Kangaroo Pocket, Fully Lined, Embroidered Logo Appliqué, Imported",
                     "composition" : "Body: 100% polyester, Trim: 100% nylon, Lining: 100% polyester",
@@ -797,7 +797,7 @@
                 },
 
                 {
-                    "title" : "Stars BCK1",
+                    "title" : "stars bck1",
                     "brand" : "Clot",
                     "details" : "Graphic Pattern Throughout, Drawstring at Hood, Kangaroo Pocket at Waist, Rib Knit Cuffs and Hem, Textile Logo Patch, Imported",
                     "composition" : "65% cotton, 35% polyester",
@@ -808,7 +808,7 @@
                 },
 
                 {
-                    "title" : "Tonal Ray GR1",
+                    "title" : "tonal ray gr1",
                     "brand" : "A-Cold-Wall*",
                     "details" : "Tie-Dye Pattern, Exposed Seams, Drawstring at Hood, Welt Pockets at Waist, Logo Bonded in Black, Imported",
                     "composition" : "100% Cotton",
