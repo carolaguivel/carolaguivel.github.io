@@ -838,6 +838,40 @@
                     "text4" : "<p>Return to the Moon, visit Mars and a couple of asteroids. Perhaps at least touch down on the Moons of Jupiter. Hey, that’s plenty of “vision!” Why go through all the trouble? With its intuition and imagination, humankind will continue to be superior to any robot in the foreseeable future and these expeditions do not “cost the Earth.” But one this is for sure: we will return to this blue jewel with new knowledge, every single time. If we don’t let that happen, we will be letting down pioneers like Alexander von Humboldt. Ultimately, all astronauts have been fascinated - even overwhelmed - by the view of Earth from space, by what a fanatically beautiful, inhabited oasis it is in the apparently endless black desert expanse of the cosmos. With all the ingenuity inherent in humanity, is it not an interesting vision to make this planet a bit - no, not a bit, a lot - more worth living on? With the knowledge gained from exploring other planets?</p><div class='sidepanel-spacer-m'></div><p>Home sweet home - planet Earth! Yes, of course we can take a quick look over the fence into our neighbour’s garden, pick a couple of cherries and nibble on them. But let’s face reality: we will continue to live here for the time being.</p>",
                     "path" : "images/times",
                     "images" : [ "placeholder.jpg", "placeholder.jpg" ]
+                },
+
+                {
+                    "title" : "Why Can’t We Solve Climate Change?",
+                    "title2" : "We Went to the Moon. Why Can’t We Solve Climate Change?",
+                    "author" : "John Schwartz",
+                    "date" : "Oct 19, 2002",
+                    "text1" : "",
+                    "quote1" : "",
+                    "text2" : "",
+                    "quote2" : "",
+                    "text3" : "",
+                    "quote3" : "",
+                    "text4" : "",
+                    "path" : "images/times",
+                    "images" : [ "placeholder.jpg", "placeholder.jpg" ]
+                }
+            ],
+
+            "mars" : [
+                {
+                    "title" : "In Mars We Trust",
+                    "title2" : "In Mars We Trust",
+                    "author" : "Thore Bjornvig",
+                    "date" : "Oct 12, 1989",
+                    "text1" : "",
+                    "quote1" : "",
+                    "text2" : "",
+                    "quote2" : "",
+                    "text3" : "",
+                    "quote3" : "",
+                    "text4" : "",
+                    "path" : "images/times",
+                    "images" : [ "placeholder.jpg", "placeholder.jpg" ]
                 }
             ],
 
