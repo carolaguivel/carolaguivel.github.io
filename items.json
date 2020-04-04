@@ -906,6 +906,19 @@
                     "text4" : "<p>The landing coordinates, as determined from the onboard computer, were 13 degrees 19 minutes north latitude and 169 de­grees 09 minutes west longitude. After landing, the crew donned biological isolation garments. They were then retrieved by helicopter and taken to the primary recovery ship, USS Hornet. The crew and lunar material samples were placed in the Mobile Quarantine Facility for transport to the Lunar Receiving Labora­tory in Houston. The command module was taken aboard the Hornet about 3 hours after landing.</p><div class='sidepanel-spacer-m'></div><p>With the completion of Apollo 11, the national objective of landing men on the moon and returning them safely to earth before the end of the decade had been accomplished.</p>",
                     "path" : "images/times/moon",
                     "images" : [ "apollo11_1.jpg", "apollo11_2.jpg", "apollo11_3.jpg" ]
+                },
+
+                {
+                    "title" : "Voyage to the Moon",
+                    "title2" : "Voyage to the Moon",
+                    "author" : "Archibald MacLeish",
+                    "date" : "Jul 21, 1969",
+                    "text1": "<p>Presence among us,<br/>wanderer in the skies,</p><div class='sidepanel-spacer-m'></div><p>dazzle of silver in our leaves and on our</br>waters silver,</p><div class='sidepanel-spacer-m'></div><p>O</p>",
+                    "text2" : "<p>silver evasion in our farthest thought –</br>“the visiting moon” . . . “the glimpses of the moon” . . .</p><div class='sidepanel-spacer-m'></div><p>and we have touched you!</p><div class='sidepanel-spacer-m'></div><p>From the first of time,</br>before the first of time, before the</br>first men tasted time, we thought of you.</br>You were a wonder to us, unattainable,</br>a longing past the reach of longing,</br>a light beyond our light, our lives–perhaps</br>a meaning to us…</p><div class='sidepanel-spacer-m'></div><p>Now</p>",
+                    "text3" : "<p>our hands have touched you in your depth of night.</p><div class='sidepanel-spacer-m'></div><p>Three days and three nights we journeyed,</br>steered by farthest stars, climbed outward,</br>crossed the invisible tide-rip where the floating dust</br>falls one way or the other in the void between,</br>followed that other down, encountered</br>cold, faced death–unfathomable emptiness . . .</p><div class='sidepanel-spacer-m'></div><p></p><div class='sidepanel-spacer-m'></div><p>Then, the fourth day evening, we descended,</br>made fast, set foot at dawn upon your beaches,</br>sifted between our fingers your cold sand.</p>",
+                    "text4" : "<p>We stand here in the dusk, the cold, the silence . . .</p><div class='sidepanel-spacer-m'></div><p>and here, as at the first of time, we lift our heads.</br>Over us, more beautiful than the moon, a</br>moon, a wonder to us, unattainable,</br>a longing past the reach of longing,</br>a light beyond our light, our lives–perhaps</br>a meaning to us . . .</p><div class='sidepanel-spacer-m'></div><p>O, a meaning!</p><div class='sidepanel-spacer-m'></div><p>over us on these silent beaches the bright earth,</p><div class='sidepanel-spacer-m'></div><p>presence among us.</p>",
+                    "path" : "images/times/moon",
+                    "images" : [ "placeholder_1.jpg", "placeholder_2.jpg", "placeholder_3.jpg" ]
                 }
             ],
 
