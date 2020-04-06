@@ -872,6 +872,22 @@
                     "text4" : "<p>In the last three years, evidence has been building in the scientific community that Earth life might have originated on Mars and was brought to this planet aboard a Martian meteorite that carried some chemicals essential to forming life that were likely available on Mars but not yet present on Earth. The reemergence of the panspermia theory - a hypothesis that rocks expelled from a planet’s surface by impact serve as transfer vehicles for spreading biological material from one planet to another within the same solar system - is intertwined with the long-term scientific quest to find out how life began on Earth. Even though scientific signs are beginning to point in that direction, it’s still more a matter of increased probability than scientific proof. Could we all be Martians after all?</p>",
                     "path" : "images/times/mars",
                     "images" : [ "placeholder.jpg", "placeholder.jpg" ]
+                },
+
+                {
+                    "title" : "Ares 16",
+                    "title2" : "Ares 16 Mission Report",
+                    "author" : "NASA Mission Evaluation Team",
+                    "date" : "Aug 3, 2002",
+                    "text1" : "",
+                    "quote1" : "",
+                    "text2" : "",
+                    "quote2" : "",
+                    "text3" : "",
+                    "quote3" : "",
+                    "text4" : "",
+                    "path" : "images/times/mars",
+                    "images" : [ "placeholder.jpg", "placeholder.jpg" ]
                 }
             ],
 
