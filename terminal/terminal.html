@@ -3,12 +3,12 @@
 <head>
     <title>Home Portal</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/umw1eou.css">
     <script src="draggabilly/draggabilly.pkgd.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
@@ -36,6 +36,62 @@
 
 var myurl = "https://carolaguivel.github.io/items.json";
 
+let $bootingmessages = ["preparing main window...", "loading window system...", "loading as system...", "system ready"]
+
+setTimeout(function() {
+    $("#message-view").append(`
+        <div class="form-posted">
+            <div class="input-posted">
+                <span class="input-location">~</span>
+                <p><span>${timeStamp()}</span></p>
+                <p>Command:</p>
+                <div id="message" rows="1">${$bootingmessages[0]}</div>
+            </div>
+        </div>`
+    )     
+}, 1000);
+
+setTimeout(function() {
+    $("#message-view").append(`
+        <div class="form-posted">
+            <div class="input-posted">
+                <span class="input-location">~</span>
+                <p><span>${timeStamp()}</span></p>
+                <p>Command:</p>
+                <div id="message" rows="1">${$bootingmessages[1]}</div>
+            </div>
+        </div>`
+    ) 
+}, 2000);
+
+setTimeout(function() {
+    $("#message-view").append(`
+        <div class="form-posted">
+            <div class="input-posted">
+                <span class="input-location">~</span>
+                <p><span>${timeStamp()}</span></p>
+                <p>Command:</p>
+                <div id="message" rows="1">${$bootingmessages[2]}</div>
+            </div>
+        </div>`
+    ) 
+}, 3000);
+
+setTimeout(function() {
+    $("#message-view").append(`
+        <div class="form-posted">
+            <div class="input-posted">
+                <span class="input-location">~</span>
+                <p><span>${timeStamp()}</span></p>
+                <p>Command:</p>
+                <div id="message" rows="1">${$bootingmessages[3]}</div>
+            </div>
+        </div>`
+    ) 
+}, 5000);
+ 
+// ************************************************
+
 $("#message").on("keyup", (event) => {
 	if (event.which === 13) $postMessage();
 })
@@ -45,9 +101,11 @@ function $postMessage() {
     let $username = "",
         $message = $("#message").html().trim(),
         $location = $("#input-location").html().trim();
+
+    window.scrollTo(0,document.getElementById("message-view").scrollHeight);
     
     $message = $message.replace(/<div>/, "<br>").replace(/<div>/g, "").replace(/<\/div>/g, "<br>").replace(/<br>/g, " ").trim();
-    
+
     let $split = $message.split(" "),
         $message1 = "",
         $message2 = "",
@@ -58,10 +116,15 @@ function $postMessage() {
         $locationeyewear = ["afix 032", "gradient blck1", "cold yc2", "fire oval", "geom go1", "mmech0005", "moon airblast", "neo round", "newturtle r1", "scon mo1", "ski pr3", "spike gr2", "tailwind 001", "tralyx moon", "zip tie oc1"],
         $locationbags = ["032 duffel bck001", "moncler dry bck004", "utility case bl2", "baby-x gry002", "padded nylon bl1", "black tank bck003", "pixelated tote b1", "fragment n05gr1", "tool bag bck002"],
         $locationbottoms = ["block blue bl1", "parachute cargo gr01", "zone-9 moto bck1", "camo gr02", "scaffolded circuit br1", "ispa gr03", "tactical taupe 003", "manual sweats bck3", "tracks bck2"],
-        $locationouterwear = ["asymmetric grybl01", "deimos orng001", "night crawler bg1", "parus coat bck3", "quantum dye para bck3", "moncler cosmos orng2", "memory nylon gr1", "puffer gilet orng1", "sirus wh1", "idrc allochroic gr3", "passage gr1", "oslo down gr3", "camo beige02", "iridescent down gr2", "nrgxse r1"],
-        $locationshirts = ["bruised pr1", "ss tee wh1", "camo + transfer neon01", "the psytrance multi 001", "moon flag 1969", "silver lake 003"],
+        $locationouterwear = ["asymmetric grybl01", "deimos orng001", "night crawler bg1", "parus coat bck3", "quantum para bck3", "moncler cosmos orng2", "memory nylon gr1", "puffer gilet orng1", "sirus wh1", "idrc allochroic gr3", "passage gr1", "oslo down gr3", "camo beige02", "iridescent down gr2", "nrgxse r1"],
+        $locationshirts = ["bruised pr1", "ss tee wh1", "camo transfer neon01", "psytrance multi 001", "moon flag 1969", "silver lake 003"],
         $locationsweaters = ["allover grbl1", "factory bckgr02", "pascal painting bl2", "alby-y bl3", "fleece bg01", "sherpa bck07", "black memory bck05", "mackintosh bck2", "stars bck1", "burning casentino 002", "manual hoodie wh01", "tonal ray gr1"],
-        $locationshoes = ["1017 alison wh7", "hiking boot blk0001", "vapormax 360", "bamba02", "hybrid 1941", "brown jaw br02", "nubuck pr2", "gsg 9high", "off br3"];
+        $locationshoes = ["1017 alison wh7", "hiking boot blk0001", "vapormax 360", "bamba02", "hybrid 1941", "brown jaw br02", "nubuck pr2", "gsg 9high", "off br3"],
+        $locationhtimes = ["earth", "mars", "moon", "space"],
+        $locationearth = ["pale blue dot", "solving climate change?"],
+        $locationmoon = ["gender bias", "apollo 11", "voyage to the moon"],
+        $locationspace = ["humanity's future in space", "life on planet mercury?"],
+        $locationmars = ["in mars we trust"]
 
     if ( $split.length == 1 ){
         $message1 = $split[0]
@@ -79,10 +142,21 @@ function $postMessage() {
         $message3 = $split[2]
         $message4 = $split[3]
         $message2 = $message2.concat(" ", $message3, " ", $message4)
+    } else if ( $split.length == 5) {
+        $message1 = $split[0]
+        $message2 = $split[1]
+        $message3 = $split[2]
+        $message4 = $split[3]
+        $message5 = $split[4]
+        $message2 = $message2.concat(" ", $message3, " ", $message4, " ", $message5)
     }
 
     function homeSearch(location) {
         return location == $message2;
+    }
+
+    function locationSearch(location) {
+        return location == $location;
     }
 
     let $form = `<div class="input-posted">
@@ -91,6 +165,7 @@ function $postMessage() {
                     <p>Command:</p>
                     <div id="message" rows="1">${$message}</div>
                 </div>`;
+
 
     switch ($message1) {
         case "nsun":
@@ -131,21 +206,6 @@ function $postMessage() {
                             <div class="output-posted grid-4"><p>eyewear</p><p>bags</p><p>bottoms</p><p></p><p>outerwear</p><p>shirts</p><p></p><p></p><p>sweaters</p><p>shoes</p></div>
                         </div>`
                     );
-                break;    
-                case "h+ times": 
-                    $(".times").empty()
-                    $("#message-view").append(`
-                        <div class="form-posted">
-                            ${$form}
-                            <div class="form-spacer"></div>
-                            <div class="output-posted times grid-4"></div>
-                        </div>`
-                    );
-                    $.getJSON(myurl, function(data){
-                        for (var i = 0; i < data.times[0].moon.length; i++){
-                            $(".times").append( "<p>" + data.times[0].moon[i].title + "</p>")
-                        };
-                    });
                 break;
                 case "eyewear": 
                     $(".eyewear").empty()
@@ -252,30 +312,74 @@ function $postMessage() {
                         };
                     });
                 break;
-                case "geom go1": case "newturtle r1": case "tailwind 001": case "zip tie oc1":
-                case "afix 032": case "gradient blck1": case "mmech0005": case "scon mo1": case "tralyx moon":
-                case "cold yc2": case "moon airblast": case "ski pr3": case "fire oval": case "neo round":
-                case "spike gr2": case "032 duffel bck001": case "moncler dry bck004": case "utility case bl2":
-                case "baby-x gry002": case "baby-x gry002": case "padded nylon bl1": case "black tank bck003":
-                case "pixelated tote b1": case "fragment n05gr1": case "tool bag bck002":
+                case "h+ times": 
                     $("#message-view").append(`
                         <div class="form-posted">
                             ${$form}
                             <div class="form-spacer"></div>
-                            <div class="output-posted grid-4"><p>brand</p><p>details</p><p></p><p></p><p>composition</p><p>price</p></div>
+                            <div class="output-posted grid-4"><p>earth</p><p>mars</p><p>moon</p><p>space</p></div>
                         </div>`
                     );
                 break;
-                case "block blue bl1": case "parachute cargo gr01": case "zone-9 moto bck1": case "camo gr02":
-                case "scaffolded circuit br1": case "ispa gr03": case "tactical taupe 003": case "manual sweats bck3":
-                case "tracks bck2":
+                case "earth":
+                    $(".earth").empty()
                     $("#message-view").append(`
                         <div class="form-posted">
                             ${$form}
                             <div class="form-spacer"></div>
-                            <div class="output-posted grid-4"><p>brand</p><p>details</p><p></p><p></p><p>composition</p><p>size</p><p></p><p></p><p>price</p></div>
+                            <div class="output-posted earth grid-4"></div>
                         </div>`
-                    );  
+                    );
+                    $.getJSON(myurl, function(data){
+                        for (var i = 0; i < data.times[0].earth.length; i++){
+                            $(".earth").append( "<p>" + data.times[0].earth[i].title + "</p>")
+                        };
+                    });
+                break;
+                case "mars":
+                    $(".mars").empty()
+                    $("#message-view").append(`
+                        <div class="form-posted">
+                            ${$form}
+                            <div class="form-spacer"></div>
+                            <div class="output-posted mars grid-4"></div>
+                        </div>`
+                    );
+                    $.getJSON(myurl, function(data){
+                        for (var i = 0; i < data.times[0].mars.length; i++){
+                            $(".mars").append( "<p>" + data.times[0].mars[i].title + "</p>")
+                        };
+                    });
+                break;
+                case "moon":
+                    $(".moon").empty()
+                    $("#message-view").append(`
+                        <div class="form-posted">
+                            ${$form}
+                            <div class="form-spacer"></div>
+                            <div class="output-posted moon grid-4"></div>
+                        </div>`
+                    );
+                    $.getJSON(myurl, function(data){
+                        for (var i = 0; i < data.times[0].moon.length; i++){
+                            $(".moon").append( "<p>" + data.times[0].moon[i].title + "</p>")
+                        };
+                    });
+                break;
+                case "space":
+                    $(".space").empty()
+                    $("#message-view").append(`
+                        <div class="form-posted">
+                            ${$form}
+                            <div class="form-spacer"></div>
+                            <div class="output-posted space grid-4"></div>
+                        </div>`
+                    );
+                    $.getJSON(myurl, function(data){
+                        for (var i = 0; i < data.times[0].space.length; i++){
+                            $(".space").append( "<p>" + data.times[0].space[i].title + "</p>")
+                        };
+                    });
                 break;
                 default: 
                     $("#message-view").append(`
@@ -289,27 +393,124 @@ function $postMessage() {
             }
         break;
         case "bd":
-            switch ($location) {
-                case "credits": case "h+ times": case "info": case "rundfunk": case "warcore":
-                    $("#message-view").append(`
-                        <div class="form-posted">${$form}</div>
-                    `);
-                    $("#input-location").text("~")
-                    $("#header-location").text("Welcome to your Home Portal")
-                break;
-                case "eyewear": case "bottoms": case "shirts": case "shoes": case "outerwear": case "bags": case "sweaters": case "shoes":
-                    $("#message-view").append(`
-                        <div class="form-posted">${$form}</div>
-                    `);
-                    $("#input-location").text("warcore")
-                    $("#header-location").text("Warcore")
+            switch ($message2) {
+                case "":
+                    switch ($location) {
+                        case "credits": case "h+ times": case "info": case "rundfunk": case "warcore":
+                            $("#message-view").append(`
+                                <div class="form-posted">${$form}</div>
+                            `);
+                            $("#input-location").text("~")
+                            $("#header-location").text("Welcome to your Home Portal")
+                        break;
+                        case "eyewear": case "bags": case "bottoms": case "outerwear": case "shirts": case "sweaters": case "shoes":
+                            $("#message-view").append(`
+                                <div class="form-posted">${$form}</div>
+                            `);
+                            $("#input-location").text("warcore")
+                            $("#header-location").text("Warcore")
+                        break;
+                        case "afix 032": case "geom go1": case "newturtle r1": case "tailwind 001": case "gradient blck1": case "mmech0005": case "scon mo1": case "tralyx moon": case "cold yc2": case "moon airblast": case "ski pr3": case "zip tie oc1": case "fire oval": case "neo round": case "spike gr2":
+                            $("#message-view").append(`
+                                <div class="form-posted">${$form}</div>
+                            `);
+                            $("#input-location").text("eyewear")
+                            $("#header-location").text("Warcore >> Eyewear")
+                        break;
+                        case "032 duffel bck001": case "baby-x gry002": case "black tank bck003": case "fragment n05gr1": case "moncler dry bck004": case "padded nylon bl1": case "pixelated tote b1": case "tool bag bck002": case "utility case bl2":
+                            $("#message-view").append(`
+                                <div class="form-posted">${$form}</div>
+                            `);
+                            $("#input-location").text("bags")
+                            $("#header-location").text("Warcore >> Bags")
+                        break;
+                        case "block blue bl1": case "parachute cargo gr01": case "zone-9 moto bck1": case "camo gr02": case "scaffolded circuit br1": case "ispa gr03": case "tactical taupe 003": case "manual sweats bck3": case "tracks bck2":
+                            $("#message-view").append(`
+                                <div class="form-posted">${$form}</div>
+                            `);
+                            $("#input-location").text("bottoms")
+                            $("#header-location").text("Warcore >> Bottoms")
+                        break;
+                        case "asymmetric grybl01": case "deimos orng001": case "night crawler bg1": case "parus coat bck3": case "quantum para bck3": case "moncler cosmos orng2": case "memory nylon gr1": case "puffer gilet orng1": case "sirus wh1": case "idrc allochroic gr3": case "passage gr1": case "oslo down gr3": case "camo beige02": case "iridescent down gr2": case "nrgxse r1":
+                            $("#message-view").append(`
+                                <div class="form-posted">${$form}</div>
+                            `);
+                            $("#input-location").text("outerwear")
+                            $("#header-location").text("Warcore >> Outerwear")
+                        break;
+                        case "bruised pr1": case "ss tee wh1": case "camo transfer neon01": case "psytrance multi 001": case "moon flag 1969": case "silver lake 003":
+                            $("#message-view").append(`
+                                <div class="form-posted">${$form}</div>
+                            `);
+                            $("#input-location").text("shirts")
+                            $("#header-location").text("Warcore >> Shirts")
+                        break;
+                        case "1017 alison wh7": case "hiking boot blk0001": case "vapormax 360": case "bamba02": case "hybrid 1941": case "brown jaw br02": case "nubuck pr2": case "gsg 9high": case "off br3":
+                            $("#message-view").append(`
+                                <div class="form-posted">${$form}</div>
+                            `);
+                            $("#input-location").text("shoes")
+                            $("#header-location").text("Warcore >> Shoes")
+                        break;
+                        case "allover grbl1": case "factory bckgr02": case "pascal painting bl2": case "alby-y bl3": case "fleece bg01": case "sherpa bck07": case "black memory bck05": case "mackintosh bck2": case "stars bck1": case "burning casentino 002": case "manual hoodie wh01": case "tonal ray gr1": 
+                            $("#message-view").append(`
+                                <div class="form-posted">${$form}</div>
+                            `);
+                            $("#input-location").text("sweaters")
+                            $("#header-location").text("Warcore >> Sweaters")
+                        break;
+                        case "earth": case "mars": case "moon": case "space":
+                            $("#message-view").append(`
+                                <div class="form-posted">${$form}</div>
+                            `);
+                            $("#input-location").text("h+ times")
+                            $("#header-location").text("H+ Times")
+                        break;
+                        case "pale blue dot": case "solving climate change?":
+                            $("#message-view").append(`
+                                <div class="form-posted">${$form}</div>
+                            `);
+                            $("#input-location").text("earth")
+                            $("#header-location").text("H+ Times >> Earth")
+                        break;
+                        case "in mars we trust":
+                            $("#message-view").append(`
+                                <div class="form-posted">${$form}</div>
+                            `);
+                            $("#input-location").text("mars")
+                            $("#header-location").text("H+ Times >> Mars")
+                        break;
+                        case "humanity's future in space": case "life on planet mercury?":
+                            $("#message-view").append(`
+                                <div class="form-posted">${$form}</div>
+                            `);
+                            $("#input-location").text("space")
+                            $("#header-location").text("H+ Times >> Space")
+                        break;
+                        case "gender bias": case "apollo 11": case "voyage to the moon":
+                            $("#message-view").append(`
+                                <div class="form-posted">${$form}</div>
+                            `);
+                            $("#input-location").text("moon")
+                            $("#header-location").text("H+ Times >> Moon")
+                        break;
+                        default:
+                            $("#message-view").append(`
+                                <div class="form-posted">
+                                    ${$form}
+                                    <div class="form-spacer"></div>
+                                    <p class="output-posted">-err: no directory to go back to</p>
+                                </div>
+                            `);
+                        break;
+                    }
                 break;
                 default:
                     $("#message-view").append(`
                         <div class="form-posted">
                             ${$form}
                             <div class="form-spacer"></div>
-                            <p class="output-posted">-err: no directory to go back to</p>
+                            <p class="output-posted">-err: no such command</p>
                         </div>
                     `);
                 break;
@@ -384,7 +585,7 @@ function $postMessage() {
                     let $inputbagslocation = $locationbags.find(homeSearch)
 
                     if ($inputbagslocation) {
-                        $$("#message-view").append(`
+                        $("#message-view").append(`
                             <div class="form-posted">${$form}</div>
                         `);
 
@@ -500,6 +701,288 @@ function $postMessage() {
                         `);
                     }
                 break;
+                case "h+ times":
+                    let $inputhtimeslocation = $locationhtimes.find(homeSearch)
+
+                    if ($inputhtimeslocation) {
+                        $("#message-view").append(`
+                            <div class="form-posted">${$form}</div>
+                        `);
+
+                        $("#input-location").text($inputhtimeslocation)
+                        $("#header-location").text("H+ Times >> " + $inputhtimeslocation)
+                    } else {
+                        $("#message-view").append(`
+                            <div class="form-posted">
+                                ${$form}
+                                <div class="form-spacer"></div>
+                                <p class="output-posted">-err: no such directory found</p>
+                            </div>
+                        `);
+                    }
+                break;
+                case "earth":
+                    let earthnumber = "",
+                        $inputearthlocation = $locationearth.find(homeSearch);
+
+                    if ($inputearthlocation == "pale blue dot") {
+                        earthnumber = 0;
+                    } else if ($inputearthlocation == "solving climate change?") {
+                        earthnumber = 1;
+                    } else {
+                        earthnumber = 15;
+                    }
+
+                    if (earthnumber != 15) {
+                        $("#sidepanel-view").empty()
+
+                        $("#input-location").text($inputearthlocation)
+                        $("#header-location").text("H+ Times >> Earth >> " + $inputearthlocation)
+
+                        $("#message-view, #sidepanel-view").css({"width": "50%", "float": "left"});
+
+                        $("#message-view").append(`
+                            <div class="form-posted">${$form}</div>
+                        `);
+                        
+                        $.getJSON(myurl, function(data){
+                            $("#sidepanel-view").append(`
+                                <div class="sidepanel">
+                                    <div class="sidepanel-spacer-l"></div>
+                                    <p class="sidepanel-author">${data.times[0].earth[earthnumber].author}</p>
+                                    <div class="sidepanel-spacer-s"></div>
+                                    <p class="sidepanel-title">${data.times[0].earth[earthnumber].title2}</p>
+                                    <div class="sidepanel-spacer-l"></div>
+                                    <div class="sidepanel-paragraph">${data.times[0].earth[earthnumber].text1}</div>
+                                    <div class="sidepanel-spacer-l"></div>
+                                    <p class="sidepanel-quote">${data.times[0].earth[earthnumber].quote1}</p>
+                                    <div class="sidepanel-spacer-l"></div>
+                                    <div class="sidepanel-paragraph">${data.times[0].earth[earthnumber].text2}</div>
+                                    <div class="sidepanel-spacer-l"></div>
+                                    <p class="sidepanel-quote">${data.times[0].earth[earthnumber].quote2}</p>
+                                    <div class="sidepanel-spacer-l"></div>
+                                    <div class="sidepanel-paragraph">${data.times[0].earth[earthnumber].text3}</div>
+                                    <div class="sidepanel-spacer-l"></div>
+                                    <p class="sidepanel-quote">${data.times[0].earth[earthnumber].quote3}</p>
+                                    <div class="sidepanel-spacer-l"></div>
+                                    <div class="sidepanel-paragraph">${data.times[0].earth[earthnumber].text4}</div>
+                                    <div class="sidepanel-spacer-l"></div>
+                                </div>`
+                            )
+                        });
+
+                    } else {
+                        $("#message-view").append(`
+                            <div class="form-posted">
+                                ${$form}
+                                <div class="form-spacer"></div>
+                                <p class="output-posted">-err: no such directory found</p>
+                            </div>
+                        `);
+                    }
+                break;
+                case "space":
+                    let spacenumber = "",
+                        $inputspacelocation = $locationspace.find(homeSearch);
+
+                    if ($inputspacelocation == "humanity's future in space") {
+                        spacenumber = 0;
+                    } else if ($inputspacelocation == "life on planet mercury?") {
+                        spacenumber = 1;
+                    } else {
+                        spacenumber = 15;
+                    }
+
+                    if (spacenumber != 15) {
+                        $("#sidepanel-view").empty()
+
+                        $("#input-location").text($inputspacelocation)
+                        $("#header-location").text("H+ Times >> Space >> " + $inputspacelocation)
+
+                        $("#message-view, #sidepanel-view").css({"width": "50%", "float": "left"});
+
+                        $("#message-view").append(`
+                            <div class="form-posted">${$form}</div>
+                        `);
+                        
+                        $.getJSON(myurl, function(data){
+                            $("#sidepanel-view").append(`
+                                <div class="sidepanel">
+                                    <div class="sidepanel-spacer-l"></div>
+                                    <p class="sidepanel-author">${data.times[0].space[spacenumber].author}</p>
+                                    <div class="sidepanel-spacer-s"></div>
+                                    <p class="sidepanel-title">${data.times[0].space[spacenumber].title2}</p>
+                                    <div class="sidepanel-spacer-l"></div>
+                                    <div class="sidepanel-paragraph">${data.times[0].space[spacenumber].text1}</div>
+                                    <div class="sidepanel-spacer-l"></div>
+                                    <p class="sidepanel-quote">${data.times[0].space[spacenumber].quote1}</p>
+                                    <div class="sidepanel-spacer-l"></div>
+                                    <div class="sidepanel-paragraph">${data.times[0].space[spacenumber].text2}</div>
+                                    <div class="sidepanel-spacer-l"></div>
+                                    <p class="sidepanel-quote">${data.times[0].space[spacenumber].quote2}</p>
+                                    <div class="sidepanel-spacer-l"></div>
+                                    <div class="sidepanel-paragraph">${data.times[0].space[spacenumber].text3}</div>
+                                    <div class="sidepanel-spacer-l"></div>
+                                    <p class="sidepanel-quote">${data.times[0].space[spacenumber].quote3}</p>
+                                    <div class="sidepanel-spacer-l"></div>
+                                    <div class="sidepanel-paragraph">${data.times[0].space[spacenumber].text4}</div>
+                                    <div class="sidepanel-spacer-l"></div>
+                                </div>`
+                            )
+                        });
+
+                    } else {
+                        $("#message-view").append(`
+                            <div class="form-posted">
+                                ${$form}
+                                <div class="form-spacer"></div>
+                                <p class="output-posted">-err: no such directory found</p>
+                            </div>
+                        `);
+                    }
+                break;
+                case "mars":
+                    let marsnumber = "",
+                        $inputmarslocation = $locationmars.find(homeSearch);
+
+                    if ($inputmarslocation == "in mars we trust") {
+                        marsnumber = 0;
+                    } else if ($inputmarslocation == "placeholder") {
+                        marsnumber = 1;
+                    } else {
+                        marsnumber = 15;
+                    }
+
+                    if (marsnumber != 15) {
+                        $("#sidepanel-view").empty()
+
+                        $("#input-location").text($inputmarslocation)
+                        $("#header-location").text("H+ Times >> Mars >> " + $inputmarslocation)
+
+                        $("#message-view, #sidepanel-view").css({"width": "50%", "float": "left"});
+
+                        $("#message-view").append(`
+                            <div class="form-posted">${$form}</div>
+                        `);
+                        
+                        $.getJSON(myurl, function(data){
+                            $("#sidepanel-view").append(`
+                                <div class="sidepanel">
+                                    <div class="sidepanel-spacer-l"></div>
+                                    <p class="sidepanel-author">${data.times[0].mars[marsnumber].author}</p>
+                                    <div class="sidepanel-spacer-s"></div>
+                                    <p class="sidepanel-title">${data.times[0].mars[marsnumber].title2}</p>
+                                    <div class="sidepanel-spacer-l"></div>
+                                    <div class="sidepanel-paragraph">${data.times[0].mars[marsnumber].text1}</div>
+                                    <div class="sidepanel-spacer-l"></div>
+                                    <p class="sidepanel-quote">${data.times[0].mars[marsnumber].quote1}</p>
+                                    <div class="sidepanel-spacer-l"></div>
+                                    <div class="sidepanel-paragraph">${data.times[0].mars[marsnumber].text2}</div>
+                                    <div class="sidepanel-spacer-l"></div>
+                                    <p class="sidepanel-quote">${data.times[0].mars[marsnumber].quote2}</p>
+                                    <div class="sidepanel-spacer-l"></div>
+                                    <div class="sidepanel-paragraph">${data.times[0].mars[marsnumber].text3}</div>
+                                    <div class="sidepanel-spacer-l"></div>
+                                    <p class="sidepanel-quote">${data.times[0].mars[marsnumber].quote3}</p>
+                                    <div class="sidepanel-spacer-l"></div>
+                                    <div class="sidepanel-paragraph">${data.times[0].mars[marsnumber].text4}</div>
+                                    <div class="sidepanel-spacer-l"></div>
+                                </div>`
+                            )
+                        });
+
+                    } else {
+                        $("#message-view").append(`
+                            <div class="form-posted">
+                                ${$form}
+                                <div class="form-spacer"></div>
+                                <p class="output-posted">-err: no such directory found</p>
+                            </div>
+                        `);
+                    }
+                break;
+                case "moon":
+                    let moonnumber = "",
+                        $inputmoonlocation = $locationmoon.find(homeSearch);
+
+                    if ($inputmoonlocation == "gender bias") {
+                        moonnumber = 0;
+                    } else if ($inputmoonlocation == "apollo 11") {
+                        moonnumber = 1;
+                    } else if ($inputmoonlocation == "voyage to the moon") {
+                        moonnumber = 2;
+                    } else {
+                        moonnumber = 15;
+                    }
+
+                    if (moonnumber != 15) {
+                        $("#sidepanel-view").empty()
+
+                        $("#input-location").text($inputmoonlocation)
+                        $("#header-location").text("H+ Times >> Moon >> " + $inputmoonlocation)
+
+                        $("#message-view, #sidepanel-view").css({"width": "50%", "float": "left"});
+
+                        $("#message-view").append(`
+                            <div class="form-posted">${$form}</div>
+                        `);
+                        
+                        $.getJSON(myurl, function(data){
+                            if ( data.times[0].moon[moonnumber].quote1 == undefined && data.times[0].moon[moonnumber].quote2 == undefined && data.times[0].moon[moonnumber].quote3 == undefined ) {
+                                $("#sidepanel-view").append(`
+                                    <div class="sidepanel">
+                                        <div class="sidepanel-spacer-l"></div>
+                                        <p class="sidepanel-author">${data.times[0].moon[moonnumber].author}</p>
+                                        <div class="sidepanel-spacer-s"></div>
+                                        <p class="sidepanel-title">${data.times[0].moon[moonnumber].title2}</p>
+                                        <div class="sidepanel-spacer-l"></div>
+                                        <div class="sidepanel-paragraph">${data.times[0].moon[moonnumber].text1}</div>
+                                        <div class="sidepanel-spacer-m"></div>
+                                        <div class="sidepanel-paragraph">${data.times[0].moon[moonnumber].text2}</div>
+                                        <div class="sidepanel-spacer-m"></div>
+                                        <div class="sidepanel-paragraph">${data.times[0].moon[moonnumber].text3}</div>
+                                        <div class="sidepanel-spacer-m"></div>
+                                        <div class="sidepanel-paragraph">${data.times[0].moon[moonnumber].text4}</div>
+                                        <div class="sidepanel-spacer-l"></div>
+                                    </div>`
+                                )
+                            } else {
+                                $("#sidepanel-view").append(`
+                                    <div class="sidepanel">
+                                        <div class="sidepanel-spacer-l"></div>
+                                        <p class="sidepanel-author">${data.times[0].moon[moonnumber].author}</p>
+                                        <div class="sidepanel-spacer-s"></div>
+                                        <p class="sidepanel-title">${data.times[0].moon[moonnumber].title2}</p>
+                                        <div class="sidepanel-spacer-l"></div>
+                                        <div class="sidepanel-paragraph">${data.times[0].moon[moonnumber].text1}</div>
+                                        <div class="sidepanel-spacer-l"></div>
+                                        <p class="sidepanel-quote">${data.times[0].moon[moonnumber].quote1}</p>
+                                        <div class="sidepanel-spacer-l"></div>
+                                        <div class="sidepanel-paragraph">${data.times[0].moon[moonnumber].text2}</div>
+                                        <div class="sidepanel-spacer-l"></div>
+                                        <p class="sidepanel-quote">${data.times[0].moon[moonnumber].quote2}</p>
+                                        <div class="sidepanel-spacer-l"></div>
+                                        <div class="sidepanel-paragraph">${data.times[0].moon[moonnumber].text3}</div>
+                                        <div class="sidepanel-spacer-l"></div>
+                                        <p class="sidepanel-quote">${data.times[0].moon[moonnumber].quote3}</p>
+                                        <div class="sidepanel-spacer-l"></div>
+                                        <div class="sidepanel-paragraph">${data.times[0].moon[moonnumber].text4}</div>
+                                        <div class="sidepanel-spacer-l"></div>
+                                    </div>`
+                                )
+                            }
+                        });
+
+                    } else {
+                        $("#message-view").append(`
+                            <div class="form-posted">
+                                ${$form}
+                                <div class="form-spacer"></div>
+                                <p class="output-posted">-err: no such directory found</p>
+                            </div>
+                        `);
+                    }
+                break;
                 default:
                     $("#message-view").append(`
                         <div class="form-posted">
@@ -514,8 +997,9 @@ function $postMessage() {
         case "oi":
             switch ($location) {
                 case "eyewear":
-                    let eyewearnumber = "";
-                    let $inputeyewearlocation = $locationeyewear.find(homeSearch)
+                    let eyewearnumber = "",
+                        $inputeyewearlocation = $locationeyewear.find(homeSearch);
+
                     if ($inputeyewearlocation == "afix 032") {
                         eyewearnumber = 0;
                     } else if ($inputeyewearlocation == "gradient blck1") {
@@ -557,22 +1041,28 @@ function $postMessage() {
                     
                         $.getJSON(myurl, function(data){
                             $("#windows-wrapper").append(`
-                                <div class="window">
+                                <div class="warcore-window">
                                     <div class="window-close">&#10005;</div>
-                                    <p class="window-title">${data.warcore[0].eyewear[eyewearnumber].title}</p>
-                                    <div class="window-details"><p class="window-brand">${data.warcore[0].eyewear[eyewearnumber].brand}</p><p class="window-price">${data.warcore[0].eyewear[eyewearnumber].price}</p></div>
-                                    <div class="window-spacer"></div>
+                                    <p class="warcore-window-title">${data.warcore[0].eyewear[eyewearnumber].title}</p>
+                                    <div class="warcore-window-details"><p class="warcore-window-brand">${data.warcore[0].eyewear[eyewearnumber].brand}</p><p class="warcore-window-price">${data.warcore[0].eyewear[eyewearnumber].price}</p></div>
+                                    <div class="warcore-window-spacer"></div>
                                     <div class="swiper-container">
                                         <img class="swiper-slide" src="${data.warcore[0].eyewear[eyewearnumber].path}/${data.warcore[0].eyewear[eyewearnumber].images[0]}" width="100%">
                                         <img class="swiper-slide" src="${data.warcore[0].eyewear[eyewearnumber].path}/${data.warcore[0].eyewear[eyewearnumber].images[1]}" width="100%">
                                         <img class="swiper-slide" src="${data.warcore[0].eyewear[eyewearnumber].path}/${data.warcore[0].eyewear[eyewearnumber].images[2]}" width="100%">
                                     </div>
+                                    <svg class="warcore-button-icon warcore-left-icon" width="120" height="55" viewBox="0 0 120 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M45 3L6 55L45 107" stroke="black" stroke-width="12"/>
+                                        <path d="M110 3L71 55L110 107" stroke="black" stroke-width="12"/>
+                                    </svg>
+                                    <svg class="warcore-button-icon warcore-right-icon" width="120" height="55" viewBox="0 0 120 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M69 3L108 55L69 107" stroke="black" stroke-width="12"/>
+                                        <path d="M4 3L43 55L4 107" stroke="black" stroke-width="12"/>
+                                    </svg>
                                 </div>`
                             )
-
-                            var elem = document.querySelector('.window');
+                            var elem = document.querySelector('.warcore-window');
                             var draggie = new Draggabilly( elem, {});
-                            
                         });
                     } else {
                         $("#message-view").append(`
@@ -584,12 +1074,1318 @@ function $postMessage() {
                         `);
                     }
                 break;
+                case "bags":
+                    let bagsnumber = "",
+                        $inputbagslocation = $locationbags.find(homeSearch);
+
+                    if ($inputbagslocation == "032 duffel bck001") {
+                        bagsnumber = 0;
+                    } else if ($inputbagslocation == "baby-x gry002") {
+                        bagsnumber = 1;
+                    } else if ($inputbagslocation == "black tank bck003") {
+                        bagsnumber = 2;
+                    } else if ($inputbagslocation == "fragment n05gr1") {
+                        bagsnumber = 3;
+                    } else if ($inputbagslocation == "moncler dry bck004") {
+                        bagsnumber = 4;
+                    } else if ($inputbagslocation == "padded nylon bl1") {
+                        bagsnumber = 5;
+                    } else if ($inputbagslocation == "pixelated tote b1") {
+                        bagsnumber = 6;
+                    } else if ($inputbagslocation == "tool bag bck002") {
+                        bagsnumber = 7;
+                    } else if ($inputbagslocation == "utility case bl2") {
+                        bagsnumber = 8;
+                    } else {
+                        bagsnumber = 15;
+                    }
+                    
+                    if (bagsnumber != 15) {
+                        $("#message-view").append(`
+                            <div class="form-posted">${$form}</div>
+                        `);
+                    
+                        $.getJSON(myurl, function(data){
+                            $("#windows-wrapper").append(`
+                                <div class="warcore-window">
+                                    <div class="window-close">&#10005;</div>
+                                    <p class="warcore-window-title">${data.warcore[0].bags[bagsnumber].title}</p>
+                                    <div class="warcore-window-details"><p class="warcore-window-brand">${data.warcore[0].bags[bagsnumber].brand}</p><p class="warcore-window-price">${data.warcore[0].bags[bagsnumber].price}</p></div>
+                                    <div class="warcore-window-spacer"></div>
+                                    <div class="swiper-container">
+                                        <img class="swiper-slide" src="${data.warcore[0].bags[bagsnumber].path}/${data.warcore[0].bags[bagsnumber].images[0]}" width="100%">
+                                        <img class="swiper-slide" src="${data.warcore[0].bags[bagsnumber].path}/${data.warcore[0].bags[bagsnumber].images[1]}" width="100%">
+                                        <img class="swiper-slide" src="${data.warcore[0].bags[bagsnumber].path}/${data.warcore[0].bags[bagsnumber].images[2]}" width="100%">
+                                    </div>
+                                    <svg class="warcore-button-icon warcore-left-icon" width="120" height="55" viewBox="0 0 120 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M45 3L6 55L45 107" stroke="black" stroke-width="12"/>
+                                        <path d="M110 3L71 55L110 107" stroke="black" stroke-width="12"/>
+                                    </svg>
+                                    <svg class="warcore-button-icon warcore-right-icon" width="120" height="55" viewBox="0 0 120 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M69 3L108 55L69 107" stroke="black" stroke-width="12"/>
+                                        <path d="M4 3L43 55L4 107" stroke="black" stroke-width="12"/>
+                                    </svg>
+                                </div>`
+                            )
+                            var elem = document.querySelector('.warcore-window');
+                            var draggie = new Draggabilly( elem, {});
+                        });
+                    } else {
+                        $("#message-view").append(`
+                            <div class="form-posted">
+                                ${$form}
+                                <div class="form-spacer"></div>
+                                <p class="output-posted">-err: no such file or directory</p>
+                            </div>
+                        `);
+                    }
+                break;
+                case "bottoms":
+                    let bottomsnumber = "",
+                        $inputbottomslocation = $locationbottoms.find(homeSearch);
+
+                    if ($inputbottomslocation == "block blue bl1") {
+                        bottomsnumber = 0;
+                    } else if ($inputbottomslocation == "camo gr02") {
+                        bottomsnumber = 1;
+                    } else if ($inputbottomslocation == "ispa gr03") {
+                        bottomsnumber = 2;
+                    } else if ($inputbottomslocation == "manual sweats bck3") {
+                        bottomsnumber = 3;
+                    } else if ($inputbottomslocation == "parachute cargo gr01") {
+                        bottomsnumber = 4;
+                    } else if ($inputbottomslocation == "scaffolded circuit br1") {
+                        bottomsnumber = 5;
+                    } else if ($inputbottomslocation == "tactical taupe 003") {
+                        bottomsnumber = 6;
+                    } else if ($inputbottomslocation == "tracks bck2") {
+                        bottomsnumber = 7;
+                    } else if ($inputbottomslocation == "zone-9 moto bck1") {
+                        bottomsnumber = 8;
+                    } else {
+                        bottomsnumber = 15;
+                    }
+
+                    if (bottomsnumber != 15) {
+                        $("#message-view").append(`
+                            <div class="form-posted">${$form}</div>
+                        `);
+                    
+                        $.getJSON(myurl, function(data){
+                            $("#windows-wrapper").append(`
+                                <div class="warcore-window">
+                                    <div class="window-close">&#10005;</div>
+                                    <p class="warcore-window-title">${data.warcore[0].bottoms[bottomsnumber].title}</p>
+                                    <div class="warcore-window-details"><p class="warcore-window-brand">${data.warcore[0].bottoms[bottomsnumber].brand}</p><p class="warcore-window-price">${data.warcore[0].bottoms[bottomsnumber].price}</p></div>
+                                    <div class="warcore-window-spacer"></div>
+                                    <div class="swiper-container">
+                                        <img class="swiper-slide" src="${data.warcore[0].bottoms[bottomsnumber].path}/${data.warcore[0].bottoms[bottomsnumber].images[0]}" width="100%">
+                                        <img class="swiper-slide" src="${data.warcore[0].bottoms[bottomsnumber].path}/${data.warcore[0].bottoms[bottomsnumber].images[1]}" width="100%">
+                                        <img class="swiper-slide" src="${data.warcore[0].bottoms[bottomsnumber].path}/${data.warcore[0].bottoms[bottomsnumber].images[2]}" width="100%">
+                                    </div>
+                                    <svg class="warcore-button-icon warcore-left-icon" width="120" height="55" viewBox="0 0 120 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M45 3L6 55L45 107" stroke="black" stroke-width="12"/>
+                                        <path d="M110 3L71 55L110 107" stroke="black" stroke-width="12"/>
+                                    </svg>
+                                    <svg class="warcore-button-icon warcore-right-icon" width="120" height="55" viewBox="0 0 120 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M69 3L108 55L69 107" stroke="black" stroke-width="12"/>
+                                        <path d="M4 3L43 55L4 107" stroke="black" stroke-width="12"/>
+                                    </svg>
+                                </div>`
+                            )
+                            var elem = document.querySelector('.warcore-window');
+                            var draggie = new Draggabilly( elem, {});
+                        });
+                    } else {
+                        $("#message-view").append(`
+                            <div class="form-posted">
+                                ${$form}
+                                <div class="form-spacer"></div>
+                                <p class="output-posted">-err: no such file or directory</p>
+                            </div>
+                        `);
+                    }
+
+                break;
+                case "outerwear":
+                    let outerwearnumber = "",
+                        $inputouterwearlocation = $locationouterwear.find(homeSearch);
+
+                    if ($inputouterwearlocation == "asymmetric grybl01") {
+                        outerwearnumber = 0;
+                    } else if ($inputouterwearlocation == "quantum para bck3") {
+                        outerwearnumber = 1;
+                    } else if ($inputouterwearlocation == "sirus wh1") {
+                        outerwearnumber = 2;
+                    } else if ($inputouterwearlocation == "camo beige02") {
+                        outerwearnumber = 3;
+                    } else if ($inputouterwearlocation == "deimos orng001") {
+                        outerwearnumber = 4;
+                    } else if ($inputouterwearlocation == "moncler cosmos orng2") {
+                        outerwearnumber = 5;
+                    } else if ($inputouterwearlocation == "idrc allochroic gr3") {
+                        outerwearnumber = 6;
+                    } else if ($inputouterwearlocation == "iridescent down gr2") {
+                        outerwearnumber = 7;
+                    } else if ($inputouterwearlocation == "night crawler bg1") {
+                        outerwearnumber = 8;
+                    } else if ($inputouterwearlocation == "memory nylon gr1") {
+                        outerwearnumber = 9;
+                    } else if ($inputouterwearlocation == "passage gr1") {
+                        outerwearnumber = 10;
+                    } else if ($inputouterwearlocation == "nrgxse r1") {
+                        outerwearnumber = 11;
+                    } else if ($inputouterwearlocation == "parus coat bck3") {
+                        outerwearnumber = 12;
+                    } else if ($inputouterwearlocation == "puffer gilet orng1") {
+                        outerwearnumber = 13;
+                    } else if ($inputouterwearlocation == "oslo down gr3") {
+                        outerwearnumber = 14;
+                    } else {
+                        outerwearnumber = 15;
+                    }
+
+                    if (outerwearnumber != 15) {
+                        $("#message-view").append(`
+                            <div class="form-posted">${$form}</div>
+                        `);
+                    
+                        $.getJSON(myurl, function(data){
+                            if (data.warcore[0].outerwear[outerwearnumber].images.length == 4){
+                                $("#windows-wrapper").append(`
+                                    <div class="warcore-window">
+                                        <div class="window-close">&#10005;</div>
+                                        <p class="warcore-window-title">${data.warcore[0].outerwear[outerwearnumber].title}</p>
+                                        <div class="warcore-window-details"><p class="warcore-window-brand">${data.warcore[0].outerwear[outerwearnumber].brand}</p><p class="warcore-window-price">${data.warcore[0].outerwear[outerwearnumber].price}</p></div>
+                                        <div class="warcore-window-spacer"></div>
+                                        <div class="swiper-container">
+                                            <img class="swiper-slide" src="${data.warcore[0].outerwear[outerwearnumber].path}/${data.warcore[0].outerwear[outerwearnumber].images[0]}" width="100%">
+                                            <img class="swiper-slide" src="${data.warcore[0].outerwear[outerwearnumber].path}/${data.warcore[0].outerwear[outerwearnumber].images[1]}" width="100%">
+                                            <img class="swiper-slide" src="${data.warcore[0].outerwear[outerwearnumber].path}/${data.warcore[0].outerwear[outerwearnumber].images[2]}" width="100%">
+                                            <img class="swiper-slide" src="${data.warcore[0].outerwear[outerwearnumber].path}/${data.warcore[0].outerwear[outerwearnumber].images[3]}" width="100%">
+                                        </div>
+                                        <svg class="warcore-button-icon warcore-left-icon" width="120" height="55" viewBox="0 0 120 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M45 3L6 55L45 107" stroke="black" stroke-width="12"/>
+                                            <path d="M110 3L71 55L110 107" stroke="black" stroke-width="12"/>
+                                        </svg>
+                                        <svg class="warcore-button-icon warcore-right-icon" width="120" height="55" viewBox="0 0 120 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M69 3L108 55L69 107" stroke="black" stroke-width="12"/>
+                                            <path d="M4 3L43 55L4 107" stroke="black" stroke-width="12"/>
+                                        </svg>
+                                    </div>`
+                                )
+                                var elem = document.querySelector('.warcore-window');
+                                var draggie = new Draggabilly( elem, {});
+                            } else {
+                                $("#windows-wrapper").append(`
+                                    <div class="warcore-window">
+                                        <div class="window-close">&#10005;</div>
+                                        <p class="warcore-window-title">${data.warcore[0].outerwear[outerwearnumber].title}</p>
+                                        <div class="warcore-window-details"><p class="warcore-window-brand">${data.warcore[0].outerwear[outerwearnumber].brand}</p><p class="warcore-window-price">${data.warcore[0].outerwear[outerwearnumber].price}</p></div>
+                                        <div class="warcore-window-spacer"></div>
+                                        <div class="swiper-container">
+                                            <img class="swiper-slide" src="${data.warcore[0].outerwear[outerwearnumber].path}/${data.warcore[0].outerwear[outerwearnumber].images[0]}" width="100%">
+                                            <img class="swiper-slide" src="${data.warcore[0].outerwear[outerwearnumber].path}/${data.warcore[0].outerwear[outerwearnumber].images[1]}" width="100%">
+                                            <img class="swiper-slide" src="${data.warcore[0].outerwear[outerwearnumber].path}/${data.warcore[0].outerwear[outerwearnumber].images[2]}" width="100%">
+                                        </div>
+                                        <svg class="warcore-button-icon warcore-left-icon" width="120" height="55" viewBox="0 0 120 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M45 3L6 55L45 107" stroke="black" stroke-width="12"/>
+                                            <path d="M110 3L71 55L110 107" stroke="black" stroke-width="12"/>
+                                        </svg>
+                                        <svg class="warcore-button-icon warcore-right-icon" width="120" height="55" viewBox="0 0 120 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M69 3L108 55L69 107" stroke="black" stroke-width="12"/>
+                                            <path d="M4 3L43 55L4 107" stroke="black" stroke-width="12"/>
+                                        </svg>
+                                    </div>`
+                                )
+                                var elem = document.querySelector('.warcore-window');
+                                var draggie = new Draggabilly( elem, {});
+                            }
+                        });
+                    } else {
+                        $("#message-view").append(`
+                            <div class="form-posted">
+                                ${$form}
+                                <div class="form-spacer"></div>
+                                <p class="output-posted">-err: no such file or directory</p>
+                            </div>
+                        `);
+                    }                    
+                break;
+                case "shirts":
+                    let shirtsnumber = "",
+                        $inputshirtslocation = $locationshirts.find(homeSearch);
+
+                    if ($inputshirtslocation == "bruised pr1") {
+                        shirtsnumber = 0;
+                    } else if ($inputshirtslocation == "camo transfer neon01") {
+                        shirtsnumber = 1;
+                    } else if ($inputshirtslocation == "moon flag 1969") {
+                        shirtsnumber = 2;
+                    } else if ($inputshirtslocation == "silver lake 003") {
+                        shirtsnumber = 3;
+                    } else if ($inputshirtslocation == "ss tee wh1") {
+                        shirtsnumber = 4;
+                    } else if ($inputshirtslocation == "psytrance multi 001") {
+                        shirtsnumber = 5;
+                    } else {
+                        shirtsnumber = 15;
+                    }
+
+                    if (shirtsnumber != 15) {
+                        $("#message-view").append(`
+                            <div class="form-posted">${$form}</div>
+                        `);
+                    
+                        $.getJSON(myurl, function(data){
+                            $("#windows-wrapper").append(`
+                                <div class="warcore-window">
+                                    <div class="window-close">&#10005;</div>
+                                    <p class="warcore-window-title">${data.warcore[0].shirts[shirtsnumber].title}</p>
+                                    <div class="warcore-window-details"><p class="warcore-window-brand">${data.warcore[0].shirts[shirtsnumber].brand}</p><p class="warcore-window-price">${data.warcore[0].shirts[shirtsnumber].price}</p></div>
+                                    <div class="warcore-window-spacer"></div>
+                                    <div class="swiper-container">
+                                        <img class="swiper-slide" src="${data.warcore[0].shirts[shirtsnumber].path}/${data.warcore[0].shirts[shirtsnumber].images[0]}" width="100%">
+                                        <img class="swiper-slide" src="${data.warcore[0].shirts[shirtsnumber].path}/${data.warcore[0].shirts[shirtsnumber].images[1]}" width="100%">
+                                        <img class="swiper-slide" src="${data.warcore[0].shirts[shirtsnumber].path}/${data.warcore[0].shirts[shirtsnumber].images[2]}" width="100%">
+                                    </div>
+                                    <svg class="warcore-button-icon warcore-left-icon" width="120" height="55" viewBox="0 0 120 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M45 3L6 55L45 107" stroke="black" stroke-width="12"/>
+                                        <path d="M110 3L71 55L110 107" stroke="black" stroke-width="12"/>
+                                    </svg>
+                                    <svg class="warcore-button-icon warcore-right-icon" width="120" height="55" viewBox="0 0 120 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M69 3L108 55L69 107" stroke="black" stroke-width="12"/>
+                                        <path d="M4 3L43 55L4 107" stroke="black" stroke-width="12"/>
+                                    </svg>
+                                </div>`
+                            )
+                            var elem = document.querySelector('.warcore-window');
+                            var draggie = new Draggabilly( elem, {});
+                        });
+                    } else {
+                        $("#message-view").append(`
+                            <div class="form-posted">
+                                ${$form}
+                                <div class="form-spacer"></div>
+                                <p class="output-posted">-err: no such file or directory</p>
+                            </div>
+                        `);
+                    }
+                break;
+                case "shoes":
+                    let shoesnumber = "",
+                        $inputshoeslocation = $locationshoes.find(homeSearch);
+
+                    if ($inputshoeslocation == "1017 alison wh7") {
+                        shoesnumber = 0;
+                    } else if ($inputshoeslocation == "bamba02") {
+                        shoesnumber = 1;
+                    } else if ($inputshoeslocation == "brown jaw br02") {
+                        shoesnumber = 2;
+                    } else if ($inputshoeslocation == "gsg 9high") {
+                        shoesnumber = 3;
+                    } else if ($inputshoeslocation == "hiking boot blk0001") {
+                        shoesnumber = 4;
+                    } else if ($inputshoeslocation == "hybrid 1941") {
+                        shoesnumber = 5;
+                    } else if ($inputshoeslocation == "nubuck pr2") {
+                        shoesnumber = 6;
+                    } else if ($inputshoeslocation == "off br3") {
+                        shoesnumber = 7;
+                    } else if ($inputshoeslocation == "vapormax 360") {
+                        shoesnumber = 8;
+                    } else {
+                        shoesnumber = 15;
+                    }
+                
+                    if (shoesnumber != 15) {
+                        $("#message-view").append(`
+                            <div class="form-posted">${$form}</div>
+                        `);
+                    
+                        $.getJSON(myurl, function(data){
+                            $("#windows-wrapper").append(`
+                                <div class="warcore-window">
+                                    <div class="window-close">&#10005;</div>
+                                    <p class="warcore-window-title">${data.warcore[0].shoes[shoesnumber].title}</p>
+                                    <div class="warcore-window-details"><p class="warcore-window-brand">${data.warcore[0].shoes[shoesnumber].brand}</p><p class="warcore-window-price">${data.warcore[0].shoes[shoesnumber].price}</p></div>
+                                    <div class="warcore-window-spacer"></div>
+                                    <div class="swiper-container">
+                                        <img class="swiper-slide" src="${data.warcore[0].shoes[shoesnumber].path}/${data.warcore[0].shoes[shoesnumber].images[0]}" width="100%">
+                                        <img class="swiper-slide" src="${data.warcore[0].shoes[shoesnumber].path}/${data.warcore[0].shoes[shoesnumber].images[1]}" width="100%">
+                                        <img class="swiper-slide" src="${data.warcore[0].shoes[shoesnumber].path}/${data.warcore[0].shoes[shoesnumber].images[2]}" width="100%">
+                                    </div>
+                                    <svg class="warcore-button-icon warcore-left-icon" width="120" height="55" viewBox="0 0 120 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M45 3L6 55L45 107" stroke="black" stroke-width="12"/>
+                                        <path d="M110 3L71 55L110 107" stroke="black" stroke-width="12"/>
+                                    </svg>
+                                    <svg class="warcore-button-icon warcore-right-icon" width="120" height="55" viewBox="0 0 120 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M69 3L108 55L69 107" stroke="black" stroke-width="12"/>
+                                        <path d="M4 3L43 55L4 107" stroke="black" stroke-width="12"/>
+                                    </svg>
+                                </div>`
+                            )
+                            var elem = document.querySelector('.warcore-window');
+                            var draggie = new Draggabilly( elem, {});
+                        });
+                    } else {
+                        $("#message-view").append(`
+                            <div class="form-posted">
+                                ${$form}
+                                <div class="form-spacer"></div>
+                                <p class="output-posted">-err: no such file or directory</p>
+                            </div>
+                        `);
+                    }    
+                break;
+                case "sweaters":
+                    let sweatersnumber = "",
+                        $inputsweaterslocation = $locationsweaters.find(homeSearch);
+
+                    if ($inputsweaterslocation == "allover grbl1") {
+                        sweatersnumber = 0;
+                    } else if ($inputsweaterslocation == "alby-y bl3") {
+                        sweatersnumber = 1;
+                    } else if ($inputsweaterslocation == "black memory bck05") {
+                        sweatersnumber = 2;
+                    } else if ($inputsweaterslocation == "burning casentino 002") {
+                        sweatersnumber = 3;
+                    } else if ($inputsweaterslocation == "factory bckgr02") {
+                        sweatersnumber = 4;
+                    } else if ($inputsweaterslocation == "fleece bg01") {
+                        sweatersnumber = 5;
+                    } else if ($inputsweaterslocation == "mackintosh bck2") {
+                        sweatersnumber = 6;
+                    } else if ($inputsweaterslocation == "manual hoodie wh01") {
+                        sweatersnumber = 7;
+                    } else if ($inputsweaterslocation == "pascal painting bl2") {
+                        sweatersnumber = 8;
+                    } else if ($inputsweaterslocation == "sherpa bck07") {
+                        sweatersnumber = 9;
+                    } else if ($inputsweaterslocation == "stars bck1") {
+                        sweatersnumber = 10;
+                    } else if ($inputsweaterslocation == "tonal ray gr1") {
+                        sweatersnumber = 11;
+                    } else {
+                        sweatersnumber = 15;
+                    }
+
+                    if (sweatersnumber != 15) {
+                        $("#message-view").append(`
+                            <div class="form-posted">${$form}</div>
+                        `);
+                    
+                        $.getJSON(myurl, function(data){
+                            $("#windows-wrapper").append(`
+                                <div class="warcore-window">
+                                    <div class="window-close">&#10005;</div>
+                                    <p class="warcore-window-title">${data.warcore[0].sweaters[sweatersnumber].title}</p>
+                                    <div class="warcore-window-details"><p class="warcore-window-brand">${data.warcore[0].sweaters[sweatersnumber].brand}</p><p class="warcore-window-price">${data.warcore[0].sweaters[sweatersnumber].price}</p></div>
+                                    <div class="warcore-window-spacer"></div>
+                                    <div class="swiper-container">
+                                        <img class="swiper-slide" src="${data.warcore[0].sweaters[sweatersnumber].path}/${data.warcore[0].sweaters[sweatersnumber].images[0]}" width="100%">
+                                        <img class="swiper-slide" src="${data.warcore[0].sweaters[sweatersnumber].path}/${data.warcore[0].sweaters[sweatersnumber].images[1]}" width="100%">
+                                        <img class="swiper-slide" src="${data.warcore[0].sweaters[sweatersnumber].path}/${data.warcore[0].sweaters[sweatersnumber].images[2]}" width="100%">
+                                    </div>
+                                    <svg class="warcore-button-icon warcore-left-icon" width="120" height="55" viewBox="0 0 120 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M45 3L6 55L45 107" stroke="black" stroke-width="12"/>
+                                        <path d="M110 3L71 55L110 107" stroke="black" stroke-width="12"/>
+                                    </svg>
+                                    <svg class="warcore-button-icon warcore-right-icon" width="120" height="55" viewBox="0 0 120 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M69 3L108 55L69 107" stroke="black" stroke-width="12"/>
+                                        <path d="M4 3L43 55L4 107" stroke="black" stroke-width="12"/>
+                                    </svg>
+                                </div>`
+                            )
+                            var elem = document.querySelector('.warcore-window');
+                            var draggie = new Draggabilly( elem, {});
+                        });
+                    } else {
+                        $("#message-view").append(`
+                            <div class="form-posted">
+                                ${$form}
+                                <div class="form-spacer"></div>
+                                <p class="output-posted">-err: no such file or directory</p>
+                            </div>
+                        `);
+                    }
+                break;
+                case "earth":
+                    let earthnumber = "",
+                        $inputearthlocation = $locationearth.find(homeSearch);
+
+                    if ($inputearthlocation == "pale blue dot") {
+                        earthnumber = 0;
+                    } else if ($inputearthlocation == "solving climate change?") {
+                        earthnumber = 1;
+                    } else {
+                        earthnumber = 15;
+                    }
+
+                    if (earthnumber != 15) {
+                        $("#message-view").append(`
+                            <div class="form-posted">${$form}</div>
+                        `);
+                    
+                        $.getJSON(myurl, function(data){
+                            $("#windows-wrapper").append(`
+                                <div class="times-window">
+                                    <div class="window-close">&#10005;</div>
+                                    <p class="times-window-title">${data.times[0].earth[earthnumber].title}</p>
+                                    <div class="times-window-details"><p class="times-window-brand">${data.times[0].earth[earthnumber].author}</p><p class="times-window-date">${data.times[0].earth[earthnumber].date}</p></div>
+                                    <div class="times-window-spacer"></div>
+                                    <div class="times-swiper-container">
+                                            <img class="times-swiper-slide" src="${data.times[0].earth[earthnumber].path}/${data.times[0].earth[earthnumber].images[0]}" width="100%" alt="${data.times[0].earth[earthnumber].captions[0]}">
+                                            <img class="times-swiper-slide" src="${data.times[0].earth[earthnumber].path}/${data.times[0].earth[earthnumber].images[1]}" width="100%" alt="${data.times[0].earth[earthnumber].captions[1]}">
+                                    </div>
+                                    <svg class="times-button-icon times-left-icon" width="120" height="55" viewBox="0 0 120 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M45 3L6 55L45 107" stroke="black" stroke-width="12"/>
+                                        <path d="M110 3L71 55L110 107" stroke="black" stroke-width="12"/>
+                                    </svg>
+                                    <svg class="times-button-icon times-right-icon" width="120" height="55" viewBox="0 0 120 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M69 3L108 55L69 107" stroke="black" stroke-width="12"/>
+                                        <path d="M4 3L43 55L4 107" stroke="black" stroke-width="12"/>
+                                    </svg>
+                                    <p class="times-caption">&nbsp;</p>
+                                </div>`
+                            )
+                            var elem = document.querySelector('.times-window');
+                            var draggie = new Draggabilly( elem, {});
+                        });
+                    } else {
+                        $("#message-view").append(`
+                            <div class="form-posted">
+                                ${$form}
+                                <div class="form-spacer"></div>
+                                <p class="output-posted">-err: no such file or directory</p>
+                            </div>
+                        `);
+                    }
+                break;
+                case "mars":
+                    let marsnumber = "",
+                        $inputmarslocation = $locationmars.find(homeSearch);
+
+                    if ($inputmarslocation == "in mars we trust") {
+                        marsnumber = 0;
+                    } else if ($inputmarslocation == "placeholder") {
+                        marsnumber = 1;
+                    } else {
+                        marsnumber = 15;
+                    }
+
+                    if (marsnumber != 15) {
+                        $("#message-view").append(`
+                            <div class="form-posted">${$form}</div>
+                        `);
+                    
+                        $.getJSON(myurl, function(data){
+                            $("#windows-wrapper").append(`
+                                <div class="times-window">
+                                    <div class="window-close">&#10005;</div>
+                                    <p class="times-window-title">${data.times[0].mars[marsnumber].title}</p>
+                                    <div class="times-window-details"><p class="times-window-brand">${data.times[0].mars[marsnumber].author}</p><p class="times-window-date">${data.times[0].mars[marsnumber].date}</p></div>
+                                    <div class="times-window-spacer"></div>
+                                    <div class="times-swiper-container">
+                                            <img class="times-swiper-slide" src="${data.times[0].mars[marsnumber].path}/${data.times[0].mars[marsnumber].images[0]}" width="100%" alt="${data.times[0].mars[marsnumber].captions[0]}">
+                                            <img class="times-swiper-slide" src="${data.times[0].mars[marsnumber].path}/${data.times[0].mars[marsnumber].images[1]}" width="100%" alt="${data.times[0].mars[marsnumber].captions[1]}">
+                                    </div>
+                                    <svg class="times-button-icon times-left-icon" width="120" height="55" viewBox="0 0 120 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M45 3L6 55L45 107" stroke="black" stroke-width="12"/>
+                                        <path d="M110 3L71 55L110 107" stroke="black" stroke-width="12"/>
+                                    </svg>
+                                    <svg class="times-button-icon times-right-icon" width="120" height="55" viewBox="0 0 120 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M69 3L108 55L69 107" stroke="black" stroke-width="12"/>
+                                        <path d="M4 3L43 55L4 107" stroke="black" stroke-width="12"/>
+                                    </svg>
+                                    <p class="times-caption">&nbsp;</p>
+                                </div>`
+                            )
+                            var elem = document.querySelector('.times-window');
+                            var draggie = new Draggabilly( elem, {});
+                        });
+                    } else {
+                        $("#message-view").append(`
+                            <div class="form-posted">
+                                ${$form}
+                                <div class="form-spacer"></div>
+                                <p class="output-posted">-err: no such file or directory</p>
+                            </div>
+                        `);
+                    }
+                break;
+                case "moon":
+                    let moonnumber = "",
+                        $inputmoonlocation = $locationmoon.find(homeSearch);
+
+                    if ($inputmoonlocation == "gender bias") {
+                        moonnumber = 0;
+                    } else if ($inputmoonlocation == "apollo 11") {
+                        moonnumber = 1;
+                    } else if ($inputmoonlocation == "voyage to the moon") {
+                        moonnumber = 2;
+                    } else {
+                        moonnumber = 15;
+                    }
+
+                    if (moonnumber != 15) {
+                        $("#message-view").append(`
+                            <div class="form-posted">${$form}</div>
+                        `);
+                    
+                        $.getJSON(myurl, function(data){
+                            $("#windows-wrapper").append(`
+                                <div class="times-window">
+                                    <div class="window-close">&#10005;</div>
+                                    <p class="times-window-title">${data.times[0].moon[moonnumber].title}</p>
+                                    <div class="times-window-details"><p class="times-window-brand">${data.times[0].moon[moonnumber].author}</p><p class="times-window-date">${data.times[0].moon[moonnumber].date}</p></div>
+                                    <div class="times-window-spacer"></div>
+                                    <div class="times-swiper-container">
+                                            <img class="times-swiper-slide" src="${data.times[0].moon[moonnumber].path}/${data.times[0].moon[moonnumber].images[0]}" width="100%" alt="${data.times[0].moon[moonnumber].captions[0]}">
+                                            <img class="times-swiper-slide" src="${data.times[0].moon[moonnumber].path}/${data.times[0].moon[moonnumber].images[1]}" width="100%" alt="${data.times[0].moon[moonnumber].captions[1]}">
+                                    </div>
+                                    <svg class="times-button-icon times-left-icon" width="120" height="55" viewBox="0 0 120 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M45 3L6 55L45 107" stroke="black" stroke-width="12"/>
+                                        <path d="M110 3L71 55L110 107" stroke="black" stroke-width="12"/>
+                                    </svg>
+                                    <svg class="times-button-icon times-right-icon" width="120" height="55" viewBox="0 0 120 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M69 3L108 55L69 107" stroke="black" stroke-width="12"/>
+                                        <path d="M4 3L43 55L4 107" stroke="black" stroke-width="12"/>
+                                    </svg>
+                                    <p class="times-caption">&nbsp;</p>
+                                </div>`
+                            )
+                            var elem = document.querySelector('.times-window');
+                            var draggie = new Draggabilly( elem, {});
+                        });
+                    } else {
+                        $("#message-view").append(`
+                            <div class="form-posted">
+                                ${$form}
+                                <div class="form-spacer"></div>
+                                <p class="output-posted">-err: no such file or directory</p>
+                            </div>
+                        `);
+                    }
+                break;
+                case "space":
+                    let spacenumber = "",
+                        $inputspacelocation = $locationspace.find(homeSearch);
+
+                    if ($inputspacelocation == "humanity's future in space") {
+                        spacenumber = 0;
+                    } else if ($inputspacelocation == "life on planet mercury?") {
+                        spacenumber = 1;
+                    } else if ($inputspacelocation == "placeholder") {
+                        spacenumber = 2;
+                    } else {
+                        spacenumber = 15;
+                    }
+
+                    if (spacenumber != 15) {
+                        $("#message-view").append(`
+                            <div class="form-posted">${$form}</div>
+                        `);
+                    
+                        $.getJSON(myurl, function(data){
+                            $("#windows-wrapper").append(`
+                                <div class="times-window">
+                                    <div class="window-close">&#10005;</div>
+                                    <p class="times-window-title">${data.times[0].space[spacenumber].title}</p>
+                                    <div class="times-window-details"><p class="times-window-brand">${data.times[0].space[spacenumber].author}</p><p class="times-window-date">${data.times[0].space[spacenumber].date}</p></div>
+                                    <div class="times-window-spacer"></div>
+                                    <div class="times-swiper-container">
+                                            <img class="times-swiper-slide" src="${data.times[0].space[spacenumber].path}/${data.times[0].space[spacenumber].images[0]}" width="100%" alt="${data.times[0].space[spacenumber].captions[0]}">
+                                            <img class="times-swiper-slide" src="${data.times[0].space[spacenumber].path}/${data.times[0].space[spacenumber].images[1]}" width="100%" alt="${data.times[0].space[spacenumber].captions[1]}">
+                                    </div>
+                                    <svg class="times-button-icon times-left-icon" width="120" height="55" viewBox="0 0 120 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M45 3L6 55L45 107" stroke="black" stroke-width="12"/>
+                                        <path d="M110 3L71 55L110 107" stroke="black" stroke-width="12"/>
+                                    </svg>
+                                    <svg class="times-button-icon times-right-icon" width="120" height="55" viewBox="0 0 120 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M69 3L108 55L69 107" stroke="black" stroke-width="12"/>
+                                        <path d="M4 3L43 55L4 107" stroke="black" stroke-width="12"/>
+                                    </svg>
+                                    <p class="times-caption">&nbsp;</p>
+                                </div>`
+                            )
+                            var elem = document.querySelector('.times-window');
+                            var draggie = new Draggabilly( elem, {});
+                        });
+                    } else {
+                        $("#message-view").append(`
+                            <div class="form-posted">
+                                ${$form}
+                                <div class="form-spacer"></div>
+                                <p class="output-posted">-err: no such file or directory</p>
+                            </div>
+                        `);
+                    }
+                break;  
                 default: 
                     $("#message-view").append(`
                         <div class="form-posted">
                             ${$form}
                             <div class="form-spacer"></div>
                             <p class="output-posted">-err: no such file or directory</p>
+                        </div>
+                    `);
+                break;
+            }
+        break;
+        case "sw":
+            let eyewearnumber = "",
+                bagsnumber = "",
+                bottomsnumber = "",
+                outerwearnumber = "",
+                shirtsnumber = "",
+                shoesnumber = "",
+                sweatersnumber = "",
+                $inputeyewearlocation = $locationeyewear.find(locationSearch),
+                $inputbagslocation = $locationbags.find(locationSearch),
+                $inputbottomslocation = $locationbottoms.find(locationSearch),
+                $inputouterwearlocation = $locationouterwear.find(locationSearch),
+                $inputshirtslocation = $locationshirts.find(locationSearch),
+                $inputshoeslocation = $locationshoes.find(locationSearch),
+                $inputsweaterslocation = $locationsweaters.find(locationSearch);
+
+            if ($inputeyewearlocation == "afix 032") {
+                eyewearnumber = 0;
+            } else if ($inputeyewearlocation == "gradient blck1") {
+                eyewearnumber = 1;
+            } else if ($inputeyewearlocation == "cold yc2") {
+                eyewearnumber = 2;
+            } else if ($inputeyewearlocation == "fire oval") {
+                eyewearnumber = 3;
+            } else if ($inputeyewearlocation == "geom go1") {
+                eyewearnumber = 4;
+            } else if ($inputeyewearlocation == "mmech0005") {
+                eyewearnumber = 5;
+            } else if ($inputeyewearlocation == "moon airblast") {
+                eyewearnumber = 6;
+            } else if ($inputeyewearlocation == "neo round") {
+                eyewearnumber = 7;
+            } else if ($inputeyewearlocation == "newturtle r1") {
+                eyewearnumber = 8;
+            } else if ($inputeyewearlocation == "scon mo1") {
+                eyewearnumber = 9;
+            } else if ($inputeyewearlocation == "ski pr3") {
+                eyewearnumber = 10;
+            } else if ($inputeyewearlocation == "spike gr2") {
+                eyewearnumber = 11;
+            } else if ($inputeyewearlocation == "tailwind 001") {
+                eyewearnumber = 12;
+            } else if ($inputeyewearlocation == "tralyx moon") {
+                eyewearnumber = 13;
+            } else if ($inputeyewearlocation == "zip tie oc1") {
+                eyewearnumber = 14;
+            } else {
+                eyewearnumber = 15;
+            }
+
+            if ($inputbagslocation == "032 duffel bck001") {
+                bagsnumber = 0;
+            } else if ($inputbagslocation == "baby-x gry002") {
+                bagsnumber = 1;
+            } else if ($inputbagslocation == "black tank bck003") {
+                bagsnumber = 2;
+            } else if ($inputbagslocation == "fragment n05gr1") {
+                bagsnumber = 3;
+            } else if ($inputbagslocation == "moncler dry bck004") {
+                bagsnumber = 4;
+            } else if ($inputbagslocation == "padded nylon bl1") {
+                bagsnumber = 5;
+            } else if ($inputbagslocation == "pixelated tote b1") {
+                bagsnumber = 6;
+            } else if ($inputbagslocation == "tool bag bck002") {
+                bagsnumber = 7;
+            } else if ($inputbagslocation == "utility case bl2") {
+                bagsnumber = 8;
+            } else {
+                bagsnumber = 15;
+            }
+
+            if ($inputbottomslocation == "block blue bl1") {
+                bottomsnumber = 0;
+            } else if ($inputbottomslocation == "camo gr02") {
+                bottomsnumber = 1;
+            } else if ($inputbottomslocation == "ispa gr03") {
+                bottomsnumber = 2;
+            } else if ($inputbottomslocation == "manual sweats bck3") {
+                bottomsnumber = 3;
+            } else if ($inputbottomslocation == "parachute cargo gr01") {
+                bottomsnumber = 4;
+            } else if ($inputbottomslocation == "scaffolded circuit br1") {
+                bottomsnumber = 5;
+            } else if ($inputbottomslocation == "tactical taupe 003") {
+                bottomsnumber = 6;
+            } else if ($inputbottomslocation == "tracks bck2") {
+                bottomsnumber = 7;
+            } else if ($inputbottomslocation == "zone-9 moto bck1") {
+                bottomsnumber = 8;
+            } else {
+                bottomsnumber = 15;
+            }
+
+            if ($inputouterwearlocation == "asymmetric grybl01") {
+                outerwearnumber = 0;
+            } else if ($inputouterwearlocation == "quantum para bck3") {
+                outerwearnumber = 1;
+            } else if ($inputouterwearlocation == "sirus wh1") {
+                outerwearnumber = 2;
+            } else if ($inputouterwearlocation == "camo beige02") {
+                outerwearnumber = 3;
+            } else if ($inputouterwearlocation == "deimos orng001") {
+                outerwearnumber = 4;
+            } else if ($inputouterwearlocation == "moncler cosmos orng2") {
+                outerwearnumber = 5;
+            } else if ($inputouterwearlocation == "idrc allochroic gr3") {
+                outerwearnumber = 6;
+            } else if ($inputouterwearlocation == "iridescent down gr2") {
+                outerwearnumber = 7;
+            } else if ($inputouterwearlocation == "night crawler bg1") {
+                outerwearnumber = 8;
+            } else if ($inputouterwearlocation == "memory nylon gr1") {
+                outerwearnumber = 9;
+            } else if ($inputouterwearlocation == "passage gr1") {
+                outerwearnumber = 10;
+            } else if ($inputouterwearlocation == "nrgxse r1") {
+                outerwearnumber = 11;
+            } else if ($inputouterwearlocation == "parus coat bck3") {
+                outerwearnumber = 12;
+            } else if ($inputouterwearlocation == "puffer gilet orng1") {
+                outerwearnumber = 13;
+            } else if ($inputouterwearlocation == "oslo down gr3") {
+                outerwearnumber = 14;
+            } else {
+                outerwearnumber = 15;
+            }
+
+            if ($inputshirtslocation == "bruised pr1") {
+                shirtsnumber = 0;
+            } else if ($inputshirtslocation == "camo transfer neon01") {
+                shirtsnumber = 1;
+            } else if ($inputshirtslocation == "moon flag 1969") {
+                shirtsnumber = 2;
+            } else if ($inputshirtslocation == "silver lake 003") {
+                shirtsnumber = 3;
+            } else if ($inputshirtslocation == "ss tee wh1") {
+                shirtsnumber = 4;
+            } else if ($inputshirtslocation == "psytrance multi 001") {
+                shirtsnumber = 5;
+            } else {
+                shirtsnumber = 15;
+            }
+
+            if ($inputshoeslocation == "1017 alison wh7") {
+                shoesnumber = 0;
+            } else if ($inputshoeslocation == "bamba02") {
+                shoesnumber = 1;
+            } else if ($inputshoeslocation == "brown jaw br02") {
+                shoesnumber = 2;
+            } else if ($inputshoeslocation == "gsg 9high") {
+                shoesnumber = 3;
+            } else if ($inputshoeslocation == "hiking boot blk0001") {
+                shoesnumber = 4;
+            } else if ($inputshoeslocation == "hybrid 1941") {
+                shoesnumber = 5;
+            } else if ($inputshoeslocation == "nubuck pr2") {
+                shoesnumber = 6;
+            } else if ($inputshoeslocation == "off br3") {
+                shoesnumber = 7;
+            } else if ($inputshoeslocation == "vapormax 360") {
+                shoesnumber = 8;
+            } else {
+                shoesnumber = 15;
+            }
+
+            if ($inputsweaterslocation == "allover grbl1") {
+                sweatersnumber = 0;
+            } else if ($inputsweaterslocation == "alby-y bl3") {
+                sweatersnumber = 1;
+            } else if ($inputsweaterslocation == "black memory bck05") {
+                sweatersnumber = 2;
+            } else if ($inputsweaterslocation == "burning casentino 002") {
+                sweatersnumber = 3;
+            } else if ($inputsweaterslocation == "factory bckgr02") {
+                sweatersnumber = 4;
+            } else if ($inputsweaterslocation == "fleece bg01") {
+                sweatersnumber = 5;
+            } else if ($inputsweaterslocation == "mackintosh bck2") {
+                sweatersnumber = 6;
+            } else if ($inputsweaterslocation == "manual hoodie wh01") {
+                sweatersnumber = 7;
+            } else if ($inputsweaterslocation == "pascal painting bl2") {
+                sweatersnumber = 8;
+            } else if ($inputsweaterslocation == "sherpa bck07") {
+                sweatersnumber = 9;
+            } else if ($inputsweaterslocation == "stars bck1") {
+                sweatersnumber = 10;
+            } else if ($inputsweaterslocation == "tonal ray gr1") {
+                sweatersnumber = 11;
+            } else {
+                sweatersnumber = 15;
+            }
+
+            switch ($message2) {
+                case "all":
+                    if ($inputsweaterslocation) {
+                        $("#message-view").append(`
+                            <div class="form-posted">
+                                ${$form}
+                                <div class="form-spacer"></div>
+                                <div class="output-posted grid-4"><p>brand</p><p>details</p><p></p><p></p><p>composition</p><p>size</p><p></p><p></p><p>price</p></div>
+                            </div>`
+                        ); 
+                    } else if ($inputshoeslocation) {
+                        $("#message-view").append(`
+                            <div class="form-posted">
+                                ${$form}
+                                <div class="form-spacer"></div>
+                                <div class="output-posted grid-4"><p>brand</p><p>details</p><p></p><p></p><p>composition</p><p>size</p><p></p><p></p><p>price</p></div>
+                            </div>`
+                        ); 
+                    } else if ($inputeyewearlocation) {
+                        $("#message-view").append(`
+                            <div class="form-posted">
+                                ${$form}
+                                <div class="form-spacer"></div>
+                                <div class="output-posted grid-4"><p>brand</p><p>details</p><p></p><p></p><p>composition</p><p>price</p></div>
+                            </div>`
+                        ); 
+                    } else if ($inputbagslocation) {
+                        $("#message-view").append(`
+                            <div class="form-posted">
+                                ${$form}
+                                <div class="form-spacer"></div>
+                                <div class="output-posted grid-4"><p>brand</p><p>details</p><p></p><p></p><p>composition</p><p>price</p></div>
+                            </div>`
+                        ); 
+                    } else if ($inputbottomslocation) {
+                        $("#message-view").append(`
+                            <div class="form-posted">
+                                ${$form}
+                                <div class="form-spacer"></div>
+                                <div class="output-posted grid-4"><p>brand</p><p>details</p><p></p><p></p><p>composition</p><p>size</p><p></p><p></p><p>price</p></div>
+                            </div>`
+                        ); 
+                    } else if ($inputouterwearlocation) {
+                        $("#message-view").append(`
+                            <div class="form-posted">
+                                ${$form}
+                                <div class="form-spacer"></div>
+                                <div class="output-posted grid-4"><p>brand</p><p>details</p><p></p><p></p><p>composition</p><p>size</p><p></p><p></p><p>price</p></div>
+                            </div>`
+                        ); 
+                    } else if ($inputshirtslocation) {
+                        $("#message-view").append(`
+                            <div class="form-posted">
+                                ${$form}
+                                <div class="form-spacer"></div>
+                                <div class="output-posted grid-4"><p>brand</p><p>details</p><p></p><p></p><p>composition</p><p>size</p><p></p><p></p><p>price</p></div>
+                            </div>`
+                        ); 
+                    } else {
+                        $("#message-view").append(`
+                            <div class="form-posted">
+                                ${$form}
+                                <div class="form-spacer"></div>
+                                <p class="output-posted">-err: no details available for this file</p>
+                            </div>
+                        `);
+                    }
+                break;
+                case "d":
+                    if (eyewearnumber != 15) {
+                        $.getJSON(myurl, function(data){
+                            $("#message-view").append(`
+                                <div class="form-posted">
+                                    ${$form}
+                                    <div class="form-spacer"></div>
+                                    <div class="output-posted">${data.warcore[0].eyewear[eyewearnumber].details}</div>
+                                </div>`
+                            );
+                        });
+                    } else if (bagsnumber != 15) {
+                        $.getJSON(myurl, function(data){
+                            $("#message-view").append(`
+                                <div class="form-posted">
+                                    ${$form}
+                                    <div class="form-spacer"></div>
+                                    <div class="output-posted">${data.warcore[0].bags[bagsnumber].details}</div>
+                                </div>`
+                            );
+                        });
+                    } else if (bottomsnumber != 15) {
+                        $.getJSON(myurl, function(data){
+                            $("#message-view").append(`
+                                <div class="form-posted">
+                                    ${$form}
+                                    <div class="form-spacer"></div>
+                                    <div class="output-posted">${data.warcore[0].bottoms[bottomsnumber].details}</div>
+                                </div>`
+                            );
+                        });
+                    } else if (outerwearnumber != 15) {
+                        $.getJSON(myurl, function(data){
+                            $("#message-view").append(`
+                                <div class="form-posted">
+                                    ${$form}
+                                    <div class="form-spacer"></div>
+                                    <div class="output-posted">${data.warcore[0].outerwear[outerwearnumber].details}</div>
+                                </div>`
+                            );
+                        });
+                    } else if (shirtsnumber != 15) {
+                        $.getJSON(myurl, function(data){
+                            $("#message-view").append(`
+                                <div class="form-posted">
+                                    ${$form}
+                                    <div class="form-spacer"></div>
+                                    <div class="output-posted">${data.warcore[0].shirts[shirtsnumber].details}</div>
+                                </div>`
+                            );
+                        });
+                    } else if (shoesnumber != 15) {
+                        $.getJSON(myurl, function(data){
+                            $("#message-view").append(`
+                                <div class="form-posted">
+                                    ${$form}
+                                    <div class="form-spacer"></div>
+                                    <div class="output-posted">${data.warcore[0].shoes[shoesnumber].details}</div>
+                                </div>`
+                            );
+                        });
+                    } else if (sweatersnumber != 15) {
+                        $.getJSON(myurl, function(data){
+                            $("#message-view").append(`
+                                <div class="form-posted">
+                                    ${$form}
+                                    <div class="form-spacer"></div>
+                                    <div class="output-posted">${data.warcore[0].sweaters[sweatersnumber].details}</div>
+                                </div>`
+                            );
+                        });
+                    } else {
+                        $("#message-view").append(`
+                            <div class="form-posted">
+                                ${$form}
+                                <div class="form-spacer"></div>
+                                <p class="output-posted">-err: no such detail</p>
+                            </div>
+                        `);
+                    }
+                break;
+                case "b":
+                    if (eyewearnumber != 15) {
+                        $.getJSON(myurl, function(data){
+                            $("#message-view").append(`
+                                <div class="form-posted">
+                                    ${$form}
+                                    <div class="form-spacer"></div>
+                                    <div class="output-posted">${data.warcore[0].eyewear[eyewearnumber].brand}</div>
+                                </div>`
+                            );
+                        });
+                    } else if (bagsnumber != 15) {
+                        $.getJSON(myurl, function(data){
+                            $("#message-view").append(`
+                                <div class="form-posted">
+                                    ${$form}
+                                    <div class="form-spacer"></div>
+                                    <div class="output-posted">${data.warcore[0].bags[bagsnumber].brand}</div>
+                                </div>`
+                            );
+                        });
+                    } else if (bottomsnumber != 15) {
+                        $.getJSON(myurl, function(data){
+                            $("#message-view").append(`
+                                <div class="form-posted">
+                                    ${$form}
+                                    <div class="form-spacer"></div>
+                                    <div class="output-posted">${data.warcore[0].bottoms[bottomsnumber].brand}</div>
+                                </div>`
+                            );
+                        });
+                    } else if (outerwearnumber != 15) {
+                        $.getJSON(myurl, function(data){
+                            $("#message-view").append(`
+                                <div class="form-posted">
+                                    ${$form}
+                                    <div class="form-spacer"></div>
+                                    <div class="output-posted">${data.warcore[0].outerwear[outerwearnumber].brand}</div>
+                                </div>`
+                            );
+                        });
+                    } else if (shirtsnumber != 15) {
+                        $.getJSON(myurl, function(data){
+                            $("#message-view").append(`
+                                <div class="form-posted">
+                                    ${$form}
+                                    <div class="form-spacer"></div>
+                                    <div class="output-posted">${data.warcore[0].shirts[shirtsnumber].brand}</div>
+                                </div>`
+                            );
+                        });
+                    } else if (shoesnumber != 15) {
+                        $.getJSON(myurl, function(data){
+                            $("#message-view").append(`
+                                <div class="form-posted">
+                                    ${$form}
+                                    <div class="form-spacer"></div>
+                                    <div class="output-posted">${data.warcore[0].shoes[shoesnumber].brand}</div>
+                                </div>`
+                            );
+                        });
+                    } else if (sweatersnumber != 15) {
+                        $.getJSON(myurl, function(data){
+                            $("#message-view").append(`
+                                <div class="form-posted">
+                                    ${$form}
+                                    <div class="form-spacer"></div>
+                                    <div class="output-posted">${data.warcore[0].sweaters[sweatersnumber].brand}</div>
+                                </div>`
+                            );
+                        });
+                    } else {
+                        $("#message-view").append(`
+                            <div class="form-posted">
+                                ${$form}
+                                <div class="form-spacer"></div>
+                                <p class="output-posted">-err: no such detail</p>
+                            </div>
+                        `);
+                    }
+                break;
+                case "c":
+                    if (eyewearnumber != 15) {
+                        $.getJSON(myurl, function(data){
+                            $("#message-view").append(`
+                                <div class="form-posted">
+                                    ${$form}
+                                    <div class="form-spacer"></div>
+                                    <div class="output-posted">${data.warcore[0].eyewear[eyewearnumber].composition}</div>
+                                </div>`
+                            );
+                        });
+                    } else if (bagsnumber != 15) {
+                        $.getJSON(myurl, function(data){
+                            $("#message-view").append(`
+                                <div class="form-posted">
+                                    ${$form}
+                                    <div class="form-spacer"></div>
+                                    <div class="output-posted">${data.warcore[0].bags[bagsnumber].composition}</div>
+                                </div>`
+                            );
+                        });
+                    } else if (bottomsnumber != 15) {
+                        $.getJSON(myurl, function(data){
+                            $("#message-view").append(`
+                                <div class="form-posted">
+                                    ${$form}
+                                    <div class="form-spacer"></div>
+                                    <div class="output-posted">${data.warcore[0].bottoms[bottomsnumber].composition}</div>
+                                </div>`
+                            );
+                        });
+                    } else if (outerwearnumber != 15) {
+                        $.getJSON(myurl, function(data){
+                            $("#message-view").append(`
+                                <div class="form-posted">
+                                    ${$form}
+                                    <div class="form-spacer"></div>
+                                    <div class="output-posted">${data.warcore[0].outerwear[outerwearnumber].composition}</div>
+                                </div>`
+                            );
+                        });
+                    } else if (shirtsnumber != 15) {
+                        $.getJSON(myurl, function(data){
+                            $("#message-view").append(`
+                                <div class="form-posted">
+                                    ${$form}
+                                    <div class="form-spacer"></div>
+                                    <div class="output-posted">${data.warcore[0].shirts[shirtsnumber].composition}</div>
+                                </div>`
+                            );
+                        });
+                    } else if (shoesnumber != 15) {
+                        $.getJSON(myurl, function(data){
+                            $("#message-view").append(`
+                                <div class="form-posted">
+                                    ${$form}
+                                    <div class="form-spacer"></div>
+                                    <div class="output-posted">${data.warcore[0].shoes[shoesnumber].composition}</div>
+                                </div>`
+                            );
+                        });
+                    } else if (sweatersnumber != 15) {
+                        $.getJSON(myurl, function(data){
+                            $("#message-view").append(`
+                                <div class="form-posted">
+                                    ${$form}
+                                    <div class="form-spacer"></div>
+                                    <div class="output-posted">${data.warcore[0].sweaters[sweatersnumber].composition}</div>
+                                </div>`
+                            );
+                        });
+                    } else {
+                        $("#message-view").append(`
+                            <div class="form-posted">
+                                ${$form}
+                                <div class="form-spacer"></div>
+                                <p class="output-posted">-err: no such detail</p>
+                            </div>
+                        `);
+                    }
+                break;
+                case "p":
+                    if (eyewearnumber != 15) {
+                        $.getJSON(myurl, function(data){
+                            $("#message-view").append(`
+                                <div class="form-posted">
+                                    ${$form}
+                                    <div class="form-spacer"></div>
+                                    <div class="output-posted">${data.warcore[0].eyewear[eyewearnumber].price}</div>
+                                </div>`
+                            );
+                        });
+                    } else if (bagsnumber != 15) {
+                        $.getJSON(myurl, function(data){
+                            $("#message-view").append(`
+                                <div class="form-posted">
+                                    ${$form}
+                                    <div class="form-spacer"></div>
+                                    <div class="output-posted">${data.warcore[0].bags[bagsnumber].price}</div>
+                                </div>`
+                            );
+                        });
+                    } else if (bottomsnumber != 15) {
+                        $.getJSON(myurl, function(data){
+                            $("#message-view").append(`
+                                <div class="form-posted">
+                                    ${$form}
+                                    <div class="form-spacer"></div>
+                                    <div class="output-posted">${data.warcore[0].bottoms[bottomsnumber].price}</div>
+                                </div>`
+                            );
+                        });
+                    } else if (outerwearnumber != 15) {
+                        $.getJSON(myurl, function(data){
+                            $("#message-view").append(`
+                                <div class="form-posted">
+                                    ${$form}
+                                    <div class="form-spacer"></div>
+                                    <div class="output-posted">${data.warcore[0].outerwear[outerwearnumber].price}</div>
+                                </div>`
+                            );
+                        });
+                    } else if (shirtsnumber != 15) {
+                        $.getJSON(myurl, function(data){
+                            $("#message-view").append(`
+                                <div class="form-posted">
+                                    ${$form}
+                                    <div class="form-spacer"></div>
+                                    <div class="output-posted">${data.warcore[0].shirts[shirtsnumber].price}</div>
+                                </div>`
+                            );
+                        });
+                    } else if (shoesnumber != 15) {
+                        $.getJSON(myurl, function(data){
+                            $("#message-view").append(`
+                                <div class="form-posted">
+                                    ${$form}
+                                    <div class="form-spacer"></div>
+                                    <div class="output-posted">${data.warcore[0].shoes[shoesnumber].price}</div>
+                                </div>`
+                            );
+                        });
+                    } else if (sweatersnumber != 15) {
+                        $.getJSON(myurl, function(data){
+                            $("#message-view").append(`
+                                <div class="form-posted">
+                                    ${$form}
+                                    <div class="form-spacer"></div>
+                                    <div class="output-posted">${data.warcore[0].sweaters[sweatersnumber].price}</div>
+                                </div>`
+                            );
+                        });
+                    } else {
+                        $("#message-view").append(`
+                            <div class="form-posted">
+                                ${$form}
+                                <div class="form-spacer"></div>
+                                <p class="output-posted">-err: no such detail</p>
+                            </div>
+                        `);
+                    }
+                break;
+                case "s":
+                    if (bottomsnumber != 15) {
+                        $.getJSON(myurl, function(data){
+                            $("#message-view").append(`
+                                <div class="form-posted">
+                                    ${$form}
+                                    <div class="form-spacer"></div>
+                                    <div class="output-posted">${data.warcore[0].bottoms[bottomsnumber].size}</div>
+                                </div>`
+                            );
+                        });
+                    } else if (outerwearnumber != 15) {
+                        $.getJSON(myurl, function(data){
+                            $("#message-view").append(`
+                                <div class="form-posted">
+                                    ${$form}
+                                    <div class="form-spacer"></div>
+                                    <div class="output-posted">${data.warcore[0].outerwear[outerwearnumber].size}</div>
+                                </div>`
+                            );
+                        });
+                    } else if (shirtsnumber != 15) {
+                        $.getJSON(myurl, function(data){
+                            $("#message-view").append(`
+                                <div class="form-posted">
+                                    ${$form}
+                                    <div class="form-spacer"></div>
+                                    <div class="output-posted">${data.warcore[0].shirts[shirtsnumber].size}</div>
+                                </div>`
+                            );
+                        });
+                    } else if (shoesnumber != 15) {
+                        $.getJSON(myurl, function(data){
+                            $("#message-view").append(`
+                                <div class="form-posted">
+                                    ${$form}
+                                    <div class="form-spacer"></div>
+                                    <div class="output-posted">${data.warcore[0].shoes[shoesnumber].size}</div>
+                                </div>`
+                            );
+                        });
+                    } else if (sweatersnumber != 15) {
+                        $.getJSON(myurl, function(data){
+                            $("#message-view").append(`
+                                <div class="form-posted">
+                                    ${$form}
+                                    <div class="form-spacer"></div>
+                                    <div class="output-posted">${data.warcore[0].sweaters[sweatersnumber].size}</div>
+                                </div>`
+                            );
+                        });
+                    } else {
+                        $("#message-view").append(`
+                            <div class="form-posted">
+                                ${$form}
+                                <div class="form-spacer"></div>
+                                <p class="output-posted">-err: no such detail</p>
+                            </div>
+                        `);
+                    }
+                break;
+                default:
+                    $("#message-view").append(`
+                        <div class="form-posted">
+                            ${$form}
+                            <div class="form-spacer"></div>
+                            <p class="output-posted">-err: no details available for this file</p>
                         </div>
                     `);
                 break;
@@ -602,6 +2398,15 @@ function $postMessage() {
                         <div class="form-posted">${$form}</div>
                     `);
                     $("#windows-wrapper").empty();
+                break;
+                case "as":
+                    $("#message-view").append(`
+                        <div class="form-posted">${$form}</div>
+                    `);
+                    $("#sidepanel-view").empty();
+
+                    $("#message-view").css("width", "100%")
+                    $("#sidepanel-view").css("width", "0%")
                 break;
                 default:
                     $("#message-view").append(`
@@ -616,6 +2421,10 @@ function $postMessage() {
         break;
         case "rs":
             $("#message-view").empty();
+            $("#windows-wrapper").empty();
+            $("#sidepanel-view").empty();
+            $("#message-view").css("width", "100%");
+            $("#sidepanel-view").css("width", "0%");
             $("#message-view").append(`
                 <div class="form-posted">
                     ${$form}
@@ -639,21 +2448,49 @@ function $postMessage() {
     $("#message").empty();
 
     $(document).ready(function () {
+        $( ".window-close" ).click(function() {
+            $(this).parent().remove();
+            $("#message-view").append(`
+                <div class="form-posted">
+                    <div class="input-posted">
+                        <span class="input-location">${$location}</span>
+                        <p><span>${timeStamp()}</span></p>
+                        <p>Command:</p>
+                        <div id="message" rows="1">window closed</div>
+                    </div>
+                </div>`
+            )
+            window.scrollTo(0,document.body.scrollHeight);
+        });
+
         $('.swiper-container').flickity({
-            // options
             cellAlign: 'left',
+            wrapAround: true,
             contain: true,
             draggable: false,
             pageDots: false,
-            wrapAround: true
+            imagesLoaded: true,
+        });
+        
+        var $carousel = $('.times-swiper-container').flickity({
+            cellAlign: 'left',
+            wrapAround: true,
+            contain: true,
+            draggable: false,
+            pageDots: false,
+            imagesLoaded: true
+        });
+        
+        var $caption = $('.times-caption');
+        var flkty = $carousel.data('flickity');
+
+        $carousel.on( 'select.flickity', function() {
+            $caption.html( flkty.selectedElement.alt )
         });
 
-        $( ".window-close" ).click(function() {
-            $(this).parent().empty();
-        });
     });
 
-}
+};
 
 
 
