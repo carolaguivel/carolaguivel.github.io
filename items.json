@@ -8,7 +8,7 @@
                     "details" : "Waterproof, Horizontal Ballistic Straps, Zip Closure, 3 Front Compartments, Left Corner Branding, Imported",
                     "composition" : "100% Nylon",
                     "price" : "USD 203.00",
-                    "path" : "images/bags",
+                    "path" : "images/warcore/bags",
                     "images" : [ "032duffel1.jpg", "032duffel2.jpg", "032duffel3.jpg" ]
                 },
 
@@ -18,7 +18,7 @@
                     "details" : "Leather Cross Body Strap, Classic Zipper, Rollercoaster Buckle, Foldover Flap, Leather Logo Patch, Imported",
                     "composition" : "Textile, Polyvinyl",
                     "price" : "USD 695.00",
-                    "path" : "images/bags",
+                    "path" : "images/warcore/bags",
                     "images" : [ "babyx1.jpg", "babyx2.jpg", "babyx3.jpg" ]
                 },
 
@@ -28,7 +28,7 @@
                     "details" : "Padded Shoulder Straps, Signature Fastening at Face, Drawstring Closure, Tonal Twill Lining, Logo Engraved Silver-Tone Hardware, Imported",
                     "composition" : "Polyvinyl Chloride",
                     "price" : "USD 725.00",
-                    "path" : "images/bags",
+                    "path" : "images/warcore/bags",
                     "images" : [ "blacktank1.jpg", "blacktank2.jpg", "blacktank3.jpg" ]
                 },
 
@@ -38,7 +38,7 @@
                     "details" : "Collaboration with Craig Green, Military Green/Black, Waterproof Teflon Nylon, Zip Closure, Zip Closure, Imported",
                     "composition" : "100% Polyamide",
                     "price" : "USD 751.00",
-                    "path" : "images/bags",
+                    "path" : "images/warcore/bags",
                     "images" : [ "fragment1.jpg", "fragment2.jpg", "fragment3.jpg" ]
                 },
 
@@ -48,7 +48,7 @@
                     "details" : "Rubberised Fabric, Adjustable Leather Straps, Moncler Logo Buckles, Ergonomic Lumbar Pad, Metal Logo Claw Hook Closure, Imported",
                     "composition" : "Polyvinyl Chloride",
                     "price" : "USD 725.00",
-                    "path" : "images/bags",
+                    "path" : "images/warcore/bags",
                     "images" : [ "monclerdry1.jpg", "monclerdry2.jpg", "monclerdry3.jpg" ]
                 },
 
@@ -58,7 +58,7 @@
                     "details" : "Curved Front Compartment, Zip Closure, Transparent Mission Statement, Light Nylon Lining, Screen-Printed Logo, Imported",
                     "composition" : "Nylon, Leather",
                     "price" : "USD 680.00",
-                    "path" : "images/bags",
+                    "path" : "images/warcore/bags",
                     "images" : [ "paddednylon1.jpg", "paddednylon2.jpg", "paddednylon3.jpg" ]
                 },
 
@@ -68,7 +68,7 @@
                     "details" : "Gray Textile, Velcro Flap Closure, Pixel Pattern, Shoulder Straps, Blue CE Patch Detail, Imported",
                     "composition" : "100% cotton",
                     "price" : "USD 307.00",
-                    "path" : "images/bags",
+                    "path" : "images/warcore/bags",
                     "images" : [ "pixel1.jpg", "pixel2.jpg", "pixel3.jpg" ]
                 },
 
@@ -78,7 +78,7 @@
                     "details" : "Hinged Carry Handle, Yellow Leather Detailing, Orange Shoulder Strap, Flip-Clasp Fastenings, Logo Sticker in Orange, Made in Italy",
                     "composition" : "Polypropylene",
                     "price" : "USD 825.00",
-                    "path" : "images/bags",
+                    "path" : "images/warcore/bags",
                     "images" : [ "toolbag1.jpg", "toolbag2.jpg", "toolbag3.jpg" ]
                 },
 
@@ -88,7 +88,7 @@
                     "details" : "Reinforced Plastic, Foldable Handle, Laser-Etched Graphic, Flip-Clasp Fastenings, Laser-Etched Logo, Imported",
                     "composition" : "Nylon, Leather",
                     "price" : "USD 530.00",
-                    "path" : "images/bags",
+                    "path" : "images/warcore/bags",
                     "images" : [ "utilitycase1.jpg", "utilitycase2.jpg", "utilitycase3.jpg" ]
                 }
             ],
@@ -101,7 +101,7 @@
                     "composition" : "100% Polyester",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 604.00",
-                    "path" : "images/bottoms",
+                    "path" : "images/warcore/bottoms",
                     "images" : [ "block1.jpg", "block2.jpg", "block3.jpg" ]
                 },
 
@@ -112,7 +112,7 @@
                     "composition" : "100% Polyamide",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 682.00",
-                    "path" : "images/bottoms",
+                    "path" : "images/warcore/bottoms",
                     "images" : [ "camo1.jpg", "camo2.jpg", "camo3.jpg" ]
                 },
 
@@ -123,7 +123,7 @@
                     "composition" : "100% Nylon",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 248.00",
-                    "path" : "images/bottoms",
+                    "path" : "images/warcore/bottoms",
                     "images" : [ "ispa1.jpg", "ispa2.jpg", "ispa3.jpg" ]
                 },
 
@@ -134,7 +134,7 @@
                     "composition" : "100% Cotton",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 430.00",
-                    "path" : "images/bottoms",
+                    "path" : "images/warcore/bottoms",
                     "images" : [ "manual1.jpg", "manual2.jpg", "manual3.jpg" ]
                 },
 
@@ -145,7 +145,7 @@
                     "composition" : "100% Cotton",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 795.00",
-                    "path" : "images/bottoms",
+                    "path" : "images/warcore/bottoms",
                     "images" : [ "parachute1.jpg", "parachute2.jpg", "parachute3.jpg" ]
                 },
 
@@ -156,7 +156,7 @@
                     "composition" : "100% Nylon",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 415.00",
-                    "path" : "images/bottoms",
+                    "path" : "images/warcore/bottoms",
                     "images" : [ "scaffolded1.jpg", "scaffolded2.jpg", "scaffolded3.jpg" ]
                 },
 
@@ -167,7 +167,7 @@
                     "composition" : "100% Nylon",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 550.00",
-                    "path" : "images/bottoms",
+                    "path" : "images/warcore/bottoms",
                     "images" : [ "tactical1.jpg", "tactical2.jpg", "tactical3.jpg" ]
                 },
 
@@ -178,7 +178,7 @@
                     "composition" : "100% Polyamide",
                     "size" : "XXS, XS, S, M, L, XL, XXL",
                     "price" : "USD 820.00",
-                    "path" : "images/bottoms",
+                    "path" : "images/warcore/bottoms",
                     "images" : [ "tracks1.jpg", "tracks2.jpg", "tracks3.jpg" ]
                 },
 
@@ -189,7 +189,7 @@
                     "composition" : "100% Leather",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 4995.00",
-                    "path" : "images/bottoms",
+                    "path" : "images/warcore/bottoms",
                     "images" : [ "zonemoto1.jpg", "zonemoto2.jpg", "zonemoto3.jpg" ]
                 }
             ],
@@ -201,7 +201,7 @@
                     "details" : "Stainless Steel, Gold Frame, Standard Fit, Apricot Mirrored Lens, 100% UV Protection, Adjustable Silicone Nose Pads, Clear Acetate Temple Tips, Made in Korea",
                     "composition" : "50% stainless steel, 50% glass",
                     "price" : "USD 310.00",
-                    "path" : "images/eyewear",
+                    "path" : "images/warcore/eyewear",
                     "images" : [ "afix1.jpg", "afix2.jpg", "afix3.jpg" ]
 
                 },
@@ -212,7 +212,7 @@
                     "details" : "Single Reflective Lens, Multicolor Gradient, Standard Fit, Tonal Hardware, 100% UV Protection, Transparent Rubber Nose Pads, Logo Engraved, Made in Italy",
                     "composition" : "50% metal, 50% glass",
                     "price" : "USD 290.00",
-                    "path" : "images/eyewear",
+                    "path" : "images/warcore/eyewear",
                     "images" : [ "blck1.jpg", "blck2.jpg", "blck3.jpg" ]
                 },
                 
@@ -222,7 +222,7 @@
                     "details" : "Uni Frame Lens, Flatba Frame, Standard Fit, Acetate, 100% UV Protection, Transparent Nose Pads, Logo Detailed Center, Made in China",
                     "composition" : "50% acetate, 50% glass",
                     "price" : "USD 320.00",
-                    "path" : "images/eyewear",
+                    "path" : "images/warcore/eyewear",
                     "images" : [ "cold1.jpg", "cold2.jpg", "cold3.jpg" ]
                 },
 
@@ -232,7 +232,7 @@
                     "details" : "Wraparound Oval Shape, Sculptural Metal Frame, Adjustable Smart Fit, Nylon Lens, 100% UVA Protection, BB Nose Pads, Lasered Logo, Made in Italy",
                     "composition" : "100% metal",
                     "price" : "USD 450.00",
-                    "path" : "images/eyewear",
+                    "path" : "images/warcore/eyewear",
                     "images" : [ "fire1.jpg", "fire2.jpg", "fire3.jpg" ]
                 },
 
@@ -242,7 +242,7 @@
                     "details" : "Rectangular Brown Lenses, Gold-Tone Metal, Standard Fit, Leather Trim, 100% UV Protection, Transparent Rubber Nose Pads, Engraved Logo, Made in Italy",
                     "composition" : "10% leather, 40% metal, 50% glass",
                     "price" : "USD 430.00",
-                    "path" : "images/eyewear",
+                    "path" : "images/warcore/eyewear",
                     "images" : [ "geom1.jpg", "geom2.jpg", "geom3.jpg" ]
                 },
 
@@ -252,7 +252,7 @@
                     "details" : "Silver Flash Lens, Black Acetate Frame, Standard Fit, 3D Manufactured, 100% UV Protection, Silicone Nose Pad, Laser Engraved Logo, Made in Berlin",
                     "composition" : "100% acetate",
                     "price" : "USD 648.00",
-                    "path" : "images/eyewear",
+                    "path" : "images/warcore/eyewear",
                     "images" : [ "mmech1.jpg", "mmech2.jpg", "mmech3.jpg" ]
                 },
 
@@ -262,7 +262,7 @@
                     "details" : "Rimless Plastic Sunglasses, Brown Uni Lens, Standard Fit, Rubberized Nose Pads, 100% UV Protection, Rubberized Temple Tips, Logo Etched at Lens, Made in Italy",
                     "composition" : "50% plastic, 50% acetate",
                     "price" : "USD 595.00",
-                    "path" : "images/eyewear",
+                    "path" : "images/warcore/eyewear",
                     "images" : [ "moon1.jpg", "moon2.jpg", "moon3.jpg" ]
                 },
 
@@ -272,7 +272,7 @@
                     "details" : "Narrow Rounded Shape, Sharply Wrapped Frame, Standard Fit, Mineral Lenses, 100% UV Protection, Silicone Nose Pads, Laser Engraved Logo, Made in Italy",
                     "composition" : "100% acetate",
                     "price" : "USD 350.00",
-                    "path" : "images/eyewear",
+                    "path" : "images/warcore/eyewear",
                     "images" : [ "neo1.jpg", "neo2.jpg", "neo3.jpg" ]
                 },
 
@@ -282,7 +282,7 @@
                     "details" : "Acetate Bridge, Colored Lenses, Standard Fit, Metal Frame, 100% UV Protection, Rubberized Nose Pads, Engraved Logo, Made in China",
                     "composition" : "50% acetate, 50% glass",
                     "price" : "USD 320.00",
-                    "path" : "images/eyewear",
+                    "path" : "images/warcore/eyewear",
                     "images" : [ "newturtle1.jpg", "newturtle2.jpg", "newturtle3.jpg" ]
                 },
 
@@ -292,7 +292,7 @@
                     "details" : "Sporty Frame, Matte Black Metal, Standard Fit, Acetate Temple Tips, 100% UV Protection, Rubber Nose Pads, Acetate Encased Logo, Made in China",
                     "composition" : "100% acetate",
                     "price" : "USD 320.00",
-                    "path" : "images/eyewear",
+                    "path" : "images/warcore/eyewear",
                     "images" : [ "scon1.jpg", "scon2.jpg", "scon3.jpg" ]
                 },
 
@@ -302,7 +302,7 @@
                     "details" : "Rectangular Acetate Frame, Mirrored Single Lens, Standard Fit, Acetate Temple Tips, 100% UV Protection, Integrated Nose Pads, Logo and Stripes Etched in Black, Made in Italy",
                     "composition" : "100% acetate",
                     "price" : "USD 485.00",
-                    "path" : "images/eyewear",
+                    "path" : "images/warcore/eyewear",
                     "images" : [ "ski1.jpg", "ski2.jpg", "ski3.jpg" ]
                 },
 
@@ -312,7 +312,7 @@
                     "details" : "Acetate Frame, Reflective Uni Lens, Standard Fit, Acetate Temple Tips, 100% UV Protection, Silicone Nose Pad, Etched Logo, Made in Italy",
                     "composition" : "100% acetate",
                     "price" : "USD 1040.00",
-                    "path" : "images/eyewear",
+                    "path" : "images/warcore/eyewear",
                     "images" : [ "spike1.jpg", "spike2.jpg", "spike3.jpg" ]
                 },
 
@@ -322,7 +322,7 @@
                     "details" : "Transparent Frame, Four Interchangeable Lenses, Standard Fit, Floating Nose Pads, 100% UV Protection, Rubber Temple Inserts, Engraved Logo Details, Made in Italy",
                     "composition" : "100% polycarbonate",
                     "price" : "USD 400.00",
-                    "path" : "images/eyewear",
+                    "path" : "images/warcore/eyewear",
                     "images" : [ "tailwind1.jpg", "tailwind2.jpg", "tailwind3.jpg" ]
                 },
 
@@ -332,7 +332,7 @@
                     "details" : "Semi Rimless, Velvet Gold Tone, Standard Fit, Cut-Out Detailing, 100% UV Protection, Mirrored Uni Frame Lens, Laser Engraved Logo, Made in Italy",
                     "composition" : "50% plastic, 50% acetate",
                     "price" : "USD 462.00",
-                    "path" : "images/eyewear",
+                    "path" : "images/warcore/eyewear",
                     "images" : [ "tralyx1.jpg", "tralyx2.jpg", "tralyx3.jpg" ]
                 },
 
@@ -342,7 +342,7 @@
                     "details" : "Orange Uni Lens, Rimless, Standard Fit, Zip Tie Details, 100% UV Protection, Silicone Nose Pads, Metallic Logo Accessory, Made in Italy",
                     "composition" : "100% acetate",
                     "price" : "USD 350.00",
-                    "path" : "images/eyewear",
+                    "path" : "images/warcore/eyewear",
                     "images" : [ "zip1.jpg", "zip2.jpg", "zip3.jpg" ]
                 }
             ],
@@ -355,7 +355,7 @@
                     "composition" : "100% Polyvinyl",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 475.00",
-                    "path" : "images/outerwear",
+                    "path" : "images/warcore/outerwear",
                     "images" : [ "asymmetric1.jpg", "asymmetric2.jpg", "asymmetric3.jpg", "asymmetric4.jpg" ]
                 },
 
@@ -366,7 +366,7 @@
                     "composition" : "90% Nylon, 10% Textile",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 740.00",
-                    "path" : "images/outerwear",
+                    "path" : "images/warcore/outerwear",
                     "images" : [ "quantumdye1.jpg", "quantumdye2.jpg", "quantumdye3.jpg" ]
                 },
 
@@ -377,7 +377,7 @@
                     "composition" : "100% Nylon",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 1150.00",
-                    "path" : "images/outerwear",
+                    "path" : "images/warcore/outerwear",
                     "images" : [ "sirus1.jpg", "sirus2.jpg", "sirus3.jpg", "sirus4.jpg" ]
                 },
 
@@ -388,7 +388,7 @@
                     "composition" : "90% Nylon, 10% Textile",
                     "size" : "XS, S, M, L, XL",
                     "price" : "USD 1850.00",
-                    "path" : "images/outerwear",
+                    "path" : "images/warcore/outerwear",
                     "images" : [ "camo1.jpg", "camo2.jpg", "camo3.jpg", "camo4.jpg" ]
                 },
 
@@ -399,7 +399,7 @@
                     "composition" : "100% textile",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 1400.00",
-                    "path" : "images/outerwear",
+                    "path" : "images/warcore/outerwear",
                     "images" : [ "deimos1.jpg", "deimos2.jpg", "deimos3.jpg", "deimos4.jpg" ]
                 },
 
@@ -410,7 +410,7 @@
                     "composition" : "90% Nylon, 10% Textile",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 1505.00",
-                    "path" : "images/outerwear",
+                    "path" : "images/warcore/outerwear",
                     "images" : [ "cosmos1.jpg", "cosmos2.jpg", "cosmos3.jpg", "cosmos4.jpg" ]
                 },
 
@@ -421,7 +421,7 @@
                     "composition" : "Fill: 90% white duck down, 10% feather, Body: 100% polyester",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 650.00",
-                    "path" : "images/outerwear",
+                    "path" : "images/warcore/outerwear",
                     "images" : [ "allochroic1.jpg", "allochroic2.jpg", "allochroic3.jpg" ]
                 },
 
@@ -432,7 +432,7 @@
                     "composition" : "Fill: 90% down, 10% feather, Body: 100% polyamide",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 695.00",
-                    "path" : "images/outerwear",
+                    "path" : "images/warcore/outerwear",
                     "images" : [ "iridescent1.jpg", "iridescent2.jpg", "iridescent3.jpg" ]
                 },
 
@@ -443,7 +443,7 @@
                     "composition" : "Nylon",
                     "size" : "S, M, L, XL, XXL",
                     "price" : "USD 1445.00",
-                    "path" : "images/outerwear",
+                    "path" : "images/warcore/outerwear",
                     "images" : [ "nightcrawler1.jpg", "nightcrawler2.jpg", "nightcrawler3.jpg", "nightcrawler4.jpg" ]
                 },
 
@@ -454,7 +454,7 @@
                     "composition" : "100% Nylon",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 1090.00",
-                    "path" : "images/outerwear",
+                    "path" : "images/warcore/outerwear",
                     "images" : [ "memorynylon1.jpg", "memorynylon2.jpg", "memorynylon3.jpg", "memorynylon4.jpg" ]
                 },
 
@@ -465,7 +465,7 @@
                     "composition" : "100% Nylon",
                     "size" : "S, M, L, XL, XXL",
                     "price" : "USD 675.00",
-                    "path" : "images/outerwear",
+                    "path" : "images/warcore/outerwear",
                     "images" : [ "passage1.jpg", "passage2.jpg", "passage3.jpg" ]
                 },
 
@@ -476,7 +476,7 @@
                     "composition" : "100% Fabric",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 454.00",
-                    "path" : "images/outerwear",
+                    "path" : "images/warcore/outerwear",
                     "images" : [ "nike1.jpg", "nike2.jpg", "nike3.jpg", "nike4.jpg" ]
                 },
 
@@ -487,7 +487,7 @@
                     "composition" : "Body: 91% polyester, 9% polyamide, Fill: 90% goose down, 10% feathers",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 2670.00",
-                    "path" : "images/outerwear",
+                    "path" : "images/warcore/outerwear",
                     "images" : [ "paruscoat1.jpg", "paruscoat2.jpg", "paruscoat3.jpg" ]
                 },
 
@@ -498,7 +498,7 @@
                     "composition" : "Nylon, Textile",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 740.00",
-                    "path" : "images/outerwear",
+                    "path" : "images/warcore/outerwear",
                     "images" : [ "puffergilet1.jpg", "puffergilet2.jpg", "puffergilet3.jpg" ]
                 },
 
@@ -509,7 +509,7 @@
                     "composition" : "Fill: 90% grey duck down, 10% feather, Body & Lining: 100% nylon, Trim: 100% ",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 800.00",
-                    "path" : "images/outerwear",
+                    "path" : "images/warcore/outerwear",
                     "images" : [ "oslodown1.jpg", "oslodown2.jpg", "oslodown3.jpg" ]
                 }
             ],
@@ -522,7 +522,7 @@
                     "composition" : "100% Cotton",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 300.00",
-                    "path" : "images/shirts",
+                    "path" : "images/warcore/shirts",
                     "images" : [ "bruised1.jpg", "bruised2.jpg", "bruised3.jpg" ]
                 },
 
@@ -533,7 +533,7 @@
                     "composition" : "100% Nylon",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 160.00",
-                    "path" : "images/shirts",
+                    "path" : "images/warcore/shirts",
                     "images" : [ "camotransfer1.jpg", "camotransfer2.jpg", "camotransfer3.jpg" ]
                 },
 
@@ -544,7 +544,7 @@
                     "composition" : "100% Cotton",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 601.00",
-                    "path" : "images/shirts",
+                    "path" : "images/warcore/shirts",
                     "images" : [ "moonflag1.jpg", "moonflag2.jpg", "moonflag3.jpg" ]
                 },
                 
@@ -555,7 +555,7 @@
                     "composition" : "100% Polyester",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 791.00",
-                    "path" : "images/shirts",
+                    "path" : "images/warcore/shirts",
                     "images" : [ "silver1.jpg", "silver2.jpg", "silver3.jpg" ]
                 },
 
@@ -566,7 +566,7 @@
                     "composition" : "100% Cotton",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 150.00",
-                    "path" : "images/shirts",
+                    "path" : "images/warcore/shirts",
                     "images" : [ "sstee1.jpg", "sstee2.jpg", "sstee3.jpg" ]
                 },
 
@@ -577,7 +577,7 @@
                     "composition" : "100% Cotton",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 266.00",
-                    "path" : "images/shirts",
+                    "path" : "images/warcore/shirts",
                     "images" : [ "psytrance1.jpg", "psytrance2.jpg", "psytrance3.jpg" ]
                 }
             ],
@@ -591,7 +591,7 @@
                     "composition" : "Upper: textile, leather, rubber, Sole: rubber",
                     "size" : "38, 39, 40, 41, 42, 43, 44",
                     "price" : "USD 715.00",
-                    "path" : "images/shoes",
+                    "path" : "images/warcore/shoes",
                     "images" : [ "alison1.jpg", "alison2.jpg", "alison3.jpg" ]
                 },
 
@@ -602,7 +602,7 @@
                     "composition" : "Upper: synthetic, textile, Sole: rubber",
                     "size" : "40, 41, 42, 43, 44",
                     "price" : "USD 595.00",
-                    "path" : "images/shoes",
+                    "path" : "images/warcore/shoes",
                     "images" : [ "bamba1.jpg", "bamba2.jpg", "bamba3.jpg" ]
                 },
 
@@ -613,7 +613,7 @@
                     "composition" : "Upper: calfskin, Sole: rubber",
                     "size" : "39, 40, 41, 42, 43, 44, 45, 46, 47",
                     "price" : "USD 1095.00",
-                    "path" : "images/shoes",
+                    "path" : "images/warcore/shoes",
                     "images" : [ "brownjaw1.jpg", "brownjaw2.jpg", "brownjaw3.jpg" ]
                 },
 
@@ -624,7 +624,7 @@
                     "composition" : "Upper: leather, textile, Sole: rubber",
                     "size" : "35, 36, 37, 38, 39, 40, 41",
                     "price" : "USD 220.00",
-                    "path" : "images/shoes",
+                    "path" : "images/warcore/shoes",
                     "images" : [ "gsg1.jpg", "gsg2.jpg", "gsg3.jpg", "gsg4.jpg" ]
                 },
 
@@ -635,7 +635,7 @@
                     "composition" : "Upper: leather, Sole: rubber",
                     "size" : "40, 41, 42, 43, 44",
                     "price" : "USD 670.00",
-                    "path" : "images/shoes",
+                    "path" : "images/warcore/shoes",
                     "images" : [ "alyxhiking1.jpg", "alyxhiking2.jpg", "alyxhiking3.jpg" ]
                 },
 
@@ -646,7 +646,7 @@
                     "composition" : "Upper: leather, textile, Sole: rubber",
                     "size" : "41, 42, 43, 44, 45, 46",
                     "price" : "USD 295.00",
-                    "path" : "images/shoes",
+                    "path" : "images/warcore/shoes",
                     "images" : [ "hybrid1.jpg", "hybrid2.jpg", "hybrid3.jpg" ]
                 },
 
@@ -657,7 +657,7 @@
                     "composition" : "Upper: leather, textile, Sole: rubber",
                     "size" : "35, 36, 37, 38, 39, 40, 41",
                     "price" : "USD 485.00",
-                    "path" : "images/shoes",
+                    "path" : "images/warcore/shoes",
                     "images" : [ "nubuck1.jpg", "nubuck2.jpg", "nubuck3.jpg" ]
                 },
 
@@ -668,7 +668,7 @@
                     "composition" : "Upper: leather, Sole: rubber",
                     "size" : "38, 39, 40, 41, 42, 43, 44, 45, 46",
                     "price" : "USD 965.00",
-                    "path" : "images/shoes",
+                    "path" : "images/warcore/shoes",
                     "images" : [ "off1.jpg", "off2.jpg", "off3.jpg" ]
                 },
 
@@ -679,7 +679,7 @@
                     "composition" : "Upper: synthetic, textile, Sole: rubber",
                     "size" : "39, 40, 41, 42, 43, 44, 45, 46",
                     "price" : "USD 225.00",
-                    "path" : "images/shoes",
+                    "path" : "images/warcore/shoes",
                     "images" : [ "vapormax1.jpg", "vapormax2.jpg", "vapormax3.jpg" ]
                 }
             ],
@@ -693,7 +693,7 @@
                     "composition" : "65% cotton, 35% polyester",
                     "size" : "XXS, XS, S, M, L, XL, XXL",
                     "price" : "USD 205.00",
-                    "path" : "images/sweaters",
+                    "path" : "images/warcore/sweaters",
                     "images" : [ "allover1.jpg", "allover2.jpg", "allover3.jpg" ]
                 },
 
@@ -704,7 +704,7 @@
                     "composition" : "Body: 100% cotton, Trim: 95% cotton, 5% elastane",
                     "size" : "XXS, XS, S, M, L, XL, XXL",
                     "price" : "USD 250.00",
-                    "path" : "images/sweaters",
+                    "path" : "images/warcore/sweaters",
                     "images" : [ "alby1.jpg", "alby2.jpg", "alby3.jpg" ]
                 },
 
@@ -715,7 +715,7 @@
                     "composition" : "Body: 100% cotton, Trim: 94% cotton, 6% elastane",
                     "size" : "XXS, XS, S, M, L, XL, XXL",
                     "price" : "USD 790.00",
-                    "path" : "images/sweaters",
+                    "path" : "images/warcore/sweaters",
                     "images" : [ "blackmemory1.jpg", "blackmemory2.jpg", "blackmemory3.jpg" ]
                 },
 
@@ -726,7 +726,7 @@
                     "composition" : "75% wool, 26% polyamide, 2% viscose",
                     "size" : "XXS, XS, S, M, L, XL, XXL",
                     "price" : "USD 875.00",
-                    "path" : "images/sweaters",
+                    "path" : "images/warcore/sweaters",
                     "images" : [ "burning1.jpg", "burning2.jpg", "burning3.jpg" ]
                 },
 
@@ -737,7 +737,7 @@
                     "composition" : "53% wool, 36% polyamide, 11% cotton",
                     "size" : "XXS, XS, S, M, L, XL, XXL",
                     "price" : "USD 1105.00",
-                    "path" : "images/sweaters",
+                    "path" : "images/warcore/sweaters",
                     "images" : [ "factory1.jpg", "factory2.jpg", "factory3.jpg" ]
                 },
 
@@ -748,7 +748,7 @@
                     "composition" : "73% polyester, 27% virgin wool",
                     "size" : "XXS, XS, S, M, L, XL",
                     "price" : "USD 265.00",
-                    "path" : "images/sweaters",
+                    "path" : "images/warcore/sweaters",
                     "images" : [ "fleece1.jpg", "fleece2.jpg", "fleece3.jpg" ]
                 },
 
@@ -759,7 +759,7 @@
                     "composition" : "100% cotton",
                     "size" : "XXS, XS, S, M, L, XL",
                     "price" : "USD 595.00",
-                    "path" : "images/sweaters",
+                    "path" : "images/warcore/sweaters",
                     "images" : [ "mackintosh1.jpg", "mackintosh2.jpg", "mackintosh3.jpg" ]
                 },
 
@@ -770,7 +770,7 @@
                     "composition" : "100% cotton. Trim 1: 95% cotton, 5% elastane. Trim 2: 100% polyvinyl.",
                     "size" : "XXS, XS, S, M, L, XL",
                     "price" : "USD 520.00",
-                    "path" : "images/sweaters",
+                    "path" : "images/warcore/sweaters",
                     "images" : [ "manual1.jpg", "manual2.jpg", "manual3.jpg" ]
                 },
 
@@ -781,7 +781,7 @@
                     "composition" : "100% cotton",
                     "size" : "XXS, XS, S, M, L, XL, XXL",
                     "price" : "USD 605.00",
-                    "path" : "images/sweaters",
+                    "path" : "images/warcore/sweaters",
                     "images" : [ "pascal1.jpg", "pascal2.jpg", "pascal3.jpg" ]
                 },
 
@@ -792,7 +792,7 @@
                     "composition" : "Body: 100% polyester, Trim: 100% nylon, Lining: 100% polyester",
                     "size" : "XXS, XS, S, M, L, XL, XXL",
                     "price" : "USD 140.00",
-                    "path" : "images/sweaters",
+                    "path" : "images/warcore/sweaters",
                     "images" : [ "sherpa1.jpg", "sherpa2.jpg", "sherpa3.jpg" ]
                 },
 
@@ -803,7 +803,7 @@
                     "composition" : "65% cotton, 35% polyester",
                     "size" : "S, M, L, XL, XXL",
                     "price" : "USD 190.00",
-                    "path" : "images/sweaters",
+                    "path" : "images/warcore/sweaters",
                     "images" : [ "stars1.jpg", "stars2.jpg", "stars3.jpg" ]
                 },
 
@@ -814,7 +814,7 @@
                     "composition" : "100% Cotton",
                     "size" : "XXS, XS, S, M, L, XL, XXL",
                     "price" : "USD 425.00",
-                    "path" : "images/sweaters",
+                    "path" : "images/warcore/sweaters",
                     "images" : [ "tonalray1.jpg", "tonalray2.jpg", "tonalray3.jpg" ]
                 }
             ]
