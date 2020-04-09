@@ -874,7 +874,7 @@
                     "text4" : "<p>In the last three years, evidence has been building in the scientific community that Earth life might have originated on Mars and was brought to this planet aboard a Martian meteorite that carried some chemicals essential to forming life that were likely available on Mars but not yet present on Earth. The reemergence of the panspermia theory - a hypothesis that rocks expelled from a planet’s surface by impact serve as transfer vehicles for spreading biological material from one planet to another within the same solar system - is intertwined with the long-term scientific quest to find out how life began on Earth. Even though scientific signs are beginning to point in that direction, it’s still more a matter of increased probability than scientific proof. Could we all be Martians after all?</p>",
                     "path" : "images/times/mars",
                     "images" : [ "marstrust1.jpg", "marstrust2.jpg", "marstrust3.jpg", "marstrust4.jpg", "marstrust5.jpg" ],
-                    "captions" : [ "The Earth is the cradle of humanity, but mankind cannot stay in the cradle forever.", "Designs for a NASA Mars settlement for four astronauts that could be 3D printed by a team of semi-autonomous robots.", "A new International Space Station located over Mars.", "Design proposal envisioning using bamboo grown and harvested on Mars to build the first colony on the red planet.", "" ]
+                    "captions" : [ "The Earth is the cradle of humanity, but mankind cannot stay in the cradle forever.", "Designs for a NASA Mars settlement for four astronauts that could be 3D printed by a team of semi-autonomous robots.", "A new International Space Station located over Mars.", "Design proposal envisioning using bamboo grown and harvested on Mars to build the first colony on the red planet.", "Ares Lander on Mars with Surrounding Terrain." ]
                 },
 
                 {
@@ -891,7 +891,7 @@
                     "text4" : "",
                     "path" : "images/times/mars",
                     "images" : [ "placeholder.jpg", "placeholder.jpg" ],
-                    "captions" : [ "hi" ]
+                    "captions" : [ "error" ]
                 }
             ],
 
@@ -909,7 +909,8 @@
                     "quote3" : "We have no present plans to employ women on spaceflights because of the degree of scientific and flight training, and the physical characteristics, which are required.",
                     "text4" : "<p>The gender bias in this statement is, to a modern reader, unmistakable. During project Mercury, astronauts did not need scientific training - they simply needed a bachelor’s degree or equivalent. John Glenn did not even have a degree.</p><div class='sidepanel-spacer-m'></div><p>And the flight training - what did this mean, exactly? For project Mercury, astronauts needed to be a graduate of test pilot school, with a minimum of 1,500 hours flying time, and a qualified jet pilot. The requirement to be a test pilot was a logical choice, not so much because of the nerves of steel required to fly experimental aircraft, but because test pilots are trained to take notes while piloting and to deliver clear reports afterward. But this criterion eliminated female pilots, because the only qualified test pilot schools were military and they did not accept women.</p><div class='sidepanel-spacer-m'></div><p>Mind you, during World War II, the Women Airforce Service Pilots were responsible for training pilots and towing planes for live-ammunition practice, as well as for ferrying and testing aircraft. In many cases, these women logged more flight hours than their male counterparts. They did not, however, have a certificate from a test pilot school.</p><div class='sidepanel-spacer-m'></div><p>Kari Love, a former spacesuit designer, once told me that “while we can look back and understand why women were an afterthought in aerospace to this point, we are at serious risk for that to be reproduced as we move into the commercial spaceflight era.”</p><div class='sidepanel-spacer-m'></div><p>Without conscious thought, the design of the ship and the lunar platform for the Artemis missions is likely to reproduce design choices made in the Apollo era when astronauts were all men. Ladder rungs are set at the optimum distance for the average man. The pistol-grip tool, or cordless drill, is sized for a man’s hand.</p><div class='sidepanel-spacer-m'></div><p>Then there are the questions that we cannot answer simply because we have too little data. Since 1961, when Yuri Gagarin became the first man in space, over 500 people have been in space and only 64 of them have been women. We know that astronauts receive more radiation in space. Studies on Earth show that radiation can affect women at a rate 10 times higher than men. How will that play out in space?</p><div class='sidepanel-spacer-m'></div><p>As we look back at the Apollo mission and forward to Artemis, it is important to examine the gender biases of the early space program for lessons learned. If we want to land the first woman on the moon, let’s make sure she has tools designed with her in mind. Eliminating the legacy of gender bias is just one small step.</p>",
                     "path" : "images/times/moon",
-                    "images" : [ "placeholder.jpg", "placeholder.jpg" ]
+                    "images" : [ "genderbias1.jpg", "genderbias2.jpg", "genderbias3.jpg", "genderbias4.jpg", "genderbias5.jpg" ],
+                    "captions" : [ "Astronaut Eileen Marie Collins practiced using a gas mask during a terminal countdown demonstration test at Launch Pad 39A at Cape Canaveral, Fla., in 1997.", "Aviator Jerry Cobb with a Mercury capsule in 1961. She was one of the Mercury 13, a group of women who trained to be astronauts but never flew.", "Astronauts Dr. N. Jan Davis and Dr. Mae C. Jemison were mission specialists on board the STS-47 mission." ]
                 },
 
                 {
@@ -925,7 +926,8 @@
                     "quote3" : "The entry phase was normal, and the command module landed in the Pacific Ocean at 195-1/4 hours.",
                     "text4" : "<p>The landing coordinates, as determined from the onboard computer, were 13 degrees 19 minutes north latitude and 169 de­grees 09 minutes west longitude. After landing, the crew donned biological isolation garments. They were then retrieved by helicopter and taken to the primary recovery ship, USS Hornet. The crew and lunar material samples were placed in the Mobile Quarantine Facility for transport to the Lunar Receiving Labora­tory in Houston. The command module was taken aboard the Hornet about 3 hours after landing.</p><div class='sidepanel-spacer-m'></div><p>With the completion of Apollo 11, the national objective of landing men on the moon and returning them safely to earth before the end of the decade had been accomplished.</p>",
                     "path" : "images/times/moon",
-                    "images" : [ "apollo11_1.jpg", "apollo11_2.jpg", "apollo11_3.jpg" ]
+                    "images" : [ "apollo11_1.jpg", "apollo11_2.jpg", "apollo11_3.jpg" ],
+                    "captions" : [ "" ]
                 },
 
                 {
@@ -938,7 +940,8 @@
                     "text3" : "<p>our hands have touched you in your depth of night.</p><div class='sidepanel-spacer-m'></div><p>Three days and three nights we journeyed,</br>steered by farthest stars, climbed outward,</br>crossed the invisible tide-rip where the floating dust</br>falls one way or the other in the void between,</br>followed that other down, encountered</br>cold, faced death–unfathomable emptiness . . .</p><div class='sidepanel-spacer-m'></div><p></p><div class='sidepanel-spacer-m'></div><p>Then, the fourth day evening, we descended,</br>made fast, set foot at dawn upon your beaches,</br>sifted between our fingers your cold sand.</p>",
                     "text4" : "<p>We stand here in the dusk, the cold, the silence . . .</p><div class='sidepanel-spacer-m'></div><p>and here, as at the first of time, we lift our heads.</br>Over us, more beautiful than the moon, a</br>moon, a wonder to us, unattainable,</br>a longing past the reach of longing,</br>a light beyond our light, our lives–perhaps</br>a meaning to us . . .</p><div class='sidepanel-spacer-m'></div><p>O, a meaning!</p><div class='sidepanel-spacer-m'></div><p>over us on these silent beaches the bright earth,</p><div class='sidepanel-spacer-m'></div><p>presence among us.</p>",
                     "path" : "images/times/moon",
-                    "images" : [ "placeholder_1.jpg", "placeholder_2.jpg", "placeholder_3.jpg" ]
+                    "images" : [ "placeholder_1.jpg", "placeholder_2.jpg", "placeholder_3.jpg" ],
+                    "captions" : [ "" ]
                 }
             ],
 
