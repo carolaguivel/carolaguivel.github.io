@@ -880,7 +880,7 @@
                 {
                     "title" : "Ares 16",
                     "title2" : "Ares 16 Mission Report",
-                    "author" : "NASA Mission Evaluation Team",
+                    "author" : "NASA",
                     "date" : "Aug 3, 2002",
                     "text1" : "",
                     "quote1" : "",
@@ -916,7 +916,7 @@
                 {
                     "title" : "Apollo 11",
                     "title2" : "Apollo 11 Mission Report",
-                    "author" : "NASA Mission Evaluation Team",
+                    "author" : "NASA",
                     "date" : "Nov 20, 1969",
                     "text1" : "<p>The historic launch of the Apollo 11 mission carried three astronauts toward the moon. Two of them would set foot on the lunar surface for the first time in human history as millions of people around the world followed their steps on television.</p><div class='sidepanel-spacer-m'></div><p>The purpose of the Apollo 11 mission was to land men on the lunar surface and to return them safely to earth. The crew were Neil A. Arm­strong, Commander; Michael Collins, Command Module Pilot; and Edwin E. Aldrin, Jr., Lunar Module Pilot.</p>",
                     "quote1" : "The space vehicle was launched from Kennedy Space Center, Florida, at 8:32:00 a.m., EST, July 16, 1969.",
@@ -926,7 +926,7 @@
                     "quote3" : "The entry phase was normal, and the command module landed in the Pacific Ocean at 195-1/4 hours.",
                     "text4" : "<p>The landing coordinates, as determined from the onboard computer, were 13 degrees 19 minutes north latitude and 169 de­grees 09 minutes west longitude. After landing, the crew donned biological isolation garments. They were then retrieved by helicopter and taken to the primary recovery ship, USS Hornet. The crew and lunar material samples were placed in the Mobile Quarantine Facility for transport to the Lunar Receiving Labora­tory in Houston. The command module was taken aboard the Hornet about 3 hours after landing.</p><div class='sidepanel-spacer-m'></div><p>With the completion of Apollo 11, the national objective of landing men on the moon and returning them safely to earth before the end of the decade had been accomplished.</p>",
                     "path" : "images/times/moon",
-                    "images" : [ "apollo11_1.jpg", "apollo11_2.jpg", "apollo11_3.jpg" ],
+                    "images" : [ "apollo11_1.jpg", "apollo11_2.jpg", "apollo11_3.jpg", "apollo11_4.jpg", "apollo11_5.jpg" ],
                     "captions" : [ "Astronaut Edwin E. Aldrin Jr., lunar module pilot, poses for a photograph beside the deployed United States flag during an Apollo 11 extravehicular activity (EVA) on the lunar surface.", "The Apollo 11 mission, the first lunar landing mission, launched from the Kennedy Space Center, Florida via the Marshall Space Flight Center on July 16, 1969." ]
                 },
 
