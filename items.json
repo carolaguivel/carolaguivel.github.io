@@ -881,8 +881,8 @@
                 },
 
                 {
-                    "title" : "Ares 16",
-                    "title2" : "Ares 16 Mission Report",
+                    "title" : "Ares 18",
+                    "title2" : "Ares 18 Mission Report",
                     "author" : "NASA",
                     "date" : "Aug 3, 2002",
                     "date2" : "2002-08-03",
@@ -994,11 +994,31 @@
 
     "rundfunk" : [
         {
-            "news1" : [
+            "stations" : [
                 {
-                    "title" : "We choose to go to the Moon",
+                    "title" : "Address at Rice University",
                     "author" : "John F. Kennedy",
-                    "date" : "September 12, 1962",
+                    "date" : "Sep 12, 1962",
+                    "location" : "Houston, Texas",
+                    "path" : "audio/gotomoon",
+                    "audio" : "wechoosetogotothemoon.mp3",
+                    "images" : [ "johnfkennedy1.jpg", "johnfkennedy2.jpg" ]
+                },
+
+                {
+                    "title" : "Apollo 11",
+                    "author" : "",
+                    "date" : "Nov 10, 1969",
+                    "location" : "Houston, Texas",
+                    "path" : "audio/gotomoon",
+                    "audio" : "wechoosetogotothemoon.mp3",
+                    "images" : [ "johnfkennedy1.jpg", "johnfkennedy2.jpg" ]
+                }
+
+                {
+                    "title" : "Ares 18",
+                    "author" : "",
+                    "date" : "Nov 10, 1969",
                     "location" : "Houston, Texas",
                     "path" : "audio/gotomoon",
                     "audio" : "wechoosetogotothemoon.mp3",
