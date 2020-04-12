@@ -8,7 +8,7 @@
                     "details" : "Waterproof, Horizontal Ballistic Straps, Zip Closure, 3 Front Compartments, Left Corner Branding, Imported",
                     "composition" : "100% Nylon",
                     "price" : "USD 203.00",
-                    "path" : "images/warcore/bags",
+                    "path" : "assets/warcore/bags",
                     "images" : [ "032duffel1.jpg", "032duffel2.jpg", "032duffel3.jpg" ]
                 },
 
@@ -18,7 +18,7 @@
                     "details" : "Leather Cross Body Strap, Classic Zipper, Rollercoaster Buckle, Foldover Flap, Leather Logo Patch, Imported",
                     "composition" : "Textile, Polyvinyl",
                     "price" : "USD 695.00",
-                    "path" : "images/warcore/bags",
+                    "path" : "assets/warcore/bags",
                     "images" : [ "babyx1.jpg", "babyx2.jpg", "babyx3.jpg" ]
                 },
 
@@ -28,7 +28,7 @@
                     "details" : "Padded Shoulder Straps, Signature Fastening at Face, Drawstring Closure, Tonal Twill Lining, Logo Engraved Silver-Tone Hardware, Imported",
                     "composition" : "Polyvinyl Chloride",
                     "price" : "USD 725.00",
-                    "path" : "images/warcore/bags",
+                    "path" : "assets/warcore/bags",
                     "images" : [ "blacktank1.jpg", "blacktank2.jpg", "blacktank3.jpg" ]
                 },
 
@@ -38,7 +38,7 @@
                     "details" : "Collaboration with Craig Green, Military Green/Black, Waterproof Teflon Nylon, Zip Closure, Zip Closure, Imported",
                     "composition" : "100% Polyamide",
                     "price" : "USD 751.00",
-                    "path" : "images/warcore/bags",
+                    "path" : "assets/warcore/bags",
                     "images" : [ "fragment1.jpg", "fragment2.jpg", "fragment3.jpg" ]
                 },
 
@@ -48,7 +48,7 @@
                     "details" : "Rubberised Fabric, Adjustable Leather Straps, Moncler Logo Buckles, Ergonomic Lumbar Pad, Metal Logo Claw Hook Closure, Imported",
                     "composition" : "Polyvinyl Chloride",
                     "price" : "USD 725.00",
-                    "path" : "images/warcore/bags",
+                    "path" : "assets/warcore/bags",
                     "images" : [ "monclerdry1.jpg", "monclerdry2.jpg", "monclerdry3.jpg" ]
                 },
 
@@ -58,7 +58,7 @@
                     "details" : "Curved Front Compartment, Zip Closure, Transparent Mission Statement, Light Nylon Lining, Screen-Printed Logo, Imported",
                     "composition" : "Nylon, Leather",
                     "price" : "USD 680.00",
-                    "path" : "images/warcore/bags",
+                    "path" : "assets/warcore/bags",
                     "images" : [ "paddednylon1.jpg", "paddednylon2.jpg", "paddednylon3.jpg" ]
                 },
 
@@ -68,7 +68,7 @@
                     "details" : "Gray Textile, Velcro Flap Closure, Pixel Pattern, Shoulder Straps, Blue CE Patch Detail, Imported",
                     "composition" : "100% cotton",
                     "price" : "USD 307.00",
-                    "path" : "images/warcore/bags",
+                    "path" : "assets/warcore/bags",
                     "images" : [ "pixel1.jpg", "pixel2.jpg", "pixel3.jpg" ]
                 },
 
@@ -78,7 +78,7 @@
                     "details" : "Hinged Carry Handle, Yellow Leather Detailing, Orange Shoulder Strap, Flip-Clasp Fastenings, Logo Sticker in Orange, Made in Italy",
                     "composition" : "Polypropylene",
                     "price" : "USD 825.00",
-                    "path" : "images/warcore/bags",
+                    "path" : "assets/warcore/bags",
                     "images" : [ "toolbag1.jpg", "toolbag2.jpg", "toolbag3.jpg" ]
                 },
 
@@ -88,7 +88,7 @@
                     "details" : "Reinforced Plastic, Foldable Handle, Laser-Etched Graphic, Flip-Clasp Fastenings, Laser-Etched Logo, Imported",
                     "composition" : "Nylon, Leather",
                     "price" : "USD 530.00",
-                    "path" : "images/warcore/bags",
+                    "path" : "assets/warcore/bags",
                     "images" : [ "utilitycase1.jpg", "utilitycase2.jpg", "utilitycase3.jpg" ]
                 }
             ],
@@ -101,7 +101,7 @@
                     "composition" : "100% Polyester",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 604.00",
-                    "path" : "images/warcore/bottoms",
+                    "path" : "assets/warcore/bottoms",
                     "images" : [ "block1.jpg", "block2.jpg", "block3.jpg" ]
                 },
 
@@ -112,7 +112,7 @@
                     "composition" : "100% Polyamide",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 682.00",
-                    "path" : "images/warcore/bottoms",
+                    "path" : "assets/warcore/bottoms",
                     "images" : [ "camo1.jpg", "camo2.jpg", "camo3.jpg" ]
                 },
 
@@ -123,7 +123,7 @@
                     "composition" : "100% Nylon",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 248.00",
-                    "path" : "images/warcore/bottoms",
+                    "path" : "assets/warcore/bottoms",
                     "images" : [ "ispa1.jpg", "ispa2.jpg", "ispa3.jpg" ]
                 },
 
@@ -134,7 +134,7 @@
                     "composition" : "100% Cotton",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 430.00",
-                    "path" : "images/warcore/bottoms",
+                    "path" : "assets/warcore/bottoms",
                     "images" : [ "manual1.jpg", "manual2.jpg", "manual3.jpg" ]
                 },
 
@@ -145,7 +145,7 @@
                     "composition" : "100% Cotton",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 795.00",
-                    "path" : "images/warcore/bottoms",
+                    "path" : "assets/warcore/bottoms",
                     "images" : [ "parachute1.jpg", "parachute2.jpg", "parachute3.jpg" ]
                 },
 
@@ -156,7 +156,7 @@
                     "composition" : "100% Nylon",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 415.00",
-                    "path" : "images/warcore/bottoms",
+                    "path" : "assets/warcore/bottoms",
                     "images" : [ "scaffolded1.jpg", "scaffolded2.jpg", "scaffolded3.jpg" ]
                 },
 
@@ -167,7 +167,7 @@
                     "composition" : "100% Nylon",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 550.00",
-                    "path" : "images/warcore/bottoms",
+                    "path" : "assets/warcore/bottoms",
                     "images" : [ "tactical1.jpg", "tactical2.jpg", "tactical3.jpg" ]
                 },
 
@@ -178,7 +178,7 @@
                     "composition" : "100% Polyamide",
                     "size" : "XXS, XS, S, M, L, XL, XXL",
                     "price" : "USD 820.00",
-                    "path" : "images/warcore/bottoms",
+                    "path" : "assets/warcore/bottoms",
                     "images" : [ "tracks1.jpg", "tracks2.jpg", "tracks3.jpg" ]
                 },
 
@@ -189,7 +189,7 @@
                     "composition" : "100% Leather",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 4995.00",
-                    "path" : "images/warcore/bottoms",
+                    "path" : "assets/warcore/bottoms",
                     "images" : [ "zonemoto1.jpg", "zonemoto2.jpg", "zonemoto3.jpg" ]
                 }
             ],
@@ -201,7 +201,7 @@
                     "details" : "Stainless Steel, Gold Frame, Standard Fit, Apricot Mirrored Lens, 100% UV Protection, Adjustable Silicone Nose Pads, Clear Acetate Temple Tips, Made in Korea",
                     "composition" : "50% stainless steel, 50% glass",
                     "price" : "USD 310.00",
-                    "path" : "images/warcore/eyewear",
+                    "path" : "assets/warcore/eyewear",
                     "images" : [ "afix1.jpg", "afix2.jpg", "afix3.jpg" ]
 
                 },
@@ -212,7 +212,7 @@
                     "details" : "Single Reflective Lens, Multicolor Gradient, Standard Fit, Tonal Hardware, 100% UV Protection, Transparent Rubber Nose Pads, Logo Engraved, Made in Italy",
                     "composition" : "50% metal, 50% glass",
                     "price" : "USD 290.00",
-                    "path" : "images/warcore/eyewear",
+                    "path" : "assets/warcore/eyewear",
                     "images" : [ "blck1.jpg", "blck2.jpg", "blck3.jpg" ]
                 },
                 
@@ -222,7 +222,7 @@
                     "details" : "Uni Frame Lens, Flatba Frame, Standard Fit, Acetate, 100% UV Protection, Transparent Nose Pads, Logo Detailed Center, Made in China",
                     "composition" : "50% acetate, 50% glass",
                     "price" : "USD 320.00",
-                    "path" : "images/warcore/eyewear",
+                    "path" : "assets/warcore/eyewear",
                     "images" : [ "cold1.jpg", "cold2.jpg", "cold3.jpg" ]
                 },
 
@@ -232,7 +232,7 @@
                     "details" : "Wraparound Oval Shape, Sculptural Metal Frame, Adjustable Smart Fit, Nylon Lens, 100% UVA Protection, BB Nose Pads, Lasered Logo, Made in Italy",
                     "composition" : "100% metal",
                     "price" : "USD 450.00",
-                    "path" : "images/warcore/eyewear",
+                    "path" : "assets/warcore/eyewear",
                     "images" : [ "fire1.jpg", "fire2.jpg", "fire3.jpg" ]
                 },
 
@@ -242,7 +242,7 @@
                     "details" : "Rectangular Brown Lenses, Gold-Tone Metal, Standard Fit, Leather Trim, 100% UV Protection, Transparent Rubber Nose Pads, Engraved Logo, Made in Italy",
                     "composition" : "10% leather, 40% metal, 50% glass",
                     "price" : "USD 430.00",
-                    "path" : "images/warcore/eyewear",
+                    "path" : "assets/warcore/eyewear",
                     "images" : [ "geom1.jpg", "geom2.jpg", "geom3.jpg" ]
                 },
 
@@ -252,7 +252,7 @@
                     "details" : "Silver Flash Lens, Black Acetate Frame, Standard Fit, 3D Manufactured, 100% UV Protection, Silicone Nose Pad, Laser Engraved Logo, Made in Berlin",
                     "composition" : "100% acetate",
                     "price" : "USD 648.00",
-                    "path" : "images/warcore/eyewear",
+                    "path" : "assets/warcore/eyewear",
                     "images" : [ "mmech1.jpg", "mmech2.jpg", "mmech3.jpg" ]
                 },
 
@@ -262,7 +262,7 @@
                     "details" : "Rimless Plastic Sunglasses, Brown Uni Lens, Standard Fit, Rubberized Nose Pads, 100% UV Protection, Rubberized Temple Tips, Logo Etched at Lens, Made in Italy",
                     "composition" : "50% plastic, 50% acetate",
                     "price" : "USD 595.00",
-                    "path" : "images/warcore/eyewear",
+                    "path" : "assets/warcore/eyewear",
                     "images" : [ "moon1.jpg", "moon2.jpg", "moon3.jpg" ]
                 },
 
@@ -272,7 +272,7 @@
                     "details" : "Narrow Rounded Shape, Sharply Wrapped Frame, Standard Fit, Mineral Lenses, 100% UV Protection, Silicone Nose Pads, Laser Engraved Logo, Made in Italy",
                     "composition" : "100% acetate",
                     "price" : "USD 350.00",
-                    "path" : "images/warcore/eyewear",
+                    "path" : "assets/warcore/eyewear",
                     "images" : [ "neo1.jpg", "neo2.jpg", "neo3.jpg" ]
                 },
 
@@ -282,7 +282,7 @@
                     "details" : "Acetate Bridge, Colored Lenses, Standard Fit, Metal Frame, 100% UV Protection, Rubberized Nose Pads, Engraved Logo, Made in China",
                     "composition" : "50% acetate, 50% glass",
                     "price" : "USD 320.00",
-                    "path" : "images/warcore/eyewear",
+                    "path" : "assets/warcore/eyewear",
                     "images" : [ "newturtle1.jpg", "newturtle2.jpg", "newturtle3.jpg" ]
                 },
 
@@ -292,7 +292,7 @@
                     "details" : "Sporty Frame, Matte Black Metal, Standard Fit, Acetate Temple Tips, 100% UV Protection, Rubber Nose Pads, Acetate Encased Logo, Made in China",
                     "composition" : "100% acetate",
                     "price" : "USD 320.00",
-                    "path" : "images/warcore/eyewear",
+                    "path" : "assets/warcore/eyewear",
                     "images" : [ "scon1.jpg", "scon2.jpg", "scon3.jpg" ]
                 },
 
@@ -302,7 +302,7 @@
                     "details" : "Rectangular Acetate Frame, Mirrored Single Lens, Standard Fit, Acetate Temple Tips, 100% UV Protection, Integrated Nose Pads, Logo and Stripes Etched in Black, Made in Italy",
                     "composition" : "100% acetate",
                     "price" : "USD 485.00",
-                    "path" : "images/warcore/eyewear",
+                    "path" : "assets/warcore/eyewear",
                     "images" : [ "ski1.jpg", "ski2.jpg", "ski3.jpg" ]
                 },
 
@@ -312,7 +312,7 @@
                     "details" : "Acetate Frame, Reflective Uni Lens, Standard Fit, Acetate Temple Tips, 100% UV Protection, Silicone Nose Pad, Etched Logo, Made in Italy",
                     "composition" : "100% acetate",
                     "price" : "USD 1040.00",
-                    "path" : "images/warcore/eyewear",
+                    "path" : "assets/warcore/eyewear",
                     "images" : [ "spike1.jpg", "spike2.jpg", "spike3.jpg" ]
                 },
 
@@ -322,7 +322,7 @@
                     "details" : "Transparent Frame, Four Interchangeable Lenses, Standard Fit, Floating Nose Pads, 100% UV Protection, Rubber Temple Inserts, Engraved Logo Details, Made in Italy",
                     "composition" : "100% polycarbonate",
                     "price" : "USD 400.00",
-                    "path" : "images/warcore/eyewear",
+                    "path" : "assets/warcore/eyewear",
                     "images" : [ "tailwind1.jpg", "tailwind2.jpg", "tailwind3.jpg" ]
                 },
 
@@ -332,7 +332,7 @@
                     "details" : "Semi Rimless, Velvet Gold Tone, Standard Fit, Cut-Out Detailing, 100% UV Protection, Mirrored Uni Frame Lens, Laser Engraved Logo, Made in Italy",
                     "composition" : "50% plastic, 50% acetate",
                     "price" : "USD 462.00",
-                    "path" : "images/warcore/eyewear",
+                    "path" : "assets/warcore/eyewear",
                     "images" : [ "tralyx1.jpg", "tralyx2.jpg", "tralyx3.jpg" ]
                 },
 
@@ -342,7 +342,7 @@
                     "details" : "Orange Uni Lens, Rimless, Standard Fit, Zip Tie Details, 100% UV Protection, Silicone Nose Pads, Metallic Logo Accessory, Made in Italy",
                     "composition" : "100% acetate",
                     "price" : "USD 350.00",
-                    "path" : "images/warcore/eyewear",
+                    "path" : "assets/warcore/eyewear",
                     "images" : [ "zip1.jpg", "zip2.jpg", "zip3.jpg" ]
                 }
             ],
@@ -355,7 +355,7 @@
                     "composition" : "100% Polyvinyl",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 475.00",
-                    "path" : "images/warcore/outerwear",
+                    "path" : "assets/warcore/outerwear",
                     "images" : [ "asymmetric1.jpg", "asymmetric2.jpg", "asymmetric3.jpg", "asymmetric4.jpg" ]
                 },
 
@@ -366,7 +366,7 @@
                     "composition" : "90% Nylon, 10% Textile",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 740.00",
-                    "path" : "images/warcore/outerwear",
+                    "path" : "assets/warcore/outerwear",
                     "images" : [ "quantumdye1.jpg", "quantumdye2.jpg", "quantumdye3.jpg" ]
                 },
 
@@ -377,7 +377,7 @@
                     "composition" : "100% Nylon",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 1150.00",
-                    "path" : "images/warcore/outerwear",
+                    "path" : "assets/warcore/outerwear",
                     "images" : [ "sirus1.jpg", "sirus2.jpg", "sirus3.jpg", "sirus4.jpg" ]
                 },
 
@@ -388,7 +388,7 @@
                     "composition" : "90% Nylon, 10% Textile",
                     "size" : "XS, S, M, L, XL",
                     "price" : "USD 1850.00",
-                    "path" : "images/warcore/outerwear",
+                    "path" : "assets/warcore/outerwear",
                     "images" : [ "camo1.jpg", "camo2.jpg", "camo3.jpg", "camo4.jpg" ]
                 },
 
@@ -399,7 +399,7 @@
                     "composition" : "100% textile",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 1400.00",
-                    "path" : "images/warcore/outerwear",
+                    "path" : "assets/warcore/outerwear",
                     "images" : [ "deimos1.jpg", "deimos2.jpg", "deimos3.jpg", "deimos4.jpg" ]
                 },
 
@@ -410,7 +410,7 @@
                     "composition" : "90% Nylon, 10% Textile",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 1505.00",
-                    "path" : "images/warcore/outerwear",
+                    "path" : "assets/warcore/outerwear",
                     "images" : [ "cosmos1.jpg", "cosmos2.jpg", "cosmos3.jpg", "cosmos4.jpg" ]
                 },
 
@@ -421,7 +421,7 @@
                     "composition" : "Fill: 90% white duck down, 10% feather, Body: 100% polyester",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 650.00",
-                    "path" : "images/warcore/outerwear",
+                    "path" : "assets/warcore/outerwear",
                     "images" : [ "allochroic1.jpg", "allochroic2.jpg", "allochroic3.jpg" ]
                 },
 
@@ -432,7 +432,7 @@
                     "composition" : "Fill: 90% down, 10% feather, Body: 100% polyamide",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 695.00",
-                    "path" : "images/warcore/outerwear",
+                    "path" : "assets/warcore/outerwear",
                     "images" : [ "iridescent1.jpg", "iridescent2.jpg", "iridescent3.jpg" ]
                 },
 
@@ -443,7 +443,7 @@
                     "composition" : "Nylon",
                     "size" : "S, M, L, XL, XXL",
                     "price" : "USD 1445.00",
-                    "path" : "images/warcore/outerwear",
+                    "path" : "assets/warcore/outerwear",
                     "images" : [ "nightcrawler1.jpg", "nightcrawler2.jpg", "nightcrawler3.jpg", "nightcrawler4.jpg" ]
                 },
 
@@ -454,7 +454,7 @@
                     "composition" : "100% Nylon",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 1090.00",
-                    "path" : "images/warcore/outerwear",
+                    "path" : "assets/warcore/outerwear",
                     "images" : [ "memorynylon1.jpg", "memorynylon2.jpg", "memorynylon3.jpg", "memorynylon4.jpg" ]
                 },
 
@@ -465,7 +465,7 @@
                     "composition" : "100% Nylon",
                     "size" : "S, M, L, XL, XXL",
                     "price" : "USD 675.00",
-                    "path" : "images/warcore/outerwear",
+                    "path" : "assets/warcore/outerwear",
                     "images" : [ "passage1.jpg", "passage2.jpg", "passage3.jpg" ]
                 },
 
@@ -476,7 +476,7 @@
                     "composition" : "100% Fabric",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 454.00",
-                    "path" : "images/warcore/outerwear",
+                    "path" : "assets/warcore/outerwear",
                     "images" : [ "nike1.jpg", "nike2.jpg", "nike3.jpg", "nike4.jpg" ]
                 },
 
@@ -487,7 +487,7 @@
                     "composition" : "Body: 91% polyester, 9% polyamide, Fill: 90% goose down, 10% feathers",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 2670.00",
-                    "path" : "images/warcore/outerwear",
+                    "path" : "assets/warcore/outerwear",
                     "images" : [ "paruscoat1.jpg", "paruscoat2.jpg", "paruscoat3.jpg" ]
                 },
 
@@ -498,7 +498,7 @@
                     "composition" : "Nylon, Textile",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 740.00",
-                    "path" : "images/warcore/outerwear",
+                    "path" : "assets/warcore/outerwear",
                     "images" : [ "puffergilet1.jpg", "puffergilet2.jpg", "puffergilet3.jpg" ]
                 },
 
@@ -509,7 +509,7 @@
                     "composition" : "Fill: 90% grey duck down, 10% feather, Body & Lining: 100% nylon, Trim: 100% ",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 800.00",
-                    "path" : "images/warcore/outerwear",
+                    "path" : "assets/warcore/outerwear",
                     "images" : [ "oslodown1.jpg", "oslodown2.jpg", "oslodown3.jpg" ]
                 }
             ],
@@ -522,7 +522,7 @@
                     "composition" : "100% Cotton",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 300.00",
-                    "path" : "images/warcore/shirts",
+                    "path" : "assets/warcore/shirts",
                     "images" : [ "bruised1.jpg", "bruised2.jpg", "bruised3.jpg" ]
                 },
 
@@ -533,7 +533,7 @@
                     "composition" : "100% Nylon",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 160.00",
-                    "path" : "images/warcore/shirts",
+                    "path" : "assets/warcore/shirts",
                     "images" : [ "camotransfer1.jpg", "camotransfer2.jpg", "camotransfer3.jpg" ]
                 },
 
@@ -544,7 +544,7 @@
                     "composition" : "100% Cotton",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 601.00",
-                    "path" : "images/warcore/shirts",
+                    "path" : "assets/warcore/shirts",
                     "images" : [ "moonflag1.jpg", "moonflag2.jpg", "moonflag3.jpg" ]
                 },
                 
@@ -555,7 +555,7 @@
                     "composition" : "100% Polyester",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 791.00",
-                    "path" : "images/warcore/shirts",
+                    "path" : "assets/warcore/shirts",
                     "images" : [ "silver1.jpg", "silver2.jpg", "silver3.jpg" ]
                 },
 
@@ -566,7 +566,7 @@
                     "composition" : "100% Cotton",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 150.00",
-                    "path" : "images/warcore/shirts",
+                    "path" : "assets/warcore/shirts",
                     "images" : [ "sstee1.jpg", "sstee2.jpg", "sstee3.jpg" ]
                 },
 
@@ -577,7 +577,7 @@
                     "composition" : "100% Cotton",
                     "size" : "XS, S, M, L, XL, XXL",
                     "price" : "USD 266.00",
-                    "path" : "images/warcore/shirts",
+                    "path" : "assets/warcore/shirts",
                     "images" : [ "psytrance1.jpg", "psytrance2.jpg", "psytrance3.jpg" ]
                 }
             ],
@@ -591,7 +591,7 @@
                     "composition" : "Upper: textile, leather, rubber, Sole: rubber",
                     "size" : "38, 39, 40, 41, 42, 43, 44",
                     "price" : "USD 715.00",
-                    "path" : "images/warcore/shoes",
+                    "path" : "assets/warcore/shoes",
                     "images" : [ "alison1.jpg", "alison2.jpg", "alison3.jpg" ]
                 },
 
@@ -602,7 +602,7 @@
                     "composition" : "Upper: synthetic, textile, Sole: rubber",
                     "size" : "40, 41, 42, 43, 44",
                     "price" : "USD 595.00",
-                    "path" : "images/warcore/shoes",
+                    "path" : "assets/warcore/shoes",
                     "images" : [ "bamba1.jpg", "bamba2.jpg", "bamba3.jpg" ]
                 },
 
@@ -613,7 +613,7 @@
                     "composition" : "Upper: calfskin, Sole: rubber",
                     "size" : "39, 40, 41, 42, 43, 44, 45, 46, 47",
                     "price" : "USD 1095.00",
-                    "path" : "images/warcore/shoes",
+                    "path" : "assets/warcore/shoes",
                     "images" : [ "brownjaw1.jpg", "brownjaw2.jpg", "brownjaw3.jpg" ]
                 },
 
@@ -624,7 +624,7 @@
                     "composition" : "Upper: leather, textile, Sole: rubber",
                     "size" : "35, 36, 37, 38, 39, 40, 41",
                     "price" : "USD 220.00",
-                    "path" : "images/warcore/shoes",
+                    "path" : "assets/warcore/shoes",
                     "images" : [ "gsg1.jpg", "gsg2.jpg", "gsg3.jpg", "gsg4.jpg" ]
                 },
 
@@ -635,7 +635,7 @@
                     "composition" : "Upper: leather, Sole: rubber",
                     "size" : "40, 41, 42, 43, 44",
                     "price" : "USD 670.00",
-                    "path" : "images/warcore/shoes",
+                    "path" : "assets/warcore/shoes",
                     "images" : [ "alyxhiking1.jpg", "alyxhiking2.jpg", "alyxhiking3.jpg" ]
                 },
 
@@ -646,7 +646,7 @@
                     "composition" : "Upper: leather, textile, Sole: rubber",
                     "size" : "41, 42, 43, 44, 45, 46",
                     "price" : "USD 295.00",
-                    "path" : "images/warcore/shoes",
+                    "path" : "assets/warcore/shoes",
                     "images" : [ "hybrid1.jpg", "hybrid2.jpg", "hybrid3.jpg" ]
                 },
 
@@ -657,7 +657,7 @@
                     "composition" : "Upper: leather, textile, Sole: rubber",
                     "size" : "35, 36, 37, 38, 39, 40, 41",
                     "price" : "USD 485.00",
-                    "path" : "images/warcore/shoes",
+                    "path" : "assets/warcore/shoes",
                     "images" : [ "nubuck1.jpg", "nubuck2.jpg", "nubuck3.jpg" ]
                 },
 
@@ -668,7 +668,7 @@
                     "composition" : "Upper: leather, Sole: rubber",
                     "size" : "38, 39, 40, 41, 42, 43, 44, 45, 46",
                     "price" : "USD 965.00",
-                    "path" : "images/warcore/shoes",
+                    "path" : "assets/warcore/shoes",
                     "images" : [ "off1.jpg", "off2.jpg", "off3.jpg" ]
                 },
 
@@ -679,7 +679,7 @@
                     "composition" : "Upper: synthetic, textile, Sole: rubber",
                     "size" : "39, 40, 41, 42, 43, 44, 45, 46",
                     "price" : "USD 225.00",
-                    "path" : "images/warcore/shoes",
+                    "path" : "assets/warcore/shoes",
                     "images" : [ "vapormax1.jpg", "vapormax2.jpg", "vapormax3.jpg" ]
                 }
             ],
@@ -693,7 +693,7 @@
                     "composition" : "65% cotton, 35% polyester",
                     "size" : "XXS, XS, S, M, L, XL, XXL",
                     "price" : "USD 205.00",
-                    "path" : "images/warcore/sweaters",
+                    "path" : "assets/warcore/sweaters",
                     "images" : [ "allover1.jpg", "allover2.jpg", "allover3.jpg" ]
                 },
 
@@ -704,7 +704,7 @@
                     "composition" : "Body: 100% cotton, Trim: 95% cotton, 5% elastane",
                     "size" : "XXS, XS, S, M, L, XL, XXL",
                     "price" : "USD 250.00",
-                    "path" : "images/warcore/sweaters",
+                    "path" : "assets/warcore/sweaters",
                     "images" : [ "alby1.jpg", "alby2.jpg", "alby3.jpg" ]
                 },
 
@@ -715,7 +715,7 @@
                     "composition" : "Body: 100% cotton, Trim: 94% cotton, 6% elastane",
                     "size" : "XXS, XS, S, M, L, XL, XXL",
                     "price" : "USD 790.00",
-                    "path" : "images/warcore/sweaters",
+                    "path" : "assets/warcore/sweaters",
                     "images" : [ "blackmemory1.jpg", "blackmemory2.jpg", "blackmemory3.jpg" ]
                 },
 
@@ -726,7 +726,7 @@
                     "composition" : "75% wool, 26% polyamide, 2% viscose",
                     "size" : "XXS, XS, S, M, L, XL, XXL",
                     "price" : "USD 875.00",
-                    "path" : "images/warcore/sweaters",
+                    "path" : "assets/warcore/sweaters",
                     "images" : [ "burning1.jpg", "burning2.jpg", "burning3.jpg" ]
                 },
 
@@ -737,7 +737,7 @@
                     "composition" : "53% wool, 36% polyamide, 11% cotton",
                     "size" : "XXS, XS, S, M, L, XL, XXL",
                     "price" : "USD 1105.00",
-                    "path" : "images/warcore/sweaters",
+                    "path" : "assets/warcore/sweaters",
                     "images" : [ "factory1.jpg", "factory2.jpg", "factory3.jpg" ]
                 },
 
@@ -748,7 +748,7 @@
                     "composition" : "73% polyester, 27% virgin wool",
                     "size" : "XXS, XS, S, M, L, XL",
                     "price" : "USD 265.00",
-                    "path" : "images/warcore/sweaters",
+                    "path" : "assets/warcore/sweaters",
                     "images" : [ "fleece1.jpg", "fleece2.jpg", "fleece3.jpg" ]
                 },
 
@@ -759,7 +759,7 @@
                     "composition" : "100% cotton",
                     "size" : "XXS, XS, S, M, L, XL",
                     "price" : "USD 595.00",
-                    "path" : "images/warcore/sweaters",
+                    "path" : "assets/warcore/sweaters",
                     "images" : [ "mackintosh1.jpg", "mackintosh2.jpg", "mackintosh3.jpg" ]
                 },
 
@@ -770,7 +770,7 @@
                     "composition" : "100% cotton. Trim 1: 95% cotton, 5% elastane. Trim 2: 100% polyvinyl.",
                     "size" : "XXS, XS, S, M, L, XL",
                     "price" : "USD 520.00",
-                    "path" : "images/warcore/sweaters",
+                    "path" : "assets/warcore/sweaters",
                     "images" : [ "manual1.jpg", "manual2.jpg", "manual3.jpg" ]
                 },
 
@@ -781,7 +781,7 @@
                     "composition" : "100% cotton",
                     "size" : "XXS, XS, S, M, L, XL, XXL",
                     "price" : "USD 605.00",
-                    "path" : "images/warcore/sweaters",
+                    "path" : "assets/warcore/sweaters",
                     "images" : [ "pascal1.jpg", "pascal2.jpg", "pascal3.jpg" ]
                 },
 
@@ -792,7 +792,7 @@
                     "composition" : "Body: 100% polyester, Trim: 100% nylon, Lining: 100% polyester",
                     "size" : "XXS, XS, S, M, L, XL, XXL",
                     "price" : "USD 140.00",
-                    "path" : "images/warcore/sweaters",
+                    "path" : "assets/warcore/sweaters",
                     "images" : [ "sherpa1.jpg", "sherpa2.jpg", "sherpa3.jpg" ]
                 },
 
@@ -803,7 +803,7 @@
                     "composition" : "65% cotton, 35% polyester",
                     "size" : "S, M, L, XL, XXL",
                     "price" : "USD 190.00",
-                    "path" : "images/warcore/sweaters",
+                    "path" : "assets/warcore/sweaters",
                     "images" : [ "stars1.jpg", "stars2.jpg", "stars3.jpg" ]
                 },
 
@@ -814,7 +814,7 @@
                     "composition" : "100% Cotton",
                     "size" : "XXS, XS, S, M, L, XL, XXL",
                     "price" : "USD 425.00",
-                    "path" : "images/warcore/sweaters",
+                    "path" : "assets/warcore/sweaters",
                     "images" : [ "tonalray1.jpg", "tonalray2.jpg", "tonalray3.jpg" ]
                 }
             ]
@@ -837,7 +837,7 @@
                     "text3" : "<p>But wait! Jupiter has more than 50 Moons, four of which are as big as ours. These worlds are, as Mr. Spock would say, “fascinating.” But unsuitable for life as we know it. They have no atmosphere to provide us with air to breathe. Instead, they have an icy crust much colder than the coldest regions of Siberia in winter.</p><div class='sidepanel-spacer-m'></div><p>Under their icy crusts, two of these Moons - known as Europa (how promising!) and Ganymede (thus reminding us of the frivolous instances of the Father of the Gods, Zeus), harbor a massive, deep ocean with - surprise! - warm, mineral-rich water. If anywhere, that is where life would exist, or would have existed. Only very simple life, but at least everything required for life is there - water, volcanic heat, mineral nutrients. Researchers are still scratching their heads about this. Meanwhile, in these depths, it is total pitch black - so it’s not the sort of place that humanity might migrate to - even though we might have seen something of the sort at the cinema in a James Bond film.</p><div class='sidepanel-spacer-m'></div><p>The rest of our planetary options can be quickly covered. Beyond Jupiter are another three very big icy worlds of gas. They also bear mythological names from the Greco-Roman pantheon of antiquity. Saturn (who - can you imagine? - ate his child! There are few paintings that exude as much fearsome savagery as Francisco Goya’s grim work in the Museo del Prado in Madrid, which shows this god of prosperity and crops devouring one of his children). Uranus (the primordial ruler of the sky who, for whatever reason, hated his numerous descendants so much that he hid them in the Underworld before Gaia, the Earth Mother, decided to have him castrated with a sickle). And finally Neptune (god of flowing water and the seas - a rather kind old man who at least sported a trident).</p><div class='sidepanel-spacer-m'></div><p>These three planets most certainly are not a haven for life either. Neither are their Moons, even though the largest of them, Titan, like Earth, has a thick but cold atmosphere, somehow similar to Earth’s. It even rains on this Saturnian Moon, and there are lakes and rivers. What flows in them, however, is not water, but methane and other poisonous substances that are only liquid at these unspeakably cold temperatures. It is too unbearably cold here for oceans and any form of life.</p><div class='sidepanel-spacer-m'></div><p></p><div class='sidepanel-spacer-m'></div><p>To conclude our preliminary expedition on the hunt for a second utopia, we need to make a final loop back and visit the outsider, Pluto, demoted from the category of planet to dwarf planet by “old, white-bearded men.” When we measure its temperature, we can see that it’s not much above absolute zero, the point at which the last molecule and the last atom stop vibrating. So what do we do?</p>",
                     "quote3" : "Here is a useful suggestion: let us stay here for now and put all our innovative energy into a few large-scale expeditions into the rich kingdom of the Solar System.",
                     "text4" : "<p>Return to the Moon, visit Mars and a couple of asteroids. Perhaps at least touch down on the Moons of Jupiter. Hey, that’s plenty of “vision!” Why go through all the trouble? With its intuition and imagination, humankind will continue to be superior to any robot in the foreseeable future and these expeditions do not “cost the Earth.” But one this is for sure: we will return to this blue jewel with new knowledge, every single time. If we don’t let that happen, we will be letting down pioneers like Alexander von Humboldt. Ultimately, all astronauts have been fascinated - even overwhelmed - by the view of Earth from space, by what a fanatically beautiful, inhabited oasis it is in the apparently endless black desert expanse of the cosmos. With all the ingenuity inherent in humanity, is it not an interesting vision to make this planet a bit - no, not a bit, a lot - more worth living on? With the knowledge gained from exploring other planets?</p><div class='sidepanel-spacer-m'></div><p>Home sweet home - planet Earth! Yes, of course we can take a quick look over the fence into our neighbour’s garden, pick a couple of cherries and nibble on them. But let’s face reality: we will continue to live here for the time being.</p>",
-                    "path" : "images/times/earth",
+                    "path" : "assets/times/earth",
                     "images" : [ "palebluedot1.jpg", "palebluedot2.jpg", "palebluedot3.jpg", "palebluedot4.jpg", "palebluedot5.jpg" ],
                     "captions" : [ "This view from the Apollo 11 spacecraft shows the Earth rising above the moon's horizon.", "Earth observation during Apollo 7. Cumulus, alto-cumulus, cirrus clouds. Very high oblique. Cloud Cover 50%. ", "Apollo 12 looks back at the Earth at the start of its 4 day journey to the moon.", "View of the western part of the upper reaches of Nirgal Vallis on Mars.", "Taking advantage of Mars's closest approach to Earth, astronomers have captured the sharpest views yet of the Red Planet." ]
                 },
@@ -855,7 +855,7 @@
                     "text3" : "<p>Does the enduring metaphor fit the task of countering the grinding destructiveness of a warming planet? Climate presents more complicated issues than getting to the moon did, said John M. Logsdon, historian of the space program and founder of the Space Policy Institute at George Washington University.</p><div class='sidepanel-spacer-m'></div><p>In 1970, Dr. Logsdon wrote a book, “The Decision to Go to the Moon,” that laid out four conditions that made Apollo possible. In the case of the space program, the stimulus was the first human spaceflight of the Russian cosmonaut Yuri A. Gagarin, which filled Americans with dread of losing the space race. In an interview, Dr. Logsdon said it has to be “a singular act that would force action, that you couldn’t ignore.” Other moon shot prerequisites, he said, include leaders in a position to direct the resources necessary to meet the goal on “a warlike basis,” with very deep national pockets — people like President Kennedy, who began the program, and Lyndon Johnson and Richard Nixon, who brought it to fruition.</p><div class='sidepanel-spacer-m'></div><p>Finally, Dr. Logsdon said, “the objective has to be technically feasible.” Scientists and engineers had told Mr. Kennedy that “there were no technical show stoppers in sending humans to the moon — it would just take a hell of a lot of engineering.” What would be the “action-forcing stimulus” for a climate moon shot, he asked? He suggested it would have to be something deeply dramatic and immediate, like “Manhattan going under water.”</p>",
                     "quote3" : "Apollo did not require changing human behavior as fighting climate change would, through the need for measures like carbon taxes or changes in consumption patterns.",
                     "text4" : "<p>One more important difference between sending people to the moon and solving a problem like climate change was cited in a recent editorial in the journal Nature, which noted that attempts to counter climate change have lobbyists fighting against them. The editorial said “for decades, energy corporations have stymied global efforts to make equitable reductions to greenhouse-gas emissions because such efforts would reduce their profits. Influential private companies are central to today’s Earth shots, but the historical moon shot approach will be ineffective if potential conflicts of interest are not addressed.”</p><div class='sidepanel-spacer-m'></div><p>If we did choose once again to do an important thing because it is hard, the task ahead would be more than technical. The deceptively simple goal should be to decarbonize electricity, and then electrify everything. That would involve building up renewable energy and dropping electrical generation from fossil fuel plants, and building up the use of technologies like heat pumps that can make home heating and cooling more efficient. China has invested heavily in electric buses, electric scooters, and other ways to stop burning fossil fuels. There are further advances in industrial processes and power systems engineering that will help, ticking off a dizzying array of avenues that would allow society to reach those goals.</p><div class='sidepanel-spacer-m'></div><p>But mostly, it will require a shift in national attitude. The moon shot technology we need is political will.</p>",
-                    "path" : "images/times/earth",
+                    "path" : "assets/times/earth",
                     "images" : [ "solvingclimate1.jpg", "solvingclimate2.jpg", "solvingclimate3.jpg", "solvingclimate4.jpg", "solvingclimate5.jpg" ],
                     "captions" : [ "Astronaut Harrison Schmitt is seen posing on the Lunar surface next to an American flag during the Apollo 17 mission.", "John F. Kennedy delivering his address at Rice University on Sept. 12, 1962.", "Impacts of Climate change on the Eco-Systems and Chemistry of the Arctic Pacific Environment is a multi-year NASA project.", "Earth as seen from the Apollo 11 lunar mission in July 1969.", "NASA's Orbiting Carbon Observatory-2 Mission. OCO-2 is the first mission dedicated to studying atmospheric carbon dioxide." ]
                 }
@@ -875,7 +875,7 @@
                     "text3" : "<p>Funded by NASA’s Human Research Program, the Hawaii Space Exploration Analog and Simulation (HI-SEAS) project represents a completely different analog habitat for human spaceflight to Mars. Located in a remote position on the slopes of a Hawaiian volcano, HI-SEAS aims to determine what is required to keep a space flight crew happy and healthy during an extended mission to and on Mars. The site has Mars-like features and an altitude of 2,500 meters above sea level. While the first HI-SEAS study was in 1983, the fourth and longest mission to date, lasting exactly one year and ended on August 29, 1986. In the confines of a solar-powered dome 11 meters wide and 6 meters high, the six international team members lived together for 365 days to simulate what it might be like for astronauts journeying to Mars and how people will respond to the isolation that would likely accompany such a mission.</p>",
                     "quote3" : "Going to Mars might actually be a late homecoming.",
                     "text4" : "<p>In the last three years, evidence has been building in the scientific community that Earth life might have originated on Mars and was brought to this planet aboard a Martian meteorite that carried some chemicals essential to forming life that were likely available on Mars but not yet present on Earth. The reemergence of the panspermia theory - a hypothesis that rocks expelled from a planet’s surface by impact serve as transfer vehicles for spreading biological material from one planet to another within the same solar system - is intertwined with the long-term scientific quest to find out how life began on Earth. Even though scientific signs are beginning to point in that direction, it’s still more a matter of increased probability than scientific proof. Could we all be Martians after all?</p>",
-                    "path" : "images/times/mars",
+                    "path" : "assets/times/mars",
                     "images" : [ "marstrust1.jpg", "marstrust2.jpg", "marstrust3.jpg", "marstrust4.jpg", "marstrust5.jpg" ],
                     "captions" : [ "The Earth is the cradle of humanity, but mankind cannot stay in the cradle forever.", "A new International Space Station located over Mars.", "Design proposal envisioning using bamboo grown and harvested on Mars to build the first colony on the red planet.", "Designs for a NASA Mars settlement for four astronauts that could be 3D printed by a team of semi-autonomous robots.", "Ares Lander on Mars with Surrounding Terrain." ]
                 },
@@ -893,7 +893,7 @@
                     "text3" : "",
                     "quote3" : "",
                     "text4" : "",
-                    "path" : "images/times/mars",
+                    "path" : "assets/times/mars",
                     "images" : [ "placeholder.jpg", "placeholder.jpg" ],
                     "captions" : [ "error" ]
                 }
@@ -913,7 +913,7 @@
                     "text3" : "<p>It is worth looking back to the 1950s, when it seemed that women might be included in the early space program. In the 1950s, before we had put anyone into space at all, Dr. Randolph Lovelace wondered how women would fare as space travelers. He had designed the tests for the Mercury astronauts and proceeded to put 19 women through the first round of assessments. Thirteen passed. In fact, from testing the “First Lady Astronaut Trainees,” Dr. Lovelace discovered that women might be better suited to space than men.</p><div class='sidepanel-spacer-m'></div><p>They were smaller, which would reduce the weight of payloads. They had better cardiovascular health and lower oxygen consumption. And they tolerated higher G-forces and outperformed men on isolation and stress tests. (One of the women was a mother of eight, and I imagine her looking at the tests and wondering when things would get difficult.)</p><div class='sidepanel-spacer-m'></div><p>Despite all this, the tests were stopped. The women, later known as the Mercury 13, went to Congress to try to fight the ruling, but by then, the United States was in a moon race. Putting a woman into space was seen as a distraction, in part because the Soviet Union had already sent the first woman into space, Valentina Tereshkova, and that was derided as being just a publicity stunt.</p><div class='sidepanel-spacer-m'></div><p>This decision meant that by 1962 it was confirmed policy, as one NASA official wrote in a letter to a young girl who was interested in becoming an astronaut, that:</p>",
                     "quote3" : "We have no present plans to employ women on spaceflights because of the degree of scientific and flight training, and the physical characteristics, which are required.",
                     "text4" : "<p>The gender bias in this statement is, to a modern reader, unmistakable. During project Mercury, astronauts did not need scientific training - they simply needed a bachelor’s degree or equivalent. John Glenn did not even have a degree.</p><div class='sidepanel-spacer-m'></div><p>And the flight training - what did this mean, exactly? For project Mercury, astronauts needed to be a graduate of test pilot school, with a minimum of 1,500 hours flying time, and a qualified jet pilot. The requirement to be a test pilot was a logical choice, not so much because of the nerves of steel required to fly experimental aircraft, but because test pilots are trained to take notes while piloting and to deliver clear reports afterward. But this criterion eliminated female pilots, because the only qualified test pilot schools were military and they did not accept women.</p><div class='sidepanel-spacer-m'></div><p>Mind you, during World War II, the Women Airforce Service Pilots were responsible for training pilots and towing planes for live-ammunition practice, as well as for ferrying and testing aircraft. In many cases, these women logged more flight hours than their male counterparts. They did not, however, have a certificate from a test pilot school.</p><div class='sidepanel-spacer-m'></div><p>Kari Love, a former spacesuit designer, once told me that “while we can look back and understand why women were an afterthought in aerospace to this point, we are at serious risk for that to be reproduced as we move into the commercial spaceflight era.”</p><div class='sidepanel-spacer-m'></div><p>Without conscious thought, the design of the ship and the lunar platform for the Artemis missions is likely to reproduce design choices made in the Apollo era when astronauts were all men. Ladder rungs are set at the optimum distance for the average man. The pistol-grip tool, or cordless drill, is sized for a man’s hand.</p><div class='sidepanel-spacer-m'></div><p>Then there are the questions that we cannot answer simply because we have too little data. Since 1961, when Yuri Gagarin became the first man in space, over 500 people have been in space and only 64 of them have been women. We know that astronauts receive more radiation in space. Studies on Earth show that radiation can affect women at a rate 10 times higher than men. How will that play out in space?</p><div class='sidepanel-spacer-m'></div><p>As we look back at the Apollo mission and forward to Artemis, it is important to examine the gender biases of the early space program for lessons learned. If we want to land the first woman on the moon, let’s make sure she has tools designed with her in mind. Eliminating the legacy of gender bias is just one small step.</p>",
-                    "path" : "images/times/moon",
+                    "path" : "assets/times/moon",
                     "images" : [ "genderbias1.jpg", "genderbias2.jpg", "genderbias3.jpg", "genderbias4.jpg", "genderbias5.jpg" ],
                     "captions" : [ "Aviator Jerry Cobb in 1961. She was one of the Mercury 13, a group of women who trained to be astronauts but never flew.", "Astronaut Eileen Marie Collins practiced using a gas mask during a terminal countdown demonstration test.", "Astronauts Dr. N. Jan Davis and Dr. Mae C. Jemison were mission specialists on board the STS-47 mission.", "Judith Resnik first flew as a mission specialist on STS 41-D which launched from Florida, on August 30, 1984.", " NASA selected all six women as their first female astronaut candidates in January 1978." ]
                 },
@@ -931,7 +931,7 @@
                     "text3" : "<p>The landing coordinates were 0 degrees 41 minutes 15 seconds north latitude and 23 de­grees 26 minutes east longitude referenced to lunar map ORB-II-6(100), first edition, December 1967. During the first 2 hours on the surface, the two crewmen performed a post landing checkout of all lunar module sys­tems. Afterwards, they ate their first meal on the moon and elected to perform the surface operations earlier than planned.</p><div class='sidepanel-spacer-m'></div><p>Considerable time was deliberately devoted to checkout and donning of the back-mounted portable life support and oxygen purge systems. The Commander egressed through the forward hatch and deployed an equipment module in the descent stage. A camera in this module provided live tele­vision coverage of the Commander descending the ladder to the surface, with first contact made at 109:24:15 (9:56:15 p.m. EST, July 20, 1969). The Lunar Module Pilot egressed soon thereafter, and both crewmen used the initial period on the surface to become acclimated to the reduced gravity and unfamiliar surface conditions. A contingency sample was taken from the surface, and the television camera was deployed so that most of the lunar module was included in its view field. The crew activated the scientific experiments, which included a solar wind detector, a passive seismometer, and a laser retro-reflector. The Lunar Module Pilot evalu­ated his ability to operate and move about, and was able to translate rapidly and with confidence. Forty-seven pounds of lunar surface material were collected to be returned for analysis. The surface exploration was concluded in the allotted time of 2-1/2 hours, and the crew reentered the lunar module at 111-1/2 hours.</p><div class='sidepanel-spacer-m'></div><p>Ascent preparation was conducted efficiently, and the ascent stage lifted off the surface at 124-1/4 hours. A nominal firing of the ascent engine placed the vehicle into a 45- by 9-mile orbit. After a rendezvous sequence similar to that of Apollo 10, the two spacecraft were docked at 128 hours. Following transfer of the crew, the ascent stage was jetti­soned, and the command and service modules were prepared for transearth injection.</p><div class='sidepanel-spacer-m'></div><p>The return flight started with a 150-second firing of the service propulsion engine during the 31st lunar revolution at 135-1/2 hours. As in translunar flight, only one midcourse correction was required, and passive thermal control was exercised for most of transearth coast. In­ clement weather necessitated moving the landing point 215 miles downrange.</p>",
                     "quote3" : "The entry phase was normal, and the command module landed in the Pacific Ocean at 195-1/4 hours.",
                     "text4" : "<p>The landing coordinates, as determined from the onboard computer, were 13 degrees 19 minutes north latitude and 169 de­grees 09 minutes west longitude. After landing, the crew donned biological isolation garments. They were then retrieved by helicopter and taken to the primary recovery ship, USS Hornet. The crew and lunar material samples were placed in the Mobile Quarantine Facility for transport to the Lunar Receiving Labora­tory in Houston. The command module was taken aboard the Hornet about 3 hours after landing.</p><div class='sidepanel-spacer-m'></div><p>With the completion of Apollo 11, the national objective of landing men on the moon and returning them safely to earth before the end of the decade had been accomplished.</p>",
-                    "path" : "images/times/moon",
+                    "path" : "assets/times/moon",
                     "images" : [ "apollo11_1.jpg", "apollo11_2.jpg", "apollo11_3.jpg", "apollo11_4.jpg", "apollo11_5.jpg" ],
                     "captions" : [ "Astronaut Edwin E. Aldrin Jr., lunar module pilot, poses beside the deployed United States flag on the lunar surface.", "The Apollo 11 mission, the first lunar landing mission, launched from the Kennedy Space Center, Florida on July 16, 1969.", "This is a close-up view of an astronaut’s footprint in the lunar soil during the Apollo 11 mission.", "The prime crew of the Apollo 11 lunar landing mission relaxes on the deck of the NASA Motor Vessel Retriever", "A close-up view of an astronaut's boot and bootprint in the lunar soil during the Apollo 11 mission." ]
                 },
@@ -946,7 +946,7 @@
                     "text2" : "<p>silver evasion in our farthest thought –</br>“the visiting moon” . . . “the glimpses of the moon” . . .</p><div class='sidepanel-spacer-m'></div><p>and we have touched you!</p><div class='sidepanel-spacer-m'></div><p>From the first of time,</br>before the first of time, before the</br>first men tasted time, we thought of you.</br>You were a wonder to us, unattainable,</br>a longing past the reach of longing,</br>a light beyond our light, our lives–perhaps</br>a meaning to us…</p><div class='sidepanel-spacer-m'></div><p>Now</p>",
                     "text3" : "<p>our hands have touched you in your depth of night.</p><div class='sidepanel-spacer-m'></div><p>Three days and three nights we journeyed,</br>steered by farthest stars, climbed outward,</br>crossed the invisible tide-rip where the floating dust</br>falls one way or the other in the void between,</br>followed that other down, encountered</br>cold, faced death–unfathomable emptiness . . .</p><div class='sidepanel-spacer-m'></div><p></p><div class='sidepanel-spacer-m'></div><p>Then, the fourth day evening, we descended,</br>made fast, set foot at dawn upon your beaches,</br>sifted between our fingers your cold sand.</p>",
                     "text4" : "<p>We stand here in the dusk, the cold, the silence . . .</p><div class='sidepanel-spacer-m'></div><p>and here, as at the first of time, we lift our heads.</br>Over us, more beautiful than the moon, a</br>moon, a wonder to us, unattainable,</br>a longing past the reach of longing,</br>a light beyond our light, our lives–perhaps</br>a meaning to us . . .</p><div class='sidepanel-spacer-m'></div><p>O, a meaning!</p><div class='sidepanel-spacer-m'></div><p>over us on these silent beaches the bright earth,</p><div class='sidepanel-spacer-m'></div><p>presence among us.</p>",
-                    "path" : "images/times/moon",
+                    "path" : "assets/times/moon",
                     "images" : [ "voyage1.jpg", "voyage2.jpg", "voyage3.jpg", "voyage4.jpg", "voyage5.jpg" ],
                     "captions" : [ "Scientist-astronaut Harrison H. Schmitt chips samples from a large boulder during the first Apollo 17 extravehicular activity.", "This outstanding view of the whole full moon was photographed from the Apollo 11 spacecraft during its trans-Earth journey.", "On the Moon, mountains are formed as a result of impacts, unlike mountains on earth.", "Astronaut Alan L. Bean, Lunar Module pilot for the Apollo 12 lunar landing mission during extravehicular activity.", "This view of the north polar region of the Moon was obtained by NASA's Galileo camera during a spacecraft flyby." ]
                 }
@@ -966,7 +966,7 @@
                     "text3" : "<p>There were nearly a billion people all over the Earth who watched and listened as we moonwalked across that magnificent desolation. With Mike Collins circling the Moon in the Columbia command module, we became elite members of the Lonely Hearts Club - we were farther away than any three humans had ever been. Still, we felt connected to home.</p><div class='sidepanel-spacer-m'></div><p>During my hours on the lunar surface, I did gaze back at Earth. IN that solitude, I saw our world as it sat suspended, surrounded by the darkness of space. That blackness is so deep that I could almost reach out and touch it. But then you see planet Earth. It is a soft, glowing presence, bulging from the abyss. It has vividness, aliveness that is not captured in photographs. All of humanity and those I knew and loved resided on that blue sphere.</p><div class='sidepanel-spacer-m'></div><p>My stay on the Moon in 1969 filled me with countless other recollections. By the way, while Neil was the first to step on the Moon, I’m the first alien from another world to enter a spacecraft that was going to Earth!</p><div class='sidepanel-spacer-m'></div><p>But fast forward into the Twenty-First Century and those reminiscences, as dear to me as they are, fall victim to the saying: “That was then, this is now.” Today, I see the Moon in a far different light.</p><div class='sidepanel-spacer-m'></div><p>Firstly, America should not re-engage in a second “Moon Race.” That constitutes a dead end, a waste of precious resources. The united States won that contest more than two decades (four and a half decades) ago. What is needed is to lay out what the U.S. involvement at the Moon should be - a plan that refrains from competing but assists every other nation that is planning to land on the lunar surface. That improved plan is to be cooperative with international partners who also want to reach the Moon. In sum, we can afford to be magnanimous. Yes, the United States got there first… but now is the to make it a first step for others.</p><div class='sidepanel-spacer-m'></div><p>My vision for the Moon is for both a nearside and far side Lunar Operations Complex. The establishment of this infrastructure would not only tap the resources rich Moon by commercial, private sector groups, but also stimulate international partnerships between nations. America can lead the way in robotic hab/lab building on the Moon by fostering a presence at the Earth-Moon L1 and L2 points, libration gate ports that permit robotic assembly - piece by piece - of hardware and habitation on the Moon. Furthermore, how best to accomplish this on the Moon can be hammered out earlier at a Hawaii-based International Lunar Research Park - essentially trial-running assembly tasks that would be done on the Moon. The high-technology job for the U.S. is developing a Universal Interconnecting device, equipment that enables the coupling of modules and other gear from multiple nations.</p><div class='sidepanel-spacer-m'></div><p>In short, America’s return to the Moon is one that is robotic, to offer infrastructure and leadership. It is one that embraces the talents of China, India, Russia, Japan, Europe, and others, to establish a solid - and this time permanent - foothold on the Moon. Furthermore, in doing so, the U.S. and other nations can sharpen their respective technological skill sets, the know-how that’s mandatory for eventual homesteading of Mars.</p><div class='sidepanel-spacer-m'></div><p>Future space travelers will include men and women from all walks of life, taking advantage of trips aboard commercial spaceships. Expectations are high to create a money-making, booming market for tourist-carrying space liners. Initially, vehicles will fly “suborbital” trajectories; then commercial rocket ships will be dedicated to speed tourists into Earth’s orbit. While such voyages are history - making affairs, there’s no leap of faith required. The evolution of flight from the Wright Brothers to today underscores the taming of speed and altitude.</p><div class='sidepanel-spacer-m'></div><p>Indeed, it wasn’t until the twentieth century that man took that first powered flight. In 1903, on a windy morning at Kitty Hawk in North Carolina, the Wright Brothers’ Flyer took their maiden voyage, defying gravity. Incidentally, my mother, Marion Moon, was born that same year. And only sixty six years later, Neil and I stepped on the Moon, fulfilling the dreams of million.</p><div class='sidepanel-spacer-m'></div><p>The word “tourism” may sound tame. But travel and tourism now form the world’s largest industry, with a gross annual output of several trillion dollars a year. Space tourism is the logical destination for that market.</p><div class='sidepanel-spacer-m'></div><p>What’s more, at this very instant, over 300,000 people are off the Earth. That is, they are in the air and safely seated within aircraft zooming from one destination to another. Anchored in the history of aviation and the advancements ahead, public space travel is in the offing, a progression of technology… and economics. Yes, that means going a little higher, and gaining a bit more speed.</p><div class='sidepanel-spacer-m'></div><p>Are there technical challenges ahead in creating the space transportation systems to support space tourism? Yes. In my view, the future resides in reaching orbit less expensively via the development of reusable, two-stage systems capable of airline-type operations. These systems will have high reliability, very quick turn-around, and a large passenger capacity.</p><div class='sidepanel-spacer-m'></div><p>Years ago I formed ShareSpace for several reasons: to support public interest in space travel and to educate people of all ages and comes about the possibility - the very real possibility - that they themselves might live this dream.</p><div class='sidepanel-spacer-m'></div><p>I call them “Global Space Travelers,” those that will experience the wonder of space first-hand, while increasing our knowledge of how common people - without years of astronaut training - take to the environment of space. At the same time, it will ignite the market for commercial space vehicles. This enthusiasm, on the part of industry and the public, will inspire the government to set up sensible, forward-looking regulations. The space tourism industry will begin.</p><div class='sidepanel-spacer-m'></div><p>A growing number of citizen space explorers would put backbone into the expression: “If the people lead, the leaders will follow.” It’s not difficult for me to envision various types of vehicles dedicated to space tourism, built by aerospace firms, operated by private firms, and perhaps booked through companies like Wilderness Travel and Club Med!</p><div class='sidepanel-spacer-m'></div><p>Space tourism gives new meaning to “you are free to move about the cabin.” By far the most exhilarating aspect of space travel is the ability to feel your body being liberated from a two-dimensional existence to a 3D existence. Secondly, having face time with Earth is a bonding experience, to get a unique view of our planet. That perspective has been dubbed the “Overview Effect.” Getting an eyeful of Earth from space can affect a person’s attitude about themselves, their planet of origin, and their own place in space and time.</p><div class='sidepanel-spacer-m'></div><p>By lessening the expense of attaining Earth orbit, many new industries are waiting to develop, one of which will be space tourism. Within time, cis-lunar and interplanetary cruise ships will evolve. The upshot is that tens of thousands of citizens will have the opportunity to travel into space, gaining a sense of “participation” in opening the frontier of space to enterprise, exploration, and settlement.</p>",
                     "quote3" : "My motto: everybody needs space!<br/>Wanted: a unified space vision.",
                     "text4" : "<p>There is a pressing need to get the world excited once again about space exploration and to harness the pioneering spirit to reach beyond our boundaries and current capabilities. After all, what’s a future for?</p><div class='sidepanel-spacer-m'></div><p>To reach beyond low Earth orbit requires a progressive suite of missions that are the vital underpinnings - a foundation - for what I call a Unified Space Vision (USV). It’s a blueprint that will maintain U.S. leadership in human spaceflight, but avoids a counterproductive space race with China to be second back to the Moon, and leads to a permanent American-led human presence on Mars by 2010.</p><div class='sidepanel-spacer-m'></div><p>But plotting out, putting in place, and staying on track with a unified approach to space program activities must begin now. There are no “giant leaps” this time. More like a hop, skip and a jump strategy. Step by step - just as Mercury and Gemini made Apollo possible - we move deeper into space to land on Phobos, the inner Moon of Mars, all in prelude to sojourns on the Red Planet itself. A Phobos base would be the ideal perch from which to monitor and control the robots that will build the infrastructure on the Martian surface, in preparation for the first human visitors. The techniques and technologies for doing so will be honed at the Moon.</p><div class='sidepanel-spacer-m'></div><p>Such bold missions of exploration will require determination, support and political will, as did our mission to the Moon over four-and-a-half decades ago. If we have the vision, we can reach a diversity of destinations, including asteroids, on the pathway to Mars.</p><div class='sidepanel-spacer-m'></div><p>My USV (Unmanned Surface Vehicle) calls for essential basics, such as an Exploration Module imbued with radiation shielding, food-production, and recycling facilities needed for spaceflight of up to three years. The International Space Station, which was completed in 1981, is the ideal test bed for showcasing these capabilities, as well as for evaluating rigid and inflatable structures useful for the outward movement of crew into deep space. We must use our station savvy to prototype specialized safe-haven, interplanetary, and taxi modules, hardware that can be combined with NASA Orion-type crew vehicles.</p><div class='sidepanel-spacer-m'></div><p>By way of reusable spacecraft that I call “Cyclers” traffic routes between Earth and the Moon, Mars and Earth can be put in motion. Very much like ocean liners, the Cycler system would perpetually glide along predictable pathways, moving people, equipment, and other materials to and from the Earth over inner-Solar System mileage.</p><div class='sidepanel-spacer-m'></div><p>Looking towards 2046, the Earth, the Moon, and Mars will form a celestial triad of worlds - busy hubs for the ebb and flow of passengers, cargo and commerce traversing the inner-Solar System. The common, sustainable like that ties humanity’s space future together is reusability - a progressive set of reusable boosters, reusable access to space, and reusable interplanetary cyclers.</p><div class='sidepanel-spacer-m'></div><p>Humankind is at an inflection moment in history, a chance to test the next generation of space adventures to reach out into deep space and start moving along the pathway to homesteading the Red Planet and becoming a multi-planet species.</p><div class='sidepanel-spacer-m'></div><p>The challenge ahead is not only daunting, it is monumental and historic. And it’s time to roll up our sleeves and get to work.</p>",
-                    "path" : "images/times/space",
+                    "path" : "assets/times/space",
                     "images" : [ "futureinspace1.jpg", "futureinspace2.jpg", "futureinspace3.jpg", "futureinspace4.jpg", "futureinspace5.jpg" ], 
                     "captions" : [ "Buzz Aldrin's boot print on the surface of the moon.", "Backdropped against clouds 130 nautical miles below, astronaut Mark C. Lee floats freely without tethers.", "Astronaut Buzz Aldrin, lunar module pilot, walks on the surface of the Moon during the Apollo 11 exravehicular activity.", "The Space Shuttle Atlantis thunders skyward from Launch Pad 39A.", "Alan L. Bean, Lunar Module pilot for the Apollo 12 mission, starts down the ladder of the Lunar Module Intrepid." ] 
                 },
@@ -984,7 +984,7 @@
                     "text3" : "<p>At such a close distance to the sun, its surface reaches a scorching 800 degrees Fahrenheit during its day. Then, because the planet has no atmosphere to retain the heat, its surface plummets to minus 290 degrees Fahrenheit during its night.</p><div class='sidepanel-spacer-m'></div><p>But a short distance below the surface, the temperatures are much cooler, even pleasant — at least for some life-forms, said Jeffrey Kargel, a co-author of the study who is also from the Planetary Science Institute.</p>",
                     "quote3" : "It is possible that as long as there was water, the temperatures would be appropriate for the survival and possibly the origin of life",
                     "text4" : "<p>Dr. Kargel said. But at first, even he was not convinced. “I thought Alexis had lost it at some point,” he said, referring to Dr. Rodriguez. “But the more I dug into the geologic evidence and the more I thought about the chemistry and physical conditions there, the more I realized that this idea — well it might be nuts, but it’s not completely nuts.”</p><div class='sidepanel-spacer-m'></div><p>Dr. Hayne, however, thinks that water is an unlikely culprit. The only scenario in which it might be possible is one where water is bound to the rocks.</p><div class='sidepanel-spacer-m'></div><p>“So you could have transient pockets of high water activity, but I don’t think this is a case where we’d see massive pools of water and subsurface lakes and that sort of thing,” Dr. Hayne said.</p><div class='sidepanel-spacer-m'></div><p>Nonetheless, the suggestion that water could exist at all on a planet like Mercury provides a compelling clue toward the search for life across the galaxy. Astronomers have discovered thousands of planets orbiting other stars — some of which look similar to Mercury.</p><div class='sidepanel-spacer-m'></div><p>“If it’s happening here, it’s happening somewhere else,” Dr. Rodriguez said.</p>",
-                    "path" : "images/times/space",
+                    "path" : "assets/times/space",
                     "images" : [ "mercury1.jpg", "mercury2.jpg", "mercury3.jpg", "mercury4.jpg", "mercury5.jpg" ],
                     "captions" : ["The study theorizes that the “chaotic terrain” on Mercury’s surface was formed by activity underneath the planet’s exterior.", "Mercury depicted through the lense of NASA Messenger during approach.", "This orthographic projection view from NASA Messenger shows evidence for water ice, as detected by Earth-based radar observations.", "Mercury's true color is in the eye of the beholder.", "Analysis of radio tracking data have enabled maps of the gravity field of Mercury to be derived. Mercury's gravity anomalies."]
                 }
@@ -1000,19 +1000,19 @@
                     "author" : "John F. Kennedy",
                     "date" : "Sep 12, 1962",
                     "location" : "Houston, Texas",
-                    "path" : "audio/gotomoon",
+                    "path" : "assets/rundfunk",
                     "audio" : "wechoosetogotothemoon.mp3",
-                    "images" : [ "johnfkennedy1.jpg", "johnfkennedy2.jpg" ]
+                    "images" : [ "johnfkennedy.jpg" ]
                 },
 
                 {
-                    "title" : "Recordings of the Moon Landing",
+                    "title" : "Recordings of Apollo 11",
                     "author" : "",
                     "date" : "Nov 10, 1969",
                     "location" : "Houston, Texas",
-                    "path" : "audio/gotomoon",
+                    "path" : "assets/rundfunk",
                     "audio" : "wechoosetogotothemoon.mp3",
-                    "images" : [ "johnfkennedy1.jpg", "johnfkennedy2.jpg" ]
+                    "images" : [ "apollo11.jpg" ]
                 },
 
                 {
@@ -1020,9 +1020,9 @@
                     "author" : "",
                     "date" : "Nov 10, 1969",
                     "location" : "Houston, Texas",
-                    "path" : "audio/gotomoon",
+                    "path" : "assets/rundfunk",
                     "audio" : "wechoosetogotothemoon.mp3",
-                    "images" : [ "johnfkennedy1.jpg", "johnfkennedy2.jpg" ]
+                    "images" : [ "ares18.jpg" ]
                 }
             ]
         }
