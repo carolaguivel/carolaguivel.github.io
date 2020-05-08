@@ -1,0 +1,142 @@
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #19191a;
+    color: #ffffff;
+    font-family: 'roboto-mono', monospace;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    cursor: crosshair;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+input {
+    font-family: 'roboto-mono', monospace;
+    font-size: 14px;
+}
+
+p, h1, h2, h3, h4, span, a, div {
+    margin: 0;
+    padding: 0;
+}
+
+.hide {
+    display: none;
+}
+
+.warcore-window-price {
+    text-align: right;
+}
+
+.warcore-window-title {
+    font-family: titling-gothic-fb-wide;
+}
+
+.warcore-window-details, .warcore-window-spacer, .swiper-container {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 70%;
+}
+
+.warcore-window {
+    position: fixed;
+    background-color: #F4F4F4;
+    top: 10%;
+    right: 20%;
+    width: 16%;
+}
+
+.warcore-window-title {
+    color: #373737;
+    border: 1px solid black;
+    font-size: 0.7vw;
+    font-weight: 500;
+    text-shadow: rgb(240, 240, 240) 0px 1px 0px;
+    padding: 5px 2px;
+    text-align: center;
+    text-transform: capitalize;
+    background: linear-gradient(180deg, #A7A7A7 0%, #FFFFFF 25%, #A0A0A0 97.92%);
+}
+
+.warcore-window-spacer {
+    height: 3px;
+    background-color: #C4C4C4;
+}
+
+.warcore-window-details {
+    font-size: 0.55vw;
+    padding: 2px 5.5px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: #F4F4F4;
+}
+
+.warcore-button-icon {
+    position: absolute;
+    width: 5%;
+    bottom: -1.4%;
+    pointer-events: none;
+}
+
+.warcore-left-icon {
+    right: 21.4%;
+}
+
+.warcore-right-icon {
+    right: 6.4%;
+}
+
+.window-close {
+    position: absolute;
+    color: #000000;
+    border: 1px solid #000000;
+    border-radius: 2px;
+    padding: 3px 7px;
+    z-index: 1;
+    background: linear-gradient(180deg, #B0B0B0 0%, #FFFFFF 16.67%, #FFFFFF 23.96%, #B0B0B0 100%);
+    bottom: 2%;
+    left: 3%;
+    cursor: pointer;
+}
+
+.flickity-prev-next-button {
+    border-radius: 2px !important;
+    width: 27px !important;
+    height: 27px !important;
+}
+
+.flickity-button {
+    background: linear-gradient(180deg, #B0B0B0 0%, #FFFFFF 16.67%, #FFFFFF 23.96%, #B0B0B0 100%) !important;
+    border: 1px solid #000000 !important;
+    top: 93.3% !important;
+}
+
+.flickity-prev-next-button.previous {
+    left: 70.5% !important;
+}
+
+.flickity-prev-next-button.next {
+    right: 3% !important;
+}
+
+.flickity-button:active, .window-close:active {
+    background: linear-gradient(180deg, #828282 0%, #FFFFFF 71.87%, #FFFFFF 81.77%, #828282 100%) !important;
+    opacity: 1 !important;
+}
+
+.flickity-button-icon {
+    display: none;
+}
+
+#output {
+    color: red;
+}

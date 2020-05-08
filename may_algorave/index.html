@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Portal</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://use.typekit.net/umw1eou.css">
+    <script src="draggabilly/draggabilly.pkgd.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+    <script src="addons/p5.sound.min.js"></script>
+</head>
+<body>
+    <p id="output"></p>
+
+    <div class="window-wrapper">
+        <div class="warcore-window one hide">
+            <div class="window-close">&#10005;</div>
+            <p class="warcore-window-title">Fire Oval</p>
+            <div class="warcore-window-details"><p class="warcore-window-brand">Balenciaga</p><p class="warcore-window-price">$400.00</p></div>
+            <div class="warcore-window-spacer"></div>
+            <div class="swiper-container">
+                <img class="swiper-slide" src="assets/warcore/eyewear/fire1.jpg" width="100%">
+                <img class="swiper-slide" src="assets/warcore/eyewear/fire2.jpg" width="100%">
+                <img class="swiper-slide" src="assets/warcore/eyewear/fire3.jpg" width="100%">
+            </div>
+            <svg class="warcore-button-icon warcore-left-icon" width="120" height="55" viewBox="0 0 120 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M45 3L6 55L45 107" stroke="black" stroke-width="12"/>
+                <path d="M110 3L71 55L110 107" stroke="black" stroke-width="12"/>
+            </svg>
+            <svg class="warcore-button-icon warcore-right-icon" width="120" height="55" viewBox="0 0 120 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M69 3L108 55L69 107" stroke="black" stroke-width="12"/>
+                <path d="M4 3L43 55L4 107" stroke="black" stroke-width="12"/>
+            </svg>
+        </div>
+
+        <div class="warcore-window two hide">
+            <div class="window-close">&#10005;</div>
+            <p class="warcore-window-title">Apollo 17</p>
+            <div class="warcore-window-details"><p class="warcore-window-brand">NASA</p><p class="warcore-window-price">1972</p></div>
+            <div class="warcore-window-spacer"></div>
+            <div class="swiper-container">
+                <img class="swiper-slide" src="assets/times/apollo17.png" width="100%">
+                <!-- <img class="swiper-slide" src="assets/warcore/eyewear/fire2.jpg" width="100%"> -->
+                <!-- <img class="swiper-slide" src="assets/warcore/eyewear/fire3.jpg" width="100%"> -->
+            </div>
+            <!-- <svg class="warcore-button-icon warcore-left-icon" width="120" height="55" viewBox="0 0 120 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M45 3L6 55L45 107" stroke="black" stroke-width="12"/>
+                <path d="M110 3L71 55L110 107" stroke="black" stroke-width="12"/>
+            </svg>
+            <svg class="warcore-button-icon warcore-right-icon" width="120" height="55" viewBox="0 0 120 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M69 3L108 55L69 107" stroke="black" stroke-width="12"/>
+                <path d="M4 3L43 55L4 107" stroke="black" stroke-width="12"/>
+            </svg> -->
+        </div>
+    </div>
+
+    
+<script>
+// Prof Melody Loveless - Live Coding (Spring 2020)
+// p5.js - playing with the web browser
+// Samples for playback from Me HackIt (https://sonic-pi.mehackit.org/exercises/en/05-advanced-topics-1/04-external-samples.html)
+// Inspired by Todd Anderson - https://toddwords.com/
+
+var sample1;
+var sample2;
+var sample3;
+var sample4;
+var sample6;
+var sample7;
+
+var textfield; //for HTML textfield
+var txt = ""; // where the text we are typing is stored
+var curIndex = 0;
+var pitchToPlay;
+var bgColor = [25, 25, 26];
+
+
+function preload() {
+  // you have to preload samples ahead of time
+  sample1 = loadSound('assets/sounds/1.mp3');
+  sample2 = loadSound('assets/sounds/2.mp3');
+  sample3 = loadSound('assets/sounds/3.wav');
+  sample4 = loadSound('assets/sounds/4.mp3');
+  sample5 = loadSound('assets/sounds/5.mp3');
+  sample6 = loadSound('assets/sounds/6.mp3');
+  sample7 = loadSound('assets/sounds/7.wav');
+}
+
+function setup() {
+  createCanvas(windowWidth, 100);
+  frameRate(5); // controls rate of playback
+  textfield = createInput();
+  textfield.changed(newText); //when the text/input has changed, activiate newText()
+}
+
+
+function draw() {
+   background(bgColor[0], bgColor[1], bgColor[2]); // background color
+   fill(255); // white text
+   textSize(10); // 144px
+   textAlign(CENTER, CENTER);
+
+   //assigning sounds to characters
+   if(txt[curIndex] === 'a') {
+     sample1.play();
+   }
+   if(txt[curIndex] === 'b') {
+      sample2.play();
+   }
+   if(txt[curIndex] === 'c') {
+     sample3.play();
+   }
+   if(txt[curIndex] === 'd') {
+     sample4.play();
+   }
+   if(txt[curIndex] === 'e') {
+     sample5.play();
+   }
+   if(txt[curIndex] === '!') {
+     sample6.play();
+   }
+   if(txt[curIndex] === '.') {
+     sample7.play();
+   }
+
+   //code that displays typed text
+   text(
+     txt.substring(curIndex, curIndex+1), width/2, height/2);
+     curIndex++;
+    if (curIndex > txt.length) {
+     curIndex = 0;
+   }
+}
+
+
+function newText(){
+  txt = textfield.value();
+  createP(textfield.value()); //creates a new line when we hit enter
+
+}
+
+
+
+
+
+    $(document).ready(function () {
+        $(".p5Canvas").addClass("hide")
+    $('.swiper-container').flickity({
+            cellAlign: 'left',
+            wrapAround: true,
+            contain: true,
+            draggable: false,
+            pageDots: false,
+            imagesLoaded: true,
+        });
+    });
+
+    var draggableElems = document.querySelectorAll('.warcore-window');
+
+        var draggies = []
+
+        for ( var i=0, len = draggableElems.length; i < len; i++ ) {
+            var draggableElem = draggableElems[i];
+            var draggie = new Draggabilly( draggableElem, {
+            axis: 'x,y',
+            });
+            draggies.push( draggie );
+        };
+
+    $( ".window-close" ).click(function() {
+            $(this).parent().remove();
+        });
+
+    $( ".window-open" ).click(function() {
+        $(this).parent().remove();
+    });
+
+    // function openWindow() {
+    //     $(".one").removeClass("hide")
+    // }
+    // openWindow()
+
+    // function openWindow() {
+    //     $(".two").removeClass("hide")
+    // }
+    // openWindow()
+
+</script>
+</body>
