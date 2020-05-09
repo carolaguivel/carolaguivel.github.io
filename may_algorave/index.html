@@ -12,10 +12,10 @@
     <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
     <script src="addons/p5.sound.min.js"></script>
 </head>
-<body>
+<body class="imageCycle1">
     <p id="output"></p>
 
-    <div class="window-wrapper">
+    <div class="window-wrapper imageCycle1">
         <div class="warcore-window one hide">
             <div class="window-close">&#10005;</div>
             <p class="warcore-window-title">Fire Oval</p>
@@ -80,13 +80,13 @@ var bgColor = [25, 25, 26];
 
 function preload() {
   // you have to preload samples ahead of time
-  sample1 = loadSound('assets/sounds/1.mp3');
-  sample2 = loadSound('assets/sounds/2.mp3');
-  sample3 = loadSound('assets/sounds/3.wav');
-  sample4 = loadSound('assets/sounds/4.mp3');
-  sample5 = loadSound('assets/sounds/5.mp3');
-  sample6 = loadSound('assets/sounds/6.mp3');
-  sample7 = loadSound('assets/sounds/7.wav');
+  sample1 = loadSound('assets/sounds/bass.mp3');
+  sample2 = loadSound('assets/sounds/bowshock.mp3');
+  sample3 = loadSound('assets/sounds/flop.mp3');
+  sample4 = loadSound('assets/sounds/hiss.mp3');
+  sample5 = loadSound('assets/sounds/longbass.mp3');
+  sample6 = loadSound('assets/sounds/sonification.mp3');
+  sample7 = loadSound('assets/sounds/wave.mp3');
 }
 
 function setup() {
@@ -119,10 +119,10 @@ function draw() {
    if(txt[curIndex] === 'e') {
      sample5.play();
    }
-   if(txt[curIndex] === '!') {
+   if(txt[curIndex] === 'f') {
      sample6.play();
    }
-   if(txt[curIndex] === '.') {
+   if(txt[curIndex] === 'g') {
      sample7.play();
    }
 
@@ -135,11 +135,9 @@ function draw() {
    }
 }
 
-
 function newText(){
   txt = textfield.value();
   createP(textfield.value()); //creates a new line when we hit enter
-
 }
 
 
@@ -147,7 +145,7 @@ function newText(){
 
 
     $(document).ready(function () {
-        $(".p5Canvas").addClass("hide")
+        $("#defaultCanvas0").addClass("hide")
     $('.swiper-container').flickity({
             cellAlign: 'left',
             wrapAround: true,
@@ -170,6 +168,22 @@ function newText(){
             draggies.push( draggie );
         };
 
+
+
+// for live performance
+
+// function bg_image() {
+//   var classCycle=['imageCycle1','imageCycle2'];
+
+// var randomNumber = Math.floor(Math.random() * classCycle.length);
+// var classToAdd = classCycle[randomNumber];
+
+// $('body').addClass(classToAdd);
+// }
+
+// bg_image()
+
+
     $( ".window-close" ).click(function() {
             $(this).parent().remove();
         });
@@ -177,6 +191,10 @@ function newText(){
     $( ".window-open" ).click(function() {
         $(this).parent().remove();
     });
+
+
+
+
 
     // function openWindow() {
     //     $(".one").removeClass("hide")

@@ -2,12 +2,15 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    background-color: #19191a;
+    background-color: red;
     color: #ffffff;
     font-family: 'roboto-mono', monospace;
     font-size: 14px;
     -webkit-font-smoothing: antialiased;
     cursor: crosshair;
+    background:url(assets/2.png);
+    background-repeat:no-repeat;
+    background-size:cover;
 }
 
 * {
@@ -137,6 +140,17 @@ p, h1, h2, h3, h4, span, a, div {
     display: none;
 }
 
-#output {
-    color: red;
+.imageCycle1{
+    background:url(assets/1.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.imageCycle2{
+    background:url(assets/2.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    -webkit-background-size: cover;
+    -moz-background-size:cover;
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='assets/2.png',sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='assets/2.png', sizingMethod='scale')";
 }
