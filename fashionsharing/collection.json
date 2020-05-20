@@ -46,15 +46,6 @@
 		},
 
 		{
-			"name" : "Ambush",
-			"idname" : "ambush",
-			"year" : "Fall/Winter 18",
-			"description" : "Track gear and similar sporty goods have proven to be an Ambush staple, and they resurfaced in a big way for the imprint’s Fall/Winter 2018 collection. Windbreakers, nylon pants, fleece-paneled pullovers and anorak jackets all appeared throughout the array, layered underneath blazers, raincoats and leather jackets. Graphic goods bolstered the busy range, with plenty of Ambush branding coinciding with plaids, pinstripes and even some abstract knit detailing. Baseball cap-style varsity letters were seen on floppy-brimmed hats, a playful nod to the brand’s elevation of sportswear staples, while other accessories included chains dangling from slim belts, holster-style bags, slim metal necklaces and even collaborative Beats by Dre headphones.", 
-			"image" : "images/ambush.jpg",
-			"collectionurl" : "https://hypebeast.com/2018/3/ambush-fall-winter-2018"
-		},
-
-		{
 			"name" : "Balenciaga",
 			"idname" : "balenciaga",
 			"year" : "Spring/Summer 19",
@@ -124,6 +115,15 @@
 			"description" : "Upcoming NYC label Telfar took to a rainswept runway to unveil its SS19 collection. Like many designers working in the shadow of a Trump presidency, Telfar tore up all-American classics and made them his own. The label turned to the the good old Stars and Stripes as a foundation for its graphics, and notched up the \"Murican\" vibes by putting a Budweiser collaboration on the runway.",
 			"image" : "images/telfar.jpg",
 			"collectionurl" :  "https://www.vogue.com/fashion-shows/spring-2019-ready-to-wear/telfar/slideshow/collection#1"
+		},
+
+		{
+			"name" : "Todd Snyder",
+			"idname" : "toddsnyder",
+			"year" : "Spring/Summer 19",
+			"description" : "dfadf",
+			"image" : "images/toddsnyder.jpg",
+			"collectionurl" : "https://www.vogue.com/fashion-shows/spring-2019-menswear/todd-snyder"
 		},
 
 		{
