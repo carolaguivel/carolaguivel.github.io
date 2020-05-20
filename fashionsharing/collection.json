@@ -55,15 +55,6 @@
 		},
 
 		{
-			"name" : "Calvin Klein",
-			"idname" : "calvinklein",
-			"year" : "Fall/Winter 18",
-			"description" : "At the Calvin Klein FW 18 show, a surfeit of dystopian apparel was evident. Simons created a apocalyptic disaster in which the survivors were dressed in one of his most adventurous collections for the house thus far, and looked appropriately protected for a cold, dangerous dystopia. There was neon orange construction-worker garb, a slew of pieces incorporating Mylar and a fashion-y interpretation of hazmat boots and gloves. Most models also wore balaclavas that, while practical, had a very creepy effect en masse.", 
-			"image" : "images/calvinklein.jpg",
-			"collectionurl" : "https://www.vogue.com/fashion-shows/fall-2018-ready-to-wear/calvin-klein/slideshow/collection#1"
-		},
-
-		{
 			"name" : "GmbH",
 			"idname" : "gmbh",
 			"year" : "Spring/Summer 19",
@@ -133,6 +124,15 @@
 			"description" : "dfadf",
 			"image" : "images/toddsnyder.jpg",
 			"collectionurl" : "https://www.vogue.com/fashion-shows/spring-2019-menswear/todd-snyder"
+		},
+
+		{
+			"name" : "Versace",
+			"idname" : "versace",
+			"year" : "Spring/Summer 19 Mens",
+			"description" : "At the Calvin Klein FW 18 show, a surfeit of dystopian apparel was evident. Simons created a apocalyptic disaster in which the survivors were dressed in one of his most adventurous collections for the house thus far, and looked appropriately protected for a cold, dangerous dystopia. There was neon orange construction-worker garb, a slew of pieces incorporating Mylar and a fashion-y interpretation of hazmat boots and gloves. Most models also wore balaclavas that, while practical, had a very creepy effect en masse.", 
+			"image" : "images/versace.jpg",
+			"collectionurl" : "https://www.vogue.com/fashion-shows/fall-2018-ready-to-wear/calvin-klein/slideshow/collection#1"
 		}
 		
 	]
