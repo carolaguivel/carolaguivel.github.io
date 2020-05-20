@@ -19,15 +19,6 @@
 		},
 
 		{
-			"name" : "A-COLD-WALL*",
-			"idname" : "acoldwall",
-			"year" : "Spring/Summer 19",
-			"description" : "Samuel Ross’ brand A-Cold-Wall is continually seeking to expand the fashion vernacular by playing with new proportions and alternative ideas of beauty. Ross’ latest collection was presented as an immersive performance at the Old Truman Brewery that was conceptual — but not necessarily accessible. Guests were advised to put on protective goggles, masks and earplugs monogrammed with the brand’s acronym that were handed out at the door. Wind turbines and haze created a doomed, dystopian atmosphere, and the show began with a group of actors wearing hooded smocks and chalk-painted skin storming down the runway. Models showcasing the collection followed.",
-			"image" : "images/acoldwall.jpg",
-			"collectionurl" :  "https://wwd.com/fashion-news/shows-reviews/gallery/a-cold-wall-mens-spring-1202700523/"
-		},
-
-		{
 			"name" : "Alexander McQueen",
 			"idname" : "alexandermcqueen",
 			"year" : "Spring/Summer 19",
@@ -106,6 +97,15 @@
 			"description" : "Titled \"Track and Field,\" Off White's spring 2019 collection blends sporty nods with refined feminine silhouettes. Flowing gowns and trim blazers were subverted by track-ready body suits and Nike T-shirts, emphasizing sportswear’s continuing influence upon Virgil Abloh‘s designs. Accompanying the sportswear-leaning looks were a host of gargantuan gowns and feminine tulle skirts, appropriately crafted with mesh panels or juxtaposed with tucked-in Off-White & Nike tees, subverting the feminine lean.",
 			"image" : "images/offwhite.jpg",
 			"collectionurl" :  "https://www.vogue.com/fashion-shows/spring-2019-ready-to-wear/off-white/slideshow/collection#1"
+		},
+
+		{
+			"name" : "SSS World Corp",
+			"idname" : "sssworldcorp",
+			"year" : "Spring/Summer 19",
+			"description" : "",
+			"image" : "images/sssworldcorp.jpg",
+			"collectionurl" :  "https://wwd.com/fashion-news/shows-reviews/gallery/a-cold-wall-mens-spring-1202700523/"
 		},
 
 		{
