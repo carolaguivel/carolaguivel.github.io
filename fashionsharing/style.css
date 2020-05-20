@@ -145,3 +145,9 @@ a {
 	padding-left: 0.1vw;
 	padding-right: 0.1vw;
 }
+
+#footer {
+	position: absolute;
+	bottom: 0%;
+	left: 0%;
+}
