@@ -1,4 +1,16 @@
 <!DOCTYPE html>
+<!--
+ ██████╗ █████╗ ██████╗  ██████╗ ██╗      █████╗  ██████╗ ██╗   ██╗██╗██╗   ██╗███████╗██╗     
+██╔════╝██╔══██╗██╔══██╗██╔═══██╗██║     ██╔══██╗██╔════╝ ██║   ██║██║██║   ██║██╔════╝██║     
+██║     ███████║██████╔╝██║   ██║██║     ███████║██║  ███╗██║   ██║██║██║   ██║█████╗  ██║     
+██║     ██╔══██║██╔══██╗██║   ██║██║     ██╔══██║██║   ██║██║   ██║██║╚██╗ ██╔╝██╔══╝  ██║     
+╚██████╗██║  ██║██║  ██║╚██████╔╝███████╗██║  ██║╚██████╔╝╚██████╔╝██║ ╚████╔╝ ███████╗███████╗
+ ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚═╝  ╚═╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═══╝  ╚══════╝╚══════╝
+
+Creative Coder and Designer based in New York
+Currently in Germany
+@carolaguivel
+                                                                                                    -->
 <html>
 <head>
     <title>Home Portal</title>
@@ -8,23 +20,27 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
     <script src="addons/p5.sound.min.js"></script>
+    <script src="https://unpkg.com/hydra-synth"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body class="imageCycle1">
+<body>
     <p id="output"></p>
 
-    <div class="window-wrapper imageCycle1">
+    <div class="window-wrapper">
         <div class="warcore-window one hide">
             <div class="window-close">&#10005;</div>
-            <p class="warcore-window-title">Fire Oval</p>
-            <div class="warcore-window-details"><p class="warcore-window-brand">Balenciaga</p><p class="warcore-window-price">$400.00</p></div>
+            <p class="warcore-window-title">Apollo 11</p>
+            <div class="warcore-window-details"><p class="warcore-window-brand">NASA</p><p class="warcore-window-price">1969</p></div>
             <div class="warcore-window-spacer"></div>
             <div class="swiper-container">
-                <img class="swiper-slide" src="assets/warcore/eyewear/fire1.jpg" width="100%">
-                <img class="swiper-slide" src="assets/warcore/eyewear/fire2.jpg" width="100%">
-                <img class="swiper-slide" src="assets/warcore/eyewear/fire3.jpg" width="100%">
+                <img class="swiper-slide" src="assets/w1.jpg" width="100%">
+                <img class="swiper-slide" src="assets/w2.jpg" width="100%">
+                <img class="swiper-slide" src="assets/w3.jpg" width="100%">
+                <img class="swiper-slide" src="assets/w4.jpg" width="100%">
+                <img class="swiper-slide" src="assets/w5.jpg" width="100%">
+                <img class="swiper-slide" src="assets/w6.jpg" width="100%">
             </div>
             <svg class="warcore-button-icon warcore-left-icon" width="120" height="55" viewBox="0 0 120 55" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M45 3L6 55L45 107" stroke="black" stroke-width="12"/>
@@ -42,18 +58,20 @@
             <div class="warcore-window-details"><p class="warcore-window-brand">NASA</p><p class="warcore-window-price">1972</p></div>
             <div class="warcore-window-spacer"></div>
             <div class="swiper-container">
-                <img class="swiper-slide" src="assets/times/apollo17.png" width="100%">
-                <!-- <img class="swiper-slide" src="assets/warcore/eyewear/fire2.jpg" width="100%"> -->
-                <!-- <img class="swiper-slide" src="assets/warcore/eyewear/fire3.jpg" width="100%"> -->
+              <img class="swiper-slide" src="assets/w7.jpg" width="100%">
+              <img class="swiper-slide" src="assets/w8.jpg" width="100%">
+              <img class="swiper-slide" src="assets/w9.jpg" width="100%">
+              <img class="swiper-slide" src="assets/w10.jpg" width="100%">
+              <img class="swiper-slide" src="assets/w11.jpg" width="100%">
             </div>
-            <!-- <svg class="warcore-button-icon warcore-left-icon" width="120" height="55" viewBox="0 0 120 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="warcore-button-icon warcore-left-icon" width="120" height="55" viewBox="0 0 120 55" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M45 3L6 55L45 107" stroke="black" stroke-width="12"/>
                 <path d="M110 3L71 55L110 107" stroke="black" stroke-width="12"/>
             </svg>
             <svg class="warcore-button-icon warcore-right-icon" width="120" height="55" viewBox="0 0 120 55" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M69 3L108 55L69 107" stroke="black" stroke-width="12"/>
                 <path d="M4 3L43 55L4 107" stroke="black" stroke-width="12"/>
-            </svg> -->
+            </svg>
         </div>
     </div>
 
@@ -70,6 +88,14 @@ var sample3;
 var sample4;
 var sample6;
 var sample7;
+var sample8;
+var sample9;
+var sample10;
+var sample11;
+var sample12;
+var sample13;
+var sample14;
+var sample15;
 
 var textfield; //for HTML textfield
 var txt = ""; // where the text we are typing is stored
@@ -87,6 +113,15 @@ function preload() {
   sample5 = loadSound('assets/sounds/longbass.mp3');
   sample6 = loadSound('assets/sounds/sonification.mp3');
   sample7 = loadSound('assets/sounds/wave.mp3');
+  sample8 = loadSound('assets/sounds/up.mp3');
+  sample9 = loadSound('assets/sounds/cracking.mp3');
+  sample10 = loadSound('assets/sounds/plasmawaves.mp3');
+  sample11 = loadSound('assets/sounds/saturn.mp3');
+  sample12 = loadSound('assets/sounds/titan1.mp3');
+  sample13 = loadSound('assets/sounds/titan2.mp3');
+  sample14 = loadSound('assets/sounds/whistler1.mp3');
+  sample15 = loadSound('assets/sounds/whistler2.mp3');
+  
 }
 
 function setup() {
@@ -103,27 +138,71 @@ function draw() {
    textSize(10); // 144px
    textAlign(CENTER, CENTER);
 
-   //assigning sounds to characters
+  //  assigning sounds to characters
    if(txt[curIndex] === 'a') {
      sample1.play();
    }
    if(txt[curIndex] === 'b') {
       sample2.play();
    }
-   if(txt[curIndex] === 'c') {
+   if(txt[curIndex] === 'k') {
      sample3.play();
    }
-   if(txt[curIndex] === 'd') {
+   if(txt[curIndex] === 'o') {
      sample4.play();
    }
-   if(txt[curIndex] === 'e') {
+   if(txt[curIndex] === 'O') {
+     sample4.play();
+   }
+   if(txt[curIndex] === ',') {
      sample5.play();
    }
    if(txt[curIndex] === 'f') {
      sample6.play();
    }
-   if(txt[curIndex] === 'g') {
+   if(txt[curIndex] === 'z') {
      sample7.play();
+   }
+   if(txt[curIndex] === 'w') {
+     sample8.play();
+   }
+   if(txt[curIndex] === 'm') {
+     sample9.play();
+   }
+   if(txt[curIndex] === 'j') {
+     sample10.play();
+   }
+   if(txt[curIndex] === '.') {
+     sample11.play();
+   }
+   if(txt[curIndex] === 'p') {
+     sample12.play();
+   }
+   if(txt[curIndex] === 'u') {
+     sample13.play();
+   }
+   if(txt[curIndex] === 'r') {
+     sample14.play();
+   }
+   if(txt[curIndex] === 'd') {
+     sample15.play();
+   }
+   if(txt[curIndex] === 'the silence...') {
+     sample1.pause();
+     sample2.pause();
+     sample3.pause();
+     sample4.pause();
+     sample5.pause();
+     sample6.pause();
+     sample7.pause();
+     sample8.pause();
+     sample9.pause();
+     sample10.pause();
+     sample11.pause();
+     sample12.pause();
+     sample13.pause();
+     sample14.pause();
+     sample15.pause();
    }
 
    //code that displays typed text
@@ -145,7 +224,6 @@ function newText(){
 
 
     $(document).ready(function () {
-        $("#defaultCanvas0").addClass("hide")
     $('.swiper-container').flickity({
             cellAlign: 'left',
             wrapAround: true,
@@ -153,6 +231,8 @@ function newText(){
             draggable: false,
             pageDots: false,
             imagesLoaded: true,
+            autoPlay: 1500,
+            pauseAutoPlayOnHover: false
         });
     });
 
@@ -168,43 +248,59 @@ function newText(){
             draggies.push( draggie );
         };
 
+        $( ".window-close" ).click(function() {
+            $(this).parent().addClass("hide");
+        });
 
 
 // for live performance
 
-// function bg_image() {
-//   var classCycle=['imageCycle1','imageCycle2'];
+function surrounding() {
+  $('body').removeClass("imageCycle1");
+  $('body').removeClass("imageCycle2");
+  $('body').removeClass("imageCycle3");
+  $('body').removeClass("imageCycle4");
+  $('body').removeClass("imageCycle5");
+  $('body').removeClass("imageCycle6");
+  $('body').removeClass("imageCycle7");
+  $('body').removeClass("imageCycle8");
+  $('body').removeClass("imageCycle9");
 
-// var randomNumber = Math.floor(Math.random() * classCycle.length);
-// var classToAdd = classCycle[randomNumber];
+  var classCycle=['imageCycle1','imageCycle2', 'imageCycle3', 'imageCycle4', 'imageCycle5', 'imageCycle6', 'imageCycle7', 'imageCycle8', 'imageCycle9'];
 
-// $('body').addClass(classToAdd);
-// }
+var randomNumber = Math.floor(Math.random() * classCycle.length);
+var classToAdd = classCycle[randomNumber];
+console.log(classToAdd)
+$('body').addClass(classToAdd);
+}
 
-// bg_image()
+    function galaxy1() {
+        $(".one").removeClass("hide")
+    }
+
+    function galaxy2() {
+        $(".two").removeClass("hide")
+    }
+
+function daylight() {
+  $("html").addClass("invert")
+}
+
+function nightlight() {
+  $("html").removeClass("invert")
+}
 
 
-    $( ".window-close" ).click(function() {
-            $(this).parent().remove();
-        });
-
-    $( ".window-open" ).click(function() {
-        $(this).parent().remove();
-    });
-
-
-
-
-
-    // function openWindow() {
-    //     $(".one").removeClass("hide")
-    // }
-    // openWindow()
-
-    // function openWindow() {
-    //     $(".two").removeClass("hide")
-    // }
-    // openWindow()
+      // create a new hydra-synth instance
+      var hydra = new Hydra({
+        canvas: document.getElementById("defaultCanvas0")
+      })
+    
+// nightlight() -uninvert
+// daylight() - invert
+// surrounding() - bg_image
+// galaxy1() - openWindow1
+// galaxy2() - openWindow2
 
 </script>
 </body>

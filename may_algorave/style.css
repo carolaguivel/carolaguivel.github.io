@@ -2,24 +2,36 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    background-color: red;
+    background-color: #19191a;
     color: #ffffff;
     font-family: 'roboto-mono', monospace;
     font-size: 14px;
     -webkit-font-smoothing: antialiased;
-    cursor: crosshair;
-    background:url(assets/2.png);
-    background-repeat:no-repeat;
-    background-size:cover;
 }
 
 * {
 	box-sizing: border-box;
 }
 
+#defaultCanvas0 {
+  display: none;
+}
+
 input {
-    font-family: 'roboto-mono', monospace;
-    font-size: 14px;
+    position: fixed;
+    top: 4%;
+    right: 1%;
+    width: 20%;
+}
+
+input[type="text"]
+{
+  font-family: 'roboto-mono', monospace;
+  font-size: 14px;
+}
+
+textarea:focus, input:focus{
+  outline: none;
 }
 
 p, h1, h2, h3, h4, span, a, div {
@@ -29,6 +41,10 @@ p, h1, h2, h3, h4, span, a, div {
 
 .hide {
     display: none;
+}
+
+.invert {
+    filter: invert();
 }
 
 .warcore-window-price {
@@ -43,6 +59,7 @@ p, h1, h2, h3, h4, span, a, div {
     border-left: 1px solid black;
     border-right: 1px solid black;
     border-bottom: 1px solid black;
+    color: black;
 }
 
 .swiper-container {
@@ -141,16 +158,175 @@ p, h1, h2, h3, h4, span, a, div {
 }
 
 .imageCycle1{
-    background:url(assets/1.jpg);
-    background-repeat:no-repeat;
-    background-size:cover;
+    background: url("assets/bg1.jpg") repeat;
+    background-size: cover;
 }
 .imageCycle2{
-    background:url(assets/2.png);
-    background-repeat:no-repeat;
-    background-size:cover;
-    -webkit-background-size: cover;
-    -moz-background-size:cover;
-    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='assets/2.png',sizingMethod='scale');
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='assets/2.png', sizingMethod='scale')";
+    background: url("assets/bg2.png") repeat center;
+    background-size: contain;
 }
+.imageCycle3 {
+    background: url("assets/bg3.jpg") repeat center;
+    background-size: contain;
+}
+
+.imageCycle4 {
+    background: url("assets/bg4.jpg") repeat;
+    background-size: cover;
+}
+
+.imageCycle5 {
+    background: url("assets/bg5.jpg") repeat center;
+    background-size: 30%;
+}
+
+.imageCycle6 {
+    background: url("assets/bg6.jpg") repeat center;
+    background-size: cover;
+}
+
+.imageCycle7 {
+    background: url("assets/bg7.jpg") repeat bottom;
+    background-size: 50%;
+}
+
+.imageCycle8 {
+    background: url("assets/bg8.jpg") repeat left;
+    background-size: cover;
+}
+
+.imageCycle9 {
+    background: url("assets/bg9.jpg") repeat center;
+    background-size: contain;
+}
+
+.starlight {
+	-webkit-animation: text-flicker-in-glow 4s linear infinite both;
+	        animation: text-flicker-in-glow 4s linear infinite both;
+}
+
+@keyframes text-flicker-in-glow {
+    0% {
+      opacity: 0;
+    }
+    10% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    10.1% {
+      opacity: 1;
+      text-shadow: none;
+    }
+    10.2% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    20% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    20.1% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.25);
+    }
+    20.6% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    30% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    30.1% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+    30.5% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+    30.6% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    45% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    45.1% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+    50% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+    55% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+    55.1% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    57% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    57.1% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35);
+    }
+    60% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35);
+    }
+    60.1% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    65% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    65.1% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+    75% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+    75.1% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    77% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    77.1% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+    85% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+    85.1% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    86% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    86.1% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+    100% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+  }
