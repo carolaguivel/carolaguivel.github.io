@@ -28,21 +28,21 @@
 		},
 
 		{
-			"name" : "Alexander Wang",
-			"idname" : "alexanderwang",
-			"year" : "Spring/Summer 19",
-			"description" : "In his Collection 1 debut, Alexander Wang does \"Immigrant Americana,\" reflecting on his experiences as a first-generation American, specifically what his home country means to both him and his family. In the collection, Wang took his parents' immigration story and infused it with the classic Americana pop culture iconography that he grew up with. Both women's and men's looks incorporated American football jerseys and championship rings; western Bolo ties; Harley-Davidson aesthetics like leather motorcycle jackets with intricate, DIY safety pin designs; rock-n-roll (particularly heavy metal) references like Axl Rose or Bret Michaels-worthy bandanas; blue jeans; Hawaiian leis; grungy flannel and both stars and stripes aplenty.", 
-			"image" : "images/alexanderwang.jpg",
-			"collectionurl" : "https://www.alexanderwang.com/us-en/C2-1"
-		},
-
-		{
 			"name" : "Balenciaga",
 			"idname" : "balenciaga",
 			"year" : "Spring/Summer 19",
 			"description" : "Demna Gvasalia wants us to look glam for the apocalypse. If Balenciaga’s Fall Winter 2018 collection was a message for us to keep hope alive in an increasingly turbulent world, the Spring Summer 2019 collection was all about letting the world burn — but looking great while it does. For this collection, Demna Gvasalia collaborated with artist Jon Rafman to create an LED tunnel that encased the runway. It lit up, throughout the course of the show, in flames, like the inside of a vein, like tv static—a visual manifestation of the chaotic mental overload of today’s generation.",
 			"image" : "images/balenciaga.jpg",
 			"collectionurl" : "https://www.vogue.com/fashion-shows/spring-2019-ready-to-wear/balenciaga/slideshow/collection#1"
+		},
+
+		{
+			"name" : "Calvin Klein",
+			"idname" : "calvinklein",
+			"year" : "Spring/Summer 19",
+			"description" : "",
+			"image" : "images/calvinklein.jpg",
+			"collectionurl" : "https://www.alexanderwang.com/us-en/C2-1"
 		},
 
 		{
