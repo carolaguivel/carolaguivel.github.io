@@ -82,6 +82,15 @@
 		},
 
 		{
+			"name" : "John Elliot",
+			"idname" : "johnelliot",
+			"year" : "Spring/Summer 19",
+			"description" : "John Elliott took his eponymous label back to New York Fashion Week to debut his latest range of effortless sportswear and laid-back denim. John Elliot has a personal approach to design that is immediately apparent upon viewing the new range, with worn-in accents reflecting the designer’s intent to create comfortable clothing for daily life. The new collection showcased more collaborative Suicoke sandals and new jewelry designed in collaboration with Japanese brand Mars. Lived-in touches included blown-out knees in the Japanese denim, cardigans buttoned insouciantly and cracked leather jackets courtesy of Blackmeans.",
+			"image" : "images/johnelliot.jpg",
+			"collectionurl" :  "https://hypebeast.com/2018/9/john-elliott-spring-summer-2019-runway-collection"
+		},
+
+		{
 			"name" : "Louis Vuitton",
 			"idname" : "louisvuitton",
 			"year" : "Spring/Summer 19",
@@ -124,15 +133,6 @@
 			"description" : "dfadf",
 			"image" : "images/toddsnyder.jpg",
 			"collectionurl" : "https://www.vogue.com/fashion-shows/spring-2019-menswear/todd-snyder"
-		},
-
-		{
-			"name" : "John Elliot",
-			"idname" : "johnelliot",
-			"year" : "Spring/Summer 19",
-			"description" : "John Elliott took his eponymous label back to New York Fashion Week to debut his latest range of effortless sportswear and laid-back denim. John Elliot has a personal approach to design that is immediately apparent upon viewing the new range, with worn-in accents reflecting the designer’s intent to create comfortable clothing for daily life. The new collection showcased more collaborative Suicoke sandals and new jewelry designed in collaboration with Japanese brand Mars. Lived-in touches included blown-out knees in the Japanese denim, cardigans buttoned insouciantly and cracked leather jackets courtesy of Blackmeans.",
-			"image" : "images/johnelliot.jpg",
-			"collectionurl" :  "https://hypebeast.com/2018/9/john-elliott-spring-summer-2019-runway-collection"
 		}
 		
 	]
