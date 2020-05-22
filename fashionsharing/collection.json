@@ -60,7 +60,7 @@
 			"year" : "Spring/Summer 19",
 			"description" : "Dubbed \"En Vogue,\" the Been Trill alum’s latest offering was firmly rooted in his trademark penchant for workwear inspired ready to wear. Familiar HP tropes such as utility belts, vests, work shirts and chore jackets were styled with boldly colored sportswear, metallic leather coats, denim and bottoms featuring satellite images of Australian terrain. Italicized Cantonese characters replaced Preston’s signature Cyrillic Style logo. Furthermore, the collection marked a debut collaboration with Nike Vision, featuring a series of speed racer shades with four interchangeable accessory lenses in reflective grey, orange grey, yellow and dark grey.",
 			"image" : "images/heronpreston.jpg",
-			"collectionurl" : "https://hypebeast.com/2018/6/heron-preston-spring-summer-2019-paris-fashion-week-mens"
+			"collectionurl" : "https://www.vogue.com/fashion-shows/spring-2019-menswear/heron-preston"
 		},
 
 		{
@@ -69,25 +69,25 @@
 			"year" : "Spring/Summer 19",
 			"description" : "John Elliott took his eponymous label back to New York Fashion Week to debut his latest range of effortless sportswear and laid-back denim. John Elliot has a personal approach to design that is immediately apparent upon viewing the new range, with worn-in accents reflecting the designer’s intent to create comfortable clothing for daily life. The new collection showcased more collaborative Suicoke sandals and new jewelry designed in collaboration with Japanese brand Mars. Lived-in touches included blown-out knees in the Japanese denim, cardigans buttoned insouciantly and cracked leather jackets courtesy of Blackmeans.",
 			"image" : "images/johnelliot.jpg",
-			"collectionurl" :  "https://hypebeast.com/2018/9/john-elliott-spring-summer-2019-runway-collection"
+			"collectionurl" :  "https://www.vogue.com/fashion-shows/spring-2019-menswear/john-elliot-co"
 		},
 
 		{
 			"name" : "Louis Vuitton",
 			"idname" : "louisvuitton",
-			"year" : "Spring/Summer 19",
+			"year" : "Spring/Summer 19 Menswear",
 			"description" : "This collection was Virgil Abloh's debut as menswear creative director for Louis Vuitton. Titled \"We are the World,\" Abloh wanted to create a show that was open to all colors, all nationalities, all identities, and all generations welcome here. The inspiration for the show came from a white light hitting a prism, and dividing into its component colors.", 
 			"image" : "images/louisvuitton.jpg",
-			"collectionurl" : "https://www.vogue.com/fashion-shows/spring-2019-menswear/louis-vuitton/slideshow/collection#1"
+			"collectionurl" : "https://www.vogue.com/fashion-shows/spring-2019-menswear/louis-vuitton"
 		},
 
 		{
 			"name" : "MISBHV",
 			"idname" : "misbhv",
-			"year" : "Spring/Summer 19",
+			"year" : "Spring/Summer 19 Menswear",
 			"description" : "For MISBHV’s first fashion show, designers Natalia Maczek and Thomas Wirski paid tribute to their homeland and its storied history by presenting a collection that took cues from the Polish poster art, bringing elements of Warszawa 1966 into 2018 for a riveting look at what this brand is capable of. Though the line offers a post Soviet vision, one that isn’t entirely dissimilar to Vetements or Gosha Rubinsky, Maczek’s take is distinct in its ability to evade the familiar, to still feel fresh and new despite being inspired by age old traditions.",
 			"image" : "images/misbhv.jpg",
-			"collectionurl" : "http://material-magazine.com/misbhv-ss19/"
+			"collectionurl" : "https://www.vogue.com/fashion-shows/spring-2019-menswear/misbhv"
 		},
 
 		{
