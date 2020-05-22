@@ -57,7 +57,7 @@
 		{
 			"name" : "Heron Preston",
 			"idname" : "heronpreston",
-			"year" : "Spring/Summer 19",
+			"year" : "Spring/Summer 19 Mens",
 			"description" : "Dubbed \"En Vogue,\" the Been Trill alum’s latest offering was firmly rooted in his trademark penchant for workwear inspired ready to wear. Familiar HP tropes such as utility belts, vests, work shirts and chore jackets were styled with boldly colored sportswear, metallic leather coats, denim and bottoms featuring satellite images of Australian terrain. Italicized Cantonese characters replaced Preston’s signature Cyrillic Style logo. Furthermore, the collection marked a debut collaboration with Nike Vision, featuring a series of speed racer shades with four interchangeable accessory lenses in reflective grey, orange grey, yellow and dark grey.",
 			"image" : "images/heronpreston.jpg",
 			"collectionurl" : "https://www.vogue.com/fashion-shows/spring-2019-menswear/heron-preston"
@@ -67,8 +67,8 @@
 			"name" : "John Elliott",
 			"idname" : "johnelliott",
 			"year" : "Spring/Summer 19",
-			"description" : "John Elliott took his eponymous label back to New York Fashion Week to debut his latest range of effortless sportswear and laid-back denim. John Elliot has a personal approach to design that is immediately apparent upon viewing the new range, with worn-in accents reflecting the designer’s intent to create comfortable clothing for daily life. The new collection showcased more collaborative Suicoke sandals and new jewelry designed in collaboration with Japanese brand Mars. Lived-in touches included blown-out knees in the Japanese denim, cardigans buttoned insouciantly and cracked leather jackets courtesy of Blackmeans.",
-			"image" : "images/johnelliot.jpg",
+			"description" : "John Elliott took his eponymous label back to New York Fashion Week to debut his latest range of effortless sportswear and laid-back denim. John Elliott has a personal approach to design that is immediately apparent upon viewing the new range, with worn-in accents reflecting the designer’s intent to create comfortable clothing for daily life. The new collection showcased more collaborative Suicoke sandals and new jewelry designed in collaboration with Japanese brand Mars. Lived-in touches included blown-out knees in the Japanese denim, cardigans buttoned insouciantly and cracked leather jackets courtesy of Blackmeans.",
+			"image" : "images/johnelliott.jpg",
 			"collectionurl" :  "https://www.vogue.com/fashion-shows/spring-2019-menswear/john-elliot-co"
 		},
 
@@ -96,16 +96,16 @@
 			"year" : "Spring/Summer 19",
 			"description" : "Titled \"Track and Field,\" Off White's spring 2019 collection blends sporty nods with refined feminine silhouettes. Flowing gowns and trim blazers were subverted by track-ready body suits and Nike T-shirts, emphasizing sportswear’s continuing influence upon Virgil Abloh‘s designs. Accompanying the sportswear-leaning looks were a host of gargantuan gowns and feminine tulle skirts, appropriately crafted with mesh panels or juxtaposed with tucked-in Off-White & Nike tees, subverting the feminine lean.",
 			"image" : "images/offwhite.jpg",
-			"collectionurl" :  "https://www.vogue.com/fashion-shows/spring-2019-ready-to-wear/off-white/slideshow/collection#1"
+			"collectionurl" :  "https://www.vogue.com/fashion-shows/spring-2019-ready-to-wear/off-white"
 		},
 
 		{
 			"name" : "SSS World Corp",
 			"idname" : "sssworldcorp",
-			"year" : "Spring/Summer 19",
-			"description" : "",
+			"year" : "Spring/Summer 19 Mens",
+			"description" : "Justin O’Shea put it thus: \"So basically when I was at home for Christmas in ’Stralia, I was sitting on the beach with Veronika talking baby names. And this surfer dude came down. Super-crusty, kinda-like dreads—yeah, totally feral—a bogan surfer. He put his board down and had this tribal pattern on the top of the surfboard and I was like . . . that’s just fucking awesome! I sneaked a picture, and that became the beginning of the print. Then hanging out where my brother had just moved, just next to Perth, it was the best holiday I’ve ever had. But everyone there was trapped in a time: Australiana, going from ’70s into ’80s. Everything came from that moment.\"",
 			"image" : "images/sssworldcorp.jpg",
-			"collectionurl" :  "https://wwd.com/fashion-news/shows-reviews/gallery/a-cold-wall-mens-spring-1202700523/"
+			"collectionurl" :  "https://www.vogue.com/fashion-shows/spring-2019-menswear/sss-world-corp"
 		},
 
 		{
@@ -114,14 +114,14 @@
 			"year" : "Spring/Summer 19",
 			"description" : "Upcoming NYC label Telfar took to a rainswept runway to unveil its SS19 collection. Like many designers working in the shadow of a Trump presidency, Telfar tore up all-American classics and made them his own. The label turned to the the good old Stars and Stripes as a foundation for its graphics, and notched up the \"Murican\" vibes by putting a Budweiser collaboration on the runway.",
 			"image" : "images/telfar.jpg",
-			"collectionurl" :  "https://www.vogue.com/fashion-shows/spring-2019-ready-to-wear/telfar/slideshow/collection#1"
+			"collectionurl" :  "https://www.vogue.com/fashion-shows/spring-2019-ready-to-wear/telfar"
 		},
 
 		{
 			"name" : "Todd Snyder",
 			"idname" : "toddsnyder",
-			"year" : "Spring/Summer 19",
-			"description" : "dfadf",
+			"year" : "Spring/Summer 19 Mens",
+			"description" : "When Todd Snyder offers you beer, you take it, right? In this case, cheery models at the entrance of his Spring 2019 show—the big finale of New York Fashion Week: Men’s this season—were passing out Threes Brewing’s Vliet in wave blue cans with neon orange Snyder-branded koozies. More than just getting everyone giddy, the beer served to set the scene for vacation vibes. Snyder looked to his grandfather’s closet for inspiration again this season, taking the tentpoles of retro resort dressing—leisure suits, Hawaiian shirts, and knit polos—and infusing them with a modern loucheness.",
 			"image" : "images/toddsnyder.jpg",
 			"collectionurl" : "https://www.vogue.com/fashion-shows/spring-2019-menswear/todd-snyder"
 		},
