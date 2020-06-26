@@ -9,6 +9,35 @@ body {
     font-size: 20px;
 }
 
+.mailinglist {
+    background: url(Telfar/headerimg2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 1000px;
+}
+
+.mailinglist input {
+    background-color: white;
+    border: 3px solid black;
+    font-family: NeueHaasGroteskBd;
+    text-transform: uppercase;
+    text-align: center;
+    width: 30%;
+    box-sizing: border-box;
+}
+
+input:focus{
+    outline: none;
+}
+
+.submit {
+    border: 3px solid black;
+    background-color: white;
+    font-size: 2.2vw;
+    width: 30%;
+    margin: auto;
+}
+
 .collapsible-body, .collapsible-header, .collapsible {
     border: none;
 }
@@ -25,6 +54,7 @@ body {
     line-height: 2.5;
     padding: 15px 0px 0px 50px;
     height: 240px;
+    margin-top: -1%;
 }
 
 .collapsible-body {
@@ -53,4 +83,11 @@ body {
 
 .content img {
     z-index: -10;
+}
+
+.footer-body {
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 60%), url(Telfar/footerimage.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 700px;
 }
