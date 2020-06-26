@@ -9,6 +9,10 @@ body {
     font-size: 20px;
 }
 
+.large-font {
+    font-size: 2.2vw;
+}
+
 .mailinglist {
     background: url(Telfar/headerimg2.jpg);
     background-size: cover;
@@ -16,8 +20,8 @@ body {
     height: 1000px;
 }
 
-.mailing-header {
-    font-size: 2.2vw;
+.mailinglist div {
+    padding-top: 25%;
 }
 
 .mailinglist input {
@@ -30,8 +34,14 @@ body {
     box-sizing: border-box;
 }
 
+.mailing-header {
+    font-size: 2.2vw;
+}
+
 input:focus{
     outline: none;
+    border: 3px solid black !important;
+    box-shadow: none !important;
 }
 
 .submit {
@@ -40,6 +50,13 @@ input:focus{
     font-size: 2.2vw;
     width: 30%;
     margin: auto;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: black;
+    color: white;
+    transition: 0.2s;
 }
 
 .collapsible-body, .collapsible-header, .collapsible {
