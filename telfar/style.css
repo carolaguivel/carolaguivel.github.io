@@ -124,6 +124,7 @@ input:focus{
 
 .bags-body p {
     padding: 20px 0px;
+    text-transform: none;
 }
 
 .content img {
@@ -223,7 +224,6 @@ input:focus{
     
     .bags-body p {
         padding: 20px 0px;
-        text-transform: none;
         max-width: 90%;
     }
 
