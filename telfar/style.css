@@ -13,6 +13,20 @@ body {
     font-size: 2.2vw;
 }
 
+.addtobag {
+    background-color: black;
+    color: white;
+    border: 3px solid black;
+    cursor: pointer;
+    width: 25%;
+}
+
+.addtobag:hover {
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+
 .mailinglist {
     background: url(Telfar/headerimg2.jpg);
     background-size: cover;
