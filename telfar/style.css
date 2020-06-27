@@ -171,9 +171,8 @@ input:focus{
     .mailinglist input, .submit {
         width: 60%;
         font-size: 5vw;
-        border: 2px solid black;
     }
-
+    
     .submit {
         background-color: black;
         color: white;
