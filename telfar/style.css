@@ -7,6 +7,8 @@ body {
     font-family: NeueHaasGroteskBd;
     text-transform: uppercase;
     font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
 }
 
 .large-font {
@@ -26,7 +28,6 @@ body {
 .addtobag:hover {
     background-color: white;
     color: black;
-    /* transition: 0.5s; */
 }
 
 .mailinglist {
@@ -145,9 +146,21 @@ input:focus{
     display: none;
 }
 
+.menu img {
+    width: 32%;
+}
+
+.web {
+    display: block;
+}
+
+.phone {
+    display: none;
+}
+
 @media only screen and (max-width: 680px) {
     body {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .menu {
@@ -164,6 +177,10 @@ input:focus{
         width: 60%;
     }
 
+    .mailinglist div {
+        padding-top: 17%;
+    }
+
     .mailinglist {
         height: 350px;
     }
@@ -172,7 +189,7 @@ input:focus{
         width: 60%;
         font-size: 5vw;
     }
-    
+
     .submit {
         background-color: black;
         color: white;
@@ -192,14 +209,47 @@ input:focus{
         padding: 15px 0px 0px 25px;
         height: 150px;
         margin-top: -3.5%;
-        box-shadow: 0px -10px 15px rgba(0, 0, 0, 0.19);
+        box-shadow: 0px -12px 15px rgba(0, 0, 0, 0.19);
     }
 
     .collapsible-body {
         padding: 15px 0px 80px 25px;
     }
+    
+    .bags-body img {
+        width: 100%;
+        margin: auto;
+    }
+    
+    .bags-body p {
+        padding: 20px 0px;
+        text-transform: none;
+        max-width: 90%;
+    }
+
+    .addtobag {
+        border: 3px solid black;
+        cursor: pointer;
+        width: 50%;
+        margin-top: 8px;
+        margin-bottom: 30px;
+        transition: 0.5s ease-in-out;
+    }
+    
+    .addtobag:hover {
+        background-color: black;
+        color: white;
+    }
 
     .footer-body {
         height: 200px;
+    }
+
+    .web {
+        display: none;
+    }
+    
+    .phone {
+        display: block;
     }
   }
