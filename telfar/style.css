@@ -50,10 +50,6 @@ body {
     box-sizing: border-box;
 }
 
-.mailing-header {
-    font-size: 2.2vw;
-}
-
 input:focus{
     outline: none;
     border: 3px solid black !important;
@@ -148,11 +144,25 @@ input:focus{
 
 @media only screen and (max-width: 680px) {
     body {
-        font-size: 40px;
+        font-size: 10px;
     }
 
-    .grid-3 {
+    .menu {
         display: grid;
-        grid-template-columns: 50% 50% !important;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+
+    .mailinglist {
+        height: 300px;
+    }
+
+    .large-font {
+        font-size: 3vw;
+    }
+
+    .collapsible-header {
+        font-size: 4.5vw;
+        padding: 15px 0px 0px 30px;
+        height: 150px;
     }
   }
