@@ -136,13 +136,20 @@ input:focus{
     background: linear-gradient(180deg, #B7E5FF 30%, #FFFFFF 100%);
 }
 
-.winter-body {
-    /* background: linear-gradient(180deg, #bde9ff 0%, rgba(255, 255, 255, 0) 1%); */
-}
-
 .footer-body {
     background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 60%), url(Telfar/footerimage3.jpg);
     background-size: cover;
     background-position: center;
     height: 700px;
 }
+
+@media only screen and (max-width: 680px) {
+    body {
+        font-size: 40px;
+    }
+
+    .grid-3 {
+        display: grid;
+        grid-template-columns: 50% 50% !important;
+    }
+  }
