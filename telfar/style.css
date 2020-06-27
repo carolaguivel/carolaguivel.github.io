@@ -129,7 +129,6 @@ input:focus{
     z-index: -10;
 }
 
-
 .winter {
     /* background: rgb(189, 233, 255); */
     background: linear-gradient(180deg, #B7E5FF 30%, #FFFFFF 100%);
@@ -142,30 +141,63 @@ input:focus{
     height: 700px;
 }
 
+.phone-menu {
+    display: none;
+}
+
 @media only screen and (max-width: 680px) {
     body {
         font-size: 10px;
     }
 
     .menu {
+        display: none;
+    }
+
+    .phone-menu {
         display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
+        font-size: 5vw;
+        grid-template-columns: 50% 50%;
+    }
+
+    .phone-menu img {
+        width: 60%;
     }
 
     .mailinglist {
-        height: 300px;
+        height: 350px;
+    }
+
+    .mailinglist input, .submit {
+        width: 60%;
+        font-size: 5vw;
+        border: 2px solid black;
+    }
+
+    .submit {
+        background-color: black;
+        color: white;
+    }
+
+    .submit:hover {
+        color: white;
+        background-color: black;
     }
 
     .large-font {
-        font-size: 4.5vw;
+        font-size: 5vw;
     }
 
     .collapsible-header {
-        font-size: 4.5vw;
-        padding: 15px 0px 0px 30px;
+        font-size: 5vw;
+        padding: 15px 0px 0px 25px;
         height: 150px;
         margin-top: -3.5%;
         box-shadow: 0px -10px 15px rgba(0, 0, 0, 0.19);
+    }
+
+    .collapsible-body {
+        padding: 15px 0px 80px 25px;
     }
 
     .footer-body {
