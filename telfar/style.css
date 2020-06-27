@@ -103,7 +103,7 @@ input:focus{
     background-position: center;
 }
 
-.jewelry-items {
+.jewelry-items, .winter-items {
     padding: 50px 0px;
 }
 
@@ -128,6 +128,16 @@ input:focus{
 
 .content img {
     z-index: -10;
+}
+
+
+.winter {
+    /* background: rgb(189, 233, 255); */
+    background: linear-gradient(180deg, #B7E5FF 30%, #FFFFFF 100%);
+}
+
+.winter-body {
+    /* background: linear-gradient(180deg, #bde9ff 0%, rgba(255, 255, 255, 0) 1%); */
 }
 
 .footer-body {
