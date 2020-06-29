@@ -206,6 +206,10 @@ input:focus{
         font-size: 5vw;
     }
 
+    .select-pieces-items, .winter-items, .jewelry-items {
+        font-size: 8px;
+    }
+
     .collapsible-header {
         font-size: 5.2vw;
         padding: 7px 0px 0px 19px;
