@@ -35,6 +35,7 @@ body {
     background-size: cover;
     background-position: center;
     height: 1000px;
+    margin-top: -1rem;
 }
 
 .mailinglist div {
