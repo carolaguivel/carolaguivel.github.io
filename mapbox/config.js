@@ -28,6 +28,10 @@ var config = {
                 {
                     layer: 'road',
                     opacity: 1
+                },
+                {
+                    layer: 'satellite',
+                    opacity: 0,
                 }
             ],
             onChapterExit: [
@@ -38,6 +42,10 @@ var config = {
                 {
                     layer: 'road',
                     opacity: 0
+                },
+                {
+                    layer: 'satellite',
+                    opacity: 0,
                 }
             ]
         },
@@ -56,21 +64,21 @@ var config = {
                 {
                     layer: 'waterfun',
                     opacity: 1,
+                },
+                {
+                    layer: 'satellite',
+                    opacity: 0,
                 }
-                // {
-                //     layer: 'road',
-                //     opacity: 0
-                // }
             ],
             onChapterExit: [
                 {
                     layer: 'waterfun',
                     opacity: 0,
+                },
+                {
+                    layer: 'satellite',
+                    opacity: 0,
                 }
-                // {
-                //     layer: 'road',
-                //     opacity: 0
-                // }
             ]
         },
         {
@@ -88,11 +96,19 @@ var config = {
                 {
                     layer: 'waterfun',
                     opacity: 0,
+                },
+                {
+                    layer: 'satellite',
+                    opacity: 1,
                 }
             ],
             onChapterExit: [
                 {
                     layer: 'waterfun',
+                    opacity: 0,
+                },
+                {
+                    layer: 'satellite',
                     opacity: 0,
                 }
             ]
