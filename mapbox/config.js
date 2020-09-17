@@ -3,7 +3,7 @@ var config = {
     accessToken: 'pk.eyJ1IjoiY2Fyb2xhZ3VpdmVsIiwiYSI6ImNrZTE2cmc4dTU5ZHMyc3JvMzNzNHlmbnMifQ.tbQNotIEsbghdvPr4ymWJA',
     showMarkers: false,
     theme: 'light',
-    alignment: 'left',
+    alignment: 'center',
     title: 'Civil Society Innovation and Urban Inclusion in a Digital Era:',
     subtitle: 'A Collection of Case Studies',
     byline: '',

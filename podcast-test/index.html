@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Podcast Test</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://unpkg.com/wavesurfer.js"></script>
+</head>
+<body>
+    <h1>Podcast Player</h1>
+    <div id="waveform"></div>
+
+    <script>
+        var wavesurfer = WaveSurfer.create({
+            container: '#waveform'
+        });
+
+        wavesurfer.load('laninadelvolcan.mp3');
+
+
+    </script>
+</body>
+</html>

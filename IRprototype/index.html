@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Scrollama: Basic Example</title>
+    <meta name="description" content="Scrollama: Basic Example" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      #scrolly {
+        position: relative;
+        margin-top: 30%;
+        margin-bottom: 35%;
+      }
+
+      body {
+          background-color: white;
+      }
+
+      article {
+        position: relative;
+        padding: 0 1rem;
+        margin: 0 auto;
+        width: 33%;
+      }
+
+      .step {
+        margin: 5rem auto 4rem auto;
+        background-color: #3b3b3b;
+        color: #fff;
+        padding: 200px;
+      }
+
+      .step.is-active {
+        background-color: goldenrod;
+        color: #3b3b3b;
+      }
+
+      .step p {
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.5rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <section id="intro">
+        <h1 class="intro__hed">Vertical Scroll</h1>
+        <p class="intro__dek">
+          Start scrolling to see how it works.
+        </p>
+      </section>
+      <section id="scrolly">
+        <article>
+          <div class="step" data-step="1" data-color="red">
+            <p>STEP 1</p>
+          </div>
+          <div class="step" data-step="2" data-color="yellow">
+            <p>STEP 2</p>
+          </div>
+          <div class="step" data-step="3" data-color="blue">
+            <p>STEP 3</p>
+          </div>
+          <div class="step" data-step="4" data-color="pink">
+            <p>STEP 4</p>
+          </div>
+        </article>
+      </section>
+      <section id="outro"></section>
+    </main>
+
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+    <script src="https://unpkg.com/scrollama"></script>
+    <script>
+      var scrolly = document.querySelector("#scrolly");
+      var article = scrolly.querySelector("article");
+      var step = article.querySelectorAll(".step");
+
+      // initialize the scrollama
+      var scroller = scrollama();
+
+      // scrollama event handlers
+      function handleStepEnter(response) {
+        // response = { element, direction, index }
+        console.log(response);
+        // add to color to current step
+        response.element.classList.add("is-active");
+        document.body.style.backgroundColor = "pink";
+      }
+
+      function handleStepExit(response) {
+        // response = { element, direction, index }
+        console.log(response);
+        // remove color from current step
+        response.element.classList.remove("is-active");
+        document.body.style.backgroundColor = "white";
+      }
+
+      function init() {
+        // set random padding for different step heights (not required)
+        // step.forEach(function(step) {
+        //   var v = 100 + Math.floor((Math.random() * window.innerHeight) / 4);
+        //   step.style.padding = v + "px 0px";
+        // });
+
+        // 1. setup the scroller with the bare-bones options
+        // 		this will also initialize trigger observations
+        // 2. bind scrollama event handlers (this can be chained like below)
+        scroller
+          .setup({
+            step: "#scrolly article .step",
+            debug: true,
+            offset: 0.5
+          })
+          .onStepEnter(handleStepEnter)
+          .onStepExit(handleStepExit);
+
+        // 3. setup resize event
+        window.addEventListener("resize", scroller.resize);
+      }
+
+      // kick things off
+      init();
+    </script>
+  </body>
+</html>
