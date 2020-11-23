@@ -9,6 +9,10 @@
         #waveform1 {
             overflow-y: hidden;
         }
+
+        .container-2 {
+            max-width: 900px;
+        }
     </style>
 </head>
 <body>
@@ -23,7 +27,7 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container-2">
         <div id="waveform2"></div>
         <div class="controls">
             <button data-action="play2">
@@ -80,20 +84,28 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+
+
+
+
+
+
+
+
 // Init & load audio file
 document.addEventListener('DOMContentLoaded', function() {
     wavesurfer = WaveSurfer.create({
         container: document.querySelector('#waveform2'),
-        waveColor: '#A2C7AF',
-        progressColor: '#00a650',
+        waveColor: '#7d7d7d',
+        progressColor: '#000000',
         cursorColor: '#00a650',
         backgroundColor: '#E9EAE3',
-        barWidth: 3,
+        barWidth: 2,
         barHeight: 0.5,
         barRadius: 3,
         cursorWidth: 0,
         height: 200,
-        barGap: 3
+        barGap: 2
     });
 
     wavesurfer.on('error', function(e) {
