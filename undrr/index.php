@@ -27,6 +27,7 @@
 
         <main data-barba="container" data-barba-namespace="home">
             <h1>hello</h1>
+            <?php "<p>Hello World!</p>"; ?>
             <div id="menu-btn">
                 <span class="top"></span>
                 <span class="middle"></span>
